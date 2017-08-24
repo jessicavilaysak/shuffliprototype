@@ -1,0 +1,50 @@
+/***********
+ This function is used to send data to firebase.
+***********/
+
+func uploadImg(img: UIImage){ //Posting image to firebase
+        
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            
+            let imgUid = NSUUID().uuidString
+            
+            let metadata = FIRStorageMetadata()
+            
+            metadata.contentType = "img/jpeg"
+            
+            SVProgressHUD.show(withStatus: "Uploading")
+            
+            FIRStorage.storage().reference().child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
+                
+                SVProgressHUD.dismiss()
+                
+                if error != nil {
+                    
+                    print("did not upload img")
+                    
+                } else {
+                    
+                    print("uploaded")
+                    
+                    let downloadURl = metadata?.downloadURL()?.absoluteString
+                    print(downloadURl!)
+                    self.ref?.child("Image").child("URL").childByAutoId().setValue(downloadURl)
+                }
+            }
+        }
+    }
+
+/***********
+ This is used to redirect view to a storyboard view controller with a ‘storyboard ID’.
+***********/
+
+let vc = storyboard?.instantiateViewController(withIdentifier: "VC_signin");
+present(vc!, animated: true, completion: nil);
+
+
+/***********
+ This is used to redirect view to a newly instantiated tab view controller.
+***********/
+
+let tabs = TabBarController()		//where TabBarController is the name of the view.
+self.present(tabs, animated: true, completion: nil)
