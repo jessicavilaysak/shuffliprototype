@@ -202,18 +202,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
         
         self.present(actionSheet, animated: true, completion: nil)
-        
-        
-        
-        /* fld_photo.image = UIImage(named: String(count))
-         if(count < 4)
-         {
-         count = count + 1
-         }
-         else
-         {
-         count = 1
-         }*/
+     
         
     }
     

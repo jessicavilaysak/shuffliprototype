@@ -12,17 +12,16 @@ class UserObject {
     
     var isAdmin: Bool!;
     var username: String!;
-    var accountID: Int!;
+    var accountID: String!;
+    var accountName: String!;
     var permissionToManageUsers: Bool!;
     var firstTimeLogin: Bool!;
   
     
     init() {
-        isAdmin = true;
-        username = "Simon";
-        accountID = 10101;
-        permissionToManageUsers = true;
         firstTimeLogin = false;
+        isAdmin = true;
+        permissionToManageUsers = true;
     }
     
     

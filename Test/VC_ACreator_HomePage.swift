@@ -33,10 +33,9 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
     
     @IBOutlet var viewusers: UICollectionView!
     override func viewDidLoad() {
-        fldcompany.text = "Coffee Club (Eastland)"
-        fldusername.text = dataSource.username;
+        fldcompany.text = userObj.accountName;
+        fldusername.text = userObj.username;
         storeImage.image = Toucan(image: #imageLiteral(resourceName: "CoffeeClub")).maskWithEllipse().image;
-        print("shuffli - user array: "+String(dataSource.userArray.count));
         /*if dataSource.userArray.count > 0
         {
             fld_nouser.isHidden = true
@@ -68,7 +67,7 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell : CustomCellUser = collectionView.dequeueReusableCell(withReuseIdentifier: "cellUser", for: indexPath) as! CustomCellUser
         cell.fld_username.text = dataSource.userArray[indexPath.row]
-        print("shuffli - indexPath.row "+String(dataSource.userArray[indexPath.row]));
+        //print("shuffli - indexPath.row "+String(dataSource.userArray[indexPath.row]));
         cell.deleteUser.tag = indexPath.row;
         
         //set delete image as a touch,

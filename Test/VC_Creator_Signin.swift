@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseStorage
 import FirebaseAuth
 import SVProgressHUD
 import SwiftKeychainWrapper
@@ -17,6 +19,8 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     @IBOutlet var fld_username: UITextField!
     @IBOutlet weak var SigninBtn: UIButton!
     var userUid: String!
+    
+    var ref: FIRDatabaseReference? // create property
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,10 +42,34 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         {
             SVProgressHUD.show(withStatus: "Logging In")
             FIRAuth.auth()?.signIn(withEmail: email, password: pass, completion: { (user, error) in
-                SVProgressHUD.dismiss()
                 
                 if user != nil{
-                    self.directSegue();
+                    /*
+                     Do we want to get user information EVERY time they log in OR only the first time they log in??
+                     
+                     ALSO, i used a completion handler to get all the information i need (username, company name, etc.) SYNCHRONOUSLY. All firebase calls are ASYNCHRONOUS so i had to do this to ensure i grabbed the info before going to the tab controller.
+                    */
+                    //first handler for getting user info will make the firebase call then come back and continue to the second handler IF successful.
+                    self.getUserInfo{ success in
+                        if success{
+                            //this is the second handler that gets the account information.
+                            self.getAccountInfo{ successAcc in
+                                if successAcc {
+                                    self.directSegue();
+                                    SVProgressHUD.dismiss()
+                                }
+                                else
+                                {
+                                    print("shuffli - no success with account info.");
+                                    SVProgressHUD.dismiss()
+                                }
+                            }
+                        }
+                        else{
+                            print("shuffli - no success with user info.");
+                            SVProgressHUD.dismiss()
+                        }
+                    }
                 }
                 else{
                     print(error!);
@@ -50,18 +78,59 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                                                      style: .cancel, handler: nil)
                     alert.addAction(cancelAction)
                     
-                    self.present(alert,animated: true){
-                        
-                    }
+                    self.present(alert,animated: true){}
+                    SVProgressHUD.dismiss()
                 }
-                
-                
             })
-            
         }
-        //setUser()
-        
     }
+    
+    func getUserInfo(completion: @escaping (Bool) -> ()) {
+        let userUID = FIRAuth.auth()?.currentUser?.uid;
+        print("shuffli: "+userUID!);
+        FIRDatabase.database().reference().child("users").child(userUID!).observeSingleEvent(of: .value , with: { snapshot in
+            
+            if snapshot.exists() {
+                
+                let recent = snapshot.value as!  NSDictionary
+                print(recent);
+                let roleID = (recent["roleID"] as? String)!;
+                userObj.accountID = (recent["accountID"] as? String)!;
+                userObj.username = (recent["name"] as? String)!;
+                print("shuffli - roleID: "+roleID);
+                if (roleID == "1")
+                {
+                    userObj.isAdmin = true;
+                    userObj.permissionToManageUsers = true;
+                }
+                else if (roleID == "2")
+                {
+                    userObj.isAdmin = true;
+                    userObj.permissionToManageUsers = false;
+                }
+                else
+                {
+                    userObj.isAdmin = false;
+                    userObj.permissionToManageUsers = false;
+                }
+                completion(true);
+            }});
+    }
+    
+    func getAccountInfo(completion: @escaping (Bool) -> ()) {
+        let accountID = userObj.accountID;
+        print("shuffli: accountID: "+accountID!);
+        FIRDatabase.database().reference().child("accounts").child(accountID!).child("info").observeSingleEvent(of: .value , with: { snapshot in
+            
+            if snapshot.exists() {
+                
+                let recent = snapshot.value as!  NSDictionary
+                print(recent);
+                userObj.accountName = (recent["name"] as? String)!;
+                completion(true);
+            }});
+    }
+
     
     /*
      Here we need to decide where to direct the user. A few rules:
@@ -73,24 +142,22 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
      - Does this user have permissions to manage users or not? (ie. A brand ambassador does not have permission to manage users).
      - IF user has 'manage users' permission, we direct them to tabviewcontroller as a lvl2 admin creator OTHERWISE direct them to tabviewcontroller as a lvl3.
      */
+    
     func directSegue() {
-        
-        
-        if userObj.isAdmin {
+
+        if (userObj.firstTimeLogin && !userObj.isAdmin)
+        {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_resetpassword");
+            self.present(vc!, animated: true, completion: nil);
+        }
+        else
+        {
             let tabs = TabBarController();
             self.present(tabs, animated: true, completion: nil);
         }
-        else {
-            userObj.permissionToManageUsers = false;
-            if userObj.firstTimeLogin {
-                let vc = storyboard?.instantiateViewController(withIdentifier: "VC_resetpassword");
-                present(vc!, animated: true, completion: nil);
-            }
-            else {
-                let tabs = TabBarController();
-                self.present(tabs, animated: true, completion: nil);
-            }
-        }
+
+        
+        
     }
     
     func setUser(){ //set userUID value here

@@ -48,3 +48,73 @@ present(vc!, animated: true, completion: nil);
 
 let tabs = TabBarController()		//where TabBarController is the name of the view.
 self.present(tabs, animated: true, completion: nil)
+
+
+**NOTE**
+
+The database user node contains a field called ‘roleID’. This represents the type of user. The legend is as follows:
+ 1: Level 2 Manager that can manage users.
+ 2: Level 2 Manager that CANNOT manage users (this refers to brand ambassadors).
+ 3: Level 3 users.
+
+********
+
+/***********
+ This is used to update a record in the database without overwriting it.
+***********/
+
+let key = ref.child("posts").childByAutoId().key
+let post = ["uid": userID,
+            "author": username,
+            "title": title,
+            "body": body]
+let childUpdates = ["/posts/\(key)": post,
+                    "/user-posts/\(userID)/\(key)/": post]
+ref.updateChildValues(childUpdates)
+
+
+/***********
+ This is used to retrieve data where the path is “users/UID”.
+***********/
+let userUID = FIRAuth.auth()?.currentUser?.uid;
+        print("shuffli: "+userUID!);
+        FIRDatabase.database().reference().child("users").child(userUID!).observeSingleEvent(of: .value , with: { snapshot in
+                
+                if snapshot.exists() {
+                    
+                    let recent = snapshot.value as!  NSDictionary
+                    print(recent);
+                    print("shuffli: "+(recent["roleID"] as? String)!);
+        }});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

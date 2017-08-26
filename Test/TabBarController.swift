@@ -33,7 +33,15 @@ class TabBarController: UITabBarController {
         nav_viewposts.setNavigationBarHidden(true, animated: true)
         nav_viewposts.title = "VC_viewposts"
         
-        self.viewControllers = [nav_manageusers, nav_viewposts, nav_createpost]
+        if(userObj.isAdmin && userObj.permissionToManageUsers)
+        {
+            self.viewControllers = [nav_manageusers, nav_viewposts, nav_createpost]
+        }
+        else
+        {
+            self.viewControllers = [nav_viewposts, nav_createpost]
+        }
+        
 
     }
 
