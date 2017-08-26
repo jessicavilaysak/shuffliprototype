@@ -20,9 +20,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        fldusername.text = FIRAuth.auth()?.currentUser?.uid
-//dataSource.username;
-        fldcompany.text = "Cotton On (Eastland)"
+        fldusername.text = userObj.username;
+        fldcompany.text = userObj.accountName;
         self.hideKeyboardWhenTappedAround()
   
         // Do any additional setup after loading the view.
