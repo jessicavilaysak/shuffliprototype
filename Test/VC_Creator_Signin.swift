@@ -44,6 +44,7 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
             FIRAuth.auth()?.signIn(withEmail: email, password: pass, completion: { (user, error) in
                 
                 if user != nil{
+                    userObj.uid = FIRAuth.auth()?.currentUser?.uid;
                     /*
                      Do we want to get user information EVERY time they log in OR only the first time they log in??
                      
@@ -55,8 +56,18 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                             //this is the second handler that gets the account information.
                             self.getAccountInfo{ successAcc in
                                 if successAcc {
-                                    self.directSegue();
-                                    SVProgressHUD.dismiss()
+                                    //this is the third handler that gets the user role information.
+                                    self.getRoleInfo { successRole in
+                                        if successRole {
+                                            self.directSegue();
+                                            SVProgressHUD.dismiss();
+                                        }
+                                        else
+                                        {
+                                            print("shuffli - no success with role info.");
+                                            SVProgressHUD.dismiss()
+                                        }
+                                    }
                                 }
                                 else
                                 {
@@ -86,7 +97,7 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     }
     
     func getUserInfo(completion: @escaping (Bool) -> ()) {
-        let userUID = FIRAuth.auth()?.currentUser?.uid;
+        let userUID = userObj.uid;
         print("shuffli: "+userUID!);
         FIRDatabase.database().reference().child("users").child(userUID!).observeSingleEvent(of: .value , with: { snapshot in
             
@@ -94,16 +105,46 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                 
                 let recent = snapshot.value as!  NSDictionary
                 print(recent);
-                let roleID = (recent["roleID"] as? String)!;
                 userObj.accountID = (recent["accountID"] as? String)!;
-                userObj.username = (recent["name"] as? String)!;
-                print("shuffli - roleID: "+roleID);
-                if (roleID == "1")
+                userObj.creatorID = (recent["creatorID"] as? String)!;
+                userObj.username = (recent["username"] as? String)!;
+                completion(true);
+            }});
+        
+    }
+    
+    func getAccountInfo(completion: @escaping (Bool) -> ()) {
+        let accountID = userObj.accountID;
+        print("shuffli: accountID: "+accountID!);
+        FIRDatabase.database().reference().child("accounts").child(accountID!).observeSingleEvent(of: .value , with: { snapshot in
+            
+            if snapshot.exists() {
+                
+                let recent = snapshot.value as!  NSDictionary
+                print(recent);
+                userObj.accountName = (recent["accountName"] as? String)!;
+                completion(true);
+            }});
+    }
+    
+    func getRoleInfo(completion: @escaping (Bool) -> ()) {
+        let accountID = userObj.accountID;
+        let creatorID = userObj.creatorID;
+        let uid = userObj.uid;
+        print("getRoleInfo()");
+        FIRDatabase.database().reference().child("userRoles").child(accountID!).child(creatorID!).child(uid!).observeSingleEvent(of: .value , with: { snapshot in
+            
+            if snapshot.exists() {
+                
+                let roleID = snapshot.value as!  String;
+                print("roleID: "+roleID);
+                
+                if (roleID == "m1")
                 {
                     userObj.isAdmin = true;
                     userObj.permissionToManageUsers = true;
                 }
-                else if (roleID == "2")
+                else if (roleID == "m2")
                 {
                     userObj.isAdmin = true;
                     userObj.permissionToManageUsers = false;
@@ -113,22 +154,10 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                     userObj.isAdmin = false;
                     userObj.permissionToManageUsers = false;
                 }
-                completion(true);
-            }});
-    }
-    
-    func getAccountInfo(completion: @escaping (Bool) -> ()) {
-        let accountID = userObj.accountID;
-        print("shuffli: accountID: "+accountID!);
-        FIRDatabase.database().reference().child("accounts").child(accountID!).child("info").observeSingleEvent(of: .value , with: { snapshot in
-            
-            if snapshot.exists() {
                 
-                let recent = snapshot.value as!  NSDictionary
-                print(recent);
-                userObj.accountName = (recent["name"] as? String)!;
                 completion(true);
             }});
+
     }
 
     

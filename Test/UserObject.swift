@@ -13,6 +13,8 @@ class UserObject {
     var isAdmin: Bool!;
     var username: String!;
     var accountID: String!;
+    var creatorID: String!;
+    var uid: String!;
     var accountName: String!;
     var permissionToManageUsers: Bool!;
     var firstTimeLogin: Bool!;

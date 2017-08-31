@@ -16,8 +16,8 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     
     @IBOutlet var fld_caption: UITextView!
     @IBOutlet var fld_photo: UIImageView!
-    
     @IBOutlet weak var postBtn: UIButton!
+    
     let myPickerController = UIImagePickerController()
     
     var count = 1
@@ -41,7 +41,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         
         ref = FIRDatabase.database().reference() // get reference to actual db
         postBtn.layer.cornerRadius = 4
-        
+        fld_caption.layer.cornerRadius = 4
         
     }
     
@@ -84,7 +84,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         let caption = fld_caption.text
         let image = fld_photo.image
         
-        if(image == UIImage(named: "ImagePlaceholder"))
+        if(image == UIImage(named: "takePhototPlaceholder"))
         {
             let refreshAlert = UIAlertController(title: "NOTICE", message: "Please select an image to post!", preferredStyle: UIAlertControllerStyle.alert)
             
@@ -98,7 +98,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             let refreshAlert = UIAlertController(title: "NOTICE", message: "Are you sure you wish to post this image without a caption?", preferredStyle: UIAlertControllerStyle.alert)
             
             refreshAlert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { (action: UIAlertAction!) in
-                self.postImage(img: image!, caption: "");
+                self.uploadImg(img: image!, caption: "");
                 
             }))
             
@@ -108,14 +108,14 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             return;
         }
         
-        postImage(img: image!, caption: caption!)
+        //ref?.child("Caption").childByAutoId().setValue(caption) //post to firebase, but with auto ID need to change that to user id or something
+        //postImage(img: image!, caption: caption!)
         uploadImg(img: image!, caption: caption!)
         
     }
     func uploadImg(img: UIImage, caption: String){ //Posting image to firebase
         
         if let imgData = UIImageJPEGRepresentation(img, 0.2) {
-            
             let imgUid = NSUUID().uuidString
             
             let metadata = FIRStorageMetadata()
@@ -123,59 +123,61 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             metadata.contentType = "img/jpeg"
             
             SVProgressHUD.show(withStatus: "Uploading")
-            
             FIRStorage.storage().reference().child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
-                
-                SVProgressHUD.dismiss()
-                
                 if error != nil {
-                    
+                    SVProgressHUD.showError(withStatus: "Could not upload!")
+                    SVProgressHUD.dismiss(withDelay: 3)
                     print("did not upload img")
                     
                 } else {
                     
                     print("uploaded")
+                    SVProgressHUD.showSuccess(withStatus: "Uploaded!")
+                    SVProgressHUD.dismiss(withDelay: 3)
                     
                     let downloadURl = metadata?.downloadURL()?.absoluteString
                     print("downloadURL" + downloadURl!)
-                    self.ref?.child("uploads").childByAutoId().setValue(["imageURL": downloadURl, "uploadedBy": FIRAuth.auth()?.currentUser?.uid, "caption": caption, "category": "School", "status": "approved"])
+                    let accountID = userObj.accountID;
+                    let creatorID = userObj.creatorID;
+                    let uid = userObj.uid;
+                    
+                    if(userObj.isAdmin)
+                    {
+                        self.ref?.child("creatorPosts").child(accountID!).child(creatorID!).child(uid!).childByAutoId().setValue(["url": downloadURl, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved"])
+                    }
+                    else
+                    {
+                        self.ref?.child("userPosts").child(accountID!).child(creatorID!).child(uid!).childByAutoId().setValue(["url": downloadURl, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "review": true])
+                    }
+                
+                    self.fld_photo.image = #imageLiteral(resourceName: "takePhototPlaceholder")
+                    self.fld_caption.text = ""
+                    let tabItems = self.tabBarController?.tabBar.items;
+                    if((tabItems?.count)! > 2)
+                    {
+                        let tabItem = tabItems?[3]
+                        dataSource.postNotifications = dataSource.postNotifications + 1;
+                        tabItem?.badgeValue = String(dataSource.postNotifications)
+                    }
+                    else
+                    {
+                        let tabItem = tabItems?[0]
+                        dataSource.postNotifications = dataSource.postNotifications + 1;
+                        tabItem?.badgeValue = String(dataSource.postNotifications)
+                    }
                 }
             }
-        }
-    }
-    
-    
-    func postImage(img: UIImage, caption: String) {
-        
-        dataSource.postsobj.append((image: img, caption: caption))
-        
-        self.fld_photo.image = #imageLiteral(resourceName: "ImagePlaceholder")
-        self.fld_caption.text = "Insert caption..."
-        self.fld_caption.textColor = UIColor.lightGray
-        
-        
-        let tabItems = self.tabBarController?.tabBar.items;
-        if((tabItems?.count)! > 2)
-        {
-            let tabItem = tabItems?[0]
-            dataSource.postNotifications = dataSource.postNotifications + 1;
-            tabItem?.badgeValue = String(dataSource.postNotifications)
-        }
-        else
-        {
-            let tabItem = tabItems?[0]
-            dataSource.postNotifications = dataSource.postNotifications + 1;
-            tabItem?.badgeValue = String(dataSource.postNotifications)
         }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
         fld_photo.image = selectedImage
+        
         // Dismiss the picker.
         dismiss(animated: true, completion: nil)
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -202,18 +204,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
         
         self.present(actionSheet, animated: true, completion: nil)
-     
         
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

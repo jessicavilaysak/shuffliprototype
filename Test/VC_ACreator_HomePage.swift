@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+
 class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var fldusername: UILabel!
@@ -33,6 +35,9 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
     
     @IBOutlet var viewusers: UICollectionView!
     override func viewDidLoad() {
+        
+        
+        
         fldcompany.text = userObj.accountName;
         fldusername.text = userObj.username;
         storeImage.image = Toucan(image: #imageLiteral(resourceName: "CoffeeClub")).maskWithEllipse().image;
@@ -45,6 +50,33 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
         self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view
     }
+    
+    /*func getList_Lvl3Users(completion: @escaping (Bool) -> ()) {
+        let accountUID = userObj.accountID;
+        print("shuffli: accountUID: "+accountUID!);
+        
+        FIRDatabase.database().reference().child("users").queryEqual(toValue: <#T##Any?#>, childKey: <#T##String?#>)
+        
+        FIRDatabase.database().reference().child("users").child(userUID!).observeSingleEvent(of: .value , with: { snapshot in
+            
+            if snapshot.exists() {
+                
+                let recent = snapshot.value as!  NSDictionary
+                print(recent);
+                completion(true);
+            }});
+    }*/
+
+    
+    /*
+     self.ref = FIRDatabase.database().referenceFromURL(FIREBASE_URL).child("topics").
+     queryOrderedByChild("published").queryEqualToValue(true)
+     .observeEventType(.Value, withBlock: { (snapshot) in
+     for childSnapshot in snapshot.children {
+     print(snapshot)
+     }
+     })
+ */
     
     
     override func viewDidAppear(_ animated: Bool) {
