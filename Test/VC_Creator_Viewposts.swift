@@ -54,10 +54,10 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
             
             if user != nil {
-                print("uid: "+userObj.uid);
+                //print("uid: "+userObj.uid);
                 let accountID = userObj.accountID;
                 let creatorID = userObj.creatorID;
-                print(user!)
+                //print(user!)
                 var path = "";
                 if(userObj.isAdmin)
                 {
@@ -73,7 +73,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                     
                     for imageSnapshot in snapshot.children{
                         let imgObj = imageDataModel(snapshot: imageSnapshot as! FIRDataSnapshot)
-                        newImages.append(imgObj)
+                        //newImages.append(imgObj)
+                        newImages.insert(imgObj, at: 0);
                     }
                     self.images = newImages;
                     //print(self.images);
@@ -88,10 +89,18 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         viewposts.reloadData()
         
         let tabItems = self.tabBarController?.tabBar.items;
-        let tabItem = tabItems?[0]
-        dataSource.postNotifications = 0;
-        tabItem?.badgeValue = nil
+        for i in 0...((tabItems?.count)!-1) {
+            let controllerTitle = (self.tabBarController?.viewControllers?[i].title!)!;
+            
+            if(controllerTitle == "VC_viewposts"){
+                print(": "+controllerTitle);
+                let tabItem = tabItems?[i];
+                tabItem?.badgeValue = nil;
+            }
+        }
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -105,21 +114,14 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = self.viewposts.dequeueReusableCell(withIdentifier: "cellCreator", for: indexPath as IndexPath) as! CustomCellCreator
-        print(images.count);
         if indexPath.row < images.count
         {
-            print("indexPath: ");
-            print(indexPath.row);
             let image = images[indexPath.row]
-            //cell.fld_caption.text = temp.caption
-            //let temp = dataSource.postsobj[indexPath.row]
             cell.photo.sd_setShowActivityIndicatorView(true)
             cell.photo.sd_setIndicatorStyle(.gray)
             cell.photo.sd_setImage(with: URL(string: image.url),placeholderImage: UIImage(named: "placeholder"))
         }
-        
         return cell
-        
     }
     
     @IBAction func logout(_ sender: Any) {

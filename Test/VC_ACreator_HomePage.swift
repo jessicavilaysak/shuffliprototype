@@ -8,9 +8,11 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet var fldusername: UILabel!
     
     @IBOutlet var fldcompany: UILabel!
@@ -27,8 +29,6 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
         
         //tell collection view data source has changed
         self.collectionView.reloadData()
-        //let item = IndexPath(item: index, section: 0);
-        //self.collectionView.deleteItems(at: [item]);
     }
     
     
@@ -47,47 +47,34 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
         viewusers.reloadData()
         self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view
+        
+        //Creating a shadow
+        bgImage.layer.masksToBounds = false
+        bgImage.layer.shadowColor = UIColor.black.cgColor
+        bgImage.layer.shadowOffset = CGSize(width: 1.0, height:1.0)
+        bgImage.layer.shadowOpacity = 0.5
+        bgImage.layer.shadowRadius = 10;
+        bgImage.layer.shouldRasterize = true //tells IOS to cache the shadow
     }
-    
-    /*func getList_Lvl3Users(completion: @escaping (Bool) -> ()) {
-        let accountUID = userObj.accountID;
-        print("shuffli: accountUID: "+accountUID!);
-        
-        FIRDatabase.database().reference().child("users").queryEqual(toValue: <#T##Any?#>, childKey: <#T##String?#>)
-        
-        FIRDatabase.database().reference().child("users").child(userUID!).observeSingleEvent(of: .value , with: { snapshot in
-            
-            if snapshot.exists() {
-                
-                let recent = snapshot.value as!  NSDictionary
-                print(recent);
-                completion(true);
-            }});
-    }*/
 
-    
-    /*
-     self.ref = FIRDatabase.database().referenceFromURL(FIREBASE_URL).child("topics").
-     queryOrderedByChild("published").queryEqualToValue(true)
-     .observeEventType(.Value, withBlock: { (snapshot) in
-     for childSnapshot in snapshot.children {
-     print(snapshot)
-     }
-     })
- */
-    
-    
     override func viewDidAppear(_ animated: Bool) {
        /* if dataSource.userArray.count > 0
         {
             fld_nouser.isHidden = true
         }*/
         viewusers.reloadData()
-        
         let tabItems = self.tabBarController?.tabBar.items;
-        let tabItem = tabItems?[0]
-        dataSource.userNotifications = 0;
-        tabItem?.badgeValue = nil
+        
+        for i in 0...((tabItems?.count)!-1) {
+            let controllerTitle = (self.tabBarController?.viewControllers?[i].title!)!;
+            
+            if(controllerTitle == "VC_manageusers"){
+                print(": "+controllerTitle);
+                let tabItem = tabItems?[i];
+                dataSource.postNotifications = dataSource.postNotifications + 1;
+                tabItem?.badgeValue = nil;
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -108,6 +95,20 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
         
         
         return cell
+    }
+
+    @IBAction func logout(_ sender: Any) {
+        if FIRAuth.auth()?.currentUser != nil {
+            do{
+                try FIRAuth.auth()?.signOut()
+                let vc = storyboard?.instantiateViewController(withIdentifier: "VC_signin");
+                present(vc!, animated: true, completion: nil);
+            } catch let error as NSError{
+                print(error)
+            }
+        }else{
+            print("User is nill")
+        }
     }
 
 

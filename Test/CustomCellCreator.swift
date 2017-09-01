@@ -9,18 +9,18 @@
 import UIKit
 
 class CustomCellCreator: UITableViewCell {
-
+    
     @IBOutlet var fld_caption: UITextView!
     @IBOutlet var photo: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }

@@ -66,7 +66,7 @@
 		2285D6E21EC3F5BA00211D41 /* VC_Creator_Viewposts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_Creator_Viewposts.swift; sourceTree = "<group>"; };
 		2285D6E41EC3F61F00211D41 /* CustomCellCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellCreator.swift; sourceTree = "<group>"; };
 		2285D6E81EC3FCB100211D41 /* VC_Creator_Signin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_Creator_Signin.swift; sourceTree = "<group>"; };
-		22B034541F4EA84500E4B357 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22B034541F4EA84500E4B357 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../Shuffli 2/Test/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		22C1DF261EC32A1C0022DC01 /* VC_ACreator_HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_ACreator_HomePage.swift; sourceTree = "<group>"; };
 		22C1DF2A1EC32DE40022DC01 /* CustomCellUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellUser.swift; sourceTree = "<group>"; };
 		22E497951EC304AD00B419E9 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
