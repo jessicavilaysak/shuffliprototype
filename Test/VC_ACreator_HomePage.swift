@@ -13,7 +13,6 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
     
     @IBOutlet var fldusername: UILabel!
     
-    @IBOutlet weak var storeImage: UIImageView!
     @IBOutlet var fldcompany: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -40,7 +39,6 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
         
         fldcompany.text = userObj.accountName;
         fldusername.text = userObj.username;
-        storeImage.image = Toucan(image: #imageLiteral(resourceName: "CoffeeClub")).maskWithEllipse().image;
         /*if dataSource.userArray.count > 0
         {
             fld_nouser.isHidden = true

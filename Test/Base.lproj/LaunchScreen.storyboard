@@ -1,54 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iRW-MI-CIk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="hFb-OJ-h8n">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="iRW-MI-CIk" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="JZx-1Q-aBC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xtn-q3-INo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="Upn-Pp-lrR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="N7s-KF-BSh">
-                                <rect key="frame" x="142" y="309" width="90" height="47"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shuffli." translatesAutoresizingMaskIntoConstraints="NO" id="Ou4-0U-AKl">
-                                <rect key="frame" x="147" y="417" width="81" height="32"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="i4d-FU-bZg">
+                                <rect key="frame" x="142" y="209" width="90" height="122"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Ou4-0U-AKl" secondAttribute="height" multiplier="81:32" id="2gS-d4-XyH"/>
-                                    <constraint firstAttribute="width" constant="81" id="NM5-e3-vWE"/>
+                                    <constraint firstAttribute="height" constant="122" id="urE-di-Lof"/>
+                                    <constraint firstAttribute="width" constant="90" id="xFM-T9-1Cw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shuffli." translatesAutoresizingMaskIntoConstraints="NO" id="gmY-wv-JRf">
+                                <rect key="frame" x="131" y="339" width="113" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="Cou-uM-ZaJ"/>
+                                    <constraint firstAttribute="height" constant="58" id="TqM-I2-45D"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="N7s-KF-BSh" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="289" id="1c3-Ft-NJl"/>
-                            <constraint firstItem="Ou4-0U-AKl" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="397" id="79g-nJ-kF9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="N7s-KF-BSh" secondAttribute="trailing" constant="127" id="Knr-E4-TgI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ou4-0U-AKl" secondAttribute="trailing" constant="131" id="O4G-6r-oxb"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Ou4-0U-AKl" secondAttribute="bottom" constant="218" id="drf-ah-jat"/>
-                            <constraint firstItem="Ou4-0U-AKl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="flg-f7-wyW"/>
-                            <constraint firstItem="N7s-KF-BSh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="126" id="gkx-72-Ntq"/>
-                            <constraint firstItem="Ou4-0U-AKl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="131" id="pf6-92-6K1"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="N7s-KF-BSh" secondAttribute="bottom" constant="311" id="sCz-mm-vbe"/>
+                            <constraint firstItem="gmY-wv-JRf" firstAttribute="centerX" secondItem="Upn-Pp-lrR" secondAttribute="centerX" id="Cpe-Ka-WYs"/>
+                            <constraint firstItem="gmY-wv-JRf" firstAttribute="leading" secondItem="Upn-Pp-lrR" secondAttribute="leadingMargin" constant="115" id="D5l-oj-enK"/>
+                            <constraint firstItem="gmY-wv-JRf" firstAttribute="top" secondItem="i4d-FU-bZg" secondAttribute="bottom" constant="8" id="SM3-fH-6HD"/>
+                            <constraint firstItem="i4d-FU-bZg" firstAttribute="top" secondItem="JZx-1Q-aBC" secondAttribute="bottom" constant="189" id="ndQ-3M-TuQ"/>
+                            <constraint firstItem="i4d-FU-bZg" firstAttribute="centerX" secondItem="Upn-Pp-lrR" secondAttribute="centerX" id="r2w-UA-yaK"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CO1-BG-skT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>

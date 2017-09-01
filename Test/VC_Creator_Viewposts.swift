@@ -126,7 +126,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         if FIRAuth.auth()?.currentUser != nil {
             do{
                 try FIRAuth.auth()?.signOut()
-                self.performSegue(withIdentifier: "goToSignin", sender: self)
+                let vc = storyboard?.instantiateViewController(withIdentifier: "VC_signin");
+                present(vc!, animated: true, completion: nil);
             } catch let error as NSError{
                 print(error)
             }
