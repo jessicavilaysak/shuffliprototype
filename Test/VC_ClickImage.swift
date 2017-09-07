@@ -19,7 +19,7 @@ class VC_ClickImage: UIViewController {
     var captionDv : String?
     
     override func viewDidLoad() {
-        
+        //self.navigationController?.isNavigationBarHidden = false;
         super.viewDidLoad()
         image.sd_setImage(with: URL(string:imagesDv!))
         imgCaption.text = captionDv
@@ -29,6 +29,8 @@ class VC_ClickImage: UIViewController {
 
         
     }
+    
+    
     
     @IBAction func btn_backToImages(_ sender: Any) {
         

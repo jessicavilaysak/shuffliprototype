@@ -26,7 +26,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     var dbRef : FIRDatabaseReference!
     
     override func viewDidLoad() {
-        
+        self.navigationController?.isNavigationBarHidden = false;
         super.viewDidLoad()
         dbRef = FIRDatabase.database().reference()
         fldusername.text = userObj.username;

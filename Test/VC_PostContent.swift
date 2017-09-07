@@ -133,15 +133,15 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                     let creatorID = userObj.creatorID;
                     let uid = userObj.uid;
                     
-                    if(userObj.isAdmin)
-                    {
-                        self.ref?.child("creatorPosts").child(accountID!).child(creatorID!).childByAutoId().setValue(["url": downloadURl, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved"])
-                    }
-                    else
-                    {
-                        self.ref?.child("userPosts").child(accountID!).child(creatorID!).child(uid!).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "review": true])
-                    }
-                    
+//                    if(userObj.isAdmin)
+//                    {
+//                        self.ref?.child("creatorPosts").child(accountID!).child(creatorID!).childByAutoId().setValue(["url": downloadURl, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "creatorID": creatorID])
+//                    }
+//                    else
+//                    {
+//                        self.ref?.child("userPosts").child(accountID!).child(creatorID!).child(uid!).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "review": true, "creatorID": creatorID])
+//                    }
+                    self.ref?.child("dashboardPosts").child(accountID!).child("pending").childByAutoId().setValue(["url": downloadURl, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "creatorID": creatorID]);
                     
                     self.fld_photo.image = #imageLiteral(resourceName: "takePhototPlaceholder")
                     self.fld_caption.text = ""
