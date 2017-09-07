@@ -148,7 +148,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         vc.imagesDv =  image.url
         vc.captionDv = image.caption
         
-        present(vc, animated: true, completion: nil);
+        self.navigationController?.pushViewController(vc, animated: true);
     }
 
 }

@@ -32,8 +32,6 @@ class VC_ClickImage: UIViewController {
     
     @IBAction func btn_backToImages(_ sender: Any) {
         
-        let tabs = TabBarController()		//where TabBarController is the name of the view.
-        tabs.selectedControllerId = "VC_viewposts";
-        self.present(tabs, animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true);
     }
 }
