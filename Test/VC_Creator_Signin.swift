@@ -45,40 +45,13 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                 
                 if user != nil{
                     userObj.uid = FIRAuth.auth()?.currentUser?.uid;
-                    /*
-                     Do we want to get user information EVERY time they log in OR only the first time they log in??
-                     
-                     ALSO, i used a completion handler to get all the information i need (username, company name, etc.) SYNCHRONOUSLY. All firebase calls are ASYNCHRONOUS so i had to do this to ensure i grabbed the info before going to the tab controller.
-                    */
-                    //first handler for getting user info will make the firebase call then come back and continue to the second handler IF successful.
-                    self.getUserInfo{ success in
+                    self.completeAsyncCalls{ success in
                         if success{
-                            //this is the second handler that gets the account information.
-                            self.getAccountInfo{ successAcc in
-                                if successAcc {
-                                    //this is the third handler that gets the user role information.
-                                    self.getRoleInfo { successRole in
-                                        if successRole {
-                                            self.directSegue();
-                                            SVProgressHUD.dismiss();
-                                        }
-                                        else
-                                        {
-                                            print("shuffli - no success with role info.");
-                                            SVProgressHUD.dismiss()
-                                        }
-                                    }
-                                }
-                                else
-                                {
-                                    print("shuffli - no success with account info.");
-                                    SVProgressHUD.dismiss()
-                                }
-                            }
+                            print("SUCCESS - completeAsyncCalls");
                         }
-                        else{
-                            print("shuffli - no success with user info.");
-                            SVProgressHUD.dismiss()
+                        else
+                        {
+                            print("FAILURE - completeAsyncCalls");
                         }
                     }
                 }
@@ -93,6 +66,49 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                     SVProgressHUD.dismiss()
                 }
             })
+        }
+    }
+    
+    func completeAsyncCalls(completion: @escaping (Bool) -> ()) {
+        /*
+         Do we want to get user information EVERY time they log in OR only the first time they log in??
+         
+         ALSO, i used a completion handler to get all the information i need (username, company name, etc.) SYNCHRONOUSLY. All firebase calls are ASYNCHRONOUS so i had to do this to ensure i grabbed the info before going to the tab controller.
+         */
+        //first handler for getting user info will make the firebase call then come back and continue to the second handler IF successful.
+        self.getUserInfo{ success in
+            if success{
+                //this is the second handler that gets the account information.
+                self.getAccountInfo{ successAcc in
+                    if successAcc {
+                        //this is the third handler that gets the user role information.
+                        self.getRoleInfo { successRole in
+                            if successRole {
+                                self.directSegue();
+                                SVProgressHUD.dismiss();
+                                completion(true);
+                            }
+                            else
+                            {
+                                print("shuffli - no success with role info.");
+                                SVProgressHUD.dismiss()
+                                completion(false);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        print("shuffli - no success with account info.");
+                        SVProgressHUD.dismiss()
+                        completion(false);
+                    }
+                }
+            }
+            else{
+                print("shuffli - no success with user info.");
+                SVProgressHUD.dismiss()
+                completion(false);
+            }
         }
     }
     
@@ -189,27 +205,39 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
+        if FIRAuth.auth()?.currentUser != nil{
+            print("User is NOT null.");
+            SVProgressHUD.show(withStatus: "Setting up for you...");
+            userObj.uid = FIRAuth.auth()?.currentUser?.uid;
+            self.completeAsyncCalls{ success in
+                if success{
+                    print("SUCCESS - completeAsyncCalls");
+                }
+                else
+                {
+                    print("FAILURE - completeAsyncCalls");
+                }
+            };
+            setUser()
+        }else{
+            print("User is null.")
+        }
+        
+    }
+    
     func setUser(){ //set userUID value here
         
         if let user = FIRAuth.auth()?.currentUser?.uid{
-            self.userUid = user
+            userObj.uid = user
+            KeychainWrapper.standard.set(userObj.uid, forKey: "uid") //set uid value in keychain
         }
         
-        keychain()
+        //keychain()
     }
-    /*
-     override func viewDidAppear(_ animated: Bool) {
-     if let _ = KeychainWrapper.standard.string(forKey: "uid"){ //retrive from keychain
-     
-     self.performSegue(withIdentifier: "goToHome", sender: self)
-     
-     }
-     
-     }
-     */
-    func keychain(){
-        
-        KeychainWrapper.standard.set(userUid, forKey: "uid") //set uid value in keychain
-    }
+
     
 }

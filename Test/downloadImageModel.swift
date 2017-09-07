@@ -14,11 +14,13 @@ struct imageDataModel{
     let key : String!
     let url : String!
     let ref : FIRDatabaseReference?
+    let caption : String!
     
-    init(key : String, url: String) {
+    init(key : String, url: String, caption: String) {
         self.key = key
         self.url = url
         self.ref = nil
+        self.caption = caption
         
     }
     
@@ -26,12 +28,18 @@ struct imageDataModel{
         key = snapshot.key
         ref = snapshot.ref
         
+        
         let snapshotValue = snapshot.value as? NSDictionary
         
         if let imageURL = snapshotValue?["url"] as? String{
             url = imageURL
         }else{
             url = ""
+        }
+        if let imageCaption = snapshotValue?["description"] as? String{
+            caption = imageCaption
+        }else{
+            caption = ""
         }
     }
     

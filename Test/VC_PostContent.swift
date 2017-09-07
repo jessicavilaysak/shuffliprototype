@@ -123,7 +123,11 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                     SVProgressHUD.showSuccess(withStatus: "Uploaded!")
                     SVProgressHUD.dismiss(withDelay: 2)
                     
-                    let downloadURl = metadata?.downloadURL()?.absoluteString
+                    let downloadURl = metadata?.downloadURL()?.absoluteString;
+                    var URLtoSend = "";
+                    if(!(downloadURl?.isEmpty)!){
+                        URLtoSend = downloadURl!;
+                    }
                     print("downloadURL" + downloadURl!)
                     let accountID = userObj.accountID;
                     let creatorID = userObj.creatorID;
@@ -135,8 +139,9 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                     }
                     else
                     {
-                        self.ref?.child("userPosts").child(accountID!).child(creatorID!).child(uid!).childByAutoId().setValue(["url": downloadURl, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "review": true])
+                        self.ref?.child("userPosts").child(accountID!).child(creatorID!).child(uid!).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "review": true])
                     }
+                    
                     
                     self.fld_photo.image = #imageLiteral(resourceName: "takePhototPlaceholder")
                     self.fld_caption.text = ""
@@ -148,8 +153,16 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                         if(controllerTitle == "VC_viewposts"){
                             print(": "+controllerTitle);
                             let tabItem = tabItems?[i];
-                            dataSource.postNotifications = dataSource.postNotifications + 1;
-                            tabItem?.badgeValue = String(dataSource.postNotifications)
+                            var badgeValue = tabItem?.badgeValue;
+                            if((badgeValue) != nil)
+                            {
+                                badgeValue = String(Int(badgeValue!)! + 1);
+                            }
+                            else
+                            {
+                                badgeValue = "1";
+                            }
+                            tabItem?.badgeValue = badgeValue;
                         }
                     }
                 }

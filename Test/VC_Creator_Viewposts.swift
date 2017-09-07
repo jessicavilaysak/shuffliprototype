@@ -120,9 +120,11 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             cell.photo.sd_setShowActivityIndicatorView(true)
             cell.photo.sd_setIndicatorStyle(.gray)
             cell.photo.sd_setImage(with: URL(string: image.url),placeholderImage: UIImage(named: "placeholder"))
+            cell.imageCaption.text = image.caption;
+            cell.imageCaption.textColor = UIColor.white;
         }
         return cell
-    }
+}
     
     @IBAction func logout(_ sender: Any) {
         if FIRAuth.auth()?.currentUser != nil {
@@ -137,6 +139,18 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             print("User is nill")
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let vc = storyboard?.instantiateViewController(withIdentifier: "VC_clickimage") as! VC_ClickImage;
+
+        let image = images[indexPath.row]
+        vc.imagesDv =  image.url
+        vc.captionDv = image.caption
+        
+        present(vc, animated: true, completion: nil);
+    }
+
 }
 
 

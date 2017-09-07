@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "TextFieldEffects-Swift.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Headers/TextFieldEffects-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TextFieldEffects-umbrella.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/TextFieldEffects.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{089F0217-533B-47C9-B8C6-5C36EFAF59F7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Entitlements.plist">
+    <Files>
+      <File FileName="Main.cs" Line="1" Column="1" />
+      <File FileName="Entitlements.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FirstApp PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D7ABA7ED-C76D-4AD0-983C-049D8806D94F" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -10,9 +10,15 @@ import UIKit
 
 class CustomCellCreator: UITableViewCell {
     
-    @IBOutlet var fld_caption: UITextView!
+    
     @IBOutlet var photo: UIImageView!
+    
+    @IBOutlet var imageCaption: UILabel!
+    
+    
+    
     override func awakeFromNib() {
+        
         super.awakeFromNib()
         // Initialization code
     }

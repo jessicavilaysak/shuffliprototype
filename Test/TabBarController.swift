@@ -10,6 +10,8 @@ import UIKit
 
 class TabBarController: UITabBarController {
 
+    var selectedControllerId : String?;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +33,8 @@ class TabBarController: UITabBarController {
         let third: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "VC_viewposts")
         nav_viewposts.viewControllers = [third]
         nav_viewposts.setNavigationBarHidden(true, animated: true)
-        nav_viewposts.title = "VC_viewposts"
+        nav_viewposts.title = "VC_viewposts";
+    
         
         if(userObj.isAdmin && userObj.permissionToManageUsers)
         {
@@ -42,6 +45,21 @@ class TabBarController: UITabBarController {
             self.viewControllers = [nav_viewposts, nav_createpost]
         }
         
+        if(selectedControllerId != nil)
+            
+        {
+            let c = self.viewControllers?.count;
+            for i in 0...((c)!-1) {
+                
+                let t = self.viewControllers?[i].title;
+                if(t == selectedControllerId)
+                {
+                    self.selectedViewController = self.viewControllers?[i];
+                    break;
+                }
+            }
+            
+        }
 
     }
 
