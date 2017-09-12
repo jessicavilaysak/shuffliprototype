@@ -16,15 +16,12 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "String"
-- !private "StringLiteralType"
-- !private "TabBarController"
 - "UIImageView"
 - "UILabel"
 - "UIViewController"
 - !private "URL"
 - "VC_ClickImage"
 depends-member:
-- !private ["Ps9AnyObject", "TabBarController"]
 - !private ["Ps9AnyObject", "URL"]
 - !private ["Ps9AnyObject", "captionDv"]
 - !private ["Ps9AnyObject", "cornerRadius"]
@@ -33,9 +30,9 @@ depends-member:
 - !private ["Ps9AnyObject", "imgCaption"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "layer"]
-- !private ["Ps9AnyObject", "present"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "popToRootViewController"]
 - !private ["Ps9AnyObject", "sd_setImage"]
-- !private ["Ps9AnyObject", "selectedControllerId"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
@@ -44,7 +41,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "sd_setImage"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
-- !private ["Ps7CVarArg", "TabBarController"]
 - !private ["Ps7CVarArg", "URL"]
 - !private ["Ps7CVarArg", "captionDv"]
 - !private ["Ps7CVarArg", "cornerRadius"]
@@ -53,14 +49,12 @@ depends-member:
 - !private ["Ps7CVarArg", "imgCaption"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "layer"]
-- !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "navigationController"]
+- !private ["Ps7CVarArg", "popToRootViewController"]
 - !private ["Ps7CVarArg", "sd_setImage"]
-- !private ["Ps7CVarArg", "selectedControllerId"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "TabBarController"]
 - !private ["Ps28CustomDebugStringConvertible", "URL"]
 - !private ["Ps28CustomDebugStringConvertible", "captionDv"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
@@ -69,15 +63,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "imgCaption"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
-- !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "popToRootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "sd_setImage"]
-- !private ["Ps28CustomDebugStringConvertible", "selectedControllerId"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps23CustomStringConvertible", "TabBarController"]
 - !private ["Ps23CustomStringConvertible", "URL"]
 - !private ["Ps23CustomStringConvertible", "captionDv"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
@@ -86,13 +78,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "imgCaption"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "layer"]
-- !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "popToRootViewController"]
 - !private ["Ps23CustomStringConvertible", "sd_setImage"]
-- !private ["Ps23CustomStringConvertible", "selectedControllerId"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "TabBarController"]
 - !private ["Ps9Equatable", "URL"]
 - !private ["Ps9Equatable", "captionDv"]
 - !private ["Ps9Equatable", "cornerRadius"]
@@ -101,16 +92,12 @@ depends-member:
 - !private ["Ps9Equatable", "imgCaption"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "layer"]
-- !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "popToRootViewController"]
 - !private ["Ps9Equatable", "sd_setImage"]
-- !private ["Ps9Equatable", "selectedControllerId"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps26ExpressibleByStringLiteral", "init"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Ps8Hashable", "TabBarController"]
 - !private ["Ps8Hashable", "URL"]
 - !private ["Ps8Hashable", "captionDv"]
 - !private ["Ps8Hashable", "cornerRadius"]
@@ -119,15 +106,12 @@ depends-member:
 - !private ["Ps8Hashable", "imgCaption"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "layer"]
-- !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "popToRootViewController"]
 - !private ["Ps8Hashable", "sd_setImage"]
-- !private ["Ps8Hashable", "selectedControllerId"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
-- !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "init"]
-- !private ["PSo8NSCoding", "TabBarController"]
 - !private ["PSo8NSCoding", "URL"]
 - !private ["PSo8NSCoding", "captionDv"]
 - !private ["PSo8NSCoding", "cornerRadius"]
@@ -136,27 +120,23 @@ depends-member:
 - !private ["PSo8NSCoding", "imgCaption"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
-- !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "popToRootViewController"]
 - !private ["PSo8NSCoding", "sd_setImage"]
-- !private ["PSo8NSCoding", "selectedControllerId"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "TabBarController"]
 - !private ["PSo26NSExtensionRequestHandling", "URL"]
 - !private ["PSo26NSExtensionRequestHandling", "captionDv"]
 - !private ["PSo26NSExtensionRequestHandling", "image"]
 - !private ["PSo26NSExtensionRequestHandling", "imagesDv"]
 - !private ["PSo26NSExtensionRequestHandling", "imgCaption"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "present"]
-- !private ["PSo26NSExtensionRequestHandling", "selectedControllerId"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "popToRootViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "String"]
-- !private ["CSo8NSObject", "TabBarController"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "URL"]
@@ -168,12 +148,11 @@ depends-member:
 - ["CSo8NSObject", "imgCaption"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "layer"]
-- !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "popToRootViewController"]
 - !private ["CSo8NSObject", "sd_setImage"]
-- !private ["CSo8NSObject", "selectedControllerId"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
-- !private ["PSo16NSObjectProtocol", "TabBarController"]
 - !private ["PSo16NSObjectProtocol", "URL"]
 - !private ["PSo16NSObjectProtocol", "captionDv"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
@@ -182,27 +161,19 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "imgCaption"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "layer"]
-- !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "popToRootViewController"]
 - !private ["PSo16NSObjectProtocol", "sd_setImage"]
-- !private ["PSo16NSObjectProtocol", "selectedControllerId"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
-- !private ["SS", "init"]
-- !private ["C4Test16TabBarController", "init"]
-- !private ["C4Test16TabBarController", "selectedControllerId"]
-- !private ["Ps16TextOutputStream", "init"]
-- !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "sd_setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "sd_setImage"]
 - !private ["PSo12UIAppearance", "text"]
-- !private ["PSo21UIAppearanceContainer", "TabBarController"]
 - !private ["PSo21UIAppearanceContainer", "URL"]
 - !private ["PSo21UIAppearanceContainer", "captionDv"]
 - !private ["PSo21UIAppearanceContainer", "image"]
@@ -210,21 +181,20 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "imgCaption"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
-- !private ["PSo21UIAppearanceContainer", "present"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "popToRootViewController"]
 - !private ["PSo21UIAppearanceContainer", "sd_setImage"]
-- !private ["PSo21UIAppearanceContainer", "selectedControllerId"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "TabBarController"]
 - !private ["PSo18UIContentContainer", "URL"]
 - !private ["PSo18UIContentContainer", "captionDv"]
 - !private ["PSo18UIContentContainer", "image"]
 - !private ["PSo18UIContentContainer", "imagesDv"]
 - !private ["PSo18UIContentContainer", "imgCaption"]
 - !private ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "present"]
-- !private ["PSo18UIContentContainer", "selectedControllerId"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "popToRootViewController"]
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "layer"]
@@ -235,7 +205,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "sd_setImage"]
 - !private ["PSo13UIDynamicItem", "text"]
-- !private ["PSo18UIFocusEnvironment", "TabBarController"]
 - !private ["PSo18UIFocusEnvironment", "URL"]
 - !private ["PSo18UIFocusEnvironment", "captionDv"]
 - !private ["PSo18UIFocusEnvironment", "image"]
@@ -243,9 +212,9 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "imgCaption"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
-- !private ["PSo18UIFocusEnvironment", "present"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "popToRootViewController"]
 - !private ["PSo18UIFocusEnvironment", "sd_setImage"]
-- !private ["PSo18UIFocusEnvironment", "selectedControllerId"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -255,8 +224,8 @@ depends-member:
 - !private ["CSo11UIImageView", "sd_setImage"]
 - !private ["CSo7UILabel", "layer"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo22UINavigationController", "popToRootViewController"]
 - ["CSo11UIResponder", "String"]
-- !private ["CSo11UIResponder", "TabBarController"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - !private ["CSo11UIResponder", "URL"]
@@ -267,12 +236,11 @@ depends-member:
 - ["CSo11UIResponder", "imgCaption"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "layer"]
-- !private ["CSo11UIResponder", "present"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "popToRootViewController"]
 - !private ["CSo11UIResponder", "sd_setImage"]
-- !private ["CSo11UIResponder", "selectedControllerId"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
-- !private ["PSo30UIResponderStandardEditActions", "TabBarController"]
 - !private ["PSo30UIResponderStandardEditActions", "URL"]
 - !private ["PSo30UIResponderStandardEditActions", "captionDv"]
 - !private ["PSo30UIResponderStandardEditActions", "image"]
@@ -280,28 +248,22 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "imgCaption"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
-- !private ["PSo30UIResponderStandardEditActions", "present"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
+- !private ["PSo30UIResponderStandardEditActions", "popToRootViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "sd_setImage"]
-- !private ["PSo30UIResponderStandardEditActions", "selectedControllerId"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo16UIStateRestoring", "TabBarController"]
 - !private ["PSo16UIStateRestoring", "URL"]
 - !private ["PSo16UIStateRestoring", "captionDv"]
 - !private ["PSo16UIStateRestoring", "image"]
 - !private ["PSo16UIStateRestoring", "imagesDv"]
 - !private ["PSo16UIStateRestoring", "imgCaption"]
 - !private ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "present"]
-- !private ["PSo16UIStateRestoring", "selectedControllerId"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "popToRootViewController"]
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- !private ["CSo18UITabBarController", "init"]
-- !private ["CSo18UITabBarController", "selectedControllerId"]
-- !private ["PSo16UITabBarDelegate", "init"]
-- !private ["PSo16UITabBarDelegate", "selectedControllerId"]
-- !private ["PSo18UITraitEnvironment", "TabBarController"]
 - !private ["PSo18UITraitEnvironment", "URL"]
 - !private ["PSo18UITraitEnvironment", "captionDv"]
 - !private ["PSo18UITraitEnvironment", "image"]
@@ -309,9 +271,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "imgCaption"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "layer"]
-- !private ["PSo18UITraitEnvironment", "present"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "popToRootViewController"]
 - !private ["PSo18UITraitEnvironment", "sd_setImage"]
-- !private ["PSo18UITraitEnvironment", "selectedControllerId"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
@@ -319,7 +281,6 @@ depends-member:
 - !private ["CSo6UIView", "sd_setImage"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "String"]
-- !private ["CSo16UIViewController", "TabBarController"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
 - !private ["CSo16UIViewController", "URL"]
@@ -329,13 +290,12 @@ depends-member:
 - ["CSo16UIViewController", "imagesDv"]
 - ["CSo16UIViewController", "imgCaption"]
 - ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "present"]
-- !private ["CSo16UIViewController", "selectedControllerId"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "popToRootViewController"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["V10Foundation3URL", "init"]
 - ["C4Test13VC_ClickImage", "String"]
-- !private ["C4Test13VC_ClickImage", "TabBarController"]
 - ["C4Test13VC_ClickImage", "UIImageView"]
 - ["C4Test13VC_ClickImage", "UILabel"]
 - !private ["C4Test13VC_ClickImage", "URL"]
@@ -346,19 +306,12 @@ depends-member:
 - ["C4Test13VC_ClickImage", "imagesDv"]
 - ["C4Test13VC_ClickImage", "imgCaption"]
 - ["C4Test13VC_ClickImage", "init"]
-- !private ["C4Test13VC_ClickImage", "present"]
+- !private ["C4Test13VC_ClickImage", "navigationController"]
 - ["C4Test13VC_ClickImage", "viewDidLoad"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sd_setImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
-- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "TabBarController"]
 - !private ["Ps9_Hashable", "URL"]
 - !private ["Ps9_Hashable", "captionDv"]
 - !private ["Ps9_Hashable", "cornerRadius"]
@@ -367,9 +320,9 @@ depends-member:
 - !private ["Ps9_Hashable", "imgCaption"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "layer"]
-- !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "navigationController"]
+- !private ["Ps9_Hashable", "popToRootViewController"]
 - !private ["Ps9_Hashable", "sd_setImage"]
-- !private ["Ps9_Hashable", "selectedControllerId"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
@@ -380,31 +333,16 @@ depends-nominal:
 - !private "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
 - "Ps7CVarArg"
-- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
-- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps26ExpressibleByStringLiteral"
-- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
-- !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
-- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
 - !private "P10Foundation20ReferenceConvertible"
-- !private "SS"
-- !private "C4Test16TabBarController"
-- !private "Ps16TextOutputStream"
-- !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -416,24 +354,17 @@ depends-nominal:
 - !private "PSo11UIFocusItem"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
+- !private "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
-- !private "CSo18UITabBarController"
-- !private "PSo16UITabBarDelegate"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "V10Foundation3URL"
 - "C4Test13VC_ClickImage"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
-- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- !private "Ps34_ExpressibleByBuiltinStringLiteral"
-- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps34_ExpressibleByFileReferenceLiteral"
-- !private "Ps33_ExpressibleByStringInterpolation"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:

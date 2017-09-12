@@ -443,6 +443,7 @@ SWIFT_CLASS("_TtC4Test14VC_PostContent")
 - (void)camera;
 - (void)photoLibrary;
 - (IBAction)buttonPost:(id _Nonnull)sender;
+- (UIImage * _Nonnull)fixOrientationWithImg:(UIImage * _Nonnull)img SWIFT_WARN_UNUSED_RESULT;
 - (void)uploadImgWithImg:(UIImage * _Nonnull)img caption:(NSString * _Nonnull)caption;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (void)didReceiveMemoryWarning;

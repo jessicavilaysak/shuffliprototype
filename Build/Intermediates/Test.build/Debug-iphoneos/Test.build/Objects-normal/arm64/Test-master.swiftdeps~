@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "330766cebb8162b10a5f58785619073c"
-build_time: [558084691, 951770000]
+build_time: [558084710, 229547000]
 inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/InitialViewController.swift": [556693963, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/TabBarController.swift": [558082336, 0]
@@ -19,5 +19,5 @@ inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/AppDelegate.swift": [555835475, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Extensions.swift": [556719654, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/CustomCellCreator.swift": [557573557, 0]
-  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_PostContent.swift": [558084690, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_PostContent.swift": [558084709, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_Creator_Signin.swift": [558060993, 0]

@@ -103,11 +103,29 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         uploadImg(img: image!, caption: caption!)
         
     }
+    
+    func fixOrientation(img:UIImage) -> UIImage {
+        
+        if (img.imageOrientation == UIImageOrientation.up) {
+            return img;
+        }
+        
+        UIGraphicsBeginImageContextWithOptions(img.size, false, img.scale);
+        let rect = CGRect(x: 0, y: 0, width: img.size.width, height: img.size.height)
+        img.draw(in: rect)
+        
+        let normalizedImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext();
+        return normalizedImage;
+        
+    }
+    
     func uploadImg(img: UIImage, caption: String){ //Posting image to firebase
         
-        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+        let imgFixed = fixOrientation(img: img);
+        if let imgData = UIImageJPEGRepresentation(imgFixed, 0.2) {
             let imgUid = NSUUID().uuidString
-            
+       
             let metadata = FIRStorageMetadata();
             metadata.contentType = "img/jpeg";
             SVProgressHUD.show(withStatus: "Uploading");
@@ -141,7 +159,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
 //                    {
 //                        self.ref?.child("userPosts").child(accountID!).child(creatorID!).child(uid!).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "review": true, "creatorID": creatorID])
 //                    }
-                    self.ref?.child("dashboardPosts").child(accountID!).child("pending").childByAutoId().setValue(["url": downloadURl, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "creatorID": creatorID]);
+                    self.ref?.child("dashboardPosts").child(accountID!).child("pending").childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "creatorID": creatorID]);
                     
                     self.fld_photo.image = #imageLiteral(resourceName: "takePhototPlaceholder")
                     self.fld_caption.text = ""
