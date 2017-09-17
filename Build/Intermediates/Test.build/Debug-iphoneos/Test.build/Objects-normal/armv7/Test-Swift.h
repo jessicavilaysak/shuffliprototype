@@ -363,12 +363,13 @@ SWIFT_CLASS("_TtC4Test19VC_ACreator_Payment")
 
 SWIFT_CLASS("_TtC4Test13VC_ClickImage")
 @interface VC_ClickImage : UIViewController
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified imgCaption;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified imgCaption;
 @property (nonatomic, copy) NSString * _Nullable imagesDv;
 @property (nonatomic, copy) NSString * _Nullable captionDv;
 - (void)viewDidLoad;
-- (IBAction)btn_backToImages:(id _Nonnull)sender;
+- (void)viewWillLayoutSubviews;
+- (void)buttonPressed;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

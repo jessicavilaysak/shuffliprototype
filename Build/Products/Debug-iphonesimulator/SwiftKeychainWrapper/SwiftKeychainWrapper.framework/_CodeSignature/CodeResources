@@ -20,13 +20,13 @@
 		<data>
 		tv1oJfE/JFec4YIWD3UoUvKL+CQ=
 		</data>
-		<key>Modules/SwiftKeychainWrapper.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/SwiftKeychainWrapper.swiftmodule/i386.swiftdoc</key>
 		<data>
-		MdxHf93QVjYRlozwz/G+tb08ZMY=
+		GeVLw5wciD/Aqjrimhp13tRm63o=
 		</data>
-		<key>Modules/SwiftKeychainWrapper.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/SwiftKeychainWrapper.swiftmodule/i386.swiftmodule</key>
 		<data>
-		7eY5PPEDkalDvxOjeAoIoukNO0A=
+		HbmMdoHRy5zLgfWmMT02/2Uxan0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,26 +68,26 @@
 			OJuB9uhOdxDzTf+XNUcWB3qV6fk8ekZpXZrzgW74IJ4=
 			</data>
 		</dict>
-		<key>Modules/SwiftKeychainWrapper.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/SwiftKeychainWrapper.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MdxHf93QVjYRlozwz/G+tb08ZMY=
+			GeVLw5wciD/Aqjrimhp13tRm63o=
 			</data>
 			<key>hash2</key>
 			<data>
-			ab4yWUlYB9iSMqokJIN416rMs528kWr3ZQ3UuLiGq3E=
+			O/kmJ1zafGiwO2aF9wwooSPSovS+Y7LH0Qpwl3ktzLA=
 			</data>
 		</dict>
-		<key>Modules/SwiftKeychainWrapper.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/SwiftKeychainWrapper.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7eY5PPEDkalDvxOjeAoIoukNO0A=
+			HbmMdoHRy5zLgfWmMT02/2Uxan0=
 			</data>
 			<key>hash2</key>
 			<data>
-			IUiCqXJhc5TXkUJp1CbrEkD8v0u9BrAFvvYBy2/gRSQ=
+			7IJ743UkqhgrMVOUEsflSllMpolNfQeRjCmtxSGZs7E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

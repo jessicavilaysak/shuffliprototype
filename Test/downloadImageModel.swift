@@ -15,13 +15,14 @@ struct imageDataModel{
     let url : String!
     let ref : FIRDatabaseReference?
     let caption : String!
+    let dashboardApproved : Bool!
     
     init(key : String, url: String, caption: String) {
         self.key = key
         self.url = url
         self.ref = nil
         self.caption = caption
-        
+        self.dashboardApproved = false;
     }
     
     init(snapshot: FIRDataSnapshot){
@@ -41,6 +42,19 @@ struct imageDataModel{
         }else{
             caption = ""
         }
+        if let imageStatus = snapshotValue?["status"] as? String{
+            if(imageStatus == "approved")
+            {
+                dashboardApproved = true;
+            }
+            else
+            {
+                dashboardApproved = false;
+            }
+        }else{
+            dashboardApproved = false;
+        }
+        
     }
     
 }

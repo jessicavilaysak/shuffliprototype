@@ -1,0 +1,196 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "KeychainAttrRepresentable"
+- "KeychainItemAccessibility"
+- "=="
+provides-nominal:
+- "P20SwiftKeychainWrapper25KeychainAttrRepresentable"
+- "O20SwiftKeychainWrapper25KeychainItemAccessibility"
+provides-member:
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", ""]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "CFString"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "KeychainAttrRepresentable"
+- "KeychainItemAccessibility"
+- "kSecAttrAccessibleAfterFirstUnlock"
+- "kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly"
+- "kSecAttrAccessibleAlways"
+- "kSecAttrAccessibleAlwaysThisDeviceOnly"
+- "kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly"
+- "kSecAttrAccessibleWhenUnlocked"
+- "kSecAttrAccessibleWhenUnlockedThisDeviceOnly"
+- !private "keychainItemAccessibilityLookup"
+depends-member:
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "hashValue"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "afterFirstUnlock"]
+- ["Ps9Equatable", "afterFirstUnlockThisDeviceOnly"]
+- ["Ps9Equatable", "always"]
+- ["Ps9Equatable", "alwaysThisDeviceOnly"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "keychainAttrValue"]
+- !private ["Ps9Equatable", "keychainItemAccessibilityLookup"]
+- ["Ps9Equatable", "whenPasscodeSetThisDeviceOnly"]
+- ["Ps9Equatable", "whenUnlocked"]
+- ["Ps9Equatable", "whenUnlockedThisDeviceOnly"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "afterFirstUnlock"]
+- ["Ps8Hashable", "afterFirstUnlockThisDeviceOnly"]
+- ["Ps8Hashable", "always"]
+- ["Ps8Hashable", "alwaysThisDeviceOnly"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "keychainAttrValue"]
+- !private ["Ps8Hashable", "keychainItemAccessibilityLookup"]
+- ["Ps8Hashable", "whenPasscodeSetThisDeviceOnly"]
+- ["Ps8Hashable", "whenUnlocked"]
+- ["Ps8Hashable", "whenUnlockedThisDeviceOnly"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "CFString"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "_toAnyHashable"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "afterFirstUnlock"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "afterFirstUnlockThisDeviceOnly"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "always"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "alwaysThisDeviceOnly"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "hashValue"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "keychainAttrValue"]
+- !private ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "keychainItemAccessibilityLookup"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "whenPasscodeSetThisDeviceOnly"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "whenUnlocked"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", "whenUnlockedThisDeviceOnly"]
+- ["P20SwiftKeychainWrapper25KeychainAttrRepresentable", ""]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "=="]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "CFString"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "KeychainItemAccessibility"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "_toAnyHashable"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "accessibilityForAttributeValue"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "afterFirstUnlock"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "afterFirstUnlockThisDeviceOnly"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "always"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "alwaysThisDeviceOnly"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "deinit"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "hashValue"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "keychainAttrValue"]
+- !private ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "keychainItemAccessibilityLookup"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "whenPasscodeSetThisDeviceOnly"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "whenUnlocked"]
+- ["O20SwiftKeychainWrapper25KeychainItemAccessibility", "whenUnlockedThisDeviceOnly"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "afterFirstUnlock"]
+- ["Ps9_Hashable", "afterFirstUnlockThisDeviceOnly"]
+- ["Ps9_Hashable", "always"]
+- ["Ps9_Hashable", "alwaysThisDeviceOnly"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "keychainAttrValue"]
+- !private ["Ps9_Hashable", "keychainItemAccessibilityLookup"]
+- ["Ps9_Hashable", "whenPasscodeSetThisDeviceOnly"]
+- ["Ps9_Hashable", "whenUnlocked"]
+- ["Ps9_Hashable", "whenUnlockedThisDeviceOnly"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- "P20SwiftKeychainWrapper25KeychainAttrRepresentable"
+- "O20SwiftKeychainWrapper25KeychainItemAccessibility"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/SwiftKeychainWrapper.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/SwiftKeychainWrapper.build/unextended-module.modulemap"
+interface-hash: "8a7902ec9b7aa4f06814ae876a85e379"
