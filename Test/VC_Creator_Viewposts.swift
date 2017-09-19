@@ -8,7 +8,6 @@
 
 import UIKit
 import FirebaseAuth
-import SwiftKeychainWrapper
 import FirebaseDatabase
 import SDWebImage
 import SVProgressHUD
@@ -17,6 +16,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet var viewposts: UITableView!
     
+    @IBOutlet weak var logOut: UIBarButtonItem!
+   
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet var fldusername: UILabel!
     
@@ -46,7 +47,6 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         bgImage.layer.shadowOpacity = 0.5
         bgImage.layer.shadowRadius = 10;
         bgImage.layer.shouldRasterize = true //tells IOS to cache the shadow
-        
     }
     
     func loadImagesfromDb(){
@@ -97,14 +97,14 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                 tabItem?.badgeValue = nil;
             }
         }
+        if userObj.isAdmin {
+            logOut.title = ""
+            logOut.isEnabled = false
+        }else{
+            logOut.title = "Log Out"
+        }
     }
     
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return images.count
@@ -116,11 +116,23 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         if indexPath.row < images.count
         {
             let image = images[indexPath.row]
+            
+            //Checking if user is admin and if image dashboard status is approved, if it is, showing the approve icon
+            if(!userObj.isAdmin){
+                cell.approveStatus.isHidden = true
+            }else{
+                if (image.dashboardApproved == true){
+                    cell.approveStatus.isHidden = false
+                }else{
+                    cell.approveStatus.isHidden = true
+                }
+                
+            }
             cell.photo.sd_setShowActivityIndicatorView(true)
             cell.photo.sd_setIndicatorStyle(.gray)
             cell.photo.sd_setImage(with: URL(string: image.url),placeholderImage: UIImage(named: "placeholder"))
             cell.imageCaption.text = image.caption;
-            cell.imageCaption.textColor = UIColor.white;
+            cell.imageCaption.textColor = UIColor.white
         }
         return cell
 }
@@ -147,13 +159,41 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         
         self.navigationController?.pushViewController(vc, animated: true);
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        var path = ""
+        if(userObj.isAdmin)
+        {
+            path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[indexPath.row].key;
+        }
+        else
+        {
+            path = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!+"/"+images[indexPath.row].key;
+        }
+        let refreshAlert = UIAlertController(title: "DELETE", message: "Do you wish to delete this post?\nNOTE: this cannot be undone.", preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
+            
+            FIRDatabase.database().reference().child(path).removeValue()
+            images.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            //self.navigationController?.popViewController(animated: true)
+            print("Handle Yes logic here")
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle No Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+        
+        
+    }
 
 }
-
-
-
-
-//dataSource.uid = ""
-//KeychainWrapper.standard.set(dataSource.uid, forKey: "uid")
-
 

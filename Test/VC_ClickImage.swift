@@ -60,6 +60,7 @@ class VC_ClickImage: UIViewController {
             let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: (btn_approve_lvl2.titleLabel?.text)!)
             attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
             btn_approve_lvl2.titleLabel?.attributedText = attributeString;
+            btn_approve_lvl2.isUserInteractionEnabled = false // added this so that simon cant spam the approve button hahah
             imgCaption.textColor = UIColor.lightGray;
             imgCaption.isUserInteractionEnabled = false;
         }

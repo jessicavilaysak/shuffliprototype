@@ -10,13 +10,13 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class VC_ACreator_HomePage: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet var fldusername: UILabel!
     
     @IBOutlet var fldcompany: UILabel!
-    @IBOutlet weak var collectionView: UICollectionView!
+   // @IBOutlet weak var collectionView: UICollectionView!
     
     func deleteUserButton(sender: UITapGestureRecognizer) {
         var index = Int((sender.view?.tag)!);
@@ -28,11 +28,11 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
         dataSource.userArray.remove(at: index);
         
         //tell collection view data source has changed
-        self.collectionView.reloadData()
+        //self.collectionView.reloadData()
     }
     
     
-    @IBOutlet var viewusers: UICollectionView!
+    //@IBOutlet var viewusers: UICollectionView!
     override func viewDidLoad() {
         
         
@@ -44,7 +44,7 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
             fld_nouser.isHidden = true
         }*/
         super.viewDidLoad()
-        viewusers.reloadData()
+        //viewusers.reloadData()
         self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view
         
@@ -62,7 +62,7 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
         {
             fld_nouser.isHidden = true
         }*/
-        viewusers.reloadData()
+        //viewusers.reloadData()
         let tabItems = self.tabBarController?.tabBar.items;
         
         for i in 0...((tabItems?.count)!-1) {
@@ -77,25 +77,25 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDataSource, UIColl
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource.userArray.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell : CustomCellUser = collectionView.dequeueReusableCell(withReuseIdentifier: "cellUser", for: indexPath) as! CustomCellUser
-        cell.fld_username.text = dataSource.userArray[indexPath.row]
-        //print("shuffli - indexPath.row "+String(dataSource.userArray[indexPath.row]));
-        cell.deleteUser.tag = indexPath.row;
-        
-        //set delete image as a touch,
-        let singletap = UITapGestureRecognizer(target: self, action: #selector(deleteUserButton))
-        singletap.numberOfTapsRequired = 1 // you can change this value
-        cell.deleteUser.isUserInteractionEnabled = true
-        cell.deleteUser.addGestureRecognizer(singletap)
-        
-        
-        return cell
-    }
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return dataSource.userArray.count
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell : CustomCellUser = collectionView.dequeueReusableCell(withReuseIdentifier: "cellUser", for: indexPath) as! CustomCellUser
+//        cell.fld_username.text = dataSource.userArray[indexPath.row]
+//        //print("shuffli - indexPath.row "+String(dataSource.userArray[indexPath.row]));
+//        cell.deleteUser.tag = indexPath.row;
+//        
+//        //set delete image as a touch,
+//        let singletap = UITapGestureRecognizer(target: self, action: #selector(deleteUserButton))
+//        singletap.numberOfTapsRequired = 1 // you can change this value
+//        cell.deleteUser.isUserInteractionEnabled = true
+//        cell.deleteUser.addGestureRecognizer(singletap)
+//        
+//        
+//        return cell
+//    }
 
     @IBAction func logout(_ sender: Any) {
         if FIRAuth.auth()?.currentUser != nil {

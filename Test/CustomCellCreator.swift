@@ -15,12 +15,15 @@ class CustomCellCreator: UITableViewCell {
     
     @IBOutlet var imageCaption: UILabel!
     
+    @IBOutlet weak var approveStatus: UIImageView!
     
     
     override func awakeFromNib() {
         
         super.awakeFromNib()
         // Initialization code
+        
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
