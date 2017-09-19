@@ -631,6 +631,9 @@
                                 <state key="normal" title="Delete">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="deletePost:" destination="VeH-Zp-wKu" eventType="touchUpInside" id="t65-UB-FSU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkj-sJ-hDn">
                                 <rect key="frame" x="80" y="701" width="70" height="30"/>
@@ -641,6 +644,9 @@
                                 <state key="normal" title="Approve">
                                     <color key="titleColor" red="0.36307636339999999" green="0.83137254900000002" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="approvePost:" destination="VeH-Zp-wKu" eventType="touchUpInside" id="6Vi-HA-CVl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIA-Ma-KjY">
                                 <rect key="frame" x="264" y="701" width="70" height="30"/>
@@ -651,6 +657,9 @@
                                 <state key="normal" title="Delete">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="deletePost:" destination="VeH-Zp-wKu" eventType="touchUpInside" id="vNa-DG-gDX"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YI0-ax-igH">
                                 <rect key="frame" x="25" y="596" width="364" height="100"/>

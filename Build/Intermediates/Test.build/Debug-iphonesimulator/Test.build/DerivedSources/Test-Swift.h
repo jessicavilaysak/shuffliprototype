@@ -370,9 +370,9 @@ SWIFT_CLASS("_TtC4Test13VC_ClickImage")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
 @property (nonatomic, copy) NSString * _Nullable imagesDv;
 @property (nonatomic, copy) NSString * _Nullable captionDv;
+@property (nonatomic, copy) NSString * _Nullable imgKey;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
-- (void)buttonPressed;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -427,6 +427,21 @@ SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)logout:(id _Nonnull)sender;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Test14VC_EditCaption")
+@interface VC_EditCaption : UIViewController
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified caption;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified buttonUpdate;
+@property (nonatomic, copy) NSString * _Null_unspecified lCaption;
+@property (nonatomic, copy) NSString * _Null_unspecified imgKey;
+- (void)viewDidLoad;
+- (void)viewWillLayoutSubviews;
+- (void)didReceiveMemoryWarning;
+- (IBAction)btnUpdate:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

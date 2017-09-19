@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import SVProgressHUD
 
 class VC_EditCaption: UIViewController {
 
@@ -14,7 +16,7 @@ class VC_EditCaption: UIViewController {
     @IBOutlet weak var caption: UITextView!
     @IBOutlet weak var buttonUpdate: UIButton!
     
-    var lCaption : String!
+    var imgIndex : Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +24,7 @@ class VC_EditCaption: UIViewController {
        
         caption.layer.cornerRadius = 4
         buttonUpdate.layer.cornerRadius = 4
-        caption.text = lCaption!;
+        caption.text = images[imgIndex].caption!;
         
     }
     
@@ -36,8 +38,40 @@ class VC_EditCaption: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnUpdate(_ sender: Any) {
-        print("pressed!");
+    @IBAction func btnUpdate(_ sender: Any){
+        var currentCaption = caption.text!
+        print("current: "+currentCaption);
+        var path = ""
+        if(userObj.isAdmin)
+        {
+            path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[self.imgIndex].key!;
+        }
+        else
+        {
+            path = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!+"/"+images[self.imgIndex].key!;
+        }
+        print("path: "+path);
+        FIRDatabase.database().reference().child(path).updateChildValues(["description": currentCaption])
+        
+        FIRDatabase.database().reference().child(path).observeSingleEvent(of: .value , with: { snapshot in
+            
+            if snapshot.exists() {
+                
+                let check = snapshot.value as!  NSDictionary
+                let desc = (check["description"] as? String)!;
+                if(desc == currentCaption)
+                {
+                    SVProgressHUD.showSuccess(withStatus: "Updated!")
+                    SVProgressHUD.dismiss(withDelay: 2)
+                    images[self.imgIndex].caption = currentCaption;
+                }
+                else
+                {
+                    SVProgressHUD.showSuccess(withStatus: "Could not update, please try again later.")
+                    SVProgressHUD.dismiss(withDelay: 2)
+                }
+            }});
+
     }
 
 }

@@ -22,7 +22,6 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet var fldcompany: UILabel!
     
-    var images = [imageDataModel]()
     var dbRef : FIRDatabaseReference!
     
     override func viewDidLoad() {
@@ -68,7 +67,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                     path = "userPosts/"+accountID!+"/"+creatorID!+"/"+userObj.uid!;
                 }
                 self.dbRef.child(path).observe(FIRDataEventType.value, with: {(snapshot) in
-                    print(snapshot)
+                    //print(snapshot)
                     var newImages = [imageDataModel]()
                     
                     for imageSnapshot in snapshot.children{
@@ -76,7 +75,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                         //newImages.append(imgObj)
                         newImages.insert(imgObj, at: 0);
                     }
-                    self.images = newImages;
+                    images = newImages;
                     //print(self.images);
                     self.viewposts.reloadData()
                 })
@@ -148,6 +147,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         vc.imagesDv =  image.url;
         vc.captionDv = image.caption;
         vc.dashboardApproved = image.dashboardApproved;
+        vc.imgKey = image.key;
+        vc.imgIndex = indexPath.row;
         
         self.navigationController?.pushViewController(vc, animated: true);
     }

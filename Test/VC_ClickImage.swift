@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import FirebaseDatabase
 
 class VC_ClickImage: UIViewController {
     
@@ -21,14 +22,16 @@ class VC_ClickImage: UIViewController {
     var imagesDv : String?
     var captionDv : String?
     var dashboardApproved : Bool?
+    var imgKey : String!
+    var imgIndex : Int!
     
     override func viewDidLoad() {
  
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround();
         
-        image.sd_setImage(with: URL(string:imagesDv!))
-        imgCaption.text = captionDv
+        image.sd_setImage(with: URL(string:images[self.imgIndex].url!))
+        imgCaption.text = images[self.imgIndex].caption!;
         imgCaption.layer.cornerRadius = 4
         
         if(userObj.isAdmin)
@@ -47,6 +50,7 @@ class VC_ClickImage: UIViewController {
             attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
             btn_approve_lvl2.titleLabel?.attributedText = attributeString;
             imgCaption.textColor = UIColor.lightGray;
+            imgCaption.isUserInteractionEnabled = false;
         }
         
         let textViewRecognizer = UITapGestureRecognizer()
@@ -60,20 +64,15 @@ class VC_ClickImage: UIViewController {
         imgCaption.scrollRangeToVisible(NSMakeRange(0, 0))
     }
     
-    func buttonPressed() {
-        print("buttonPressed!")
-
-    }
-    
     @objc private func myTargetFunction() {
         print("testing ?");
-        let refreshAlert = UIAlertController(title: "EDIT CAPTION", message: "Do you wish to edit this caption?", preferredStyle: UIAlertControllerStyle.alert)
+        let refreshAlert = UIAlertController(title: "EDIT", message: "Do you wish to edit this caption?", preferredStyle: UIAlertControllerStyle.alert)
         
         refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
             
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_editcaption") as! VC_EditCaption;
             
-            vc.lCaption = self.imgCaption.text;
+            vc.imgIndex = self.imgIndex;
             
             self.navigationController?.pushViewController(vc, animated: true);
             print("Handle Yes logic here")
@@ -85,5 +84,53 @@ class VC_ClickImage: UIViewController {
         
         present(refreshAlert, animated: true, completion: nil)
 
+    }
+    
+    @IBAction func deletePost(_ sender: Any) {
+        var path = ""
+        if(userObj.isAdmin)
+        {
+            path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+imgKey;
+        }
+        else
+        {
+            path = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!+"/"+imgKey;
+        }
+        let refreshAlert = UIAlertController(title: "DELETE", message: "Do you wish to delete this post?\nNOTE: this cannot be undone.", preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
+            
+            FIRDatabase.database().reference().child(path).removeValue()
+            self.navigationController?.popViewController(animated: true)
+            print("Handle Yes logic here")
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle No Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+
+
+    }
+    @IBAction func approvePost(_ sender: Any) {
+        
+        let path = "dashboardPosts/"+userObj.accountID!+"/pending";
+        let refreshAlert = UIAlertController(title: "APPROVE", message: "Do you wish to approve this post?\nNOTE: This cannot be undone.", preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
+            
+            FIRDatabase.database().reference().child(path).childByAutoId().setValue([
+                "creatorID": images[self.imgIndex].creatorID!, "description": self.imgCaption.text!, "uploadedBy": images[self.imgIndex].uploadedBy!, "url": images[self.imgIndex].url, "approvedBy": userObj.uid!
+                ]);
+            
+            print("Handle Yes logic here")
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle No Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
     }
 }

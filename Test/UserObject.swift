@@ -31,6 +31,8 @@ class UserObject {
 
 let userObj = UserObject()
 
+var images = [imageDataModel]()
+
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))

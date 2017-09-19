@@ -16,13 +16,20 @@ struct imageDataModel{
     let ref : FIRDatabaseReference?
     let caption : String!
     let dashboardApproved : Bool!
+    let creatorID: String!
+    let uploadedBy: String!
+    let approvedBy: String!
     
-    init(key : String, url: String, caption: String) {
-        self.key = key
-        self.url = url
+    
+    init() {
+        self.key = nil
+        self.url = nil
         self.ref = nil
-        self.caption = caption
+        self.caption = nil
         self.dashboardApproved = false;
+        self.creatorID = nil;
+        self.uploadedBy = nil;
+        self.approvedBy = nil;
     }
     
     init(snapshot: FIRDataSnapshot){
@@ -31,7 +38,7 @@ struct imageDataModel{
         
         
         let snapshotValue = snapshot.value as? NSDictionary
-        
+        print(snapshotValue!);
         if let imageURL = snapshotValue?["url"] as? String{
             url = imageURL
         }else{
@@ -54,7 +61,21 @@ struct imageDataModel{
         }else{
             dashboardApproved = false;
         }
-        
+        if let lCreatorID = snapshotValue?["creatorID"] as? String{
+            creatorID = lCreatorID;
+        }else{
+            creatorID = "";
+        }
+        if let lUploadedBy = snapshotValue?["uploadedBy"] as? String{
+            uploadedBy = lUploadedBy;
+        }else{
+            uploadedBy = "";
+        }
+        if let lApprovedBy = snapshotValue?["approvedBy"] as? String{
+            approvedBy = lApprovedBy;
+        }else{
+            approvedBy = "";
+        }
     }
     
 }
