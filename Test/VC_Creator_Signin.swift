@@ -208,7 +208,7 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
-        return;
+        //return;
         if FIRAuth.auth()?.currentUser != nil{
             print("User is NOT null.");
             SVProgressHUD.show(withStatus: "Setting up for you...");

@@ -368,10 +368,9 @@ SWIFT_CLASS("_TtC4Test13VC_ClickImage")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_delete_lvl2;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified imgCaption;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
-@property (nonatomic, copy) NSString * _Nullable imagesDv;
-@property (nonatomic, copy) NSString * _Nullable captionDv;
-@property (nonatomic, copy) NSString * _Null_unspecified imgKey;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (void)performInitialisation;
 - (void)viewWillLayoutSubviews;
 - (IBAction)deletePost:(id _Nonnull)sender;
 - (IBAction)approvePost:(id _Nonnull)sender;
@@ -438,8 +437,6 @@ SWIFT_CLASS("_TtC4Test14VC_EditCaption")
 @interface VC_EditCaption : UIViewController
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified caption;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified buttonUpdate;
-@property (nonatomic, copy) NSString * _Null_unspecified lCaption;
-@property (nonatomic, copy) NSString * _Null_unspecified imgKey;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
 - (void)didReceiveMemoryWarning;

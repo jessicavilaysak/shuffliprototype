@@ -9,6 +9,7 @@
 import UIKit
 import SDWebImage
 import FirebaseDatabase
+import SVProgressHUD
 
 class VC_ClickImage: UIViewController {
     
@@ -19,11 +20,11 @@ class VC_ClickImage: UIViewController {
     @IBOutlet weak var imgCaption: UITextView!
     @IBOutlet weak var image: UIImageView!
     
-    var imagesDv : String?
-    var captionDv : String?
-    var dashboardApproved : Bool?
-    var imgKey : String!
     var imgIndex : Int!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        imgCaption.text = images[self.imgIndex].caption!;
+    }
     
     override func viewDidLoad() {
  
@@ -44,7 +45,17 @@ class VC_ClickImage: UIViewController {
             btn_delete_lvl2.isHidden = true;
         }
         
-        if(dashboardApproved)!
+        performInitialisation();
+        
+        let textViewRecognizer = UITapGestureRecognizer()
+        textViewRecognizer.addTarget(self, action: #selector(myTargetFunction))
+        imgCaption.addGestureRecognizer(textViewRecognizer)
+        
+    }
+    
+    func performInitialisation() {
+        
+        if(images[self.imgIndex].dashboardApproved)!
         {
             let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: (btn_approve_lvl2.titleLabel?.text)!)
             attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
@@ -52,11 +63,6 @@ class VC_ClickImage: UIViewController {
             imgCaption.textColor = UIColor.lightGray;
             imgCaption.isUserInteractionEnabled = false;
         }
-        
-        let textViewRecognizer = UITapGestureRecognizer()
-        textViewRecognizer.addTarget(self, action: #selector(myTargetFunction))
-        imgCaption.addGestureRecognizer(textViewRecognizer)
-        
     }
     
     override func viewWillLayoutSubviews() {
@@ -90,11 +96,11 @@ class VC_ClickImage: UIViewController {
         var path = ""
         if(userObj.isAdmin)
         {
-            path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+imgKey;
+            path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[self.imgIndex].key;
         }
         else
         {
-            path = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!+"/"+imgKey;
+            path = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!+"/"+images[self.imgIndex].key;
         }
         let refreshAlert = UIAlertController(title: "DELETE", message: "Do you wish to delete this post?\nNOTE: this cannot be undone.", preferredStyle: UIAlertControllerStyle.actionSheet)
         
@@ -123,7 +129,12 @@ class VC_ClickImage: UIViewController {
             FIRDatabase.database().reference().child(path).childByAutoId().setValue([
                 "creatorID": images[self.imgIndex].creatorID!, "description": self.imgCaption.text!, "uploadedBy": images[self.imgIndex].uploadedBy!, "url": images[self.imgIndex].url, "approvedBy": userObj.uid!
                 ]);
-            
+            let updatePath = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[self.imgIndex].key!;
+            FIRDatabase.database().reference().child(updatePath).updateChildValues(["status": "approved"]);
+            images[self.imgIndex].dashboardApproved = true;
+            SVProgressHUD.showSuccess(withStatus: "Approved!")
+            SVProgressHUD.dismiss(withDelay: 2)
+            self.performInitialisation();
             print("Handle Yes logic here")
         }))
         

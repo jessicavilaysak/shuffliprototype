@@ -143,11 +143,6 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
 
         let vc = storyboard?.instantiateViewController(withIdentifier: "VC_clickimage") as! VC_ClickImage;
 
-        let image = images[indexPath.row]
-        vc.imagesDv =  image.url;
-        vc.captionDv = image.caption;
-        vc.dashboardApproved = image.dashboardApproved;
-        vc.imgKey = image.key;
         vc.imgIndex = indexPath.row;
         
         self.navigationController?.pushViewController(vc, animated: true);

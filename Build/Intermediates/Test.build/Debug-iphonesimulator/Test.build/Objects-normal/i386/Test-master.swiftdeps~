@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "a62b015f4309c148fc2913b24c7109a8"
-build_time: [559096308, 768538000]
+build_time: [559096533, 697349000]
 inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/InitialViewController.swift": [556693963, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/TabBarController.swift": [558961420, 0]
@@ -9,7 +9,7 @@ inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/CustomCellUser.swift": [555835475, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_ClickImage.swift": [559093694, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/downloadImageModel.swift": [559002120, 0]
-  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_EditCaption.swift": [559096307, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_EditCaption.swift": [559096532, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_ACreator_Payment.swift": [555835475, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/ViewController.swift": [555835475, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_Creator_ConfirmPword.swift": [555835475, 0]

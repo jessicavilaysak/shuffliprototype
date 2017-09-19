@@ -14,8 +14,8 @@ struct imageDataModel{
     let key : String!
     let url : String!
     let ref : FIRDatabaseReference?
-    let caption : String!
-    let dashboardApproved : Bool!
+    var caption : String!
+    var dashboardApproved : Bool!
     let creatorID: String!
     let uploadedBy: String!
     let approvedBy: String!

@@ -53,7 +53,8 @@ depends-top-level:
 - "UnicodeScalarType"
 - !private "VC_ClickImage"
 - "VC_Creator_Viewposts"
-- "imageDataModel"
+- !private "imageDataModel"
+- !private "images"
 - !private "print"
 - !private "userObj"
 depends-member:
@@ -88,9 +89,10 @@ depends-member:
 - !private ["Ps9AnyObject", "fldusername"]
 - !private ["Ps9AnyObject", "hideKeyboardWhenTappedAround"]
 - !private ["Ps9AnyObject", "imageCaption"]
-- ["Ps9AnyObject", "imageDataModel"]
+- !private ["Ps9AnyObject", "imageDataModel"]
 - !private ["Ps9AnyObject", "images"]
 - !private ["Ps9AnyObject", "imagesDv"]
+- !private ["Ps9AnyObject", "imgIndex"]
 - !private ["Ps9AnyObject", "imgKey"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedView"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -153,11 +155,11 @@ depends-member:
 - !private ["Ps9AnyObject", "white"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "count"]
-- ["Sa", "init"]
+- !private ["Sa", "init"]
 - !private ["Sa", "insert"]
 - !private ["Sa", "subscript"]
 - !private ["Ps23BidirectionalCollection", "count"]
-- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "init"]
 - !private ["Ps23BidirectionalCollection", "insert"]
 - !private ["Ps23BidirectionalCollection", "row"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
@@ -217,13 +219,14 @@ depends-member:
 - !private ["Ps7CVarArg", "fldusername"]
 - !private ["Ps7CVarArg", "hideKeyboardWhenTappedAround"]
 - !private ["Ps7CVarArg", "imageCaption"]
-- ["Ps7CVarArg", "imageDataModel"]
+- !private ["Ps7CVarArg", "imageDataModel"]
 - !private ["Ps7CVarArg", "images"]
 - !private ["Ps7CVarArg", "imagesDv"]
+- !private ["Ps7CVarArg", "imgIndex"]
 - !private ["Ps7CVarArg", "imgKey"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedView"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInTableView"]
-- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "insert"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "isNavigationBarHidden"]
@@ -281,7 +284,7 @@ depends-member:
 - !private ["Ps7CVarArg", "white"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "count"]
-- ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "init"]
 - !private ["Ps10Collection", "insert"]
 - !private ["Ps10Collection", "row"]
 - !private ["Ps10Collection", "subscript"]
@@ -318,13 +321,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "fldusername"]
 - !private ["Ps28CustomDebugStringConvertible", "hideKeyboardWhenTappedAround"]
 - !private ["Ps28CustomDebugStringConvertible", "imageCaption"]
-- ["Ps28CustomDebugStringConvertible", "imageDataModel"]
+- !private ["Ps28CustomDebugStringConvertible", "imageDataModel"]
 - !private ["Ps28CustomDebugStringConvertible", "images"]
 - !private ["Ps28CustomDebugStringConvertible", "imagesDv"]
+- !private ["Ps28CustomDebugStringConvertible", "imgIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "imgKey"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "insert"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "isNavigationBarHidden"]
@@ -386,7 +390,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "count"]
-- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "insert"]
 - !private ["Ps17CustomReflectable", "row"]
 - !private ["Ps17CustomReflectable", "subscript"]
@@ -420,13 +424,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "fldusername"]
 - !private ["Ps23CustomStringConvertible", "hideKeyboardWhenTappedAround"]
 - !private ["Ps23CustomStringConvertible", "imageCaption"]
-- ["Ps23CustomStringConvertible", "imageDataModel"]
+- !private ["Ps23CustomStringConvertible", "imageDataModel"]
 - !private ["Ps23CustomStringConvertible", "images"]
 - !private ["Ps23CustomStringConvertible", "imagesDv"]
+- !private ["Ps23CustomStringConvertible", "imgIndex"]
 - !private ["Ps23CustomStringConvertible", "imgKey"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
-- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "insert"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "isNavigationBarHidden"]
@@ -514,9 +519,10 @@ depends-member:
 - !private ["Ps9Equatable", "gray"]
 - !private ["Ps9Equatable", "hideKeyboardWhenTappedAround"]
 - !private ["Ps9Equatable", "imageCaption"]
-- ["Ps9Equatable", "imageDataModel"]
+- !private ["Ps9Equatable", "imageDataModel"]
 - !private ["Ps9Equatable", "images"]
 - !private ["Ps9Equatable", "imagesDv"]
+- !private ["Ps9Equatable", "imgIndex"]
 - !private ["Ps9Equatable", "imgKey"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
@@ -578,7 +584,7 @@ depends-member:
 - !private ["Ps9Equatable", "white"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
-- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "insert"]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
@@ -628,9 +634,10 @@ depends-member:
 - !private ["Ps8Hashable", "gray"]
 - !private ["Ps8Hashable", "hideKeyboardWhenTappedAround"]
 - !private ["Ps8Hashable", "imageCaption"]
-- ["Ps8Hashable", "imageDataModel"]
+- !private ["Ps8Hashable", "imageDataModel"]
 - !private ["Ps8Hashable", "images"]
 - !private ["Ps8Hashable", "imagesDv"]
+- !private ["Ps8Hashable", "imgIndex"]
 - !private ["Ps8Hashable", "imgKey"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -696,7 +703,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "count"]
-- ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "init"]
 - !private ["Ps17MutableCollection", "insert"]
 - !private ["Ps17MutableCollection", "row"]
 - !private ["Ps17MutableCollection", "subscript"]
@@ -722,9 +729,10 @@ depends-member:
 - !private ["PSo8NSCoding", "fldusername"]
 - !private ["PSo8NSCoding", "hideKeyboardWhenTappedAround"]
 - !private ["PSo8NSCoding", "imageCaption"]
-- ["PSo8NSCoding", "imageDataModel"]
+- !private ["PSo8NSCoding", "imageDataModel"]
 - !private ["PSo8NSCoding", "images"]
 - !private ["PSo8NSCoding", "imagesDv"]
+- !private ["PSo8NSCoding", "imgIndex"]
 - !private ["PSo8NSCoding", "imgKey"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedView"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
@@ -798,9 +806,10 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "fldcompany"]
 - !private ["PSo26NSExtensionRequestHandling", "fldusername"]
 - !private ["PSo26NSExtensionRequestHandling", "hideKeyboardWhenTappedAround"]
-- ["PSo26NSExtensionRequestHandling", "imageDataModel"]
+- !private ["PSo26NSExtensionRequestHandling", "imageDataModel"]
 - !private ["PSo26NSExtensionRequestHandling", "images"]
 - !private ["PSo26NSExtensionRequestHandling", "imagesDv"]
+- !private ["PSo26NSExtensionRequestHandling", "imgIndex"]
 - !private ["PSo26NSExtensionRequestHandling", "imgKey"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
@@ -881,9 +890,10 @@ depends-member:
 - ["CSo8NSObject", "fldusername"]
 - !private ["CSo8NSObject", "hideKeyboardWhenTappedAround"]
 - !private ["CSo8NSObject", "imageCaption"]
-- ["CSo8NSObject", "imageDataModel"]
-- ["CSo8NSObject", "images"]
+- !private ["CSo8NSObject", "imageDataModel"]
+- !private ["CSo8NSObject", "images"]
 - !private ["CSo8NSObject", "imagesDv"]
+- !private ["CSo8NSObject", "imgIndex"]
 - !private ["CSo8NSObject", "imgKey"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -971,9 +981,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "fldusername"]
 - !private ["PSo16NSObjectProtocol", "hideKeyboardWhenTappedAround"]
 - !private ["PSo16NSObjectProtocol", "imageCaption"]
-- ["PSo16NSObjectProtocol", "imageDataModel"]
+- !private ["PSo16NSObjectProtocol", "imageDataModel"]
 - !private ["PSo16NSObjectProtocol", "images"]
 - !private ["PSo16NSObjectProtocol", "imagesDv"]
+- !private ["PSo16NSObjectProtocol", "imgIndex"]
 - !private ["PSo16NSObjectProtocol", "imgKey"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedView"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
@@ -1038,12 +1049,12 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "white"]
 - !private ["CSo8NSString", "init"]
 - !private ["Ps22RandomAccessCollection", "count"]
-- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "init"]
 - !private ["Ps22RandomAccessCollection", "insert"]
 - !private ["Ps22RandomAccessCollection", "row"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
-- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "init"]
 - !private ["Ps26RangeReplaceableCollection", "insert"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps16RawRepresentable", "gray"]
@@ -1051,7 +1062,7 @@ depends-member:
 - !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["Ps8Sequence", "count"]
-- ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "insert"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "subscript"]
@@ -1107,9 +1118,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "fldusername"]
 - !private ["PSo21UIAppearanceContainer", "hideKeyboardWhenTappedAround"]
 - !private ["PSo21UIAppearanceContainer", "imageCaption"]
-- ["PSo21UIAppearanceContainer", "imageDataModel"]
+- !private ["PSo21UIAppearanceContainer", "imageDataModel"]
 - !private ["PSo21UIAppearanceContainer", "images"]
 - !private ["PSo21UIAppearanceContainer", "imagesDv"]
+- !private ["PSo21UIAppearanceContainer", "imgIndex"]
 - !private ["PSo21UIAppearanceContainer", "imgKey"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedView"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
@@ -1176,9 +1188,10 @@ depends-member:
 - !private ["PSo18UIContentContainer", "fldcompany"]
 - !private ["PSo18UIContentContainer", "fldusername"]
 - !private ["PSo18UIContentContainer", "hideKeyboardWhenTappedAround"]
-- ["PSo18UIContentContainer", "imageDataModel"]
+- !private ["PSo18UIContentContainer", "imageDataModel"]
 - !private ["PSo18UIContentContainer", "images"]
 - !private ["PSo18UIContentContainer", "imagesDv"]
+- !private ["PSo18UIContentContainer", "imgIndex"]
 - !private ["PSo18UIContentContainer", "imgKey"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
@@ -1264,9 +1277,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "fldusername"]
 - !private ["PSo18UIFocusEnvironment", "hideKeyboardWhenTappedAround"]
 - !private ["PSo18UIFocusEnvironment", "imageCaption"]
-- ["PSo18UIFocusEnvironment", "imageDataModel"]
+- !private ["PSo18UIFocusEnvironment", "imageDataModel"]
 - !private ["PSo18UIFocusEnvironment", "images"]
 - !private ["PSo18UIFocusEnvironment", "imagesDv"]
+- !private ["PSo18UIFocusEnvironment", "imgIndex"]
 - !private ["PSo18UIFocusEnvironment", "imgKey"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
@@ -1370,9 +1384,10 @@ depends-member:
 - ["CSo11UIResponder", "fldusername"]
 - !private ["CSo11UIResponder", "hideKeyboardWhenTappedAround"]
 - !private ["CSo11UIResponder", "imageCaption"]
-- ["CSo11UIResponder", "imageDataModel"]
-- ["CSo11UIResponder", "images"]
+- !private ["CSo11UIResponder", "imageDataModel"]
+- !private ["CSo11UIResponder", "images"]
 - !private ["CSo11UIResponder", "imagesDv"]
+- !private ["CSo11UIResponder", "imgIndex"]
 - !private ["CSo11UIResponder", "imgKey"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
@@ -1440,9 +1455,10 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "fldusername"]
 - !private ["PSo30UIResponderStandardEditActions", "hideKeyboardWhenTappedAround"]
 - !private ["PSo30UIResponderStandardEditActions", "imageCaption"]
-- ["PSo30UIResponderStandardEditActions", "imageDataModel"]
+- !private ["PSo30UIResponderStandardEditActions", "imageDataModel"]
 - !private ["PSo30UIResponderStandardEditActions", "images"]
 - !private ["PSo30UIResponderStandardEditActions", "imagesDv"]
+- !private ["PSo30UIResponderStandardEditActions", "imgIndex"]
 - !private ["PSo30UIResponderStandardEditActions", "imgKey"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedView"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
@@ -1506,7 +1522,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "fldcompany"]
 - !private ["PSo20UIScrollViewDelegate", "fldusername"]
 - !private ["PSo20UIScrollViewDelegate", "hideKeyboardWhenTappedAround"]
-- ["PSo20UIScrollViewDelegate", "imageDataModel"]
+- !private ["PSo20UIScrollViewDelegate", "imageDataModel"]
 - !private ["PSo20UIScrollViewDelegate", "images"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1553,9 +1569,10 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "fldcompany"]
 - !private ["PSo16UIStateRestoring", "fldusername"]
 - !private ["PSo16UIStateRestoring", "hideKeyboardWhenTappedAround"]
-- ["PSo16UIStateRestoring", "imageDataModel"]
+- !private ["PSo16UIStateRestoring", "imageDataModel"]
 - !private ["PSo16UIStateRestoring", "images"]
 - !private ["PSo16UIStateRestoring", "imagesDv"]
+- !private ["PSo16UIStateRestoring", "imgIndex"]
 - !private ["PSo16UIStateRestoring", "imgKey"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
@@ -1619,7 +1636,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "fldcompany"]
 - !private ["PSo21UITableViewDataSource", "fldusername"]
 - !private ["PSo21UITableViewDataSource", "hideKeyboardWhenTappedAround"]
-- ["PSo21UITableViewDataSource", "imageDataModel"]
+- !private ["PSo21UITableViewDataSource", "imageDataModel"]
 - !private ["PSo21UITableViewDataSource", "images"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
@@ -1663,7 +1680,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "fldcompany"]
 - !private ["PSo19UITableViewDelegate", "fldusername"]
 - !private ["PSo19UITableViewDelegate", "hideKeyboardWhenTappedAround"]
-- ["PSo19UITableViewDelegate", "imageDataModel"]
+- !private ["PSo19UITableViewDelegate", "imageDataModel"]
 - !private ["PSo19UITableViewDelegate", "images"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1714,9 +1731,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "fldusername"]
 - !private ["PSo18UITraitEnvironment", "hideKeyboardWhenTappedAround"]
 - !private ["PSo18UITraitEnvironment", "imageCaption"]
-- ["PSo18UITraitEnvironment", "imageDataModel"]
+- !private ["PSo18UITraitEnvironment", "imageDataModel"]
 - !private ["PSo18UITraitEnvironment", "images"]
 - !private ["PSo18UITraitEnvironment", "imagesDv"]
+- !private ["PSo18UITraitEnvironment", "imgIndex"]
 - !private ["PSo18UITraitEnvironment", "imgKey"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
@@ -1805,9 +1823,10 @@ depends-member:
 - ["CSo16UIViewController", "fldcompany"]
 - ["CSo16UIViewController", "fldusername"]
 - !private ["CSo16UIViewController", "hideKeyboardWhenTappedAround"]
-- ["CSo16UIViewController", "imageDataModel"]
-- ["CSo16UIViewController", "images"]
+- !private ["CSo16UIViewController", "imageDataModel"]
+- !private ["CSo16UIViewController", "images"]
 - !private ["CSo16UIViewController", "imagesDv"]
+- !private ["CSo16UIViewController", "imgIndex"]
 - !private ["CSo16UIViewController", "imgKey"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
@@ -1858,6 +1877,7 @@ depends-member:
 - !private ["C4Test13VC_ClickImage", "captionDv"]
 - !private ["C4Test13VC_ClickImage", "dashboardApproved"]
 - !private ["C4Test13VC_ClickImage", "imagesDv"]
+- !private ["C4Test13VC_ClickImage", "imgIndex"]
 - !private ["C4Test13VC_ClickImage", "imgKey"]
 - ["C4Test20VC_Creator_Viewposts", "Bool"]
 - !private ["C4Test20VC_Creator_Viewposts", "CGSize"]
@@ -1886,8 +1906,8 @@ depends-member:
 - ["C4Test20VC_Creator_Viewposts", "fldcompany"]
 - ["C4Test20VC_Creator_Viewposts", "fldusername"]
 - !private ["C4Test20VC_Creator_Viewposts", "hideKeyboardWhenTappedAround"]
-- ["C4Test20VC_Creator_Viewposts", "imageDataModel"]
-- ["C4Test20VC_Creator_Viewposts", "images"]
+- !private ["C4Test20VC_Creator_Viewposts", "imageDataModel"]
+- !private ["C4Test20VC_Creator_Viewposts", "images"]
 - ["C4Test20VC_Creator_Viewposts", "indexPathForPreferredFocusedView"]
 - ["C4Test20VC_Creator_Viewposts", "indexPathForPreferredFocusedViewInTableView"]
 - ["C4Test20VC_Creator_Viewposts", "init"]
@@ -1922,11 +1942,11 @@ depends-member:
 - ["C4Test20VC_Creator_Viewposts", "viewForZoomingInScrollView"]
 - ["C4Test20VC_Creator_Viewposts", "viewposts"]
 - !private ["Ps14_ArrayProtocol", "count"]
-- ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "init"]
 - !private ["Ps14_ArrayProtocol", "insert"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps23_BidirectionalIndexable", "count"]
-- ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps23_BidirectionalIndexable", "init"]
 - !private ["Ps23_BidirectionalIndexable", "insert"]
 - !private ["Ps23_BidirectionalIndexable", "row"]
 - !private ["Ps23_BidirectionalIndexable", "subscript"]
@@ -1944,7 +1964,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
-- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps24_DestructorSafeContainer", "insert"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
@@ -1989,9 +2009,10 @@ depends-member:
 - !private ["Ps9_Hashable", "gray"]
 - !private ["Ps9_Hashable", "hideKeyboardWhenTappedAround"]
 - !private ["Ps9_Hashable", "imageCaption"]
-- ["Ps9_Hashable", "imageDataModel"]
+- !private ["Ps9_Hashable", "imageDataModel"]
 - !private ["Ps9_Hashable", "images"]
 - !private ["Ps9_Hashable", "imagesDv"]
+- !private ["Ps9_Hashable", "imgIndex"]
 - !private ["Ps9_Hashable", "imgKey"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -2053,33 +2074,33 @@ depends-member:
 - !private ["Ps9_Hashable", "white"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps10_Indexable", "count"]
-- ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "init"]
 - !private ["Ps10_Indexable", "insert"]
 - !private ["Ps10_Indexable", "row"]
 - !private ["Ps10_Indexable", "subscript"]
 - !private ["Ps14_IndexableBase", "count"]
-- ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "init"]
 - !private ["Ps14_IndexableBase", "insert"]
 - !private ["Ps14_IndexableBase", "row"]
 - !private ["Ps14_IndexableBase", "subscript"]
 - !private ["Ps17_MutableIndexable", "count"]
-- ["Ps17_MutableIndexable", "init"]
+- !private ["Ps17_MutableIndexable", "init"]
 - !private ["Ps17_MutableIndexable", "insert"]
 - !private ["Ps17_MutableIndexable", "row"]
 - !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
-- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "insert"]
 - !private ["Ps21_ObjectiveCBridgeable", "row"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps22_RandomAccessIndexable", "count"]
-- ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "init"]
 - !private ["Ps22_RandomAccessIndexable", "insert"]
 - !private ["Ps22_RandomAccessIndexable", "row"]
 - !private ["Ps22_RandomAccessIndexable", "subscript"]
 - !private ["Ps26_RangeReplaceableIndexable", "count"]
-- ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "init"]
 - !private ["Ps26_RangeReplaceableIndexable", "insert"]
 - !private ["Ps26_RangeReplaceableIndexable", "subscript"]
 - !private ["V4Test14imageDataModel", "caption"]
@@ -2089,23 +2110,23 @@ depends-member:
 - !private ["V4Test14imageDataModel", "url"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sa"
-- "Ps23BidirectionalCollection"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
 - !private "Sb"
 - !private "CSo7CALayer"
 - !private "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
 - !private "VSC6CGSize"
 - "Ps7CVarArg"
-- "Ps10Collection"
+- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - !private "C4Test17CustomCellCreator"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
-- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps26ExpressibleByStringLiteral"
@@ -2120,7 +2141,7 @@ depends-nominal:
 - !private "V10Foundation9IndexPath"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
-- "Ps17MutableCollection"
+- !private "Ps17MutableCollection"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -2129,11 +2150,11 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "Ps22RandomAccessCollection"
-- "Ps26RangeReplaceableCollection"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
 - !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
-- "Ps8Sequence"
+- !private "Ps8Sequence"
 - !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -2175,10 +2196,10 @@ depends-nominal:
 - !private "C4Test10UserObject"
 - !private "C4Test13VC_ClickImage"
 - "C4Test20VC_Creator_Viewposts"
-- "Ps14_ArrayProtocol"
-- "Ps23_BidirectionalIndexable"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
-- "Ps24_DestructorSafeContainer"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
@@ -2190,12 +2211,12 @@ depends-nominal:
 - !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
-- "Ps10_Indexable"
-- "Ps14_IndexableBase"
-- "Ps17_MutableIndexable"
-- "Ps21_ObjectiveCBridgeable"
-- "Ps22_RandomAccessIndexable"
-- "Ps26_RangeReplaceableIndexable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 - !private "V4Test14imageDataModel"
 depends-dynamic-lookup:
 depends-external:
@@ -2308,4 +2329,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "c795c1f79368ec9cec2dcc4b045bbe04"
+interface-hash: "4b25f5878194f922148ac92cdb6b0769"
