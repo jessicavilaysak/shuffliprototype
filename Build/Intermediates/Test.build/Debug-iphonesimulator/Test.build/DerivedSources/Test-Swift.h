@@ -178,6 +178,7 @@ SWIFT_CLASS("_TtC4Test17CustomCellCreator")
 @interface CustomCellCreator : UITableViewCell
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified photo;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified imageCaption;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified approveStatus;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -327,21 +328,16 @@ SWIFT_CLASS("_TtC4Test6Toucan")
 - (void)dismissKeyboard;
 @end
 
-@class UICollectionView;
 @class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
-@interface VC_ACreator_HomePage : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+@interface VC_ACreator_HomePage : UIViewController <UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImage;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldcompany;
-@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
 - (void)deleteUserButtonWithSender:(UITapGestureRecognizer * _Nonnull)sender;
-@property (nonatomic, strong) IBOutlet UICollectionView * _Null_unspecified viewusers;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)logout:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -368,11 +364,12 @@ SWIFT_CLASS("_TtC4Test13VC_ClickImage")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_delete_lvl2;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified imgCaption;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
-@property (nonatomic, copy) NSString * _Nullable imagesDv;
-@property (nonatomic, copy) NSString * _Nullable captionDv;
-@property (nonatomic, copy) NSString * _Nullable imgKey;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (void)performInitialisation;
 - (void)viewWillLayoutSubviews;
+- (IBAction)deletePost:(id _Nonnull)sender;
+- (IBAction)approvePost:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -411,10 +408,12 @@ SWIFT_CLASS("_TtC4Test17VC_Creator_Signin")
 @end
 
 @class UITableView;
+@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @interface VC_Creator_Viewposts : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified viewposts;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified logOut;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImage;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldcompany;
@@ -422,11 +421,12 @@ SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 - (void)viewDidLoad;
 - (void)loadImagesfromDb;
 - (void)viewDidAppear:(BOOL)animated;
-- (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)logout:(id _Nonnull)sender;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -436,8 +436,6 @@ SWIFT_CLASS("_TtC4Test14VC_EditCaption")
 @interface VC_EditCaption : UIViewController
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified caption;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified buttonUpdate;
-@property (nonatomic, copy) NSString * _Null_unspecified lCaption;
-@property (nonatomic, copy) NSString * _Null_unspecified imgKey;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
 - (void)didReceiveMemoryWarning;

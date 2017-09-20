@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>485662948755-93t5b0i8s74shp951mlpraf505v9bp51.apps.googleusercontent.com</string>
+	<string>654233481843-mplu9kenisd3abbp4pchnep2gcd86fce.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.485662948755-93t5b0i8s74shp951mlpraf505v9bp51</string>
+	<string>com.googleusercontent.apps.654233481843-mplu9kenisd3abbp4pchnep2gcd86fce</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCOAja5dpWRzQFLpfGl7P3ON0gPaZg7Omg</string>
+	<string>AIzaSyC1dNabnxsTkUyyI9vxBxxKmE8g9HkzOrg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>485662948755</string>
+	<string>654233481843</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.shuffli.Test1</string>
+	<string>com.shuffli.ios</string>
 	<key>PROJECT_ID</key>
-	<string>shufflidev</string>
+	<string>shuffli-53529</string>
 	<key>STORAGE_BUCKET</key>
-	<string>shufflidev.appspot.com</string>
+	<string>shuffli-53529.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:485662948755:ios:a8879e8efc930d7a</string>
+	<string>1:654233481843:ios:cf08c3c94af8891d</string>
 	<key>DATABASE_URL</key>
-	<string>https://shufflidev.firebaseio.com</string>
+	<string>https://shuffli-53529.firebaseio.com</string>
 </dict>
 </plist>
