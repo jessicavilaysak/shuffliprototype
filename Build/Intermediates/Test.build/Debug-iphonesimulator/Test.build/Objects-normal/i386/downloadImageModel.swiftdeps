@@ -1,6 +1,7 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "imageDataModel"
+- "images"
 provides-nominal:
 - "V4Test14imageDataModel"
 provides-member:
@@ -18,6 +19,7 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "imageDataModel"
+- "images"
 - !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
@@ -25,14 +27,17 @@ depends-member:
 - !private ["Ps9AnyObject", "ref"]
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "value"]
+- ["Sa", "init"]
+- ["Ps23BidirectionalCollection", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "key"]
 - !private ["Ps7CVarArg", "ref"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "value"]
+- ["Ps10Collection", "init"]
 - !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "key"]
 - !private ["Ps28CustomDebugStringConvertible", "ref"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -40,10 +45,10 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
-- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "key"]
 - !private ["Ps23CustomStringConvertible", "ref"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -54,6 +59,7 @@ depends-member:
 - !private ["Ps9Equatable", "ref"]
 - !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "value"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
@@ -71,6 +77,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
+- ["Ps17MutableCollection", "init"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo9NSCopying", "init"]
@@ -91,10 +98,16 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "subscript"]
 - !private ["CSo8NSString", "init"]
+- ["Ps22RandomAccessCollection", "init"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "subscript"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- ["Ps14_ArrayProtocol", "init"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -108,8 +121,13 @@ depends-member:
 - !private ["Ps9_Hashable", "ref"]
 - !private ["Ps9_Hashable", "subscript"]
 - !private ["Ps9_Hashable", "value"]
+- ["Ps10_Indexable", "init"]
+- ["Ps14_IndexableBase", "init"]
+- ["Ps17_MutableIndexable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
 - ["V4Test14imageDataModel", "Bool"]
 - ["V4Test14imageDataModel", "FIRDataSnapshot"]
 - ["V4Test14imageDataModel", "FIRDatabaseReference"]
@@ -127,14 +145,18 @@ depends-member:
 - ["V4Test14imageDataModel", "url"]
 depends-nominal:
 - !private "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
 - !private "Sb"
-- !private "Ps7CVarArg"
+- "Ps7CVarArg"
+- "Ps10Collection"
 - !private "Ps10Comparable"
-- !private "Ps28CustomDebugStringConvertible"
+- "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
-- !private "Ps23CustomStringConvertible"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
 - !private "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
@@ -144,6 +166,7 @@ depends-nominal:
 - !private "Ps8Hashable"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- "Ps17MutableCollection"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo12NSDictionary"
@@ -153,10 +176,15 @@ depends-nominal:
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- !private "Ps8Sequence"
+- "Ps22RandomAccessCollection"
+- "Ps26RangeReplaceableCollection"
+- "Ps8Sequence"
 - !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
+- "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
+- "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
@@ -165,7 +193,12 @@ depends-nominal:
 - !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - !private "Ps9_Hashable"
-- !private "Ps21_ObjectiveCBridgeable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
 - "V4Test14imageDataModel"
 depends-dynamic-lookup:
 depends-external:
@@ -278,4 +311,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "9a57c5515e7cc5b23fabb0992bebb01b"
+interface-hash: "24dd00b20932f277b5987823b1f53d60"

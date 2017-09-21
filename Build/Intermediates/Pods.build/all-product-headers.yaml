@@ -449,6 +449,38 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "UITextView+Placeholder-umbrella.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/UITextView+Placeholder/UITextView+Placeholder-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITextView+Placeholder.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/UITextView+Placeholder/Sources/UITextView+Placeholder.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITextView_Placeholder-Swift.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView_Placeholder-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/UITextView+Placeholder.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/libwebp/libwebp.framework/Headers",
       'contents': [
         {

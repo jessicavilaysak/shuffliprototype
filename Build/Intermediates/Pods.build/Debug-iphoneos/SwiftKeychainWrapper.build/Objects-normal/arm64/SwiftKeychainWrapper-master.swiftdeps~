@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "eaf35bb7bd9ccadc487e12801c3617bd"
+build_time: [559275872, 838620000]
+inputs:
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainItemAccessibility.swift": [556251109, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainWrapper.swift": [556251109, 0]

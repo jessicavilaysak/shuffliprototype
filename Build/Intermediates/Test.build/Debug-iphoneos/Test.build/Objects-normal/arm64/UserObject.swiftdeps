@@ -2,7 +2,6 @@
 provides-top-level:
 - "UserObject"
 - "userObj"
-- "images"
 provides-nominal:
 - "C4Test10UserObject"
 provides-member:
@@ -21,8 +20,6 @@ depends-top-level:
 - !private "UITapGestureRecognizer"
 - "UIViewController"
 - "UserObject"
-- "imageDataModel"
-- "images"
 - "userObj"
 depends-member:
 - !private ["Ps9AnyObject", "UITapGestureRecognizer"]
@@ -37,8 +34,6 @@ depends-member:
 - !private ["Ps9AnyObject", "permissionToManageUsers"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", ""]
-- ["Sa", "init"]
-- ["Ps23BidirectionalCollection", "init"]
 - !private ["PSo15CALayerDelegate", "addGestureRecognizer"]
 - !private ["PSo15CALayerDelegate", "endEditing"]
 - !private ["Ps7CVarArg", "UITapGestureRecognizer"]
@@ -47,25 +42,23 @@ depends-member:
 - !private ["Ps7CVarArg", "cancelsTouchesInView"]
 - !private ["Ps7CVarArg", "dismissKeyboard"]
 - !private ["Ps7CVarArg", "endEditing"]
-- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "view"]
-- ["Ps10Collection", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "UIViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "cancelsTouchesInView"]
 - !private ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
-- ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "UIViewController"]
 - !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "cancelsTouchesInView"]
 - !private ["Ps23CustomStringConvertible", "dismissKeyboard"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
-- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps9Equatable", "UITapGestureRecognizer"]
 - !private ["Ps9Equatable", "UIViewController"]
@@ -75,7 +68,6 @@ depends-member:
 - !private ["Ps9Equatable", "endEditing"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "view"]
-- ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps8Hashable", "UITapGestureRecognizer"]
 - !private ["Ps8Hashable", "UIViewController"]
 - !private ["Ps8Hashable", "addGestureRecognizer"]
@@ -84,7 +76,6 @@ depends-member:
 - !private ["Ps8Hashable", "endEditing"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "view"]
-- ["Ps17MutableCollection", "init"]
 - !private ["PSo8NSCoding", "UITapGestureRecognizer"]
 - !private ["PSo8NSCoding", "UIViewController"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
@@ -112,9 +103,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "endEditing"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "view"]
-- ["Ps22RandomAccessCollection", "init"]
-- ["Ps26RangeReplaceableCollection", "init"]
-- ["Ps8Sequence", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
 - !private ["PSo29UIAccessibilityIdentification", "endEditing"]
 - !private ["PSo12UIAppearance", "addGestureRecognizer"]
@@ -187,11 +175,8 @@ depends-member:
 - ["C4Test10UserObject", "permissionToManageUsers"]
 - ["C4Test10UserObject", "uid"]
 - ["C4Test10UserObject", "username"]
-- ["Ps14_ArrayProtocol", "init"]
-- ["Ps23_BidirectionalIndexable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addGestureRecognizer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endEditing"]
-- ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps9_Hashable", "UITapGestureRecognizer"]
 - !private ["Ps9_Hashable", "UIViewController"]
 - !private ["Ps9_Hashable", "addGestureRecognizer"]
@@ -200,33 +185,18 @@ depends-member:
 - !private ["Ps9_Hashable", "endEditing"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "view"]
-- ["Ps10_Indexable", "init"]
-- ["Ps14_IndexableBase", "init"]
-- ["Ps17_MutableIndexable", "init"]
-- ["Ps21_ObjectiveCBridgeable", "init"]
-- ["Ps22_RandomAccessIndexable", "init"]
-- ["Ps26_RangeReplaceableIndexable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sa"
-- "Ps23BidirectionalCollection"
 - !private "PSo15CALayerDelegate"
-- "Ps7CVarArg"
-- "Ps10Collection"
-- "Ps28CustomDebugStringConvertible"
-- "Ps17CustomReflectable"
-- "Ps23CustomStringConvertible"
+- !private "Ps7CVarArg"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
 - !private "Ps9Equatable"
-- "Ps25ExpressibleByArrayLiteral"
 - !private "Ps8Hashable"
-- "Ps17MutableCollection"
 - !private "PSo8NSCoding"
 - !private "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
-- "Ps22RandomAccessCollection"
-- "Ps26RangeReplaceableCollection"
-- "Ps8Sequence"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - !private "PSo21UIAppearanceContainer"
@@ -244,17 +214,8 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - "C4Test10UserObject"
-- "Ps14_ArrayProtocol"
-- "Ps23_BidirectionalIndexable"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
-- "Ps24_DestructorSafeContainer"
 - !private "Ps9_Hashable"
-- "Ps10_Indexable"
-- "Ps14_IndexableBase"
-- "Ps17_MutableIndexable"
-- "Ps21_ObjectiveCBridgeable"
-- "Ps22_RandomAccessIndexable"
-- "Ps26_RangeReplaceableIndexable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
@@ -283,6 +244,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
@@ -325,12 +287,14 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Test-Bridging-Header.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
@@ -364,7 +328,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "a1a2833483b4a705e96e20ab77a66607"
+interface-hash: "2f99fc2117094efe29dede4f55ff9382"

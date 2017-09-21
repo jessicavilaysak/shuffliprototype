@@ -10,8 +10,6 @@ provides-dynamic-lookup:
 - "buttonUpdate"
 - "caption"
 - "didReceiveMemoryWarning"
-- "imgKey"
-- "lCaption"
 - "viewDidLoad"
 - "viewWillLayoutSubviews"
 depends-top-level:
@@ -21,16 +19,18 @@ depends-top-level:
 - !private "CastingPrecedence"
 - !private "Dictionary"
 - !private "FIRDatabase"
+- "Int"
 - !private "NSDictionary"
 - !private "NSMakeRange"
 - !private "SVProgressHUD"
-- "String"
+- !private "String"
 - !private "StringLiteralType"
 - "UIButton"
 - "UITextView"
 - "UIViewController"
 - !private "UnicodeScalarType"
 - "VC_EditCaption"
+- !private "images"
 - !private "print"
 - !private "userObj"
 depends-member:
@@ -48,10 +48,10 @@ depends-member:
 - !private ["Ps9AnyObject", "dismiss"]
 - !private ["Ps9AnyObject", "exists"]
 - !private ["Ps9AnyObject", "hideKeyboardWhenTappedAround"]
-- !private ["Ps9AnyObject", "imgKey"]
+- !private ["Ps9AnyObject", "images"]
+- !private ["Ps9AnyObject", "imgIndex"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isAdmin"]
-- !private ["Ps9AnyObject", "lCaption"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "observeSingleEvent"]
 - !private ["Ps9AnyObject", "print"]
@@ -67,6 +67,8 @@ depends-member:
 - !private ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "viewWillLayoutSubviews"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "cornerRadius"]
 - !private ["PSo15CALayerDelegate", "dismiss"]
@@ -87,9 +89,9 @@ depends-member:
 - !private ["Ps7CVarArg", "dismiss"]
 - !private ["Ps7CVarArg", "exists"]
 - !private ["Ps7CVarArg", "hideKeyboardWhenTappedAround"]
-- !private ["Ps7CVarArg", "imgKey"]
+- !private ["Ps7CVarArg", "images"]
+- !private ["Ps7CVarArg", "imgIndex"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "lCaption"]
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "observeSingleEvent"]
 - !private ["Ps7CVarArg", "print"]
@@ -104,6 +106,7 @@ depends-member:
 - !private ["Ps7CVarArg", "viewDidLoad"]
 - !private ["Ps7CVarArg", "viewWillLayoutSubviews"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "NSMakeRange"]
@@ -117,9 +120,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
 - !private ["Ps28CustomDebugStringConvertible", "exists"]
 - !private ["Ps28CustomDebugStringConvertible", "hideKeyboardWhenTappedAround"]
-- !private ["Ps28CustomDebugStringConvertible", "imgKey"]
+- !private ["Ps28CustomDebugStringConvertible", "images"]
+- !private ["Ps28CustomDebugStringConvertible", "imgIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "lCaption"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "observeSingleEvent"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -152,9 +155,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dismiss"]
 - !private ["Ps23CustomStringConvertible", "exists"]
 - !private ["Ps23CustomStringConvertible", "hideKeyboardWhenTappedAround"]
-- !private ["Ps23CustomStringConvertible", "imgKey"]
+- !private ["Ps23CustomStringConvertible", "images"]
+- !private ["Ps23CustomStringConvertible", "imgIndex"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "lCaption"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "observeSingleEvent"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -182,9 +185,9 @@ depends-member:
 - !private ["Ps9Equatable", "dismiss"]
 - !private ["Ps9Equatable", "exists"]
 - !private ["Ps9Equatable", "hideKeyboardWhenTappedAround"]
-- !private ["Ps9Equatable", "imgKey"]
+- !private ["Ps9Equatable", "images"]
+- !private ["Ps9Equatable", "imgIndex"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "lCaption"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "observeSingleEvent"]
 - !private ["Ps9Equatable", "print"]
@@ -199,6 +202,7 @@ depends-member:
 - !private ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "viewWillLayoutSubviews"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
@@ -228,9 +232,9 @@ depends-member:
 - !private ["Ps8Hashable", "dismiss"]
 - !private ["Ps8Hashable", "exists"]
 - !private ["Ps8Hashable", "hideKeyboardWhenTappedAround"]
-- !private ["Ps8Hashable", "imgKey"]
+- !private ["Ps8Hashable", "images"]
+- !private ["Ps8Hashable", "imgIndex"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "lCaption"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "observeSingleEvent"]
 - !private ["Ps8Hashable", "print"]
@@ -248,6 +252,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "subscript"]
 - !private ["PSo8NSCoding", "FIRDatabase"]
 - !private ["PSo8NSCoding", "NSMakeRange"]
 - !private ["PSo8NSCoding", "SVProgressHUD"]
@@ -257,9 +262,9 @@ depends-member:
 - !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "dismiss"]
 - !private ["PSo8NSCoding", "hideKeyboardWhenTappedAround"]
-- !private ["PSo8NSCoding", "imgKey"]
+- !private ["PSo8NSCoding", "images"]
+- !private ["PSo8NSCoding", "imgIndex"]
 - !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "lCaption"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "scrollRangeToVisible"]
@@ -280,9 +285,9 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "caption"]
 - !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "hideKeyboardWhenTappedAround"]
-- !private ["PSo26NSExtensionRequestHandling", "imgKey"]
+- !private ["PSo26NSExtensionRequestHandling", "images"]
+- !private ["PSo26NSExtensionRequestHandling", "imgIndex"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "lCaption"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "userObj"]
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
@@ -292,10 +297,11 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "subscript"]
 - !private ["CSo8NSObject", "FIRDatabase"]
+- ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSMakeRange"]
 - !private ["CSo8NSObject", "SVProgressHUD"]
-- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UITextView"]
 - ["CSo8NSObject", "btnUpdate"]
@@ -308,9 +314,9 @@ depends-member:
 - !private ["CSo8NSObject", "dismiss"]
 - !private ["CSo8NSObject", "exists"]
 - !private ["CSo8NSObject", "hideKeyboardWhenTappedAround"]
-- ["CSo8NSObject", "imgKey"]
+- !private ["CSo8NSObject", "images"]
+- ["CSo8NSObject", "imgIndex"]
 - ["CSo8NSObject", "init"]
-- ["CSo8NSObject", "lCaption"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "observeSingleEvent"]
 - !private ["CSo8NSObject", "print"]
@@ -336,9 +342,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dismiss"]
 - !private ["PSo16NSObjectProtocol", "exists"]
 - !private ["PSo16NSObjectProtocol", "hideKeyboardWhenTappedAround"]
-- !private ["PSo16NSObjectProtocol", "imgKey"]
+- !private ["PSo16NSObjectProtocol", "images"]
+- !private ["PSo16NSObjectProtocol", "imgIndex"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "lCaption"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "observeSingleEvent"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -356,6 +362,8 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "subscript"]
 - !private ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps16RawRepresentable", "value"]
 - !private ["CSo13SVProgressHUD", "dismiss"]
 - !private ["CSo13SVProgressHUD", "showSuccess"]
@@ -381,9 +389,9 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "dismiss"]
 - !private ["PSo21UIAppearanceContainer", "hideKeyboardWhenTappedAround"]
-- !private ["PSo21UIAppearanceContainer", "imgKey"]
+- !private ["PSo21UIAppearanceContainer", "images"]
+- !private ["PSo21UIAppearanceContainer", "imgIndex"]
 - !private ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "lCaption"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "scrollRangeToVisible"]
@@ -401,9 +409,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "caption"]
 - !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "hideKeyboardWhenTappedAround"]
-- !private ["PSo18UIContentContainer", "imgKey"]
+- !private ["PSo18UIContentContainer", "images"]
+- !private ["PSo18UIContentContainer", "imgIndex"]
 - !private ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "lCaption"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "userObj"]
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
@@ -431,9 +439,9 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "dismiss"]
 - !private ["PSo18UIFocusEnvironment", "hideKeyboardWhenTappedAround"]
-- !private ["PSo18UIFocusEnvironment", "imgKey"]
+- !private ["PSo18UIFocusEnvironment", "images"]
+- !private ["PSo18UIFocusEnvironment", "imgIndex"]
 - !private ["PSo18UIFocusEnvironment", "init"]
-- !private ["PSo18UIFocusEnvironment", "lCaption"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "scrollRangeToVisible"]
@@ -452,10 +460,11 @@ depends-member:
 - !private ["PSo10UIKeyInput", "scrollRangeToVisible"]
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo11UIResponder", "FIRDatabase"]
+- ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSMakeRange"]
 - !private ["CSo11UIResponder", "SVProgressHUD"]
-- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UITextView"]
 - ["CSo11UIResponder", "btnUpdate"]
@@ -464,9 +473,9 @@ depends-member:
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "dismiss"]
 - !private ["CSo11UIResponder", "hideKeyboardWhenTappedAround"]
-- ["CSo11UIResponder", "imgKey"]
+- !private ["CSo11UIResponder", "images"]
+- ["CSo11UIResponder", "imgIndex"]
 - ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "lCaption"]
 - !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "scrollRangeToVisible"]
@@ -483,9 +492,9 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "dismiss"]
 - !private ["PSo30UIResponderStandardEditActions", "hideKeyboardWhenTappedAround"]
-- !private ["PSo30UIResponderStandardEditActions", "imgKey"]
+- !private ["PSo30UIResponderStandardEditActions", "images"]
+- !private ["PSo30UIResponderStandardEditActions", "imgIndex"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
-- !private ["PSo30UIResponderStandardEditActions", "lCaption"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "scrollRangeToVisible"]
@@ -505,9 +514,9 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "caption"]
 - !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "hideKeyboardWhenTappedAround"]
-- !private ["PSo16UIStateRestoring", "imgKey"]
+- !private ["PSo16UIStateRestoring", "images"]
+- !private ["PSo16UIStateRestoring", "imgIndex"]
 - !private ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "lCaption"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "userObj"]
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -530,9 +539,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "dismiss"]
 - !private ["PSo18UITraitEnvironment", "hideKeyboardWhenTappedAround"]
-- !private ["PSo18UITraitEnvironment", "imgKey"]
+- !private ["PSo18UITraitEnvironment", "images"]
+- !private ["PSo18UITraitEnvironment", "imgIndex"]
 - !private ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "lCaption"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "scrollRangeToVisible"]
@@ -548,10 +557,11 @@ depends-member:
 - !private ["CSo6UIView", "showSuccess"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "FIRDatabase"]
+- ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSDictionary"]
 - !private ["CSo16UIViewController", "NSMakeRange"]
 - !private ["CSo16UIViewController", "SVProgressHUD"]
-- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UITextView"]
 - ["CSo16UIViewController", "btnUpdate"]
@@ -559,9 +569,9 @@ depends-member:
 - ["CSo16UIViewController", "caption"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "hideKeyboardWhenTappedAround"]
-- ["CSo16UIViewController", "imgKey"]
+- !private ["CSo16UIViewController", "images"]
+- ["CSo16UIViewController", "imgIndex"]
 - ["CSo16UIViewController", "init"]
-- ["CSo16UIViewController", "lCaption"]
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "userObj"]
 - ["CSo16UIViewController", "viewDidLoad"]
@@ -572,10 +582,11 @@ depends-member:
 - !private ["C4Test10UserObject", "isAdmin"]
 - !private ["C4Test10UserObject", "uid"]
 - !private ["C4Test14VC_EditCaption", "FIRDatabase"]
+- ["C4Test14VC_EditCaption", "Int"]
 - !private ["C4Test14VC_EditCaption", "NSDictionary"]
 - !private ["C4Test14VC_EditCaption", "NSMakeRange"]
 - !private ["C4Test14VC_EditCaption", "SVProgressHUD"]
-- ["C4Test14VC_EditCaption", "String"]
+- !private ["C4Test14VC_EditCaption", "String"]
 - ["C4Test14VC_EditCaption", "UIButton"]
 - ["C4Test14VC_EditCaption", "UITextView"]
 - ["C4Test14VC_EditCaption", "btnUpdate"]
@@ -584,18 +595,21 @@ depends-member:
 - ["C4Test14VC_EditCaption", "deinit"]
 - ["C4Test14VC_EditCaption", "didReceiveMemoryWarning"]
 - !private ["C4Test14VC_EditCaption", "hideKeyboardWhenTappedAround"]
-- ["C4Test14VC_EditCaption", "imgKey"]
+- !private ["C4Test14VC_EditCaption", "images"]
+- ["C4Test14VC_EditCaption", "imgIndex"]
 - ["C4Test14VC_EditCaption", "init"]
-- ["C4Test14VC_EditCaption", "lCaption"]
 - !private ["C4Test14VC_EditCaption", "print"]
 - !private ["C4Test14VC_EditCaption", "userObj"]
 - ["C4Test14VC_EditCaption", "viewDidLoad"]
 - ["C4Test14VC_EditCaption", "viewWillLayoutSubviews"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dismiss"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "scrollRangeToVisible"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showSuccess"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -616,9 +630,9 @@ depends-member:
 - !private ["Ps9_Hashable", "dismiss"]
 - !private ["Ps9_Hashable", "exists"]
 - !private ["Ps9_Hashable", "hideKeyboardWhenTappedAround"]
-- !private ["Ps9_Hashable", "imgKey"]
+- !private ["Ps9_Hashable", "images"]
+- !private ["Ps9_Hashable", "imgIndex"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "lCaption"]
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "observeSingleEvent"]
 - !private ["Ps9_Hashable", "print"]
@@ -633,21 +647,33 @@ depends-member:
 - !private ["Ps9_Hashable", "viewDidLoad"]
 - !private ["Ps9_Hashable", "viewWillLayoutSubviews"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+- !private ["V4Test14imageDataModel", "caption"]
+- !private ["V4Test14imageDataModel", "key"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
 - !private "Sb"
 - !private "CSo7CALayer"
 - !private "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
 - "Ps7CVarArg"
+- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
@@ -661,6 +687,7 @@ depends-nominal:
 - "Ps8Hashable"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo12NSDictionary"
@@ -671,6 +698,8 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
 - !private "Ps16RawRepresentable"
 - !private "CSo13SVProgressHUD"
 - !private "Ps8Sequence"
@@ -701,7 +730,10 @@ depends-nominal:
 - "CSo16UIViewController"
 - !private "C4Test10UserObject"
 - "C4Test14VC_EditCaption"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
@@ -710,7 +742,13 @@ depends-nominal:
 - !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+- !private "V4Test14imageDataModel"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.apinotesc"
@@ -822,4 +860,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "8f38ec46b6dcff1ed614a806ae1c35c1"
+interface-hash: "79d0dad00d5cca97e6b22a358201255f"

@@ -11,6 +11,7 @@ import FirebaseAuth
 import FirebaseDatabase
 import SDWebImage
 import SVProgressHUD
+import FirebaseStorage
 
 class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -167,6 +168,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         var path = ""
+        let storage = FIRStorage.storage().reference()
         if(userObj.isAdmin)
         {
             path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[indexPath.row].key;
@@ -179,11 +181,23 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         
         refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
             
-            FIRDatabase.database().reference().child(path).removeValue()
-            images.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            //self.navigationController?.popViewController(animated: true)
-            print("Handle Yes logic here")
+            FIRDatabase.database().reference().child(path).removeValue(){ error in
+                if error != nil {
+                    images.remove(at: indexPath.row)
+                    tableView.deleteRows(at: [indexPath], with: .automatic)
+                    print("Handle Yes logic here")
+                }else{
+                    print(error)
+                }
+            }
+            
+            let imgToDel = storage.child(userObj.uid).child(images[indexPath.row].imgId)
+            imgToDel.delete(completion: { (Error) in
+                if let error = Error{
+                    print(error)
+                }
+            })
+            
         }))
         
         refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
@@ -191,6 +205,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         }))
         
         present(refreshAlert, animated: true, completion: nil)
+        
         
         
     }

@@ -10,6 +10,7 @@ import UIKit
 import SDWebImage
 import FirebaseDatabase
 import SVProgressHUD
+import FirebaseStorage
 
 class VC_ClickImage: UIViewController {
     
@@ -31,6 +32,8 @@ class VC_ClickImage: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround();
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageSelected(tapGestureRecognizer:)))
+        image.addGestureRecognizer(tapGestureRecognizer)
         image.sd_setImage(with: URL(string:images[self.imgIndex].url!))
         imgCaption.text = images[self.imgIndex].caption!;
         imgCaption.layer.cornerRadius = 4
@@ -51,6 +54,17 @@ class VC_ClickImage: UIViewController {
         textViewRecognizer.addTarget(self, action: #selector(myTargetFunction))
         imgCaption.addGestureRecognizer(textViewRecognizer)
         
+    }
+    
+    func imageSelected(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_viewselectedimg") as! VC_selectedimage;
+        vc.imgUrl = images[self.imgIndex].url;
+        vc.modalPresentationStyle = UIModalPresentationStyle.overFullScreen;
+        vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical;
+        self.present(vc, animated: true, completion: nil);
+        
+
     }
     
     func performInitialisation() {
@@ -95,6 +109,7 @@ class VC_ClickImage: UIViewController {
     
     @IBAction func deletePost(_ sender: Any) {
         var path = ""
+        let storage = FIRStorage.storage().reference()
         if(userObj.isAdmin)
         {
             path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[self.imgIndex].key;
@@ -104,20 +119,25 @@ class VC_ClickImage: UIViewController {
             path = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!+"/"+images[self.imgIndex].key;
         }
         let refreshAlert = UIAlertController(title: "DELETE", message: "Do you wish to delete this post?\nNOTE: this cannot be undone.", preferredStyle: UIAlertControllerStyle.actionSheet)
-        
         refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
-            
             FIRDatabase.database().reference().child(path).removeValue()
-            self.navigationController?.popViewController(animated: true)
-            print("Handle Yes logic here")
+            let imgToDel = storage.child(userObj.uid).child(images[self.imgIndex].imgId)
+            SVProgressHUD.show(withStatus: "Deleting Post!")
+            imgToDel.delete(completion: { (Error) in
+                SVProgressHUD.dismiss()
+                if let error = Error{
+                    print(error)
+                }
+                self.navigationController?.popViewController(animated: true)
+                print("Handle Yes logic here")
+                
+            })
         }))
         
         refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
             print("Handle No Logic here")
         }))
-        
         present(refreshAlert, animated: true, completion: nil)
-
 
     }
     @IBAction func approvePost(_ sender: Any) {

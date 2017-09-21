@@ -12,11 +12,20 @@ import FirebaseStorage
 import FirebaseAuth
 import SVProgressHUD
 
-class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
-    @IBOutlet var fld_caption: UITextView!
-    @IBOutlet var fld_photo: UIImageView!
-    @IBOutlet weak var postBtn: UIButton!
+    @IBOutlet weak var btn_chooseCategory: UIButton!
+    @IBOutlet var fld_camera: UIImageView!
+    @IBOutlet weak var fld_cameraRoll: UIImageView!
+    
+    @IBOutlet weak var fld_cameraRoll_label: UILabel!
+    @IBOutlet weak var fld_camera_label: UILabel!
+    
+    @IBOutlet weak var fld_caption: UITextView!
+    @IBOutlet weak var btn_removeImage: UIButton!
+    @IBOutlet weak var fld_chosenImage: UIImageView!
+    var pickerData: [String] = [String]()
+    var categoryName: String!
     
     let myPickerController = UIImagePickerController()
     
@@ -28,22 +37,75 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        fld_caption.delegate = self;
-        fld_caption.text = "Insert caption..."
-        fld_caption.textColor = UIColor.lightGray
         // Do any additional setup after loading the view.
         
-        let singletap = UITapGestureRecognizer(target: self, action: #selector(buttonSelectImage))
-        singletap.numberOfTapsRequired = 1 // you can change this value
-        fld_photo.isUserInteractionEnabled = true
-        fld_photo.addGestureRecognizer(singletap)
+        let singletap = UITapGestureRecognizer(target: self, action: #selector(camera))
+        fld_camera.isUserInteractionEnabled = true
+        fld_camera.addGestureRecognizer(singletap)
+        
+        let cameraRollTap = UITapGestureRecognizer(target: self, action: #selector(photoLibrary))
+        fld_cameraRoll.isUserInteractionEnabled = true
+        fld_cameraRoll.addGestureRecognizer(cameraRollTap)
+        
+        let tapImage = UITapGestureRecognizer(target: self, action: #selector(viewImage))
+        fld_chosenImage.isUserInteractionEnabled = true
+        fld_chosenImage.addGestureRecognizer(tapImage)
+        
+        hideCorrespondingElements(type: "1");
         
         myPickerController.delegate = self;
         
         ref = FIRDatabase.database().reference() // get reference to actual db
-        postBtn.layer.cornerRadius = 4
-        fld_caption.layer.cornerRadius = 4
+        //postBtn.layer.cornerRadius = 4
+        btn_chooseCategory.layer.cornerRadius = 4
+        if(categoryName != nil)
+        {
+            btn_chooseCategory.setTitle(categoryName, for: UIControlState.normal);
+        }
+        else
+        {
+            btn_chooseCategory.setTitle("NUN", for: UIControlState.normal);
+        }
+        // Do any additional setup after loading the view.
         
+    }
+    
+    func viewImage() {
+        print("viewImage() pressed.")
+    }
+    
+    func hideCorrespondingElements(type: String) {
+        //when type is 1 it sets up user to select a new image.
+        if(type == "1")
+        {
+            fld_chosenImage.isHidden = true;
+            btn_removeImage.isHidden = true;
+            fld_camera.isHidden = false;
+            fld_camera_label.isHidden = false;
+            fld_cameraRoll.isHidden = false;
+            fld_cameraRoll_label.isHidden = false;
+            fld_caption.placeholder = "Say something interesting...";
+        }
+        else
+        {
+            fld_chosenImage.isHidden = false;
+            btn_removeImage.isHidden = false;
+            fld_camera.isHidden = true;
+            fld_camera_label.isHidden = true;
+            fld_cameraRoll.isHidden = true;
+            fld_cameraRoll_label.isHidden = true;
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if(categoryName != nil)
+        {
+            btn_chooseCategory.setTitle(categoryName, for: UIControlState.normal);
+        }
+        else
+        {
+            btn_chooseCategory.setTitle("NUN", for: UIControlState.normal);
+        }
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -76,8 +138,8 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     @IBAction func buttonPost(_ sender: Any) {
         
         let caption = fld_caption.text
-        let image = fld_photo.image
-        
+        let image = fld_chosenImage.image
+      
         if(image == UIImage(named: "takePhototPlaceholder"))
         {
             let refreshAlert = UIAlertController(title: "NOTICE", message: "Please select an image to post!", preferredStyle: UIAlertControllerStyle.alert)
@@ -127,7 +189,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             let imgUid = NSUUID().uuidString
        
             let metadata = FIRStorageMetadata();
-            metadata.contentType = "img/jpeg";
+            metadata.contentType = "image/jpeg";
             SVProgressHUD.show(withStatus: "Uploading");
             FIRStorage.storage().reference().child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
                 if error != nil {
@@ -154,17 +216,17 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                     if(userObj.isAdmin)
                     {
                         path = "creatorPosts/"+accountID!+"/"+creatorID!;
-                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!])
+                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "imageUid": imgUid])
                     }
                     else
                     {
                         path = "userPosts/"+accountID!+"/"+creatorID!+"/"+uid!;
-                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "review": true])
+                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "review": true, "imageUid": imgUid])
                     }
                     //self.ref?.child("dashboardPosts").child(accountID!).child("pending").childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "creatorID": creatorID]);//
                     
                     
-                    self.fld_photo.image = #imageLiteral(resourceName: "takePhototPlaceholder")
+                    self.hideCorrespondingElements(type: "1");
                     self.fld_caption.text = ""
                     let tabItems = self.tabBarController?.tabBar.items;
                     
@@ -194,7 +256,8 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage;
-        fld_photo.image = selectedImage;
+        fld_chosenImage.image = selectedImage;
+        hideCorrespondingElements(type: "2");
         // Dismiss the picker.
         dismiss(animated: true, completion: nil)
     }
@@ -226,4 +289,13 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         
     }
     
+    @IBAction func btn_chooseCategory(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "VC_selectcategory") as! VC_SelectCategory;
+
+        self.navigationController?.pushViewController(vc, animated: true);
+    }
+    
+    @IBAction func button_removeImage(_ sender: Any) {
+        hideCorrespondingElements(type: "1");
+    }
 }

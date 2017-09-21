@@ -98,6 +98,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Toucan/Toucan.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/UITextView+Placeholder/UITextView_Placeholder.framework"
   install_framework "$BUILT_PRODUCTS_DIR/libwebp/libwebp.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -110,6 +111,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Toucan/Toucan.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/UITextView+Placeholder/UITextView_Placeholder.framework"
   install_framework "$BUILT_PRODUCTS_DIR/libwebp/libwebp.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

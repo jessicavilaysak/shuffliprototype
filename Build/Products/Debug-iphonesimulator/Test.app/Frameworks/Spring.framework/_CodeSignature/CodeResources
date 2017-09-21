@@ -8,6 +8,14 @@
 		<data>
 		E99dsTSUjyPe+rgVCBrSkqTBztE=
 		</data>
+		<key>Headers/Spring-Swift.h</key>
+		<data>
+		Q9EjBzWiO/AbRIFOuFXiArjvND0=
+		</data>
+		<key>Headers/Spring-umbrella.h</key>
+		<data>
+		l7FWI4Sj04UU4XPxE7L3EpOWzfk=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		2wF/bqj3M+QZkS3YLcy0hcb42Ns=
@@ -15,6 +23,18 @@
 		<key>LoadingView.nib</key>
 		<data>
 		7XfFOzyP77u+k4v4H+nxjPI1DMg=
+		</data>
+		<key>Modules/Spring.swiftmodule/i386.swiftdoc</key>
+		<data>
+		vVWq4olZs5nVUSAARdQnoewXwb8=
+		</data>
+		<key>Modules/Spring.swiftmodule/i386.swiftmodule</key>
+		<data>
+		k0S1QhH/XhDt3QGUACa6+IJD5mI=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		ITDkGaAG1VzllkWTmadTgzo3ByI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -30,6 +50,28 @@
 			KHeVIGnbG6QWYjv0MyDKtl6E2gyBN23q5jY5gEGbcUM=
 			</data>
 		</dict>
+		<key>Headers/Spring-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q9EjBzWiO/AbRIFOuFXiArjvND0=
+			</data>
+			<key>hash2</key>
+			<data>
+			VooBfTVK1T+kPfFxaVEPtM6yqhu2zMaa823o1U2ePmY=
+			</data>
+		</dict>
+		<key>Headers/Spring-umbrella.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l7FWI4Sj04UU4XPxE7L3EpOWzfk=
+			</data>
+			<key>hash2</key>
+			<data>
+			q65oN9KJWgUQaXu4jj73j5nMsRLRN1v63ipe3jL5iW4=
+			</data>
+		</dict>
 		<key>LoadingView.nib</key>
 		<dict>
 			<key>hash</key>
@@ -39,6 +81,39 @@
 			<key>hash2</key>
 			<data>
 			AwMlu+w49YoplYf/AxhDNu3FJT9fxLJXXyjqhz6gIF4=
+			</data>
+		</dict>
+		<key>Modules/Spring.swiftmodule/i386.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vVWq4olZs5nVUSAARdQnoewXwb8=
+			</data>
+			<key>hash2</key>
+			<data>
+			s6e1GB4t6jtrviZ2kyzrTDQTO2S/PrH5VZzyvZ0N1bY=
+			</data>
+		</dict>
+		<key>Modules/Spring.swiftmodule/i386.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k0S1QhH/XhDt3QGUACa6+IJD5mI=
+			</data>
+			<key>hash2</key>
+			<data>
+			+6kZeVBiDtCH3Nwx7AkzCGyluJldPGDFflGM4rC06fg=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ITDkGaAG1VzllkWTmadTgzo3ByI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Xjwe3JtL1cExHHa/NkArfYch5yTwvLfVZ3eoQmWYCcA=
 			</data>
 		</dict>
 	</dict>

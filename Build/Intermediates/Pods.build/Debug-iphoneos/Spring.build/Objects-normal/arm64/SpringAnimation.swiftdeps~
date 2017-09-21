@@ -1,0 +1,185 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SpringAnimation"
+provides-nominal:
+- "C6Spring15SpringAnimation"
+provides-member:
+- ["C6Spring15SpringAnimation", ""]
+provides-dynamic-lookup:
+- "spring"
+- "springEaseIn"
+- "springEaseInOut"
+- "springEaseOut"
+- "springLinear"
+- "springWithCompletion"
+- "springWithDelay"
+depends-top-level:
+- !private "Array"
+- "Bool"
+- "NSObject"
+- "SpringAnimation"
+- "TimeInterval"
+- !private "UIView"
+- !private "UIViewAnimationOptions"
+- "Void"
+depends-member:
+- !private ["Ps9AnyObject", "UIView"]
+- !private ["Ps9AnyObject", "UIViewAnimationOptions"]
+- !private ["Ps9AnyObject", "animate"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "animate"]
+- !private ["Ps7CVarArg", "UIView"]
+- !private ["Ps7CVarArg", "UIViewAnimationOptions"]
+- !private ["Ps7CVarArg", "animate"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "UIView"]
+- !private ["Ps28CustomDebugStringConvertible", "UIViewAnimationOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "animate"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIView"]
+- !private ["Ps23CustomStringConvertible", "UIViewAnimationOptions"]
+- !private ["Ps23CustomStringConvertible", "animate"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "UIViewAnimationOptions"]
+- !private ["Ps9Equatable", "animate"]
+- !private ["Ps9Equatable", "curveEaseIn"]
+- !private ["Ps9Equatable", "curveEaseOut"]
+- !private ["Ps9Equatable", "curveLinear"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "curveEaseIn"]
+- !private ["Ps25ExpressibleByArrayLiteral", "curveEaseOut"]
+- !private ["Ps25ExpressibleByArrayLiteral", "curveLinear"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps8Hashable", "UIView"]
+- !private ["Ps8Hashable", "UIViewAnimationOptions"]
+- !private ["Ps8Hashable", "animate"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "animate"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "TimeInterval"]
+- !private ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "UIViewAnimationOptions"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "animate"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "spring"]
+- ["CSo8NSObject", "springEaseIn"]
+- ["CSo8NSObject", "springEaseInOut"]
+- ["CSo8NSObject", "springEaseOut"]
+- ["CSo8NSObject", "springLinear"]
+- ["CSo8NSObject", "springWithCompletion"]
+- ["CSo8NSObject", "springWithDelay"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "UIViewAnimationOptions"]
+- !private ["PSo16NSObjectProtocol", "animate"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Ps9OptionSet", "curveEaseIn"]
+- !private ["Ps9OptionSet", "curveEaseOut"]
+- !private ["Ps9OptionSet", "curveLinear"]
+- !private ["Ps9OptionSet", "init"]
+- !private ["Ps16RawRepresentable", "curveEaseIn"]
+- !private ["Ps16RawRepresentable", "curveEaseOut"]
+- !private ["Ps16RawRepresentable", "curveLinear"]
+- !private ["Ps16RawRepresentable", "init"]
+- !private ["Ps10SetAlgebra", "curveEaseIn"]
+- !private ["Ps10SetAlgebra", "curveEaseOut"]
+- !private ["Ps10SetAlgebra", "curveLinear"]
+- !private ["Ps10SetAlgebra", "init"]
+- ["C6Spring15SpringAnimation", "Bool"]
+- ["C6Spring15SpringAnimation", "TimeInterval"]
+- !private ["C6Spring15SpringAnimation", "UIView"]
+- !private ["C6Spring15SpringAnimation", "UIViewAnimationOptions"]
+- ["C6Spring15SpringAnimation", "Void"]
+- ["C6Spring15SpringAnimation", "deinit"]
+- ["C6Spring15SpringAnimation", "init"]
+- ["C6Spring15SpringAnimation", "spring"]
+- ["C6Spring15SpringAnimation", "springEaseIn"]
+- ["C6Spring15SpringAnimation", "springEaseInOut"]
+- ["C6Spring15SpringAnimation", "springEaseOut"]
+- ["C6Spring15SpringAnimation", "springLinear"]
+- ["C6Spring15SpringAnimation", "springWithCompletion"]
+- ["C6Spring15SpringAnimation", "springWithDelay"]
+- !private ["PSo29UIAccessibilityIdentification", "animate"]
+- !private ["PSo12UIAppearance", "animate"]
+- !private ["PSo21UIAppearanceContainer", "animate"]
+- !private ["PSo17UICoordinateSpace", "animate"]
+- !private ["PSo13UIDynamicItem", "animate"]
+- !private ["PSo18UIFocusEnvironment", "animate"]
+- !private ["PSo11UIFocusItem", "animate"]
+- !private ["CSo11UIResponder", "animate"]
+- !private ["PSo30UIResponderStandardEditActions", "animate"]
+- !private ["PSo18UITraitEnvironment", "animate"]
+- !private ["CSo6UIView", "animate"]
+- !private ["VSC22UIViewAnimationOptions", "curveEaseIn"]
+- !private ["VSC22UIViewAnimationOptions", "curveEaseOut"]
+- !private ["VSC22UIViewAnimationOptions", "curveLinear"]
+- !private ["VSC22UIViewAnimationOptions", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "animate"]
+- !private ["Ps9_Hashable", "UIView"]
+- !private ["Ps9_Hashable", "UIViewAnimationOptions"]
+- !private ["Ps9_Hashable", "animate"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- "Ps8Hashable"
+- !private "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps9OptionSet"
+- !private "Ps16RawRepresentable"
+- !private "Ps10SetAlgebra"
+- "C6Spring15SpringAnimation"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "VSC22UIViewAnimationOptions"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/Spring/Spring-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Spring.build/unextended-module.modulemap"
+interface-hash: "7180e7a6d4ddcbeff862c2680b7eab91"

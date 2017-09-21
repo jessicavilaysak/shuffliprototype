@@ -6,6 +6,7 @@ provides-nominal:
 provides-member:
 - ["C4Test17CustomCellCreator", ""]
 provides-dynamic-lookup:
+- "approveStatus"
 - "awakeFromNib"
 - "imageCaption"
 - "photo"
@@ -32,6 +33,7 @@ depends-member:
 - ["C4Test17CustomCellCreator", "Bool"]
 - ["C4Test17CustomCellCreator", "UIImageView"]
 - ["C4Test17CustomCellCreator", "UILabel"]
+- ["C4Test17CustomCellCreator", "approveStatus"]
 - ["C4Test17CustomCellCreator", "awakeFromNib"]
 - ["C4Test17CustomCellCreator", "deinit"]
 - ["C4Test17CustomCellCreator", "imageCaption"]
@@ -61,6 +63,7 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "approveStatus"]
 - ["CSo8NSObject", "awakeFromNib"]
 - ["CSo8NSObject", "imageCaption"]
 - ["CSo8NSObject", "init"]
@@ -105,6 +108,7 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "approveStatus"]
 - ["CSo11UIResponder", "awakeFromNib"]
 - ["CSo11UIResponder", "imageCaption"]
 - ["CSo11UIResponder", "init"]
@@ -117,6 +121,7 @@ depends-member:
 - ["CSo15UITableViewCell", "Bool"]
 - ["CSo15UITableViewCell", "UIImageView"]
 - ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "approveStatus"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
 - ["CSo15UITableViewCell", "imageCaption"]
 - ["CSo15UITableViewCell", "init"]
@@ -130,6 +135,7 @@ depends-member:
 - ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "approveStatus"]
 - ["CSo6UIView", "awakeFromNib"]
 - ["CSo6UIView", "imageCaption"]
 - ["CSo6UIView", "init"]
@@ -281,4 +287,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "5fec1cfb2e79a868b27094c169c9591d"
+interface-hash: "bacb646f7b3a037053fac25a88403959"

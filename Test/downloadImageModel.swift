@@ -19,6 +19,7 @@ struct imageDataModel{
     let creatorID: String!
     let uploadedBy: String!
     let approvedBy: String!
+    let imgId: String!
     
     
     init() {
@@ -30,6 +31,7 @@ struct imageDataModel{
         self.creatorID = nil;
         self.uploadedBy = nil;
         self.approvedBy = nil;
+        self.imgId = nil;
     }
     
     init(snapshot: FIRDataSnapshot){
@@ -75,6 +77,11 @@ struct imageDataModel{
             approvedBy = lApprovedBy;
         }else{
             approvedBy = "";
+        }
+        if let lImgId = snapshotValue?["imageUid"] as? String{
+            imgId = lImgId;
+        }else{
+            imgId = "";
         }
     }
     

@@ -17,6 +17,7 @@ target 'Test' do
     pod 'SDWebImage/WebP'
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
     pod ‘Toucan’, ‘~> 0.6’
+    pod 'UITextView+Placeholder', '~> 1.2'
     
     target 'TestTests' do
         inherit! :search_paths

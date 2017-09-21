@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "c7f0d29db5d7dea418380034422f1a3c"
-build_time: [557575784, 121741000]
+build_time: [559303461, 748648000]
 inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [555909719, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [555909719, 0]

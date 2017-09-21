@@ -1,0 +1,20 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "169518bda77bd6ff3e706a32d5e2e962"
+build_time: [559275861, 319406000]
+inputs:
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardManager.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQTextView/IQTextView.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift": [555835474, 0]
