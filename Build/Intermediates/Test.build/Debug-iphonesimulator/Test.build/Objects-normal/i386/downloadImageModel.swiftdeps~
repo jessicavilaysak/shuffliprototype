@@ -115,15 +115,12 @@ depends-member:
 - ["V4Test14imageDataModel", "FIRDatabaseReference"]
 - !private ["V4Test14imageDataModel", "NSDictionary"]
 - ["V4Test14imageDataModel", "String"]
-- ["V4Test14imageDataModel", "approvedBy"]
 - ["V4Test14imageDataModel", "caption"]
-- ["V4Test14imageDataModel", "creatorID"]
 - ["V4Test14imageDataModel", "dashboardApproved"]
 - ["V4Test14imageDataModel", "init"]
 - ["V4Test14imageDataModel", "key"]
 - !private ["V4Test14imageDataModel", "print"]
 - ["V4Test14imageDataModel", "ref"]
-- ["V4Test14imageDataModel", "uploadedBy"]
 - ["V4Test14imageDataModel", "url"]
 depends-nominal:
 - !private "Ps9AnyObject"
@@ -278,4 +275,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "a5d618fe1e01f9f912e6668d328468d9"
+interface-hash: "5dd5439c6cfbd036ea751eef5ed30e73"

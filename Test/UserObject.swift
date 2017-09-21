@@ -31,7 +31,7 @@ class UserObject {
 
 let userObj = UserObject()
 
-var images = [imageDataModel]()
+
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {

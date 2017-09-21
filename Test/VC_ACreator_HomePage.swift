@@ -10,12 +10,14 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class VC_ACreator_HomePage: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet var fldusername: UILabel!
-    
     @IBOutlet var fldcompany: UILabel!
+    @IBOutlet weak var userTable: UITableView!
+    
+    
    // @IBOutlet weak var collectionView: UICollectionView!
     
     func deleteUserButton(sender: UITapGestureRecognizer) {
@@ -35,7 +37,8 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDelegate, UICollec
     //@IBOutlet var viewusers: UICollectionView!
     override func viewDidLoad() {
         
-        
+        userTable.delegate = self;
+        userTable.dataSource = self;
         
         fldcompany.text = userObj.accountName;
         fldusername.text = userObj.username;
@@ -58,44 +61,25 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDelegate, UICollec
     }
 
     override func viewDidAppear(_ animated: Bool) {
-       /* if dataSource.userArray.count > 0
-        {
-            fld_nouser.isHidden = true
-        }*/
-        //viewusers.reloadData()
-        let tabItems = self.tabBarController?.tabBar.items;
         
-        for i in 0...((tabItems?.count)!-1) {
-            let controllerTitle = (self.tabBarController?.viewControllers?[i].title!)!;
-            
-            if(controllerTitle == "VC_manageusers"){
-                print(": "+controllerTitle);
-                let tabItem = tabItems?[i];
-                dataSource.postNotifications = dataSource.postNotifications + 1;
-                tabItem?.badgeValue = nil;
-            }
-        }
+        
+        
     }
     
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return dataSource.userArray.count
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell : CustomCellUser = collectionView.dequeueReusableCell(withReuseIdentifier: "cellUser", for: indexPath) as! CustomCellUser
-//        cell.fld_username.text = dataSource.userArray[indexPath.row]
-//        //print("shuffli - indexPath.row "+String(dataSource.userArray[indexPath.row]));
-//        cell.deleteUser.tag = indexPath.row;
-//        
-//        //set delete image as a touch,
-//        let singletap = UITapGestureRecognizer(target: self, action: #selector(deleteUserButton))
-//        singletap.numberOfTapsRequired = 1 // you can change this value
-//        cell.deleteUser.isUserInteractionEnabled = true
-//        cell.deleteUser.addGestureRecognizer(singletap)
-//        
-//        
-//        return cell
-//    }
+    
+    func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int
+    {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = self.userTable.dequeueReusableCell(withIdentifier: "userCell", for: indexPath as IndexPath) as! ManageUserCell
+        cell.userName.text = "Simon Waters"
+        cell.userEmail.text = FIRAuth.auth()?.currentUser?.email
+        
+        return cell
+    }
 
     @IBAction func logout(_ sender: Any) {
         if FIRAuth.auth()?.currentUser != nil {
@@ -111,5 +95,14 @@ class VC_ACreator_HomePage: UIViewController, UICollectionViewDelegate, UICollec
         }
     }
 
+    
+    @IBAction func btn_addUser(_ sender: Any) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_adduser")
+        self.present(vc!,animated: true,completion: nil)
+        
+    }
+    
+    
 
 }
