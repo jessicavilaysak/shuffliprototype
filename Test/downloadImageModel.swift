@@ -40,7 +40,7 @@ struct imageDataModel{
         
         
         let snapshotValue = snapshot.value as? NSDictionary
-        print(snapshotValue!);
+        //print(snapshotValue!);
         if let imageURL = snapshotValue?["url"] as? String{
             url = imageURL
         }else{

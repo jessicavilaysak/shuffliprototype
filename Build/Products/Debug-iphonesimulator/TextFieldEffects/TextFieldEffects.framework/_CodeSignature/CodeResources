@@ -16,13 +16,13 @@
 		<data>
 		t8ZhXKBH6bCmEfR6HsYtGUUNFu0=
 		</data>
-		<key>Modules/TextFieldEffects.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/TextFieldEffects.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		khSqhbeUdIJzo0dSOrVmvr5J19Y=
+		TSMuKFcszz1ujtxFXkk0U1iBWo4=
 		</data>
-		<key>Modules/TextFieldEffects.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/TextFieldEffects.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		dpS77VEcDr2dboNMY5I7LL77Ag0=
+		AobUxiRj78qv5D/uLLHMV0RD/XY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -53,26 +53,26 @@
 			O4QLVRdmp8cxYGqi8xbeSWgDNJ2WNvQAc7VnB4rUGOE=
 			</data>
 		</dict>
-		<key>Modules/TextFieldEffects.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/TextFieldEffects.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			khSqhbeUdIJzo0dSOrVmvr5J19Y=
+			TSMuKFcszz1ujtxFXkk0U1iBWo4=
 			</data>
 			<key>hash2</key>
 			<data>
-			nbhBamYfnCT6inaHtRzokM++jVdDslAoRMP6BVPD3jA=
+			mF5PVeqOoXcbOWI5Dlla3i8yr1LpS0CY45gdu925M84=
 			</data>
 		</dict>
-		<key>Modules/TextFieldEffects.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/TextFieldEffects.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dpS77VEcDr2dboNMY5I7LL77Ag0=
+			AobUxiRj78qv5D/uLLHMV0RD/XY=
 			</data>
 			<key>hash2</key>
 			<data>
-			SZxKNYC9GD4U89U5mmBD4jk8ueD8JoaZNkC11Ojxh6g=
+			ToCtYhsCn8TsZq6uUIREWdLRZ0A6DEhfUtLMnDgWQwY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

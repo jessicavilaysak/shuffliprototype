@@ -18,6 +18,7 @@ class UserObject {
     var accountName: String!;
     var permissionToManageUsers: Bool!;
     var firstTimeLogin: Bool!;
+    var listenerPath: String!;
   
     
     init() {

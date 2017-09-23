@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		E99dsTSUjyPe+rgVCBrSkqTBztE=
+		mcmmtaG71owCYw/udo8lxCYOOk4=
 		</data>
 		<key>Headers/Spring-Swift.h</key>
 		<data>
@@ -24,13 +24,13 @@
 		<data>
 		7XfFOzyP77u+k4v4H+nxjPI1DMg=
 		</data>
-		<key>Modules/Spring.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/Spring.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		vVWq4olZs5nVUSAARdQnoewXwb8=
+		5eDH6A3qMETJxUW8qQXc731X2Ig=
 		</data>
-		<key>Modules/Spring.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/Spring.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		k0S1QhH/XhDt3QGUACa6+IJD5mI=
+		Enzd3CBSiplwCcgu9117iLDjwPg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E99dsTSUjyPe+rgVCBrSkqTBztE=
+			mcmmtaG71owCYw/udo8lxCYOOk4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KHeVIGnbG6QWYjv0MyDKtl6E2gyBN23q5jY5gEGbcUM=
+			YxexDmqjekwVNBVQtyKiDbuQQvDu5LNX/gPykSY/f9o=
 			</data>
 		</dict>
 		<key>Headers/Spring-Swift.h</key>
@@ -83,26 +83,26 @@
 			AwMlu+w49YoplYf/AxhDNu3FJT9fxLJXXyjqhz6gIF4=
 			</data>
 		</dict>
-		<key>Modules/Spring.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/Spring.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vVWq4olZs5nVUSAARdQnoewXwb8=
+			5eDH6A3qMETJxUW8qQXc731X2Ig=
 			</data>
 			<key>hash2</key>
 			<data>
-			s6e1GB4t6jtrviZ2kyzrTDQTO2S/PrH5VZzyvZ0N1bY=
+			0JtcLTt71Sa27+kzDGt2otnwfOi0AALP4Ka73RgTc3M=
 			</data>
 		</dict>
-		<key>Modules/Spring.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/Spring.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k0S1QhH/XhDt3QGUACa6+IJD5mI=
+			Enzd3CBSiplwCcgu9117iLDjwPg=
 			</data>
 			<key>hash2</key>
 			<data>
-			+6kZeVBiDtCH3Nwx7AkzCGyluJldPGDFflGM4rC06fg=
+			o0RRGzhrNfVoH7MIgms42RhFlyH25KUnln3sxsS2OgU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

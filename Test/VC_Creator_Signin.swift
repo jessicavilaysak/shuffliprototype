@@ -124,6 +124,8 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                 userObj.accountID = (recent["accountID"] as? String)!;
                 userObj.creatorID = (recent["creatorID"] as? String)!;
                 userObj.username = (recent["username"] as? String)!;
+                
+
                 completion(true);
             }});
         
@@ -171,6 +173,14 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                     userObj.permissionToManageUsers = false;
                 }
                 
+                if(userObj.isAdmin)
+                {
+                    userObj.listenerPath = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!;
+                }
+                else
+                {
+                    userObj.listenerPath = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!;
+                }
                 completion(true);
             }});
 
@@ -208,7 +218,7 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
-        //return;
+        return;
         if FIRAuth.auth()?.currentUser != nil{
             print("User is NOT null.");
             SVProgressHUD.show(withStatus: "Setting up for you...");

@@ -46,6 +46,7 @@ depends-top-level:
 - "UITextField"
 - "UITextFieldDelegate"
 - "UIViewController"
+- "UnicodeScalarType"
 - "VC_Creator_Signin"
 - !private "print"
 - !private "userObj"
@@ -83,6 +84,7 @@ depends-member:
 - !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "isAdmin"]
 - !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "listenerPath"]
 - !private ["Ps9AnyObject", "observeSingleEvent"]
 - !private ["Ps9AnyObject", "permissionToManageUsers"]
 - !private ["Ps9AnyObject", "present"]
@@ -1001,6 +1003,7 @@ depends-member:
 - !private ["C4Test10UserObject", "creatorID"]
 - !private ["C4Test10UserObject", "firstTimeLogin"]
 - !private ["C4Test10UserObject", "isAdmin"]
+- !private ["C4Test10UserObject", "listenerPath"]
 - !private ["C4Test10UserObject", "permissionToManageUsers"]
 - !private ["C4Test10UserObject", "uid"]
 - !private ["C4Test10UserObject", "username"]

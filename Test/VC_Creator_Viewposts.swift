@@ -25,8 +25,12 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var fldcompany: UILabel!
     
     var dbRef : FIRDatabaseReference!
+    var handle: FIRAuthStateDidChangeListenerHandle!
+    var signingOut: Bool!
+
     
     override func viewDidLoad() {
+        signingOut = false;
         self.navigationController?.isNavigationBarHidden = false;
         super.viewDidLoad()
         dbRef = FIRDatabase.database().reference()
@@ -37,9 +41,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         viewposts.dataSource = self;
         
         fldcompany.text = userObj.accountName;
-        self.hideKeyboardWhenTappedAround()
-        
-        loadImagesfromDb()
+        self.hideKeyboardWhenTappedAround();
         
         //Creating a shadow
         bgImage.layer.masksToBounds = false
@@ -48,42 +50,23 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         bgImage.layer.shadowOpacity = 0.5
         bgImage.layer.shadowRadius = 10;
         bgImage.layer.shouldRasterize = true //tells IOS to cache the shadow
-    }
-    
-    func loadImagesfromDb(){
-        FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
+        
+        FIRDatabase.database().reference(withPath: userObj.listenerPath).observe(FIRDataEventType.value, with: {(snapshot) in
+            //print(snapshot)
+            var newImages = [imageDataModel]()
             
-            if user != nil {
-                //print("uid: "+userObj.uid);
-                let accountID = userObj.accountID;
-                let creatorID = userObj.creatorID;
-                //print(user!)
-                var path = "";
-                if(userObj.isAdmin)
-                {
-                    path = "creatorPosts/"+accountID!+"/"+creatorID!;
-                }
-                else
-                {
-                    path = "userPosts/"+accountID!+"/"+creatorID!+"/"+userObj.uid!;
-                }
-                self.dbRef.child(path).observe(FIRDataEventType.value, with: {(snapshot) in
-                    //print(snapshot)
-                    var newImages = [imageDataModel]()
-                    
-                    for imageSnapshot in snapshot.children{
-                        let imgObj = imageDataModel(snapshot: imageSnapshot as! FIRDataSnapshot)
-                        //newImages.append(imgObj)
-                        newImages.insert(imgObj, at: 0);
-                    }
-                    images = newImages;
-                    //print(self.images);
-                    self.viewposts.reloadData()
-                })
+            for imageSnapshot in snapshot.children{
+                let imgObj = imageDataModel(snapshot: imageSnapshot as! FIRDataSnapshot)
+                //newImages.append(imgObj)
+                newImages.insert(imgObj, at: 0);
             }
+            images = newImages;
+            print("SHUFFLI | path: "+userObj.listenerPath+" | images count: "+String(images.count));
+            //print(self.images);
+            self.viewposts.reloadData()
         })
+
     }
-    
     
     override func viewDidAppear(_ animated: Bool) {
         viewposts.reloadData()
@@ -138,18 +121,45 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         return cell
 }
     
-    @IBAction func logout(_ sender: Any) {
-        if FIRAuth.auth()?.currentUser != nil {
-            do{
-                try FIRAuth.auth()?.signOut()
-                let vc = storyboard?.instantiateViewController(withIdentifier: "VC_signin");
-                present(vc!, animated: true, completion: nil);
-            } catch let error as NSError{
-                print(error)
-            }
-        }else{
-            print("User is nill")
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // [START remove_auth_listener]
+        if(signingOut)
+        {
+            FIRAuth.auth()?.removeStateDidChangeListener(handle!)
+            FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
         }
+        
+        // [END remove_auth_listener]
+    }
+    
+    @IBAction func logout(_ sender: Any) {
+        try! FIRAuth.auth()!.signOut()
+        
+        handle = FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
+            if user?.uid == userObj.uid {
+                print("SHUFFLI | could not log out for some reason :(");
+            } else {
+                print("SHUFFLI | signed out.");
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_signin");
+                self.present(vc!, animated: true, completion: nil);
+                self.signingOut = true;
+                //the user has now signed out so go to login view controller
+                // and remove this listener
+            }
+        });
+        
+//        if FIRAuth.auth()?.currentUser != nil {
+//            do{
+//                try FIRAuth.auth()?.signOut()
+//                let vc = storyboard?.instantiateViewController(withIdentifier: "VC_signin");
+//                present(vc!, animated: true, completion: nil);
+//            } catch let error as NSError{
+//                print(error)
+//            }
+//        }else{
+//            print("User is nill")
+//        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

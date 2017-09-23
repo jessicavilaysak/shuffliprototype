@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test/VC_Creator_Viewposts.swift"
-            timestampString = "527676790.839499"
+            timestampString = "527856568.08742"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "logout(_:)"
             landmarkType = "7">
             <Locations>

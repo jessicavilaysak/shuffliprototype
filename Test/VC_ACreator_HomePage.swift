@@ -17,6 +17,9 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var fldcompany: UILabel!
     @IBOutlet weak var userTable: UITableView!
     
+    var handle: FIRAuthStateDidChangeListenerHandle!
+    var signingOut: Bool!
+    
     
    // @IBOutlet weak var collectionView: UICollectionView!
     
@@ -36,6 +39,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     
     //@IBOutlet var viewusers: UICollectionView!
     override func viewDidLoad() {
+        signingOut = false;
         
         userTable.delegate = self;
         userTable.dataSource = self;
@@ -80,20 +84,34 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         
         return cell
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // [START remove_auth_listener]
+        if(signingOut)
+        {
+            FIRAuth.auth()?.removeStateDidChangeListener(handle!)
+            FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
+        }
+        
+        // [END remove_auth_listener]
+    }
 
     @IBAction func logout(_ sender: Any) {
-        if FIRAuth.auth()?.currentUser != nil {
-            do{
-                try FIRAuth.auth()?.signOut()
-                let vc = storyboard?.instantiateViewController(withIdentifier: "VC_signin");
-                present(vc!, animated: true, completion: nil);
-            } catch let error as NSError{
-                print(error)
+        try! FIRAuth.auth()!.signOut()
+        
+        handle = FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
+            if user?.uid == userObj.uid {
+                print("SHUFFLI | could not log out for some reason :(");
+            } else {
+                print("SHUFFLI | signed out.");
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_signin");
+                self.present(vc!, animated: true, completion: nil);
+                self.signingOut = true;
+                //the user has now signed out so go to login view controller
+                // and remove this listener
             }
-        }else{
-            print("User is nill")
-        }
-    }
+        });    }
 
     
     @IBAction func btn_addUser(_ sender: Any) {

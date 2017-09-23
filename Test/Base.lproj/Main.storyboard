@@ -911,7 +911,7 @@
                                 </items>
                             </navigationBar>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="takeCamera" translatesAutoresizingMaskIntoConstraints="NO" id="kMX-9l-soy">
-                                <rect key="frame" x="80" y="344" width="80" height="80"/>
+                                <rect key="frame" x="70" y="344" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="9Gq-Rz-VL5"/>
                                     <constraint firstAttribute="width" constant="80" id="YcI-85-9oO"/>
@@ -954,7 +954,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3H-cP-O1K">
-                                <rect key="frame" x="89" y="432" width="71" height="21"/>
+                                <rect key="frame" x="79" y="432" width="71" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="71" id="oMR-jQ-Tb0"/>
                                 </constraints>
@@ -1007,7 +1007,7 @@
                             <constraint firstItem="Nef-go-f5c" firstAttribute="leading" secondItem="mrp-8p-a6S" secondAttribute="leadingMargin" constant="40" id="bE6-Sk-4rb"/>
                             <constraint firstItem="Nef-go-f5c" firstAttribute="leading" secondItem="27Q-18-oUY" secondAttribute="trailing" constant="2" id="cU9-rc-np2"/>
                             <constraint firstItem="4YG-7A-SpI" firstAttribute="leading" secondItem="mrp-8p-a6S" secondAttribute="leadingMargin" constant="-10" id="d3N-US-ASi"/>
-                            <constraint firstItem="kMX-9l-soy" firstAttribute="leading" secondItem="mrp-8p-a6S" secondAttribute="leadingMargin" constant="60" id="dUy-Jp-2CQ"/>
+                            <constraint firstItem="kMX-9l-soy" firstAttribute="leading" secondItem="mrp-8p-a6S" secondAttribute="leadingMargin" constant="50" id="dUy-Jp-2CQ"/>
                             <constraint firstItem="uzG-MY-gaV" firstAttribute="trailing" secondItem="mrp-8p-a6S" secondAttribute="trailingMargin" constant="5" id="de8-f4-bVd"/>
                             <constraint firstItem="uzG-MY-gaV" firstAttribute="top" secondItem="VIK-TW-lBe" secondAttribute="bottom" constant="30" id="hxR-65-hIu"/>
                             <constraint firstAttribute="trailing" secondItem="Abm-gj-ncX" secondAttribute="trailing" constant="60" id="lM1-ge-csB"/>

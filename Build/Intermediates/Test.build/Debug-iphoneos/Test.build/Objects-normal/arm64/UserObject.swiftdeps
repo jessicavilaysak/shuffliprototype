@@ -172,6 +172,7 @@ depends-member:
 - ["C4Test10UserObject", "firstTimeLogin"]
 - ["C4Test10UserObject", "init"]
 - ["C4Test10UserObject", "isAdmin"]
+- ["C4Test10UserObject", "listenerPath"]
 - ["C4Test10UserObject", "permissionToManageUsers"]
 - ["C4Test10UserObject", "uid"]
 - ["C4Test10UserObject", "username"]
@@ -332,4 +333,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "2f99fc2117094efe29dede4f55ff9382"
+interface-hash: "b8c5f1d0134c10292b3598d6905ffc92"

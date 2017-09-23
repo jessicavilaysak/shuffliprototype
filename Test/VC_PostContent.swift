@@ -191,7 +191,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             let metadata = FIRStorageMetadata();
             metadata.contentType = "image/jpeg";
             SVProgressHUD.show(withStatus: "Uploading");
-            FIRStorage.storage().reference().child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
+            FIRStorage.storage().reference().child(userObj.uid).child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
                 if error != nil {
                     SVProgressHUD.showError(withStatus: "Could not upload!")
                     SVProgressHUD.dismiss(withDelay: 3)
@@ -208,7 +208,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                     if(!(downloadURl?.isEmpty)!){
                         URLtoSend = downloadURl!;
                     }
-                    print("downloadURL" + downloadURl!)
+                    //print("downloadURL" + downloadURl!)
                     let accountID = userObj.accountID;
                     let creatorID = userObj.creatorID;
                     let uid = userObj.uid;
