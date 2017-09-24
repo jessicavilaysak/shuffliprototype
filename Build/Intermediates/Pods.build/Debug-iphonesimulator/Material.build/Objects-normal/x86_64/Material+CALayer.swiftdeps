@@ -1,0 +1,615 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So7CALayerC", ""]
+- ["So7CALayerC", "x"]
+- ["So7CALayerC", "y"]
+- ["So7CALayerC", "width"]
+- ["So7CALayerC", "height"]
+- ["So7CALayerC", "heightPreset"]
+- ["So7CALayerC", "shapePreset"]
+- ["So7CALayerC", "depthPreset"]
+- ["So7CALayerC", "depth"]
+- ["So7CALayerC", "isShadowPathAutoSizing"]
+- ["So7CALayerC", "cornerRadiusPreset"]
+- ["So7CALayerC", "borderWidthPreset"]
+- ["So7CALayerC", "layoutShape"]
+- ["So7CALayerC", "layoutShadowPath"]
+provides-dynamic-lookup:
+- "borderWidthPreset"
+- "cornerRadiusPreset"
+- "depthPreset"
+- "height"
+- "heightPreset"
+- "isShadowPathAutoSizing"
+- "layoutShadowPath"
+- "layoutShape"
+- "shapePreset"
+- "width"
+- "x"
+- "y"
+depends-top-level:
+- !private "!="
+- !private "/"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "AssociateObject"
+- !private "AssociatedObject"
+- "Bool"
+- "BooleanLiteralType"
+- "BorderWidthPreset"
+- !private "BorderWidthPresetToValue"
+- "CALayer"
+- "CGFloat"
+- "CornerRadiusPreset"
+- !private "CornerRadiusPresetToValue"
+- "Depth"
+- "DepthPreset"
+- "HeightPreset"
+- "MaterialLayer"
+- !private "MaterialLayerKey"
+- "ShapePreset"
+- !private "UIBezierPath"
+- "UInt8"
+depends-member:
+- !private ["Sa", "shadowPath"]
+- !private ["s23BidirectionalCollectionP", "shadowPath"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["8Material17BorderWidthPresetO", "none"]
+- !private ["So19CAAnimationDelegateP", "AssociateObject"]
+- !private ["So19CAAnimationDelegateP", "AssociatedObject"]
+- !private ["So19CAAnimationDelegateP", "MaterialLayer"]
+- !private ["So19CAAnimationDelegateP", "MaterialLayerKey"]
+- !private ["So19CAAnimationDelegateP", "UIBezierPath"]
+- !private ["So19CAAnimationDelegateP", "borderWidth"]
+- !private ["So19CAAnimationDelegateP", "bounds"]
+- !private ["So19CAAnimationDelegateP", "cornerRadius"]
+- !private ["So19CAAnimationDelegateP", "depth"]
+- !private ["So19CAAnimationDelegateP", "depthPreset"]
+- !private ["So19CAAnimationDelegateP", "frame"]
+- !private ["So19CAAnimationDelegateP", "height"]
+- !private ["So19CAAnimationDelegateP", "isShadowPathAutoSizing"]
+- !private ["So19CAAnimationDelegateP", "layoutShadowPath"]
+- !private ["So19CAAnimationDelegateP", "layoutShape"]
+- !private ["So19CAAnimationDelegateP", "materialLayer"]
+- !private ["So19CAAnimationDelegateP", "motion"]
+- !private ["So19CAAnimationDelegateP", "shadowOffset"]
+- !private ["So19CAAnimationDelegateP", "shadowOpacity"]
+- !private ["So19CAAnimationDelegateP", "shadowPath"]
+- !private ["So19CAAnimationDelegateP", "shadowRadius"]
+- !private ["So19CAAnimationDelegateP", "shapePreset"]
+- !private ["So7CALayerC", "AssociateObject"]
+- !private ["So7CALayerC", "AssociatedObject"]
+- ["So7CALayerC", "Bool"]
+- ["So7CALayerC", "BorderWidthPreset"]
+- ["So7CALayerC", "CGFloat"]
+- ["So7CALayerC", "CornerRadiusPreset"]
+- ["So7CALayerC", "Depth"]
+- ["So7CALayerC", "DepthPreset"]
+- ["So7CALayerC", "HeightPreset"]
+- ["So7CALayerC", "MaterialLayer"]
+- !private ["So7CALayerC", "MaterialLayerKey"]
+- ["So7CALayerC", "ShapePreset"]
+- !private ["So7CALayerC", "UIBezierPath"]
+- !private ["So7CALayerC", "borderWidth"]
+- ["So7CALayerC", "borderWidthPreset"]
+- !private ["So7CALayerC", "bounds"]
+- !private ["So7CALayerC", "cornerRadius"]
+- ["So7CALayerC", "cornerRadiusPreset"]
+- ["So7CALayerC", "depth"]
+- ["So7CALayerC", "depthPreset"]
+- !private ["So7CALayerC", "frame"]
+- ["So7CALayerC", "height"]
+- ["So7CALayerC", "heightPreset"]
+- ["So7CALayerC", "isShadowPathAutoSizing"]
+- ["So7CALayerC", "layoutShadowPath"]
+- ["So7CALayerC", "layoutShape"]
+- !private ["So7CALayerC", "materialLayer"]
+- !private ["So7CALayerC", "motion"]
+- !private ["So7CALayerC", "shadowOffset"]
+- !private ["So7CALayerC", "shadowOpacity"]
+- !private ["So7CALayerC", "shadowPath"]
+- !private ["So7CALayerC", "shadowRadius"]
+- ["So7CALayerC", "shapePreset"]
+- ["So7CALayerC", "width"]
+- ["So7CALayerC", "x"]
+- ["So7CALayerC", "y"]
+- !private ["So13CAMediaTimingP", "AssociateObject"]
+- !private ["So13CAMediaTimingP", "AssociatedObject"]
+- !private ["So13CAMediaTimingP", "MaterialLayer"]
+- !private ["So13CAMediaTimingP", "MaterialLayerKey"]
+- !private ["So13CAMediaTimingP", "UIBezierPath"]
+- !private ["So13CAMediaTimingP", "borderWidth"]
+- !private ["So13CAMediaTimingP", "bounds"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
+- !private ["So13CAMediaTimingP", "depth"]
+- !private ["So13CAMediaTimingP", "depthPreset"]
+- !private ["So13CAMediaTimingP", "frame"]
+- !private ["So13CAMediaTimingP", "height"]
+- !private ["So13CAMediaTimingP", "isShadowPathAutoSizing"]
+- !private ["So13CAMediaTimingP", "layoutShadowPath"]
+- !private ["So13CAMediaTimingP", "layoutShape"]
+- !private ["So13CAMediaTimingP", "materialLayer"]
+- !private ["So13CAMediaTimingP", "motion"]
+- !private ["So13CAMediaTimingP", "shadowOffset"]
+- !private ["So13CAMediaTimingP", "shadowOpacity"]
+- !private ["So13CAMediaTimingP", "shadowPath"]
+- !private ["So13CAMediaTimingP", "shadowRadius"]
+- !private ["So13CAMediaTimingP", "shapePreset"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["SC7CGPointV", "x"]
+- !private ["SC7CGPointV", "y"]
+- !private ["SC6CGRectV", "height"]
+- !private ["SC6CGRectV", "origin"]
+- !private ["SC6CGRectV", "size"]
+- !private ["SC6CGRectV", "width"]
+- !private ["SC6CGSizeV", "height"]
+- !private ["SC6CGSizeV", "width"]
+- !private ["s7CVarArgP", "AssociateObject"]
+- !private ["s7CVarArgP", "AssociatedObject"]
+- !private ["s7CVarArgP", "MaterialLayer"]
+- !private ["s7CVarArgP", "MaterialLayerKey"]
+- !private ["s7CVarArgP", "UIBezierPath"]
+- !private ["s7CVarArgP", "borderWidth"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "cgPath"]
+- !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "depth"]
+- !private ["s7CVarArgP", "depthPreset"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "height"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isShadowPathAutoSizing"]
+- !private ["s7CVarArgP", "layoutShadowPath"]
+- !private ["s7CVarArgP", "layoutShape"]
+- !private ["s7CVarArgP", "materialLayer"]
+- !private ["s7CVarArgP", "motion"]
+- !private ["s7CVarArgP", "shadowOffset"]
+- !private ["s7CVarArgP", "shadowOpacity"]
+- !private ["s7CVarArgP", "shadowPath"]
+- !private ["s7CVarArgP", "shadowRadius"]
+- !private ["s7CVarArgP", "shapePreset"]
+- !private ["s10CollectionP", "shadowPath"]
+- !private ["s10ComparableP", "init"]
+- !private ["8Material18CornerRadiusPresetO", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "AssociateObject"]
+- !private ["s28CustomDebugStringConvertibleP", "AssociatedObject"]
+- !private ["s28CustomDebugStringConvertibleP", "MaterialLayer"]
+- !private ["s28CustomDebugStringConvertibleP", "MaterialLayerKey"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBezierPath"]
+- !private ["s28CustomDebugStringConvertibleP", "borderWidth"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "cgPath"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "depth"]
+- !private ["s28CustomDebugStringConvertibleP", "depthPreset"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isShadowPathAutoSizing"]
+- !private ["s28CustomDebugStringConvertibleP", "layoutShadowPath"]
+- !private ["s28CustomDebugStringConvertibleP", "layoutShape"]
+- !private ["s28CustomDebugStringConvertibleP", "materialLayer"]
+- !private ["s28CustomDebugStringConvertibleP", "motion"]
+- !private ["s28CustomDebugStringConvertibleP", "origin"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowOffset"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowOpacity"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowPath"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "shapePreset"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "origin"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s29CustomPlaygroundQuickLookableP", "x"]
+- !private ["s29CustomPlaygroundQuickLookableP", "y"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "origin"]
+- !private ["s17CustomReflectableP", "shadowPath"]
+- !private ["s17CustomReflectableP", "size"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s17CustomReflectableP", "y"]
+- !private ["s23CustomStringConvertibleP", "AssociateObject"]
+- !private ["s23CustomStringConvertibleP", "AssociatedObject"]
+- !private ["s23CustomStringConvertibleP", "MaterialLayer"]
+- !private ["s23CustomStringConvertibleP", "MaterialLayerKey"]
+- !private ["s23CustomStringConvertibleP", "UIBezierPath"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "borderWidth"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "cgPath"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "depth"]
+- !private ["s23CustomStringConvertibleP", "depthPreset"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "height"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isShadowPathAutoSizing"]
+- !private ["s23CustomStringConvertibleP", "layoutShadowPath"]
+- !private ["s23CustomStringConvertibleP", "layoutShape"]
+- !private ["s23CustomStringConvertibleP", "materialLayer"]
+- !private ["s23CustomStringConvertibleP", "motion"]
+- !private ["s23CustomStringConvertibleP", "shadowOffset"]
+- !private ["s23CustomStringConvertibleP", "shadowOpacity"]
+- !private ["s23CustomStringConvertibleP", "shadowPath"]
+- !private ["s23CustomStringConvertibleP", "shadowRadius"]
+- !private ["s23CustomStringConvertibleP", "shapePreset"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "height"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "origin"]
+- !private ["s9DecodableP", "shadowPath"]
+- !private ["s9DecodableP", "size"]
+- !private ["s9DecodableP", "width"]
+- !private ["s9DecodableP", "x"]
+- !private ["s9DecodableP", "y"]
+- !private ["8Material5DepthV", "offset"]
+- !private ["8Material5DepthV", "opacity"]
+- !private ["8Material5DepthV", "preset"]
+- !private ["8Material5DepthV", "radius"]
+- !private ["8Material5DepthV", "zero"]
+- !private ["8Material11DepthPresetO", "deinit"]
+- !private ["8Material11DepthPresetO", "none"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "height"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "origin"]
+- !private ["s9EncodableP", "shadowPath"]
+- !private ["s9EncodableP", "size"]
+- !private ["s9EncodableP", "width"]
+- !private ["s9EncodableP", "x"]
+- !private ["s9EncodableP", "y"]
+- !private ["s9EquatableP", "AssociateObject"]
+- !private ["s9EquatableP", "AssociatedObject"]
+- !private ["s9EquatableP", "MaterialLayer"]
+- !private ["s9EquatableP", "MaterialLayerKey"]
+- !private ["s9EquatableP", "UIBezierPath"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "asSize"]
+- !private ["s9EquatableP", "borderWidth"]
+- !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "cgPath"]
+- !private ["s9EquatableP", "circle"]
+- !private ["s9EquatableP", "cornerRadius"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "depth"]
+- !private ["s9EquatableP", "depthPreset"]
+- !private ["s9EquatableP", "frame"]
+- !private ["s9EquatableP", "height"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isShadowPathAutoSizing"]
+- !private ["s9EquatableP", "layoutShadowPath"]
+- !private ["s9EquatableP", "layoutShape"]
+- !private ["s9EquatableP", "materialLayer"]
+- !private ["s9EquatableP", "motion"]
+- !private ["s9EquatableP", "none"]
+- !private ["s9EquatableP", "origin"]
+- !private ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "shadowOffset"]
+- !private ["s9EquatableP", "shadowOpacity"]
+- !private ["s9EquatableP", "shadowPath"]
+- !private ["s9EquatableP", "shadowRadius"]
+- !private ["s9EquatableP", "shapePreset"]
+- !private ["s9EquatableP", "size"]
+- !private ["s9EquatableP", "width"]
+- !private ["s9EquatableP", "x"]
+- !private ["s9EquatableP", "y"]
+- !private ["s25ExpressibleByArrayLiteralP", "shadowPath"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s8HashableP", "AssociateObject"]
+- !private ["s8HashableP", "AssociatedObject"]
+- !private ["s8HashableP", "MaterialLayer"]
+- !private ["s8HashableP", "MaterialLayerKey"]
+- !private ["s8HashableP", "UIBezierPath"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "borderWidth"]
+- !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "cgPath"]
+- !private ["s8HashableP", "circle"]
+- !private ["s8HashableP", "cornerRadius"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "depth"]
+- !private ["s8HashableP", "depthPreset"]
+- !private ["s8HashableP", "frame"]
+- !private ["s8HashableP", "height"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isShadowPathAutoSizing"]
+- !private ["s8HashableP", "layoutShadowPath"]
+- !private ["s8HashableP", "layoutShape"]
+- !private ["s8HashableP", "materialLayer"]
+- !private ["s8HashableP", "motion"]
+- !private ["s8HashableP", "none"]
+- !private ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "shadowOffset"]
+- !private ["s8HashableP", "shadowOpacity"]
+- !private ["s8HashableP", "shadowPath"]
+- !private ["s8HashableP", "shadowRadius"]
+- !private ["s8HashableP", "shapePreset"]
+- !private ["8Material12HeightPresetO", "default"]
+- !private ["8Material12HeightPresetO", "deinit"]
+- !private ["8Material12HeightPresetO", "rawValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["8Material15MotionAnimationO", "shadowPath"]
+- !private ["s17MutableCollectionP", "shadowPath"]
+- !private ["So8NSCodingP", "AssociateObject"]
+- !private ["So8NSCodingP", "AssociatedObject"]
+- !private ["So8NSCodingP", "MaterialLayer"]
+- !private ["So8NSCodingP", "MaterialLayerKey"]
+- !private ["So8NSCodingP", "UIBezierPath"]
+- !private ["So8NSCodingP", "borderWidth"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "cgPath"]
+- !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "depth"]
+- !private ["So8NSCodingP", "depthPreset"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "height"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isShadowPathAutoSizing"]
+- !private ["So8NSCodingP", "layoutShadowPath"]
+- !private ["So8NSCodingP", "layoutShape"]
+- !private ["So8NSCodingP", "materialLayer"]
+- !private ["So8NSCodingP", "motion"]
+- !private ["So8NSCodingP", "shadowOffset"]
+- !private ["So8NSCodingP", "shadowOpacity"]
+- !private ["So8NSCodingP", "shadowPath"]
+- !private ["So8NSCodingP", "shadowRadius"]
+- !private ["So8NSCodingP", "shapePreset"]
+- !private ["So9NSCopyingP", "cgPath"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So8NSObjectC", "AssociateObject"]
+- !private ["So8NSObjectC", "AssociatedObject"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "BorderWidthPreset"]
+- ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "CornerRadiusPreset"]
+- ["So8NSObjectC", "Depth"]
+- ["So8NSObjectC", "DepthPreset"]
+- ["So8NSObjectC", "HeightPreset"]
+- ["So8NSObjectC", "MaterialLayer"]
+- !private ["So8NSObjectC", "MaterialLayerKey"]
+- ["So8NSObjectC", "ShapePreset"]
+- !private ["So8NSObjectC", "UIBezierPath"]
+- !private ["So8NSObjectC", "borderWidth"]
+- ["So8NSObjectC", "borderWidthPreset"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "cgPath"]
+- !private ["So8NSObjectC", "cornerRadius"]
+- ["So8NSObjectC", "cornerRadiusPreset"]
+- ["So8NSObjectC", "depth"]
+- ["So8NSObjectC", "depthPreset"]
+- !private ["So8NSObjectC", "frame"]
+- ["So8NSObjectC", "height"]
+- ["So8NSObjectC", "heightPreset"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "isShadowPathAutoSizing"]
+- ["So8NSObjectC", "layoutShadowPath"]
+- ["So8NSObjectC", "layoutShape"]
+- ["So8NSObjectC", "materialLayer"]
+- !private ["So8NSObjectC", "motion"]
+- !private ["So8NSObjectC", "shadowOffset"]
+- !private ["So8NSObjectC", "shadowOpacity"]
+- !private ["So8NSObjectC", "shadowPath"]
+- !private ["So8NSObjectC", "shadowRadius"]
+- ["So8NSObjectC", "shapePreset"]
+- ["So8NSObjectC", "width"]
+- ["So8NSObjectC", "x"]
+- ["So8NSObjectC", "y"]
+- !private ["So16NSObjectProtocolP", "AssociateObject"]
+- !private ["So16NSObjectProtocolP", "AssociatedObject"]
+- !private ["So16NSObjectProtocolP", "MaterialLayer"]
+- !private ["So16NSObjectProtocolP", "MaterialLayerKey"]
+- !private ["So16NSObjectProtocolP", "UIBezierPath"]
+- !private ["So16NSObjectProtocolP", "borderWidth"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "cgPath"]
+- !private ["So16NSObjectProtocolP", "cornerRadius"]
+- !private ["So16NSObjectProtocolP", "depth"]
+- !private ["So16NSObjectProtocolP", "depthPreset"]
+- !private ["So16NSObjectProtocolP", "frame"]
+- !private ["So16NSObjectProtocolP", "height"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isShadowPathAutoSizing"]
+- !private ["So16NSObjectProtocolP", "layoutShadowPath"]
+- !private ["So16NSObjectProtocolP", "layoutShape"]
+- !private ["So16NSObjectProtocolP", "materialLayer"]
+- !private ["So16NSObjectProtocolP", "motion"]
+- !private ["So16NSObjectProtocolP", "shadowOffset"]
+- !private ["So16NSObjectProtocolP", "shadowOpacity"]
+- !private ["So16NSObjectProtocolP", "shadowPath"]
+- !private ["So16NSObjectProtocolP", "shadowRadius"]
+- !private ["So16NSObjectProtocolP", "shapePreset"]
+- !private ["So14NSSecureCodingP", "AssociateObject"]
+- !private ["So14NSSecureCodingP", "AssociatedObject"]
+- !private ["So14NSSecureCodingP", "MaterialLayer"]
+- !private ["So14NSSecureCodingP", "MaterialLayerKey"]
+- !private ["So14NSSecureCodingP", "UIBezierPath"]
+- !private ["So14NSSecureCodingP", "borderWidth"]
+- !private ["So14NSSecureCodingP", "bounds"]
+- !private ["So14NSSecureCodingP", "cgPath"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
+- !private ["So14NSSecureCodingP", "depth"]
+- !private ["So14NSSecureCodingP", "depthPreset"]
+- !private ["So14NSSecureCodingP", "frame"]
+- !private ["So14NSSecureCodingP", "height"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "isShadowPathAutoSizing"]
+- !private ["So14NSSecureCodingP", "layoutShadowPath"]
+- !private ["So14NSSecureCodingP", "layoutShape"]
+- !private ["So14NSSecureCodingP", "materialLayer"]
+- !private ["So14NSSecureCodingP", "motion"]
+- !private ["So14NSSecureCodingP", "shadowOffset"]
+- !private ["So14NSSecureCodingP", "shadowOpacity"]
+- !private ["So14NSSecureCodingP", "shadowPath"]
+- !private ["So14NSSecureCodingP", "shadowRadius"]
+- !private ["So14NSSecureCodingP", "shapePreset"]
+- !private ["s7NumericP", "init"]
+- !private ["s22RandomAccessCollectionP", "shadowPath"]
+- !private ["s26RangeReplaceableCollectionP", "shadowPath"]
+- !private ["s16RawRepresentableP", "circle"]
+- !private ["s16RawRepresentableP", "default"]
+- !private ["s16RawRepresentableP", "none"]
+- !private ["s16RawRepresentableP", "rawValue"]
+- !private ["s8SequenceP", "shadowPath"]
+- !private ["8Material11ShapePresetO", "circle"]
+- !private ["8Material11ShapePresetO", "deinit"]
+- !private ["8Material11ShapePresetO", "none"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s10StrideableP", "init"]
+- !private ["So12UIBezierPathC", "cgPath"]
+- !private ["So12UIBezierPathC", "init"]
+- !private ["SC8UIOffsetV", "asSize"]
+- !private ["s14_ArrayProtocolP", "shadowPath"]
+- !private ["s23_BidirectionalIndexableP", "shadowPath"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s24_DestructorSafeContainerP", "shadowPath"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s10_IndexableP", "shadowPath"]
+- !private ["s14_IndexableBaseP", "shadowPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociateObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MaterialLayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MaterialLayerKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBezierPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "borderWidth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "depth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "depthPreset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "height"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isShadowPathAutoSizing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layoutShadowPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layoutShape"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "materialLayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "motion"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOffset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOpacity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shapePreset"]
+- !private ["s17_MutableIndexableP", "shadowPath"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "asSize"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "origin"]
+- !private ["s21_ObjectiveCBridgeableP", "shadowPath"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+- !private ["s22_RandomAccessIndexableP", "shadowPath"]
+- !private ["s26_RangeReplaceableIndexableP", "shadowPath"]
+- !private ["s11_StrideableP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "Sb"
+- !private "8Material17BorderWidthPresetO"
+- !private "So19CAAnimationDelegateP"
+- "So7CALayerC"
+- !private "So13CAMediaTimingP"
+- !private "12CoreGraphics7CGFloatV"
+- !private "SC7CGPointV"
+- !private "SC6CGRectV"
+- !private "SC6CGSizeV"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "8Material18CornerRadiusPresetO"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "8Material5DepthV"
+- !private "8Material11DepthPresetO"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s13FloatingPointP"
+- !private "s8HashableP"
+- !private "8Material12HeightPresetO"
+- !private "s25LosslessStringConvertibleP"
+- !private "8Material15MotionAnimationO"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "s7NumericP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "8Material11ShapePresetO"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- !private "So12UIBezierPathC"
+- !private "SC8UIOffsetV"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "435a08af4199581e504527e34fcf859d"

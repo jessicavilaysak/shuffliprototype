@@ -1,0 +1,201 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FlatButton"
+provides-nominal:
+- "8Material10FlatButtonC"
+provides-member:
+- ["8Material10FlatButtonC", ""]
+provides-dynamic-lookup:
+- "prepare"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Button"
+- "FlatButton"
+depends-member:
+- !private ["8Material6ButtonC", "cornerRadiusPreset"]
+- ["8Material6ButtonC", "init"]
+- ["8Material6ButtonC", "prepare"]
+- ["8Material6ButtonC", ""]
+- !private ["So15CALayerDelegateP", "cornerRadiusPreset"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "prepare"]
+- ["So15CALayerDelegateP", ""]
+- !private ["s7CVarArgP", "cornerRadiusPreset"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "prepare"]
+- ["s7CVarArgP", ""]
+- !private ["8Material18CornerRadiusPresetO", "cornerRadius1"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadiusPreset"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "cornerRadiusPreset"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "prepare"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "cornerRadius1"]
+- !private ["s9EquatableP", "cornerRadiusPreset"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "prepare"]
+- ["s9EquatableP", ""]
+- !private ["8Material10FlatButtonC", "cornerRadiusPreset"]
+- ["8Material10FlatButtonC", "deinit"]
+- ["8Material10FlatButtonC", "init"]
+- ["8Material10FlatButtonC", "prepare"]
+- !private ["s8HashableP", "cornerRadius1"]
+- !private ["s8HashableP", "cornerRadiusPreset"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "prepare"]
+- ["s8HashableP", ""]
+- !private ["So8NSCodingP", "cornerRadiusPreset"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "prepare"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSObjectC", "cornerRadiusPreset"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So16NSObjectProtocolP", "cornerRadiusPreset"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "prepare"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["8Material9PulseableP", "cornerRadiusPreset"]
+- !private ["8Material9PulseableP", "init"]
+- !private ["8Material9PulseableP", "prepare"]
+- ["8Material9PulseableP", ""]
+- !private ["8Material14PulseableLayerP", "cornerRadiusPreset"]
+- !private ["8Material14PulseableLayerP", "init"]
+- !private ["8Material14PulseableLayerP", "prepare"]
+- ["8Material14PulseableLayerP", ""]
+- !private ["s16RawRepresentableP", "cornerRadius1"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "cornerRadiusPreset"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "prepare"]
+- ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "cornerRadiusPreset"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "prepare"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "cornerRadiusPreset"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "prepare"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "cornerRadiusPreset"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "prepare"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "cornerRadiusPreset"]
+- ["So8UIButtonC", "init"]
+- ["So8UIButtonC", "prepare"]
+- !private ["So9UIControlC", "cornerRadiusPreset"]
+- ["So9UIControlC", "init"]
+- ["So9UIControlC", "prepare"]
+- !private ["So17UICoordinateSpaceP", "cornerRadiusPreset"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "prepare"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "cornerRadiusPreset"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "prepare"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "cornerRadiusPreset"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "prepare"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "cornerRadiusPreset"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "prepare"]
+- ["So11UIFocusItemP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "cornerRadiusPreset"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "prepare"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "cornerRadiusPreset"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "prepare"]
+- !private ["So30UIResponderStandardEditActionsP", "cornerRadiusPreset"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "prepare"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "cornerRadiusPreset"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "prepare"]
+- ["So35UISpringLoadedInteractionSupportingP", ""]
+- !private ["So18UITraitEnvironmentP", "cornerRadiusPreset"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "prepare"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "cornerRadiusPreset"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "prepare"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cornerRadiusPreset"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "prepare"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadiusPreset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- "8Material6ButtonC"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "8Material18CornerRadiusPresetO"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "8Material10FlatButtonC"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "8Material9PulseableP"
+- "8Material14PulseableLayerP"
+- !private "s16RawRepresentableP"
+- "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So8UIButtonC"
+- "So9UIControlC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So35UISpringLoadedInteractionSupportingP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "a4cb0b6531fb94e11dfc10a9cc942e44"

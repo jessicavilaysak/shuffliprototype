@@ -1,5 +1,5 @@
-version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "ae0678e515fa7816d5b2a567fdf7cc60"
-build_time: [559275875, 912730000]
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "ae64133931f9fd44a6bf2efe9bd0eb85"
+build_time: [1506243880, 828019000]
 inputs:
-  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Toucan/Source/Toucan.swift": [555835474, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Toucan/Source/Toucan.swift": [1502520274, 0]

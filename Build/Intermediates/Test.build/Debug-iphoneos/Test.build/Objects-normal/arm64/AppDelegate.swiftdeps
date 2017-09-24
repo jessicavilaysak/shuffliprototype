@@ -2,9 +2,9 @@
 provides-top-level:
 - "AppDelegate"
 provides-nominal:
-- "C4Test11AppDelegate"
+- "4Test11AppDelegateC"
 provides-member:
-- ["C4Test11AppDelegate", ""]
+- ["4Test11AppDelegateC", ""]
 provides-dynamic-lookup:
 - "application"
 - "applicationDidBecomeActive"
@@ -18,6 +18,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
+- !private "DropDown"
 - !private "FIRApp"
 - !private "IQKeyboardManager"
 - "UIApplication"
@@ -26,303 +27,354 @@ depends-top-level:
 - "UIResponder"
 - "UIWindow"
 depends-member:
-- !private ["Ps9AnyObject", "FIRApp"]
-- !private ["Ps9AnyObject", "IQKeyboardManager"]
-- ["Ps9AnyObject", "application"]
-- ["Ps9AnyObject", "applicationDidBecomeActive"]
-- ["Ps9AnyObject", "applicationDidEnterBackground"]
-- ["Ps9AnyObject", "applicationDidFinishLaunching"]
-- ["Ps9AnyObject", "applicationDidReceiveMemoryWarning"]
-- ["Ps9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps9AnyObject", "applicationShouldRequestHealthAuthorization"]
-- ["Ps9AnyObject", "applicationSignificantTimeChange"]
-- ["Ps9AnyObject", "applicationWillEnterForeground"]
-- ["Ps9AnyObject", "applicationWillResignActive"]
-- ["Ps9AnyObject", "applicationWillTerminate"]
-- !private ["Ps9AnyObject", "configure"]
-- !private ["Ps9AnyObject", "enable"]
-- !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "sharedManager"]
-- ["Ps9AnyObject", "window"]
-- ["Ps9AnyObject", ""]
-- ["C4Test11AppDelegate", "Bool"]
-- !private ["C4Test11AppDelegate", "FIRApp"]
-- !private ["C4Test11AppDelegate", "IQKeyboardManager"]
-- ["C4Test11AppDelegate", "UIApplication"]
-- ["C4Test11AppDelegate", "UIApplicationLaunchOptionsKey"]
-- ["C4Test11AppDelegate", "UIWindow"]
-- ["C4Test11AppDelegate", "application"]
-- ["C4Test11AppDelegate", "applicationDidBecomeActive"]
-- ["C4Test11AppDelegate", "applicationDidEnterBackground"]
-- ["C4Test11AppDelegate", "applicationDidFinishLaunching"]
-- ["C4Test11AppDelegate", "applicationDidReceiveMemoryWarning"]
-- ["C4Test11AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
-- ["C4Test11AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
-- ["C4Test11AppDelegate", "applicationShouldRequestHealthAuthorization"]
-- ["C4Test11AppDelegate", "applicationSignificantTimeChange"]
-- ["C4Test11AppDelegate", "applicationWillEnterForeground"]
-- ["C4Test11AppDelegate", "applicationWillResignActive"]
-- ["C4Test11AppDelegate", "applicationWillTerminate"]
-- ["C4Test11AppDelegate", "deinit"]
-- ["C4Test11AppDelegate", "init"]
-- ["C4Test11AppDelegate", "window"]
-- !private ["Ps7CVarArg", "FIRApp"]
-- !private ["Ps7CVarArg", "IQKeyboardManager"]
-- ["Ps7CVarArg", "application"]
-- ["Ps7CVarArg", "applicationDidBecomeActive"]
-- ["Ps7CVarArg", "applicationDidEnterBackground"]
-- ["Ps7CVarArg", "applicationDidFinishLaunching"]
-- ["Ps7CVarArg", "applicationDidReceiveMemoryWarning"]
-- ["Ps7CVarArg", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps7CVarArg", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps7CVarArg", "applicationShouldRequestHealthAuthorization"]
-- ["Ps7CVarArg", "applicationSignificantTimeChange"]
-- ["Ps7CVarArg", "applicationWillEnterForeground"]
-- ["Ps7CVarArg", "applicationWillResignActive"]
-- ["Ps7CVarArg", "applicationWillTerminate"]
-- !private ["Ps7CVarArg", "configure"]
-- !private ["Ps7CVarArg", "enable"]
-- !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "sharedManager"]
-- ["Ps7CVarArg", "window"]
-- ["Ps7CVarArg", ""]
-- !private ["Ps28CustomDebugStringConvertible", "FIRApp"]
-- !private ["Ps28CustomDebugStringConvertible", "IQKeyboardManager"]
-- ["Ps28CustomDebugStringConvertible", "application"]
-- ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
-- ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
-- ["Ps28CustomDebugStringConvertible", "applicationDidFinishLaunching"]
-- ["Ps28CustomDebugStringConvertible", "applicationDidReceiveMemoryWarning"]
-- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps28CustomDebugStringConvertible", "applicationShouldRequestHealthAuthorization"]
-- ["Ps28CustomDebugStringConvertible", "applicationSignificantTimeChange"]
-- ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
-- ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
-- ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
-- !private ["Ps28CustomDebugStringConvertible", "configure"]
-- !private ["Ps28CustomDebugStringConvertible", "enable"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "sharedManager"]
-- ["Ps28CustomDebugStringConvertible", "window"]
-- ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "FIRApp"]
-- !private ["Ps23CustomStringConvertible", "IQKeyboardManager"]
-- ["Ps23CustomStringConvertible", "application"]
-- ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
-- ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
-- ["Ps23CustomStringConvertible", "applicationDidFinishLaunching"]
-- ["Ps23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
-- ["Ps23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
-- ["Ps23CustomStringConvertible", "applicationSignificantTimeChange"]
-- ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
-- ["Ps23CustomStringConvertible", "applicationWillResignActive"]
-- ["Ps23CustomStringConvertible", "applicationWillTerminate"]
-- !private ["Ps23CustomStringConvertible", "configure"]
-- !private ["Ps23CustomStringConvertible", "enable"]
-- !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "sharedManager"]
-- ["Ps23CustomStringConvertible", "window"]
-- ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "FIRApp"]
-- !private ["Ps9Equatable", "IQKeyboardManager"]
-- ["Ps9Equatable", "application"]
-- ["Ps9Equatable", "applicationDidBecomeActive"]
-- ["Ps9Equatable", "applicationDidEnterBackground"]
-- ["Ps9Equatable", "applicationDidFinishLaunching"]
-- ["Ps9Equatable", "applicationDidReceiveMemoryWarning"]
-- ["Ps9Equatable", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps9Equatable", "applicationShouldRequestHealthAuthorization"]
-- ["Ps9Equatable", "applicationSignificantTimeChange"]
-- ["Ps9Equatable", "applicationWillEnterForeground"]
-- ["Ps9Equatable", "applicationWillResignActive"]
-- ["Ps9Equatable", "applicationWillTerminate"]
-- !private ["Ps9Equatable", "configure"]
-- !private ["Ps9Equatable", "enable"]
-- !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "sharedManager"]
-- ["Ps9Equatable", "window"]
-- ["Ps9Equatable", ""]
-- !private ["CSo6FIRApp", "configure"]
-- !private ["Ps8Hashable", "FIRApp"]
-- !private ["Ps8Hashable", "IQKeyboardManager"]
-- ["Ps8Hashable", "application"]
-- ["Ps8Hashable", "applicationDidBecomeActive"]
-- ["Ps8Hashable", "applicationDidEnterBackground"]
-- ["Ps8Hashable", "applicationDidFinishLaunching"]
-- ["Ps8Hashable", "applicationDidReceiveMemoryWarning"]
-- ["Ps8Hashable", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps8Hashable", "applicationShouldRequestHealthAuthorization"]
-- ["Ps8Hashable", "applicationSignificantTimeChange"]
-- ["Ps8Hashable", "applicationWillEnterForeground"]
-- ["Ps8Hashable", "applicationWillResignActive"]
-- ["Ps8Hashable", "applicationWillTerminate"]
-- !private ["Ps8Hashable", "configure"]
-- !private ["Ps8Hashable", "enable"]
-- !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "sharedManager"]
-- ["Ps8Hashable", "window"]
-- ["Ps8Hashable", ""]
-- !private ["C22IQKeyboardManagerSwift17IQKeyboardManager", "enable"]
-- !private ["C22IQKeyboardManagerSwift17IQKeyboardManager", "sharedManager"]
-- ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "FIRApp"]
-- !private ["CSo8NSObject", "IQKeyboardManager"]
-- ["CSo8NSObject", "UIApplication"]
-- ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
-- ["CSo8NSObject", "UIWindow"]
-- ["CSo8NSObject", "application"]
-- ["CSo8NSObject", "applicationDidBecomeActive"]
-- ["CSo8NSObject", "applicationDidEnterBackground"]
-- ["CSo8NSObject", "applicationDidFinishLaunching"]
-- ["CSo8NSObject", "applicationDidReceiveMemoryWarning"]
-- ["CSo8NSObject", "applicationProtectedDataDidBecomeAvailable"]
-- ["CSo8NSObject", "applicationProtectedDataWillBecomeUnavailable"]
-- ["CSo8NSObject", "applicationShouldRequestHealthAuthorization"]
-- ["CSo8NSObject", "applicationSignificantTimeChange"]
-- ["CSo8NSObject", "applicationWillEnterForeground"]
-- ["CSo8NSObject", "applicationWillResignActive"]
-- ["CSo8NSObject", "applicationWillTerminate"]
-- !private ["CSo8NSObject", "configure"]
-- !private ["CSo8NSObject", "enable"]
-- ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "sharedManager"]
-- ["CSo8NSObject", "window"]
-- !private ["PSo16NSObjectProtocol", "FIRApp"]
-- !private ["PSo16NSObjectProtocol", "IQKeyboardManager"]
-- ["PSo16NSObjectProtocol", "application"]
-- ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
-- ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
-- ["PSo16NSObjectProtocol", "applicationDidFinishLaunching"]
-- ["PSo16NSObjectProtocol", "applicationDidReceiveMemoryWarning"]
-- ["PSo16NSObjectProtocol", "applicationProtectedDataDidBecomeAvailable"]
-- ["PSo16NSObjectProtocol", "applicationProtectedDataWillBecomeUnavailable"]
-- ["PSo16NSObjectProtocol", "applicationShouldRequestHealthAuthorization"]
-- ["PSo16NSObjectProtocol", "applicationSignificantTimeChange"]
-- ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
-- ["PSo16NSObjectProtocol", "applicationWillResignActive"]
-- ["PSo16NSObjectProtocol", "applicationWillTerminate"]
-- !private ["PSo16NSObjectProtocol", "configure"]
-- !private ["PSo16NSObjectProtocol", "enable"]
-- !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "sharedManager"]
-- ["PSo16NSObjectProtocol", "window"]
-- ["PSo16NSObjectProtocol", ""]
-- !private ["PSo21UIApplicationDelegate", "FIRApp"]
-- !private ["PSo21UIApplicationDelegate", "IQKeyboardManager"]
-- ["PSo21UIApplicationDelegate", "application"]
-- ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
-- ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
-- ["PSo21UIApplicationDelegate", "applicationDidFinishLaunching"]
-- ["PSo21UIApplicationDelegate", "applicationDidReceiveMemoryWarning"]
-- ["PSo21UIApplicationDelegate", "applicationProtectedDataDidBecomeAvailable"]
-- ["PSo21UIApplicationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
-- ["PSo21UIApplicationDelegate", "applicationShouldRequestHealthAuthorization"]
-- ["PSo21UIApplicationDelegate", "applicationSignificantTimeChange"]
-- ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
-- ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
-- ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
-- ["PSo21UIApplicationDelegate", "window"]
-- ["PSo21UIApplicationDelegate", ""]
-- !private ["PSo27UIGestureRecognizerDelegate", "enable"]
-- !private ["PSo27UIGestureRecognizerDelegate", "sharedManager"]
-- ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "FIRApp"]
-- !private ["CSo11UIResponder", "IQKeyboardManager"]
-- ["CSo11UIResponder", "UIApplication"]
-- ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
-- ["CSo11UIResponder", "UIWindow"]
-- ["CSo11UIResponder", "application"]
-- ["CSo11UIResponder", "applicationDidBecomeActive"]
-- ["CSo11UIResponder", "applicationDidEnterBackground"]
-- ["CSo11UIResponder", "applicationDidFinishLaunching"]
-- ["CSo11UIResponder", "applicationDidReceiveMemoryWarning"]
-- ["CSo11UIResponder", "applicationProtectedDataDidBecomeAvailable"]
-- ["CSo11UIResponder", "applicationProtectedDataWillBecomeUnavailable"]
-- ["CSo11UIResponder", "applicationShouldRequestHealthAuthorization"]
-- ["CSo11UIResponder", "applicationSignificantTimeChange"]
-- ["CSo11UIResponder", "applicationWillEnterForeground"]
-- ["CSo11UIResponder", "applicationWillResignActive"]
-- ["CSo11UIResponder", "applicationWillTerminate"]
-- ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "window"]
-- ["CSo11UIResponder", ""]
-- !private ["PSo30UIResponderStandardEditActions", "FIRApp"]
-- !private ["PSo30UIResponderStandardEditActions", "IQKeyboardManager"]
-- ["PSo30UIResponderStandardEditActions", "application"]
-- ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
-- ["PSo30UIResponderStandardEditActions", "applicationDidEnterBackground"]
-- ["PSo30UIResponderStandardEditActions", "applicationDidFinishLaunching"]
-- ["PSo30UIResponderStandardEditActions", "applicationDidReceiveMemoryWarning"]
-- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataDidBecomeAvailable"]
-- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataWillBecomeUnavailable"]
-- ["PSo30UIResponderStandardEditActions", "applicationShouldRequestHealthAuthorization"]
-- ["PSo30UIResponderStandardEditActions", "applicationSignificantTimeChange"]
-- ["PSo30UIResponderStandardEditActions", "applicationWillEnterForeground"]
-- ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
-- ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
-- !private ["PSo30UIResponderStandardEditActions", "init"]
-- ["PSo30UIResponderStandardEditActions", "window"]
-- ["PSo30UIResponderStandardEditActions", ""]
-- !private ["Ps9_Hashable", "FIRApp"]
-- !private ["Ps9_Hashable", "IQKeyboardManager"]
-- ["Ps9_Hashable", "application"]
-- ["Ps9_Hashable", "applicationDidBecomeActive"]
-- ["Ps9_Hashable", "applicationDidEnterBackground"]
-- ["Ps9_Hashable", "applicationDidFinishLaunching"]
-- ["Ps9_Hashable", "applicationDidReceiveMemoryWarning"]
-- ["Ps9_Hashable", "applicationProtectedDataDidBecomeAvailable"]
-- ["Ps9_Hashable", "applicationProtectedDataWillBecomeUnavailable"]
-- ["Ps9_Hashable", "applicationShouldRequestHealthAuthorization"]
-- ["Ps9_Hashable", "applicationSignificantTimeChange"]
-- ["Ps9_Hashable", "applicationWillEnterForeground"]
-- ["Ps9_Hashable", "applicationWillResignActive"]
-- ["Ps9_Hashable", "applicationWillTerminate"]
-- !private ["Ps9_Hashable", "configure"]
-- !private ["Ps9_Hashable", "enable"]
-- !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "sharedManager"]
-- ["Ps9_Hashable", "window"]
-- ["Ps9_Hashable", ""]
+- !private ["8DropDown10AnchorViewP", "startListeningToKeyboard"]
+- ["4Test11AppDelegateC", "Bool"]
+- !private ["4Test11AppDelegateC", "DropDown"]
+- !private ["4Test11AppDelegateC", "FIRApp"]
+- !private ["4Test11AppDelegateC", "IQKeyboardManager"]
+- ["4Test11AppDelegateC", "UIApplication"]
+- ["4Test11AppDelegateC", "UIApplicationLaunchOptionsKey"]
+- ["4Test11AppDelegateC", "UIWindow"]
+- ["4Test11AppDelegateC", "application"]
+- ["4Test11AppDelegateC", "applicationDidBecomeActive"]
+- ["4Test11AppDelegateC", "applicationDidEnterBackground"]
+- ["4Test11AppDelegateC", "applicationDidFinishLaunching"]
+- ["4Test11AppDelegateC", "applicationDidReceiveMemoryWarning"]
+- ["4Test11AppDelegateC", "applicationProtectedDataDidBecomeAvailable"]
+- ["4Test11AppDelegateC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["4Test11AppDelegateC", "applicationShouldRequestHealthAuthorization"]
+- ["4Test11AppDelegateC", "applicationSignificantTimeChange"]
+- ["4Test11AppDelegateC", "applicationWillEnterForeground"]
+- ["4Test11AppDelegateC", "applicationWillResignActive"]
+- ["4Test11AppDelegateC", "applicationWillTerminate"]
+- ["4Test11AppDelegateC", "deinit"]
+- ["4Test11AppDelegateC", "init"]
+- ["4Test11AppDelegateC", "window"]
+- !private ["So15CALayerDelegateP", "startListeningToKeyboard"]
+- !private ["s7CVarArgP", "DropDown"]
+- !private ["s7CVarArgP", "FIRApp"]
+- !private ["s7CVarArgP", "IQKeyboardManager"]
+- ["s7CVarArgP", "application"]
+- ["s7CVarArgP", "applicationDidBecomeActive"]
+- ["s7CVarArgP", "applicationDidEnterBackground"]
+- ["s7CVarArgP", "applicationDidFinishLaunching"]
+- ["s7CVarArgP", "applicationDidReceiveMemoryWarning"]
+- ["s7CVarArgP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s7CVarArgP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s7CVarArgP", "applicationShouldRequestHealthAuthorization"]
+- ["s7CVarArgP", "applicationSignificantTimeChange"]
+- ["s7CVarArgP", "applicationWillEnterForeground"]
+- ["s7CVarArgP", "applicationWillResignActive"]
+- ["s7CVarArgP", "applicationWillTerminate"]
+- !private ["s7CVarArgP", "configure"]
+- !private ["s7CVarArgP", "enable"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "sharedManager"]
+- !private ["s7CVarArgP", "startListeningToKeyboard"]
+- ["s7CVarArgP", "window"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "DropDown"]
+- !private ["s28CustomDebugStringConvertibleP", "FIRApp"]
+- !private ["s28CustomDebugStringConvertibleP", "IQKeyboardManager"]
+- ["s28CustomDebugStringConvertibleP", "application"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s28CustomDebugStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- !private ["s28CustomDebugStringConvertibleP", "configure"]
+- !private ["s28CustomDebugStringConvertibleP", "enable"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedManager"]
+- !private ["s28CustomDebugStringConvertibleP", "startListeningToKeyboard"]
+- ["s28CustomDebugStringConvertibleP", "window"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "DropDown"]
+- !private ["s23CustomStringConvertibleP", "FIRApp"]
+- !private ["s23CustomStringConvertibleP", "IQKeyboardManager"]
+- ["s23CustomStringConvertibleP", "application"]
+- ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
+- ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
+- ["s23CustomStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s23CustomStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s23CustomStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s23CustomStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
+- ["s23CustomStringConvertibleP", "applicationWillResignActive"]
+- ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "configure"]
+- !private ["s23CustomStringConvertibleP", "enable"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "sharedManager"]
+- !private ["s23CustomStringConvertibleP", "startListeningToKeyboard"]
+- ["s23CustomStringConvertibleP", "window"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["8DropDownAAC", "startListeningToKeyboard"]
+- !private ["s9EquatableP", "DropDown"]
+- !private ["s9EquatableP", "FIRApp"]
+- !private ["s9EquatableP", "IQKeyboardManager"]
+- ["s9EquatableP", "application"]
+- ["s9EquatableP", "applicationDidBecomeActive"]
+- ["s9EquatableP", "applicationDidEnterBackground"]
+- ["s9EquatableP", "applicationDidFinishLaunching"]
+- ["s9EquatableP", "applicationDidReceiveMemoryWarning"]
+- ["s9EquatableP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s9EquatableP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s9EquatableP", "applicationShouldRequestHealthAuthorization"]
+- ["s9EquatableP", "applicationSignificantTimeChange"]
+- ["s9EquatableP", "applicationWillEnterForeground"]
+- ["s9EquatableP", "applicationWillResignActive"]
+- ["s9EquatableP", "applicationWillTerminate"]
+- !private ["s9EquatableP", "configure"]
+- !private ["s9EquatableP", "enable"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "sharedManager"]
+- !private ["s9EquatableP", "startListeningToKeyboard"]
+- ["s9EquatableP", "window"]
+- ["s9EquatableP", ""]
+- !private ["So6FIRAppC", "configure"]
+- !private ["s8HashableP", "DropDown"]
+- !private ["s8HashableP", "FIRApp"]
+- !private ["s8HashableP", "IQKeyboardManager"]
+- ["s8HashableP", "application"]
+- ["s8HashableP", "applicationDidBecomeActive"]
+- ["s8HashableP", "applicationDidEnterBackground"]
+- ["s8HashableP", "applicationDidFinishLaunching"]
+- ["s8HashableP", "applicationDidReceiveMemoryWarning"]
+- ["s8HashableP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s8HashableP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s8HashableP", "applicationShouldRequestHealthAuthorization"]
+- ["s8HashableP", "applicationSignificantTimeChange"]
+- ["s8HashableP", "applicationWillEnterForeground"]
+- ["s8HashableP", "applicationWillResignActive"]
+- ["s8HashableP", "applicationWillTerminate"]
+- !private ["s8HashableP", "configure"]
+- !private ["s8HashableP", "enable"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "sharedManager"]
+- !private ["s8HashableP", "startListeningToKeyboard"]
+- ["s8HashableP", "window"]
+- ["s8HashableP", ""]
+- !private ["22IQKeyboardManagerSwift0aB0C", "enable"]
+- !private ["22IQKeyboardManagerSwift0aB0C", "sharedManager"]
+- !private ["So8NSCodingP", "startListeningToKeyboard"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "DropDown"]
+- !private ["So8NSObjectC", "FIRApp"]
+- !private ["So8NSObjectC", "IQKeyboardManager"]
+- ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
+- ["So8NSObjectC", "UIWindow"]
+- ["So8NSObjectC", "application"]
+- ["So8NSObjectC", "applicationDidBecomeActive"]
+- ["So8NSObjectC", "applicationDidEnterBackground"]
+- ["So8NSObjectC", "applicationDidFinishLaunching"]
+- ["So8NSObjectC", "applicationDidReceiveMemoryWarning"]
+- ["So8NSObjectC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So8NSObjectC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So8NSObjectC", "applicationShouldRequestHealthAuthorization"]
+- ["So8NSObjectC", "applicationSignificantTimeChange"]
+- ["So8NSObjectC", "applicationWillEnterForeground"]
+- ["So8NSObjectC", "applicationWillResignActive"]
+- ["So8NSObjectC", "applicationWillTerminate"]
+- !private ["So8NSObjectC", "configure"]
+- !private ["So8NSObjectC", "enable"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "sharedManager"]
+- !private ["So8NSObjectC", "startListeningToKeyboard"]
+- ["So8NSObjectC", "window"]
+- !private ["So16NSObjectProtocolP", "DropDown"]
+- !private ["So16NSObjectProtocolP", "FIRApp"]
+- !private ["So16NSObjectProtocolP", "IQKeyboardManager"]
+- ["So16NSObjectProtocolP", "application"]
+- ["So16NSObjectProtocolP", "applicationDidBecomeActive"]
+- ["So16NSObjectProtocolP", "applicationDidEnterBackground"]
+- ["So16NSObjectProtocolP", "applicationDidFinishLaunching"]
+- ["So16NSObjectProtocolP", "applicationDidReceiveMemoryWarning"]
+- ["So16NSObjectProtocolP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So16NSObjectProtocolP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So16NSObjectProtocolP", "applicationShouldRequestHealthAuthorization"]
+- ["So16NSObjectProtocolP", "applicationSignificantTimeChange"]
+- ["So16NSObjectProtocolP", "applicationWillEnterForeground"]
+- ["So16NSObjectProtocolP", "applicationWillResignActive"]
+- ["So16NSObjectProtocolP", "applicationWillTerminate"]
+- !private ["So16NSObjectProtocolP", "configure"]
+- !private ["So16NSObjectProtocolP", "enable"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "sharedManager"]
+- !private ["So16NSObjectProtocolP", "startListeningToKeyboard"]
+- ["So16NSObjectProtocolP", "window"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "startListeningToKeyboard"]
+- !private ["So12UIAppearanceP", "startListeningToKeyboard"]
+- !private ["So21UIAppearanceContainerP", "startListeningToKeyboard"]
+- !private ["So21UIApplicationDelegateP", "DropDown"]
+- !private ["So21UIApplicationDelegateP", "FIRApp"]
+- !private ["So21UIApplicationDelegateP", "IQKeyboardManager"]
+- ["So21UIApplicationDelegateP", "application"]
+- ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
+- ["So21UIApplicationDelegateP", "applicationDidEnterBackground"]
+- ["So21UIApplicationDelegateP", "applicationDidFinishLaunching"]
+- ["So21UIApplicationDelegateP", "applicationDidReceiveMemoryWarning"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So21UIApplicationDelegateP", "applicationShouldRequestHealthAuthorization"]
+- ["So21UIApplicationDelegateP", "applicationSignificantTimeChange"]
+- ["So21UIApplicationDelegateP", "applicationWillEnterForeground"]
+- ["So21UIApplicationDelegateP", "applicationWillResignActive"]
+- ["So21UIApplicationDelegateP", "applicationWillTerminate"]
+- ["So21UIApplicationDelegateP", "window"]
+- ["So21UIApplicationDelegateP", ""]
+- !private ["So17UICoordinateSpaceP", "startListeningToKeyboard"]
+- !private ["So13UIDynamicItemP", "startListeningToKeyboard"]
+- !private ["So18UIFocusEnvironmentP", "startListeningToKeyboard"]
+- !private ["So11UIFocusItemP", "startListeningToKeyboard"]
+- !private ["So27UIGestureRecognizerDelegateP", "enable"]
+- !private ["So27UIGestureRecognizerDelegateP", "sharedManager"]
+- !private ["So30UIPasteConfigurationSupportingP", "DropDown"]
+- !private ["So30UIPasteConfigurationSupportingP", "FIRApp"]
+- !private ["So30UIPasteConfigurationSupportingP", "IQKeyboardManager"]
+- ["So30UIPasteConfigurationSupportingP", "application"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidEnterBackground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidFinishLaunching"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIPasteConfigurationSupportingP", "applicationSignificantTimeChange"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillEnterForeground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "startListeningToKeyboard"]
+- ["So30UIPasteConfigurationSupportingP", "window"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "DropDown"]
+- !private ["So11UIResponderC", "FIRApp"]
+- !private ["So11UIResponderC", "IQKeyboardManager"]
+- ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
+- ["So11UIResponderC", "UIWindow"]
+- ["So11UIResponderC", "application"]
+- ["So11UIResponderC", "applicationDidBecomeActive"]
+- ["So11UIResponderC", "applicationDidEnterBackground"]
+- ["So11UIResponderC", "applicationDidFinishLaunching"]
+- ["So11UIResponderC", "applicationDidReceiveMemoryWarning"]
+- ["So11UIResponderC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So11UIResponderC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So11UIResponderC", "applicationShouldRequestHealthAuthorization"]
+- ["So11UIResponderC", "applicationSignificantTimeChange"]
+- ["So11UIResponderC", "applicationWillEnterForeground"]
+- ["So11UIResponderC", "applicationWillResignActive"]
+- ["So11UIResponderC", "applicationWillTerminate"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "startListeningToKeyboard"]
+- ["So11UIResponderC", "window"]
+- ["So11UIResponderC", ""]
+- !private ["So30UIResponderStandardEditActionsP", "DropDown"]
+- !private ["So30UIResponderStandardEditActionsP", "FIRApp"]
+- !private ["So30UIResponderStandardEditActionsP", "IQKeyboardManager"]
+- ["So30UIResponderStandardEditActionsP", "application"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidEnterBackground"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidFinishLaunching"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIResponderStandardEditActionsP", "applicationSignificantTimeChange"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillEnterForeground"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "startListeningToKeyboard"]
+- ["So30UIResponderStandardEditActionsP", "window"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So20UIScrollViewDelegateP", "startListeningToKeyboard"]
+- !private ["So21UITableViewDataSourceP", "startListeningToKeyboard"]
+- !private ["So19UITableViewDelegateP", "startListeningToKeyboard"]
+- !private ["So18UITraitEnvironmentP", "startListeningToKeyboard"]
+- !private ["So6UIViewC", "startListeningToKeyboard"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "startListeningToKeyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DropDown"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRApp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IQKeyboardManager"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "application"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidFinishLaunching"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidReceiveMemoryWarning"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationShouldRequestHealthAuthorization"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationSignificantTimeChange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "enable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startListeningToKeyboard"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
-- "Ps9AnyObject"
-- "C4Test11AppDelegate"
-- "Ps7CVarArg"
-- "Ps28CustomDebugStringConvertible"
-- "Ps23CustomStringConvertible"
-- "Ps9Equatable"
-- !private "CSo6FIRApp"
-- "Ps8Hashable"
-- !private "C22IQKeyboardManagerSwift17IQKeyboardManager"
-- "CSo8NSObject"
-- "PSo16NSObjectProtocol"
-- "PSo21UIApplicationDelegate"
-- !private "PSo27UIGestureRecognizerDelegate"
-- "CSo11UIResponder"
-- "PSo30UIResponderStandardEditActions"
-- "Ps9_Hashable"
+- !private "8DropDown10AnchorViewP"
+- "4Test11AppDelegateC"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- !private "8DropDownAAC"
+- "s9EquatableP"
+- !private "So6FIRAppC"
+- "s8HashableP"
+- !private "22IQKeyboardManagerSwift0aB0C"
+- !private "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- "So21UIApplicationDelegateP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So27UIGestureRecognizerDelegateP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/SwiftKeychainWrapper.swiftmodule/arm64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
@@ -334,8 +386,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -388,7 +440,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
@@ -402,7 +453,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -411,6 +462,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
@@ -418,8 +470,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "be1da41839c26165fb32c7d9b9818b33"
+interface-hash: "214883ce2c9d12125355023bcd0ba0ce"

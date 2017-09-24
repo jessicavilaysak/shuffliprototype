@@ -2,9 +2,9 @@
 provides-top-level:
 - "TabBarController"
 provides-nominal:
-- "C4Test16TabBarController"
+- "4Test16TabBarControllerC"
 provides-member:
-- ["C4Test16TabBarController", ""]
+- ["4Test16TabBarControllerC", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "selectedControllerId"
@@ -27,449 +27,485 @@ depends-top-level:
 - !private "UIViewController"
 - !private "userObj"
 depends-member:
-- !private ["Ps9AnyObject", "UINavigationController"]
-- !private ["Ps9AnyObject", "UIStoryboard"]
-- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
-- !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "instantiateViewController"]
-- !private ["Ps9AnyObject", "isAdmin"]
-- !private ["Ps9AnyObject", "permissionToManageUsers"]
-- !private ["Ps9AnyObject", "selectedControllerId"]
-- !private ["Ps9AnyObject", "selectedViewController"]
-- !private ["Ps9AnyObject", "setNavigationBarHidden"]
-- !private ["Ps9AnyObject", "title"]
-- !private ["Ps9AnyObject", "userObj"]
-- !private ["Ps9AnyObject", "viewControllers"]
-- !private ["Ps9AnyObject", "viewDidLoad"]
-- ["Ps9AnyObject", ""]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
-- !private ["Ps23BidirectionalCollection", "count"]
-- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["s10ArraySliceV", "title"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s23BidirectionalCollectionP", "title"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Ps7CVarArg", "UINavigationController"]
-- !private ["Ps7CVarArg", "UIStoryboard"]
-- !private ["Ps7CVarArg", "count"]
-- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
-- !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "instantiateViewController"]
-- !private ["Ps7CVarArg", "selectedControllerId"]
-- !private ["Ps7CVarArg", "selectedViewController"]
-- !private ["Ps7CVarArg", "setNavigationBarHidden"]
-- !private ["Ps7CVarArg", "subscript"]
-- !private ["Ps7CVarArg", "title"]
-- !private ["Ps7CVarArg", "userObj"]
-- !private ["Ps7CVarArg", "viewControllers"]
-- !private ["Ps7CVarArg", "viewDidLoad"]
-- ["Ps7CVarArg", ""]
-- !private ["Ps10Collection", "count"]
-- !private ["Ps10Collection", "subscript"]
-- !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "UINavigationController"]
-- !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
-- !private ["Ps28CustomDebugStringConvertible", "count"]
-- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "selectedControllerId"]
-- !private ["Ps28CustomDebugStringConvertible", "selectedViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "setNavigationBarHidden"]
-- !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps28CustomDebugStringConvertible", "title"]
-- !private ["Ps28CustomDebugStringConvertible", "userObj"]
-- !private ["Ps28CustomDebugStringConvertible", "viewControllers"]
-- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
-- ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
-- !private ["Ps17CustomReflectable", "count"]
-- !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps17CustomReflectable", "subscript"]
-- !private ["Ps23CustomStringConvertible", "UINavigationController"]
-- !private ["Ps23CustomStringConvertible", "UIStoryboard"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "count"]
-- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
-- !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
-- !private ["Ps23CustomStringConvertible", "selectedControllerId"]
-- !private ["Ps23CustomStringConvertible", "selectedViewController"]
-- !private ["Ps23CustomStringConvertible", "setNavigationBarHidden"]
-- !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["Ps23CustomStringConvertible", "title"]
-- !private ["Ps23CustomStringConvertible", "userObj"]
-- !private ["Ps23CustomStringConvertible", "viewControllers"]
-- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
-- ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "UINavigationController"]
-- !private ["Ps9Equatable", "UIStoryboard"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
-- !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "instantiateViewController"]
-- !private ["Ps9Equatable", "selectedControllerId"]
-- !private ["Ps9Equatable", "selectedViewController"]
-- !private ["Ps9Equatable", "setNavigationBarHidden"]
-- !private ["Ps9Equatable", "title"]
-- !private ["Ps9Equatable", "userObj"]
-- !private ["Ps9Equatable", "viewControllers"]
-- !private ["Ps9Equatable", "viewDidLoad"]
-- ["Ps9Equatable", ""]
-- !private ["Ps25ExpressibleByArrayLiteral", "count"]
-- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
-- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps26ExpressibleByStringLiteral", "init"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Ps8Hashable", "UINavigationController"]
-- !private ["Ps8Hashable", "UIStoryboard"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
-- !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "instantiateViewController"]
-- !private ["Ps8Hashable", "selectedControllerId"]
-- !private ["Ps8Hashable", "selectedViewController"]
-- !private ["Ps8Hashable", "setNavigationBarHidden"]
-- !private ["Ps8Hashable", "title"]
-- !private ["Ps8Hashable", "userObj"]
-- !private ["Ps8Hashable", "viewControllers"]
-- !private ["Ps8Hashable", "viewDidLoad"]
-- ["Ps8Hashable", ""]
-- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "init"]
-- !private ["Ps17MutableCollection", "count"]
-- !private ["Ps17MutableCollection", "subscript"]
-- !private ["PSo8NSCoding", "UINavigationController"]
-- !private ["PSo8NSCoding", "UIStoryboard"]
-- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
-- !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "selectedControllerId"]
-- !private ["PSo8NSCoding", "selectedViewController"]
-- !private ["PSo8NSCoding", "setNavigationBarHidden"]
-- !private ["PSo8NSCoding", "title"]
-- !private ["PSo8NSCoding", "userObj"]
-- !private ["PSo8NSCoding", "viewControllers"]
-- !private ["PSo8NSCoding", "viewDidLoad"]
-- ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "UINavigationController"]
-- !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
-- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
-- !private ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "selectedControllerId"]
-- !private ["PSo26NSExtensionRequestHandling", "selectedViewController"]
-- !private ["PSo26NSExtensionRequestHandling", "setNavigationBarHidden"]
-- !private ["PSo26NSExtensionRequestHandling", "title"]
-- !private ["PSo26NSExtensionRequestHandling", "userObj"]
-- !private ["PSo26NSExtensionRequestHandling", "viewControllers"]
-- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
-- ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo16NSMutableCopying", "init"]
-- ["CSo8NSObject", "String"]
-- !private ["CSo8NSObject", "UINavigationController"]
-- !private ["CSo8NSObject", "UIStoryboard"]
-- !private ["CSo8NSObject", "UIViewController"]
-- ["CSo8NSObject", "didReceiveMemoryWarning"]
-- ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "instantiateViewController"]
-- ["CSo8NSObject", "selectedControllerId"]
-- !private ["CSo8NSObject", "selectedViewController"]
-- !private ["CSo8NSObject", "setNavigationBarHidden"]
-- !private ["CSo8NSObject", "title"]
-- !private ["CSo8NSObject", "userObj"]
-- !private ["CSo8NSObject", "viewControllers"]
-- ["CSo8NSObject", "viewDidLoad"]
-- !private ["PSo16NSObjectProtocol", "UINavigationController"]
-- !private ["PSo16NSObjectProtocol", "UIStoryboard"]
-- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
-- !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
-- !private ["PSo16NSObjectProtocol", "selectedControllerId"]
-- !private ["PSo16NSObjectProtocol", "selectedViewController"]
-- !private ["PSo16NSObjectProtocol", "setNavigationBarHidden"]
-- !private ["PSo16NSObjectProtocol", "title"]
-- !private ["PSo16NSObjectProtocol", "userObj"]
-- !private ["PSo16NSObjectProtocol", "viewControllers"]
-- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
-- ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
-- !private ["Ps22RandomAccessCollection", "count"]
-- !private ["Ps22RandomAccessCollection", "subscript"]
-- !private ["Ps26RangeReplaceableCollection", "count"]
-- !private ["Ps26RangeReplaceableCollection", "subscript"]
-- !private ["Ps8Sequence", "count"]
-- !private ["Ps8Sequence", "subscript"]
+- !private ["s7CVarArgP", "UINavigationController"]
+- !private ["s7CVarArgP", "UIStoryboard"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "selectedControllerId"]
+- !private ["s7CVarArgP", "selectedViewController"]
+- !private ["s7CVarArgP", "setNavigationBarHidden"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "userObj"]
+- !private ["s7CVarArgP", "viewControllers"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10CollectionP", "title"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "UINavigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "selectedControllerId"]
+- !private ["s28CustomDebugStringConvertibleP", "selectedViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "setNavigationBarHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "userObj"]
+- !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "title"]
+- !private ["s23CustomStringConvertibleP", "UINavigationController"]
+- !private ["s23CustomStringConvertibleP", "UIStoryboard"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "selectedControllerId"]
+- !private ["s23CustomStringConvertibleP", "selectedViewController"]
+- !private ["s23CustomStringConvertibleP", "setNavigationBarHidden"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "userObj"]
+- !private ["s23CustomStringConvertibleP", "viewControllers"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "UINavigationController"]
+- !private ["s9EquatableP", "UIStoryboard"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "instantiateViewController"]
+- !private ["s9EquatableP", "selectedControllerId"]
+- !private ["s9EquatableP", "selectedViewController"]
+- !private ["s9EquatableP", "setNavigationBarHidden"]
+- !private ["s9EquatableP", "title"]
+- !private ["s9EquatableP", "userObj"]
+- !private ["s9EquatableP", "viewControllers"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "title"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "UINavigationController"]
+- !private ["s8HashableP", "UIStoryboard"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "instantiateViewController"]
+- !private ["s8HashableP", "selectedControllerId"]
+- !private ["s8HashableP", "selectedViewController"]
+- !private ["s8HashableP", "setNavigationBarHidden"]
+- !private ["s8HashableP", "title"]
+- !private ["s8HashableP", "userObj"]
+- !private ["s8HashableP", "viewControllers"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["s17MutableCollectionP", "title"]
+- !private ["So8NSCodingP", "UINavigationController"]
+- !private ["So8NSCodingP", "UIStoryboard"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "selectedControllerId"]
+- !private ["So8NSCodingP", "selectedViewController"]
+- !private ["So8NSCodingP", "setNavigationBarHidden"]
+- !private ["So8NSCodingP", "title"]
+- !private ["So8NSCodingP", "userObj"]
+- !private ["So8NSCodingP", "viewControllers"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "UINavigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "selectedControllerId"]
+- !private ["So26NSExtensionRequestHandlingP", "selectedViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "setNavigationBarHidden"]
+- !private ["So26NSExtensionRequestHandlingP", "title"]
+- !private ["So26NSExtensionRequestHandlingP", "userObj"]
+- !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UINavigationController"]
+- !private ["So8NSObjectC", "UIStoryboard"]
+- !private ["So8NSObjectC", "UIViewController"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- ["So8NSObjectC", "selectedControllerId"]
+- !private ["So8NSObjectC", "selectedViewController"]
+- !private ["So8NSObjectC", "setNavigationBarHidden"]
+- !private ["So8NSObjectC", "title"]
+- !private ["So8NSObjectC", "userObj"]
+- !private ["So8NSObjectC", "viewControllers"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "UINavigationController"]
+- !private ["So16NSObjectProtocolP", "UIStoryboard"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- !private ["So16NSObjectProtocolP", "selectedControllerId"]
+- !private ["So16NSObjectProtocolP", "selectedViewController"]
+- !private ["So16NSObjectProtocolP", "setNavigationBarHidden"]
+- !private ["So16NSObjectProtocolP", "title"]
+- !private ["So16NSObjectProtocolP", "userObj"]
+- !private ["So16NSObjectProtocolP", "viewControllers"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s22RandomAccessCollectionP", "title"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "title"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s8SequenceP", "title"]
 - !private ["SS", "init"]
-- ["C4Test16TabBarController", "String"]
-- !private ["C4Test16TabBarController", "UINavigationController"]
-- !private ["C4Test16TabBarController", "UIStoryboard"]
-- !private ["C4Test16TabBarController", "UIViewController"]
-- ["C4Test16TabBarController", "deinit"]
-- ["C4Test16TabBarController", "didReceiveMemoryWarning"]
-- ["C4Test16TabBarController", "init"]
-- ["C4Test16TabBarController", "selectedControllerId"]
-- !private ["C4Test16TabBarController", "selectedViewController"]
-- !private ["C4Test16TabBarController", "userObj"]
-- !private ["C4Test16TabBarController", "viewControllers"]
-- ["C4Test16TabBarController", "viewDidLoad"]
-- !private ["Ps16TextOutputStream", "init"]
-- !private ["Ps20TextOutputStreamable", "init"]
-- !private ["PSo21UIAppearanceContainer", "UINavigationController"]
-- !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
-- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
-- !private ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "selectedControllerId"]
-- !private ["PSo21UIAppearanceContainer", "selectedViewController"]
-- !private ["PSo21UIAppearanceContainer", "setNavigationBarHidden"]
-- !private ["PSo21UIAppearanceContainer", "title"]
-- !private ["PSo21UIAppearanceContainer", "userObj"]
-- !private ["PSo21UIAppearanceContainer", "viewControllers"]
-- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
-- ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "UINavigationController"]
-- !private ["PSo18UIContentContainer", "UIStoryboard"]
-- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
-- !private ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "selectedControllerId"]
-- !private ["PSo18UIContentContainer", "selectedViewController"]
-- !private ["PSo18UIContentContainer", "setNavigationBarHidden"]
-- !private ["PSo18UIContentContainer", "title"]
-- !private ["PSo18UIContentContainer", "userObj"]
-- !private ["PSo18UIContentContainer", "viewControllers"]
-- !private ["PSo18UIContentContainer", "viewDidLoad"]
-- ["PSo18UIContentContainer", ""]
-- !private ["PSo18UIFocusEnvironment", "UINavigationController"]
-- !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
-- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
-- !private ["PSo18UIFocusEnvironment", "init"]
-- !private ["PSo18UIFocusEnvironment", "selectedControllerId"]
-- !private ["PSo18UIFocusEnvironment", "selectedViewController"]
-- !private ["PSo18UIFocusEnvironment", "setNavigationBarHidden"]
-- !private ["PSo18UIFocusEnvironment", "title"]
-- !private ["PSo18UIFocusEnvironment", "userObj"]
-- !private ["PSo18UIFocusEnvironment", "viewControllers"]
-- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
-- ["PSo18UIFocusEnvironment", ""]
-- !private ["CSo22UINavigationController", "init"]
-- !private ["CSo22UINavigationController", "setNavigationBarHidden"]
-- !private ["CSo22UINavigationController", "title"]
-- !private ["CSo22UINavigationController", "viewControllers"]
-- ["CSo11UIResponder", "String"]
-- !private ["CSo11UIResponder", "UINavigationController"]
-- !private ["CSo11UIResponder", "UIStoryboard"]
-- !private ["CSo11UIResponder", "UIViewController"]
-- ["CSo11UIResponder", "didReceiveMemoryWarning"]
-- ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "selectedControllerId"]
-- !private ["CSo11UIResponder", "selectedViewController"]
-- !private ["CSo11UIResponder", "setNavigationBarHidden"]
-- !private ["CSo11UIResponder", "title"]
-- !private ["CSo11UIResponder", "userObj"]
-- !private ["CSo11UIResponder", "viewControllers"]
-- ["CSo11UIResponder", "viewDidLoad"]
-- !private ["PSo30UIResponderStandardEditActions", "UINavigationController"]
-- !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
-- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
-- !private ["PSo30UIResponderStandardEditActions", "init"]
-- !private ["PSo30UIResponderStandardEditActions", "selectedControllerId"]
-- !private ["PSo30UIResponderStandardEditActions", "selectedViewController"]
-- !private ["PSo30UIResponderStandardEditActions", "setNavigationBarHidden"]
-- !private ["PSo30UIResponderStandardEditActions", "title"]
-- !private ["PSo30UIResponderStandardEditActions", "userObj"]
-- !private ["PSo30UIResponderStandardEditActions", "viewControllers"]
-- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
-- ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo16UIStateRestoring", "UINavigationController"]
-- !private ["PSo16UIStateRestoring", "UIStoryboard"]
-- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
-- !private ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "selectedControllerId"]
-- !private ["PSo16UIStateRestoring", "selectedViewController"]
-- !private ["PSo16UIStateRestoring", "setNavigationBarHidden"]
-- !private ["PSo16UIStateRestoring", "title"]
-- !private ["PSo16UIStateRestoring", "userObj"]
-- !private ["PSo16UIStateRestoring", "viewControllers"]
-- !private ["PSo16UIStateRestoring", "viewDidLoad"]
-- ["PSo16UIStateRestoring", ""]
-- !private ["CSo12UIStoryboard", "init"]
-- !private ["CSo12UIStoryboard", "instantiateViewController"]
-- ["CSo18UITabBarController", "String"]
-- !private ["CSo18UITabBarController", "UINavigationController"]
-- !private ["CSo18UITabBarController", "UIStoryboard"]
-- !private ["CSo18UITabBarController", "UIViewController"]
-- ["CSo18UITabBarController", "didReceiveMemoryWarning"]
-- ["CSo18UITabBarController", "init"]
-- ["CSo18UITabBarController", "selectedControllerId"]
-- !private ["CSo18UITabBarController", "selectedViewController"]
-- !private ["CSo18UITabBarController", "userObj"]
-- !private ["CSo18UITabBarController", "viewControllers"]
-- ["CSo18UITabBarController", "viewDidLoad"]
-- ["CSo18UITabBarController", ""]
-- !private ["PSo16UITabBarDelegate", "UINavigationController"]
-- !private ["PSo16UITabBarDelegate", "UIStoryboard"]
-- !private ["PSo16UITabBarDelegate", "didReceiveMemoryWarning"]
-- !private ["PSo16UITabBarDelegate", "init"]
-- !private ["PSo16UITabBarDelegate", "selectedControllerId"]
-- !private ["PSo16UITabBarDelegate", "selectedViewController"]
-- !private ["PSo16UITabBarDelegate", "userObj"]
-- !private ["PSo16UITabBarDelegate", "viewControllers"]
-- !private ["PSo16UITabBarDelegate", "viewDidLoad"]
-- ["PSo16UITabBarDelegate", ""]
-- !private ["PSo18UITraitEnvironment", "UINavigationController"]
-- !private ["PSo18UITraitEnvironment", "UIStoryboard"]
-- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
-- !private ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "selectedControllerId"]
-- !private ["PSo18UITraitEnvironment", "selectedViewController"]
-- !private ["PSo18UITraitEnvironment", "setNavigationBarHidden"]
-- !private ["PSo18UITraitEnvironment", "title"]
-- !private ["PSo18UITraitEnvironment", "userObj"]
-- !private ["PSo18UITraitEnvironment", "viewControllers"]
-- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
-- ["PSo18UITraitEnvironment", ""]
-- ["CSo16UIViewController", "String"]
-- !private ["CSo16UIViewController", "UINavigationController"]
-- !private ["CSo16UIViewController", "UIStoryboard"]
-- !private ["CSo16UIViewController", "UIViewController"]
-- ["CSo16UIViewController", "didReceiveMemoryWarning"]
-- ["CSo16UIViewController", "init"]
-- ["CSo16UIViewController", "selectedControllerId"]
-- !private ["CSo16UIViewController", "selectedViewController"]
-- !private ["CSo16UIViewController", "setNavigationBarHidden"]
-- !private ["CSo16UIViewController", "title"]
-- !private ["CSo16UIViewController", "userObj"]
-- !private ["CSo16UIViewController", "viewControllers"]
-- ["CSo16UIViewController", "viewDidLoad"]
-- !private ["C4Test10UserObject", "isAdmin"]
-- !private ["C4Test10UserObject", "permissionToManageUsers"]
-- !private ["Ps14_ArrayProtocol", "count"]
-- !private ["Ps14_ArrayProtocol", "subscript"]
-- !private ["Ps23_BidirectionalIndexable", "count"]
-- !private ["Ps23_BidirectionalIndexable", "subscript"]
-- !private ["Ps24_DestructorSafeContainer", "count"]
-- !private ["Ps24_DestructorSafeContainer", "subscript"]
-- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "UINavigationController"]
-- !private ["Ps9_Hashable", "UIStoryboard"]
-- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
-- !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "instantiateViewController"]
-- !private ["Ps9_Hashable", "selectedControllerId"]
-- !private ["Ps9_Hashable", "selectedViewController"]
-- !private ["Ps9_Hashable", "setNavigationBarHidden"]
-- !private ["Ps9_Hashable", "title"]
-- !private ["Ps9_Hashable", "userObj"]
-- !private ["Ps9_Hashable", "viewControllers"]
-- !private ["Ps9_Hashable", "viewDidLoad"]
-- ["Ps9_Hashable", ""]
-- !private ["Ps10_Indexable", "count"]
-- !private ["Ps10_Indexable", "subscript"]
-- !private ["Ps14_IndexableBase", "count"]
-- !private ["Ps14_IndexableBase", "subscript"]
-- !private ["Ps17_MutableIndexable", "count"]
-- !private ["Ps17_MutableIndexable", "subscript"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "count"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
-- !private ["Ps22_RandomAccessIndexable", "count"]
-- !private ["Ps22_RandomAccessIndexable", "subscript"]
-- !private ["Ps26_RangeReplaceableIndexable", "count"]
-- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+- !private ["s14StringProtocolP", "init"]
+- ["4Test16TabBarControllerC", "String"]
+- !private ["4Test16TabBarControllerC", "UINavigationController"]
+- !private ["4Test16TabBarControllerC", "UIStoryboard"]
+- !private ["4Test16TabBarControllerC", "UIViewController"]
+- ["4Test16TabBarControllerC", "deinit"]
+- ["4Test16TabBarControllerC", "didReceiveMemoryWarning"]
+- ["4Test16TabBarControllerC", "init"]
+- ["4Test16TabBarControllerC", "selectedControllerId"]
+- !private ["4Test16TabBarControllerC", "selectedViewController"]
+- !private ["4Test16TabBarControllerC", "userObj"]
+- !private ["4Test16TabBarControllerC", "viewControllers"]
+- ["4Test16TabBarControllerC", "viewDidLoad"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So21UIAppearanceContainerP", "UINavigationController"]
+- !private ["So21UIAppearanceContainerP", "UIStoryboard"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "selectedControllerId"]
+- !private ["So21UIAppearanceContainerP", "selectedViewController"]
+- !private ["So21UIAppearanceContainerP", "setNavigationBarHidden"]
+- !private ["So21UIAppearanceContainerP", "title"]
+- !private ["So21UIAppearanceContainerP", "userObj"]
+- !private ["So21UIAppearanceContainerP", "viewControllers"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "UINavigationController"]
+- !private ["So18UIContentContainerP", "UIStoryboard"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "selectedControllerId"]
+- !private ["So18UIContentContainerP", "selectedViewController"]
+- !private ["So18UIContentContainerP", "setNavigationBarHidden"]
+- !private ["So18UIContentContainerP", "title"]
+- !private ["So18UIContentContainerP", "userObj"]
+- !private ["So18UIContentContainerP", "viewControllers"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIFocusEnvironmentP", "UINavigationController"]
+- !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "selectedControllerId"]
+- !private ["So18UIFocusEnvironmentP", "selectedViewController"]
+- !private ["So18UIFocusEnvironmentP", "setNavigationBarHidden"]
+- !private ["So18UIFocusEnvironmentP", "title"]
+- !private ["So18UIFocusEnvironmentP", "userObj"]
+- !private ["So18UIFocusEnvironmentP", "viewControllers"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So22UINavigationControllerC", "init"]
+- !private ["So22UINavigationControllerC", "setNavigationBarHidden"]
+- !private ["So22UINavigationControllerC", "title"]
+- !private ["So22UINavigationControllerC", "viewControllers"]
+- !private ["So30UIPasteConfigurationSupportingP", "UINavigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "selectedControllerId"]
+- !private ["So30UIPasteConfigurationSupportingP", "selectedViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "setNavigationBarHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "title"]
+- !private ["So30UIPasteConfigurationSupportingP", "userObj"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewControllers"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UINavigationController"]
+- !private ["So11UIResponderC", "UIStoryboard"]
+- !private ["So11UIResponderC", "UIViewController"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "selectedControllerId"]
+- !private ["So11UIResponderC", "selectedViewController"]
+- !private ["So11UIResponderC", "setNavigationBarHidden"]
+- !private ["So11UIResponderC", "title"]
+- !private ["So11UIResponderC", "userObj"]
+- !private ["So11UIResponderC", "viewControllers"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "UINavigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "selectedControllerId"]
+- !private ["So30UIResponderStandardEditActionsP", "selectedViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "setNavigationBarHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "title"]
+- !private ["So30UIResponderStandardEditActionsP", "userObj"]
+- !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So16UIStateRestoringP", "UINavigationController"]
+- !private ["So16UIStateRestoringP", "UIStoryboard"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "selectedControllerId"]
+- !private ["So16UIStateRestoringP", "selectedViewController"]
+- !private ["So16UIStateRestoringP", "setNavigationBarHidden"]
+- !private ["So16UIStateRestoringP", "title"]
+- !private ["So16UIStateRestoringP", "userObj"]
+- !private ["So16UIStateRestoringP", "viewControllers"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- ["So18UITabBarControllerC", "String"]
+- !private ["So18UITabBarControllerC", "UINavigationController"]
+- !private ["So18UITabBarControllerC", "UIStoryboard"]
+- !private ["So18UITabBarControllerC", "UIViewController"]
+- ["So18UITabBarControllerC", "didReceiveMemoryWarning"]
+- ["So18UITabBarControllerC", "init"]
+- ["So18UITabBarControllerC", "selectedControllerId"]
+- !private ["So18UITabBarControllerC", "selectedViewController"]
+- !private ["So18UITabBarControllerC", "userObj"]
+- !private ["So18UITabBarControllerC", "viewControllers"]
+- ["So18UITabBarControllerC", "viewDidLoad"]
+- ["So18UITabBarControllerC", ""]
+- !private ["So16UITabBarDelegateP", "UINavigationController"]
+- !private ["So16UITabBarDelegateP", "UIStoryboard"]
+- !private ["So16UITabBarDelegateP", "didReceiveMemoryWarning"]
+- !private ["So16UITabBarDelegateP", "init"]
+- !private ["So16UITabBarDelegateP", "selectedControllerId"]
+- !private ["So16UITabBarDelegateP", "selectedViewController"]
+- !private ["So16UITabBarDelegateP", "userObj"]
+- !private ["So16UITabBarDelegateP", "viewControllers"]
+- !private ["So16UITabBarDelegateP", "viewDidLoad"]
+- ["So16UITabBarDelegateP", ""]
+- !private ["So18UITraitEnvironmentP", "UINavigationController"]
+- !private ["So18UITraitEnvironmentP", "UIStoryboard"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "selectedControllerId"]
+- !private ["So18UITraitEnvironmentP", "selectedViewController"]
+- !private ["So18UITraitEnvironmentP", "setNavigationBarHidden"]
+- !private ["So18UITraitEnvironmentP", "title"]
+- !private ["So18UITraitEnvironmentP", "userObj"]
+- !private ["So18UITraitEnvironmentP", "viewControllers"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UINavigationController"]
+- !private ["So16UIViewControllerC", "UIStoryboard"]
+- !private ["So16UIViewControllerC", "UIViewController"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "selectedControllerId"]
+- !private ["So16UIViewControllerC", "selectedViewController"]
+- !private ["So16UIViewControllerC", "setNavigationBarHidden"]
+- !private ["So16UIViewControllerC", "title"]
+- !private ["So16UIViewControllerC", "userObj"]
+- !private ["So16UIViewControllerC", "viewControllers"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["4Test10UserObjectC", "isAdmin"]
+- !private ["4Test10UserObjectC", "permissionToManageUsers"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s14_ArrayProtocolP", "title"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "title"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "title"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s10_IndexableP", "title"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s14_IndexableBaseP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedControllerId"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setNavigationBarHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s17_MutableIndexableP", "title"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "title"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "title"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- "Ps9AnyObject"
 - !private "Sa"
-- !private "Ps23BidirectionalCollection"
+- !private "s10ArraySliceV"
+- !private "s23BidirectionalCollectionP"
 - !private "Sb"
-- "Ps7CVarArg"
-- !private "Ps10Collection"
-- !private "Ps10Comparable"
-- "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
-- "Ps23CustomStringConvertible"
-- "Ps9Equatable"
-- !private "Ps25ExpressibleByArrayLiteral"
-- !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps26ExpressibleByStringLiteral"
-- !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- "Ps8Hashable"
-- !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
-- !private "Ps17MutableCollection"
-- "PSo8NSCoding"
-- !private "PSo9NSCopying"
-- "PSo26NSExtensionRequestHandling"
-- !private "PSo16NSMutableCopying"
-- "CSo8NSObject"
-- "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
-- !private "Ps22RandomAccessCollection"
-- !private "Ps26RangeReplaceableCollection"
-- !private "Ps8Sequence"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
 - !private "SS"
-- "C4Test16TabBarController"
-- !private "Ps16TextOutputStream"
-- !private "Ps20TextOutputStreamable"
-- "PSo21UIAppearanceContainer"
-- "PSo18UIContentContainer"
-- "PSo18UIFocusEnvironment"
-- !private "CSo22UINavigationController"
-- "CSo11UIResponder"
-- "PSo30UIResponderStandardEditActions"
-- "PSo16UIStateRestoring"
-- !private "CSo12UIStoryboard"
-- "CSo18UITabBarController"
-- "PSo16UITabBarDelegate"
-- "PSo18UITraitEnvironment"
-- "CSo16UIViewController"
-- !private "C4Test10UserObject"
-- !private "Ps14_ArrayProtocol"
-- !private "Ps23_BidirectionalIndexable"
-- !private "Ps24_DestructorSafeContainer"
-- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- !private "Ps34_ExpressibleByBuiltinStringLiteral"
-- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps33_ExpressibleByStringInterpolation"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
-- "Ps9_Hashable"
-- !private "Ps10_Indexable"
-- !private "Ps14_IndexableBase"
-- !private "Ps17_MutableIndexable"
-- !private "Ps21_ObjectiveCBridgeable"
-- !private "Ps22_RandomAccessIndexable"
-- !private "Ps26_RangeReplaceableIndexable"
+- !private "s14StringProtocolP"
+- "4Test16TabBarControllerC"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- !private "So22UINavigationControllerC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- "So18UITabBarControllerC"
+- "So16UITabBarDelegateP"
+- "So18UITraitEnvironmentP"
+- "So16UIViewControllerC"
+- !private "4Test10UserObjectC"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/SwiftKeychainWrapper.swiftmodule/arm64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
@@ -481,8 +517,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -535,7 +571,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
@@ -549,7 +584,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -558,6 +593,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
@@ -565,8 +601,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
 interface-hash: "0b32e40497f01cb8cef720571fda9ba1"

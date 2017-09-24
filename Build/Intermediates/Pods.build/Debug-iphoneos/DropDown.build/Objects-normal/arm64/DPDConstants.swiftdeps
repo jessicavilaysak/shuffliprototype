@@ -1,0 +1,285 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DPDConstant"
+provides-nominal:
+- "8DropDown11DPDConstantV"
+- "8DropDown11DPDConstantV7KeyPathV"
+- "8DropDown11DPDConstantV18ReusableIdentifierV"
+- "8DropDown11DPDConstantV2UIV"
+- "8DropDown11DPDConstantV2UIV6ShadowV"
+- "8DropDown11DPDConstantV9AnimationV"
+provides-member:
+- ["8DropDown11DPDConstantV", ""]
+- ["8DropDown11DPDConstantV7KeyPathV", ""]
+- ["8DropDown11DPDConstantV18ReusableIdentifierV", ""]
+- ["8DropDown11DPDConstantV2UIV", ""]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", ""]
+- ["8DropDown11DPDConstantV9AnimationV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Array"
+- "CGAffineTransform"
+- "CGFloat"
+- "CGSize"
+- "DPDConstant"
+- "Float"
+- "StringLiteralType"
+- "UIColor"
+- "UIFont"
+- "UIViewAnimationOptions"
+depends-member:
+- ["8DropDown11DPDConstantV9AnimationV", "CGAffineTransform"]
+- ["8DropDown11DPDConstantV9AnimationV", "DownScaleTransform"]
+- ["8DropDown11DPDConstantV9AnimationV", "Duration"]
+- ["8DropDown11DPDConstantV9AnimationV", "EntranceOptions"]
+- ["8DropDown11DPDConstantV9AnimationV", "ExitOptions"]
+- ["8DropDown11DPDConstantV9AnimationV", "UIViewAnimationOptions"]
+- ["8DropDown11DPDConstantV9AnimationV", "init"]
+- ["s23BidirectionalCollectionP", "init"]
+- ["SC17CGAffineTransformV", "init"]
+- ["SC6CGSizeV", "zero"]
+- ["s7CVarArgP", "black"]
+- ["s7CVarArgP", "clear"]
+- ["s7CVarArgP", "darkGray"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "systemFont"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "black"]
+- ["s28CustomDebugStringConvertibleP", "clear"]
+- ["s28CustomDebugStringConvertibleP", "darkGray"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "systemFont"]
+- ["s28CustomDebugStringConvertibleP", "zero"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "zero"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "zero"]
+- ["s23CustomStringConvertibleP", "black"]
+- ["s23CustomStringConvertibleP", "clear"]
+- ["s23CustomStringConvertibleP", "darkGray"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "systemFont"]
+- ["8DropDown11DPDConstantV", "Animation"]
+- ["8DropDown11DPDConstantV", "CGAffineTransform"]
+- ["8DropDown11DPDConstantV", "CGFloat"]
+- ["8DropDown11DPDConstantV", "CGSize"]
+- ["8DropDown11DPDConstantV", "Float"]
+- ["8DropDown11DPDConstantV", "KeyPath"]
+- ["8DropDown11DPDConstantV", "ReusableIdentifier"]
+- ["8DropDown11DPDConstantV", "UI"]
+- ["8DropDown11DPDConstantV", "UIColor"]
+- ["8DropDown11DPDConstantV", "UIFont"]
+- ["8DropDown11DPDConstantV", "UIViewAnimationOptions"]
+- ["8DropDown11DPDConstantV", "init"]
+- ["s9DecodableP", "init"]
+- ["s9DecodableP", "zero"]
+- ["s9EncodableP", "init"]
+- ["s9EncodableP", "zero"]
+- ["s9EquatableP", "allowUserInteraction"]
+- ["s9EquatableP", "black"]
+- ["s9EquatableP", "clear"]
+- ["s9EquatableP", "curveEaseIn"]
+- ["s9EquatableP", "curveEaseOut"]
+- ["s9EquatableP", "darkGray"]
+- ["s9EquatableP", "init"]
+- ["s9EquatableP", "systemFont"]
+- ["s9EquatableP", "zero"]
+- ["s25ExpressibleByArrayLiteralP", "allowUserInteraction"]
+- ["s25ExpressibleByArrayLiteralP", "curveEaseIn"]
+- ["s25ExpressibleByArrayLiteralP", "curveEaseOut"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "black"]
+- ["s8HashableP", "clear"]
+- ["s8HashableP", "darkGray"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "systemFont"]
+- ["8DropDown11DPDConstantV7KeyPathV", "Frame"]
+- ["8DropDown11DPDConstantV7KeyPathV", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", "black"]
+- ["So8NSCodingP", "clear"]
+- ["So8NSCodingP", "darkGray"]
+- ["So8NSCodingP", "init"]
+- ["So9NSCopyingP", "black"]
+- ["So9NSCopyingP", "clear"]
+- ["So9NSCopyingP", "darkGray"]
+- ["So9NSCopyingP", "init"]
+- ["So9NSCopyingP", "systemFont"]
+- ["So21NSItemProviderReadingP", "black"]
+- ["So21NSItemProviderReadingP", "clear"]
+- ["So21NSItemProviderReadingP", "darkGray"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "black"]
+- ["So21NSItemProviderWritingP", "clear"]
+- ["So21NSItemProviderWritingP", "darkGray"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "black"]
+- ["So8NSObjectC", "clear"]
+- ["So8NSObjectC", "darkGray"]
+- ["So8NSObjectC", "systemFont"]
+- ["So16NSObjectProtocolP", "black"]
+- ["So16NSObjectProtocolP", "clear"]
+- ["So16NSObjectProtocolP", "darkGray"]
+- ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", "systemFont"]
+- ["So14NSSecureCodingP", "black"]
+- ["So14NSSecureCodingP", "clear"]
+- ["So14NSSecureCodingP", "darkGray"]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
+- ["s9OptionSetP", "allowUserInteraction"]
+- ["s9OptionSetP", "curveEaseIn"]
+- ["s9OptionSetP", "curveEaseOut"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "allowUserInteraction"]
+- ["s16RawRepresentableP", "curveEaseIn"]
+- ["s16RawRepresentableP", "curveEaseOut"]
+- ["8DropDown11DPDConstantV18ReusableIdentifierV", "DropDownCell"]
+- ["8DropDown11DPDConstantV18ReusableIdentifierV", "init"]
+- ["s8SequenceP", "init"]
+- ["s10SetAlgebraP", "allowUserInteraction"]
+- ["s10SetAlgebraP", "curveEaseIn"]
+- ["s10SetAlgebraP", "curveEaseOut"]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", "CGFloat"]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", "CGSize"]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", "Color"]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", "Float"]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", "Offset"]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", "Opacity"]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", "Radius"]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", "UIColor"]
+- ["8DropDown11DPDConstantV2UIV6ShadowV", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["8DropDown11DPDConstantV2UIV", "BackgroundColor"]
+- ["8DropDown11DPDConstantV2UIV", "CGFloat"]
+- ["8DropDown11DPDConstantV2UIV", "CGSize"]
+- ["8DropDown11DPDConstantV2UIV", "CornerRadius"]
+- ["8DropDown11DPDConstantV2UIV", "Float"]
+- ["8DropDown11DPDConstantV2UIV", "HeightPadding"]
+- ["8DropDown11DPDConstantV2UIV", "RowHeight"]
+- ["8DropDown11DPDConstantV2UIV", "SelectionBackgroundColor"]
+- ["8DropDown11DPDConstantV2UIV", "SeparatorColor"]
+- ["8DropDown11DPDConstantV2UIV", "Shadow"]
+- ["8DropDown11DPDConstantV2UIV", "TextColor"]
+- ["8DropDown11DPDConstantV2UIV", "TextFont"]
+- ["8DropDown11DPDConstantV2UIV", "UIColor"]
+- ["8DropDown11DPDConstantV2UIV", "UIFont"]
+- ["8DropDown11DPDConstantV2UIV", "init"]
+- ["So7UIColorC", "black"]
+- ["So7UIColorC", "clear"]
+- ["So7UIColorC", "darkGray"]
+- ["So7UIColorC", "init"]
+- ["So6UIFontC", "systemFont"]
+- ["SC22UIViewAnimationOptionsV", "allowUserInteraction"]
+- ["SC22UIViewAnimationOptionsV", "curveEaseIn"]
+- ["SC22UIViewAnimationOptionsV", "curveEaseOut"]
+- ["s23_BidirectionalIndexableP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s26_ExpressibleByColorLiteralP", "black"]
+- ["s26_ExpressibleByColorLiteralP", "clear"]
+- ["s26_ExpressibleByColorLiteralP", "darkGray"]
+- ["s26_ExpressibleByColorLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "clear"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "darkGray"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "zero"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "8DropDown11DPDConstantV9AnimationV"
+- "s23BidirectionalCollectionP"
+- "SC17CGAffineTransformV"
+- "SC6CGSizeV"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "8DropDown11DPDConstantV"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s25ExpressibleByArrayLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "8DropDown11DPDConstantV7KeyPathV"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- "s9OptionSetP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- "8DropDown11DPDConstantV18ReusableIdentifierV"
+- "s8SequenceP"
+- "s10SetAlgebraP"
+- "8DropDown11DPDConstantV2UIV6ShadowV"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "8DropDown11DPDConstantV2UIV"
+- "So7UIColorC"
+- "So6UIFontC"
+- "SC22UIViewAnimationOptionsV"
+- "s23_BidirectionalIndexableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s26_ExpressibleByColorLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/DropDown/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/DropDown.build/unextended-module.modulemap"
+interface-hash: "c0d5cb91f09648077382d3acc0ccf7b5"

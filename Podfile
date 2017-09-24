@@ -13,11 +13,12 @@ target 'Test' do
     pod 'IQKeyboardManagerSwift'
     pod 'SVProgressHUD'
     pod 'TextFieldEffects'
-    pod 'SwiftKeychainWrapper'
     pod 'SDWebImage/WebP'
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
     pod ‘Toucan’, ‘~> 0.6’
     pod 'UITextView+Placeholder', '~> 1.2'
+    pod 'DropDown'
+    pod 'Material', '~> 2.0'
     
     target 'TestTests' do
         inherit! :search_paths

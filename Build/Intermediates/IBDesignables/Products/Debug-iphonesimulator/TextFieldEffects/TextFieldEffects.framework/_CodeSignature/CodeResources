@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TextFieldEffects-Swift.h</key>
 		<data>
-		pYUDSnye5SnVMc1F5v9gmncaWHY=
+		mLcq7VIqA1zowCwL6/Oppg6lE7U=
 		</data>
 		<key>Headers/TextFieldEffects-umbrella.h</key>
 		<data>
@@ -14,19 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		t8ZhXKBH6bCmEfR6HsYtGUUNFu0=
+		9STJISJzfY0p4b4uGTq78u7W6xA=
 		</data>
 		<key>Modules/TextFieldEffects.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		TSMuKFcszz1ujtxFXkk0U1iBWo4=
+		sfqiQnB6SOFHisNSoV2WMV55aNY=
 		</data>
 		<key>Modules/TextFieldEffects.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		M4+egO5Ay7uNrblf4H5twYUhhWw=
+		RgfaDJzk3JZ5bmlsAGkz/xlbgbU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		dWVmPA+/cJyX7txJ7YD1AqOe5zU=
+		wLjMK6dr4vjxo2JMOVsIhwGRYxw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pYUDSnye5SnVMc1F5v9gmncaWHY=
+			mLcq7VIqA1zowCwL6/Oppg6lE7U=
 			</data>
 			<key>hash2</key>
 			<data>
-			P9vJaQ0TtiF8CJP7TEgzxYz7tHQ+FMFGz6nFTGcxosA=
+			YmZAyxvp2Gwgr0EiGSP9Co7tCR9ab8iETNhxgGcr3i4=
 			</data>
 		</dict>
 		<key>Headers/TextFieldEffects-umbrella.h</key>
@@ -57,33 +57,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TSMuKFcszz1ujtxFXkk0U1iBWo4=
+			sfqiQnB6SOFHisNSoV2WMV55aNY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mF5PVeqOoXcbOWI5Dlla3i8yr1LpS0CY45gdu925M84=
+			8Fqcj0KXi2fgVeZ5gNqqbh0152Yg6pa8aFtcWWffVes=
 			</data>
 		</dict>
 		<key>Modules/TextFieldEffects.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M4+egO5Ay7uNrblf4H5twYUhhWw=
+			RgfaDJzk3JZ5bmlsAGkz/xlbgbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			bz5MuIAhu0JPCNWWk1FUTiY4VdzH3DAX60/31BnFD5w=
+			i3ftSgGveCbPOjx6aeL4f/w2X2ILUlIjzVejZzty1N0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dWVmPA+/cJyX7txJ7YD1AqOe5zU=
+			wLjMK6dr4vjxo2JMOVsIhwGRYxw=
 			</data>
 			<key>hash2</key>
 			<data>
-			3b1EqVAHZ7dBpeJycxg3I8F3/PWt+bmoWXfkkOgqSTU=
+			VO/RK6bpZw4ZfnElBHyw7sUlY7xLTJfIkDjjhkZM7vE=
 			</data>
 		</dict>
 	</dict>

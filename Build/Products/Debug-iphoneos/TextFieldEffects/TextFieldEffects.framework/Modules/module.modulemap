@@ -7,4 +7,5 @@ framework module TextFieldEffects {
 
 module TextFieldEffects.Swift {
     header "TextFieldEffects-Swift.h"
+    requires objc
 }

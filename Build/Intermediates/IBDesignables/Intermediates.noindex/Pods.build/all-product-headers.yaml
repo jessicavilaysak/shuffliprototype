@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Spring/Spring.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Spring-Swift.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Spring/Spring.framework/Headers/Spring-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Spring-umbrella.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/Spring/Spring-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Spring/Spring.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Spring.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

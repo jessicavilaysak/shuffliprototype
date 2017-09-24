@@ -23,11 +23,10 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var fldusername: UILabel!
     
     @IBOutlet var fldcompany: UILabel!
-    
     var dbRef : FIRDatabaseReference!
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
-
+    
     
     override func viewDidLoad() {
         signingOut = false;
@@ -65,8 +64,10 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             //print(self.images);
             self.viewposts.reloadData()
         })
-
+        
     }
+    
+   
     
     override func viewDidAppear(_ animated: Bool) {
         viewposts.reloadData()
@@ -148,18 +149,6 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                 // and remove this listener
             }
         });
-        
-//        if FIRAuth.auth()?.currentUser != nil {
-//            do{
-//                try FIRAuth.auth()?.signOut()
-//                let vc = storyboard?.instantiateViewController(withIdentifier: "VC_signin");
-//                present(vc!, animated: true, completion: nil);
-//            } catch let error as NSError{
-//                print(error)
-//            }
-//        }else{
-//            print("User is nill")
-//        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

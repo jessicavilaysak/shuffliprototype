@@ -7,4 +7,5 @@ framework module Spring {
 
 module Spring.Swift {
     header "Spring-Swift.h"
+    requires objc
 }

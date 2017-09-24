@@ -7,4 +7,5 @@ framework module Toucan {
 
 module Toucan.Swift {
     header "Toucan-Swift.h"
+    requires objc
 }

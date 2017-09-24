@@ -6,37 +6,71 @@
 //  Copyright © 2017 Pranav Joshi. All rights reserved.
 //
 
+
+/*
+ * Copyright (C) 2015 - 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *	*	Redistributions of source code must retain the above copyright notice, this
+ *		list of conditions and the following disclaimer.
+ *
+ *	*	Redistributions in binary form must reproduce the above copyright notice,
+ *		this list of conditions and the following disclaimer in the documentation
+ *		and/or other materials provided with the distribution.
+ *
+ *	*	Neither the name of CosmicMind nor the names of its
+ *		contributors may be used to endorse or promote products derived from
+ *		this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
 import UIKit
 import FirebaseDatabase
 import FirebaseStorage
 import FirebaseAuth
 import SVProgressHUD
+import DropDown
 
 class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
     @IBOutlet weak var btn_chooseCategory: UIButton!
     @IBOutlet var fld_camera: UIImageView!
     @IBOutlet weak var fld_cameraRoll: UIImageView!
-    
     @IBOutlet weak var fld_cameraRoll_label: UILabel!
     @IBOutlet weak var fld_camera_label: UILabel!
-    
     @IBOutlet weak var fld_caption: UITextView!
     @IBOutlet weak var btn_removeImage: UIButton!
     @IBOutlet weak var fld_chosenImage: UIImageView!
-    var pickerData: [String] = [String]()
+
+    let categories = DropDown()  // creating a dropdown object
     var categoryName: String!
-    
     let myPickerController = UIImagePickerController()
-    
     var count = 1
-    
     var ref: FIRDatabaseReference? // create property
     
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        
+        
+        setupCategories() //dropdown list
+        categoryName = nil
+        
         self.hideKeyboardWhenTappedAround()
+        self.fld_caption.delegate = self;
         // Do any additional setup after loading the view.
         
         let singletap = UITapGestureRecognizer(target: self, action: #selector(camera))
@@ -60,18 +94,31 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         btn_chooseCategory.layer.cornerRadius = 4
         if(categoryName != nil)
         {
-            btn_chooseCategory.setTitle(categoryName, for: UIControlState.normal);
+            btn_chooseCategory.setTitle(categoryName + " ▾", for: UIControlState.normal);
         }
         else
         {
-            btn_chooseCategory.setTitle("NUN", for: UIControlState.normal);
+            btn_chooseCategory.setTitle("Choose Category", for: UIControlState.normal);
         }
         // Do any additional setup after loading the view.
-        
     }
     
+    //Keboard dismissed when return key is pressed 
+    /*func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            self.dismissKeyboard()
+            return false
+        }
+        
+        return true
+    }*/
+    
     func viewImage() {
-        print("viewImage() pressed.")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_viewselectedimg") as! VC_selectedimage;
+        vc.imgSent = fld_chosenImage.image;
+        vc.modalPresentationStyle = UIModalPresentationStyle.overFullScreen;
+        vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical;
+        self.present(vc, animated: true, completion: nil);
     }
     
     func hideCorrespondingElements(type: String) {
@@ -100,11 +147,11 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     override func viewWillAppear(_ animated: Bool) {
         if(categoryName != nil)
         {
-            btn_chooseCategory.setTitle(categoryName, for: UIControlState.normal);
+            btn_chooseCategory.setTitle(categoryName + " ▾", for: UIControlState.normal);
         }
         else
         {
-            btn_chooseCategory.setTitle("NUN", for: UIControlState.normal);
+            btn_chooseCategory.setTitle("Choose Category ▾", for: UIControlState.normal);
         }
     }
     
@@ -117,8 +164,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
-            textView.text = "Insert caption..."
-            textView.textColor = UIColor.lightGray
+            textView.placeholder = "Say something interesting..."
         }
     }
     
@@ -140,7 +186,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         let caption = fld_caption.text
         let image = fld_chosenImage.image
       
-        if(image == UIImage(named: "takePhototPlaceholder"))
+        if(image == nil)
         {
             let refreshAlert = UIAlertController(title: "NOTICE", message: "Please select an image to post!", preferredStyle: UIAlertControllerStyle.alert)
             
@@ -149,7 +195,8 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             present(refreshAlert, animated: true, completion: nil)
             return;
         }
-        if(caption == "Insert caption...")
+        if(caption == "")
+            
         {
             let refreshAlert = UIAlertController(title: "NOTICE", message: "Are you sure you wish to post this image without a caption?", preferredStyle: UIAlertControllerStyle.alert)
             
@@ -162,6 +209,11 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             present(refreshAlert, animated: true, completion: nil);
             return;
         }
+        if categoryName == nil{
+            let refreshAlert = UIAlertController(title: "NOTICE", message: "Are you sure you wish to post without a category?", preferredStyle: UIAlertControllerStyle.alert)
+            refreshAlert.addAction(UIAlertAction(title:"Ok", style: .default))
+        }
+        
         uploadImg(img: image!, caption: caption!)
         
     }
@@ -208,7 +260,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                     if(!(downloadURl?.isEmpty)!){
                         URLtoSend = downloadURl!;
                     }
-                    //print("downloadURL" + downloadURl!)
+                    print("downloadURL" + downloadURl!)
                     let accountID = userObj.accountID;
                     let creatorID = userObj.creatorID;
                     let uid = userObj.uid;
@@ -216,17 +268,14 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                     if(userObj.isAdmin)
                     {
                         path = "creatorPosts/"+accountID!+"/"+creatorID!;
-                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "imageUid": imgUid])
+                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "imageUid": imgUid, "category":self.categoryName])
                     }
                     else
                     {
                         path = "userPosts/"+accountID!+"/"+creatorID!+"/"+uid!;
-                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "review": true, "imageUid": imgUid])
+                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "review": true, "imageUid": imgUid, "category":self.categoryName])
                     }
-                    //self.ref?.child("dashboardPosts").child(accountID!).child("pending").childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "category": "School", "status": "approved", "creatorID": creatorID]);//
-                    
-                    
-                    self.hideCorrespondingElements(type: "1");
+                                      self.hideCorrespondingElements(type: "1");
                     self.fld_caption.text = ""
                     let tabItems = self.tabBarController?.tabBar.items;
                     
@@ -262,13 +311,6 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         dismiss(animated: true, completion: nil)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
     
     @IBAction func buttonSelectImage(_ sender: Any) {
         
@@ -290,12 +332,25 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     }
     
     @IBAction func btn_chooseCategory(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "VC_selectcategory") as! VC_SelectCategory;
-
-        self.navigationController?.pushViewController(vc, animated: true);
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "VC_selectcategory") as! VC_SelectCategory;
+//        self.navigationController?.pushViewController(vc, animated: true);
+        categories.show()
     }
     
     @IBAction func button_removeImage(_ sender: Any) {
         hideCorrespondingElements(type: "1");
+        fld_chosenImage.image = nil // added this because image was still being posted after cancel
+    }
+    
+    func setupCategories() {
+        categories.anchorView = btn_chooseCategory
+        categories.bottomOffset = CGPoint(x: 0, y: btn_chooseCategory.bounds.height)
+        categories.dataSource = ["Food", "Fashion", "Travel", "Sports", "Health", "Corporate"]
+        // Action triggered on selection
+        categories.selectionAction = { [unowned self] (index, item) in
+            self.btn_chooseCategory.setTitle(item + " ▾", for: .normal)
+            self.categoryName = item
+            
+        }
     }
 }

@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "b387e1daab7e005252249245ee23a682"
-build_time: [559479699, 553387000]
+build_time: [557575603, 106746000]
 inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Spring/Spring/AsyncButton.swift": [557471333, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Spring/Spring/AsyncImageView.swift": [557471333, 0]

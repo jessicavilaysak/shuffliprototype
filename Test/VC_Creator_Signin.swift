@@ -11,7 +11,7 @@ import FirebaseDatabase
 import FirebaseStorage
 import FirebaseAuth
 import SVProgressHUD
-import SwiftKeychainWrapper
+
 
 class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     
@@ -124,8 +124,6 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                 userObj.accountID = (recent["accountID"] as? String)!;
                 userObj.creatorID = (recent["creatorID"] as? String)!;
                 userObj.username = (recent["username"] as? String)!;
-                
-
                 completion(true);
             }});
         
@@ -172,7 +170,6 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                     userObj.isAdmin = false;
                     userObj.permissionToManageUsers = false;
                 }
-                
                 if(userObj.isAdmin)
                 {
                     userObj.listenerPath = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!;
@@ -218,7 +215,7 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
-        return;
+        //return;
         if FIRAuth.auth()?.currentUser != nil{
             print("User is NOT null.");
             SVProgressHUD.show(withStatus: "Setting up for you...");
@@ -243,8 +240,7 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         
         if let user = FIRAuth.auth()?.currentUser?.uid{
             userObj.uid = user
-            KeychainWrapper.standard.set(userObj.uid, forKey: "uid") //set uid value in keychain
-        }
+    }
         
         //keychain()
     }

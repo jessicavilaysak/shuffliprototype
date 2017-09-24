@@ -63,8 +63,6 @@ class VC_ClickImage: UIViewController {
         vc.modalPresentationStyle = UIModalPresentationStyle.overFullScreen;
         vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical;
         self.present(vc, animated: true, completion: nil);
-        
-
     }
     
     func performInitialisation() {

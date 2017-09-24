@@ -2,9 +2,9 @@
 provides-top-level:
 - "ImageLoader"
 provides-nominal:
-- "C6Spring11ImageLoader"
+- "6Spring11ImageLoaderC"
 provides-member:
-- ["C6Spring11ImageLoader", ""]
+- ["6Spring11ImageLoaderC", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
@@ -24,218 +24,205 @@ depends-top-level:
 - !private "URLSessionDataTask"
 - !private "Void"
 depends-member:
-- !private ["Ps9AnyObject", "DispatchQoS"]
-- !private ["Ps9AnyObject", "DispatchQueue"]
-- !private ["Ps9AnyObject", "ImageLoader"]
-- ["Ps9AnyObject", "NSCache"]
-- !private ["Ps9AnyObject", "NSData"]
-- !private ["Ps9AnyObject", "UIImage"]
-- !private ["Ps9AnyObject", "URL"]
-- !private ["Ps9AnyObject", "URLSession"]
-- !private ["Ps9AnyObject", "async"]
-- !private ["Ps9AnyObject", "cache"]
-- !private ["Ps9AnyObject", "dataTask"]
-- !private ["Ps9AnyObject", "global"]
-- ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "main"]
-- !private ["Ps9AnyObject", "object"]
-- !private ["Ps9AnyObject", "resume"]
-- !private ["Ps9AnyObject", "setObject"]
-- !private ["Ps9AnyObject", "shared"]
-- ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Ps7CVarArg", "async"]
-- !private ["Ps7CVarArg", "dataTask"]
-- !private ["Ps7CVarArg", "global"]
-- ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "main"]
-- !private ["Ps7CVarArg", "object"]
-- !private ["Ps7CVarArg", "resume"]
-- !private ["Ps7CVarArg", "setObject"]
-- !private ["Ps7CVarArg", "shared"]
-- !private ["Ps28CustomDebugStringConvertible", "async"]
-- !private ["Ps28CustomDebugStringConvertible", "dataTask"]
-- !private ["Ps28CustomDebugStringConvertible", "global"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "main"]
-- !private ["Ps28CustomDebugStringConvertible", "object"]
-- !private ["Ps28CustomDebugStringConvertible", "resume"]
-- !private ["Ps28CustomDebugStringConvertible", "setObject"]
-- !private ["Ps28CustomDebugStringConvertible", "shared"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "async"]
-- !private ["Ps23CustomStringConvertible", "dataTask"]
-- !private ["Ps23CustomStringConvertible", "global"]
-- ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "main"]
-- !private ["Ps23CustomStringConvertible", "object"]
-- !private ["Ps23CustomStringConvertible", "resume"]
-- !private ["Ps23CustomStringConvertible", "setObject"]
-- !private ["Ps23CustomStringConvertible", "shared"]
-- !private ["CSo14DispatchObject", "async"]
-- !private ["CSo14DispatchObject", "global"]
-- !private ["CSo14DispatchObject", "main"]
-- !private ["V8Dispatch11DispatchQoS", "QoSClass"]
-- !private ["CSo13DispatchQueue", "async"]
-- !private ["CSo13DispatchQueue", "global"]
-- !private ["CSo13DispatchQueue", "main"]
-- !private ["Ps9Equatable", "QoSClass"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "async"]
-- !private ["Ps9Equatable", "background"]
-- !private ["Ps9Equatable", "dataTask"]
-- !private ["Ps9Equatable", "global"]
-- ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "main"]
-- !private ["Ps9Equatable", "object"]
-- !private ["Ps9Equatable", "resume"]
-- !private ["Ps9Equatable", "setObject"]
-- !private ["Ps9Equatable", "shared"]
-- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "async"]
-- !private ["Ps8Hashable", "background"]
-- !private ["Ps8Hashable", "dataTask"]
-- !private ["Ps8Hashable", "global"]
-- ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "main"]
-- !private ["Ps8Hashable", "object"]
-- !private ["Ps8Hashable", "resume"]
-- !private ["Ps8Hashable", "setObject"]
-- !private ["Ps8Hashable", "shared"]
-- !private ["C6Spring11ImageLoader", "Data"]
-- !private ["C6Spring11ImageLoader", "DispatchQoS"]
-- !private ["C6Spring11ImageLoader", "DispatchQueue"]
-- ["C6Spring11ImageLoader", "ImageLoader"]
-- ["C6Spring11ImageLoader", "NSCache"]
-- ["C6Spring11ImageLoader", "NSData"]
-- ["C6Spring11ImageLoader", "NSString"]
-- ["C6Spring11ImageLoader", "String"]
-- ["C6Spring11ImageLoader", "UIImage"]
-- !private ["C6Spring11ImageLoader", "URL"]
-- !private ["C6Spring11ImageLoader", "URLSession"]
-- !private ["C6Spring11ImageLoader", "URLSessionDataTask"]
-- !private ["C6Spring11ImageLoader", "Void"]
-- ["C6Spring11ImageLoader", "cache"]
-- ["C6Spring11ImageLoader", "deinit"]
-- ["C6Spring11ImageLoader", "imageForUrl"]
-- ["C6Spring11ImageLoader", "init"]
-- ["C6Spring11ImageLoader", "sharedLoader"]
-- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
-- ["CSo7NSCache", "init"]
-- !private ["CSo7NSCache", "object"]
-- !private ["CSo7NSCache", "setObject"]
-- !private ["PSo8NSCoding", "init"]
-- !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "resume"]
-- !private ["CSo6NSData", "init"]
-- !private ["PSo16NSMutableCopying", "init"]
-- !private ["CSo8NSObject", "async"]
-- !private ["CSo8NSObject", "dataTask"]
-- !private ["CSo8NSObject", "global"]
-- !private ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "main"]
-- !private ["CSo8NSObject", "object"]
-- !private ["CSo8NSObject", "resume"]
-- !private ["CSo8NSObject", "setObject"]
-- !private ["CSo8NSObject", "shared"]
-- !private ["PSo16NSObjectProtocol", "async"]
-- !private ["PSo16NSObjectProtocol", "dataTask"]
-- !private ["PSo16NSObjectProtocol", "global"]
-- ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "main"]
-- !private ["PSo16NSObjectProtocol", "object"]
-- !private ["PSo16NSObjectProtocol", "resume"]
-- !private ["PSo16NSObjectProtocol", "setObject"]
-- !private ["PSo16NSObjectProtocol", "shared"]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo9OS_object", "async"]
-- !private ["CSo9OS_object", "global"]
-- !private ["CSo9OS_object", "main"]
-- !private ["OV8Dispatch11DispatchQoS8QoSClass", "background"]
-- !private ["P10Foundation20ReferenceConvertible", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "init"]
-- !private ["CSo7UIImage", "init"]
-- !private ["V10Foundation3URL", "init"]
-- !private ["CSo10URLSession", "dataTask"]
-- !private ["CSo10URLSession", "shared"]
-- !private ["CSo18URLSessionDataTask", "resume"]
-- !private ["CSo14URLSessionTask", "resume"]
-- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
-- !private ["Ps26_ExpressibleByImageLiteral", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "async"]
-- !private ["Ps9_Hashable", "background"]
-- !private ["Ps9_Hashable", "dataTask"]
-- !private ["Ps9_Hashable", "global"]
-- ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "main"]
-- !private ["Ps9_Hashable", "object"]
-- !private ["Ps9_Hashable", "resume"]
-- !private ["Ps9_Hashable", "setObject"]
-- !private ["Ps9_Hashable", "shared"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "dataTask"]
+- !private ["s7CVarArgP", "global"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "object"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "setObject"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "object"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "setObject"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "dataTask"]
+- !private ["s23CustomStringConvertibleP", "global"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "object"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "setObject"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["So14DispatchObjectC", "async"]
+- !private ["So14DispatchObjectC", "global"]
+- !private ["So14DispatchObjectC", "main"]
+- !private ["8Dispatch0A3QoSV", "QoSClass"]
+- !private ["So13DispatchQueueC", "async"]
+- !private ["So13DispatchQueueC", "global"]
+- !private ["So13DispatchQueueC", "main"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "QoSClass"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "async"]
+- !private ["s9EquatableP", "background"]
+- !private ["s9EquatableP", "dataTask"]
+- !private ["s9EquatableP", "global"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "object"]
+- !private ["s9EquatableP", "resume"]
+- !private ["s9EquatableP", "setObject"]
+- !private ["s9EquatableP", "shared"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "async"]
+- !private ["s8HashableP", "background"]
+- !private ["s8HashableP", "dataTask"]
+- !private ["s8HashableP", "global"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "object"]
+- !private ["s8HashableP", "resume"]
+- !private ["s8HashableP", "setObject"]
+- !private ["s8HashableP", "shared"]
+- !private ["6Spring11ImageLoaderC", "Data"]
+- !private ["6Spring11ImageLoaderC", "DispatchQoS"]
+- !private ["6Spring11ImageLoaderC", "DispatchQueue"]
+- ["6Spring11ImageLoaderC", "ImageLoader"]
+- ["6Spring11ImageLoaderC", "NSCache"]
+- ["6Spring11ImageLoaderC", "NSData"]
+- ["6Spring11ImageLoaderC", "NSString"]
+- ["6Spring11ImageLoaderC", "String"]
+- ["6Spring11ImageLoaderC", "UIImage"]
+- !private ["6Spring11ImageLoaderC", "URL"]
+- !private ["6Spring11ImageLoaderC", "URLSession"]
+- !private ["6Spring11ImageLoaderC", "URLSessionDataTask"]
+- !private ["6Spring11ImageLoaderC", "Void"]
+- ["6Spring11ImageLoaderC", "cache"]
+- ["6Spring11ImageLoaderC", "deinit"]
+- ["6Spring11ImageLoaderC", "imageForUrl"]
+- ["6Spring11ImageLoaderC", "init"]
+- ["6Spring11ImageLoaderC", "sharedLoader"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["So7NSCacheC", "init"]
+- !private ["So7NSCacheC", "object"]
+- !private ["So7NSCacheC", "setObject"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "resume"]
+- !private ["So6NSDataC", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "dataTask"]
+- !private ["So8NSObjectC", "global"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "object"]
+- !private ["So8NSObjectC", "resume"]
+- !private ["So8NSObjectC", "setObject"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So16NSObjectProtocolP", "async"]
+- !private ["So16NSObjectProtocolP", "dataTask"]
+- !private ["So16NSObjectProtocolP", "global"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "object"]
+- !private ["So16NSObjectProtocolP", "resume"]
+- !private ["So16NSObjectProtocolP", "setObject"]
+- !private ["So16NSObjectProtocolP", "shared"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "global"]
+- !private ["So9OS_objectC", "main"]
+- !private ["So17ProgressReportingP", "resume"]
+- !private ["8Dispatch0A3QoSV0B6SClassO", "background"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So7UIImageC", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["So10URLSessionC", "dataTask"]
+- !private ["So10URLSessionC", "shared"]
+- !private ["So18URLSessionDataTaskC", "resume"]
+- !private ["So14URLSessionTaskC", "resume"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
-- "Ps9AnyObject"
 - !private "Sb"
-- "Ps7CVarArg"
-- "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
-- "Ps23CustomStringConvertible"
-- !private "CSo14DispatchObject"
-- !private "V8Dispatch11DispatchQoS"
-- !private "CSo13DispatchQueue"
-- "Ps9Equatable"
-- !private "Ps27ExpressibleByBooleanLiteral"
-- "Ps8Hashable"
-- "C6Spring11ImageLoader"
-- !private "Ps25LosslessStringConvertible"
-- "CSo7NSCache"
-- !private "PSo8NSCoding"
-- !private "PSo9NSCopying"
-- !private "CSo6NSData"
-- !private "PSo16NSMutableCopying"
-- !private "CSo8NSObject"
-- "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo9OS_object"
-- !private "OV8Dispatch11DispatchQoS8QoSClass"
-- !private "P10Foundation20ReferenceConvertible"
-- !private "PSo29UIAccessibilityIdentification"
-- !private "CSo7UIImage"
-- !private "V10Foundation3URL"
-- !private "CSo10URLSession"
-- !private "CSo18URLSessionDataTask"
-- !private "CSo14URLSessionTask"
-- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps34_ExpressibleByFileReferenceLiteral"
-- !private "Ps26_ExpressibleByImageLiteral"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
-- "Ps9_Hashable"
-- !private "Ps21_ObjectiveCBridgeable"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "So14DispatchObjectC"
+- !private "8Dispatch0A3QoSV"
+- !private "So13DispatchQueueC"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s8HashableP"
+- "6Spring11ImageLoaderC"
+- !private "s25LosslessStringConvertibleP"
+- "So7NSCacheC"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So6NSDataC"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So9OS_objectC"
+- !private "So17ProgressReportingP"
+- !private "8Dispatch0A3QoSV0B6SClassO"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "10Foundation3URLV"
+- !private "So10URLSessionC"
+- !private "So18URLSessionDataTaskC"
+- !private "So14URLSessionTaskC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AudioToolbox.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -243,4 +230,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/Spring/Spring-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Spring.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 interface-hash: "0f003c30c5605ab0982dedcf5f69efbd"

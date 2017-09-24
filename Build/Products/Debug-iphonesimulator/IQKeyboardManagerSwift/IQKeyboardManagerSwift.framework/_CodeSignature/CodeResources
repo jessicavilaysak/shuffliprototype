@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/IQKeyboardManagerSwift-Swift.h</key>
 		<data>
-		H3txyTxbx8pWbeWOgCPpYfPfjlQ=
+		V8bH2ZJ3wY6geJjuO8YTZInqgvM=
 		</data>
 		<key>Headers/IQKeyboardManagerSwift-umbrella.h</key>
 		<data>
@@ -90,19 +90,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XojMMXrgDpwXy8MSvQR/4w60rNA=
+		NziwsJQTdYif66g6nMe8MRVgS4w=
+		</data>
+		<key>Modules/IQKeyboardManagerSwift.swiftmodule/i386.swiftdoc</key>
+		<data>
+		0cOdvPbtx8CMSHS8VZdbFTsu/d8=
+		</data>
+		<key>Modules/IQKeyboardManagerSwift.swiftmodule/i386.swiftmodule</key>
+		<data>
+		anK7raFRKGPHA4W5ZdmAcdd32so=
 		</data>
 		<key>Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		grWLL6bk03UhYPqN8yNYpsqS7fk=
+		WiaNKnQ+1q0+c0u+FtPfFi+/9yY=
 		</data>
 		<key>Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		lTmetFjhS9KaXpGQqJeF+WrHd3E=
+		c6UZeiMA6rt46LCraZ6O9+OMy+Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		wlPajcqsu9H04cN83rpf3Zfq0i0=
+		wX8khwuna5NZB0UTamYpb0THMzE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -111,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H3txyTxbx8pWbeWOgCPpYfPfjlQ=
+			V8bH2ZJ3wY6geJjuO8YTZInqgvM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ABnQk0nJ1vKKeExtp5Xu82M31arLgmBi0OlmzQioSkc=
+			yIHMW6VCFpmcNmgC5gKHUUFDWtYFCdmQde7H0ZJZrrc=
 			</data>
 		</dict>
 		<key>Headers/IQKeyboardManagerSwift-umbrella.h</key>
@@ -291,37 +299,59 @@
 			G2mDEDaj2cWyLbZIXakKX87Jux64L8OKYIMSzHYV0HE=
 			</data>
 		</dict>
+		<key>Modules/IQKeyboardManagerSwift.swiftmodule/i386.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0cOdvPbtx8CMSHS8VZdbFTsu/d8=
+			</data>
+			<key>hash2</key>
+			<data>
+			tey9758313Cx35Twc5BWoKD+Id/MKio9KSgZ+QIn2bg=
+			</data>
+		</dict>
+		<key>Modules/IQKeyboardManagerSwift.swiftmodule/i386.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			anK7raFRKGPHA4W5ZdmAcdd32so=
+			</data>
+			<key>hash2</key>
+			<data>
+			BBSXWtzRL1qDf8v1847C0aSgYRHqiFs3U0rmLzR6uG4=
+			</data>
+		</dict>
 		<key>Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			grWLL6bk03UhYPqN8yNYpsqS7fk=
+			WiaNKnQ+1q0+c0u+FtPfFi+/9yY=
 			</data>
 			<key>hash2</key>
 			<data>
-			QSeK5/Rt4popSWRSuGIdXRpNlkZBsf0cHklO+DtqOA4=
+			bkQ1OCyivO621ro4/K7KQILcC/FZeQuB9E8TyL61yLA=
 			</data>
 		</dict>
 		<key>Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lTmetFjhS9KaXpGQqJeF+WrHd3E=
+			c6UZeiMA6rt46LCraZ6O9+OMy+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			rN61k3zKPtnx3VQ6zM9W+6fuIQepDtrkG7+bIx+slBs=
+			tXXOl2S/l+OJDQEquSvNTSjO7ZLF6yrhHp/FAJZL+HM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wlPajcqsu9H04cN83rpf3Zfq0i0=
+			wX8khwuna5NZB0UTamYpb0THMzE=
 			</data>
 			<key>hash2</key>
 			<data>
-			25rL27JAyF+BKy6NA01SrYwDJMYNoqkbHCshITMB8lQ=
+			Mz+RVyKD0X/DsLYam84xMV2h4sau8WabGIG2p5OmUow=
 			</data>
 		</dict>
 	</dict>

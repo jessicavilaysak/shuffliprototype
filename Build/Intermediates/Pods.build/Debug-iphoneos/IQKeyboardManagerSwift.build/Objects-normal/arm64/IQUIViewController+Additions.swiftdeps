@@ -2,8 +2,8 @@
 provides-top-level:
 provides-nominal:
 provides-member:
-- ["CSo16UIViewController", ""]
-- ["CSo16UIViewController", "IQLayoutGuideConstraint"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "IQLayoutGuideConstraint"]
 provides-dynamic-lookup:
 - "IQLayoutGuideConstraint"
 depends-top-level:
@@ -16,183 +16,205 @@ depends-top-level:
 - !private "objc_getAssociatedObject"
 - !private "objc_setAssociatedObject"
 depends-member:
-- ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "kIQLayoutGuideConstraint"]
-- !private ["Ps9AnyObject", "objc_AssociationPolicy"]
-- !private ["Ps9AnyObject", "objc_getAssociatedObject"]
-- !private ["Ps9AnyObject", "objc_setAssociatedObject"]
-- ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "kIQLayoutGuideConstraint"]
-- !private ["Ps7CVarArg", "objc_AssociationPolicy"]
-- !private ["Ps7CVarArg", "objc_getAssociatedObject"]
-- !private ["Ps7CVarArg", "objc_setAssociatedObject"]
-- ["Ps10Comparable", "init"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "kIQLayoutGuideConstraint"]
-- !private ["Ps28CustomDebugStringConvertible", "objc_AssociationPolicy"]
-- !private ["Ps28CustomDebugStringConvertible", "objc_getAssociatedObject"]
-- !private ["Ps28CustomDebugStringConvertible", "objc_setAssociatedObject"]
-- ["Ps29CustomPlaygroundQuickLookable", "init"]
-- ["Ps17CustomReflectable", "init"]
-- ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "kIQLayoutGuideConstraint"]
-- !private ["Ps23CustomStringConvertible", "objc_AssociationPolicy"]
-- !private ["Ps23CustomStringConvertible", "objc_getAssociatedObject"]
-- !private ["Ps23CustomStringConvertible", "objc_setAssociatedObject"]
-- !private ["Ps9Equatable", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
-- ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "kIQLayoutGuideConstraint"]
-- !private ["Ps9Equatable", "objc_AssociationPolicy"]
-- !private ["Ps9Equatable", "objc_getAssociatedObject"]
-- !private ["Ps9Equatable", "objc_setAssociatedObject"]
-- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- ["Ps26ExpressibleByStringLiteral", "init"]
-- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Ps8Hashable", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
-- ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "kIQLayoutGuideConstraint"]
-- !private ["Ps8Hashable", "objc_AssociationPolicy"]
-- !private ["Ps8Hashable", "objc_getAssociatedObject"]
-- !private ["Ps8Hashable", "objc_setAssociatedObject"]
-- ["Ps25LosslessStringConvertible", "init"]
-- ["Ps10MirrorPath", "init"]
-- ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "kIQLayoutGuideConstraint"]
-- !private ["PSo8NSCoding", "objc_AssociationPolicy"]
-- !private ["PSo8NSCoding", "objc_getAssociatedObject"]
-- !private ["PSo8NSCoding", "objc_setAssociatedObject"]
-- ["PSo9NSCopying", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "kIQLayoutGuideConstraint"]
-- !private ["PSo26NSExtensionRequestHandling", "objc_AssociationPolicy"]
-- !private ["PSo26NSExtensionRequestHandling", "objc_getAssociatedObject"]
-- !private ["PSo26NSExtensionRequestHandling", "objc_setAssociatedObject"]
-- ["PSo16NSMutableCopying", "init"]
-- ["CSo8NSObject", "IQLayoutGuideConstraint"]
-- ["CSo8NSObject", "NSLayoutConstraint"]
-- !private ["CSo8NSObject", "kIQLayoutGuideConstraint"]
-- !private ["CSo8NSObject", "objc_AssociationPolicy"]
-- !private ["CSo8NSObject", "objc_getAssociatedObject"]
-- !private ["CSo8NSObject", "objc_setAssociatedObject"]
-- ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "kIQLayoutGuideConstraint"]
-- !private ["PSo16NSObjectProtocol", "objc_AssociationPolicy"]
-- !private ["PSo16NSObjectProtocol", "objc_getAssociatedObject"]
-- !private ["PSo16NSObjectProtocol", "objc_setAssociatedObject"]
-- ["PSo14NSSecureCoding", "init"]
-- ["CSo8NSString", "init"]
-- !private ["Ps16RawRepresentable", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- ["s23BidirectionalCollectionP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "kIQLayoutGuideConstraint"]
+- !private ["s7CVarArgP", "objc_AssociationPolicy"]
+- !private ["s7CVarArgP", "objc_getAssociatedObject"]
+- !private ["s7CVarArgP", "objc_setAssociatedObject"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "kIQLayoutGuideConstraint"]
+- !private ["s28CustomDebugStringConvertibleP", "objc_AssociationPolicy"]
+- !private ["s28CustomDebugStringConvertibleP", "objc_getAssociatedObject"]
+- !private ["s28CustomDebugStringConvertibleP", "objc_setAssociatedObject"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "kIQLayoutGuideConstraint"]
+- !private ["s23CustomStringConvertibleP", "objc_AssociationPolicy"]
+- !private ["s23CustomStringConvertibleP", "objc_getAssociatedObject"]
+- !private ["s23CustomStringConvertibleP", "objc_setAssociatedObject"]
+- ["s9DecodableP", "init"]
+- ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "kIQLayoutGuideConstraint"]
+- !private ["s9EquatableP", "objc_AssociationPolicy"]
+- !private ["s9EquatableP", "objc_getAssociatedObject"]
+- !private ["s9EquatableP", "objc_setAssociatedObject"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "kIQLayoutGuideConstraint"]
+- !private ["s8HashableP", "objc_AssociationPolicy"]
+- !private ["s8HashableP", "objc_getAssociatedObject"]
+- !private ["s8HashableP", "objc_setAssociatedObject"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "kIQLayoutGuideConstraint"]
+- !private ["So8NSCodingP", "objc_AssociationPolicy"]
+- !private ["So8NSCodingP", "objc_getAssociatedObject"]
+- !private ["So8NSCodingP", "objc_setAssociatedObject"]
+- ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "kIQLayoutGuideConstraint"]
+- !private ["So26NSExtensionRequestHandlingP", "objc_AssociationPolicy"]
+- !private ["So26NSExtensionRequestHandlingP", "objc_getAssociatedObject"]
+- !private ["So26NSExtensionRequestHandlingP", "objc_setAssociatedObject"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "IQLayoutGuideConstraint"]
+- ["So8NSObjectC", "NSLayoutConstraint"]
+- !private ["So8NSObjectC", "kIQLayoutGuideConstraint"]
+- !private ["So8NSObjectC", "objc_AssociationPolicy"]
+- !private ["So8NSObjectC", "objc_getAssociatedObject"]
+- !private ["So8NSObjectC", "objc_setAssociatedObject"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "kIQLayoutGuideConstraint"]
+- !private ["So16NSObjectProtocolP", "objc_AssociationPolicy"]
+- !private ["So16NSObjectProtocolP", "objc_getAssociatedObject"]
+- !private ["So16NSObjectProtocolP", "objc_setAssociatedObject"]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- ["s8SequenceP", "init"]
 - ["SS", "init"]
-- ["Ps16TextOutputStream", "init"]
-- ["Ps20TextOutputStreamable", "init"]
-- !private ["PSo21UIAppearanceContainer", "kIQLayoutGuideConstraint"]
-- !private ["PSo21UIAppearanceContainer", "objc_AssociationPolicy"]
-- !private ["PSo21UIAppearanceContainer", "objc_getAssociatedObject"]
-- !private ["PSo21UIAppearanceContainer", "objc_setAssociatedObject"]
-- !private ["PSo18UIContentContainer", "kIQLayoutGuideConstraint"]
-- !private ["PSo18UIContentContainer", "objc_AssociationPolicy"]
-- !private ["PSo18UIContentContainer", "objc_getAssociatedObject"]
-- !private ["PSo18UIContentContainer", "objc_setAssociatedObject"]
-- !private ["PSo18UIFocusEnvironment", "kIQLayoutGuideConstraint"]
-- !private ["PSo18UIFocusEnvironment", "objc_AssociationPolicy"]
-- !private ["PSo18UIFocusEnvironment", "objc_getAssociatedObject"]
-- !private ["PSo18UIFocusEnvironment", "objc_setAssociatedObject"]
-- ["CSo11UIResponder", "IQLayoutGuideConstraint"]
-- ["CSo11UIResponder", "NSLayoutConstraint"]
-- !private ["CSo11UIResponder", "kIQLayoutGuideConstraint"]
-- !private ["CSo11UIResponder", "objc_AssociationPolicy"]
-- !private ["CSo11UIResponder", "objc_getAssociatedObject"]
-- !private ["CSo11UIResponder", "objc_setAssociatedObject"]
-- !private ["PSo30UIResponderStandardEditActions", "kIQLayoutGuideConstraint"]
-- !private ["PSo30UIResponderStandardEditActions", "objc_AssociationPolicy"]
-- !private ["PSo30UIResponderStandardEditActions", "objc_getAssociatedObject"]
-- !private ["PSo30UIResponderStandardEditActions", "objc_setAssociatedObject"]
-- !private ["PSo16UIStateRestoring", "kIQLayoutGuideConstraint"]
-- !private ["PSo16UIStateRestoring", "objc_AssociationPolicy"]
-- !private ["PSo16UIStateRestoring", "objc_getAssociatedObject"]
-- !private ["PSo16UIStateRestoring", "objc_setAssociatedObject"]
-- !private ["PSo18UITraitEnvironment", "kIQLayoutGuideConstraint"]
-- !private ["PSo18UITraitEnvironment", "objc_AssociationPolicy"]
-- !private ["PSo18UITraitEnvironment", "objc_getAssociatedObject"]
-- !private ["PSo18UITraitEnvironment", "objc_setAssociatedObject"]
-- ["CSo16UIViewController", "IQLayoutGuideConstraint"]
-- ["CSo16UIViewController", "NSLayoutConstraint"]
-- !private ["CSo16UIViewController", "kIQLayoutGuideConstraint"]
-- !private ["CSo16UIViewController", "objc_AssociationPolicy"]
-- !private ["CSo16UIViewController", "objc_getAssociatedObject"]
-- !private ["CSo16UIViewController", "objc_setAssociatedObject"]
-- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- ["Ps33_ExpressibleByStringInterpolation", "init"]
-- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
-- ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "kIQLayoutGuideConstraint"]
-- !private ["Ps9_Hashable", "objc_AssociationPolicy"]
-- !private ["Ps9_Hashable", "objc_getAssociatedObject"]
-- !private ["Ps9_Hashable", "objc_setAssociatedObject"]
-- ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["OSC22objc_AssociationPolicy", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So21UIAppearanceContainerP", "kIQLayoutGuideConstraint"]
+- !private ["So21UIAppearanceContainerP", "objc_AssociationPolicy"]
+- !private ["So21UIAppearanceContainerP", "objc_getAssociatedObject"]
+- !private ["So21UIAppearanceContainerP", "objc_setAssociatedObject"]
+- !private ["So18UIContentContainerP", "kIQLayoutGuideConstraint"]
+- !private ["So18UIContentContainerP", "objc_AssociationPolicy"]
+- !private ["So18UIContentContainerP", "objc_getAssociatedObject"]
+- !private ["So18UIContentContainerP", "objc_setAssociatedObject"]
+- !private ["So18UIFocusEnvironmentP", "kIQLayoutGuideConstraint"]
+- !private ["So18UIFocusEnvironmentP", "objc_AssociationPolicy"]
+- !private ["So18UIFocusEnvironmentP", "objc_getAssociatedObject"]
+- !private ["So18UIFocusEnvironmentP", "objc_setAssociatedObject"]
+- !private ["So30UIPasteConfigurationSupportingP", "kIQLayoutGuideConstraint"]
+- !private ["So30UIPasteConfigurationSupportingP", "objc_AssociationPolicy"]
+- !private ["So30UIPasteConfigurationSupportingP", "objc_getAssociatedObject"]
+- !private ["So30UIPasteConfigurationSupportingP", "objc_setAssociatedObject"]
+- ["So11UIResponderC", "IQLayoutGuideConstraint"]
+- ["So11UIResponderC", "NSLayoutConstraint"]
+- !private ["So11UIResponderC", "kIQLayoutGuideConstraint"]
+- !private ["So11UIResponderC", "objc_AssociationPolicy"]
+- !private ["So11UIResponderC", "objc_getAssociatedObject"]
+- !private ["So11UIResponderC", "objc_setAssociatedObject"]
+- !private ["So30UIResponderStandardEditActionsP", "kIQLayoutGuideConstraint"]
+- !private ["So30UIResponderStandardEditActionsP", "objc_AssociationPolicy"]
+- !private ["So30UIResponderStandardEditActionsP", "objc_getAssociatedObject"]
+- !private ["So30UIResponderStandardEditActionsP", "objc_setAssociatedObject"]
+- !private ["So16UIStateRestoringP", "kIQLayoutGuideConstraint"]
+- !private ["So16UIStateRestoringP", "objc_AssociationPolicy"]
+- !private ["So16UIStateRestoringP", "objc_getAssociatedObject"]
+- !private ["So16UIStateRestoringP", "objc_setAssociatedObject"]
+- !private ["So18UITraitEnvironmentP", "kIQLayoutGuideConstraint"]
+- !private ["So18UITraitEnvironmentP", "objc_AssociationPolicy"]
+- !private ["So18UITraitEnvironmentP", "objc_getAssociatedObject"]
+- !private ["So18UITraitEnvironmentP", "objc_setAssociatedObject"]
+- ["So16UIViewControllerC", "IQLayoutGuideConstraint"]
+- ["So16UIViewControllerC", "NSLayoutConstraint"]
+- !private ["So16UIViewControllerC", "kIQLayoutGuideConstraint"]
+- !private ["So16UIViewControllerC", "objc_AssociationPolicy"]
+- !private ["So16UIViewControllerC", "objc_getAssociatedObject"]
+- !private ["So16UIViewControllerC", "objc_setAssociatedObject"]
+- ["s23_BidirectionalIndexableP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kIQLayoutGuideConstraint"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "objc_AssociationPolicy"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "objc_getAssociatedObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "objc_setAssociatedObject"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["SC22objc_AssociationPolicyO", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
 depends-nominal:
-- "Ps9AnyObject"
-- "Ps7CVarArg"
-- "Ps10Comparable"
-- "Ps28CustomDebugStringConvertible"
-- "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
-- "Ps23CustomStringConvertible"
-- "Ps9Equatable"
-- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps26ExpressibleByStringLiteral"
-- "Ps33ExpressibleByUnicodeScalarLiteral"
-- "Ps8Hashable"
-- "Ps25LosslessStringConvertible"
-- "Ps10MirrorPath"
-- "PSo8NSCoding"
-- "PSo9NSCopying"
-- !private "PSo26NSExtensionRequestHandling"
-- "PSo16NSMutableCopying"
-- "CSo8NSObject"
-- "PSo16NSObjectProtocol"
-- "PSo14NSSecureCoding"
-- "CSo8NSString"
-- !private "Ps16RawRepresentable"
+- "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- "s8SequenceP"
 - "SS"
-- "Ps16TextOutputStream"
-- "Ps20TextOutputStreamable"
-- !private "PSo21UIAppearanceContainer"
-- !private "PSo18UIContentContainer"
-- !private "PSo18UIFocusEnvironment"
-- "CSo11UIResponder"
-- !private "PSo30UIResponderStandardEditActions"
-- !private "PSo16UIStateRestoring"
-- !private "PSo18UITraitEnvironment"
-- "CSo16UIViewController"
-- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- "Ps34_ExpressibleByBuiltinStringLiteral"
-- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- "Ps33_ExpressibleByStringInterpolation"
-- "Ps35_HasCustomAnyHashableRepresentation"
-- "Ps9_Hashable"
-- "Ps21_ObjectiveCBridgeable"
-- !private "OSC22objc_AssociationPolicy"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- "So16UIViewControllerC"
+- "s23_BidirectionalIndexableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
+- !private "SC22objc_AssociationPolicyO"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"

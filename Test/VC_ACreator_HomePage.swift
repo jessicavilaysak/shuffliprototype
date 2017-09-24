@@ -40,7 +40,6 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     //@IBOutlet var viewusers: UICollectionView!
     override func viewDidLoad() {
         signingOut = false;
-        
         userTable.delegate = self;
         userTable.dataSource = self;
         
@@ -111,7 +110,8 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
                 //the user has now signed out so go to login view controller
                 // and remove this listener
             }
-        });    }
+        });
+    }
 
     
     @IBAction func btn_addUser(_ sender: Any) {

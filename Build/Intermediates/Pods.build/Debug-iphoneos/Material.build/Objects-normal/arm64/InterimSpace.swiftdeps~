@@ -1,0 +1,199 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InterimSpacePreset"
+- "InterimSpace"
+- "InterimSpacePresetToValue"
+provides-nominal:
+- "8Material18InterimSpacePresetO"
+provides-member:
+- ["8Material18InterimSpacePresetO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "CGFloat"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "InterimSpace"
+- "InterimSpacePreset"
+- "InterimSpacePresetToValue"
+- !private "~="
+depends-member:
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "hashValue"]
+- !private ["s10ComparableP", "hashValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "hashValue"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "hashValue"]
+- ["s9EquatableP", "RawValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "init"]
+- ["s9EquatableP", "interimSpace1"]
+- ["s9EquatableP", "interimSpace10"]
+- ["s9EquatableP", "interimSpace11"]
+- ["s9EquatableP", "interimSpace12"]
+- ["s9EquatableP", "interimSpace13"]
+- ["s9EquatableP", "interimSpace14"]
+- ["s9EquatableP", "interimSpace15"]
+- ["s9EquatableP", "interimSpace16"]
+- ["s9EquatableP", "interimSpace17"]
+- ["s9EquatableP", "interimSpace18"]
+- ["s9EquatableP", "interimSpace2"]
+- ["s9EquatableP", "interimSpace3"]
+- ["s9EquatableP", "interimSpace4"]
+- ["s9EquatableP", "interimSpace5"]
+- ["s9EquatableP", "interimSpace6"]
+- ["s9EquatableP", "interimSpace7"]
+- ["s9EquatableP", "interimSpace8"]
+- ["s9EquatableP", "interimSpace9"]
+- ["s9EquatableP", "none"]
+- ["s9EquatableP", "rawValue"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- ["s8HashableP", "RawValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "interimSpace1"]
+- ["s8HashableP", "interimSpace10"]
+- ["s8HashableP", "interimSpace11"]
+- ["s8HashableP", "interimSpace12"]
+- ["s8HashableP", "interimSpace13"]
+- ["s8HashableP", "interimSpace14"]
+- ["s8HashableP", "interimSpace15"]
+- ["s8HashableP", "interimSpace16"]
+- ["s8HashableP", "interimSpace17"]
+- ["s8HashableP", "interimSpace18"]
+- ["s8HashableP", "interimSpace2"]
+- ["s8HashableP", "interimSpace3"]
+- ["s8HashableP", "interimSpace4"]
+- ["s8HashableP", "interimSpace5"]
+- ["s8HashableP", "interimSpace6"]
+- ["s8HashableP", "interimSpace7"]
+- ["s8HashableP", "interimSpace8"]
+- ["s8HashableP", "interimSpace9"]
+- ["s8HashableP", "none"]
+- ["s8HashableP", "rawValue"]
+- ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
+- ["8Material18InterimSpacePresetO", "RawValue"]
+- ["8Material18InterimSpacePresetO", "deinit"]
+- ["8Material18InterimSpacePresetO", "hashValue"]
+- ["8Material18InterimSpacePresetO", "init"]
+- ["8Material18InterimSpacePresetO", "interimSpace1"]
+- ["8Material18InterimSpacePresetO", "interimSpace10"]
+- ["8Material18InterimSpacePresetO", "interimSpace11"]
+- ["8Material18InterimSpacePresetO", "interimSpace12"]
+- ["8Material18InterimSpacePresetO", "interimSpace13"]
+- ["8Material18InterimSpacePresetO", "interimSpace14"]
+- ["8Material18InterimSpacePresetO", "interimSpace15"]
+- ["8Material18InterimSpacePresetO", "interimSpace16"]
+- ["8Material18InterimSpacePresetO", "interimSpace17"]
+- ["8Material18InterimSpacePresetO", "interimSpace18"]
+- ["8Material18InterimSpacePresetO", "interimSpace2"]
+- ["8Material18InterimSpacePresetO", "interimSpace3"]
+- ["8Material18InterimSpacePresetO", "interimSpace4"]
+- ["8Material18InterimSpacePresetO", "interimSpace5"]
+- ["8Material18InterimSpacePresetO", "interimSpace6"]
+- ["8Material18InterimSpacePresetO", "interimSpace7"]
+- ["8Material18InterimSpacePresetO", "interimSpace8"]
+- ["8Material18InterimSpacePresetO", "interimSpace9"]
+- ["8Material18InterimSpacePresetO", "none"]
+- ["8Material18InterimSpacePresetO", "rawValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- !private ["s10MirrorPathP", "hashValue"]
+- !private ["s7NumericP", "hashValue"]
+- ["s16RawRepresentableP", "RawValue"]
+- ["s16RawRepresentableP", "hashValue"]
+- ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "interimSpace1"]
+- ["s16RawRepresentableP", "interimSpace10"]
+- ["s16RawRepresentableP", "interimSpace11"]
+- ["s16RawRepresentableP", "interimSpace12"]
+- ["s16RawRepresentableP", "interimSpace13"]
+- ["s16RawRepresentableP", "interimSpace14"]
+- ["s16RawRepresentableP", "interimSpace15"]
+- ["s16RawRepresentableP", "interimSpace16"]
+- ["s16RawRepresentableP", "interimSpace17"]
+- ["s16RawRepresentableP", "interimSpace18"]
+- ["s16RawRepresentableP", "interimSpace2"]
+- ["s16RawRepresentableP", "interimSpace3"]
+- ["s16RawRepresentableP", "interimSpace4"]
+- ["s16RawRepresentableP", "interimSpace5"]
+- ["s16RawRepresentableP", "interimSpace6"]
+- ["s16RawRepresentableP", "interimSpace7"]
+- ["s16RawRepresentableP", "interimSpace8"]
+- ["s16RawRepresentableP", "interimSpace9"]
+- ["s16RawRepresentableP", "none"]
+- ["s16RawRepresentableP", "rawValue"]
+- ["s16RawRepresentableP", ""]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s10StrideableP", "hashValue"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- !private ["s11_StrideableP", "hashValue"]
+depends-nominal:
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10ComparableP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "Si"
+- "8Material18InterimSpacePresetO"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s7NumericP"
+- "s16RawRepresentableP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/unextended-module.modulemap"
+interface-hash: "88a2baa5e8857da72caae6d5d488fabf"

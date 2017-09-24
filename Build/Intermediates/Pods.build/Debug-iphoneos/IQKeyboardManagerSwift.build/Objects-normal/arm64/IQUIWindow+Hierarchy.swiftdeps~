@@ -2,9 +2,9 @@
 provides-top-level:
 provides-nominal:
 provides-member:
-- ["CSo8UIWindow", ""]
-- ["CSo8UIWindow", "topMostController"]
-- ["CSo8UIWindow", "currentViewController"]
+- ["So8UIWindowC", ""]
+- ["So8UIWindowC", "topMostController"]
+- ["So8UIWindowC", "currentViewController"]
 provides-dynamic-lookup:
 - "currentViewController"
 - "topMostController"
@@ -17,172 +17,171 @@ depends-top-level:
 - "UIViewController"
 - "UIWindow"
 depends-member:
-- !private ["Ps9AnyObject", "presentedViewController"]
-- !private ["Ps9AnyObject", "rootViewController"]
-- !private ["Ps9AnyObject", "topMostController"]
-- !private ["Ps9AnyObject", "topViewController"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSo15CALayerDelegate", "rootViewController"]
-- !private ["PSo15CALayerDelegate", "topMostController"]
-- !private ["Ps7CVarArg", "presentedViewController"]
-- !private ["Ps7CVarArg", "rootViewController"]
-- !private ["Ps7CVarArg", "topMostController"]
-- !private ["Ps7CVarArg", "topViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "presentedViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "topMostController"]
-- !private ["Ps28CustomDebugStringConvertible", "topViewController"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
-- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "presentedViewController"]
-- !private ["Ps23CustomStringConvertible", "rootViewController"]
-- !private ["Ps23CustomStringConvertible", "topMostController"]
-- !private ["Ps23CustomStringConvertible", "topViewController"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "presentedViewController"]
-- !private ["Ps9Equatable", "rootViewController"]
-- !private ["Ps9Equatable", "topMostController"]
-- !private ["Ps9Equatable", "topViewController"]
-- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "presentedViewController"]
-- !private ["Ps8Hashable", "rootViewController"]
-- !private ["Ps8Hashable", "topMostController"]
-- !private ["Ps8Hashable", "topViewController"]
-- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
-- !private ["PSo8NSCoding", "presentedViewController"]
-- !private ["PSo8NSCoding", "rootViewController"]
-- !private ["PSo8NSCoding", "topMostController"]
-- !private ["PSo8NSCoding", "topViewController"]
-- !private ["PSo26NSExtensionRequestHandling", "presentedViewController"]
-- !private ["PSo26NSExtensionRequestHandling", "topViewController"]
-- !private ["CSo8NSObject", "UINavigationController"]
-- ["CSo8NSObject", "UIViewController"]
-- ["CSo8NSObject", "currentViewController"]
-- !private ["CSo8NSObject", "presentedViewController"]
-- !private ["CSo8NSObject", "rootViewController"]
-- ["CSo8NSObject", "topMostController"]
-- !private ["CSo8NSObject", "topViewController"]
-- !private ["PSo16NSObjectProtocol", "presentedViewController"]
-- !private ["PSo16NSObjectProtocol", "rootViewController"]
-- !private ["PSo16NSObjectProtocol", "topMostController"]
-- !private ["PSo16NSObjectProtocol", "topViewController"]
-- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
-- !private ["PSo29UIAccessibilityIdentification", "topMostController"]
-- !private ["PSo12UIAppearance", "rootViewController"]
-- !private ["PSo12UIAppearance", "topMostController"]
-- !private ["PSo21UIAppearanceContainer", "presentedViewController"]
-- !private ["PSo21UIAppearanceContainer", "rootViewController"]
-- !private ["PSo21UIAppearanceContainer", "topMostController"]
-- !private ["PSo21UIAppearanceContainer", "topViewController"]
-- !private ["PSo18UIContentContainer", "presentedViewController"]
-- !private ["PSo18UIContentContainer", "topViewController"]
-- !private ["PSo17UICoordinateSpace", "rootViewController"]
-- !private ["PSo17UICoordinateSpace", "topMostController"]
-- !private ["PSo13UIDynamicItem", "rootViewController"]
-- !private ["PSo13UIDynamicItem", "topMostController"]
-- !private ["PSo18UIFocusEnvironment", "presentedViewController"]
-- !private ["PSo18UIFocusEnvironment", "rootViewController"]
-- !private ["PSo18UIFocusEnvironment", "topMostController"]
-- !private ["PSo18UIFocusEnvironment", "topViewController"]
-- !private ["PSo11UIFocusItem", "rootViewController"]
-- !private ["PSo11UIFocusItem", "topMostController"]
-- !private ["CSo22UINavigationController", "topViewController"]
-- !private ["CSo11UIResponder", "UINavigationController"]
-- ["CSo11UIResponder", "UIViewController"]
-- ["CSo11UIResponder", "currentViewController"]
-- !private ["CSo11UIResponder", "presentedViewController"]
-- !private ["CSo11UIResponder", "rootViewController"]
-- ["CSo11UIResponder", "topMostController"]
-- !private ["CSo11UIResponder", "topViewController"]
-- !private ["PSo30UIResponderStandardEditActions", "presentedViewController"]
-- !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
-- !private ["PSo30UIResponderStandardEditActions", "topMostController"]
-- !private ["PSo30UIResponderStandardEditActions", "topViewController"]
-- !private ["PSo16UIStateRestoring", "presentedViewController"]
-- !private ["PSo16UIStateRestoring", "topViewController"]
-- !private ["PSo18UITraitEnvironment", "presentedViewController"]
-- !private ["PSo18UITraitEnvironment", "rootViewController"]
-- !private ["PSo18UITraitEnvironment", "topMostController"]
-- !private ["PSo18UITraitEnvironment", "topViewController"]
-- !private ["CSo6UIView", "UINavigationController"]
-- ["CSo6UIView", "UIViewController"]
-- ["CSo6UIView", "currentViewController"]
-- !private ["CSo6UIView", "rootViewController"]
-- ["CSo6UIView", "topMostController"]
-- !private ["CSo16UIViewController", "presentedViewController"]
-- !private ["CSo16UIViewController", "topViewController"]
-- !private ["CSo8UIWindow", "UINavigationController"]
-- ["CSo8UIWindow", "UIViewController"]
-- ["CSo8UIWindow", "currentViewController"]
-- !private ["CSo8UIWindow", "rootViewController"]
-- ["CSo8UIWindow", "topMostController"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "topMostController"]
-- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "presentedViewController"]
-- !private ["Ps9_Hashable", "rootViewController"]
-- !private ["Ps9_Hashable", "topMostController"]
-- !private ["Ps9_Hashable", "topViewController"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "rootViewController"]
+- !private ["So15CALayerDelegateP", "topMostController"]
+- !private ["s7CVarArgP", "presentedViewController"]
+- !private ["s7CVarArgP", "rootViewController"]
+- !private ["s7CVarArgP", "topMostController"]
+- !private ["s7CVarArgP", "topViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "presentedViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "topMostController"]
+- !private ["s28CustomDebugStringConvertibleP", "topViewController"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "presentedViewController"]
+- !private ["s23CustomStringConvertibleP", "rootViewController"]
+- !private ["s23CustomStringConvertibleP", "topMostController"]
+- !private ["s23CustomStringConvertibleP", "topViewController"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "presentedViewController"]
+- !private ["s9EquatableP", "rootViewController"]
+- !private ["s9EquatableP", "topMostController"]
+- !private ["s9EquatableP", "topViewController"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "presentedViewController"]
+- !private ["s8HashableP", "rootViewController"]
+- !private ["s8HashableP", "topMostController"]
+- !private ["s8HashableP", "topViewController"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["So8NSCodingP", "presentedViewController"]
+- !private ["So8NSCodingP", "rootViewController"]
+- !private ["So8NSCodingP", "topMostController"]
+- !private ["So8NSCodingP", "topViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "presentedViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "topViewController"]
+- !private ["So8NSObjectC", "UINavigationController"]
+- ["So8NSObjectC", "UIViewController"]
+- ["So8NSObjectC", "currentViewController"]
+- !private ["So8NSObjectC", "presentedViewController"]
+- !private ["So8NSObjectC", "rootViewController"]
+- ["So8NSObjectC", "topMostController"]
+- !private ["So8NSObjectC", "topViewController"]
+- !private ["So16NSObjectProtocolP", "presentedViewController"]
+- !private ["So16NSObjectProtocolP", "rootViewController"]
+- !private ["So16NSObjectProtocolP", "topMostController"]
+- !private ["So16NSObjectProtocolP", "topViewController"]
+- !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
+- !private ["So29UIAccessibilityIdentificationP", "topMostController"]
+- !private ["So12UIAppearanceP", "rootViewController"]
+- !private ["So12UIAppearanceP", "topMostController"]
+- !private ["So21UIAppearanceContainerP", "presentedViewController"]
+- !private ["So21UIAppearanceContainerP", "rootViewController"]
+- !private ["So21UIAppearanceContainerP", "topMostController"]
+- !private ["So21UIAppearanceContainerP", "topViewController"]
+- !private ["So18UIContentContainerP", "presentedViewController"]
+- !private ["So18UIContentContainerP", "topViewController"]
+- !private ["So17UICoordinateSpaceP", "rootViewController"]
+- !private ["So17UICoordinateSpaceP", "topMostController"]
+- !private ["So13UIDynamicItemP", "rootViewController"]
+- !private ["So13UIDynamicItemP", "topMostController"]
+- !private ["So18UIFocusEnvironmentP", "presentedViewController"]
+- !private ["So18UIFocusEnvironmentP", "rootViewController"]
+- !private ["So18UIFocusEnvironmentP", "topMostController"]
+- !private ["So18UIFocusEnvironmentP", "topViewController"]
+- !private ["So11UIFocusItemP", "rootViewController"]
+- !private ["So11UIFocusItemP", "topMostController"]
+- !private ["So22UINavigationControllerC", "topViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "presentedViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "topMostController"]
+- !private ["So30UIPasteConfigurationSupportingP", "topViewController"]
+- !private ["So11UIResponderC", "UINavigationController"]
+- ["So11UIResponderC", "UIViewController"]
+- ["So11UIResponderC", "currentViewController"]
+- !private ["So11UIResponderC", "presentedViewController"]
+- !private ["So11UIResponderC", "rootViewController"]
+- ["So11UIResponderC", "topMostController"]
+- !private ["So11UIResponderC", "topViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "presentedViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "topMostController"]
+- !private ["So30UIResponderStandardEditActionsP", "topViewController"]
+- !private ["So16UIStateRestoringP", "presentedViewController"]
+- !private ["So16UIStateRestoringP", "topViewController"]
+- !private ["So18UITraitEnvironmentP", "presentedViewController"]
+- !private ["So18UITraitEnvironmentP", "rootViewController"]
+- !private ["So18UITraitEnvironmentP", "topMostController"]
+- !private ["So18UITraitEnvironmentP", "topViewController"]
+- !private ["So6UIViewC", "UINavigationController"]
+- ["So6UIViewC", "UIViewController"]
+- ["So6UIViewC", "currentViewController"]
+- !private ["So6UIViewC", "rootViewController"]
+- ["So6UIViewC", "topMostController"]
+- !private ["So16UIViewControllerC", "presentedViewController"]
+- !private ["So16UIViewControllerC", "topViewController"]
+- !private ["So8UIWindowC", "UINavigationController"]
+- ["So8UIWindowC", "UIViewController"]
+- ["So8UIWindowC", "currentViewController"]
+- !private ["So8UIWindowC", "rootViewController"]
+- ["So8UIWindowC", "topMostController"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "topMostController"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "presentedViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "topMostController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "topViewController"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 depends-nominal:
-- !private "Ps9AnyObject"
 - !private "Sb"
-- !private "PSo15CALayerDelegate"
-- !private "Ps7CVarArg"
-- !private "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
-- !private "Ps23CustomStringConvertible"
-- !private "Ps9Equatable"
-- !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps8Hashable"
-- !private "Ps25LosslessStringConvertible"
-- !private "PSo8NSCoding"
-- !private "PSo26NSExtensionRequestHandling"
-- "CSo8NSObject"
-- !private "PSo16NSObjectProtocol"
-- !private "PSo29UIAccessibilityIdentification"
-- !private "PSo12UIAppearance"
-- !private "PSo21UIAppearanceContainer"
-- !private "PSo18UIContentContainer"
-- !private "PSo17UICoordinateSpace"
-- !private "PSo13UIDynamicItem"
-- !private "PSo18UIFocusEnvironment"
-- !private "PSo11UIFocusItem"
-- !private "CSo22UINavigationController"
-- "CSo11UIResponder"
-- !private "PSo30UIResponderStandardEditActions"
-- !private "PSo16UIStateRestoring"
-- !private "PSo18UITraitEnvironment"
-- "CSo6UIView"
-- !private "CSo16UIViewController"
-- "CSo8UIWindow"
-- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
-- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps9_Hashable"
-- !private "Ps21_ObjectiveCBridgeable"
+- !private "So15CALayerDelegateP"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So22UINavigationControllerC"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- !private "So16UIViewControllerC"
+- "So8UIWindowC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/IQKeyboardManagerSwift.build/unextended-module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Intermediates/Pods.build/Debug-iphoneos/IQKeyboardManagerSwift.build/unextended-module.modulemap"
 interface-hash: "38771d2a1bea3fc559c62c6048110aea"

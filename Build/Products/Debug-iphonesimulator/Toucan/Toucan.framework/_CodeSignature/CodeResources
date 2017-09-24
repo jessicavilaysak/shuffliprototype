@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Toucan-Swift.h</key>
 		<data>
-		e7aHSunOJOLCr0OFvh7uo0FCWKo=
+		ceu/6lquUvqrwnSXTiJ+yzPLOlE=
 		</data>
 		<key>Headers/Toucan-umbrella.h</key>
 		<data>
@@ -14,19 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		umKGFZ2N+i3+HajlQWDPKWEDv4E=
+		IHHvse47+jPdJwgXYw6ZGte7yfM=
+		</data>
+		<key>Modules/Toucan.swiftmodule/i386.swiftdoc</key>
+		<data>
+		e9gqZFAF6+kdskZUNpoAptAfQb0=
+		</data>
+		<key>Modules/Toucan.swiftmodule/i386.swiftmodule</key>
+		<data>
+		5Xtob7eZkxsdUJmG2Q7Dk9IjypA=
 		</data>
 		<key>Modules/Toucan.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		iFTXnGCXsOxVfndNEoT7kLF4Ovo=
+		cxGPwsXOCQ9eU7GkkACyNvApGmA=
 		</data>
 		<key>Modules/Toucan.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		8jt5OtndECimQu8UKnqBkvhQ4Kc=
+		Jts4ghT4TvBKN+UmP/GzsAGbXro=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		9R1ZzOCs4lPUxImw76AlD0+FBXA=
+		WSFdx8EcdBF4q+TkXhkg9Vix10c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e7aHSunOJOLCr0OFvh7uo0FCWKo=
+			ceu/6lquUvqrwnSXTiJ+yzPLOlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			CJE8fLquyo5Iz/UKtjesQyEd+LuHKvH+21ejB8oeIKE=
+			lvaWdL84tB7FmePSJDpkJMXv28YpD7Q85wBrcwlQmLc=
 			</data>
 		</dict>
 		<key>Headers/Toucan-umbrella.h</key>
@@ -53,37 +61,59 @@
 			cfDi+eIOjdf6/iRb4yTzDdi7f86Z1mJzJ1Ia499SkwA=
 			</data>
 		</dict>
+		<key>Modules/Toucan.swiftmodule/i386.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e9gqZFAF6+kdskZUNpoAptAfQb0=
+			</data>
+			<key>hash2</key>
+			<data>
+			u+Tr9HQ3U+Gw6JkpbxuJuTeU5w0KEJ5TzdYcWVjE2Ko=
+			</data>
+		</dict>
+		<key>Modules/Toucan.swiftmodule/i386.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5Xtob7eZkxsdUJmG2Q7Dk9IjypA=
+			</data>
+			<key>hash2</key>
+			<data>
+			knWEiNBkFhUKdxJ8acGlCIDgWdTCOrcns3qwuYyREhk=
+			</data>
+		</dict>
 		<key>Modules/Toucan.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iFTXnGCXsOxVfndNEoT7kLF4Ovo=
+			cxGPwsXOCQ9eU7GkkACyNvApGmA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kv4RcS6/A0+B0C8U8g6dJpYQMbZ3q57z1Y0fonDHF1Q=
+			h0vt7ZuAVwPEGpgjmIUGdj4ZBAmcDFDPMt/oB+wiutU=
 			</data>
 		</dict>
 		<key>Modules/Toucan.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8jt5OtndECimQu8UKnqBkvhQ4Kc=
+			Jts4ghT4TvBKN+UmP/GzsAGbXro=
 			</data>
 			<key>hash2</key>
 			<data>
-			rQfXgV7L+/8EugCeV2ExNabY4Vq5ntG8C3VoboOmh1E=
+			5UMHuk+mVgBkF9xM/XaA8f0ZIKoqXCQCKn/RqK48TfA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9R1ZzOCs4lPUxImw76AlD0+FBXA=
+			WSFdx8EcdBF4q+TkXhkg9Vix10c=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Bx4fkP5j4xzXIPruqF9ApeHWxm7ynt1GzEhAJBmmZ8=
+			C+S/7mIzxAPGBpqTl0e6kBTf7btrqQWgTlW/OWtwVz8=
 			</data>
 		</dict>
 	</dict>

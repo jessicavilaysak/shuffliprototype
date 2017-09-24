@@ -11,6 +11,7 @@ import UIKit
 class VC_selectedimage: UIViewController {
 
     var imgUrl : String!
+    var imgSent: UIImage!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var btnExit: UIButton!
     
@@ -18,7 +19,14 @@ class VC_selectedimage: UIViewController {
         super.viewDidLoad()
         btnExit.isHidden = true;
         
-        imageView.sd_setImage(with: URL(string:imgUrl))
+        if (imgUrl != nil)
+        {
+            imageView.sd_setImage(with: URL(string:imgUrl))
+        }
+        else
+        {
+            imageView.image = imgSent;
+        }
         view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
         view.isOpaque = false
         
