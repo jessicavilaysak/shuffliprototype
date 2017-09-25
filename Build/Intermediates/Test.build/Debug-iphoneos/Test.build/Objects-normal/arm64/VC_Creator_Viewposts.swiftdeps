@@ -7,7 +7,6 @@ provides-member:
 - ["4Test20VC_Creator_ViewpostsC", ""]
 provides-dynamic-lookup:
 - "bgImage"
-- "dbRef"
 - "fldcompany"
 - "fldusername"
 - "handle"
@@ -38,7 +37,6 @@ depends-top-level:
 - !private "FIRDataEventType"
 - !private "FIRDataSnapshot"
 - !private "FIRDatabase"
-- "FIRDatabaseReference"
 - !private "FIRStorage"
 - !private "FIRUser"
 - "IndexPath"
@@ -158,7 +156,6 @@ depends-member:
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dataSource"]
 - !private ["s7CVarArgP", "database"]
-- !private ["s7CVarArgP", "dbRef"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "delete"]
 - !private ["s7CVarArgP", "deleteRows"]
@@ -280,7 +277,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
-- !private ["s28CustomDebugStringConvertibleP", "dbRef"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "delete"]
 - !private ["s28CustomDebugStringConvertibleP", "deleteRows"]
@@ -404,7 +400,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dataSource"]
 - !private ["s23CustomStringConvertibleP", "database"]
-- !private ["s23CustomStringConvertibleP", "dbRef"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "delete"]
 - !private ["s23CustomStringConvertibleP", "deleteRows"]
@@ -532,7 +527,6 @@ depends-member:
 - !private ["s9EquatableP", "children"]
 - !private ["s9EquatableP", "dataSource"]
 - !private ["s9EquatableP", "database"]
-- !private ["s9EquatableP", "dbRef"]
 - !private ["s9EquatableP", "default"]
 - !private ["s9EquatableP", "delegate"]
 - !private ["s9EquatableP", "delete"]
@@ -679,7 +673,6 @@ depends-member:
 - !private ["s8HashableP", "children"]
 - !private ["s8HashableP", "dataSource"]
 - !private ["s8HashableP", "database"]
-- !private ["s8HashableP", "dbRef"]
 - !private ["s8HashableP", "default"]
 - !private ["s8HashableP", "delegate"]
 - !private ["s8HashableP", "delete"]
@@ -795,7 +788,6 @@ depends-member:
 - !private ["So8NSCodingP", "black"]
 - !private ["So8NSCodingP", "cgColor"]
 - !private ["So8NSCodingP", "dataSource"]
-- !private ["So8NSCodingP", "dbRef"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "deleteRows"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
@@ -883,7 +875,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "bgImage"]
-- !private ["So26NSExtensionRequestHandlingP", "dbRef"]
 - !private ["So26NSExtensionRequestHandlingP", "fldcompany"]
 - !private ["So26NSExtensionRequestHandlingP", "fldusername"]
 - !private ["So26NSExtensionRequestHandlingP", "handle"]
@@ -948,7 +939,6 @@ depends-member:
 - !private ["So8NSObjectC", "FIRDataEventType"]
 - !private ["So8NSObjectC", "FIRDataSnapshot"]
 - !private ["So8NSObjectC", "FIRDatabase"]
-- ["So8NSObjectC", "FIRDatabaseReference"]
 - !private ["So8NSObjectC", "FIRStorage"]
 - !private ["So8NSObjectC", "FIRUser"]
 - ["So8NSObjectC", "IndexPath"]
@@ -979,7 +969,6 @@ depends-member:
 - !private ["So8NSObjectC", "children"]
 - !private ["So8NSObjectC", "dataSource"]
 - !private ["So8NSObjectC", "database"]
-- ["So8NSObjectC", "dbRef"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "delete"]
 - !private ["So8NSObjectC", "deleteRows"]
@@ -1084,7 +1073,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "children"]
 - !private ["So16NSObjectProtocolP", "dataSource"]
 - !private ["So16NSObjectProtocolP", "database"]
-- !private ["So16NSObjectProtocolP", "dbRef"]
 - !private ["So16NSObjectProtocolP", "delegate"]
 - !private ["So16NSObjectProtocolP", "delete"]
 - !private ["So16NSObjectProtocolP", "deleteRows"]
@@ -1280,7 +1268,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "approveStatus"]
 - !private ["So21UIAppearanceContainerP", "bgImage"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
-- !private ["So21UIAppearanceContainerP", "dbRef"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "deleteRows"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
@@ -1364,7 +1351,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "URL"]
 - !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "bgImage"]
-- !private ["So18UIContentContainerP", "dbRef"]
 - !private ["So18UIContentContainerP", "fldcompany"]
 - !private ["So18UIContentContainerP", "fldusername"]
 - !private ["So18UIContentContainerP", "handle"]
@@ -1467,7 +1453,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "approveStatus"]
 - !private ["So18UIFocusEnvironmentP", "bgImage"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
-- !private ["So18UIFocusEnvironmentP", "dbRef"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "deleteRows"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
@@ -1575,7 +1560,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "approveStatus"]
 - !private ["So30UIPasteConfigurationSupportingP", "bgImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
-- !private ["So30UIPasteConfigurationSupportingP", "dbRef"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "deleteRows"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
@@ -1645,7 +1629,6 @@ depends-member:
 - !private ["So11UIResponderC", "FIRDataEventType"]
 - !private ["So11UIResponderC", "FIRDataSnapshot"]
 - !private ["So11UIResponderC", "FIRDatabase"]
-- ["So11UIResponderC", "FIRDatabaseReference"]
 - !private ["So11UIResponderC", "FIRStorage"]
 - !private ["So11UIResponderC", "FIRUser"]
 - ["So11UIResponderC", "IndexPath"]
@@ -1668,7 +1651,6 @@ depends-member:
 - !private ["So11UIResponderC", "approveStatus"]
 - ["So11UIResponderC", "bgImage"]
 - !private ["So11UIResponderC", "dataSource"]
-- ["So11UIResponderC", "dbRef"]
 - !private ["So11UIResponderC", "delegate"]
 - !private ["So11UIResponderC", "deleteRows"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
@@ -1747,7 +1729,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "approveStatus"]
 - !private ["So30UIResponderStandardEditActionsP", "bgImage"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
-- !private ["So30UIResponderStandardEditActionsP", "dbRef"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "deleteRows"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
@@ -1827,7 +1808,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "UIImage"]
 - !private ["So20UIScrollViewDelegateP", "URL"]
 - !private ["So20UIScrollViewDelegateP", "bgImage"]
-- !private ["So20UIScrollViewDelegateP", "dbRef"]
 - !private ["So20UIScrollViewDelegateP", "fldcompany"]
 - !private ["So20UIScrollViewDelegateP", "fldusername"]
 - !private ["So20UIScrollViewDelegateP", "handle"]
@@ -1891,7 +1871,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "URL"]
 - !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "bgImage"]
-- !private ["So16UIStateRestoringP", "dbRef"]
 - !private ["So16UIStateRestoringP", "fldcompany"]
 - !private ["So16UIStateRestoringP", "fldusername"]
 - !private ["So16UIStateRestoringP", "handle"]
@@ -1967,7 +1946,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "UIImage"]
 - !private ["So21UITableViewDataSourceP", "URL"]
 - !private ["So21UITableViewDataSourceP", "bgImage"]
-- !private ["So21UITableViewDataSourceP", "dbRef"]
 - !private ["So21UITableViewDataSourceP", "fldcompany"]
 - !private ["So21UITableViewDataSourceP", "fldusername"]
 - !private ["So21UITableViewDataSourceP", "handle"]
@@ -2019,7 +1997,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "UIImage"]
 - !private ["So19UITableViewDelegateP", "URL"]
 - !private ["So19UITableViewDelegateP", "bgImage"]
-- !private ["So19UITableViewDelegateP", "dbRef"]
 - !private ["So19UITableViewDelegateP", "fldcompany"]
 - !private ["So19UITableViewDelegateP", "fldusername"]
 - !private ["So19UITableViewDelegateP", "handle"]
@@ -2075,7 +2052,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "approveStatus"]
 - !private ["So18UITraitEnvironmentP", "bgImage"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
-- !private ["So18UITraitEnvironmentP", "dbRef"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "deleteRows"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
@@ -2161,7 +2137,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "FIRDataEventType"]
 - !private ["So16UIViewControllerC", "FIRDataSnapshot"]
 - !private ["So16UIViewControllerC", "FIRDatabase"]
-- ["So16UIViewControllerC", "FIRDatabaseReference"]
 - !private ["So16UIViewControllerC", "FIRStorage"]
 - !private ["So16UIViewControllerC", "FIRUser"]
 - ["So16UIViewControllerC", "IndexPath"]
@@ -2182,7 +2157,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "VC_ClickImage"]
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "bgImage"]
-- ["So16UIViewControllerC", "dbRef"]
 - ["So16UIViewControllerC", "fldcompany"]
 - ["So16UIViewControllerC", "fldusername"]
 - ["So16UIViewControllerC", "handle"]
@@ -2249,7 +2223,6 @@ depends-member:
 - !private ["4Test20VC_Creator_ViewpostsC", "FIRDataEventType"]
 - !private ["4Test20VC_Creator_ViewpostsC", "FIRDataSnapshot"]
 - !private ["4Test20VC_Creator_ViewpostsC", "FIRDatabase"]
-- ["4Test20VC_Creator_ViewpostsC", "FIRDatabaseReference"]
 - !private ["4Test20VC_Creator_ViewpostsC", "FIRStorage"]
 - !private ["4Test20VC_Creator_ViewpostsC", "FIRUser"]
 - ["4Test20VC_Creator_ViewpostsC", "IndexPath"]
@@ -2269,7 +2242,6 @@ depends-member:
 - !private ["4Test20VC_Creator_ViewpostsC", "URL"]
 - !private ["4Test20VC_Creator_ViewpostsC", "VC_ClickImage"]
 - ["4Test20VC_Creator_ViewpostsC", "bgImage"]
-- ["4Test20VC_Creator_ViewpostsC", "dbRef"]
 - ["4Test20VC_Creator_ViewpostsC", "deinit"]
 - ["4Test20VC_Creator_ViewpostsC", "fldcompany"]
 - ["4Test20VC_Creator_ViewpostsC", "fldusername"]
@@ -2408,7 +2380,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "children"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "dbRef"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deleteRows"]
@@ -2772,4 +2743,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "21aa2108add9d9e23d499863756d831f"
+interface-hash: "2edd3f5af82c263476abb574420e0abc"

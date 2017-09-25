@@ -24,7 +24,8 @@ class TabBarController: UITabBarController {
         nav_manageusers.title = "VC_manageusers"
         
         let nav_createpost = UINavigationController()
-        let second: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "VC_createpost")
+        var second: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "VC_createpost");
+        
         nav_createpost.viewControllers = [second]
         nav_createpost.setNavigationBarHidden(true, animated: true)
         nav_createpost.title = "VC_createpost"

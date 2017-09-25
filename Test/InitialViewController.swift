@@ -17,7 +17,7 @@ class InitialViewController: UIViewController {
     
     @IBAction func btnCreator(_ sender: Any) {
         userObj.isAdmin = false;
-        segueToLogin(vc_name: "VC_picker");
+        segueToLogin(vc_name: "VC_invitecode");
     }
     
     func segueToLogin(vc_name: String) {

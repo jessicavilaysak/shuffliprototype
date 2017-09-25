@@ -174,9 +174,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
-@import Foundation;
 @import ObjectiveC;
 @import FirebaseAuth;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -270,32 +270,6 @@ SWIFT_CLASS("_TtC4Test14ManageUserCell")
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Test18SelectCategoryCell")
-@interface SelectCategoryCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryLabel;
-- (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UITableView;
-
-SWIFT_CLASS("_TtC4Test18TVC_SelectCategory")
-@interface TVC_SelectCategory : UITableViewController
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull categories;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -420,6 +394,7 @@ SWIFT_CLASS("_TtC4Test6Toucan")
 - (void)dismissKeyboard;
 @end
 
+@class UITableView;
 @protocol NSObject;
 @class UITapGestureRecognizer;
 
@@ -438,19 +413,6 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 - (void)viewWillDisappear:(BOOL)animated;
 - (IBAction)logout:(id _Nonnull)sender;
 - (IBAction)btn_addUser:(id _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UITextField;
-
-SWIFT_CLASS("_TtC4Test19VC_ACreator_Payment")
-@interface VC_ACreator_Payment : UIViewController <UITextFieldDelegate>
-@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified fldcvv;
-@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified fldnum;
-@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified fldname;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -474,17 +436,7 @@ SWIFT_CLASS("_TtC4Test13VC_ClickImage")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC4Test23VC_Creator_ConfirmPword")
-@interface VC_Creator_ConfirmPword : UIViewController <UITextFieldDelegate>
-@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified fld_confirmpword;
-@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified fld_newpword;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
+@class UITextField;
 @class FIRDatabaseReference;
 
 SWIFT_CLASS("_TtC4Test17VC_Creator_Signin")
@@ -516,7 +468,6 @@ SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImage;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldcompany;
-@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified dbRef;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
@@ -544,6 +495,19 @@ SWIFT_CLASS("_TtC4Test14VC_EditCaption")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC4Test13VC_InviteCode")
+@interface VC_InviteCode : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_invitecode;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_signingup;
+- (void)viewDidLoad;
+- (IBAction)btn_signup:(id _Nonnull)sender;
+- (void)getInviteInfoWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class DropDown;
 @class UIImagePickerController;
 
@@ -562,6 +526,7 @@ SWIFT_CLASS("_TtC4Test14VC_PostContent")
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull myPickerController;
 @property (nonatomic) NSInteger count;
 @property (nonatomic, strong) FIRDatabaseReference * _Nullable ref;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull categoryDataSource;
 - (void)viewDidLoad;
 - (void)viewImage;
 - (void)hideCorrespondingElementsWithType:(NSString * _Nonnull)type;
@@ -572,7 +537,7 @@ SWIFT_CLASS("_TtC4Test14VC_PostContent")
 - (void)photoLibrary;
 - (IBAction)buttonPost:(id _Nonnull)sender;
 - (UIImage * _Nonnull)fixOrientationWithImg:(UIImage * _Nonnull)img SWIFT_WARN_UNUSED_RESULT;
-- (void)uploadImgWithImg:(UIImage * _Nonnull)img caption:(NSString * _Nonnull)caption;
+- (void)uploadImg;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (IBAction)buttonSelectImage:(id _Nonnull)sender;
 - (IBAction)btn_chooseCategory:(id _Nonnull)sender;
@@ -583,19 +548,17 @@ SWIFT_CLASS("_TtC4Test14VC_PostContent")
 @end
 
 
-SWIFT_CLASS("_TtC4Test17VC_SelectCategory")
-@interface VC_SelectCategory : UIViewController <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull categories;
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified categoryTable;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryLabel;
+SWIFT_CLASS("_TtC4Test14VC_SetPassword")
+@interface VC_SetPassword : UIViewController
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified fld_displayMessage;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_password;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_confirmPassword;
+- (BOOL)containsNumbersWithPword:(NSString * _Nonnull)pword SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)containsUppercaseWithPword:(NSString * _Nonnull)pword SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)containsLowercaseWithPword:(NSString * _Nonnull)pword SWIFT_WARN_UNUSED_RESULT;
+- (IBAction)btn_createUser:(id _Nonnull)sender;
 - (void)viewDidLoad;
-- (IBAction)btn_back:(id _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (IBAction)btn_cancel:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -606,22 +569,6 @@ SWIFT_CLASS("_TtC4Test10VC_adduser")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btn_cancel:(id _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIPickerView;
-
-SWIFT_CLASS("_TtC4Test9VC_picker")
-@interface VC_picker : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
-@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified pickerView;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull pickerData;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nonnull)pickerView:(UIPickerView * _Nonnull)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView * _Nullable)view SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

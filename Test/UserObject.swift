@@ -19,6 +19,8 @@ class UserObject {
     var permissionToManageUsers: Bool!;
     var firstTimeLogin: Bool!;
     var listenerPath: String!;
+    
+    var email: String!;
   
     
     init() {

@@ -23,7 +23,6 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var fldusername: UILabel!
     
     @IBOutlet var fldcompany: UILabel!
-    var dbRef : FIRDatabaseReference!
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
     
@@ -32,7 +31,6 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         signingOut = false;
         self.navigationController?.isNavigationBarHidden = false;
         super.viewDidLoad()
-        dbRef = FIRDatabase.database().reference()
         fldusername.text = userObj.username;
         //dataSource.username;
         

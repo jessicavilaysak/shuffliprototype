@@ -45,6 +45,7 @@ depends-top-level:
 - "UITextField"
 - "UITextFieldDelegate"
 - "UIViewController"
+- "UnicodeScalarType"
 - "VC_Creator_Signin"
 - !private "print"
 - !private "userObj"
@@ -983,6 +984,7 @@ depends-member:
 - !private ["4Test10UserObjectC", "creatorID"]
 - !private ["4Test10UserObjectC", "firstTimeLogin"]
 - !private ["4Test10UserObjectC", "isAdmin"]
+- !private ["4Test10UserObjectC", "listenerPath"]
 - !private ["4Test10UserObjectC", "permissionToManageUsers"]
 - !private ["4Test10UserObjectC", "uid"]
 - !private ["4Test10UserObjectC", "username"]
