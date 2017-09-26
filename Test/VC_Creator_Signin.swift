@@ -45,13 +45,16 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                 
                 if user != nil{
                     userObj.uid = FIRAuth.auth()?.currentUser?.uid;
-                    self.completeAsyncCalls{ success in
+                    userObj.completeAsyncCalls{ success in
                         if success{
                             print("SUCCESS - completeAsyncCalls");
+                            SVProgressHUD.dismiss()
+                            self.directSegue();
                         }
                         else
                         {
                             print("FAILURE - completeAsyncCalls");
+                            SVProgressHUD.dismiss()
                         }
                     }
                 }
@@ -69,119 +72,7 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func completeAsyncCalls(completion: @escaping (Bool) -> ()) {
-        /*
-         Do we want to get user information EVERY time they log in OR only the first time they log in??
-         
-         ALSO, i used a completion handler to get all the information i need (username, company name, etc.) SYNCHRONOUSLY. All firebase calls are ASYNCHRONOUS so i had to do this to ensure i grabbed the info before going to the tab controller.
-         */
-        //first handler for getting user info will make the firebase call then come back and continue to the second handler IF successful.
-        self.getUserInfo{ success in
-            if success{
-                //this is the second handler that gets the account information.
-                self.getAccountInfo{ successAcc in
-                    if successAcc {
-                        //this is the third handler that gets the user role information.
-                        self.getRoleInfo { successRole in
-                            if successRole {
-                                self.directSegue();
-                                SVProgressHUD.dismiss();
-                                completion(true);
-                            }
-                            else
-                            {
-                                print("shuffli - no success with role info.");
-                                SVProgressHUD.dismiss()
-                                completion(false);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        print("shuffli - no success with account info.");
-                        SVProgressHUD.dismiss()
-                        completion(false);
-                    }
-                }
-            }
-            else{
-                print("shuffli - no success with user info.");
-                SVProgressHUD.dismiss()
-                completion(false);
-            }
-        }
-    }
     
-    func getUserInfo(completion: @escaping (Bool) -> ()) {
-        let userUID = userObj.uid;
-        print("shuffli: "+userUID!);
-        FIRDatabase.database().reference().child("users").child(userUID!).observeSingleEvent(of: .value , with: { snapshot in
-            
-            if snapshot.exists() {
-                
-                let recent = snapshot.value as!  NSDictionary
-                print(recent);
-                userObj.accountID = (recent["accountID"] as? String)!;
-                userObj.creatorID = (recent["creatorID"] as? String)!;
-                userObj.username = (recent["username"] as? String)!;
-                completion(true);
-            }});
-        
-    }
-    
-    func getAccountInfo(completion: @escaping (Bool) -> ()) {
-        let accountID = userObj.accountID;
-        print("shuffli: accountID: "+accountID!);
-        FIRDatabase.database().reference().child("accounts").child(accountID!).observeSingleEvent(of: .value , with: { snapshot in
-            
-            if snapshot.exists() {
-                
-                let recent = snapshot.value as!  NSDictionary
-                print(recent);
-                userObj.accountName = (recent["accountName"] as? String)!;
-                completion(true);
-            }});
-    }
-    
-    func getRoleInfo(completion: @escaping (Bool) -> ()) {
-        let accountID = userObj.accountID;
-        let creatorID = userObj.creatorID;
-        let uid = userObj.uid;
-        print("getRoleInfo()");
-        FIRDatabase.database().reference().child("userRoles").child(accountID!).child(creatorID!).child(uid!).observeSingleEvent(of: .value , with: { snapshot in
-            
-            if snapshot.exists() {
-                
-                let roleID = snapshot.value as!  String;
-                print("roleID: "+roleID);
-                
-                if (roleID == "m1")
-                {
-                    userObj.isAdmin = true;
-                    userObj.permissionToManageUsers = true;
-                }
-                else if (roleID == "m2")
-                {
-                    userObj.isAdmin = true;
-                    userObj.permissionToManageUsers = false;
-                }
-                else
-                {
-                    userObj.isAdmin = false;
-                    userObj.permissionToManageUsers = false;
-                }
-                if(userObj.isAdmin)
-                {
-                    userObj.listenerPath = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!;
-                }
-                else
-                {
-                    userObj.listenerPath = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!;
-                }
-                completion(true);
-            }});
-
-    }
 
     
     /*
@@ -197,30 +88,28 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     
     func directSegue() {
 
-        if (userObj.firstTimeLogin && !userObj.isAdmin)
-        {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_resetpassword");
-            self.present(vc!, animated: true, completion: nil);
-        }
-        else
-        {
-            let tabs = TabBarController();
-            self.present(tabs, animated: true, completion: nil);
-        }
-
+        let tabs = TabBarController();
+        self.present(tabs, animated: true, completion: nil);
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // [START remove_auth_listener]
+        fld_password.text = "";
+        fld_username.text = "";
         
-        
+        // [END remove_auth_listener]
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
-        //return;
+        return;
         if FIRAuth.auth()?.currentUser != nil{
             print("User is NOT null.");
             SVProgressHUD.show(withStatus: "Setting up for you...");
             userObj.uid = FIRAuth.auth()?.currentUser?.uid;
-            self.completeAsyncCalls{ success in
+            userObj.completeAsyncCalls{ success in
                 if success{
                     print("SUCCESS - completeAsyncCalls");
                 }

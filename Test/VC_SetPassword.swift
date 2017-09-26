@@ -16,6 +16,8 @@ class VC_SetPassword: UIViewController {
     @IBOutlet weak var fld_displayMessage: UITextView!
     @IBOutlet weak var fld_password: UITextField!
     @IBOutlet weak var fld_confirmPassword: UITextField!
+    @IBOutlet weak var fld_name: UITextField!
+    var inviteRef: FIRDatabaseReference!;
     
     func containsNumbers(pword: String) -> Bool
     {
@@ -65,9 +67,10 @@ class VC_SetPassword: UIViewController {
         let potentialPword = fld_password.text;
         var check = true;
         var displayMsg = "";
+        
         if (potentialPword == "")
         {
-            displayMsg = "Set your password using the fields above ^";
+            displayMsg += "Set your password using the fields above ^\n";
         }
         else{
             if (!containsNumbers(pword: potentialPword!))
@@ -92,10 +95,14 @@ class VC_SetPassword: UIViewController {
             }
             if(!check)
             {
-                displayMsg = "You have entered an invalid password!\nYour password must contain: at least 6 characters, at least one uppercase, at least one lowercase, at least one number."
+                displayMsg += "You have entered an invalid password!\nYour password must contain: at least 6 characters, at least one uppercase, at least one lowercase, at least one number.\n"
             }
         }
-        displayMsg = "You have entered a valid password!";
+        if(fld_name.text == "")
+        {
+            displayMsg += "You must enter a name.\n";
+            check = false;
+        }
         if(!check)
         {
             fld_displayMessage.text = displayMsg;
@@ -108,25 +115,69 @@ class VC_SetPassword: UIViewController {
         else
         {
             fld_displayMessage.text = "Your passwords do not match.";
+            return;
         }
+        
+        //userObj.username = self.fld_name.text;
+        
         SVProgressHUD.show(withStatus: "Creating new user")
         FIRAuth.auth()?.createUser(withEmail: userObj.email, password: potentialPword!) { (user, error) in
         // [START_EXCLUDE]
             if let error = error {
                 print("error: "+error.localizedDescription);
                 self.fld_displayMessage.text = "Could not create new user with this email. Please contact your Shuffli administrator."
+                SVProgressHUD.dismiss();
                 return
             }
             print("\(user!.email!) created")
             userObj.uid = FIRAuth.auth()?.currentUser?.uid;
             self.fld_displayMessage.text = "Successful!\n new user with uid: "+userObj.uid;
+            self.inviteRef = FIRDatabase.database().reference().child("actions/acceptInvite").childByAutoId().ref;
+            self.inviteRef.observe(FIRDataEventType.value, with: {(snapshot) in
+                //print(snapshot)
+                let recent = snapshot.value as!  NSDictionary;
+                if(recent["completed"] == nil)
+                {
+                    print("completed doesn't exist.");
+                    return;
+                }
+                let cmdCompleted = recent["completed"] as! String;
+                if(cmdCompleted == "true")
+                {
+                    print("completed is TRUE");
+                    userObj.completeAsyncCalls{ success in
+                        if success{
+                            print("SUCCESS - completeAsyncCalls");
+                            SVProgressHUD.dismiss();
+                            let tabs = TabBarController();
+                            self.present(tabs, animated: true, completion: nil);
+                        }
+                        else
+                        {
+                            print("FAILURE - completeAsyncCalls");
+                            SVProgressHUD.dismiss();
+                        }
+                    };
+                }
+                if(cmdCompleted == "error")
+                {
+                    print("completed is ERROR??????!!?!");
+                    SVProgressHUD.dismiss();
+                    
+                    SVProgressHUD.showError(withStatus: "Failed to authorise you.\nPlease try again later.")
+                    SVProgressHUD.dismiss(withDelay: 2)
+                }
+            })
+            self.inviteRef.setValue(["userID": userObj.uid!, "inviteCode": userObj.inviteCode!, "username": self.fld_name.text!]);
             
-            FIRDatabase.database().reference().child("actions/acceptInvite").childByAutoId().setValue(["userID": userObj.uid!, "inviteCode": userObj.inviteCode!]);
-            SVProgressHUD.dismiss();
         // [END_EXCLUDE]
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.inviteRef.removeAllObservers();
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

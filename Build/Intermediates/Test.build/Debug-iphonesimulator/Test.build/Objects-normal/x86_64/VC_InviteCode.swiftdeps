@@ -1,0 +1,929 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VC_InviteCode"
+provides-nominal:
+- "4Test13VC_InviteCodeC"
+provides-member:
+- ["4Test13VC_InviteCodeC", ""]
+provides-dynamic-lookup:
+- "btn_signingup"
+- "btn_signup"
+- "didReceiveMemoryWarning"
+- "fld_invitecode"
+- "getInviteInfo"
+- "viewDidLoad"
+depends-top-level:
+- !private "+"
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "CastingPrecedence"
+- !private "FIRDatabase"
+- !private "NSDictionary"
+- !private "SVProgressHUD"
+- !private "String"
+- !private "StringLiteralType"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- !private "UIAlertControllerStyle"
+- "UIButton"
+- "UITextField"
+- "UIViewController"
+- "VC_InviteCode"
+- !private "print"
+- !private "userObj"
+depends-member:
+- !private ["8DropDown10AnchorViewP", "dismiss"]
+- !private ["8DropDown10AnchorViewP", "layer"]
+- !private ["8DropDown10AnchorViewP", "show"]
+- !private ["8DropDown10AnchorViewP", "showError"]
+- !private ["8DropDown10AnchorViewP", "text"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So7CALayerC", "cornerRadius"]
+- !private ["So15CALayerDelegateP", "dismiss"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "show"]
+- !private ["So15CALayerDelegateP", "showError"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
+- !private ["s7CVarArgP", "FIRDatabase"]
+- !private ["s7CVarArgP", "SVProgressHUD"]
+- !private ["s7CVarArgP", "UIAlertAction"]
+- !private ["s7CVarArgP", "UIAlertController"]
+- !private ["s7CVarArgP", "UIAlertControllerStyle"]
+- !private ["s7CVarArgP", "addAction"]
+- !private ["s7CVarArgP", "btn_signingup"]
+- !private ["s7CVarArgP", "child"]
+- !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "database"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "exists"]
+- !private ["s7CVarArgP", "fld_invitecode"]
+- !private ["s7CVarArgP", "getInviteInfo"]
+- !private ["s7CVarArgP", "hideKeyboardWhenTappedAround"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "observeSingleEvent"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "reference"]
+- !private ["s7CVarArgP", "show"]
+- !private ["s7CVarArgP", "showError"]
+- !private ["s7CVarArgP", "storyboard"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "userObj"]
+- !private ["s7CVarArgP", "value"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "FIRDatabase"]
+- !private ["s28CustomDebugStringConvertibleP", "SVProgressHUD"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertControllerStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "addAction"]
+- !private ["s28CustomDebugStringConvertibleP", "btn_signingup"]
+- !private ["s28CustomDebugStringConvertibleP", "child"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "database"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "exists"]
+- !private ["s28CustomDebugStringConvertibleP", "fld_invitecode"]
+- !private ["s28CustomDebugStringConvertibleP", "getInviteInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "hideKeyboardWhenTappedAround"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "reference"]
+- !private ["s28CustomDebugStringConvertibleP", "show"]
+- !private ["s28CustomDebugStringConvertibleP", "showError"]
+- !private ["s28CustomDebugStringConvertibleP", "storyboard"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "userObj"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "FIRDatabase"]
+- !private ["s23CustomStringConvertibleP", "SVProgressHUD"]
+- !private ["s23CustomStringConvertibleP", "UIAlertAction"]
+- !private ["s23CustomStringConvertibleP", "UIAlertController"]
+- !private ["s23CustomStringConvertibleP", "UIAlertControllerStyle"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addAction"]
+- !private ["s23CustomStringConvertibleP", "btn_signingup"]
+- !private ["s23CustomStringConvertibleP", "child"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "database"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "exists"]
+- !private ["s23CustomStringConvertibleP", "fld_invitecode"]
+- !private ["s23CustomStringConvertibleP", "getInviteInfo"]
+- !private ["s23CustomStringConvertibleP", "hideKeyboardWhenTappedAround"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "reference"]
+- !private ["s23CustomStringConvertibleP", "show"]
+- !private ["s23CustomStringConvertibleP", "showError"]
+- !private ["s23CustomStringConvertibleP", "storyboard"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "userObj"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "FIRDatabase"]
+- !private ["s9EquatableP", "SVProgressHUD"]
+- !private ["s9EquatableP", "UIAlertAction"]
+- !private ["s9EquatableP", "UIAlertController"]
+- !private ["s9EquatableP", "UIAlertControllerStyle"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addAction"]
+- !private ["s9EquatableP", "alert"]
+- !private ["s9EquatableP", "btn_signingup"]
+- !private ["s9EquatableP", "child"]
+- !private ["s9EquatableP", "cornerRadius"]
+- !private ["s9EquatableP", "database"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "dismiss"]
+- !private ["s9EquatableP", "exists"]
+- !private ["s9EquatableP", "fld_invitecode"]
+- !private ["s9EquatableP", "getInviteInfo"]
+- !private ["s9EquatableP", "hideKeyboardWhenTappedAround"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "instantiateViewController"]
+- !private ["s9EquatableP", "layer"]
+- !private ["s9EquatableP", "observeSingleEvent"]
+- !private ["s9EquatableP", "present"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "reference"]
+- !private ["s9EquatableP", "show"]
+- !private ["s9EquatableP", "showError"]
+- !private ["s9EquatableP", "storyboard"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "userObj"]
+- !private ["s9EquatableP", "value"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SC16FIRDataEventTypeO", "value"]
+- !private ["So15FIRDataSnapshotC", "exists"]
+- !private ["So15FIRDataSnapshotC", "value"]
+- !private ["So11FIRDatabaseC", "database"]
+- !private ["So11FIRDatabaseC", "reference"]
+- !private ["So16FIRDatabaseQueryC", "child"]
+- !private ["So16FIRDatabaseQueryC", "observeSingleEvent"]
+- !private ["So20FIRDatabaseReferenceC", "child"]
+- !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
+- !private ["s8HashableP", "FIRDatabase"]
+- !private ["s8HashableP", "SVProgressHUD"]
+- !private ["s8HashableP", "UIAlertAction"]
+- !private ["s8HashableP", "UIAlertController"]
+- !private ["s8HashableP", "UIAlertControllerStyle"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addAction"]
+- !private ["s8HashableP", "alert"]
+- !private ["s8HashableP", "btn_signingup"]
+- !private ["s8HashableP", "child"]
+- !private ["s8HashableP", "cornerRadius"]
+- !private ["s8HashableP", "database"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "dismiss"]
+- !private ["s8HashableP", "exists"]
+- !private ["s8HashableP", "fld_invitecode"]
+- !private ["s8HashableP", "getInviteInfo"]
+- !private ["s8HashableP", "hideKeyboardWhenTappedAround"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "instantiateViewController"]
+- !private ["s8HashableP", "layer"]
+- !private ["s8HashableP", "observeSingleEvent"]
+- !private ["s8HashableP", "present"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "reference"]
+- !private ["s8HashableP", "show"]
+- !private ["s8HashableP", "showError"]
+- !private ["s8HashableP", "storyboard"]
+- !private ["s8HashableP", "subscript"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "userObj"]
+- !private ["s8HashableP", "value"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "FIRDatabase"]
+- !private ["So8NSCodingP", "SVProgressHUD"]
+- !private ["So8NSCodingP", "UIAlertAction"]
+- !private ["So8NSCodingP", "UIAlertController"]
+- !private ["So8NSCodingP", "UIAlertControllerStyle"]
+- !private ["So8NSCodingP", "addAction"]
+- !private ["So8NSCodingP", "btn_signingup"]
+- !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "fld_invitecode"]
+- !private ["So8NSCodingP", "getInviteInfo"]
+- !private ["So8NSCodingP", "hideKeyboardWhenTappedAround"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "show"]
+- !private ["So8NSCodingP", "showError"]
+- !private ["So8NSCodingP", "storyboard"]
+- !private ["So8NSCodingP", "subscript"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "userObj"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "subscript"]
+- !private ["So12NSDictionaryC", "subscript"]
+- !private ["So26NSExtensionRequestHandlingP", "FIRDatabase"]
+- !private ["So26NSExtensionRequestHandlingP", "SVProgressHUD"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertControllerStyle"]
+- !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "btn_signingup"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "fld_invitecode"]
+- !private ["So26NSExtensionRequestHandlingP", "getInviteInfo"]
+- !private ["So26NSExtensionRequestHandlingP", "hideKeyboardWhenTappedAround"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "storyboard"]
+- !private ["So26NSExtensionRequestHandlingP", "userObj"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So17NSFastEnumerationP", "subscript"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "subscript"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "FIRDatabase"]
+- !private ["So8NSObjectC", "NSDictionary"]
+- !private ["So8NSObjectC", "SVProgressHUD"]
+- !private ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIAlertAction"]
+- !private ["So8NSObjectC", "UIAlertController"]
+- !private ["So8NSObjectC", "UIAlertControllerStyle"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UITextField"]
+- !private ["So8NSObjectC", "addAction"]
+- ["So8NSObjectC", "btn_signingup"]
+- ["So8NSObjectC", "btn_signup"]
+- !private ["So8NSObjectC", "child"]
+- !private ["So8NSObjectC", "cornerRadius"]
+- !private ["So8NSObjectC", "database"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectC", "dismiss"]
+- !private ["So8NSObjectC", "exists"]
+- ["So8NSObjectC", "fld_invitecode"]
+- ["So8NSObjectC", "getInviteInfo"]
+- !private ["So8NSObjectC", "hideKeyboardWhenTappedAround"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "layer"]
+- !private ["So8NSObjectC", "observeSingleEvent"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "reference"]
+- !private ["So8NSObjectC", "show"]
+- !private ["So8NSObjectC", "showError"]
+- !private ["So8NSObjectC", "storyboard"]
+- !private ["So8NSObjectC", "subscript"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "userObj"]
+- !private ["So8NSObjectC", "value"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "FIRDatabase"]
+- !private ["So16NSObjectProtocolP", "SVProgressHUD"]
+- !private ["So16NSObjectProtocolP", "UIAlertAction"]
+- !private ["So16NSObjectProtocolP", "UIAlertController"]
+- !private ["So16NSObjectProtocolP", "UIAlertControllerStyle"]
+- !private ["So16NSObjectProtocolP", "addAction"]
+- !private ["So16NSObjectProtocolP", "btn_signingup"]
+- !private ["So16NSObjectProtocolP", "child"]
+- !private ["So16NSObjectProtocolP", "cornerRadius"]
+- !private ["So16NSObjectProtocolP", "database"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "dismiss"]
+- !private ["So16NSObjectProtocolP", "exists"]
+- !private ["So16NSObjectProtocolP", "fld_invitecode"]
+- !private ["So16NSObjectProtocolP", "getInviteInfo"]
+- !private ["So16NSObjectProtocolP", "hideKeyboardWhenTappedAround"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- !private ["So16NSObjectProtocolP", "layer"]
+- !private ["So16NSObjectProtocolP", "observeSingleEvent"]
+- !private ["So16NSObjectProtocolP", "present"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "reference"]
+- !private ["So16NSObjectProtocolP", "show"]
+- !private ["So16NSObjectProtocolP", "showError"]
+- !private ["So16NSObjectProtocolP", "storyboard"]
+- !private ["So16NSObjectProtocolP", "subscript"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "userObj"]
+- !private ["So16NSObjectProtocolP", "value"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "subscript"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "alert"]
+- !private ["s16RawRepresentableP", "default"]
+- !private ["s16RawRepresentableP", "value"]
+- !private ["So13SVProgressHUDC", "dismiss"]
+- !private ["So13SVProgressHUDC", "show"]
+- !private ["So13SVProgressHUDC", "showError"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "dismiss"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "show"]
+- !private ["So29UIAccessibilityIdentificationP", "showError"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So13UIAlertActionC", "init"]
+- !private ["SC18UIAlertActionStyleO", "default"]
+- !private ["So17UIAlertControllerC", "addAction"]
+- !private ["So17UIAlertControllerC", "init"]
+- !private ["SC22UIAlertControllerStyleO", "alert"]
+- !private ["So12UIAppearanceP", "dismiss"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "show"]
+- !private ["So12UIAppearanceP", "showError"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "FIRDatabase"]
+- !private ["So21UIAppearanceContainerP", "SVProgressHUD"]
+- !private ["So21UIAppearanceContainerP", "UIAlertAction"]
+- !private ["So21UIAppearanceContainerP", "UIAlertController"]
+- !private ["So21UIAppearanceContainerP", "UIAlertControllerStyle"]
+- !private ["So21UIAppearanceContainerP", "addAction"]
+- !private ["So21UIAppearanceContainerP", "btn_signingup"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "fld_invitecode"]
+- !private ["So21UIAppearanceContainerP", "getInviteInfo"]
+- !private ["So21UIAppearanceContainerP", "hideKeyboardWhenTappedAround"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "show"]
+- !private ["So21UIAppearanceContainerP", "showError"]
+- !private ["So21UIAppearanceContainerP", "storyboard"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "userObj"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "layer"]
+- !private ["So18UIContentContainerP", "FIRDatabase"]
+- !private ["So18UIContentContainerP", "SVProgressHUD"]
+- !private ["So18UIContentContainerP", "UIAlertAction"]
+- !private ["So18UIContentContainerP", "UIAlertController"]
+- !private ["So18UIContentContainerP", "UIAlertControllerStyle"]
+- !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "btn_signingup"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "fld_invitecode"]
+- !private ["So18UIContentContainerP", "getInviteInfo"]
+- !private ["So18UIContentContainerP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "storyboard"]
+- !private ["So18UIContentContainerP", "userObj"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "layer"]
+- !private ["So9UIControlC", "text"]
+- !private ["So17UICoordinateSpaceP", "dismiss"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "show"]
+- !private ["So17UICoordinateSpaceP", "showError"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "dismiss"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "show"]
+- !private ["So13UIDynamicItemP", "showError"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "FIRDatabase"]
+- !private ["So18UIFocusEnvironmentP", "SVProgressHUD"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertController"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertControllerStyle"]
+- !private ["So18UIFocusEnvironmentP", "addAction"]
+- !private ["So18UIFocusEnvironmentP", "btn_signingup"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "fld_invitecode"]
+- !private ["So18UIFocusEnvironmentP", "getInviteInfo"]
+- !private ["So18UIFocusEnvironmentP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "show"]
+- !private ["So18UIFocusEnvironmentP", "showError"]
+- !private ["So18UIFocusEnvironmentP", "storyboard"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "userObj"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "dismiss"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "show"]
+- !private ["So11UIFocusItemP", "showError"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "FIRDatabase"]
+- !private ["So30UIPasteConfigurationSupportingP", "SVProgressHUD"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertControllerStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "addAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "btn_signingup"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "fld_invitecode"]
+- !private ["So30UIPasteConfigurationSupportingP", "getInviteInfo"]
+- !private ["So30UIPasteConfigurationSupportingP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "show"]
+- !private ["So30UIPasteConfigurationSupportingP", "showError"]
+- !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "userObj"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "FIRDatabase"]
+- !private ["So11UIResponderC", "NSDictionary"]
+- !private ["So11UIResponderC", "SVProgressHUD"]
+- !private ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UIAlertAction"]
+- !private ["So11UIResponderC", "UIAlertController"]
+- !private ["So11UIResponderC", "UIAlertControllerStyle"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UITextField"]
+- !private ["So11UIResponderC", "addAction"]
+- ["So11UIResponderC", "btn_signingup"]
+- ["So11UIResponderC", "btn_signup"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "fld_invitecode"]
+- ["So11UIResponderC", "getInviteInfo"]
+- !private ["So11UIResponderC", "hideKeyboardWhenTappedAround"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "show"]
+- !private ["So11UIResponderC", "showError"]
+- !private ["So11UIResponderC", "storyboard"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So11UIResponderC", "userObj"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "FIRDatabase"]
+- !private ["So30UIResponderStandardEditActionsP", "SVProgressHUD"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertControllerStyle"]
+- !private ["So30UIResponderStandardEditActionsP", "addAction"]
+- !private ["So30UIResponderStandardEditActionsP", "btn_signingup"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "fld_invitecode"]
+- !private ["So30UIResponderStandardEditActionsP", "getInviteInfo"]
+- !private ["So30UIResponderStandardEditActionsP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "show"]
+- !private ["So30UIResponderStandardEditActionsP", "showError"]
+- !private ["So30UIResponderStandardEditActionsP", "storyboard"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "userObj"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
+- !private ["So16UIStateRestoringP", "FIRDatabase"]
+- !private ["So16UIStateRestoringP", "SVProgressHUD"]
+- !private ["So16UIStateRestoringP", "UIAlertAction"]
+- !private ["So16UIStateRestoringP", "UIAlertController"]
+- !private ["So16UIStateRestoringP", "UIAlertControllerStyle"]
+- !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "btn_signingup"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "fld_invitecode"]
+- !private ["So16UIStateRestoringP", "getInviteInfo"]
+- !private ["So16UIStateRestoringP", "hideKeyboardWhenTappedAround"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "storyboard"]
+- !private ["So16UIStateRestoringP", "userObj"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "text"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "FIRDatabase"]
+- !private ["So18UITraitEnvironmentP", "SVProgressHUD"]
+- !private ["So18UITraitEnvironmentP", "UIAlertAction"]
+- !private ["So18UITraitEnvironmentP", "UIAlertController"]
+- !private ["So18UITraitEnvironmentP", "UIAlertControllerStyle"]
+- !private ["So18UITraitEnvironmentP", "addAction"]
+- !private ["So18UITraitEnvironmentP", "btn_signingup"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "fld_invitecode"]
+- !private ["So18UITraitEnvironmentP", "getInviteInfo"]
+- !private ["So18UITraitEnvironmentP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "show"]
+- !private ["So18UITraitEnvironmentP", "showError"]
+- !private ["So18UITraitEnvironmentP", "storyboard"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "userObj"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "dismiss"]
+- !private ["So6UIViewC", "layer"]
+- !private ["So6UIViewC", "show"]
+- !private ["So6UIViewC", "showError"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Bool"]
+- !private ["So16UIViewControllerC", "FIRDatabase"]
+- !private ["So16UIViewControllerC", "NSDictionary"]
+- !private ["So16UIViewControllerC", "SVProgressHUD"]
+- !private ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UIAlertAction"]
+- !private ["So16UIViewControllerC", "UIAlertController"]
+- !private ["So16UIViewControllerC", "UIAlertControllerStyle"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UITextField"]
+- !private ["So16UIViewControllerC", "addAction"]
+- ["So16UIViewControllerC", "btn_signingup"]
+- ["So16UIViewControllerC", "btn_signup"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "fld_invitecode"]
+- ["So16UIViewControllerC", "getInviteInfo"]
+- !private ["So16UIViewControllerC", "hideKeyboardWhenTappedAround"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "print"]
+- !private ["So16UIViewControllerC", "storyboard"]
+- !private ["So16UIViewControllerC", "userObj"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["4Test10UserObjectC", "accountID"]
+- !private ["4Test10UserObjectC", "accountName"]
+- !private ["4Test10UserObjectC", "creatorID"]
+- !private ["4Test10UserObjectC", "creatorName"]
+- !private ["4Test10UserObjectC", "email"]
+- !private ["4Test10UserObjectC", "inviteCode"]
+- !private ["4Test10UserObjectC", "setRole"]
+- ["4Test13VC_InviteCodeC", "Bool"]
+- !private ["4Test13VC_InviteCodeC", "FIRDatabase"]
+- !private ["4Test13VC_InviteCodeC", "NSDictionary"]
+- !private ["4Test13VC_InviteCodeC", "SVProgressHUD"]
+- !private ["4Test13VC_InviteCodeC", "String"]
+- !private ["4Test13VC_InviteCodeC", "UIAlertAction"]
+- !private ["4Test13VC_InviteCodeC", "UIAlertController"]
+- !private ["4Test13VC_InviteCodeC", "UIAlertControllerStyle"]
+- ["4Test13VC_InviteCodeC", "UIButton"]
+- ["4Test13VC_InviteCodeC", "UITextField"]
+- ["4Test13VC_InviteCodeC", "btn_signingup"]
+- ["4Test13VC_InviteCodeC", "btn_signup"]
+- ["4Test13VC_InviteCodeC", "deinit"]
+- ["4Test13VC_InviteCodeC", "didReceiveMemoryWarning"]
+- ["4Test13VC_InviteCodeC", "fld_invitecode"]
+- ["4Test13VC_InviteCodeC", "getInviteInfo"]
+- !private ["4Test13VC_InviteCodeC", "hideKeyboardWhenTappedAround"]
+- ["4Test13VC_InviteCodeC", "init"]
+- !private ["4Test13VC_InviteCodeC", "present"]
+- !private ["4Test13VC_InviteCodeC", "print"]
+- !private ["4Test13VC_InviteCodeC", "storyboard"]
+- !private ["4Test13VC_InviteCodeC", "userObj"]
+- ["4Test13VC_InviteCodeC", "viewDidLoad"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dismiss"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "show"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "showError"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRDatabase"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SVProgressHUD"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertControllerStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "btn_signingup"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "exists"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fld_invitecode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getInviteInfo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hideKeyboardWhenTappedAround"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "8DropDown10AnchorViewP"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So7CALayerC"
+- !private "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SC16FIRDataEventTypeO"
+- !private "So15FIRDataSnapshotC"
+- !private "So11FIRDatabaseC"
+- !private "So16FIRDatabaseQueryC"
+- !private "So20FIRDatabaseReferenceC"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So12NSDictionaryC"
+- "So26NSExtensionRequestHandlingP"
+- !private "So17NSFastEnumerationP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "So13SVProgressHUDC"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIAlertActionC"
+- !private "SC18UIAlertActionStyleO"
+- !private "So17UIAlertControllerC"
+- !private "SC22UIAlertControllerStyleO"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So10UIKeyInputP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "4Test10UserObjectC"
+- "4Test13VC_InviteCodeC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Test-Bridging-Header.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+interface-hash: "073af37fbc3d0ebc9313598b87a9d01f"

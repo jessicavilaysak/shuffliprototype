@@ -13,6 +13,7 @@ provides-dynamic-lookup:
 - "button_removeImage"
 - "camera"
 - "categories"
+- "categoryDataSource"
 - "categoryName"
 - "count"
 - "fixOrientation"
@@ -41,7 +42,7 @@ depends-top-level:
 - !private "-"
 - !private "..."
 - !private "=="
-- !private "Array"
+- !private "??"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
@@ -91,6 +92,7 @@ depends-top-level:
 - !private "Void"
 - !private "print"
 - !private "userObj"
+- !private "||"
 depends-member:
 - !private ["8DropDown10AnchorViewP", "addGestureRecognizer"]
 - !private ["8DropDown10AnchorViewP", "anchorView"]
@@ -113,11 +115,14 @@ depends-member:
 - !private ["8DropDown10AnchorViewP", "showSuccess"]
 - !private ["8DropDown10AnchorViewP", "text"]
 - !private ["8DropDown10AnchorViewP", "textColor"]
+- !private ["Sa", "append"]
 - !private ["Sa", "count"]
+- ["Sa", "init"]
 - !private ["Sa", "subscript"]
 - !private ["s10ArraySliceV", "title"]
+- !private ["s23BidirectionalCollectionP", "append"]
 - !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "isEmpty"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["s23BidirectionalCollectionP", "title"]
@@ -160,7 +165,7 @@ depends-member:
 - !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "NSUUID"]
 - !private ["s7CVarArgP", "SVProgressHUD"]
-- !private ["s7CVarArgP", "String"]
+- ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertActionStyle"]
 - !private ["s7CVarArgP", "UIAlertController"]
@@ -181,6 +186,7 @@ depends-member:
 - !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
 - !private ["s7CVarArgP", "anchorView"]
+- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "badgeValue"]
 - !private ["s7CVarArgP", "black"]
 - !private ["s7CVarArgP", "bottomOffset"]
@@ -189,6 +195,7 @@ depends-member:
 - !private ["s7CVarArgP", "btn_removeImage"]
 - !private ["s7CVarArgP", "camera"]
 - !private ["s7CVarArgP", "categories"]
+- !private ["s7CVarArgP", "categoryDataSource"]
 - !private ["s7CVarArgP", "categoryName"]
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "childByAutoId"]
@@ -229,6 +236,7 @@ depends-member:
 - ["s7CVarArgP", "navigationController"]
 - ["s7CVarArgP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s7CVarArgP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s7CVarArgP", "observeSingleEvent"]
 - !private ["s7CVarArgP", "photoLibrary"]
 - !private ["s7CVarArgP", "placeholder"]
 - !private ["s7CVarArgP", "present"]
@@ -277,14 +285,16 @@ depends-member:
 - !private ["s7CVarArgP", "uploadImg"]
 - !private ["s7CVarArgP", "userObj"]
 - !private ["s7CVarArgP", "uuidString"]
+- !private ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "viewImage"]
 - ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "init"]
+- ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "isEmpty"]
 - !private ["s10CollectionP", "subscript"]
 - !private ["s10CollectionP", "title"]
@@ -299,7 +309,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "NSUUID"]
 - !private ["s28CustomDebugStringConvertibleP", "SVProgressHUD"]
-- !private ["s28CustomDebugStringConvertibleP", "String"]
+- ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertActionStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
@@ -321,6 +331,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "anchorView"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "badgeValue"]
 - !private ["s28CustomDebugStringConvertibleP", "black"]
 - !private ["s28CustomDebugStringConvertibleP", "bottomOffset"]
@@ -329,6 +340,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "btn_removeImage"]
 - !private ["s28CustomDebugStringConvertibleP", "camera"]
 - !private ["s28CustomDebugStringConvertibleP", "categories"]
+- !private ["s28CustomDebugStringConvertibleP", "categoryDataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "categoryName"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "childByAutoId"]
@@ -370,6 +382,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "navigationController"]
 - ["s28CustomDebugStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s28CustomDebugStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
 - !private ["s28CustomDebugStringConvertibleP", "photoLibrary"]
 - !private ["s28CustomDebugStringConvertibleP", "placeholder"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
@@ -418,6 +431,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "uploadImg"]
 - !private ["s28CustomDebugStringConvertibleP", "userObj"]
 - !private ["s28CustomDebugStringConvertibleP", "uuidString"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
@@ -432,9 +446,10 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "isEmpty"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "height"]
-- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "title"]
@@ -448,7 +463,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "NSUUID"]
 - !private ["s23CustomStringConvertibleP", "SVProgressHUD"]
-- !private ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertActionStyle"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
@@ -471,6 +486,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "anchorView"]
+- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "badgeValue"]
 - !private ["s23CustomStringConvertibleP", "black"]
 - !private ["s23CustomStringConvertibleP", "bottomOffset"]
@@ -479,6 +495,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "btn_removeImage"]
 - !private ["s23CustomStringConvertibleP", "camera"]
 - !private ["s23CustomStringConvertibleP", "categories"]
+- !private ["s23CustomStringConvertibleP", "categoryDataSource"]
 - !private ["s23CustomStringConvertibleP", "categoryName"]
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "childByAutoId"]
@@ -519,6 +536,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "navigationController"]
 - ["s23CustomStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s23CustomStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
 - !private ["s23CustomStringConvertibleP", "photoLibrary"]
 - !private ["s23CustomStringConvertibleP", "placeholder"]
 - !private ["s23CustomStringConvertibleP", "present"]
@@ -567,6 +585,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "uploadImg"]
 - !private ["s23CustomStringConvertibleP", "userObj"]
 - !private ["s23CustomStringConvertibleP", "uuidString"]
+- !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
@@ -575,9 +594,10 @@ depends-member:
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "absoluteString"]
+- !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
 - !private ["s9DecodableP", "height"]
-- !private ["s9DecodableP", "init"]
+- ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "isEmpty"]
 - !private ["s9DecodableP", "subscript"]
 - !private ["s9DecodableP", "width"]
@@ -590,9 +610,10 @@ depends-member:
 - !private ["8DropDownAAC", "show"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "absoluteString"]
+- !private ["s9EncodableP", "append"]
 - !private ["s9EncodableP", "count"]
 - !private ["s9EncodableP", "height"]
-- !private ["s9EncodableP", "init"]
+- ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "isEmpty"]
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EncodableP", "width"]
@@ -605,7 +626,7 @@ depends-member:
 - !private ["s9EquatableP", "Int"]
 - !private ["s9EquatableP", "NSUUID"]
 - !private ["s9EquatableP", "SVProgressHUD"]
-- !private ["s9EquatableP", "String"]
+- ["s9EquatableP", "String"]
 - !private ["s9EquatableP", "UIAlertAction"]
 - !private ["s9EquatableP", "UIAlertActionStyle"]
 - !private ["s9EquatableP", "UIAlertController"]
@@ -639,6 +660,7 @@ depends-member:
 - !private ["s9EquatableP", "camera"]
 - !private ["s9EquatableP", "cancel"]
 - !private ["s9EquatableP", "categories"]
+- !private ["s9EquatableP", "categoryDataSource"]
 - !private ["s9EquatableP", "categoryName"]
 - !private ["s9EquatableP", "child"]
 - !private ["s9EquatableP", "childByAutoId"]
@@ -682,6 +704,7 @@ depends-member:
 - ["s9EquatableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s9EquatableP", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["s9EquatableP", "normal"]
+- !private ["s9EquatableP", "observeSingleEvent"]
 - !private ["s9EquatableP", "overFullScreen"]
 - !private ["s9EquatableP", "photoLibrary"]
 - !private ["s9EquatableP", "placeholder"]
@@ -731,6 +754,7 @@ depends-member:
 - !private ["s9EquatableP", "uploadImg"]
 - !private ["s9EquatableP", "userObj"]
 - !private ["s9EquatableP", "uuidString"]
+- !private ["s9EquatableP", "value"]
 - !private ["s9EquatableP", "viewControllers"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", "viewForZooming"]
@@ -738,7 +762,9 @@ depends-member:
 - !private ["s9EquatableP", "viewImage"]
 - !private ["s9EquatableP", "width"]
 - ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "normal"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "title"]
@@ -751,13 +777,17 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
+- !private ["SC16FIRDataEventTypeO", "value"]
+- !private ["So15FIRDataSnapshotC", "value"]
 - !private ["So11FIRDatabaseC", "database"]
 - !private ["So11FIRDatabaseC", "reference"]
 - !private ["So16FIRDatabaseQueryC", "child"]
 - !private ["So16FIRDatabaseQueryC", "childByAutoId"]
+- !private ["So16FIRDatabaseQueryC", "observeSingleEvent"]
 - !private ["So16FIRDatabaseQueryC", "setValue"]
 - !private ["So20FIRDatabaseReferenceC", "child"]
 - !private ["So20FIRDatabaseReferenceC", "childByAutoId"]
+- !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
 - !private ["So20FIRDatabaseReferenceC", "setValue"]
 - !private ["So10FIRStorageC", "reference"]
 - !private ["So10FIRStorageC", "storage"]
@@ -776,7 +806,7 @@ depends-member:
 - !private ["s8HashableP", "Int"]
 - !private ["s8HashableP", "NSUUID"]
 - !private ["s8HashableP", "SVProgressHUD"]
-- !private ["s8HashableP", "String"]
+- ["s8HashableP", "String"]
 - !private ["s8HashableP", "UIAlertAction"]
 - !private ["s8HashableP", "UIAlertActionStyle"]
 - !private ["s8HashableP", "UIAlertController"]
@@ -810,6 +840,7 @@ depends-member:
 - !private ["s8HashableP", "camera"]
 - !private ["s8HashableP", "cancel"]
 - !private ["s8HashableP", "categories"]
+- !private ["s8HashableP", "categoryDataSource"]
 - !private ["s8HashableP", "categoryName"]
 - !private ["s8HashableP", "child"]
 - !private ["s8HashableP", "childByAutoId"]
@@ -851,6 +882,7 @@ depends-member:
 - ["s8HashableP", "navigationController"]
 - ["s8HashableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s8HashableP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s8HashableP", "observeSingleEvent"]
 - !private ["s8HashableP", "overFullScreen"]
 - !private ["s8HashableP", "photoLibrary"]
 - !private ["s8HashableP", "placeholder"]
@@ -900,6 +932,7 @@ depends-member:
 - !private ["s8HashableP", "uploadImg"]
 - !private ["s8HashableP", "userObj"]
 - !private ["s8HashableP", "uuidString"]
+- !private ["s8HashableP", "value"]
 - !private ["s8HashableP", "viewControllers"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", "viewForZooming"]
@@ -912,7 +945,9 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "isEmpty"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "isEmpty"]
+- !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "count"]
+- ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["s17MutableCollectionP", "title"]
 - !private ["So8NSCodingP", "CGPoint"]
@@ -924,7 +959,7 @@ depends-member:
 - !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "NSUUID"]
 - !private ["So8NSCodingP", "SVProgressHUD"]
-- !private ["So8NSCodingP", "String"]
+- ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertActionStyle"]
 - !private ["So8NSCodingP", "UIAlertController"]
@@ -953,6 +988,7 @@ depends-member:
 - !private ["So8NSCodingP", "btn_removeImage"]
 - !private ["So8NSCodingP", "camera"]
 - !private ["So8NSCodingP", "categories"]
+- !private ["So8NSCodingP", "categoryDataSource"]
 - !private ["So8NSCodingP", "categoryName"]
 - !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "dataSource"]
@@ -1051,7 +1087,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Int"]
 - !private ["So26NSExtensionRequestHandlingP", "NSUUID"]
 - !private ["So26NSExtensionRequestHandlingP", "SVProgressHUD"]
-- !private ["So26NSExtensionRequestHandlingP", "String"]
+- ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertActionStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
@@ -1074,6 +1110,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "btn_removeImage"]
 - !private ["So26NSExtensionRequestHandlingP", "camera"]
 - !private ["So26NSExtensionRequestHandlingP", "categories"]
+- !private ["So26NSExtensionRequestHandlingP", "categoryDataSource"]
 - !private ["So26NSExtensionRequestHandlingP", "categoryName"]
 - !private ["So26NSExtensionRequestHandlingP", "delegate"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
@@ -1202,6 +1239,7 @@ depends-member:
 - ["So8NSObjectC", "button_removeImage"]
 - ["So8NSObjectC", "camera"]
 - ["So8NSObjectC", "categories"]
+- ["So8NSObjectC", "categoryDataSource"]
 - ["So8NSObjectC", "categoryName"]
 - !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "childByAutoId"]
@@ -1242,6 +1280,7 @@ depends-member:
 - ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So8NSObjectC", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So8NSObjectC", "observeSingleEvent"]
 - ["So8NSObjectC", "photoLibrary"]
 - !private ["So8NSObjectC", "placeholder"]
 - !private ["So8NSObjectC", "present"]
@@ -1289,6 +1328,7 @@ depends-member:
 - ["So8NSObjectC", "uploadImg"]
 - !private ["So8NSObjectC", "userObj"]
 - !private ["So8NSObjectC", "uuidString"]
+- !private ["So8NSObjectC", "value"]
 - !private ["So8NSObjectC", "viewControllers"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
@@ -1304,7 +1344,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "Int"]
 - !private ["So16NSObjectProtocolP", "NSUUID"]
 - !private ["So16NSObjectProtocolP", "SVProgressHUD"]
-- !private ["So16NSObjectProtocolP", "String"]
+- ["So16NSObjectProtocolP", "String"]
 - !private ["So16NSObjectProtocolP", "UIAlertAction"]
 - !private ["So16NSObjectProtocolP", "UIAlertActionStyle"]
 - !private ["So16NSObjectProtocolP", "UIAlertController"]
@@ -1333,6 +1373,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "btn_removeImage"]
 - !private ["So16NSObjectProtocolP", "camera"]
 - !private ["So16NSObjectProtocolP", "categories"]
+- !private ["So16NSObjectProtocolP", "categoryDataSource"]
 - !private ["So16NSObjectProtocolP", "categoryName"]
 - !private ["So16NSObjectProtocolP", "child"]
 - !private ["So16NSObjectProtocolP", "childByAutoId"]
@@ -1372,6 +1413,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "navigationController"]
 - ["So16NSObjectProtocolP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16NSObjectProtocolP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So16NSObjectProtocolP", "observeSingleEvent"]
 - !private ["So16NSObjectProtocolP", "photoLibrary"]
 - !private ["So16NSObjectProtocolP", "placeholder"]
 - !private ["So16NSObjectProtocolP", "present"]
@@ -1419,6 +1461,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "uploadImg"]
 - !private ["So16NSObjectProtocolP", "userObj"]
 - !private ["So16NSObjectProtocolP", "uuidString"]
+- !private ["So16NSObjectProtocolP", "value"]
 - !private ["So16NSObjectProtocolP", "viewControllers"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", "viewForZooming"]
@@ -1441,11 +1484,14 @@ depends-member:
 - !private ["So6NSUUIDC", "uuidString"]
 - !private ["s7NumericP", "init"]
 - !private ["s9OptionSetP", "normal"]
+- !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
+- ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s22RandomAccessCollectionP", "title"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
 - !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "isEmpty"]
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "title"]
@@ -1459,13 +1505,15 @@ depends-member:
 - !private ["s16RawRepresentableP", "overFullScreen"]
 - !private ["s16RawRepresentableP", "photoLibrary"]
 - !private ["s16RawRepresentableP", "up"]
+- !private ["s16RawRepresentableP", "value"]
 - !private ["10Foundation20ReferenceConvertibleP", "absoluteString"]
 - !private ["So13SVProgressHUDC", "dismiss"]
 - !private ["So13SVProgressHUDC", "show"]
 - !private ["So13SVProgressHUDC", "showError"]
 - !private ["So13SVProgressHUDC", "showSuccess"]
+- !private ["s8SequenceP", "append"]
 - !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "init"]
+- ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "isEmpty"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s8SequenceP", "title"]
@@ -1552,7 +1600,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "NSUUID"]
 - !private ["So21UIAppearanceContainerP", "SVProgressHUD"]
-- !private ["So21UIAppearanceContainerP", "String"]
+- ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertActionStyle"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
@@ -1579,6 +1627,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "btn_removeImage"]
 - !private ["So21UIAppearanceContainerP", "camera"]
 - !private ["So21UIAppearanceContainerP", "categories"]
+- !private ["So21UIAppearanceContainerP", "categoryDataSource"]
 - !private ["So21UIAppearanceContainerP", "categoryName"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
@@ -1669,7 +1718,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "Int"]
 - !private ["So18UIContentContainerP", "NSUUID"]
 - !private ["So18UIContentContainerP", "SVProgressHUD"]
-- !private ["So18UIContentContainerP", "String"]
+- ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertActionStyle"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
@@ -1692,6 +1741,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "btn_removeImage"]
 - !private ["So18UIContentContainerP", "camera"]
 - !private ["So18UIContentContainerP", "categories"]
+- !private ["So18UIContentContainerP", "categoryDataSource"]
 - !private ["So18UIContentContainerP", "categoryName"]
 - !private ["So18UIContentContainerP", "delegate"]
 - !private ["So18UIContentContainerP", "dismiss"]
@@ -1813,7 +1863,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "NSUUID"]
 - !private ["So18UIFocusEnvironmentP", "SVProgressHUD"]
-- !private ["So18UIFocusEnvironmentP", "String"]
+- ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertActionStyle"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
@@ -1840,6 +1890,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "btn_removeImage"]
 - !private ["So18UIFocusEnvironmentP", "camera"]
 - !private ["So18UIFocusEnvironmentP", "categories"]
+- !private ["So18UIFocusEnvironmentP", "categoryDataSource"]
 - !private ["So18UIFocusEnvironmentP", "categoryName"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
@@ -1953,7 +2004,7 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "Int"]
 - !private ["So31UIImagePickerControllerDelegateP", "NSUUID"]
 - !private ["So31UIImagePickerControllerDelegateP", "SVProgressHUD"]
-- !private ["So31UIImagePickerControllerDelegateP", "String"]
+- ["So31UIImagePickerControllerDelegateP", "String"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIAlertAction"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIAlertActionStyle"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIAlertController"]
@@ -1975,6 +2026,7 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "btn_removeImage"]
 - !private ["So31UIImagePickerControllerDelegateP", "camera"]
 - !private ["So31UIImagePickerControllerDelegateP", "categories"]
+- !private ["So31UIImagePickerControllerDelegateP", "categoryDataSource"]
 - !private ["So31UIImagePickerControllerDelegateP", "categoryName"]
 - !private ["So31UIImagePickerControllerDelegateP", "dismiss"]
 - !private ["So31UIImagePickerControllerDelegateP", "fixOrientation"]
@@ -2054,7 +2106,7 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "Int"]
 - !private ["So30UINavigationControllerDelegateP", "NSUUID"]
 - !private ["So30UINavigationControllerDelegateP", "SVProgressHUD"]
-- !private ["So30UINavigationControllerDelegateP", "String"]
+- ["So30UINavigationControllerDelegateP", "String"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertAction"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertActionStyle"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertController"]
@@ -2076,6 +2128,7 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "btn_removeImage"]
 - !private ["So30UINavigationControllerDelegateP", "camera"]
 - !private ["So30UINavigationControllerDelegateP", "categories"]
+- !private ["So30UINavigationControllerDelegateP", "categoryDataSource"]
 - !private ["So30UINavigationControllerDelegateP", "categoryName"]
 - !private ["So30UINavigationControllerDelegateP", "dismiss"]
 - !private ["So30UINavigationControllerDelegateP", "fixOrientation"]
@@ -2135,7 +2188,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSUUID"]
 - !private ["So30UIPasteConfigurationSupportingP", "SVProgressHUD"]
-- !private ["So30UIPasteConfigurationSupportingP", "String"]
+- ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertActionStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
@@ -2162,6 +2215,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "btn_removeImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "camera"]
 - !private ["So30UIPasteConfigurationSupportingP", "categories"]
+- !private ["So30UIPasteConfigurationSupportingP", "categoryDataSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "categoryName"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
@@ -2284,6 +2338,7 @@ depends-member:
 - ["So11UIResponderC", "button_removeImage"]
 - ["So11UIResponderC", "camera"]
 - ["So11UIResponderC", "categories"]
+- ["So11UIResponderC", "categoryDataSource"]
 - ["So11UIResponderC", "categoryName"]
 - ["So11UIResponderC", "count"]
 - !private ["So11UIResponderC", "dataSource"]
@@ -2368,7 +2423,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "NSUUID"]
 - !private ["So30UIResponderStandardEditActionsP", "SVProgressHUD"]
-- !private ["So30UIResponderStandardEditActionsP", "String"]
+- ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertActionStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
@@ -2395,6 +2450,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "btn_removeImage"]
 - !private ["So30UIResponderStandardEditActionsP", "camera"]
 - !private ["So30UIResponderStandardEditActionsP", "categories"]
+- !private ["So30UIResponderStandardEditActionsP", "categoryDataSource"]
 - !private ["So30UIResponderStandardEditActionsP", "categoryName"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
@@ -2482,7 +2538,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "Int"]
 - !private ["So20UIScrollViewDelegateP", "NSUUID"]
 - !private ["So20UIScrollViewDelegateP", "SVProgressHUD"]
-- !private ["So20UIScrollViewDelegateP", "String"]
+- ["So20UIScrollViewDelegateP", "String"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertActionStyle"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertController"]
@@ -2506,6 +2562,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "btn_removeImage"]
 - !private ["So20UIScrollViewDelegateP", "camera"]
 - !private ["So20UIScrollViewDelegateP", "categories"]
+- !private ["So20UIScrollViewDelegateP", "categoryDataSource"]
 - !private ["So20UIScrollViewDelegateP", "categoryName"]
 - !private ["So20UIScrollViewDelegateP", "dataSource"]
 - !private ["So20UIScrollViewDelegateP", "dismiss"]
@@ -2577,7 +2634,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Int"]
 - !private ["So16UIStateRestoringP", "NSUUID"]
 - !private ["So16UIStateRestoringP", "SVProgressHUD"]
-- !private ["So16UIStateRestoringP", "String"]
+- ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertActionStyle"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
@@ -2600,6 +2657,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "btn_removeImage"]
 - !private ["So16UIStateRestoringP", "camera"]
 - !private ["So16UIStateRestoringP", "categories"]
+- !private ["So16UIStateRestoringP", "categoryDataSource"]
 - !private ["So16UIStateRestoringP", "categoryName"]
 - !private ["So16UIStateRestoringP", "delegate"]
 - !private ["So16UIStateRestoringP", "dismiss"]
@@ -2713,7 +2771,7 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "Int"]
 - !private ["So18UITextViewDelegateP", "NSUUID"]
 - !private ["So18UITextViewDelegateP", "SVProgressHUD"]
-- !private ["So18UITextViewDelegateP", "String"]
+- ["So18UITextViewDelegateP", "String"]
 - !private ["So18UITextViewDelegateP", "UIAlertAction"]
 - !private ["So18UITextViewDelegateP", "UIAlertActionStyle"]
 - !private ["So18UITextViewDelegateP", "UIAlertController"]
@@ -2735,6 +2793,7 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "btn_removeImage"]
 - !private ["So18UITextViewDelegateP", "camera"]
 - !private ["So18UITextViewDelegateP", "categories"]
+- !private ["So18UITextViewDelegateP", "categoryDataSource"]
 - !private ["So18UITextViewDelegateP", "categoryName"]
 - !private ["So18UITextViewDelegateP", "dismiss"]
 - !private ["So18UITextViewDelegateP", "fixOrientation"]
@@ -2794,7 +2853,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "NSUUID"]
 - !private ["So18UITraitEnvironmentP", "SVProgressHUD"]
-- !private ["So18UITraitEnvironmentP", "String"]
+- ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertActionStyle"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
@@ -2821,6 +2880,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "btn_removeImage"]
 - !private ["So18UITraitEnvironmentP", "camera"]
 - !private ["So18UITraitEnvironmentP", "categories"]
+- !private ["So18UITraitEnvironmentP", "categoryDataSource"]
 - !private ["So18UITraitEnvironmentP", "categoryName"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
@@ -2960,6 +3020,7 @@ depends-member:
 - ["So16UIViewControllerC", "button_removeImage"]
 - ["So16UIViewControllerC", "camera"]
 - ["So16UIViewControllerC", "categories"]
+- ["So16UIViewControllerC", "categoryDataSource"]
 - ["So16UIViewControllerC", "categoryName"]
 - ["So16UIViewControllerC", "count"]
 - !private ["So16UIViewControllerC", "delegate"]
@@ -3070,6 +3131,7 @@ depends-member:
 - ["4Test14VC_PostContentC", "button_removeImage"]
 - ["4Test14VC_PostContentC", "camera"]
 - ["4Test14VC_PostContentC", "categories"]
+- ["4Test14VC_PostContentC", "categoryDataSource"]
 - ["4Test14VC_PostContentC", "categoryName"]
 - ["4Test14VC_PostContentC", "count"]
 - ["4Test14VC_PostContentC", "deinit"]
@@ -3127,11 +3189,14 @@ depends-member:
 - !private ["4Test16VC_selectedimageC", "imgSent"]
 - !private ["4Test16VC_selectedimageC", "modalPresentationStyle"]
 - !private ["4Test16VC_selectedimageC", "modalTransitionStyle"]
+- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
+- ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s14_ArrayProtocolP", "title"]
+- !private ["s23_BidirectionalIndexableP", "append"]
 - !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "isEmpty"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "title"]
@@ -3157,7 +3222,9 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "showSuccess"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
+- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
+- ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "title"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -3182,13 +3249,15 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "uuidString"]
+- !private ["s10_IndexableP", "append"]
 - !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "init"]
+- ["s10_IndexableP", "init"]
 - !private ["s10_IndexableP", "isEmpty"]
 - !private ["s10_IndexableP", "subscript"]
 - !private ["s10_IndexableP", "title"]
+- !private ["s14_IndexableBaseP", "append"]
 - !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "init"]
+- ["s14_IndexableBaseP", "init"]
 - !private ["s14_IndexableBaseP", "isEmpty"]
 - !private ["s14_IndexableBaseP", "subscript"]
 - !private ["s14_IndexableBaseP", "title"]
@@ -3201,7 +3270,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSUUID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SVProgressHUD"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertActionStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
@@ -3230,6 +3299,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "btn_removeImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "camera"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "categories"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "categoryDataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "categoryName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "childByAutoId"]
@@ -3269,6 +3339,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "photoLibrary"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placeholder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
@@ -3316,28 +3387,35 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uploadImg"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uuidString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s17_MutableIndexableP", "append"]
 - !private ["s17_MutableIndexableP", "count"]
+- ["s17_MutableIndexableP", "init"]
 - !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s17_MutableIndexableP", "title"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "absoluteString"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s22_RandomAccessIndexableP", "append"]
 - !private ["s22_RandomAccessIndexableP", "count"]
+- ["s22_RandomAccessIndexableP", "init"]
 - !private ["s22_RandomAccessIndexableP", "subscript"]
 - !private ["s22_RandomAccessIndexableP", "title"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
 - !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "isEmpty"]
 - !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s26_RangeReplaceableIndexableP", "title"]
@@ -3346,9 +3424,9 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "isEmpty"]
 depends-nominal:
 - "8DropDown10AnchorViewP"
-- !private "Sa"
+- "Sa"
 - !private "s10ArraySliceV"
-- !private "s23BidirectionalCollectionP"
+- "s23BidirectionalCollectionP"
 - !private "s13BinaryIntegerP"
 - !private "Sb"
 - !private "So7CALayerC"
@@ -3358,24 +3436,26 @@ depends-nominal:
 - !private "SC6CGRectV"
 - !private "SC6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
+- "s10CollectionP"
 - !private "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- "s9DecodableP"
 - !private "s10DictionaryV"
 - "8DropDownAAC"
-- !private "s9EncodableP"
+- "s9EncodableP"
 - "s9EquatableP"
-- !private "s25ExpressibleByArrayLiteralP"
+- "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SC16FIRDataEventTypeO"
+- !private "So15FIRDataSnapshotC"
 - !private "So11FIRDatabaseC"
 - !private "So16FIRDatabaseQueryC"
 - !private "So20FIRDatabaseReferenceC"
@@ -3387,7 +3467,7 @@ depends-nominal:
 - !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- "s17MutableCollectionP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
@@ -3401,12 +3481,12 @@ depends-nominal:
 - !private "So6NSUUIDC"
 - !private "s7NumericP"
 - !private "s9OptionSetP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
+- "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "So13SVProgressHUDC"
-- !private "s8SequenceP"
+- "s8SequenceP"
 - !private "s10SetAlgebraP"
 - !private "s13SignedIntegerP"
 - !private "s13SignedNumericP"
@@ -3477,11 +3557,11 @@ depends-nominal:
 - !private "4Test10UserObjectC"
 - "4Test14VC_PostContentC"
 - !private "4Test16VC_selectedimageC"
-- !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
+- "s14_ArrayProtocolP"
+- "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
-- !private "s24_DestructorSafeContainerP"
+- "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
@@ -3493,13 +3573,13 @@ depends-nominal:
 - !private "s26_ExpressibleByImageLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
-- !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
+- "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- "s22_RandomAccessIndexableP"
+- "s26_RangeReplaceableIndexableP"
 - !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
@@ -3614,4 +3694,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "db6d4779a647d7ad9b71138018f8a57f"
+interface-hash: "cbb2a309ba76efa1a38940e4db7d6314"

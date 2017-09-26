@@ -1,0 +1,689 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GridAxisDirection"
+- "GridAxis"
+- "GridOffset"
+- "Grid"
+provides-nominal:
+- "8Material17GridAxisDirectionO"
+- "8Material8GridAxisV"
+- "8Material10GridOffsetV"
+- "8Material4GridV"
+provides-member:
+- ["8Material17GridAxisDirectionO", ""]
+- ["8Material8GridAxisV", ""]
+- ["8Material10GridOffsetV", ""]
+- ["8Material4GridV", ""]
+- ["So6UIViewC", ""]
+- ["So6UIViewC", "grid"]
+- ["So6UIViewC", "layoutEdgeInsetsPreset"]
+- ["So6UIViewC", "layoutEdgeInsets"]
+provides-dynamic-lookup:
+- "layoutEdgeInsets"
+- "layoutEdgeInsetsPreset"
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "*"
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "/"
+- !private "<"
+- "=="
+- "AssignmentPrecedence"
+- !private "AssociateObject"
+- !private "AssociatedObject"
+- "BooleanLiteralType"
+- !private "CGFloat"
+- "CastingPrecedence"
+- "EdgeInsets"
+- "EdgeInsetsPreset"
+- !private "EdgeInsetsPresetToValue"
+- "FloatLiteralType"
+- "Grid"
+- "GridAxis"
+- "GridAxisDirection"
+- !private "GridKey"
+- "GridOffset"
+- "Int"
+- "IntegerLiteralType"
+- "InterimSpace"
+- "InterimSpacePreset"
+- !private "InterimSpacePresetToValue"
+- "TernaryPrecedence"
+- !private "UILabel"
+- "UIView"
+- "UInt8"
+- !private "~="
+depends-member:
+- !private ["Sa", "count"]
+- ["Sa", "init"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "AssociateObject"]
+- !private ["So15CALayerDelegateP", "AssociatedObject"]
+- !private ["So15CALayerDelegateP", "Grid"]
+- !private ["So15CALayerDelegateP", "GridKey"]
+- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "grid"]
+- !private ["So15CALayerDelegateP", "height"]
+- !private ["So15CALayerDelegateP", "removeFromSuperview"]
+- !private ["So15CALayerDelegateP", "sizeToFit"]
+- !private ["So15CALayerDelegateP", "superview"]
+- !private ["So15CALayerDelegateP", "width"]
+- !private ["So15CALayerDelegateP", "x"]
+- !private ["So15CALayerDelegateP", "y"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["SC6CGRectV", "height"]
+- !private ["SC6CGRectV", "width"]
+- !private ["s7CVarArgP", "AssociateObject"]
+- !private ["s7CVarArgP", "AssociatedObject"]
+- !private ["s7CVarArgP", "Grid"]
+- !private ["s7CVarArgP", "GridKey"]
+- !private ["s7CVarArgP", "addSubview"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "grid"]
+- !private ["s7CVarArgP", "hashValue"]
+- !private ["s7CVarArgP", "height"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "removeFromSuperview"]
+- !private ["s7CVarArgP", "sizeToFit"]
+- !private ["s7CVarArgP", "superview"]
+- !private ["s7CVarArgP", "width"]
+- !private ["s7CVarArgP", "x"]
+- !private ["s7CVarArgP", "y"]
+- !private ["s10CollectionP", "count"]
+- ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "hashValue"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "AssociateObject"]
+- !private ["s28CustomDebugStringConvertibleP", "AssociatedObject"]
+- !private ["s28CustomDebugStringConvertibleP", "Grid"]
+- !private ["s28CustomDebugStringConvertibleP", "GridKey"]
+- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "grid"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "removeFromSuperview"]
+- !private ["s28CustomDebugStringConvertibleP", "sizeToFit"]
+- !private ["s28CustomDebugStringConvertibleP", "superview"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- !private ["s17CustomReflectableP", "height"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "AssociateObject"]
+- !private ["s23CustomStringConvertibleP", "AssociatedObject"]
+- !private ["s23CustomStringConvertibleP", "Grid"]
+- !private ["s23CustomStringConvertibleP", "GridKey"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addSubview"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "grid"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "height"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "removeFromSuperview"]
+- !private ["s23CustomStringConvertibleP", "sizeToFit"]
+- !private ["s23CustomStringConvertibleP", "superview"]
+- !private ["s23CustomStringConvertibleP", "width"]
+- !private ["s23CustomStringConvertibleP", "x"]
+- !private ["s23CustomStringConvertibleP", "y"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "hashValue"]
+- !private ["s9DecodableP", "height"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "width"]
+- ["8Material16EdgeInsetsPresetO", "none"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "hashValue"]
+- !private ["s9EncodableP", "height"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "width"]
+- !private ["s9EquatableP", "AssociateObject"]
+- !private ["s9EquatableP", "AssociatedObject"]
+- !private ["s9EquatableP", "Grid"]
+- !private ["s9EquatableP", "GridKey"]
+- ["s9EquatableP", "RawValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addSubview"]
+- ["s9EquatableP", "any"]
+- !private ["s9EquatableP", "bottom"]
+- !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "grid"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "height"]
+- ["s9EquatableP", "horizontal"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "left"]
+- ["s9EquatableP", "none"]
+- ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "removeFromSuperview"]
+- !private ["s9EquatableP", "right"]
+- !private ["s9EquatableP", "sizeToFit"]
+- !private ["s9EquatableP", "superview"]
+- !private ["s9EquatableP", "top"]
+- ["s9EquatableP", "vertical"]
+- !private ["s9EquatableP", "width"]
+- !private ["s9EquatableP", "x"]
+- !private ["s9EquatableP", "y"]
+- ["s9EquatableP", "zero"]
+- ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["8Material4GridV", "CGFloat"]
+- ["8Material4GridV", "EdgeInsets"]
+- ["8Material4GridV", "EdgeInsetsPreset"]
+- !private ["8Material4GridV", "EdgeInsetsPresetToValue"]
+- ["8Material4GridV", "GridAxis"]
+- ["8Material4GridV", "GridOffset"]
+- ["8Material4GridV", "Int"]
+- ["8Material4GridV", "InterimSpace"]
+- ["8Material4GridV", "InterimSpacePreset"]
+- !private ["8Material4GridV", "InterimSpacePresetToValue"]
+- !private ["8Material4GridV", "UILabel"]
+- ["8Material4GridV", "UIView"]
+- ["8Material4GridV", "axis"]
+- ["8Material4GridV", "begin"]
+- ["8Material4GridV", "columns"]
+- ["8Material4GridV", "commit"]
+- ["8Material4GridV", "contentEdgeInsets"]
+- ["8Material4GridV", "contentEdgeInsetsPreset"]
+- ["8Material4GridV", "context"]
+- ["8Material4GridV", "deferred"]
+- ["8Material4GridV", "init"]
+- ["8Material4GridV", "interimSpace"]
+- ["8Material4GridV", "interimSpacePreset"]
+- ["8Material4GridV", "layoutEdgeInsets"]
+- ["8Material4GridV", "layoutEdgeInsetsPreset"]
+- ["8Material4GridV", "offset"]
+- ["8Material4GridV", "reload"]
+- ["8Material4GridV", "rows"]
+- ["8Material4GridV", "views"]
+- ["8Material8GridAxisV", "GridAxisDirection"]
+- ["8Material8GridAxisV", "Int"]
+- ["8Material8GridAxisV", "columns"]
+- ["8Material8GridAxisV", "direction"]
+- ["8Material8GridAxisV", "init"]
+- ["8Material8GridAxisV", "rows"]
+- ["8Material17GridAxisDirectionO", "RawValue"]
+- ["8Material17GridAxisDirectionO", "any"]
+- ["8Material17GridAxisDirectionO", "deinit"]
+- ["8Material17GridAxisDirectionO", "hashValue"]
+- ["8Material17GridAxisDirectionO", "horizontal"]
+- ["8Material17GridAxisDirectionO", "init"]
+- ["8Material17GridAxisDirectionO", "rawValue"]
+- ["8Material17GridAxisDirectionO", "vertical"]
+- ["8Material10GridOffsetV", "Int"]
+- ["8Material10GridOffsetV", "columns"]
+- ["8Material10GridOffsetV", "init"]
+- ["8Material10GridOffsetV", "rows"]
+- !private ["s8HashableP", "AssociateObject"]
+- !private ["s8HashableP", "AssociatedObject"]
+- !private ["s8HashableP", "Grid"]
+- !private ["s8HashableP", "GridKey"]
+- ["s8HashableP", "RawValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addSubview"]
+- ["s8HashableP", "any"]
+- !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "grid"]
+- ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "height"]
+- ["s8HashableP", "horizontal"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "none"]
+- ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "removeFromSuperview"]
+- !private ["s8HashableP", "sizeToFit"]
+- !private ["s8HashableP", "superview"]
+- ["s8HashableP", "vertical"]
+- !private ["s8HashableP", "width"]
+- !private ["s8HashableP", "x"]
+- !private ["s8HashableP", "y"]
+- ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
+- ["8Material18InterimSpacePresetO", "none"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- !private ["s10MirrorPathP", "hashValue"]
+- !private ["s17MutableCollectionP", "count"]
+- ["s17MutableCollectionP", "init"]
+- !private ["So8NSCodingP", "AssociateObject"]
+- !private ["So8NSCodingP", "AssociatedObject"]
+- !private ["So8NSCodingP", "Grid"]
+- !private ["So8NSCodingP", "GridKey"]
+- !private ["So8NSCodingP", "addSubview"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "grid"]
+- !private ["So8NSCodingP", "height"]
+- !private ["So8NSCodingP", "removeFromSuperview"]
+- !private ["So8NSCodingP", "sizeToFit"]
+- !private ["So8NSCodingP", "superview"]
+- !private ["So8NSCodingP", "width"]
+- !private ["So8NSCodingP", "x"]
+- !private ["So8NSCodingP", "y"]
+- !private ["So8NSObjectC", "AssociateObject"]
+- !private ["So8NSObjectC", "AssociatedObject"]
+- ["So8NSObjectC", "EdgeInsets"]
+- ["So8NSObjectC", "EdgeInsetsPreset"]
+- ["So8NSObjectC", "Grid"]
+- !private ["So8NSObjectC", "GridKey"]
+- !private ["So8NSObjectC", "addSubview"]
+- !private ["So8NSObjectC", "bounds"]
+- ["So8NSObjectC", "grid"]
+- !private ["So8NSObjectC", "height"]
+- ["So8NSObjectC", "layoutEdgeInsets"]
+- ["So8NSObjectC", "layoutEdgeInsetsPreset"]
+- !private ["So8NSObjectC", "removeFromSuperview"]
+- !private ["So8NSObjectC", "sizeToFit"]
+- !private ["So8NSObjectC", "superview"]
+- !private ["So8NSObjectC", "width"]
+- !private ["So8NSObjectC", "x"]
+- !private ["So8NSObjectC", "y"]
+- !private ["So16NSObjectProtocolP", "AssociateObject"]
+- !private ["So16NSObjectProtocolP", "AssociatedObject"]
+- !private ["So16NSObjectProtocolP", "Grid"]
+- !private ["So16NSObjectProtocolP", "GridKey"]
+- !private ["So16NSObjectProtocolP", "addSubview"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "grid"]
+- !private ["So16NSObjectProtocolP", "height"]
+- !private ["So16NSObjectProtocolP", "removeFromSuperview"]
+- !private ["So16NSObjectProtocolP", "sizeToFit"]
+- !private ["So16NSObjectProtocolP", "superview"]
+- !private ["So16NSObjectProtocolP", "width"]
+- !private ["So16NSObjectProtocolP", "x"]
+- !private ["So16NSObjectProtocolP", "y"]
+- !private ["s7NumericP", "hashValue"]
+- !private ["s7NumericP", "init"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- ["s22RandomAccessCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "RawValue"]
+- ["s16RawRepresentableP", "any"]
+- ["s16RawRepresentableP", "hashValue"]
+- ["s16RawRepresentableP", "horizontal"]
+- ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "none"]
+- ["s16RawRepresentableP", "rawValue"]
+- ["s16RawRepresentableP", "vertical"]
+- ["s16RawRepresentableP", ""]
+- !private ["s8SequenceP", "count"]
+- ["s8SequenceP", "init"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s10StrideableP", "hashValue"]
+- !private ["s10StrideableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "AssociateObject"]
+- !private ["So29UIAccessibilityIdentificationP", "AssociatedObject"]
+- !private ["So29UIAccessibilityIdentificationP", "Grid"]
+- !private ["So29UIAccessibilityIdentificationP", "GridKey"]
+- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "grid"]
+- !private ["So29UIAccessibilityIdentificationP", "height"]
+- !private ["So29UIAccessibilityIdentificationP", "removeFromSuperview"]
+- !private ["So29UIAccessibilityIdentificationP", "sizeToFit"]
+- !private ["So29UIAccessibilityIdentificationP", "superview"]
+- !private ["So29UIAccessibilityIdentificationP", "width"]
+- !private ["So29UIAccessibilityIdentificationP", "x"]
+- !private ["So29UIAccessibilityIdentificationP", "y"]
+- !private ["So12UIAppearanceP", "AssociateObject"]
+- !private ["So12UIAppearanceP", "AssociatedObject"]
+- !private ["So12UIAppearanceP", "Grid"]
+- !private ["So12UIAppearanceP", "GridKey"]
+- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "grid"]
+- !private ["So12UIAppearanceP", "height"]
+- !private ["So12UIAppearanceP", "removeFromSuperview"]
+- !private ["So12UIAppearanceP", "sizeToFit"]
+- !private ["So12UIAppearanceP", "superview"]
+- !private ["So12UIAppearanceP", "width"]
+- !private ["So12UIAppearanceP", "x"]
+- !private ["So12UIAppearanceP", "y"]
+- !private ["So21UIAppearanceContainerP", "AssociateObject"]
+- !private ["So21UIAppearanceContainerP", "AssociatedObject"]
+- !private ["So21UIAppearanceContainerP", "Grid"]
+- !private ["So21UIAppearanceContainerP", "GridKey"]
+- !private ["So21UIAppearanceContainerP", "addSubview"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "grid"]
+- !private ["So21UIAppearanceContainerP", "height"]
+- !private ["So21UIAppearanceContainerP", "removeFromSuperview"]
+- !private ["So21UIAppearanceContainerP", "sizeToFit"]
+- !private ["So21UIAppearanceContainerP", "superview"]
+- !private ["So21UIAppearanceContainerP", "width"]
+- !private ["So21UIAppearanceContainerP", "x"]
+- !private ["So21UIAppearanceContainerP", "y"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "sizeToFit"]
+- !private ["So17UICoordinateSpaceP", "AssociateObject"]
+- !private ["So17UICoordinateSpaceP", "AssociatedObject"]
+- !private ["So17UICoordinateSpaceP", "Grid"]
+- !private ["So17UICoordinateSpaceP", "GridKey"]
+- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "grid"]
+- !private ["So17UICoordinateSpaceP", "height"]
+- !private ["So17UICoordinateSpaceP", "removeFromSuperview"]
+- !private ["So17UICoordinateSpaceP", "sizeToFit"]
+- !private ["So17UICoordinateSpaceP", "superview"]
+- !private ["So17UICoordinateSpaceP", "width"]
+- !private ["So17UICoordinateSpaceP", "x"]
+- !private ["So17UICoordinateSpaceP", "y"]
+- !private ["So13UIDynamicItemP", "AssociateObject"]
+- !private ["So13UIDynamicItemP", "AssociatedObject"]
+- !private ["So13UIDynamicItemP", "Grid"]
+- !private ["So13UIDynamicItemP", "GridKey"]
+- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "grid"]
+- !private ["So13UIDynamicItemP", "height"]
+- !private ["So13UIDynamicItemP", "removeFromSuperview"]
+- !private ["So13UIDynamicItemP", "sizeToFit"]
+- !private ["So13UIDynamicItemP", "superview"]
+- !private ["So13UIDynamicItemP", "width"]
+- !private ["So13UIDynamicItemP", "x"]
+- !private ["So13UIDynamicItemP", "y"]
+- !private ["SC12UIEdgeInsetsV", "bottom"]
+- !private ["SC12UIEdgeInsetsV", "left"]
+- !private ["SC12UIEdgeInsetsV", "right"]
+- !private ["SC12UIEdgeInsetsV", "top"]
+- ["SC12UIEdgeInsetsV", "zero"]
+- !private ["So18UIFocusEnvironmentP", "AssociateObject"]
+- !private ["So18UIFocusEnvironmentP", "AssociatedObject"]
+- !private ["So18UIFocusEnvironmentP", "Grid"]
+- !private ["So18UIFocusEnvironmentP", "GridKey"]
+- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "grid"]
+- !private ["So18UIFocusEnvironmentP", "height"]
+- !private ["So18UIFocusEnvironmentP", "removeFromSuperview"]
+- !private ["So18UIFocusEnvironmentP", "sizeToFit"]
+- !private ["So18UIFocusEnvironmentP", "superview"]
+- !private ["So18UIFocusEnvironmentP", "width"]
+- !private ["So18UIFocusEnvironmentP", "x"]
+- !private ["So18UIFocusEnvironmentP", "y"]
+- !private ["So11UIFocusItemP", "AssociateObject"]
+- !private ["So11UIFocusItemP", "AssociatedObject"]
+- !private ["So11UIFocusItemP", "Grid"]
+- !private ["So11UIFocusItemP", "GridKey"]
+- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "grid"]
+- !private ["So11UIFocusItemP", "height"]
+- !private ["So11UIFocusItemP", "removeFromSuperview"]
+- !private ["So11UIFocusItemP", "sizeToFit"]
+- !private ["So11UIFocusItemP", "superview"]
+- !private ["So11UIFocusItemP", "width"]
+- !private ["So11UIFocusItemP", "x"]
+- !private ["So11UIFocusItemP", "y"]
+- !private ["So7UILabelC", "sizeToFit"]
+- !private ["So30UIPasteConfigurationSupportingP", "AssociateObject"]
+- !private ["So30UIPasteConfigurationSupportingP", "AssociatedObject"]
+- !private ["So30UIPasteConfigurationSupportingP", "Grid"]
+- !private ["So30UIPasteConfigurationSupportingP", "GridKey"]
+- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "grid"]
+- !private ["So30UIPasteConfigurationSupportingP", "height"]
+- !private ["So30UIPasteConfigurationSupportingP", "removeFromSuperview"]
+- !private ["So30UIPasteConfigurationSupportingP", "sizeToFit"]
+- !private ["So30UIPasteConfigurationSupportingP", "superview"]
+- !private ["So30UIPasteConfigurationSupportingP", "width"]
+- !private ["So30UIPasteConfigurationSupportingP", "x"]
+- !private ["So30UIPasteConfigurationSupportingP", "y"]
+- !private ["So11UIResponderC", "AssociateObject"]
+- !private ["So11UIResponderC", "AssociatedObject"]
+- ["So11UIResponderC", "EdgeInsets"]
+- ["So11UIResponderC", "EdgeInsetsPreset"]
+- ["So11UIResponderC", "Grid"]
+- !private ["So11UIResponderC", "GridKey"]
+- !private ["So11UIResponderC", "addSubview"]
+- !private ["So11UIResponderC", "bounds"]
+- ["So11UIResponderC", "grid"]
+- !private ["So11UIResponderC", "height"]
+- ["So11UIResponderC", "layoutEdgeInsets"]
+- ["So11UIResponderC", "layoutEdgeInsetsPreset"]
+- !private ["So11UIResponderC", "removeFromSuperview"]
+- !private ["So11UIResponderC", "sizeToFit"]
+- !private ["So11UIResponderC", "superview"]
+- !private ["So11UIResponderC", "width"]
+- !private ["So11UIResponderC", "x"]
+- !private ["So11UIResponderC", "y"]
+- !private ["So30UIResponderStandardEditActionsP", "AssociateObject"]
+- !private ["So30UIResponderStandardEditActionsP", "AssociatedObject"]
+- !private ["So30UIResponderStandardEditActionsP", "Grid"]
+- !private ["So30UIResponderStandardEditActionsP", "GridKey"]
+- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "grid"]
+- !private ["So30UIResponderStandardEditActionsP", "height"]
+- !private ["So30UIResponderStandardEditActionsP", "removeFromSuperview"]
+- !private ["So30UIResponderStandardEditActionsP", "sizeToFit"]
+- !private ["So30UIResponderStandardEditActionsP", "superview"]
+- !private ["So30UIResponderStandardEditActionsP", "width"]
+- !private ["So30UIResponderStandardEditActionsP", "x"]
+- !private ["So30UIResponderStandardEditActionsP", "y"]
+- !private ["So18UITraitEnvironmentP", "AssociateObject"]
+- !private ["So18UITraitEnvironmentP", "AssociatedObject"]
+- !private ["So18UITraitEnvironmentP", "Grid"]
+- !private ["So18UITraitEnvironmentP", "GridKey"]
+- !private ["So18UITraitEnvironmentP", "addSubview"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "grid"]
+- !private ["So18UITraitEnvironmentP", "height"]
+- !private ["So18UITraitEnvironmentP", "removeFromSuperview"]
+- !private ["So18UITraitEnvironmentP", "sizeToFit"]
+- !private ["So18UITraitEnvironmentP", "superview"]
+- !private ["So18UITraitEnvironmentP", "width"]
+- !private ["So18UITraitEnvironmentP", "x"]
+- !private ["So18UITraitEnvironmentP", "y"]
+- !private ["So6UIViewC", "AssociateObject"]
+- !private ["So6UIViewC", "AssociatedObject"]
+- ["So6UIViewC", "EdgeInsets"]
+- ["So6UIViewC", "EdgeInsetsPreset"]
+- ["So6UIViewC", "Grid"]
+- !private ["So6UIViewC", "GridKey"]
+- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "bounds"]
+- ["So6UIViewC", "grid"]
+- !private ["So6UIViewC", "height"]
+- ["So6UIViewC", "layoutEdgeInsets"]
+- ["So6UIViewC", "layoutEdgeInsetsPreset"]
+- !private ["So6UIViewC", "removeFromSuperview"]
+- !private ["So6UIViewC", "sizeToFit"]
+- !private ["So6UIViewC", "superview"]
+- !private ["So6UIViewC", "width"]
+- !private ["So6UIViewC", "x"]
+- !private ["So6UIViewC", "y"]
+- !private ["s14_ArrayProtocolP", "count"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "AssociateObject"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "AssociatedObject"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Grid"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "GridKey"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "grid"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "height"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "removeFromSuperview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "sizeToFit"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "superview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "width"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "x"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "y"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- !private ["s10_IndexableP", "count"]
+- ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "count"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociateObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Grid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GridKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "grid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "height"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeFromSuperview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sizeToFit"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "superview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "width"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "x"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "y"]
+- !private ["s17_MutableIndexableP", "count"]
+- ["s17_MutableIndexableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "bottom"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "left"]
+- !private ["s21_ObjectiveCBridgeableP", "right"]
+- !private ["s21_ObjectiveCBridgeableP", "top"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- ["s22_RandomAccessIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "hashValue"]
+- !private ["s11_StrideableP", "init"]
+depends-nominal:
+- "Sa"
+- "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "12CoreGraphics7CGFloatV"
+- !private "SC6CGRectV"
+- "s7CVarArgP"
+- "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "8Material16EdgeInsetsPresetO"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s13FloatingPointP"
+- "8Material4GridV"
+- "8Material8GridAxisV"
+- "8Material17GridAxisDirectionO"
+- "8Material10GridOffsetV"
+- "s8HashableP"
+- !private "Si"
+- "8Material18InterimSpacePresetO"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "s7NumericP"
+- "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "SC12UIEdgeInsetsV"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So7UILabelC"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s14_ArrayProtocolP"
+- "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- "s22_RandomAccessIndexableP"
+- "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/unextended-module.modulemap"
+interface-hash: "67da91ebd4745bcb638672d946a4ee5f"

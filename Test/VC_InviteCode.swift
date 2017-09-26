@@ -55,7 +55,7 @@ class VC_InviteCode: UIViewController {
     }
     
     func getInviteInfo(completion: @escaping (Bool) -> ()) {
-
+        print("getInviteInfo()");
         FIRDatabase.database().reference().child("userInvites").child(fld_invitecode.text!).observeSingleEvent(of: .value , with: { snapshot in
             
             if snapshot.exists() {
@@ -64,34 +64,13 @@ class VC_InviteCode: UIViewController {
                 print(recent);
                 print("email: "+(recent["email"] as! String));
                 userObj.accountID = recent["accountID"] as! String;
+                userObj.accountName = recent["accountName"] as! String;
                 userObj.creatorID = recent["creatorID"] as! String;
-                userObj.username = recent["name"] as! String;
+                userObj.creatorName = recent["creatorName"] as! String;
                 userObj.email = recent["email"] as! String;
                 
                 let roleID = recent["role"] as! String;
-                if (roleID == "m1")
-                {
-                    userObj.isAdmin = true;
-                    userObj.permissionToManageUsers = true;
-                }
-                else if (roleID == "m2")
-                {
-                    userObj.isAdmin = true;
-                    userObj.permissionToManageUsers = false;
-                }
-                else
-                {
-                    userObj.isAdmin = false;
-                    userObj.permissionToManageUsers = false;
-                }
-                if(userObj.isAdmin)
-                {
-                    userObj.listenerPath = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!;
-                }
-                else
-                {
-                    userObj.listenerPath = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!;
-                }
+                userObj.setRole(lRole: roleID);
                 completion(true);
             }
             else

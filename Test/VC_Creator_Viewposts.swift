@@ -20,9 +20,9 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var logOut: UIBarButtonItem!
    
     @IBOutlet weak var bgImage: UIImageView!
-    @IBOutlet var fldusername: UILabel!
-    
     @IBOutlet var fldcompany: UILabel!
+    @IBOutlet weak var fldcreator: UILabel!
+    @IBOutlet var fldusername: UILabel!
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
     
@@ -31,13 +31,14 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         signingOut = false;
         self.navigationController?.isNavigationBarHidden = false;
         super.viewDidLoad()
-        fldusername.text = userObj.username;
         //dataSource.username;
         
         viewposts.delegate = self;
         viewposts.dataSource = self;
         
         fldcompany.text = userObj.accountName;
+        fldcreator.text = userObj.creatorName;
+        fldusername.text = userObj.username;
         self.hideKeyboardWhenTappedAround();
         
         //Creating a shadow
@@ -127,6 +128,10 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         {
             FIRAuth.auth()?.removeStateDidChangeListener(handle!)
             FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
+            userObj.resetObj();
+            print("SHUFFLI | signed out.");
+            SVProgressHUD.showSuccess(withStatus: "Logged out!");
+            SVProgressHUD.dismiss(withDelay: 1);
         }
         
         // [END remove_auth_listener]
@@ -139,9 +144,9 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             if user?.uid == userObj.uid {
                 print("SHUFFLI | could not log out for some reason :(");
             } else {
-                print("SHUFFLI | signed out.");
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_signin");
-                self.present(vc!, animated: true, completion: nil);
+                //self.present(vc!, animated: true, completion: nil);
+                self.dismiss(animated: true, completion: nil)
                 self.signingOut = true;
                 //the user has now signed out so go to login view controller
                 // and remove this listener

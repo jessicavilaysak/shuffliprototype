@@ -1,0 +1,715 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VC_selectedimage"
+provides-nominal:
+- "4Test16VC_selectedimageC"
+provides-member:
+- ["4Test16VC_selectedimageC", ""]
+provides-dynamic-lookup:
+- "btnExit"
+- "didReceiveMemoryWarning"
+- "imageView"
+- "imgSent"
+- "imgUrl"
+- "myTargetFunction"
+- "viewDidLoad"
+- "viewWillAppear"
+depends-top-level:
+- !private "!="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "String"
+- "UIButton"
+- !private "UIColor"
+- "UIImage"
+- "UIImageView"
+- !private "UITapGestureRecognizer"
+- "UIViewController"
+- !private "URL"
+- "VC_selectedimage"
+depends-member:
+- !private ["8DropDown10AnchorViewP", "addGestureRecognizer"]
+- !private ["8DropDown10AnchorViewP", "backgroundColor"]
+- !private ["8DropDown10AnchorViewP", "image"]
+- !private ["8DropDown10AnchorViewP", "isHidden"]
+- !private ["8DropDown10AnchorViewP", "isOpaque"]
+- !private ["8DropDown10AnchorViewP", "sd_setImage"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "addGestureRecognizer"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "isHidden"]
+- !private ["So15CALayerDelegateP", "isOpaque"]
+- !private ["So15CALayerDelegateP", "sd_setImage"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "UITapGestureRecognizer"]
+- !private ["s7CVarArgP", "URL"]
+- !private ["s7CVarArgP", "addGestureRecognizer"]
+- !private ["s7CVarArgP", "addTarget"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "btnExit"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "imageView"]
+- !private ["s7CVarArgP", "imgSent"]
+- !private ["s7CVarArgP", "imgUrl"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isHidden"]
+- !private ["s7CVarArgP", "isOpaque"]
+- !private ["s7CVarArgP", "myTargetFunction"]
+- !private ["s7CVarArgP", "sd_setImage"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "withAlphaComponent"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UITapGestureRecognizer"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
+- !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
+- !private ["s28CustomDebugStringConvertibleP", "addTarget"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "btnExit"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "imageView"]
+- !private ["s28CustomDebugStringConvertibleP", "imgSent"]
+- !private ["s28CustomDebugStringConvertibleP", "imgUrl"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "isOpaque"]
+- !private ["s28CustomDebugStringConvertibleP", "myTargetFunction"]
+- !private ["s28CustomDebugStringConvertibleP", "sd_setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "withAlphaComponent"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UITapGestureRecognizer"]
+- !private ["s23CustomStringConvertibleP", "URL"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
+- !private ["s23CustomStringConvertibleP", "addTarget"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "btnExit"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "imageView"]
+- !private ["s23CustomStringConvertibleP", "imgSent"]
+- !private ["s23CustomStringConvertibleP", "imgUrl"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isHidden"]
+- !private ["s23CustomStringConvertibleP", "isOpaque"]
+- !private ["s23CustomStringConvertibleP", "myTargetFunction"]
+- !private ["s23CustomStringConvertibleP", "sd_setImage"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "withAlphaComponent"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "UIColor"]
+- !private ["s9EquatableP", "UITapGestureRecognizer"]
+- !private ["s9EquatableP", "URL"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addGestureRecognizer"]
+- !private ["s9EquatableP", "addTarget"]
+- !private ["s9EquatableP", "backgroundColor"]
+- !private ["s9EquatableP", "black"]
+- !private ["s9EquatableP", "btnExit"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "dismiss"]
+- !private ["s9EquatableP", "image"]
+- !private ["s9EquatableP", "imageView"]
+- !private ["s9EquatableP", "imgSent"]
+- !private ["s9EquatableP", "imgUrl"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isHidden"]
+- !private ["s9EquatableP", "isOpaque"]
+- !private ["s9EquatableP", "myTargetFunction"]
+- !private ["s9EquatableP", "sd_setImage"]
+- !private ["s9EquatableP", "view"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s9EquatableP", "withAlphaComponent"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "UIColor"]
+- !private ["s8HashableP", "UITapGestureRecognizer"]
+- !private ["s8HashableP", "URL"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addGestureRecognizer"]
+- !private ["s8HashableP", "addTarget"]
+- !private ["s8HashableP", "backgroundColor"]
+- !private ["s8HashableP", "black"]
+- !private ["s8HashableP", "btnExit"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "dismiss"]
+- !private ["s8HashableP", "image"]
+- !private ["s8HashableP", "imageView"]
+- !private ["s8HashableP", "imgSent"]
+- !private ["s8HashableP", "imgUrl"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isHidden"]
+- !private ["s8HashableP", "isOpaque"]
+- !private ["s8HashableP", "myTargetFunction"]
+- !private ["s8HashableP", "sd_setImage"]
+- !private ["s8HashableP", "view"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["s8HashableP", "withAlphaComponent"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["So8NSCodingP", "UIColor"]
+- !private ["So8NSCodingP", "UITapGestureRecognizer"]
+- !private ["So8NSCodingP", "URL"]
+- !private ["So8NSCodingP", "addGestureRecognizer"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "btnExit"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "imageView"]
+- !private ["So8NSCodingP", "imgSent"]
+- !private ["So8NSCodingP", "imgUrl"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isHidden"]
+- !private ["So8NSCodingP", "isOpaque"]
+- !private ["So8NSCodingP", "myTargetFunction"]
+- !private ["So8NSCodingP", "sd_setImage"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "withAlphaComponent"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "withAlphaComponent"]
+- !private ["So26NSExtensionRequestHandlingP", "UIColor"]
+- !private ["So26NSExtensionRequestHandlingP", "UITapGestureRecognizer"]
+- !private ["So26NSExtensionRequestHandlingP", "URL"]
+- !private ["So26NSExtensionRequestHandlingP", "btnExit"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "imageView"]
+- !private ["So26NSExtensionRequestHandlingP", "imgSent"]
+- !private ["So26NSExtensionRequestHandlingP", "imgUrl"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "myTargetFunction"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "withAlphaComponent"]
+- !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "withAlphaComponent"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "UIImageView"]
+- !private ["So8NSObjectC", "UITapGestureRecognizer"]
+- !private ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "addGestureRecognizer"]
+- !private ["So8NSObjectC", "addTarget"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "black"]
+- ["So8NSObjectC", "btnExit"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectC", "dismiss"]
+- !private ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "imageView"]
+- ["So8NSObjectC", "imgSent"]
+- ["So8NSObjectC", "imgUrl"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isHidden"]
+- !private ["So8NSObjectC", "isOpaque"]
+- ["So8NSObjectC", "myTargetFunction"]
+- !private ["So8NSObjectC", "sd_setImage"]
+- !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewWillAppear"]
+- !private ["So8NSObjectC", "withAlphaComponent"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
+- !private ["So16NSObjectProtocolP", "UITapGestureRecognizer"]
+- !private ["So16NSObjectProtocolP", "URL"]
+- !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
+- !private ["So16NSObjectProtocolP", "addTarget"]
+- !private ["So16NSObjectProtocolP", "backgroundColor"]
+- !private ["So16NSObjectProtocolP", "black"]
+- !private ["So16NSObjectProtocolP", "btnExit"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "dismiss"]
+- !private ["So16NSObjectProtocolP", "image"]
+- !private ["So16NSObjectProtocolP", "imageView"]
+- !private ["So16NSObjectProtocolP", "imgSent"]
+- !private ["So16NSObjectProtocolP", "imgUrl"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isHidden"]
+- !private ["So16NSObjectProtocolP", "isOpaque"]
+- !private ["So16NSObjectProtocolP", "myTargetFunction"]
+- !private ["So16NSObjectProtocolP", "sd_setImage"]
+- !private ["So16NSObjectProtocolP", "view"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "withAlphaComponent"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "black"]
+- !private ["So14NSSecureCodingP", "withAlphaComponent"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addGestureRecognizer"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "sd_setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "isHidden"]
+- !private ["So29UIAccessibilityIdentificationP", "isOpaque"]
+- !private ["So29UIAccessibilityIdentificationP", "sd_setImage"]
+- !private ["So12UIAppearanceP", "addGestureRecognizer"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "isHidden"]
+- !private ["So12UIAppearanceP", "isOpaque"]
+- !private ["So12UIAppearanceP", "sd_setImage"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
+- !private ["So21UIAppearanceContainerP", "UITapGestureRecognizer"]
+- !private ["So21UIAppearanceContainerP", "URL"]
+- !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "btnExit"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "imageView"]
+- !private ["So21UIAppearanceContainerP", "imgSent"]
+- !private ["So21UIAppearanceContainerP", "imgUrl"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isHidden"]
+- !private ["So21UIAppearanceContainerP", "isOpaque"]
+- !private ["So21UIAppearanceContainerP", "myTargetFunction"]
+- !private ["So21UIAppearanceContainerP", "sd_setImage"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "isHidden"]
+- !private ["So7UIColorC", "black"]
+- !private ["So7UIColorC", "withAlphaComponent"]
+- !private ["So18UIContentContainerP", "UIColor"]
+- !private ["So18UIContentContainerP", "UITapGestureRecognizer"]
+- !private ["So18UIContentContainerP", "URL"]
+- !private ["So18UIContentContainerP", "btnExit"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "imageView"]
+- !private ["So18UIContentContainerP", "imgSent"]
+- !private ["So18UIContentContainerP", "imgUrl"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "myTargetFunction"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So9UIControlC", "isHidden"]
+- !private ["So17UICoordinateSpaceP", "addGestureRecognizer"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "isHidden"]
+- !private ["So17UICoordinateSpaceP", "isOpaque"]
+- !private ["So17UICoordinateSpaceP", "sd_setImage"]
+- !private ["So13UIDynamicItemP", "addGestureRecognizer"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "isHidden"]
+- !private ["So13UIDynamicItemP", "isOpaque"]
+- !private ["So13UIDynamicItemP", "sd_setImage"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
+- !private ["So18UIFocusEnvironmentP", "UITapGestureRecognizer"]
+- !private ["So18UIFocusEnvironmentP", "URL"]
+- !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "btnExit"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "imageView"]
+- !private ["So18UIFocusEnvironmentP", "imgSent"]
+- !private ["So18UIFocusEnvironmentP", "imgUrl"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isHidden"]
+- !private ["So18UIFocusEnvironmentP", "isOpaque"]
+- !private ["So18UIFocusEnvironmentP", "myTargetFunction"]
+- !private ["So18UIFocusEnvironmentP", "sd_setImage"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "addGestureRecognizer"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "isHidden"]
+- !private ["So11UIFocusItemP", "isOpaque"]
+- !private ["So11UIFocusItemP", "sd_setImage"]
+- !private ["So19UIGestureRecognizerC", "addTarget"]
+- !private ["So19UIGestureRecognizerC", "init"]
+- !private ["So11UIImageViewC", "addGestureRecognizer"]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So11UIImageViewC", "sd_setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UITapGestureRecognizer"]
+- !private ["So30UIPasteConfigurationSupportingP", "URL"]
+- !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "btnExit"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "imageView"]
+- !private ["So30UIPasteConfigurationSupportingP", "imgSent"]
+- !private ["So30UIPasteConfigurationSupportingP", "imgUrl"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "isOpaque"]
+- !private ["So30UIPasteConfigurationSupportingP", "myTargetFunction"]
+- !private ["So30UIPasteConfigurationSupportingP", "sd_setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "UIImage"]
+- ["So11UIResponderC", "UIImageView"]
+- !private ["So11UIResponderC", "UITapGestureRecognizer"]
+- !private ["So11UIResponderC", "URL"]
+- !private ["So11UIResponderC", "addGestureRecognizer"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "btnExit"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- !private ["So11UIResponderC", "dismiss"]
+- !private ["So11UIResponderC", "image"]
+- ["So11UIResponderC", "imageView"]
+- ["So11UIResponderC", "imgSent"]
+- ["So11UIResponderC", "imgUrl"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isHidden"]
+- !private ["So11UIResponderC", "isOpaque"]
+- ["So11UIResponderC", "myTargetFunction"]
+- !private ["So11UIResponderC", "sd_setImage"]
+- !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewWillAppear"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "UITapGestureRecognizer"]
+- !private ["So30UIResponderStandardEditActionsP", "URL"]
+- !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "btnExit"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "imageView"]
+- !private ["So30UIResponderStandardEditActionsP", "imgSent"]
+- !private ["So30UIResponderStandardEditActionsP", "imgUrl"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "isOpaque"]
+- !private ["So30UIResponderStandardEditActionsP", "myTargetFunction"]
+- !private ["So30UIResponderStandardEditActionsP", "sd_setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
+- !private ["So16UIStateRestoringP", "UIColor"]
+- !private ["So16UIStateRestoringP", "UITapGestureRecognizer"]
+- !private ["So16UIStateRestoringP", "URL"]
+- !private ["So16UIStateRestoringP", "btnExit"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "imageView"]
+- !private ["So16UIStateRestoringP", "imgSent"]
+- !private ["So16UIStateRestoringP", "imgUrl"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "myTargetFunction"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So22UITapGestureRecognizerC", "addTarget"]
+- !private ["So22UITapGestureRecognizerC", "init"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
+- !private ["So18UITraitEnvironmentP", "UITapGestureRecognizer"]
+- !private ["So18UITraitEnvironmentP", "URL"]
+- !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "btnExit"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "imageView"]
+- !private ["So18UITraitEnvironmentP", "imgSent"]
+- !private ["So18UITraitEnvironmentP", "imgUrl"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isHidden"]
+- !private ["So18UITraitEnvironmentP", "isOpaque"]
+- !private ["So18UITraitEnvironmentP", "myTargetFunction"]
+- !private ["So18UITraitEnvironmentP", "sd_setImage"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "addGestureRecognizer"]
+- !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "image"]
+- !private ["So6UIViewC", "isHidden"]
+- !private ["So6UIViewC", "isOpaque"]
+- !private ["So6UIViewC", "sd_setImage"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UIColor"]
+- ["So16UIViewControllerC", "UIImage"]
+- ["So16UIViewControllerC", "UIImageView"]
+- !private ["So16UIViewControllerC", "UITapGestureRecognizer"]
+- !private ["So16UIViewControllerC", "URL"]
+- ["So16UIViewControllerC", "btnExit"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "imageView"]
+- ["So16UIViewControllerC", "imgSent"]
+- ["So16UIViewControllerC", "imgUrl"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "myTargetFunction"]
+- !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewWillAppear"]
+- ["So16UIViewControllerC", ""]
+- !private ["10Foundation3URLV", "init"]
+- ["4Test16VC_selectedimageC", "Bool"]
+- ["4Test16VC_selectedimageC", "String"]
+- ["4Test16VC_selectedimageC", "UIButton"]
+- !private ["4Test16VC_selectedimageC", "UIColor"]
+- ["4Test16VC_selectedimageC", "UIImage"]
+- ["4Test16VC_selectedimageC", "UIImageView"]
+- !private ["4Test16VC_selectedimageC", "UITapGestureRecognizer"]
+- !private ["4Test16VC_selectedimageC", "URL"]
+- ["4Test16VC_selectedimageC", "btnExit"]
+- ["4Test16VC_selectedimageC", "deinit"]
+- ["4Test16VC_selectedimageC", "didReceiveMemoryWarning"]
+- !private ["4Test16VC_selectedimageC", "dismiss"]
+- ["4Test16VC_selectedimageC", "imageView"]
+- ["4Test16VC_selectedimageC", "imgSent"]
+- ["4Test16VC_selectedimageC", "imgUrl"]
+- ["4Test16VC_selectedimageC", "init"]
+- !private ["4Test16VC_selectedimageC", "myTargetFunction"]
+- !private ["4Test16VC_selectedimageC", "view"]
+- ["4Test16VC_selectedimageC", "viewDidLoad"]
+- ["4Test16VC_selectedimageC", "viewWillAppear"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isOpaque"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "sd_setImage"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s26_ExpressibleByColorLiteralP", "black"]
+- !private ["s26_ExpressibleByColorLiteralP", "withAlphaComponent"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UITapGestureRecognizer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "btnExit"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imgSent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imgUrl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isOpaque"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "myTargetFunction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sd_setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "withAlphaComponent"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- !private "8DropDown10AnchorViewP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- !private "So7UIColorC"
+- "So18UIContentContainerP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So19UIGestureRecognizerC"
+- !private "So11UIImageViewC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So22UITapGestureRecognizerC"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "10Foundation3URLV"
+- "4Test16VC_selectedimageC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Test-Bridging-Header.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+interface-hash: "23281d513e26bd00b079059e343a2890"

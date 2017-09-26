@@ -9,9 +9,11 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import SVProgressHUD
 
 class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var fldcreator: UILabel!
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet var fldusername: UILabel!
     @IBOutlet var fldcompany: UILabel!
@@ -44,6 +46,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         userTable.dataSource = self;
         
         fldcompany.text = userObj.accountName;
+        fldcreator.text = userObj.creatorName;
         fldusername.text = userObj.username;
         /*if dataSource.userArray.count > 0
         {
@@ -91,6 +94,11 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         {
             FIRAuth.auth()?.removeStateDidChangeListener(handle!)
             FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
+            userObj.resetObj();
+            
+            print("SHUFFLI | signed out.");
+            SVProgressHUD.showSuccess(withStatus: "Logged out!");
+            SVProgressHUD.dismiss(withDelay: 1);
         }
         
         // [END remove_auth_listener]
@@ -103,9 +111,9 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             if user?.uid == userObj.uid {
                 print("SHUFFLI | could not log out for some reason :(");
             } else {
-                print("SHUFFLI | signed out.");
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_signin");
-                self.present(vc!, animated: true, completion: nil);
+                //self.present(vc!, animated: true, completion: nil);
+                self.dismiss(animated: true, completion: nil)
                 self.signingOut = true;
                 //the user has now signed out so go to login view controller
                 // and remove this listener
