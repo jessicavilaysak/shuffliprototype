@@ -122,7 +122,7 @@
 		</data>
 		<key>Frameworks/DropDown.framework/DropDown</key>
 		<data>
-		bfN8IXb3qYUNVXKX6z8Y7UlT60A=
+		2hIuM30R/7LF86D6iYh/saKUXes=
 		</data>
 		<key>Frameworks/DropDown.framework/DropDownCell.nib</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
-		KiUgGLThssbp0MJzz2ozZLx2nRg=
+		9OBGXQp2wiHjE3Df6uHWQn+3TKI=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
 		<data>
-		pln3sd24rgyQYdiOGrAY6cHMQ8Y=
+		o49AbzK2oPE77RnCvl6WW8/Gbkc=
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
 		<data>
@@ -238,7 +238,7 @@
 		</data>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/IQKeyboardManagerSwift</key>
 		<data>
-		7dyVnEGbF4xai6ZZ+HCEWwfM4aQ=
+		8bZlDEWR+xvSejZA8rgifgF986k=
 		</data>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Frameworks/Material.framework/Material</key>
 		<data>
-		k7E4Myvz5oRlkUU1jw2hsM3koC0=
+		TyDEG6PLhVut4JsZ7RYKvTSvEuQ=
 		</data>
 		<key>Frameworks/Material.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -298,7 +298,7 @@
 		</data>
 		<key>Frameworks/SDWebImage.framework/SDWebImage</key>
 		<data>
-		VmBzBhBoTu93YTMTVSuIILLatT4=
+		yV/O2kXQUWRnoYGHkkUA+Zb2ev4=
 		</data>
 		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>Frameworks/SVProgressHUD.framework/SVProgressHUD</key>
 		<data>
-		iZuggfCTgPmeU80q9bFm8w9cgJU=
+		5xKqm9qzQjkd/YsZPuF4RE09fdo=
 		</data>
 		<key>Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png</key>
 		<data>
@@ -378,7 +378,7 @@
 		</data>
 		<key>Frameworks/Spring.framework/Spring</key>
 		<data>
-		J9Z09w9+XmxhR8ZQCmcUiacDIIA=
+		D8cjED0dGrm4VW3t7mIC2LMVnbM=
 		</data>
 		<key>Frameworks/Spring.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -390,7 +390,7 @@
 		</data>
 		<key>Frameworks/TextFieldEffects.framework/TextFieldEffects</key>
 		<data>
-		9Yfe91TRf/A9gSgC9GHUmMhWTWM=
+		Zh6h8AgWitEKwEvqpEpYI9Qp748=
 		</data>
 		<key>Frameworks/TextFieldEffects.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -402,7 +402,7 @@
 		</data>
 		<key>Frameworks/Toucan.framework/Toucan</key>
 		<data>
-		Kxb5yCCa+WNnzU2A23dSRAUfZ04=
+		Sfnb9jFMaJDw0EXVhD4sYt7H8QM=
 		</data>
 		<key>Frameworks/Toucan.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -414,7 +414,7 @@
 		</data>
 		<key>Frameworks/UITextView_Placeholder.framework/UITextView_Placeholder</key>
 		<data>
-		Q/G5ujJouN8IIz4aaQ89ElCpenU=
+		ZzXv+opr1GCmQd3o3cSBMws9LP8=
 		</data>
 		<key>Frameworks/UITextView_Placeholder.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -490,7 +490,7 @@
 		</data>
 		<key>Frameworks/libwebp.framework/libwebp</key>
 		<data>
-		LPQLxcG4cRJV3M1AJSzWDsQnn3I=
+		C1NKtj+B6EGnylC82xlUbwsZxbs=
 		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
@@ -838,11 +838,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bfN8IXb3qYUNVXKX6z8Y7UlT60A=
+			2hIuM30R/7LF86D6iYh/saKUXes=
 			</data>
 			<key>hash2</key>
 			<data>
-			bympO1T7+8RdN+otZhmK5xb8bukKoXbP8MQ0MBmhAT8=
+			gSDdW/EMqdxhNaRaTTMs+9mqUGa1fYt2ZZX1ZyIyrzU=
 			</data>
 		</dict>
 		<key>Frameworks/DropDown.framework/DropDownCell.nib</key>
@@ -882,11 +882,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KiUgGLThssbp0MJzz2ozZLx2nRg=
+			9OBGXQp2wiHjE3Df6uHWQn+3TKI=
 			</data>
 			<key>hash2</key>
 			<data>
-			NdKD19/eNgVhegbDs6qVslZqIhgZSBRZvAhNHCoNDp4=
+			zzyMACMhtg2PXrPNeanwUoMFeO7gffPk1UgToE6HQAI=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
@@ -915,11 +915,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pln3sd24rgyQYdiOGrAY6cHMQ8Y=
+			o49AbzK2oPE77RnCvl6WW8/Gbkc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Aw0ca1rM49C9C/Lx7iAaSktoZyrXnJx0TRjSTJZbFI=
+			U6qQIFXHHB2fCZRVm4Qj4ul7jwa9LDOYdISfTMZUdrM=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
@@ -1110,11 +1110,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7dyVnEGbF4xai6ZZ+HCEWwfM4aQ=
+			8bZlDEWR+xvSejZA8rgifgF986k=
 			</data>
 			<key>hash2</key>
 			<data>
-			mGDnUNg+ucNHdUBS7pC1lRaPBJYqUxAQ45ktk5smLzM=
+			HWeqkQHTS1a8lf9m7IlRM0ncHEhVewlqb3UJVxVgvUY=
 			</data>
 		</dict>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
@@ -1154,11 +1154,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k7E4Myvz5oRlkUU1jw2hsM3koC0=
+			TyDEG6PLhVut4JsZ7RYKvTSvEuQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			V8nMucbYby2wvVmJA7GMvLPv7EnXKMc8XTIHuBOsWnI=
+			kq8K8hRPTqvy2G0JivBBQShGbmJvrS5nIKrWE06zdTU=
 			</data>
 		</dict>
 		<key>Frameworks/Material.framework/_CodeSignature/CodeResources</key>
@@ -1275,11 +1275,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VmBzBhBoTu93YTMTVSuIILLatT4=
+			yV/O2kXQUWRnoYGHkkUA+Zb2ev4=
 			</data>
 			<key>hash2</key>
 			<data>
-			jy8o1AF963sguBOoks19XBKVwSLipUy2f9Dx+TgYsXI=
+			r6oRB9GFwoJaet6rXcYOZ66fxjAhnWk8bH7w4GCxCWc=
 			</data>
 		</dict>
 		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
@@ -1308,11 +1308,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iZuggfCTgPmeU80q9bFm8w9cgJU=
+			5xKqm9qzQjkd/YsZPuF4RE09fdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			/BeBzRwFZpvsxlT/ec2WhaFmmgY+dy3EZscfmEfQjmg=
+			oHkFWx7NgtGGDFyzlm4qVrZ3bc9+06H5vpgcGxDliVo=
 			</data>
 		</dict>
 		<key>Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png</key>
@@ -1495,11 +1495,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J9Z09w9+XmxhR8ZQCmcUiacDIIA=
+			D8cjED0dGrm4VW3t7mIC2LMVnbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FDIIPNThNk71DMhYHoRmUPCvysXZSddFWX1lw59VxfM=
+			HZqY22RSfliPMFKpNbngRnb/7DZPZ70+WmXBNjV1BHw=
 			</data>
 		</dict>
 		<key>Frameworks/Spring.framework/_CodeSignature/CodeResources</key>
@@ -1528,11 +1528,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9Yfe91TRf/A9gSgC9GHUmMhWTWM=
+			Zh6h8AgWitEKwEvqpEpYI9Qp748=
 			</data>
 			<key>hash2</key>
 			<data>
-			A3XoKWenvhtHaEDhgFWHx+hIfr2acMeHgQZ2YPnwTGU=
+			jepSd2dTFM0VMNDN0rjpnljzTqKNY5q5lPIw73faxdM=
 			</data>
 		</dict>
 		<key>Frameworks/TextFieldEffects.framework/_CodeSignature/CodeResources</key>
@@ -1561,11 +1561,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kxb5yCCa+WNnzU2A23dSRAUfZ04=
+			Sfnb9jFMaJDw0EXVhD4sYt7H8QM=
 			</data>
 			<key>hash2</key>
 			<data>
-			dnith/mpCRv8tQABWT1t/1QpvyttGB1dm2JV86qGhiQ=
+			XWW+oCOgLMzPdkRaT3fHIV9F4liH1rqf+k4rhkT2/XA=
 			</data>
 		</dict>
 		<key>Frameworks/Toucan.framework/_CodeSignature/CodeResources</key>
@@ -1594,11 +1594,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q/G5ujJouN8IIz4aaQ89ElCpenU=
+			ZzXv+opr1GCmQd3o3cSBMws9LP8=
 			</data>
 			<key>hash2</key>
 			<data>
-			DOJH5Bh0FgOqmvT41HOpQDsd5oA8820HmTxgU1cjQqg=
+			/ovq7Y8j18meiFH+a7ld5pbk/a6+6M+y1o/zdNR+l4Q=
 			</data>
 		</dict>
 		<key>Frameworks/UITextView_Placeholder.framework/_CodeSignature/CodeResources</key>
@@ -1803,11 +1803,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LPQLxcG4cRJV3M1AJSzWDsQnn3I=
+			C1NKtj+B6EGnylC82xlUbwsZxbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fSyo/8fOfrubZnM85aNSXm+LvJCdHu8jbcajrMXfmXU=
+			BjO8Y2Ll0E7ZK8onjjNrBCCf2yl1kd/6HaGgvsITOJA=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>

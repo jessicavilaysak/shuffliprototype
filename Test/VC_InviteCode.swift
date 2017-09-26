@@ -27,19 +27,27 @@ class VC_InviteCode: UIViewController {
         let invitecode = fld_invitecode.text;
         print("shuffli | invitecode: "+invitecode!);
         if invitecode == "" {
-            SVProgressHUD.showSuccess(withStatus: "Enter invite code!")
+            SVProgressHUD.showError(withStatus: "Enter invite code!")
             SVProgressHUD.dismiss(withDelay: 2)
             return;
         }
+        SVProgressHUD.show(withStatus: "Validating invite code")
         self.getInviteInfo { success in
             if success {
                 print("shuffli - SUCCESS.");
+                userObj.inviteCode = invitecode;
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_setpassword");
+                SVProgressHUD.dismiss();
                 self.present(vc!, animated: true, completion: nil);
             }
             else
             {
                 print("shuffli - no success with invite info.");
+                let refreshAlert = UIAlertController(title: "NOTICE", message: "Please enter a valid invite code.", preferredStyle: UIAlertControllerStyle.alert)
+               
+                refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction!) in
+                }));
+                self.present(refreshAlert, animated: true, completion: nil);
             }
             
             SVProgressHUD.dismiss();

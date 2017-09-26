@@ -299,7 +299,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                         path = "userPosts/"+accountID!+"/"+creatorID!+"/"+uid!;
                         self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "review": true, "imageUid": imgUid, "category":category])
                     }
-                                      self.hideCorrespondingElements(type: "1");
+                    self.hideCorrespondingElements(type: "1");
                     self.fld_caption.text = ""
                     let tabItems = self.tabBarController?.tabBar.items;
                     

@@ -21,7 +21,7 @@ class UserObject {
     var listenerPath: String!;
     
     var email: String!;
-  
+    var inviteCode: String!;
     
     init() {
         firstTimeLogin = false;

@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import SVProgressHUD
 
 class VC_SetPassword: UIViewController {
 
@@ -60,14 +61,15 @@ class VC_SetPassword: UIViewController {
     }
     
     @IBAction func btn_createUser(_ sender: Any) {
+        
         let potentialPword = fld_password.text;
+        var check = true;
+        var displayMsg = "";
         if (potentialPword == "")
         {
-            fld_displayMessage.text = "Set your password using the fields above ^";
-            return;
+            displayMsg = "Set your password using the fields above ^";
         }
         else{
-            var check = true;
             if (!containsNumbers(pword: potentialPword!))
             {
                 check = false;
@@ -90,11 +92,15 @@ class VC_SetPassword: UIViewController {
             }
             if(!check)
             {
-                fld_displayMessage.text = "You have entered an invalid password!\nYour password must contain: at least 6 characters, at least one uppercase, at least one lowercase, at least one number."
-                return;
+                displayMsg = "You have entered an invalid password!\nYour password must contain: at least 6 characters, at least one uppercase, at least one lowercase, at least one number."
             }
         }
-        fld_displayMessage.text = "You have entered a valid password!";
+        displayMsg = "You have entered a valid password!";
+        if(!check)
+        {
+            fld_displayMessage.text = displayMsg;
+            return;
+        }
         if(potentialPword == fld_confirmPassword.text!)
         {
             fld_displayMessage.text = "YOUVE CONFIRMED YOUR PASSWORD YAY!";
@@ -102,20 +108,25 @@ class VC_SetPassword: UIViewController {
         else
         {
             fld_displayMessage.text = "Your passwords do not match.";
-            return;
         }
+        SVProgressHUD.show(withStatus: "Creating new user")
         FIRAuth.auth()?.createUser(withEmail: userObj.email, password: potentialPword!) { (user, error) in
         // [START_EXCLUDE]
             if let error = error {
                 print("error: "+error.localizedDescription);
+                self.fld_displayMessage.text = "Could not create new user with this email. Please contact your Shuffli administrator."
                 return
             }
             print("\(user!.email!) created")
             userObj.uid = FIRAuth.auth()?.currentUser?.uid;
             self.fld_displayMessage.text = "Successful!\n new user with uid: "+userObj.uid;
+            
+            FIRDatabase.database().reference().child("actions/acceptInvite").childByAutoId().setValue(["userID": userObj.uid!, "inviteCode": userObj.inviteCode!]);
+            SVProgressHUD.dismiss();
         // [END_EXCLUDE]
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
