@@ -400,11 +400,13 @@ SWIFT_CLASS("_TtC4Test6Toucan")
 
 SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 @interface VC_ACreator_HomePage : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fldcreator;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImage;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldcompany;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified userTable;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull userArray;
 - (void)deleteUserButtonWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
@@ -448,11 +450,8 @@ SWIFT_CLASS("_TtC4Test17VC_Creator_Signin")
 @property (nonatomic, strong) FIRDatabaseReference * _Nullable ref;
 - (void)viewDidLoad;
 - (IBAction)BtnTapped:(id _Nonnull)sender;
-- (void)completeAsyncCallsWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (void)getUserInfoWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (void)getAccountInfoWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (void)getRoleInfoWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (void)directSegue;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)setUser;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -466,8 +465,9 @@ SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified viewposts;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified logOut;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImage;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldcompany;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fldcreator;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
@@ -553,10 +553,13 @@ SWIFT_CLASS("_TtC4Test14VC_SetPassword")
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified fld_displayMessage;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_password;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_confirmPassword;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_name;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified inviteRef;
 - (BOOL)containsNumbersWithPword:(NSString * _Nonnull)pword SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)containsUppercaseWithPword:(NSString * _Nonnull)pword SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)containsLowercaseWithPword:(NSString * _Nonnull)pword SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)btn_createUser:(id _Nonnull)sender;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -566,7 +569,13 @@ SWIFT_CLASS("_TtC4Test14VC_SetPassword")
 
 SWIFT_CLASS("_TtC4Test10VC_adduser")
 @interface VC_adduser : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_role;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_email;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified inviteRef;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_createuser;
 - (void)viewDidLoad;
+- (IBAction)btn_createNewUser:(id _Nonnull)sender;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btn_cancel:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

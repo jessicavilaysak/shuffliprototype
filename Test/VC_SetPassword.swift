@@ -131,6 +131,7 @@ class VC_SetPassword: UIViewController {
             }
             print("\(user!.email!) created")
             userObj.uid = FIRAuth.auth()?.currentUser?.uid;
+            userObj.setRole();
             self.fld_displayMessage.text = "Successful!\n new user with uid: "+userObj.uid;
             self.inviteRef = FIRDatabase.database().reference().child("actions/acceptInvite").childByAutoId().ref;
             self.inviteRef.observe(FIRDataEventType.value, with: {(snapshot) in

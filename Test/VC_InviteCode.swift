@@ -68,9 +68,7 @@ class VC_InviteCode: UIViewController {
                 userObj.creatorID = recent["creatorID"] as! String;
                 userObj.creatorName = recent["creatorName"] as! String;
                 userObj.email = recent["email"] as! String;
-                
-                let roleID = recent["role"] as! String;
-                userObj.setRole(lRole: roleID);
+                userObj.role = recent["role"] as! String;
                 completion(true);
             }
             else

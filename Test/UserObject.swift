@@ -49,9 +49,9 @@ class UserObject {
         permissionToManageUsers = true;
     }
     
-    func setRole(lRole: String)
+    func setRole()
     {
-        role = lRole;
+        let lRole = role;
         if (lRole == "m1")
         {
             isAdmin = true;
@@ -177,7 +177,8 @@ class UserObject {
                 
                 let roleID = snapshot.value as!  String;
                 print("roleID: "+roleID);
-                self.setRole(lRole: roleID);
+                self.role = roleID;
+                self.setRole();
                 completion(true);
             }});
         

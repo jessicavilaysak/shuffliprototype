@@ -2307,6 +2307,7 @@ depends-member:
 - !private ["4Test10UserObjectC", "accountID"]
 - !private ["4Test10UserObjectC", "accountName"]
 - !private ["4Test10UserObjectC", "creatorID"]
+- !private ["4Test10UserObjectC", "creatorName"]
 - !private ["4Test10UserObjectC", "isAdmin"]
 - !private ["4Test10UserObjectC", "listenerPath"]
 - !private ["4Test10UserObjectC", "resetObj"]

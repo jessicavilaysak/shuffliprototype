@@ -12,6 +12,7 @@
 		220D371B1F4BE576003C2E24 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D371A1F4BE576003C2E24 /* TabBarController.swift */; };
 		220D371D1F4BE640003C2E24 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D371C1F4BE640003C2E24 /* UserObject.swift */; };
 		2217BAA71F77F45E00C2A76C /* VC_InviteCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217BAA61F77F45E00C2A76C /* VC_InviteCode.swift */; };
+		2234EFF81F7C91DE00E75024 /* downloadUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234EFF71F7C91DE00E75024 /* downloadUserModel.swift */; };
 		223DB4671F78F6CC00888461 /* VC_SetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DB4661F78F6CC00888461 /* VC_SetPassword.swift */; };
 		224894D81EC38D2400162B80 /* VC_PostContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224894D71EC38D2400162B80 /* VC_PostContent.swift */; };
 		225CE2841F6EA8CF0049B59F /* VC_EditCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CE2831F6EA8CF0049B59F /* VC_EditCaption.swift */; };
@@ -63,6 +64,7 @@
 		220D371A1F4BE576003C2E24 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		220D371C1F4BE640003C2E24 /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		2217BAA61F77F45E00C2A76C /* VC_InviteCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_InviteCode.swift; sourceTree = "<group>"; };
+		2234EFF71F7C91DE00E75024 /* downloadUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = downloadUserModel.swift; sourceTree = "<group>"; };
 		223DB4661F78F6CC00888461 /* VC_SetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_SetPassword.swift; sourceTree = "<group>"; };
 		224894D71EC38D2400162B80 /* VC_PostContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_PostContent.swift; sourceTree = "<group>"; };
 		225CE2831F6EA8CF0049B59F /* VC_EditCaption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_EditCaption.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				616507B11F7793130043BAC5 /* Test-Bridging-Header.h */,
 				2217BAA61F77F45E00C2A76C /* VC_InviteCode.swift */,
 				223DB4661F78F6CC00888461 /* VC_SetPassword.swift */,
+				2234EFF71F7C91DE00E75024 /* downloadUserModel.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				22E497961EC304AD00B419E9 /* CustomCell.swift in Sources */,
 				223DB4671F78F6CC00888461 /* VC_SetPassword.swift in Sources */,
 				2285D6E31EC3F5BA00211D41 /* VC_Creator_Viewposts.swift in Sources */,
+				2234EFF81F7C91DE00E75024 /* downloadUserModel.swift in Sources */,
 				22C1DF271EC32A1C0022DC01 /* VC_ACreator_HomePage.swift in Sources */,
 				2217BAA71F77F45E00C2A76C /* VC_InviteCode.swift in Sources */,
 				220D371D1F4BE640003C2E24 /* UserObject.swift in Sources */,

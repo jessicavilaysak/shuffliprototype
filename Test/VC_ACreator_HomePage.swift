@@ -22,9 +22,8 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
     
-    
-   // @IBOutlet weak var collectionView: UICollectionView!
-    
+    var userArray : Array<[String:String]> = [];
+
     func deleteUserButton(sender: UITapGestureRecognizer) {
         var index = Int((sender.view?.tag)!);
         //delete from data source
@@ -64,8 +63,19 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         bgImage.layer.shadowOpacity = 0.5
         bgImage.layer.shadowRadius = 10;
         bgImage.layer.shouldRasterize = true //tells IOS to cache the shadow
+        
+        FIRDatabase.database().reference(withPath: "userRoles/"+userObj.accountID!+"/"+userObj.creatorID!).observe(FIRDataEventType.value, with: {(snapshot) in
+            
+            lUserDataModel.instantiateUsers(snapshot: snapshot){ success in
+                if success {
+                    print("RELOAD.");
+                    self.userTable.reloadData();
+                }
+            }
+        })
     }
-
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         
         
@@ -75,16 +85,29 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int
     {
-        return 5
+        return activeUsersUids.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = self.userTable.dequeueReusableCell(withIdentifier: "userCell", for: indexPath as IndexPath) as! ManageUserCell
-        cell.userName.text = "Simon Waters"
-        cell.userEmail.text = FIRAuth.auth()?.currentUser?.email
+        if indexPath.row < activeUsersUids.count
+        {
+            print("why the fuck");
+            print("row: "+String(indexPath.row));
+            let userUid = activeUsersUids[indexPath.row]
+            print(userUid);
+            lUserDataModel.getUserInfo(userUid: userUid) { success in
+                if success {
+                    let userObj = activeUsersObj[userUid]!;
+                    cell.userName.text = userObj["username"]!;
+                    cell.userEmail.text = userObj["email"]!;
+                    
+                }
+            }
+        }
         
-        return cell
+        return cell;
     }
     
     override func viewWillDisappear(_ animated: Bool) {
