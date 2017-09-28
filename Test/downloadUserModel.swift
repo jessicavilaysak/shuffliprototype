@@ -29,10 +29,13 @@ struct userDataModel {
     
     init() {
        activeUsersObj = [:];
+        activeUsersData = [:];
     }
     
     public func instantiateUsers(snapshot: FIRDataSnapshot, completion: @escaping (Bool) -> ())
     {
+        let userDataGroup = DispatchGroup() // group of completion handlers for user data (username, email etc)
+        
         activeUsersObj = [:];
         activeUsersUids = Array<String>();
         for imageSnapshot in snapshot.children{
@@ -40,7 +43,28 @@ struct userDataModel {
             activeUsersUids.append(imgS.key);
             activeUsersObj[imgS.key] = ["role": (imgS.value as! String), "uid": imgS.key];
         }
-        completion(true);
+        
+        for uid in activeUsersUids {
+            //enter the user data group
+            userDataGroup.enter()
+            FIRDatabase.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                // Get user value
+                let value = snapshot.value as? NSDictionary
+                activeUsersData[uid] = value;
+                userDataGroup.leave()
+            }) { (error) in
+                print(error.localizedDescription)
+                userDataGroup.leave()
+            }
+        }
+        
+        userDataGroup.notify(queue: .main) {
+            print("Finished all user data requests.")
+            completion(true);
+        }
+        
+        
+        
     }
     
     func getUserInfo(userUid: String, completion: @escaping (Bool) -> ()) {
@@ -69,8 +93,19 @@ struct userDataModel {
     func getUserObj(uid: String) -> [String:String] {
         return activeUsersObj[uid]!;
     }
+    
+    func getUserData(uid: String) -> NSDictionary {
+        let data = activeUsersData.value(forKey: uid) as? NSDictionary;
+        if (data != nil) {
+            return data!;
+            
+        } else {
+            return NSDictionary();
+        }
+    }
 }
 
 var activeUsersUids = Array<String>();
 var activeUsersObj = [String:[String:String]]();
+var activeUsersData = NSMutableDictionary();
 var lUserDataModel = userDataModel();

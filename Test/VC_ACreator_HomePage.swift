@@ -79,7 +79,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     override func viewDidAppear(_ animated: Bool) {
         
         
-        
+    
     }
     
     
@@ -97,14 +97,10 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             print("row: "+String(indexPath.row));
             let userUid = activeUsersUids[indexPath.row]
             print(userUid);
-            lUserDataModel.getUserInfo(userUid: userUid) { success in
-                if success {
-                    let userObj = activeUsersObj[userUid]!;
-                    cell.userName.text = userObj["username"]!;
-                    cell.userEmail.text = userObj["email"]!;
-                    
-                }
-            }
+            //cell.userName.text = userObj["username"]!;
+            //cell.userEmail.text = userObj["email"]!;
+            
+            cell.userName.text = lUserDataModel.getUserData(uid: userUid)["username"] as? String ?? "User not found"
         }
         
         return cell;
