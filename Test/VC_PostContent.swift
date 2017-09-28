@@ -44,7 +44,7 @@ import FirebaseAuth
 import SVProgressHUD
 import DropDown
 
-class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var btn_chooseCategory: UIButton!
     @IBOutlet var fld_camera: UIImageView!
@@ -67,6 +67,8 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         
         setupCategories() //dropdown list
         categoryName = nil;
+        
+        SVProgressHUD.setDefaultStyle(.dark)
         
         self.hideKeyboardWhenTappedAround()
         self.fld_caption.delegate = self;

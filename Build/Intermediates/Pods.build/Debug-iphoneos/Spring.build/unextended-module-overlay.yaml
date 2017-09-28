@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules'
+    'name': '/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Spring.build/unextended-module.modulemap',
+      'external-contents': '/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Intermediates/Pods.build/Debug-iphoneos/Spring.build/unextended-module.modulemap',
     }]
   }]
 }

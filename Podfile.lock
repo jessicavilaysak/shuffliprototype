@@ -74,6 +74,7 @@ PODS:
     - SDWebImage/Core
   - Spring (1.0.3)
   - SVProgressHUD (2.1.2)
+  - SwiftMessageBar (3.1.2)
   - TextFieldEffects (1.3.2)
   - Toucan (0.6.0)
   - UITextView+Placeholder (1.2.0)
@@ -89,6 +90,7 @@ DEPENDENCIES:
   - SDWebImage/WebP
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
   - SVProgressHUD
+  - SwiftMessageBar
   - TextFieldEffects
   - Toucan (~> 0.6)
   - UITextView+Placeholder (~> 1.2)
@@ -120,10 +122,11 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftMessageBar: 58fae3e5ae1a69680da3204282def50f522fd773
   TextFieldEffects: 9e5cce561ea39c75b86e9d3637601727a67e8b23
   Toucan: 47485bbc9cb4541ef6318d6886103e6eaf16e919
   UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
 
-PODFILE CHECKSUM: 0e8be3457ded66033077576653aad0076f901ebd
+PODFILE CHECKSUM: f727596334651a9aeefb37818e699a2ca0739299
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

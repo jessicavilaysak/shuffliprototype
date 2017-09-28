@@ -94,6 +94,11 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>SwiftMessageBar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>isShown</key>

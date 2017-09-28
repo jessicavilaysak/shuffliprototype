@@ -28,8 +28,7 @@ struct userData {
 struct userDataModel {
     
     init() {
-       activeUsersObj = [:];
-        activeUsersData = [:];
+        activeUsersObj = [:];
     }
     
     public func instantiateUsers(snapshot: FIRDataSnapshot, completion: @escaping (Bool) -> ())
@@ -40,6 +39,10 @@ struct userDataModel {
         activeUsersUids = Array<String>();
         for imageSnapshot in snapshot.children{
             let imgS = imageSnapshot as! FIRDataSnapshot;
+            if(imgS.key == userObj.uid)
+            {
+                continue;
+            }
             activeUsersUids.append(imgS.key);
             activeUsersObj[imgS.key] = ["role": (imgS.value as! String), "uid": imgS.key];
         }
@@ -49,8 +52,24 @@ struct userDataModel {
             userDataGroup.enter()
             FIRDatabase.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
                 // Get user value
-                let value = snapshot.value as? NSDictionary
-                activeUsersData[uid] = value;
+                if(snapshot.exists())
+                {
+                    let value = snapshot.value as? NSDictionary
+                    print("inside snapshot");
+                    print(value);
+                    var lUsername = "";
+                    if(value!["username"] != nil)
+                    {
+                        lUsername = value!["username"] as! String;
+                    }
+                    activeUsersObj[uid]!["username"] = lUsername;
+                    var lEmail = "";
+                    if(value!["email"] != nil)
+                    {
+                        lEmail = value!["email"] as! String;
+                    }
+                    activeUsersObj[uid]!["email"] = lEmail;
+                }
                 userDataGroup.leave()
             }) { (error) in
                 print(error.localizedDescription)
@@ -62,9 +81,6 @@ struct userDataModel {
             print("Finished all user data requests.")
             completion(true);
         }
-        
-        
-        
     }
     
     func getUserInfo(userUid: String, completion: @escaping (Bool) -> ()) {
@@ -93,19 +109,9 @@ struct userDataModel {
     func getUserObj(uid: String) -> [String:String] {
         return activeUsersObj[uid]!;
     }
-    
-    func getUserData(uid: String) -> NSDictionary {
-        let data = activeUsersData.value(forKey: uid) as? NSDictionary;
-        if (data != nil) {
-            return data!;
-            
-        } else {
-            return NSDictionary();
-        }
-    }
 }
 
 var activeUsersUids = Array<String>();
 var activeUsersObj = [String:[String:String]]();
-var activeUsersData = NSMutableDictionary();
 var lUserDataModel = userDataModel();
+

@@ -1,14 +1,14 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
-options: "d701b7d18f5209924fc28cf5d05cf9ca"
-build_time: [1506581682, 700527000]
+options: "7f4e39dbc5b1eaff02193caf724bbd0b"
+build_time: [1506250692, 276218000]
 inputs:
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1502594519, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [1502594519, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": [1502594519, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": [1502594519, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift": [1502594519, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift": [1502594519, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift": [1502594519, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldEffects.swift": [1502594519, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift": [1502594519, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldEffects.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift": [1502594519, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift": [1502594519, 0]

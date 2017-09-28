@@ -1832,6 +1832,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Intermediates/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/TextFieldEffects.build/unextended-module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/TextFieldEffects.build/unextended-module.modulemap"
 interface-hash: "7f444a54ae1fc5c185d0b1d92c03c3e3"

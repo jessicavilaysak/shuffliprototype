@@ -62,6 +62,7 @@ depends-member:
 - !private ["8DropDown10AnchorViewP", "layer"]
 - !private ["8DropDown10AnchorViewP", "scrollRangeToVisible"]
 - !private ["8DropDown10AnchorViewP", "sd_setImage"]
+- !private ["8DropDown10AnchorViewP", "setDefaultStyle"]
 - !private ["8DropDown10AnchorViewP", "show"]
 - !private ["8DropDown10AnchorViewP", "showSuccess"]
 - !private ["8DropDown10AnchorViewP", "text"]
@@ -85,6 +86,7 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "uploadedBy"]
 - !private ["s23BidirectionalCollectionP", "url"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So19CAAnimationDelegateP", "cornerRadius"]
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So15CALayerDelegateP", "addGestureRecognizer"]
 - !private ["So15CALayerDelegateP", "attributedText"]
@@ -94,6 +96,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "scrollRangeToVisible"]
 - !private ["So15CALayerDelegateP", "sd_setImage"]
+- !private ["So15CALayerDelegateP", "setDefaultStyle"]
 - !private ["So15CALayerDelegateP", "show"]
 - !private ["So15CALayerDelegateP", "showSuccess"]
 - !private ["So15CALayerDelegateP", "text"]
@@ -155,6 +158,7 @@ depends-member:
 - !private ["s7CVarArgP", "removeValue"]
 - !private ["s7CVarArgP", "scrollRangeToVisible"]
 - !private ["s7CVarArgP", "sd_setImage"]
+- !private ["s7CVarArgP", "setDefaultStyle"]
 - !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "show"]
 - !private ["s7CVarArgP", "showSuccess"]
@@ -239,6 +243,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "removeValue"]
 - !private ["s28CustomDebugStringConvertibleP", "scrollRangeToVisible"]
 - !private ["s28CustomDebugStringConvertibleP", "sd_setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "setDefaultStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "show"]
 - !private ["s28CustomDebugStringConvertibleP", "showSuccess"]
@@ -328,6 +333,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "removeValue"]
 - !private ["s23CustomStringConvertibleP", "scrollRangeToVisible"]
 - !private ["s23CustomStringConvertibleP", "sd_setImage"]
+- !private ["s23CustomStringConvertibleP", "setDefaultStyle"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "show"]
 - !private ["s23CustomStringConvertibleP", "showSuccess"]
@@ -380,6 +386,7 @@ depends-member:
 - !private ["s9EquatableP", "childByAutoId"]
 - !private ["s9EquatableP", "cornerRadius"]
 - !private ["s9EquatableP", "coverVertical"]
+- !private ["s9EquatableP", "dark"]
 - !private ["s9EquatableP", "database"]
 - !private ["s9EquatableP", "default"]
 - !private ["s9EquatableP", "delete"]
@@ -412,6 +419,7 @@ depends-member:
 - !private ["s9EquatableP", "removeValue"]
 - !private ["s9EquatableP", "scrollRangeToVisible"]
 - !private ["s9EquatableP", "sd_setImage"]
+- !private ["s9EquatableP", "setDefaultStyle"]
 - !private ["s9EquatableP", "setValue"]
 - !private ["s9EquatableP", "show"]
 - !private ["s9EquatableP", "showSuccess"]
@@ -483,6 +491,7 @@ depends-member:
 - !private ["s8HashableP", "childByAutoId"]
 - !private ["s8HashableP", "cornerRadius"]
 - !private ["s8HashableP", "coverVertical"]
+- !private ["s8HashableP", "dark"]
 - !private ["s8HashableP", "database"]
 - !private ["s8HashableP", "default"]
 - !private ["s8HashableP", "delete"]
@@ -515,6 +524,7 @@ depends-member:
 - !private ["s8HashableP", "removeValue"]
 - !private ["s8HashableP", "scrollRangeToVisible"]
 - !private ["s8HashableP", "sd_setImage"]
+- !private ["s8HashableP", "setDefaultStyle"]
 - !private ["s8HashableP", "setValue"]
 - !private ["s8HashableP", "show"]
 - !private ["s8HashableP", "showSuccess"]
@@ -531,6 +541,46 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["8Material14MotionDelegateP", "FIRDatabase"]
+- !private ["8Material14MotionDelegateP", "FIRStorage"]
+- !private ["8Material14MotionDelegateP", "NSMakeRange"]
+- !private ["8Material14MotionDelegateP", "NSMutableAttributedString"]
+- !private ["8Material14MotionDelegateP", "NSStrikethroughStyleAttributeName"]
+- !private ["8Material14MotionDelegateP", "SVProgressHUD"]
+- !private ["8Material14MotionDelegateP", "UIAlertAction"]
+- !private ["8Material14MotionDelegateP", "UIAlertController"]
+- !private ["8Material14MotionDelegateP", "UIAlertControllerStyle"]
+- !private ["8Material14MotionDelegateP", "UIColor"]
+- !private ["8Material14MotionDelegateP", "UIModalPresentationStyle"]
+- !private ["8Material14MotionDelegateP", "UIModalTransitionStyle"]
+- !private ["8Material14MotionDelegateP", "UITapGestureRecognizer"]
+- !private ["8Material14MotionDelegateP", "URL"]
+- !private ["8Material14MotionDelegateP", "addAction"]
+- !private ["8Material14MotionDelegateP", "btn_approve_lvl2"]
+- !private ["8Material14MotionDelegateP", "btn_delete_lvl2"]
+- !private ["8Material14MotionDelegateP", "btn_delete_lvl3"]
+- !private ["8Material14MotionDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["8Material14MotionDelegateP", "image"]
+- !private ["8Material14MotionDelegateP", "imageSelected"]
+- !private ["8Material14MotionDelegateP", "images"]
+- !private ["8Material14MotionDelegateP", "imgCaption"]
+- !private ["8Material14MotionDelegateP", "imgIndex"]
+- !private ["8Material14MotionDelegateP", "imgUrl"]
+- !private ["8Material14MotionDelegateP", "init"]
+- !private ["8Material14MotionDelegateP", "modalPresentationStyle"]
+- !private ["8Material14MotionDelegateP", "modalTransitionStyle"]
+- !private ["8Material14MotionDelegateP", "myTargetFunction"]
+- !private ["8Material14MotionDelegateP", "navigationController"]
+- !private ["8Material14MotionDelegateP", "performInitialisation"]
+- !private ["8Material14MotionDelegateP", "popViewController"]
+- !private ["8Material14MotionDelegateP", "present"]
+- !private ["8Material14MotionDelegateP", "print"]
+- !private ["8Material14MotionDelegateP", "pushViewController"]
+- !private ["8Material14MotionDelegateP", "storyboard"]
+- !private ["8Material14MotionDelegateP", "userObj"]
+- !private ["8Material14MotionDelegateP", "viewDidLoad"]
+- !private ["8Material14MotionDelegateP", "viewWillLayoutSubviews"]
+- ["8Material14MotionDelegateP", ""]
 - !private ["s17MutableCollectionP", "caption"]
 - !private ["s17MutableCollectionP", "creatorID"]
 - !private ["s17MutableCollectionP", "dashboardApproved"]
@@ -589,6 +639,7 @@ depends-member:
 - !private ["So8NSCodingP", "pushViewController"]
 - !private ["So8NSCodingP", "scrollRangeToVisible"]
 - !private ["So8NSCodingP", "sd_setImage"]
+- !private ["So8NSCodingP", "setDefaultStyle"]
 - !private ["So8NSCodingP", "show"]
 - !private ["So8NSCodingP", "showSuccess"]
 - !private ["So8NSCodingP", "storyboard"]
@@ -721,6 +772,7 @@ depends-member:
 - !private ["So8NSObjectC", "removeValue"]
 - !private ["So8NSObjectC", "scrollRangeToVisible"]
 - !private ["So8NSObjectC", "sd_setImage"]
+- !private ["So8NSObjectC", "setDefaultStyle"]
 - !private ["So8NSObjectC", "setValue"]
 - !private ["So8NSObjectC", "show"]
 - !private ["So8NSObjectC", "showSuccess"]
@@ -789,6 +841,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "removeValue"]
 - !private ["So16NSObjectProtocolP", "scrollRangeToVisible"]
 - !private ["So16NSObjectProtocolP", "sd_setImage"]
+- !private ["So16NSObjectProtocolP", "setDefaultStyle"]
 - !private ["So16NSObjectProtocolP", "setValue"]
 - !private ["So16NSObjectProtocolP", "show"]
 - !private ["So16NSObjectProtocolP", "showSuccess"]
@@ -829,12 +882,15 @@ depends-member:
 - !private ["s16RawRepresentableP", "alert"]
 - !private ["s16RawRepresentableP", "cancel"]
 - !private ["s16RawRepresentableP", "coverVertical"]
+- !private ["s16RawRepresentableP", "dark"]
 - !private ["s16RawRepresentableP", "default"]
 - !private ["s16RawRepresentableP", "overFullScreen"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["So13SVProgressHUDC", "dismiss"]
+- !private ["So13SVProgressHUDC", "setDefaultStyle"]
 - !private ["So13SVProgressHUDC", "show"]
 - !private ["So13SVProgressHUDC", "showSuccess"]
+- !private ["SC18SVProgressHUDStyleO", "dark"]
 - !private ["s8SequenceP", "caption"]
 - !private ["s8SequenceP", "creatorID"]
 - !private ["s8SequenceP", "dashboardApproved"]
@@ -861,6 +917,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "scrollRangeToVisible"]
 - !private ["So29UIAccessibilityIdentificationP", "sd_setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "setDefaultStyle"]
 - !private ["So29UIAccessibilityIdentificationP", "show"]
 - !private ["So29UIAccessibilityIdentificationP", "showSuccess"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
@@ -881,6 +938,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "scrollRangeToVisible"]
 - !private ["So12UIAppearanceP", "sd_setImage"]
+- !private ["So12UIAppearanceP", "setDefaultStyle"]
 - !private ["So12UIAppearanceP", "show"]
 - !private ["So12UIAppearanceP", "showSuccess"]
 - !private ["So12UIAppearanceP", "text"]
@@ -929,6 +987,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "pushViewController"]
 - !private ["So21UIAppearanceContainerP", "scrollRangeToVisible"]
 - !private ["So21UIAppearanceContainerP", "sd_setImage"]
+- !private ["So21UIAppearanceContainerP", "setDefaultStyle"]
 - !private ["So21UIAppearanceContainerP", "show"]
 - !private ["So21UIAppearanceContainerP", "showSuccess"]
 - !private ["So21UIAppearanceContainerP", "storyboard"]
@@ -1001,6 +1060,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "scrollRangeToVisible"]
 - !private ["So17UICoordinateSpaceP", "sd_setImage"]
+- !private ["So17UICoordinateSpaceP", "setDefaultStyle"]
 - !private ["So17UICoordinateSpaceP", "show"]
 - !private ["So17UICoordinateSpaceP", "showSuccess"]
 - !private ["So17UICoordinateSpaceP", "text"]
@@ -1014,6 +1074,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "scrollRangeToVisible"]
 - !private ["So13UIDynamicItemP", "sd_setImage"]
+- !private ["So13UIDynamicItemP", "setDefaultStyle"]
 - !private ["So13UIDynamicItemP", "show"]
 - !private ["So13UIDynamicItemP", "showSuccess"]
 - !private ["So13UIDynamicItemP", "text"]
@@ -1062,6 +1123,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "pushViewController"]
 - !private ["So18UIFocusEnvironmentP", "scrollRangeToVisible"]
 - !private ["So18UIFocusEnvironmentP", "sd_setImage"]
+- !private ["So18UIFocusEnvironmentP", "setDefaultStyle"]
 - !private ["So18UIFocusEnvironmentP", "show"]
 - !private ["So18UIFocusEnvironmentP", "showSuccess"]
 - !private ["So18UIFocusEnvironmentP", "storyboard"]
@@ -1080,6 +1142,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "scrollRangeToVisible"]
 - !private ["So11UIFocusItemP", "sd_setImage"]
+- !private ["So11UIFocusItemP", "setDefaultStyle"]
 - !private ["So11UIFocusItemP", "show"]
 - !private ["So11UIFocusItemP", "showSuccess"]
 - !private ["So11UIFocusItemP", "text"]
@@ -1101,6 +1164,46 @@ depends-member:
 - !private ["SC22UIModalTransitionStyleO", "coverVertical"]
 - !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So30UINavigationControllerDelegateP", "FIRDatabase"]
+- !private ["So30UINavigationControllerDelegateP", "FIRStorage"]
+- !private ["So30UINavigationControllerDelegateP", "NSMakeRange"]
+- !private ["So30UINavigationControllerDelegateP", "NSMutableAttributedString"]
+- !private ["So30UINavigationControllerDelegateP", "NSStrikethroughStyleAttributeName"]
+- !private ["So30UINavigationControllerDelegateP", "SVProgressHUD"]
+- !private ["So30UINavigationControllerDelegateP", "UIAlertAction"]
+- !private ["So30UINavigationControllerDelegateP", "UIAlertController"]
+- !private ["So30UINavigationControllerDelegateP", "UIAlertControllerStyle"]
+- !private ["So30UINavigationControllerDelegateP", "UIColor"]
+- !private ["So30UINavigationControllerDelegateP", "UIModalPresentationStyle"]
+- !private ["So30UINavigationControllerDelegateP", "UIModalTransitionStyle"]
+- !private ["So30UINavigationControllerDelegateP", "UITapGestureRecognizer"]
+- !private ["So30UINavigationControllerDelegateP", "URL"]
+- !private ["So30UINavigationControllerDelegateP", "addAction"]
+- !private ["So30UINavigationControllerDelegateP", "btn_approve_lvl2"]
+- !private ["So30UINavigationControllerDelegateP", "btn_delete_lvl2"]
+- !private ["So30UINavigationControllerDelegateP", "btn_delete_lvl3"]
+- !private ["So30UINavigationControllerDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UINavigationControllerDelegateP", "image"]
+- !private ["So30UINavigationControllerDelegateP", "imageSelected"]
+- !private ["So30UINavigationControllerDelegateP", "images"]
+- !private ["So30UINavigationControllerDelegateP", "imgCaption"]
+- !private ["So30UINavigationControllerDelegateP", "imgIndex"]
+- !private ["So30UINavigationControllerDelegateP", "imgUrl"]
+- !private ["So30UINavigationControllerDelegateP", "init"]
+- !private ["So30UINavigationControllerDelegateP", "modalPresentationStyle"]
+- !private ["So30UINavigationControllerDelegateP", "modalTransitionStyle"]
+- !private ["So30UINavigationControllerDelegateP", "myTargetFunction"]
+- !private ["So30UINavigationControllerDelegateP", "navigationController"]
+- !private ["So30UINavigationControllerDelegateP", "performInitialisation"]
+- !private ["So30UINavigationControllerDelegateP", "popViewController"]
+- !private ["So30UINavigationControllerDelegateP", "present"]
+- !private ["So30UINavigationControllerDelegateP", "print"]
+- !private ["So30UINavigationControllerDelegateP", "pushViewController"]
+- !private ["So30UINavigationControllerDelegateP", "storyboard"]
+- !private ["So30UINavigationControllerDelegateP", "userObj"]
+- !private ["So30UINavigationControllerDelegateP", "viewDidLoad"]
+- !private ["So30UINavigationControllerDelegateP", "viewWillLayoutSubviews"]
+- ["So30UINavigationControllerDelegateP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "FIRDatabase"]
 - !private ["So30UIPasteConfigurationSupportingP", "FIRStorage"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSMakeRange"]
@@ -1144,6 +1247,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "pushViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "scrollRangeToVisible"]
 - !private ["So30UIPasteConfigurationSupportingP", "sd_setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "setDefaultStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "show"]
 - !private ["So30UIPasteConfigurationSupportingP", "showSuccess"]
 - !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
@@ -1206,6 +1310,7 @@ depends-member:
 - !private ["So11UIResponderC", "pushViewController"]
 - !private ["So11UIResponderC", "scrollRangeToVisible"]
 - !private ["So11UIResponderC", "sd_setImage"]
+- !private ["So11UIResponderC", "setDefaultStyle"]
 - !private ["So11UIResponderC", "show"]
 - !private ["So11UIResponderC", "showSuccess"]
 - !private ["So11UIResponderC", "storyboard"]
@@ -1259,6 +1364,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "pushViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "scrollRangeToVisible"]
 - !private ["So30UIResponderStandardEditActionsP", "sd_setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "setDefaultStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "show"]
 - !private ["So30UIResponderStandardEditActionsP", "showSuccess"]
 - !private ["So30UIResponderStandardEditActionsP", "storyboard"]
@@ -1321,6 +1427,46 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewWillLayoutSubviews"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So26UITabBarControllerDelegateP", "FIRDatabase"]
+- !private ["So26UITabBarControllerDelegateP", "FIRStorage"]
+- !private ["So26UITabBarControllerDelegateP", "NSMakeRange"]
+- !private ["So26UITabBarControllerDelegateP", "NSMutableAttributedString"]
+- !private ["So26UITabBarControllerDelegateP", "NSStrikethroughStyleAttributeName"]
+- !private ["So26UITabBarControllerDelegateP", "SVProgressHUD"]
+- !private ["So26UITabBarControllerDelegateP", "UIAlertAction"]
+- !private ["So26UITabBarControllerDelegateP", "UIAlertController"]
+- !private ["So26UITabBarControllerDelegateP", "UIAlertControllerStyle"]
+- !private ["So26UITabBarControllerDelegateP", "UIColor"]
+- !private ["So26UITabBarControllerDelegateP", "UIModalPresentationStyle"]
+- !private ["So26UITabBarControllerDelegateP", "UIModalTransitionStyle"]
+- !private ["So26UITabBarControllerDelegateP", "UITapGestureRecognizer"]
+- !private ["So26UITabBarControllerDelegateP", "URL"]
+- !private ["So26UITabBarControllerDelegateP", "addAction"]
+- !private ["So26UITabBarControllerDelegateP", "btn_approve_lvl2"]
+- !private ["So26UITabBarControllerDelegateP", "btn_delete_lvl2"]
+- !private ["So26UITabBarControllerDelegateP", "btn_delete_lvl3"]
+- !private ["So26UITabBarControllerDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So26UITabBarControllerDelegateP", "image"]
+- !private ["So26UITabBarControllerDelegateP", "imageSelected"]
+- !private ["So26UITabBarControllerDelegateP", "images"]
+- !private ["So26UITabBarControllerDelegateP", "imgCaption"]
+- !private ["So26UITabBarControllerDelegateP", "imgIndex"]
+- !private ["So26UITabBarControllerDelegateP", "imgUrl"]
+- !private ["So26UITabBarControllerDelegateP", "init"]
+- !private ["So26UITabBarControllerDelegateP", "modalPresentationStyle"]
+- !private ["So26UITabBarControllerDelegateP", "modalTransitionStyle"]
+- !private ["So26UITabBarControllerDelegateP", "myTargetFunction"]
+- !private ["So26UITabBarControllerDelegateP", "navigationController"]
+- !private ["So26UITabBarControllerDelegateP", "performInitialisation"]
+- !private ["So26UITabBarControllerDelegateP", "popViewController"]
+- !private ["So26UITabBarControllerDelegateP", "present"]
+- !private ["So26UITabBarControllerDelegateP", "print"]
+- !private ["So26UITabBarControllerDelegateP", "pushViewController"]
+- !private ["So26UITabBarControllerDelegateP", "storyboard"]
+- !private ["So26UITabBarControllerDelegateP", "userObj"]
+- !private ["So26UITabBarControllerDelegateP", "viewDidLoad"]
+- !private ["So26UITabBarControllerDelegateP", "viewWillLayoutSubviews"]
+- ["So26UITabBarControllerDelegateP", ""]
 - !private ["So22UITapGestureRecognizerC", "addTarget"]
 - !private ["So22UITapGestureRecognizerC", "init"]
 - !private ["So15UITextDraggableP", "addGestureRecognizer"]
@@ -1402,6 +1548,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "pushViewController"]
 - !private ["So18UITraitEnvironmentP", "scrollRangeToVisible"]
 - !private ["So18UITraitEnvironmentP", "sd_setImage"]
+- !private ["So18UITraitEnvironmentP", "setDefaultStyle"]
 - !private ["So18UITraitEnvironmentP", "show"]
 - !private ["So18UITraitEnvironmentP", "showSuccess"]
 - !private ["So18UITraitEnvironmentP", "storyboard"]
@@ -1420,6 +1567,7 @@ depends-member:
 - !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "scrollRangeToVisible"]
 - !private ["So6UIViewC", "sd_setImage"]
+- !private ["So6UIViewC", "setDefaultStyle"]
 - !private ["So6UIViewC", "show"]
 - !private ["So6UIViewC", "showSuccess"]
 - !private ["So6UIViewC", "text"]
@@ -1475,6 +1623,46 @@ depends-member:
 - ["So16UIViewControllerC", "viewWillAppear"]
 - ["So16UIViewControllerC", "viewWillLayoutSubviews"]
 - ["So16UIViewControllerC", ""]
+- !private ["So37UIViewControllerTransitioningDelegateP", "FIRDatabase"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "FIRStorage"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "NSMakeRange"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "NSMutableAttributedString"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "NSStrikethroughStyleAttributeName"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "SVProgressHUD"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertAction"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertController"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertControllerStyle"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIColor"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIModalPresentationStyle"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIModalTransitionStyle"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UITapGestureRecognizer"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "URL"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "addAction"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "btn_approve_lvl2"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "btn_delete_lvl2"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "btn_delete_lvl3"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "image"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "imageSelected"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "images"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "imgCaption"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "imgIndex"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "imgUrl"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "init"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "modalPresentationStyle"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "modalTransitionStyle"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "myTargetFunction"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "navigationController"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "performInitialisation"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "popViewController"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "present"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "print"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pushViewController"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "storyboard"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "userObj"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "viewDidLoad"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "viewWillLayoutSubviews"]
+- ["So37UIViewControllerTransitioningDelegateP", ""]
 - !private ["10Foundation3URLV", "init"]
 - !private ["4Test10UserObjectC", "accountID"]
 - !private ["4Test10UserObjectC", "creatorID"]
@@ -1553,6 +1741,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "scrollRangeToVisible"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "sd_setImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setDefaultStyle"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "show"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "showSuccess"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
@@ -1648,6 +1837,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollRangeToVisible"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sd_setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setDefaultStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showSuccess"]
@@ -1703,6 +1893,7 @@ depends-nominal:
 - !private "s10ArraySliceV"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
+- !private "So19CAAnimationDelegateP"
 - !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
@@ -1729,6 +1920,7 @@ depends-nominal:
 - "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- "8Material14MotionDelegateP"
 - !private "s17MutableCollectionP"
 - !private "So18NSAttributedStringC"
 - "So8NSCodingP"
@@ -1747,6 +1939,7 @@ depends-nominal:
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "So13SVProgressHUDC"
+- !private "SC18SVProgressHUDStyleO"
 - !private "s8SequenceP"
 - !private "SS"
 - !private "s14StringProtocolP"
@@ -1776,6 +1969,7 @@ depends-nominal:
 - !private "SC24UIModalPresentationStyleO"
 - !private "SC22UIModalTransitionStyleO"
 - !private "So22UINavigationControllerC"
+- "So30UINavigationControllerDelegateP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -1783,6 +1977,7 @@ depends-nominal:
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - !private "So12UIStoryboardC"
+- "So26UITabBarControllerDelegateP"
 - !private "So22UITapGestureRecognizerC"
 - !private "So15UITextDraggableP"
 - !private "So15UITextDroppableP"
@@ -1793,6 +1988,7 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- "So37UIViewControllerTransitioningDelegateP"
 - !private "10Foundation3URLV"
 - !private "4Test10UserObjectC"
 - "4Test13VC_ClickImageC"
@@ -1822,17 +2018,23 @@ depends-nominal:
 - !private "4Test14imageDataModelV"
 depends-dynamic-lookup:
 depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/Spring.swiftmodule/arm64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/arm64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
@@ -1844,7 +2046,10 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
@@ -1911,7 +2116,10 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -1927,8 +2135,11 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"

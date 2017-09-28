@@ -25,6 +25,7 @@ class VC_EditCaption: UIViewController {
         caption.layer.cornerRadius = 4
         buttonUpdate.layer.cornerRadius = 4
         caption.text = images[imgIndex].caption!;
+        SVProgressHUD.setDefaultStyle(.dark)
         
     }
     

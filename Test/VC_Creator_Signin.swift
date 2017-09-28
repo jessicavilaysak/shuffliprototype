@@ -26,7 +26,11 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
-        // Do any additional setup after loading the view.
+        fld_username.delegate = self
+        fld_password.delegate = self
+        fld_username.tag = 0
+        fld_password.tag = 1
+        
         
         //text field stylings
         
@@ -34,8 +38,28 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         fld_username.layer.cornerRadius = 4
         SigninBtn.layer.cornerRadius = 4
         
+        SVProgressHUD.setDefaultStyle(.dark)
+        
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        // Try to find next responder
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+            BtnTapped((Any).self)
+        }
+        // Do not add a line break
+        return false
+    }
+    
+    
+    
+    
     @IBAction func BtnTapped(_ sender: Any) {
         //dataSource.username = fld_username.text;
         if let email = fld_username.text, let pass = fld_password.text
@@ -87,43 +111,42 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
      */
     
     func directSegue() {
-
         let tabs = TabBarController();
-        self.present(tabs, animated: true, completion: nil);
+        self.present(tabs, animated: true, completion: nil)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // [START remove_auth_listener]
+       
         fld_password.text = "";
         fld_username.text = "";
         
-        // [END remove_auth_listener]
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        super.viewDidAppear(animated)
-        return;
-        if FIRAuth.auth()?.currentUser != nil{
-            print("User is NOT null.");
-            SVProgressHUD.show(withStatus: "Setting up for you...");
-            userObj.uid = FIRAuth.auth()?.currentUser?.uid;
-            userObj.completeAsyncCalls{ success in
-                if success{
-                    print("SUCCESS - completeAsyncCalls");
-                }
-                else
-                {
-                    print("FAILURE - completeAsyncCalls");
-                }
-            };
-            setUser()
-        }else{
-            print("User is null.")
-        }
-        
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//
+//        super.viewDidAppear(animated)
+//        return;
+//        if FIRAuth.auth()?.currentUser != nil{
+//            print("User is NOT null.");
+//            SVProgressHUD.show(withStatus: "Setting up for you...");
+//            userObj.uid = FIRAuth.auth()?.currentUser?.uid;
+//            userObj.completeAsyncCalls{ success in
+//                if success{
+//                    print("SUCCESS - completeAsyncCalls");
+//                }
+//                else
+//                {
+//                    print("FAILURE - completeAsyncCalls");
+//                }
+//            };
+//            setUser()
+//        }else{
+//            print("User is null.")
+//        }
+//
+//    }
     
     func setUser(){ //set userUID value here
         

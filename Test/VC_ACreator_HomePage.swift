@@ -22,8 +22,9 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
     
-    var userArray : Array<[String:String]> = [];
-
+    
+   // @IBOutlet weak var collectionView: UICollectionView!
+    
     func deleteUserButton(sender: UITapGestureRecognizer) {
         var index = Int((sender.view?.tag)!);
         //delete from data source
@@ -40,6 +41,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     
     //@IBOutlet var viewusers: UICollectionView!
     override func viewDidLoad() {
+       
         signingOut = false;
         userTable.delegate = self;
         userTable.dataSource = self;
@@ -64,7 +66,9 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         bgImage.layer.shadowRadius = 10;
         bgImage.layer.shouldRasterize = true //tells IOS to cache the shadow
         
-        FIRDatabase.database().reference(withPath: "userRoles/"+userObj.accountID!+"/"+userObj.creatorID!).observe(FIRDataEventType.value, with: {(snapshot) in
+        SVProgressHUD.setDefaultStyle(.dark)
+        
+        FIRDatabase.database().reference(withPath: userObj.manageuserPath).observe(FIRDataEventType.value, with: {(snapshot) in
             
             lUserDataModel.instantiateUsers(snapshot: snapshot){ success in
                 if success {
@@ -74,12 +78,11 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             }
         })
     }
-    
-    
+
     override func viewDidAppear(_ animated: Bool) {
         
         
-    
+        
     }
     
     
@@ -93,14 +96,11 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         let cell = self.userTable.dequeueReusableCell(withIdentifier: "userCell", for: indexPath as IndexPath) as! ManageUserCell
         if indexPath.row < activeUsersUids.count
         {
-            print("why the fuck");
-            print("row: "+String(indexPath.row));
             let userUid = activeUsersUids[indexPath.row]
             print(userUid);
-            //cell.userName.text = userObj["username"]!;
-            //cell.userEmail.text = userObj["email"]!;
-            
-            cell.userName.text = lUserDataModel.getUserData(uid: userUid)["username"] as? String ?? "User not found"
+            let userObj = activeUsersObj[userUid]!;
+            cell.userName.text = userObj["username"];
+            cell.userEmail.text = userObj["email"];
         }
         
         return cell;
@@ -113,7 +113,11 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         {
             FIRAuth.auth()?.removeStateDidChangeListener(handle!)
             FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
+            FIRDatabase.database().reference(withPath: userObj.manageuserPath).removeAllObservers();
             userObj.resetObj();
+            activeUsersUids = Array<String>();
+            activeUsersObj = [String:[String:String]]();
+            images = [imageDataModel]()
             
             print("SHUFFLI | signed out.");
             SVProgressHUD.showSuccess(withStatus: "Logged out!");
@@ -124,20 +128,35 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     }
 
     @IBAction func logout(_ sender: Any) {
-        try! FIRAuth.auth()!.signOut()
         
-        handle = FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
-            if user?.uid == userObj.uid {
-                print("SHUFFLI | could not log out for some reason :(");
-            } else {
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_signin");
-                //self.present(vc!, animated: true, completion: nil);
-                self.dismiss(animated: true, completion: nil)
-                self.signingOut = true;
-                //the user has now signed out so go to login view controller
-                // and remove this listener
-            }
-        });
+        let refreshAlert = UIAlertController(title: "", message: "Are you sure you want to log out?", preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
+            try! FIRAuth.auth()!.signOut()
+            
+            self.handle = FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
+                if user?.uid == userObj.uid {
+                    print("SHUFFLI | could not log out for some reason :(");
+                } else {
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_initialview");
+                    self.present(vc!, animated: true, completion: nil);
+                    self.signingOut = true;
+                    
+                    
+                    //the user has now signed out so go to login view controller
+                    // and remove this listener
+                }
+            });
+            print("Handle Yes logic here")
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle No Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+        
+        
     }
 
     
@@ -145,7 +164,6 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_adduser")
         self.present(vc!,animated: true,completion: nil)
-        
     }
     
     

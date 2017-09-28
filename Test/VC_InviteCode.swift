@@ -9,20 +9,42 @@
 import UIKit
 import FirebaseDatabase
 import SVProgressHUD
+import Spring
 
-class VC_InviteCode: UIViewController {
+class VC_InviteCode: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var fld_invitecode: UITextField!
     @IBOutlet weak var btn_signingup: UIButton!
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround();
+        fld_invitecode.delegate = self
         btn_signingup.layer.cornerRadius = 4
-        // Do any additional setup after loading the view.
+        SVProgressHUD.setDefaultStyle(.dark)
+        
+        
+        fld_invitecode.tag = 0
+        
     }
     
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        // Try to find next responder
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+            btn_signup(AnyObject.self)
+        }
+        // Do not add a line break
+        return false
+    }
     @IBAction func btn_signup(_ sender: Any) {
         let invitecode = fld_invitecode.text;
         print("shuffli | invitecode: "+invitecode!);
@@ -84,15 +106,4 @@ class VC_InviteCode: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

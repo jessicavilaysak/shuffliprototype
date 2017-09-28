@@ -41,6 +41,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         fldusername.text = userObj.username;
         self.hideKeyboardWhenTappedAround();
         
+        SVProgressHUD.setDefaultStyle(.dark)
+        
         //Creating a shadow
         bgImage.layer.masksToBounds = false
         bgImage.layer.shadowColor = UIColor.black.cgColor
@@ -128,7 +130,12 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         {
             FIRAuth.auth()?.removeStateDidChangeListener(handle!)
             FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
+            FIRDatabase.database().reference(withPath: userObj.manageuserPath).removeAllObservers();
             userObj.resetObj();
+            activeUsersUids = Array<String>();
+            activeUsersObj = [String:[String:String]]();
+            images = [imageDataModel]()
+            
             print("SHUFFLI | signed out.");
             SVProgressHUD.showSuccess(withStatus: "Logged out!");
             SVProgressHUD.dismiss(withDelay: 1);
@@ -138,20 +145,35 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func logout(_ sender: Any) {
-        try! FIRAuth.auth()!.signOut()
         
-        handle = FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
-            if user?.uid == userObj.uid {
-                print("SHUFFLI | could not log out for some reason :(");
-            } else {
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_signin");
-                //self.present(vc!, animated: true, completion: nil);
-                self.dismiss(animated: true, completion: nil)
-                self.signingOut = true;
-                //the user has now signed out so go to login view controller
-                // and remove this listener
-            }
-        });
+        let refreshAlert = UIAlertController(title: "", message: "Are you sure you want to log out?", preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
+            try! FIRAuth.auth()!.signOut()
+            
+            self.handle = FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
+                if user?.uid == userObj.uid {
+                    print("SHUFFLI | could not log out for some reason :(");
+                } else {
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_initialview");
+                    self.present(vc!, animated: true, completion: nil);
+                    
+                    self.signingOut = true;
+                    
+                    
+                    //the user has now signed out so go to login view controller
+                    // and remove this listener
+                }
+            });
+            print("Handle Yes logic here")
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle No Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

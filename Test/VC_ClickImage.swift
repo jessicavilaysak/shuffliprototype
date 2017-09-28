@@ -32,6 +32,8 @@ class VC_ClickImage: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround();
         
+        SVProgressHUD.setDefaultStyle(.dark)
+        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageSelected(tapGestureRecognizer:)))
         image.addGestureRecognizer(tapGestureRecognizer)
         image.sd_setImage(with: URL(string:images[self.imgIndex].url!))
@@ -120,7 +122,7 @@ class VC_ClickImage: UIViewController {
         refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
             FIRDatabase.database().reference().child(path).removeValue()
             let imgToDel = storage.child(userObj.uid).child(images[self.imgIndex].imgId)
-            SVProgressHUD.show(withStatus: "Deleting Post!")
+            SVProgressHUD.show(withStatus: "Deleting Post")
             imgToDel.delete(completion: { (Error) in
                 SVProgressHUD.dismiss()
                 if let error = Error{

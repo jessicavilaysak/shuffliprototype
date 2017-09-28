@@ -19,6 +19,7 @@ target 'Test' do
     pod 'UITextView+Placeholder', '~> 1.2'
     pod 'DropDown'
     pod 'Material', '~> 2.0'
+    pod 'SwiftMessageBar'
     
     target 'TestTests' do
         inherit! :search_paths

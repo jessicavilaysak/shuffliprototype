@@ -9,32 +9,63 @@
 import UIKit
 import FirebaseDatabase
 import SVProgressHUD
+import DropDown
+import Material
 
-class VC_adduser: UIViewController {
+class VC_adduser: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var fld_role: UITextField!
+    let usrRoles = DropDown()
     @IBOutlet weak var fld_email: UITextField!
+    @IBOutlet weak var btn_userRoles: FlatButton!
+    
+    var userRole : String!
+    
     var inviteRef: FIRDatabaseReference!;
     @IBOutlet weak var btn_createuser: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround();
+        
+        setupCategories() //dropdown list
+        
+        SVProgressHUD.setDefaultStyle(.dark)
 
         btn_createuser.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
+        fld_email.delegate = self
+        fld_email.tag = 1
+        
+        usrRoles.dataSource = ["m1","m2","u1"]
+        
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        // Try to find next responder
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+            
+        }
+        // Do not add a line break
+        return false
+    }
+    
+    
 
     @IBAction func btn_createNewUser(_ sender: Any) {
         print("btn_createNewUser() ENTRY.");
-        if(fld_email.text == "" || fld_role.text == "")
+        if(fld_email.text == "" || userRole == "")
         {
             print("No value in email field.");
-            let refreshAlert = UIAlertController(title: "NOTICE", message: "You must enter a valid email and a role [m1, m2, u1]", preferredStyle: UIAlertControllerStyle.alert)
+            let refreshAlert = UIAlertController(title: "NOTICE", message: "You must enter a valid email.", preferredStyle: UIAlertControllerStyle.alert)
             refreshAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action: UIAlertAction!) in
             }))
             present(refreshAlert, animated: true, completion: nil)
             return;
         }
-        let role = fld_role.text;
+        let role = userRole;
         if(role != "m1" && role != "m2" && role != "u1")
         {
             print("Not valid role.");
@@ -92,11 +123,27 @@ class VC_adduser: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func btn_userRoleDropdown(_ sender: Any) {
+        usrRoles.show()
+        print(userRole)
+        
+    }
+    
     
     @IBAction func btn_cancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
         
     }
-
+    
+    func setupCategories() {
+        
+        usrRoles.anchorView = btn_userRoles
+        usrRoles.bottomOffset = CGPoint(x: 0, y: btn_userRoles.bounds.height)
+        // Action triggered on selection
+        usrRoles.selectionAction = { [unowned self] (index, item) in
+            self.btn_userRoles.setTitle(item + " ▾", for: .normal)
+            self.userRole = item
+            
+        }
+    }
 }

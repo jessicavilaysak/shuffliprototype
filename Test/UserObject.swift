@@ -25,6 +25,7 @@ class UserObject {
     
     var email: String!;
     var inviteCode: String!;
+    var manageuserPath: String!;
     
     func resetObj()
     {
@@ -92,6 +93,7 @@ class UserObject {
                         //this is the third handler that gets the user role information.
                         self.getRoleInfo { successRole in
                             if successRole {
+                                self.manageuserPath = "userRoles/"+self.accountID!+"/"+self.creatorID!;
                                 completion(true);
                             }
                             else
@@ -177,7 +179,7 @@ class UserObject {
                 
                 let roleID = snapshot.value as!  String;
                 print("roleID: "+roleID);
-                self.role = roleID;
+                self.role = roleID
                 self.setRole();
                 completion(true);
             }});

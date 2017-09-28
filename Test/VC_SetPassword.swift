@@ -10,14 +10,52 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import SVProgressHUD
+import Material
+import SwiftMessageBar
 
-class VC_SetPassword: UIViewController {
+class VC_SetPassword: UIViewController, UITextFieldDelegate{
 
-    @IBOutlet weak var fld_displayMessage: UITextView!
+  
     @IBOutlet weak var fld_password: UITextField!
     @IBOutlet weak var fld_confirmPassword: UITextField!
     @IBOutlet weak var fld_name: UITextField!
     var inviteRef: FIRDatabaseReference!;
+    
+    @IBOutlet weak var btn_createAccount: RaisedButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround();
+        
+        fld_password.delegate = self
+        fld_confirmPassword.delegate = self
+        fld_name.delegate = self
+        
+        fld_name.tag = 0
+        fld_password.tag = 1
+        fld_confirmPassword.tag = 2
+        btn_createAccount.layer.cornerRadius = 4
+        SVProgressHUD.setDefaultStyle(.dark)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.inviteRef.removeAllObservers();
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        // Try to find next responder
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+            
+        }
+        // Do not add a line break
+        return false
+    }
     
     func containsNumbers(pword: String) -> Bool
     {
@@ -70,7 +108,8 @@ class VC_SetPassword: UIViewController {
         
         if (potentialPword == "")
         {
-            displayMsg += "Set your password using the fields above ^\n";
+            displayMsg += "Set your password using the fields below.";
+            SwiftMessageBar.showMessageWithTitle("Password Fields Empty", message: displayMsg, type: SwiftMessageBar.MessageType.info, duration: 4, dismiss: true, callback: nil)
         }
         else{
             if (!containsNumbers(pword: potentialPword!))
@@ -96,43 +135,46 @@ class VC_SetPassword: UIViewController {
             if(!check)
             {
                 displayMsg += "You have entered an invalid password!\nYour password must contain: at least 6 characters, at least one uppercase, at least one lowercase, at least one number.\n"
+                SwiftMessageBar.showMessageWithTitle("Invalid Password", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: 3.5, dismiss: true, callback: nil)
             }
         }
         if(fld_name.text == "")
         {
-            displayMsg += "You must enter a name.\n";
+            displayMsg = "You must enter a name.\n";
             check = false;
         }
         if(!check)
         {
-            fld_displayMessage.text = displayMsg;
+            //fld_displayMessage.text = displayMsg;
+            SwiftMessageBar.showMessageWithTitle("Name field empty", message: displayMsg, type: SwiftMessageBar.MessageType.info, duration: 3.5, dismiss: true, callback: nil)
             return;
         }
         if(potentialPword == fld_confirmPassword.text!)
         {
-            fld_displayMessage.text = "YOUVE CONFIRMED YOUR PASSWORD YAY!";
+           // fld_displayMessage.text = "YOUVE CONFIRMED YOUR PASSWORD YAY!";
         }
         else
         {
-            fld_displayMessage.text = "Your passwords do not match.";
+            displayMsg += "Your passwords do not match.";
+            SwiftMessageBar.showMessageWithTitle("Password Mismatach", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: 3.5, dismiss: true, callback: nil)
             return;
         }
-        
-        //userObj.username = self.fld_name.text;
         
         SVProgressHUD.show(withStatus: "Creating new user")
         FIRAuth.auth()?.createUser(withEmail: userObj.email, password: potentialPword!) { (user, error) in
         // [START_EXCLUDE]
             if let error = error {
                 print("error: "+error.localizedDescription);
-                self.fld_displayMessage.text = "Could not create new user with this email. Please contact your Shuffli administrator."
+                displayMsg += "Could not create new user with this email. Please contact your Shuffli administrator."
+                SwiftMessageBar.showMessageWithTitle("Could not create user", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: 3.5, dismiss: true, callback: nil)
                 SVProgressHUD.dismiss();
                 return
             }
             print("\(user!.email!) created")
             userObj.uid = FIRAuth.auth()?.currentUser?.uid;
-            userObj.setRole();
-            self.fld_displayMessage.text = "Successful!\n new user with uid: "+userObj.uid;
+            userObj.setRole()
+            //self.fld_displayMessage.text = "Successful!\n new user with uid: "+userObj.uid;
+            
             self.inviteRef = FIRDatabase.database().reference().child("actions/acceptInvite").childByAutoId().ref;
             self.inviteRef.observe(FIRDataEventType.value, with: {(snapshot) in
                 //print(snapshot)
@@ -175,31 +217,5 @@ class VC_SetPassword: UIViewController {
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.inviteRef.removeAllObservers();
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround();
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
