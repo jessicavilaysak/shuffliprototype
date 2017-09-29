@@ -792,9 +792,19 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBV-Ud-4Kh">
+                                                    <rect key="frame" x="18" y="90" width="280" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="280" id="3So-oh-oF1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="QBq-yC-1yd" firstAttribute="top" secondItem="iAZ-gK-SeV" secondAttribute="topMargin" constant="10" id="0d7-6C-hTB"/>
+                                                <constraint firstItem="PBV-Ud-4Kh" firstAttribute="top" secondItem="QBq-yC-1yd" secondAttribute="bottom" constant="15" id="Huw-8e-pfB"/>
                                                 <constraint firstItem="QBq-yC-1yd" firstAttribute="centerX" secondItem="iAZ-gK-SeV" secondAttribute="centerX" constant="39.5" id="JyL-F4-2v9"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="QBq-yC-1yd" secondAttribute="bottom" constant="44.5" id="ORd-Ky-uoW"/>
                                                 <constraint firstItem="pUY-rk-nQM" firstAttribute="leading" secondItem="iAZ-gK-SeV" secondAttribute="leadingMargin" constant="7" id="ShW-QC-JH2"/>
@@ -803,6 +813,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="pUY-rk-nQM" secondAttribute="bottom" constant="44.5" id="l2f-xC-azq"/>
                                                 <constraint firstItem="QBq-yC-1yd" firstAttribute="centerY" secondItem="pUY-rk-nQM" secondAttribute="centerY" id="qGf-iJ-tMM"/>
                                                 <constraint firstItem="QBq-yC-1yd" firstAttribute="leading" secondItem="pUY-rk-nQM" secondAttribute="trailing" constant="35" id="u7c-pe-gm1"/>
+                                                <constraint firstItem="PBV-Ud-4Kh" firstAttribute="leading" secondItem="iAZ-gK-SeV" secondAttribute="leadingMargin" constant="10" id="vHH-Jh-L4x"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="QBq-yC-1yd" secondAttribute="trailing" id="vz6-no-1Bu"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -812,6 +823,7 @@
                                             <outlet property="userEmail" destination="G4p-no-cfG" id="VHD-iG-dDp"/>
                                             <outlet property="userImg" destination="pUY-rk-nQM" id="p9k-rj-SAv"/>
                                             <outlet property="userName" destination="QBq-yC-1yd" id="8W2-s4-u8c"/>
+                                            <outlet property="userStatus" destination="PBV-Ud-4Kh" id="4m7-me-AYN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

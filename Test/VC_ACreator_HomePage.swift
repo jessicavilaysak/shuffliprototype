@@ -101,6 +101,8 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             let userObj = activeUsersObj[userUid]!;
             cell.userName.text = userObj["username"];
             cell.userEmail.text = userObj["email"];
+            cell.userStatus.text = userObj["status"];
+            cell.userStatus.textColor = UIColor.init(hex: "33cc33");
         }
         
         return cell;

@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 - "userEmail"
 - "userImg"
 - "userName"
+- "userStatus"
 depends-top-level:
 - "Bool"
 - "ManageUserCell"
@@ -56,6 +57,7 @@ depends-member:
 - ["4Test14ManageUserCellC", "userEmail"]
 - ["4Test14ManageUserCellC", "userImg"]
 - ["4Test14ManageUserCellC", "userName"]
+- ["4Test14ManageUserCellC", "userStatus"]
 - !private ["So8NSCodingP", "awakeFromNib"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "setSelected"]
@@ -69,6 +71,7 @@ depends-member:
 - ["So8NSObjectC", "userEmail"]
 - ["So8NSObjectC", "userImg"]
 - ["So8NSObjectC", "userName"]
+- ["So8NSObjectC", "userStatus"]
 - !private ["So16NSObjectProtocolP", "awakeFromNib"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "setSelected"]
@@ -118,6 +121,7 @@ depends-member:
 - ["So11UIResponderC", "userEmail"]
 - ["So11UIResponderC", "userImg"]
 - ["So11UIResponderC", "userName"]
+- ["So11UIResponderC", "userStatus"]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
@@ -131,6 +135,7 @@ depends-member:
 - ["So15UITableViewCellC", "userEmail"]
 - ["So15UITableViewCellC", "userImg"]
 - ["So15UITableViewCellC", "userName"]
+- ["So15UITableViewCellC", "userStatus"]
 - ["So15UITableViewCellC", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -145,6 +150,7 @@ depends-member:
 - ["So6UIViewC", "userEmail"]
 - ["So6UIViewC", "userImg"]
 - ["So6UIViewC", "userName"]
+- ["So6UIViewC", "userStatus"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
@@ -308,4 +314,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "5171fb14473842d03c668e84057f7e00"
+interface-hash: "0eed3714f204068146d878f8e3c1f925"

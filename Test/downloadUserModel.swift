@@ -69,6 +69,7 @@ struct userDataModel {
                         lEmail = value!["email"] as! String;
                     }
                     activeUsersObj[uid]!["email"] = lEmail;
+                    activeUsersObj[uid]!["status"] = "Active";
                 }
                 userDataGroup.leave()
             }) { (error) in

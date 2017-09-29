@@ -1,10 +1,10 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
 options: "bec9e839de0eb1dfbcb0a388ef769eec"
-build_time: [1506615150, 678332000]
+build_time: [1506651619, 606408000]
 inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/InitialViewController.swift": [1506614156, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_selectedimage.swift": [1506590707, 0]
-  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/ManageUserCell.swift": [1506590707, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/ManageUserCell.swift": [1506651346, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/TabBarController.swift": [1506612405, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Datasource.swift": [1506590707, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Toucan/Source/Toucan.swift": [1506590706, 0]
@@ -16,8 +16,8 @@ inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/CustomCell.swift": [1506590707, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_SetPassword.swift": [1506599556, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_Creator_Viewposts.swift": [1506610530, 0]
-  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/downloadUserModel.swift": [1506592152, 0]
-  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_ACreator_HomePage.swift": [1506612780, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/downloadUserModel.swift": [1506651494, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_ACreator_HomePage.swift": [1506651618, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_InviteCode.swift": [1506597975, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/UserObject.swift": [1506594500, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/AppDelegate.swift": [1506590707, 0]
