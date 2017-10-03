@@ -1,0 +1,389 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CharacterAttribute"
+- "CharacterAttributeToValue"
+provides-nominal:
+- "8Material18CharacterAttributeO"
+provides-member:
+- ["8Material18CharacterAttributeO", ""]
+- ["So25NSMutableAttributedStringC", ""]
+- ["So25NSMutableAttributedStringC", "addAttribute"]
+- ["So25NSMutableAttributedStringC", "addAttributes"]
+- ["So25NSMutableAttributedStringC", "updateAttribute"]
+- ["So25NSMutableAttributedStringC", "updateAttributes"]
+- ["So25NSMutableAttributedStringC", "removeAttribute"]
+- ["So25NSMutableAttributedStringC", "removeAttributes"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "CharacterAttribute"
+- "CharacterAttributeToValue"
+- !private "NSAttachmentAttributeName"
+- !private "NSBackgroundColorAttributeName"
+- !private "NSBaselineOffsetAttributeName"
+- !private "NSExpansionAttributeName"
+- !private "NSFontAttributeName"
+- !private "NSForegroundColorAttributeName"
+- !private "NSKernAttributeName"
+- !private "NSLigatureAttributeName"
+- !private "NSLinkAttributeName"
+- "NSMutableAttributedString"
+- !private "NSObliquenessAttributeName"
+- !private "NSParagraphStyleAttributeName"
+- "NSRange"
+- !private "NSShadowAttributeName"
+- !private "NSStrikethroughColorAttributeName"
+- !private "NSStrikethroughStyleAttributeName"
+- !private "NSStrokeColorAttributeName"
+- !private "NSStrokeWidthAttributeName"
+- !private "NSTextEffectAttributeName"
+- !private "NSUnderlineColorAttributeName"
+- !private "NSUnderlineStyleAttributeName"
+- !private "NSVerticalGlyphFormAttributeName"
+- !private "NSWritingDirectionAttributeName"
+- "String"
+- "StringLiteralType"
+- !private "~="
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "CharacterAttributeToValue"]
+- !private ["s7CVarArgP", "addAttribute"]
+- !private ["s7CVarArgP", "hashValue"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "removeAttribute"]
+- !private ["s7CVarArgP", "updateAttribute"]
+- ["8Material18CharacterAttributeO", "RawValue"]
+- ["8Material18CharacterAttributeO", "attachment"]
+- ["8Material18CharacterAttributeO", "backgroundColor"]
+- ["8Material18CharacterAttributeO", "baselineOffset"]
+- ["8Material18CharacterAttributeO", "deinit"]
+- ["8Material18CharacterAttributeO", "expansion"]
+- ["8Material18CharacterAttributeO", "font"]
+- ["8Material18CharacterAttributeO", "forgroundColor"]
+- ["8Material18CharacterAttributeO", "hashValue"]
+- ["8Material18CharacterAttributeO", "init"]
+- ["8Material18CharacterAttributeO", "kern"]
+- ["8Material18CharacterAttributeO", "ligature"]
+- ["8Material18CharacterAttributeO", "link"]
+- ["8Material18CharacterAttributeO", "obliqueness"]
+- ["8Material18CharacterAttributeO", "paragraphStyle"]
+- ["8Material18CharacterAttributeO", "rawValue"]
+- ["8Material18CharacterAttributeO", "shadow"]
+- ["8Material18CharacterAttributeO", "strikethroughColor"]
+- ["8Material18CharacterAttributeO", "strikethroughStyle"]
+- ["8Material18CharacterAttributeO", "strokeColor"]
+- ["8Material18CharacterAttributeO", "strokeWidth"]
+- ["8Material18CharacterAttributeO", "textEffect"]
+- ["8Material18CharacterAttributeO", "underlineColor"]
+- ["8Material18CharacterAttributeO", "underlineStyle"]
+- ["8Material18CharacterAttributeO", "verticalGlyphForm"]
+- ["8Material18CharacterAttributeO", "writingDirection"]
+- ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "hashValue"]
+- ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "CharacterAttributeToValue"]
+- !private ["s28CustomDebugStringConvertibleP", "addAttribute"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAttribute"]
+- !private ["s28CustomDebugStringConvertibleP", "updateAttribute"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "CharacterAttributeToValue"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addAttribute"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "removeAttribute"]
+- !private ["s23CustomStringConvertibleP", "updateAttribute"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "hashValue"]
+- ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "hashValue"]
+- ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "CharacterAttributeToValue"]
+- ["s9EquatableP", "RawValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addAttribute"]
+- ["s9EquatableP", "attachment"]
+- ["s9EquatableP", "backgroundColor"]
+- ["s9EquatableP", "baselineOffset"]
+- ["s9EquatableP", "expansion"]
+- ["s9EquatableP", "font"]
+- ["s9EquatableP", "forgroundColor"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "init"]
+- ["s9EquatableP", "kern"]
+- ["s9EquatableP", "ligature"]
+- ["s9EquatableP", "link"]
+- ["s9EquatableP", "obliqueness"]
+- ["s9EquatableP", "paragraphStyle"]
+- ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "removeAttribute"]
+- ["s9EquatableP", "shadow"]
+- ["s9EquatableP", "strikethroughColor"]
+- ["s9EquatableP", "strikethroughStyle"]
+- ["s9EquatableP", "strokeColor"]
+- ["s9EquatableP", "strokeWidth"]
+- ["s9EquatableP", "textEffect"]
+- ["s9EquatableP", "underlineColor"]
+- ["s9EquatableP", "underlineStyle"]
+- !private ["s9EquatableP", "updateAttribute"]
+- ["s9EquatableP", "verticalGlyphForm"]
+- ["s9EquatableP", "writingDirection"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- !private ["s8HashableP", "CharacterAttributeToValue"]
+- ["s8HashableP", "RawValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addAttribute"]
+- ["s8HashableP", "attachment"]
+- ["s8HashableP", "backgroundColor"]
+- ["s8HashableP", "baselineOffset"]
+- ["s8HashableP", "expansion"]
+- ["s8HashableP", "font"]
+- ["s8HashableP", "forgroundColor"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "kern"]
+- ["s8HashableP", "ligature"]
+- ["s8HashableP", "link"]
+- ["s8HashableP", "obliqueness"]
+- ["s8HashableP", "paragraphStyle"]
+- ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "removeAttribute"]
+- ["s8HashableP", "shadow"]
+- ["s8HashableP", "strikethroughColor"]
+- ["s8HashableP", "strikethroughStyle"]
+- ["s8HashableP", "strokeColor"]
+- ["s8HashableP", "strokeWidth"]
+- ["s8HashableP", "textEffect"]
+- ["s8HashableP", "underlineColor"]
+- ["s8HashableP", "underlineStyle"]
+- !private ["s8HashableP", "updateAttribute"]
+- ["s8HashableP", "verticalGlyphForm"]
+- ["s8HashableP", "writingDirection"]
+- ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "hashValue"]
+- ["s10MirrorPathP", "init"]
+- ["So18NSAttributedStringC", "CharacterAttribute"]
+- !private ["So18NSAttributedStringC", "CharacterAttributeToValue"]
+- ["So18NSAttributedStringC", "NSRange"]
+- ["So18NSAttributedStringC", "addAttribute"]
+- ["So18NSAttributedStringC", "addAttributes"]
+- ["So18NSAttributedStringC", "removeAttribute"]
+- ["So18NSAttributedStringC", "removeAttributes"]
+- ["So18NSAttributedStringC", "updateAttribute"]
+- ["So18NSAttributedStringC", "updateAttributes"]
+- !private ["So8NSCodingP", "CharacterAttributeToValue"]
+- !private ["So8NSCodingP", "addAttribute"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "removeAttribute"]
+- !private ["So8NSCodingP", "updateAttribute"]
+- !private ["So9NSCopyingP", "CharacterAttributeToValue"]
+- !private ["So9NSCopyingP", "addAttribute"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "removeAttribute"]
+- !private ["So9NSCopyingP", "updateAttribute"]
+- !private ["So21NSItemProviderReadingP", "CharacterAttributeToValue"]
+- !private ["So21NSItemProviderReadingP", "addAttribute"]
+- ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "removeAttribute"]
+- !private ["So21NSItemProviderReadingP", "updateAttribute"]
+- !private ["So21NSItemProviderWritingP", "CharacterAttributeToValue"]
+- !private ["So21NSItemProviderWritingP", "addAttribute"]
+- ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "removeAttribute"]
+- !private ["So21NSItemProviderWritingP", "updateAttribute"]
+- ["So25NSMutableAttributedStringC", "CharacterAttribute"]
+- !private ["So25NSMutableAttributedStringC", "CharacterAttributeToValue"]
+- ["So25NSMutableAttributedStringC", "NSRange"]
+- ["So25NSMutableAttributedStringC", "addAttribute"]
+- ["So25NSMutableAttributedStringC", "addAttributes"]
+- ["So25NSMutableAttributedStringC", "removeAttribute"]
+- ["So25NSMutableAttributedStringC", "removeAttributes"]
+- ["So25NSMutableAttributedStringC", "updateAttribute"]
+- ["So25NSMutableAttributedStringC", "updateAttributes"]
+- !private ["So16NSMutableCopyingP", "CharacterAttributeToValue"]
+- !private ["So16NSMutableCopyingP", "addAttribute"]
+- ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "removeAttribute"]
+- !private ["So16NSMutableCopyingP", "updateAttribute"]
+- ["So8NSObjectC", "CharacterAttribute"]
+- !private ["So8NSObjectC", "CharacterAttributeToValue"]
+- ["So8NSObjectC", "NSRange"]
+- ["So8NSObjectC", "addAttribute"]
+- ["So8NSObjectC", "addAttributes"]
+- ["So8NSObjectC", "removeAttribute"]
+- ["So8NSObjectC", "removeAttributes"]
+- ["So8NSObjectC", "updateAttribute"]
+- ["So8NSObjectC", "updateAttributes"]
+- !private ["So16NSObjectProtocolP", "CharacterAttributeToValue"]
+- !private ["So16NSObjectProtocolP", "addAttribute"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "removeAttribute"]
+- !private ["So16NSObjectProtocolP", "updateAttribute"]
+- !private ["So14NSSecureCodingP", "CharacterAttributeToValue"]
+- !private ["So14NSSecureCodingP", "addAttribute"]
+- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "removeAttribute"]
+- !private ["So14NSSecureCodingP", "updateAttribute"]
+- ["So8NSStringC", "init"]
+- !private ["s7NumericP", "hashValue"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "RawValue"]
+- ["s16RawRepresentableP", "attachment"]
+- ["s16RawRepresentableP", "backgroundColor"]
+- ["s16RawRepresentableP", "baselineOffset"]
+- ["s16RawRepresentableP", "expansion"]
+- ["s16RawRepresentableP", "font"]
+- ["s16RawRepresentableP", "forgroundColor"]
+- ["s16RawRepresentableP", "hashValue"]
+- ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "kern"]
+- ["s16RawRepresentableP", "ligature"]
+- ["s16RawRepresentableP", "link"]
+- ["s16RawRepresentableP", "obliqueness"]
+- ["s16RawRepresentableP", "paragraphStyle"]
+- ["s16RawRepresentableP", "rawValue"]
+- ["s16RawRepresentableP", "shadow"]
+- ["s16RawRepresentableP", "strikethroughColor"]
+- ["s16RawRepresentableP", "strikethroughStyle"]
+- ["s16RawRepresentableP", "strokeColor"]
+- ["s16RawRepresentableP", "strokeWidth"]
+- ["s16RawRepresentableP", "textEffect"]
+- ["s16RawRepresentableP", "underlineColor"]
+- ["s16RawRepresentableP", "underlineStyle"]
+- ["s16RawRepresentableP", "verticalGlyphForm"]
+- ["s16RawRepresentableP", "writingDirection"]
+- ["s16RawRepresentableP", ""]
+- ["s8SequenceP", "init"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s10StrideableP", "hashValue"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CharacterAttributeToValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAttribute"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeAttribute"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateAttribute"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "hashValue"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- "s7CVarArgP"
+- "8Material18CharacterAttributeO"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "Si"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So18NSAttributedStringC"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So25NSMutableAttributedStringC"
+- "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- !private "s7NumericP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/unextended-module.modulemap"
+interface-hash: "27e753bf197bb5a4ee4d70ac64b38b69"

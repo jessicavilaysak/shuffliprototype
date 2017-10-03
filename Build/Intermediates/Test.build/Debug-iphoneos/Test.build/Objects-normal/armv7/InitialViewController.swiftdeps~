@@ -2,9 +2,9 @@
 provides-top-level:
 - "InitialViewController"
 provides-nominal:
-- "C4Test21InitialViewController"
+- "4Test21InitialViewControllerC"
 provides-member:
-- ["C4Test21InitialViewController", ""]
+- ["4Test21InitialViewControllerC", ""]
 provides-dynamic-lookup:
 - "btnAdminCreator"
 - "btnCreator"
@@ -20,272 +20,294 @@ depends-top-level:
 - "UIViewController"
 - !private "userObj"
 depends-member:
-- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
-- !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "instantiateViewController"]
-- !private ["Ps9AnyObject", "isAdmin"]
-- !private ["Ps9AnyObject", "present"]
-- !private ["Ps9AnyObject", "segueToLogin"]
-- !private ["Ps9AnyObject", "storyboard"]
-- !private ["Ps9AnyObject", "userObj"]
-- !private ["Ps9AnyObject", "viewDidLoad"]
-- ["Ps9AnyObject", ""]
-- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
-- !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "instantiateViewController"]
-- !private ["Ps7CVarArg", "present"]
-- !private ["Ps7CVarArg", "segueToLogin"]
-- !private ["Ps7CVarArg", "storyboard"]
-- !private ["Ps7CVarArg", "userObj"]
-- !private ["Ps7CVarArg", "viewDidLoad"]
-- ["Ps7CVarArg", ""]
-- !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "present"]
-- !private ["Ps28CustomDebugStringConvertible", "segueToLogin"]
-- !private ["Ps28CustomDebugStringConvertible", "storyboard"]
-- !private ["Ps28CustomDebugStringConvertible", "userObj"]
-- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
-- ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
-- !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
-- !private ["Ps23CustomStringConvertible", "present"]
-- !private ["Ps23CustomStringConvertible", "segueToLogin"]
-- !private ["Ps23CustomStringConvertible", "storyboard"]
-- !private ["Ps23CustomStringConvertible", "userObj"]
-- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
-- ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
-- !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "instantiateViewController"]
-- !private ["Ps9Equatable", "present"]
-- !private ["Ps9Equatable", "segueToLogin"]
-- !private ["Ps9Equatable", "storyboard"]
-- !private ["Ps9Equatable", "userObj"]
-- !private ["Ps9Equatable", "viewDidLoad"]
-- ["Ps9Equatable", ""]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps26ExpressibleByStringLiteral", "init"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
-- !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "instantiateViewController"]
-- !private ["Ps8Hashable", "present"]
-- !private ["Ps8Hashable", "segueToLogin"]
-- !private ["Ps8Hashable", "storyboard"]
-- !private ["Ps8Hashable", "userObj"]
-- !private ["Ps8Hashable", "viewDidLoad"]
-- ["Ps8Hashable", ""]
-- ["C4Test21InitialViewController", "String"]
-- ["C4Test21InitialViewController", "btnAdminCreator"]
-- ["C4Test21InitialViewController", "btnCreator"]
-- ["C4Test21InitialViewController", "deinit"]
-- ["C4Test21InitialViewController", "didReceiveMemoryWarning"]
-- ["C4Test21InitialViewController", "init"]
-- !private ["C4Test21InitialViewController", "present"]
-- ["C4Test21InitialViewController", "segueToLogin"]
-- !private ["C4Test21InitialViewController", "storyboard"]
-- !private ["C4Test21InitialViewController", "userObj"]
-- ["C4Test21InitialViewController", "viewDidLoad"]
-- !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "init"]
-- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
-- !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "present"]
-- !private ["PSo8NSCoding", "segueToLogin"]
-- !private ["PSo8NSCoding", "storyboard"]
-- !private ["PSo8NSCoding", "userObj"]
-- !private ["PSo8NSCoding", "viewDidLoad"]
-- ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
-- !private ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "present"]
-- !private ["PSo26NSExtensionRequestHandling", "segueToLogin"]
-- !private ["PSo26NSExtensionRequestHandling", "storyboard"]
-- !private ["PSo26NSExtensionRequestHandling", "userObj"]
-- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
-- ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo16NSMutableCopying", "init"]
-- ["CSo8NSObject", "String"]
-- ["CSo8NSObject", "btnAdminCreator"]
-- ["CSo8NSObject", "btnCreator"]
-- ["CSo8NSObject", "didReceiveMemoryWarning"]
-- ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "instantiateViewController"]
-- !private ["CSo8NSObject", "present"]
-- ["CSo8NSObject", "segueToLogin"]
-- !private ["CSo8NSObject", "storyboard"]
-- !private ["CSo8NSObject", "userObj"]
-- ["CSo8NSObject", "viewDidLoad"]
-- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
-- !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
-- !private ["PSo16NSObjectProtocol", "present"]
-- !private ["PSo16NSObjectProtocol", "segueToLogin"]
-- !private ["PSo16NSObjectProtocol", "storyboard"]
-- !private ["PSo16NSObjectProtocol", "userObj"]
-- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
-- ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "segueToLogin"]
+- !private ["s7CVarArgP", "storyboard"]
+- !private ["s7CVarArgP", "userObj"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "segueToLogin"]
+- !private ["s28CustomDebugStringConvertibleP", "storyboard"]
+- !private ["s28CustomDebugStringConvertibleP", "userObj"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "segueToLogin"]
+- !private ["s23CustomStringConvertibleP", "storyboard"]
+- !private ["s23CustomStringConvertibleP", "userObj"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "instantiateViewController"]
+- !private ["s9EquatableP", "present"]
+- !private ["s9EquatableP", "segueToLogin"]
+- !private ["s9EquatableP", "storyboard"]
+- !private ["s9EquatableP", "userObj"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "instantiateViewController"]
+- !private ["s8HashableP", "present"]
+- !private ["s8HashableP", "segueToLogin"]
+- !private ["s8HashableP", "storyboard"]
+- !private ["s8HashableP", "userObj"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- ["4Test21InitialViewControllerC", "String"]
+- ["4Test21InitialViewControllerC", "btnAdminCreator"]
+- ["4Test21InitialViewControllerC", "btnCreator"]
+- ["4Test21InitialViewControllerC", "deinit"]
+- ["4Test21InitialViewControllerC", "didReceiveMemoryWarning"]
+- ["4Test21InitialViewControllerC", "init"]
+- !private ["4Test21InitialViewControllerC", "present"]
+- ["4Test21InitialViewControllerC", "segueToLogin"]
+- !private ["4Test21InitialViewControllerC", "storyboard"]
+- !private ["4Test21InitialViewControllerC", "userObj"]
+- ["4Test21InitialViewControllerC", "viewDidLoad"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "segueToLogin"]
+- !private ["So8NSCodingP", "storyboard"]
+- !private ["So8NSCodingP", "userObj"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "segueToLogin"]
+- !private ["So26NSExtensionRequestHandlingP", "storyboard"]
+- !private ["So26NSExtensionRequestHandlingP", "userObj"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "btnAdminCreator"]
+- ["So8NSObjectC", "btnCreator"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "present"]
+- ["So8NSObjectC", "segueToLogin"]
+- !private ["So8NSObjectC", "storyboard"]
+- !private ["So8NSObjectC", "userObj"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- !private ["So16NSObjectProtocolP", "present"]
+- !private ["So16NSObjectProtocolP", "segueToLogin"]
+- !private ["So16NSObjectProtocolP", "storyboard"]
+- !private ["So16NSObjectProtocolP", "userObj"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
 - !private ["SS", "init"]
-- !private ["Ps16TextOutputStream", "init"]
-- !private ["Ps20TextOutputStreamable", "init"]
-- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
-- !private ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "present"]
-- !private ["PSo21UIAppearanceContainer", "segueToLogin"]
-- !private ["PSo21UIAppearanceContainer", "storyboard"]
-- !private ["PSo21UIAppearanceContainer", "userObj"]
-- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
-- ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
-- !private ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "present"]
-- !private ["PSo18UIContentContainer", "segueToLogin"]
-- !private ["PSo18UIContentContainer", "storyboard"]
-- !private ["PSo18UIContentContainer", "userObj"]
-- !private ["PSo18UIContentContainer", "viewDidLoad"]
-- ["PSo18UIContentContainer", ""]
-- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
-- !private ["PSo18UIFocusEnvironment", "init"]
-- !private ["PSo18UIFocusEnvironment", "present"]
-- !private ["PSo18UIFocusEnvironment", "segueToLogin"]
-- !private ["PSo18UIFocusEnvironment", "storyboard"]
-- !private ["PSo18UIFocusEnvironment", "userObj"]
-- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
-- ["PSo18UIFocusEnvironment", ""]
-- ["CSo11UIResponder", "String"]
-- ["CSo11UIResponder", "btnAdminCreator"]
-- ["CSo11UIResponder", "btnCreator"]
-- ["CSo11UIResponder", "didReceiveMemoryWarning"]
-- ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "present"]
-- ["CSo11UIResponder", "segueToLogin"]
-- !private ["CSo11UIResponder", "storyboard"]
-- !private ["CSo11UIResponder", "userObj"]
-- ["CSo11UIResponder", "viewDidLoad"]
-- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
-- !private ["PSo30UIResponderStandardEditActions", "init"]
-- !private ["PSo30UIResponderStandardEditActions", "present"]
-- !private ["PSo30UIResponderStandardEditActions", "segueToLogin"]
-- !private ["PSo30UIResponderStandardEditActions", "storyboard"]
-- !private ["PSo30UIResponderStandardEditActions", "userObj"]
-- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
-- ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
-- !private ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "present"]
-- !private ["PSo16UIStateRestoring", "segueToLogin"]
-- !private ["PSo16UIStateRestoring", "storyboard"]
-- !private ["PSo16UIStateRestoring", "userObj"]
-- !private ["PSo16UIStateRestoring", "viewDidLoad"]
-- ["PSo16UIStateRestoring", ""]
-- !private ["CSo12UIStoryboard", "instantiateViewController"]
-- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
-- !private ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "present"]
-- !private ["PSo18UITraitEnvironment", "segueToLogin"]
-- !private ["PSo18UITraitEnvironment", "storyboard"]
-- !private ["PSo18UITraitEnvironment", "userObj"]
-- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
-- ["PSo18UITraitEnvironment", ""]
-- ["CSo16UIViewController", "String"]
-- ["CSo16UIViewController", "btnAdminCreator"]
-- ["CSo16UIViewController", "btnCreator"]
-- ["CSo16UIViewController", "didReceiveMemoryWarning"]
-- ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "present"]
-- ["CSo16UIViewController", "segueToLogin"]
-- !private ["CSo16UIViewController", "storyboard"]
-- !private ["CSo16UIViewController", "userObj"]
-- ["CSo16UIViewController", "viewDidLoad"]
-- ["CSo16UIViewController", ""]
-- !private ["C4Test10UserObject", "isAdmin"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
-- !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "instantiateViewController"]
-- !private ["Ps9_Hashable", "present"]
-- !private ["Ps9_Hashable", "segueToLogin"]
-- !private ["Ps9_Hashable", "storyboard"]
-- !private ["Ps9_Hashable", "userObj"]
-- !private ["Ps9_Hashable", "viewDidLoad"]
-- ["Ps9_Hashable", ""]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "segueToLogin"]
+- !private ["So21UIAppearanceContainerP", "storyboard"]
+- !private ["So21UIAppearanceContainerP", "userObj"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "segueToLogin"]
+- !private ["So18UIContentContainerP", "storyboard"]
+- !private ["So18UIContentContainerP", "userObj"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "segueToLogin"]
+- !private ["So18UIFocusEnvironmentP", "storyboard"]
+- !private ["So18UIFocusEnvironmentP", "userObj"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "segueToLogin"]
+- !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "userObj"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "btnAdminCreator"]
+- ["So11UIResponderC", "btnCreator"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "present"]
+- ["So11UIResponderC", "segueToLogin"]
+- !private ["So11UIResponderC", "storyboard"]
+- !private ["So11UIResponderC", "userObj"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "segueToLogin"]
+- !private ["So30UIResponderStandardEditActionsP", "storyboard"]
+- !private ["So30UIResponderStandardEditActionsP", "userObj"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "segueToLogin"]
+- !private ["So16UIStateRestoringP", "storyboard"]
+- !private ["So16UIStateRestoringP", "userObj"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "segueToLogin"]
+- !private ["So18UITraitEnvironmentP", "storyboard"]
+- !private ["So18UITraitEnvironmentP", "userObj"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "btnAdminCreator"]
+- ["So16UIViewControllerC", "btnCreator"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "present"]
+- ["So16UIViewControllerC", "segueToLogin"]
+- !private ["So16UIViewControllerC", "storyboard"]
+- !private ["So16UIViewControllerC", "userObj"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["4Test10UserObjectC", "isAdmin"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "segueToLogin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- "Ps9AnyObject"
-- "Ps7CVarArg"
-- !private "Ps10Comparable"
-- "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
-- "Ps23CustomStringConvertible"
-- "Ps9Equatable"
-- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps26ExpressibleByStringLiteral"
-- !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- "Ps8Hashable"
-- "C4Test21InitialViewController"
-- !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
-- "PSo8NSCoding"
-- !private "PSo9NSCopying"
-- "PSo26NSExtensionRequestHandling"
-- !private "PSo16NSMutableCopying"
-- "CSo8NSObject"
-- "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
+- !private "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "4Test21InitialViewControllerC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
 - !private "SS"
-- !private "Ps16TextOutputStream"
-- !private "Ps20TextOutputStreamable"
-- "PSo21UIAppearanceContainer"
-- "PSo18UIContentContainer"
-- "PSo18UIFocusEnvironment"
-- "CSo11UIResponder"
-- "PSo30UIResponderStandardEditActions"
-- "PSo16UIStateRestoring"
-- !private "CSo12UIStoryboard"
-- "PSo18UITraitEnvironment"
-- "CSo16UIViewController"
-- !private "C4Test10UserObject"
-- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- !private "Ps34_ExpressibleByBuiltinStringLiteral"
-- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps33_ExpressibleByStringInterpolation"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
-- "Ps9_Hashable"
-- !private "Ps21_ObjectiveCBridgeable"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- "So18UITraitEnvironmentP"
+- "So16UIViewControllerC"
+- !private "4Test10UserObjectC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/SwiftKeychainWrapper.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
@@ -297,7 +319,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -339,16 +362,17 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Test-Bridging-Header.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
@@ -362,7 +386,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -371,7 +395,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
@@ -379,7 +402,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
 interface-hash: "aabe6b49cfe152dae7140b0f222c0a65"

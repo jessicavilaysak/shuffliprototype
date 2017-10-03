@@ -718,7 +718,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBg" translatesAutoresizingMaskIntoConstraints="NO" id="teZ-bY-d2r">
-                                <rect key="frame" x="0.0" y="191" width="375" height="476"/>
+                                <rect key="frame" x="0.0" y="191" width="375" height="432"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="simon_waters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAD-0H-wWi">
@@ -763,7 +763,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L0A-dB-EaZ">
-                                <rect key="frame" x="0.0" y="188" width="375" height="479"/>
+                                <rect key="frame" x="0.0" y="188" width="375" height="435"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="userCell" rowHeight="128" id="FcG-3s-INy" customClass="ManageUserCell" customModule="Test" customModuleProvider="target">
@@ -837,6 +837,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reload" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-H6-qQw">
+                                <rect key="frame" x="330" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Q1-dF-4gx"/>
+                                    <constraint firstAttribute="width" constant="40" id="iRp-m0-47G"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -845,6 +852,7 @@
                             <constraint firstItem="teZ-bY-d2r" firstAttribute="leading" secondItem="lni-Yn-tA6" secondAttribute="leading" id="580-Hc-Otu"/>
                             <constraint firstItem="pam-0E-Hh6" firstAttribute="top" secondItem="teZ-bY-d2r" secondAttribute="bottom" id="6Vi-4d-hA2"/>
                             <constraint firstItem="qlH-CR-sc5" firstAttribute="top" secondItem="0Bb-jo-b2V" secondAttribute="bottom" id="7vT-Zb-NZm"/>
+                            <constraint firstAttribute="trailing" secondItem="Cax-H6-qQw" secondAttribute="trailing" constant="5" id="8YU-Zt-nVd"/>
                             <constraint firstAttribute="trailing" secondItem="L0A-dB-EaZ" secondAttribute="trailing" id="Alf-uW-fVZ"/>
                             <constraint firstItem="pam-0E-Hh6" firstAttribute="top" secondItem="L0A-dB-EaZ" secondAttribute="bottom" id="EE6-EB-G0U"/>
                             <constraint firstItem="NVJ-c2-yzn" firstAttribute="top" secondItem="iAD-0H-wWi" secondAttribute="bottom" constant="30" id="P5e-yL-YEo"/>
@@ -863,11 +871,15 @@
                             <constraint firstItem="qlH-CR-sc5" firstAttribute="leading" secondItem="lni-Yn-tA6" secondAttribute="leading" constant="5" id="t6X-3v-1op"/>
                             <constraint firstItem="NVJ-c2-yzn" firstAttribute="centerX" secondItem="lni-Yn-tA6" secondAttribute="centerX" id="vBS-cy-U8B"/>
                             <constraint firstAttribute="trailing" secondItem="qlH-CR-sc5" secondAttribute="trailing" constant="5" id="y5F-sM-c3I"/>
+                            <constraint firstItem="Cax-H6-qQw" firstAttribute="top" secondItem="qlH-CR-sc5" secondAttribute="bottom" id="zUX-wJ-hB2"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profile_grey" selectedImage="profile" id="KIf-XI-FsG"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bgImage" destination="teZ-bY-d2r" id="sSj-wg-hhn"/>
+                        <outlet property="btnReload" destination="Cax-H6-qQw" id="cai-9r-Fvw"/>
                         <outlet property="fldcompany" destination="NVJ-c2-yzn" id="nU9-yW-83s"/>
                         <outlet property="fldcreator" destination="2if-Ic-x16" id="4lJ-sa-Nhu"/>
                         <outlet property="fldusername" destination="iAD-0H-wWi" id="Fo9-Ns-Q4R"/>
@@ -1394,6 +1406,7 @@
         <image name="logo" width="90" height="122"/>
         <image name="profile" width="36" height="29"/>
         <image name="profile_grey" width="36" height="29"/>
+        <image name="reload" width="128" height="128"/>
         <image name="takeCamera" width="640" height="524"/>
         <image name="takeRoll" width="466" height="328"/>
         <image name="user-image-with-black-background_318-34564" width="626" height="626"/>

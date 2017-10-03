@@ -2,9 +2,9 @@
 provides-top-level:
 - "CustomCellUser"
 provides-nominal:
-- "C4Test14CustomCellUser"
+- "4Test14CustomCellUserC"
 provides-member:
-- ["C4Test14CustomCellUser", ""]
+- ["4Test14CustomCellUserC", ""]
 provides-dynamic-lookup:
 - "deleteUser"
 - "fld_username"
@@ -14,122 +14,121 @@ depends-top-level:
 - "UIImageView"
 - "UILabel"
 depends-member:
-- !private ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", ""]
-- !private ["PSo15CALayerDelegate", "init"]
-- ["PSo15CALayerDelegate", ""]
-- !private ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", ""]
-- ["C4Test14CustomCellUser", "UIImageView"]
-- ["C4Test14CustomCellUser", "UILabel"]
-- ["C4Test14CustomCellUser", "deinit"]
-- ["C4Test14CustomCellUser", "deleteUser"]
-- ["C4Test14CustomCellUser", "fld_username"]
-- ["C4Test14CustomCellUser", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "init"]
-- ["Ps9Equatable", ""]
-- !private ["Ps8Hashable", "init"]
-- ["Ps8Hashable", ""]
-- !private ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", ""]
-- ["CSo8NSObject", "UIImageView"]
-- ["CSo8NSObject", "UILabel"]
-- ["CSo8NSObject", "deleteUser"]
-- ["CSo8NSObject", "fld_username"]
-- ["CSo8NSObject", "init"]
-- !private ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", ""]
-- !private ["PSo29UIAccessibilityIdentification", "init"]
-- ["PSo29UIAccessibilityIdentification", ""]
-- !private ["PSo12UIAppearance", "init"]
-- ["PSo12UIAppearance", ""]
-- !private ["PSo21UIAppearanceContainer", "init"]
-- ["PSo21UIAppearanceContainer", ""]
-- ["CSo24UICollectionReusableView", "UIImageView"]
-- ["CSo24UICollectionReusableView", "UILabel"]
-- ["CSo24UICollectionReusableView", "deleteUser"]
-- ["CSo24UICollectionReusableView", "fld_username"]
-- ["CSo24UICollectionReusableView", "init"]
-- ["CSo20UICollectionViewCell", "UIImageView"]
-- ["CSo20UICollectionViewCell", "UILabel"]
-- ["CSo20UICollectionViewCell", "deleteUser"]
-- ["CSo20UICollectionViewCell", "fld_username"]
-- ["CSo20UICollectionViewCell", "init"]
-- ["CSo20UICollectionViewCell", ""]
-- !private ["PSo17UICoordinateSpace", "init"]
-- ["PSo17UICoordinateSpace", ""]
-- !private ["PSo13UIDynamicItem", "init"]
-- ["PSo13UIDynamicItem", ""]
-- !private ["PSo18UIFocusEnvironment", "init"]
-- ["PSo18UIFocusEnvironment", ""]
-- !private ["PSo11UIFocusItem", "init"]
-- ["PSo11UIFocusItem", ""]
-- ["CSo11UIResponder", "UIImageView"]
-- ["CSo11UIResponder", "UILabel"]
-- ["CSo11UIResponder", "deleteUser"]
-- ["CSo11UIResponder", "fld_username"]
-- ["CSo11UIResponder", "init"]
-- !private ["PSo30UIResponderStandardEditActions", "init"]
-- ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo18UITraitEnvironment", "init"]
-- ["PSo18UITraitEnvironment", ""]
-- ["CSo6UIView", "UIImageView"]
-- ["CSo6UIView", "UILabel"]
-- ["CSo6UIView", "deleteUser"]
-- ["CSo6UIView", "fld_username"]
-- ["CSo6UIView", "init"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
-- !private ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", ""]
+- !private ["8DropDown10AnchorViewP", "init"]
+- ["8DropDown10AnchorViewP", ""]
+- !private ["So15CALayerDelegateP", "init"]
+- ["So15CALayerDelegateP", ""]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", ""]
+- ["4Test14CustomCellUserC", "UIImageView"]
+- ["4Test14CustomCellUserC", "UILabel"]
+- ["4Test14CustomCellUserC", "deinit"]
+- ["4Test14CustomCellUserC", "deleteUser"]
+- ["4Test14CustomCellUserC", "fld_username"]
+- ["4Test14CustomCellUserC", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", ""]
+- !private ["s8HashableP", "init"]
+- ["s8HashableP", ""]
+- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "deleteUser"]
+- ["So8NSObjectC", "fld_username"]
+- ["So8NSObjectC", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "init"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", ""]
+- ["So24UICollectionReusableViewC", "UIImageView"]
+- ["So24UICollectionReusableViewC", "UILabel"]
+- ["So24UICollectionReusableViewC", "deleteUser"]
+- ["So24UICollectionReusableViewC", "fld_username"]
+- ["So24UICollectionReusableViewC", "init"]
+- ["So20UICollectionViewCellC", "UIImageView"]
+- ["So20UICollectionViewCellC", "UILabel"]
+- ["So20UICollectionViewCellC", "deleteUser"]
+- ["So20UICollectionViewCellC", "fld_username"]
+- ["So20UICollectionViewCellC", "init"]
+- ["So20UICollectionViewCellC", ""]
+- !private ["So17UICoordinateSpaceP", "init"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "init"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "init"]
+- ["So11UIFocusItemP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "deleteUser"]
+- ["So11UIResponderC", "fld_username"]
+- ["So11UIResponderC", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "UIImageView"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "deleteUser"]
+- ["So6UIViewC", "fld_username"]
+- ["So6UIViewC", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
-- "Ps9AnyObject"
-- "PSo15CALayerDelegate"
-- "Ps7CVarArg"
-- "C4Test14CustomCellUser"
-- "Ps28CustomDebugStringConvertible"
-- "Ps23CustomStringConvertible"
-- "Ps9Equatable"
-- "Ps8Hashable"
-- "PSo8NSCoding"
-- "CSo8NSObject"
-- "PSo16NSObjectProtocol"
-- "PSo29UIAccessibilityIdentification"
-- "PSo12UIAppearance"
-- "PSo21UIAppearanceContainer"
-- "CSo24UICollectionReusableView"
-- "CSo20UICollectionViewCell"
-- "PSo17UICoordinateSpace"
-- "PSo13UIDynamicItem"
-- "PSo18UIFocusEnvironment"
-- "PSo11UIFocusItem"
-- "CSo11UIResponder"
-- "PSo30UIResponderStandardEditActions"
-- "PSo18UITraitEnvironment"
-- "CSo6UIView"
-- "Ps37_DefaultCustomPlaygroundQuickLookable"
-- "Ps9_Hashable"
+- "8DropDown10AnchorViewP"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "4Test14CustomCellUserC"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So24UICollectionReusableViewC"
+- "So20UICollectionViewCellC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/SwiftKeychainWrapper.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
@@ -141,7 +140,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -183,16 +183,17 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Test-Bridging-Header.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
@@ -206,7 +207,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -215,7 +216,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
@@ -223,7 +223,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
 interface-hash: "6b91d70be9d5ded0e0298dcc5ba0aed2"

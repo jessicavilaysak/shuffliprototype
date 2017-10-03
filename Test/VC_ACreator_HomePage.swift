@@ -18,12 +18,13 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var fldusername: UILabel!
     @IBOutlet var fldcompany: UILabel!
     @IBOutlet weak var userTable: UITableView!
+    @IBOutlet weak var btnReload: UIImageView!
     
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
+    var isInitialState: Bool!;
     
-    
-   // @IBOutlet weak var collectionView: UICollectionView!
+    // @IBOutlet weak var collectionView: UICollectionView!
     
     func deleteUserButton(sender: UITapGestureRecognizer) {
         var index = Int((sender.view?.tag)!);
@@ -68,41 +69,56 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         
         SVProgressHUD.setDefaultStyle(.dark)
         
-        FIRDatabase.database().reference(withPath: userObj.manageuserPath).observe(FIRDataEventType.value, with: {(snapshot) in
-            
-            lUserDataModel.instantiateUsers(snapshot: snapshot){ success in
-                if success {
-                    print("RELOAD.");
-                    self.userTable.reloadData();
-                }
-            }
-        })
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(reloadList))
+        btnReload.addGestureRecognizer(tapGestureRecognizer)
+        btnReload.isHidden = true;
     }
 
     override func viewDidAppear(_ animated: Bool) {
         
-        
+        reloadList();
         
     }
     
-    
+    func reloadList()
+    {
+        SVProgressHUD.show(withStatus: "Loading...");
+        lUserDataModel.instantiateUsers(){ success in
+            if success {
+                print("RELOADED users.");
+                
+                self.userTable.reloadData();
+                self.userTable.scrollToRow(at: NSIndexPath.init(row: 0, section: 0) as IndexPath, at: .top, animated: true)
+                SVProgressHUD.dismiss();
+            }
+        }
+    }
+
     func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int
     {
-        return activeUsersUids.count;
+        return usersUIDs.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = self.userTable.dequeueReusableCell(withIdentifier: "userCell", for: indexPath as IndexPath) as! ManageUserCell
-        if indexPath.row < activeUsersUids.count
+        if indexPath.row < usersUIDs.count
         {
-            let userUid = activeUsersUids[indexPath.row]
+            let userUid = usersUIDs[indexPath.row]
             print(userUid);
-            let userObj = activeUsersObj[userUid]!;
+            let userObj = usersObj[userUid]!;
             cell.userName.text = userObj["username"];
             cell.userEmail.text = userObj["email"];
             cell.userStatus.text = userObj["status"];
-            cell.userStatus.textColor = UIColor.init(hex: "33cc33");
+            if(userObj["status"] == "Pending")
+            {
+                cell.userStatus.textColor = UIColor.red;
+            }
+            else
+            {
+                cell.userStatus.textColor = UIColor.init(hex: "33cc33");
+            }
+            
         }
         
         return cell;
@@ -116,9 +132,10 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             FIRAuth.auth()?.removeStateDidChangeListener(handle!)
             FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
             FIRDatabase.database().reference(withPath: userObj.manageuserPath).removeAllObservers();
+            FIRDatabase.database().reference(withPath: userObj.invitedUsersPath).removeAllObservers();
             userObj.resetObj();
-            activeUsersUids = Array<String>();
-            activeUsersObj = [String:[String:String]]();
+            usersUIDs = Array<String>();
+            usersObj = [String:[String:String]]();
             images = [imageDataModel]()
             
             print("SHUFFLI | signed out.");

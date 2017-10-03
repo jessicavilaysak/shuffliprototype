@@ -1443,6 +1443,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/SwiftMessageBar/SwiftMessageBar-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/SwiftMessageBar.build/unextended-module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Target Support Files/SwiftMessageBar/SwiftMessageBar-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Intermediates/Pods.build/Debug-iphoneos/SwiftMessageBar.build/unextended-module.modulemap"
 interface-hash: "f3146caa85fa5f12cbadba983eeff8c5"

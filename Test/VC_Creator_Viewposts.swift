@@ -132,8 +132,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
             FIRDatabase.database().reference(withPath: userObj.manageuserPath).removeAllObservers();
             userObj.resetObj();
-            activeUsersUids = Array<String>();
-            activeUsersObj = [String:[String:String]]();
+            usersUIDs = Array<String>();
+            usersObj = [String:[String:String]]();
             images = [imageDataModel]()
             
             print("SHUFFLI | signed out.");
@@ -186,11 +186,11 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
+        return false
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
+        return;
         var path = ""
         let storage = FIRStorage.storage().reference()
         if(userObj.isAdmin)
@@ -215,12 +215,12 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                 }
             }
             
-            let imgToDel = storage.child(userObj.uid).child(images[indexPath.row].imgId)
+            /*let imgToDel = storage.child(userObj.uid).child(images[indexPath.row].imgId)
             imgToDel.delete(completion: { (Error) in
                 if let error = Error{
                     print(error)
                 }
-            })
+            })*/
             
         }))
         

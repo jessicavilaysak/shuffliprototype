@@ -322,6 +322,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/Material/Material-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/unextended-module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/unextended-module.modulemap"
 interface-hash: "833ff09d1171ff3aab9133eee58a5d32"

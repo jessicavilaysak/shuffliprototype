@@ -1791,6 +1791,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Intermediates/Pods.build/Debug-iphoneos/IQKeyboardManagerSwift.build/unextended-module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Intermediates/Pods.build/Debug-iphoneos/IQKeyboardManagerSwift.build/unextended-module.modulemap"
 interface-hash: "949226cf3ed53e1379deb7e902563c12"

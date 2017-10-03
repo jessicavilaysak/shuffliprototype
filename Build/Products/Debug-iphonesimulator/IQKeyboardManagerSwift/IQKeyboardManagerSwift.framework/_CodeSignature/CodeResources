@@ -106,7 +106,7 @@
 		</data>
 		<key>Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		c6UZeiMA6rt46LCraZ6O9+OMy+Y=
+		ioZ/TiKGudwc9nN8v3zj6AHa2rA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -336,11 +336,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c6UZeiMA6rt46LCraZ6O9+OMy+Y=
+			ioZ/TiKGudwc9nN8v3zj6AHa2rA=
 			</data>
 			<key>hash2</key>
 			<data>
-			tXXOl2S/l+OJDQEquSvNTSjO7ZLF6yrhHp/FAJZL+HM=
+			I1SOXnjEBTLFai4p5GbclRqCBfN8SuhbicrYaYfHZZo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

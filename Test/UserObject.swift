@@ -26,6 +26,7 @@ class UserObject {
     var email: String!;
     var inviteCode: String!;
     var manageuserPath: String!;
+    var invitedUsersPath: String!;
     
     func resetObj()
     {
@@ -42,6 +43,7 @@ class UserObject {
         role = nil;
         email = nil;
         inviteCode = nil;
+        invitedUsersPath = nil;
     }
     
     init() {
@@ -94,6 +96,7 @@ class UserObject {
                         self.getRoleInfo { successRole in
                             if successRole {
                                 self.manageuserPath = "userRoles/"+self.accountID!+"/"+self.creatorID!;
+                                self.invitedUsersPath = "creatorInvites/"+self.accountID!+"/"+self.creatorID!;
                                 completion(true);
                             }
                             else

@@ -7,6 +7,7 @@ provides-member:
 - ["4Test20VC_ACreator_HomePageC", ""]
 provides-dynamic-lookup:
 - "bgImage"
+- "btnReload"
 - "btn_addUser"
 - "deleteUserButton"
 - "fldcompany"
@@ -14,6 +15,7 @@ provides-dynamic-lookup:
 - "fldusername"
 - "handle"
 - "logout"
+- "reloadList"
 - "tableView"
 - "userTable"
 - "viewDidAppear"
@@ -31,15 +33,15 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "FIRAuth"
 - "FIRAuthStateDidChangeListenerHandle"
-- !private "FIRDataEventType"
 - !private "FIRDatabase"
 - !private "FIRUser"
 - "IndexPath"
 - "Int"
 - !private "ManageUserCell"
+- !private "NSIndexPath"
 - !private "SVProgressHUD"
 - !private "String"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - !private "UIAlertAction"
 - !private "UIAlertController"
 - !private "UIAlertControllerStyle"
@@ -53,22 +55,26 @@ depends-top-level:
 - "UITapGestureRecognizer"
 - "UIViewController"
 - "VC_ACreator_HomePage"
-- !private "activeUsersObj"
-- !private "activeUsersUids"
 - !private "dataSource"
 - !private "imageDataModel"
 - !private "images"
 - !private "lUserDataModel"
 - !private "print"
 - !private "userObj"
+- !private "usersObj"
+- !private "usersUIDs"
 depends-member:
+- !private ["8DropDown10AnchorViewP", "addGestureRecognizer"]
 - !private ["8DropDown10AnchorViewP", "dataSource"]
 - !private ["8DropDown10AnchorViewP", "delegate"]
 - !private ["8DropDown10AnchorViewP", "dequeueReusableCell"]
 - !private ["8DropDown10AnchorViewP", "dismiss"]
+- !private ["8DropDown10AnchorViewP", "isHidden"]
 - !private ["8DropDown10AnchorViewP", "layer"]
 - !private ["8DropDown10AnchorViewP", "reloadData"]
+- !private ["8DropDown10AnchorViewP", "scrollToRow"]
 - !private ["8DropDown10AnchorViewP", "setDefaultStyle"]
+- !private ["8DropDown10AnchorViewP", "show"]
 - !private ["8DropDown10AnchorViewP", "showSuccess"]
 - !private ["8DropDown10AnchorViewP", "tag"]
 - !private ["8DropDown10AnchorViewP", "text"]
@@ -99,13 +105,17 @@ depends-member:
 - !private ["So7CALayerC", "shadowOpacity"]
 - !private ["So7CALayerC", "shadowRadius"]
 - !private ["So7CALayerC", "shouldRasterize"]
+- !private ["So15CALayerDelegateP", "addGestureRecognizer"]
 - !private ["So15CALayerDelegateP", "dataSource"]
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "dismiss"]
+- !private ["So15CALayerDelegateP", "isHidden"]
 - !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "reloadData"]
+- !private ["So15CALayerDelegateP", "scrollToRow"]
 - !private ["So15CALayerDelegateP", "setDefaultStyle"]
+- !private ["So15CALayerDelegateP", "show"]
 - !private ["So15CALayerDelegateP", "showSuccess"]
 - !private ["So15CALayerDelegateP", "tag"]
 - !private ["So15CALayerDelegateP", "text"]
@@ -123,22 +133,23 @@ depends-member:
 - !private ["s7CVarArgP", "Array"]
 - !private ["s7CVarArgP", "CGSize"]
 - !private ["s7CVarArgP", "FIRAuth"]
-- !private ["s7CVarArgP", "FIRDataEventType"]
 - !private ["s7CVarArgP", "FIRDatabase"]
 - !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "NSIndexPath"]
 - !private ["s7CVarArgP", "SVProgressHUD"]
 - !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIAlertControllerStyle"]
 - !private ["s7CVarArgP", "UIColor"]
-- !private ["s7CVarArgP", "activeUsersObj"]
-- !private ["s7CVarArgP", "activeUsersUids"]
+- !private ["s7CVarArgP", "UITapGestureRecognizer"]
 - !private ["s7CVarArgP", "addAction"]
+- !private ["s7CVarArgP", "addGestureRecognizer"]
 - !private ["s7CVarArgP", "addStateDidChangeListener"]
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "bgImage"]
 - !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "btnReload"]
 - !private ["s7CVarArgP", "cgColor"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dataSource"]
@@ -149,7 +160,6 @@ depends-member:
 - !private ["s7CVarArgP", "fldcompany"]
 - !private ["s7CVarArgP", "fldcreator"]
 - !private ["s7CVarArgP", "fldusername"]
-- !private ["s7CVarArgP", "green"]
 - !private ["s7CVarArgP", "handle"]
 - !private ["s7CVarArgP", "hideKeyboardWhenTappedAround"]
 - !private ["s7CVarArgP", "imageDataModel"]
@@ -158,19 +168,22 @@ depends-member:
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "lUserDataModel"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "masksToBounds"]
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
-- !private ["s7CVarArgP", "observe"]
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "red"]
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "reloadData"]
+- !private ["s7CVarArgP", "reloadList"]
 - !private ["s7CVarArgP", "remove"]
 - !private ["s7CVarArgP", "removeAllObservers"]
 - !private ["s7CVarArgP", "removeStateDidChangeListener"]
+- !private ["s7CVarArgP", "scrollToRow"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s7CVarArgP", "scrollViewDidEndDecelerating"]
 - ["s7CVarArgP", "scrollViewDidEndDragging"]
@@ -192,6 +205,7 @@ depends-member:
 - !private ["s7CVarArgP", "shadowOpacity"]
 - !private ["s7CVarArgP", "shadowRadius"]
 - !private ["s7CVarArgP", "shouldRasterize"]
+- !private ["s7CVarArgP", "show"]
 - !private ["s7CVarArgP", "showSuccess"]
 - !private ["s7CVarArgP", "signOut"]
 - !private ["s7CVarArgP", "signingOut"]
@@ -207,6 +221,8 @@ depends-member:
 - !private ["s7CVarArgP", "userObj"]
 - !private ["s7CVarArgP", "userStatus"]
 - !private ["s7CVarArgP", "userTable"]
+- !private ["s7CVarArgP", "usersObj"]
+- !private ["s7CVarArgP", "usersUIDs"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
@@ -223,22 +239,23 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Array"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSize"]
 - !private ["s28CustomDebugStringConvertibleP", "FIRAuth"]
-- !private ["s28CustomDebugStringConvertibleP", "FIRDataEventType"]
 - !private ["s28CustomDebugStringConvertibleP", "FIRDatabase"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "NSIndexPath"]
 - !private ["s28CustomDebugStringConvertibleP", "SVProgressHUD"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertControllerStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
-- !private ["s28CustomDebugStringConvertibleP", "activeUsersObj"]
-- !private ["s28CustomDebugStringConvertibleP", "activeUsersUids"]
+- !private ["s28CustomDebugStringConvertibleP", "UITapGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
+- !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addStateDidChangeListener"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "bgImage"]
 - !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "btnReload"]
 - !private ["s28CustomDebugStringConvertibleP", "cgColor"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
@@ -249,7 +266,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "fldcompany"]
 - !private ["s28CustomDebugStringConvertibleP", "fldcreator"]
 - !private ["s28CustomDebugStringConvertibleP", "fldusername"]
-- !private ["s28CustomDebugStringConvertibleP", "green"]
 - !private ["s28CustomDebugStringConvertibleP", "handle"]
 - !private ["s28CustomDebugStringConvertibleP", "hideKeyboardWhenTappedAround"]
 - !private ["s28CustomDebugStringConvertibleP", "imageDataModel"]
@@ -258,20 +274,23 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "lUserDataModel"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "masksToBounds"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
-- !private ["s28CustomDebugStringConvertibleP", "observe"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "red"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
+- !private ["s28CustomDebugStringConvertibleP", "reloadList"]
 - !private ["s28CustomDebugStringConvertibleP", "remove"]
 - !private ["s28CustomDebugStringConvertibleP", "removeAllObservers"]
 - !private ["s28CustomDebugStringConvertibleP", "removeStateDidChangeListener"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollToRow"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDragging"]
@@ -293,6 +312,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "shadowOpacity"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "shouldRasterize"]
+- !private ["s28CustomDebugStringConvertibleP", "show"]
 - !private ["s28CustomDebugStringConvertibleP", "showSuccess"]
 - !private ["s28CustomDebugStringConvertibleP", "signOut"]
 - !private ["s28CustomDebugStringConvertibleP", "signingOut"]
@@ -308,6 +328,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "userObj"]
 - !private ["s28CustomDebugStringConvertibleP", "userStatus"]
 - !private ["s28CustomDebugStringConvertibleP", "userTable"]
+- !private ["s28CustomDebugStringConvertibleP", "usersObj"]
+- !private ["s28CustomDebugStringConvertibleP", "usersUIDs"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
@@ -325,23 +347,24 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Array"]
 - !private ["s23CustomStringConvertibleP", "CGSize"]
 - !private ["s23CustomStringConvertibleP", "FIRAuth"]
-- !private ["s23CustomStringConvertibleP", "FIRDataEventType"]
 - !private ["s23CustomStringConvertibleP", "FIRDatabase"]
 - !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "NSIndexPath"]
 - !private ["s23CustomStringConvertibleP", "SVProgressHUD"]
 - !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIAlertControllerStyle"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UITapGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s23CustomStringConvertibleP", "activeUsersObj"]
-- !private ["s23CustomStringConvertibleP", "activeUsersUids"]
 - !private ["s23CustomStringConvertibleP", "addAction"]
+- !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "addStateDidChangeListener"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "bgImage"]
 - !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "btnReload"]
 - !private ["s23CustomStringConvertibleP", "cgColor"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dataSource"]
@@ -352,7 +375,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "fldcompany"]
 - !private ["s23CustomStringConvertibleP", "fldcreator"]
 - !private ["s23CustomStringConvertibleP", "fldusername"]
-- !private ["s23CustomStringConvertibleP", "green"]
 - !private ["s23CustomStringConvertibleP", "handle"]
 - !private ["s23CustomStringConvertibleP", "hideKeyboardWhenTappedAround"]
 - !private ["s23CustomStringConvertibleP", "imageDataModel"]
@@ -361,20 +383,23 @@ depends-member:
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "lUserDataModel"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "masksToBounds"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
-- !private ["s23CustomStringConvertibleP", "observe"]
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
+- !private ["s23CustomStringConvertibleP", "reloadList"]
 - !private ["s23CustomStringConvertibleP", "remove"]
 - !private ["s23CustomStringConvertibleP", "removeAllObservers"]
 - !private ["s23CustomStringConvertibleP", "removeStateDidChangeListener"]
 - !private ["s23CustomStringConvertibleP", "row"]
+- !private ["s23CustomStringConvertibleP", "scrollToRow"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDragging"]
@@ -396,6 +421,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "shadowOpacity"]
 - !private ["s23CustomStringConvertibleP", "shadowRadius"]
 - !private ["s23CustomStringConvertibleP", "shouldRasterize"]
+- !private ["s23CustomStringConvertibleP", "show"]
 - !private ["s23CustomStringConvertibleP", "showSuccess"]
 - !private ["s23CustomStringConvertibleP", "signOut"]
 - !private ["s23CustomStringConvertibleP", "signingOut"]
@@ -411,6 +437,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "userObj"]
 - !private ["s23CustomStringConvertibleP", "userStatus"]
 - !private ["s23CustomStringConvertibleP", "userTable"]
+- !private ["s23CustomStringConvertibleP", "usersObj"]
+- !private ["s23CustomStringConvertibleP", "usersUIDs"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
@@ -435,24 +463,25 @@ depends-member:
 - !private ["s9EquatableP", "Array"]
 - !private ["s9EquatableP", "CGSize"]
 - !private ["s9EquatableP", "FIRAuth"]
-- !private ["s9EquatableP", "FIRDataEventType"]
 - !private ["s9EquatableP", "FIRDatabase"]
 - !private ["s9EquatableP", "Int"]
+- !private ["s9EquatableP", "NSIndexPath"]
 - !private ["s9EquatableP", "SVProgressHUD"]
 - !private ["s9EquatableP", "String"]
 - !private ["s9EquatableP", "UIAlertAction"]
 - !private ["s9EquatableP", "UIAlertController"]
 - !private ["s9EquatableP", "UIAlertControllerStyle"]
 - !private ["s9EquatableP", "UIColor"]
+- !private ["s9EquatableP", "UITapGestureRecognizer"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "actionSheet"]
-- !private ["s9EquatableP", "activeUsersObj"]
-- !private ["s9EquatableP", "activeUsersUids"]
 - !private ["s9EquatableP", "addAction"]
+- !private ["s9EquatableP", "addGestureRecognizer"]
 - !private ["s9EquatableP", "addStateDidChangeListener"]
 - !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "bgImage"]
 - !private ["s9EquatableP", "black"]
+- !private ["s9EquatableP", "btnReload"]
 - !private ["s9EquatableP", "cancel"]
 - !private ["s9EquatableP", "cgColor"]
 - !private ["s9EquatableP", "dark"]
@@ -465,7 +494,6 @@ depends-member:
 - !private ["s9EquatableP", "fldcompany"]
 - !private ["s9EquatableP", "fldcreator"]
 - !private ["s9EquatableP", "fldusername"]
-- !private ["s9EquatableP", "green"]
 - !private ["s9EquatableP", "handle"]
 - !private ["s9EquatableP", "hideKeyboardWhenTappedAround"]
 - !private ["s9EquatableP", "imageDataModel"]
@@ -474,19 +502,22 @@ depends-member:
 - ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "instantiateViewController"]
+- !private ["s9EquatableP", "isHidden"]
 - !private ["s9EquatableP", "lUserDataModel"]
 - !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "masksToBounds"]
 - ["s9EquatableP", "numberOfSections"]
 - ["s9EquatableP", "numberOfSectionsInTableView"]
-- !private ["s9EquatableP", "observe"]
 - !private ["s9EquatableP", "present"]
 - !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "red"]
 - !private ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "reloadData"]
+- !private ["s9EquatableP", "reloadList"]
 - !private ["s9EquatableP", "removeAllObservers"]
 - !private ["s9EquatableP", "removeStateDidChangeListener"]
 - !private ["s9EquatableP", "row"]
+- !private ["s9EquatableP", "scrollToRow"]
 - ["s9EquatableP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s9EquatableP", "scrollViewDidEndDecelerating"]
 - ["s9EquatableP", "scrollViewDidEndDragging"]
@@ -508,6 +539,7 @@ depends-member:
 - !private ["s9EquatableP", "shadowOpacity"]
 - !private ["s9EquatableP", "shadowRadius"]
 - !private ["s9EquatableP", "shouldRasterize"]
+- !private ["s9EquatableP", "show"]
 - !private ["s9EquatableP", "showSuccess"]
 - !private ["s9EquatableP", "signOut"]
 - !private ["s9EquatableP", "signingOut"]
@@ -516,13 +548,15 @@ depends-member:
 - !private ["s9EquatableP", "tag"]
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "textColor"]
+- !private ["s9EquatableP", "top"]
 - !private ["s9EquatableP", "uid"]
 - !private ["s9EquatableP", "userEmail"]
 - !private ["s9EquatableP", "userName"]
 - !private ["s9EquatableP", "userObj"]
 - !private ["s9EquatableP", "userStatus"]
 - !private ["s9EquatableP", "userTable"]
-- !private ["s9EquatableP", "value"]
+- !private ["s9EquatableP", "usersObj"]
+- !private ["s9EquatableP", "usersUIDs"]
 - !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", "viewForZooming"]
@@ -545,12 +579,9 @@ depends-member:
 - !private ["So7FIRAuthC", "auth"]
 - !private ["So7FIRAuthC", "removeStateDidChangeListener"]
 - !private ["So7FIRAuthC", "signOut"]
-- !private ["SC16FIRDataEventTypeO", "value"]
 - !private ["So11FIRDatabaseC", "database"]
 - !private ["So11FIRDatabaseC", "reference"]
-- !private ["So16FIRDatabaseQueryC", "observe"]
 - !private ["So16FIRDatabaseQueryC", "removeAllObservers"]
-- !private ["So20FIRDatabaseReferenceC", "observe"]
 - !private ["So20FIRDatabaseReferenceC", "removeAllObservers"]
 - !private ["So7FIRUserC", "uid"]
 - !private ["So11FIRUserInfoP", "uid"]
@@ -558,24 +589,25 @@ depends-member:
 - !private ["s8HashableP", "Array"]
 - !private ["s8HashableP", "CGSize"]
 - !private ["s8HashableP", "FIRAuth"]
-- !private ["s8HashableP", "FIRDataEventType"]
 - !private ["s8HashableP", "FIRDatabase"]
 - !private ["s8HashableP", "Int"]
+- !private ["s8HashableP", "NSIndexPath"]
 - !private ["s8HashableP", "SVProgressHUD"]
 - !private ["s8HashableP", "String"]
 - !private ["s8HashableP", "UIAlertAction"]
 - !private ["s8HashableP", "UIAlertController"]
 - !private ["s8HashableP", "UIAlertControllerStyle"]
 - !private ["s8HashableP", "UIColor"]
+- !private ["s8HashableP", "UITapGestureRecognizer"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "actionSheet"]
-- !private ["s8HashableP", "activeUsersObj"]
-- !private ["s8HashableP", "activeUsersUids"]
 - !private ["s8HashableP", "addAction"]
+- !private ["s8HashableP", "addGestureRecognizer"]
 - !private ["s8HashableP", "addStateDidChangeListener"]
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "bgImage"]
 - !private ["s8HashableP", "black"]
+- !private ["s8HashableP", "btnReload"]
 - !private ["s8HashableP", "cancel"]
 - !private ["s8HashableP", "cgColor"]
 - !private ["s8HashableP", "dark"]
@@ -588,7 +620,6 @@ depends-member:
 - !private ["s8HashableP", "fldcompany"]
 - !private ["s8HashableP", "fldcreator"]
 - !private ["s8HashableP", "fldusername"]
-- !private ["s8HashableP", "green"]
 - !private ["s8HashableP", "handle"]
 - !private ["s8HashableP", "hideKeyboardWhenTappedAround"]
 - !private ["s8HashableP", "imageDataModel"]
@@ -597,19 +628,22 @@ depends-member:
 - ["s8HashableP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "instantiateViewController"]
+- !private ["s8HashableP", "isHidden"]
 - !private ["s8HashableP", "lUserDataModel"]
 - !private ["s8HashableP", "layer"]
 - !private ["s8HashableP", "masksToBounds"]
 - ["s8HashableP", "numberOfSections"]
 - ["s8HashableP", "numberOfSectionsInTableView"]
-- !private ["s8HashableP", "observe"]
 - !private ["s8HashableP", "present"]
 - !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "red"]
 - !private ["s8HashableP", "reference"]
 - !private ["s8HashableP", "reloadData"]
+- !private ["s8HashableP", "reloadList"]
 - !private ["s8HashableP", "removeAllObservers"]
 - !private ["s8HashableP", "removeStateDidChangeListener"]
 - !private ["s8HashableP", "row"]
+- !private ["s8HashableP", "scrollToRow"]
 - ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s8HashableP", "scrollViewDidEndDecelerating"]
 - ["s8HashableP", "scrollViewDidEndDragging"]
@@ -631,6 +665,7 @@ depends-member:
 - !private ["s8HashableP", "shadowOpacity"]
 - !private ["s8HashableP", "shadowRadius"]
 - !private ["s8HashableP", "shouldRasterize"]
+- !private ["s8HashableP", "show"]
 - !private ["s8HashableP", "showSuccess"]
 - !private ["s8HashableP", "signOut"]
 - !private ["s8HashableP", "signingOut"]
@@ -639,13 +674,15 @@ depends-member:
 - !private ["s8HashableP", "tag"]
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "textColor"]
+- !private ["s8HashableP", "top"]
 - !private ["s8HashableP", "uid"]
 - !private ["s8HashableP", "userEmail"]
 - !private ["s8HashableP", "userName"]
 - !private ["s8HashableP", "userObj"]
 - !private ["s8HashableP", "userStatus"]
 - !private ["s8HashableP", "userTable"]
-- !private ["s8HashableP", "value"]
+- !private ["s8HashableP", "usersObj"]
+- !private ["s8HashableP", "usersUIDs"]
 - !private ["s8HashableP", "view"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", "viewForZooming"]
@@ -663,19 +700,19 @@ depends-member:
 - !private ["8Material14MotionDelegateP", "Array"]
 - !private ["8Material14MotionDelegateP", "CGSize"]
 - !private ["8Material14MotionDelegateP", "FIRAuth"]
-- !private ["8Material14MotionDelegateP", "FIRDataEventType"]
 - !private ["8Material14MotionDelegateP", "FIRDatabase"]
 - !private ["8Material14MotionDelegateP", "Int"]
+- !private ["8Material14MotionDelegateP", "NSIndexPath"]
 - !private ["8Material14MotionDelegateP", "SVProgressHUD"]
 - !private ["8Material14MotionDelegateP", "String"]
 - !private ["8Material14MotionDelegateP", "UIAlertAction"]
 - !private ["8Material14MotionDelegateP", "UIAlertController"]
 - !private ["8Material14MotionDelegateP", "UIAlertControllerStyle"]
 - !private ["8Material14MotionDelegateP", "UIColor"]
-- !private ["8Material14MotionDelegateP", "activeUsersObj"]
-- !private ["8Material14MotionDelegateP", "activeUsersUids"]
+- !private ["8Material14MotionDelegateP", "UITapGestureRecognizer"]
 - !private ["8Material14MotionDelegateP", "addAction"]
 - !private ["8Material14MotionDelegateP", "bgImage"]
+- !private ["8Material14MotionDelegateP", "btnReload"]
 - !private ["8Material14MotionDelegateP", "dataSource"]
 - !private ["8Material14MotionDelegateP", "fldcompany"]
 - !private ["8Material14MotionDelegateP", "fldcreator"]
@@ -692,6 +729,7 @@ depends-member:
 - ["8Material14MotionDelegateP", "numberOfSectionsInTableView"]
 - !private ["8Material14MotionDelegateP", "present"]
 - !private ["8Material14MotionDelegateP", "print"]
+- !private ["8Material14MotionDelegateP", "reloadList"]
 - ["8Material14MotionDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["8Material14MotionDelegateP", "scrollViewDidEndDecelerating"]
 - ["8Material14MotionDelegateP", "scrollViewDidEndDragging"]
@@ -712,6 +750,8 @@ depends-member:
 - ["8Material14MotionDelegateP", "tableView"]
 - !private ["8Material14MotionDelegateP", "userObj"]
 - !private ["8Material14MotionDelegateP", "userTable"]
+- !private ["8Material14MotionDelegateP", "usersObj"]
+- !private ["8Material14MotionDelegateP", "usersUIDs"]
 - !private ["8Material14MotionDelegateP", "viewDidLoad"]
 - ["8Material14MotionDelegateP", "viewForZooming"]
 - ["8Material14MotionDelegateP", "viewForZoomingInScrollView"]
@@ -725,20 +765,21 @@ depends-member:
 - !private ["So8NSCodingP", "Array"]
 - !private ["So8NSCodingP", "CGSize"]
 - !private ["So8NSCodingP", "FIRAuth"]
-- !private ["So8NSCodingP", "FIRDataEventType"]
 - !private ["So8NSCodingP", "FIRDatabase"]
 - !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "NSIndexPath"]
 - !private ["So8NSCodingP", "SVProgressHUD"]
 - !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIAlertControllerStyle"]
 - !private ["So8NSCodingP", "UIColor"]
-- !private ["So8NSCodingP", "activeUsersObj"]
-- !private ["So8NSCodingP", "activeUsersUids"]
+- !private ["So8NSCodingP", "UITapGestureRecognizer"]
 - !private ["So8NSCodingP", "addAction"]
+- !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "bgImage"]
 - !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "btnReload"]
 - !private ["So8NSCodingP", "cgColor"]
 - !private ["So8NSCodingP", "dataSource"]
 - !private ["So8NSCodingP", "delegate"]
@@ -747,7 +788,6 @@ depends-member:
 - !private ["So8NSCodingP", "fldcompany"]
 - !private ["So8NSCodingP", "fldcreator"]
 - !private ["So8NSCodingP", "fldusername"]
-- !private ["So8NSCodingP", "green"]
 - !private ["So8NSCodingP", "handle"]
 - !private ["So8NSCodingP", "hideKeyboardWhenTappedAround"]
 - !private ["So8NSCodingP", "imageDataModel"]
@@ -755,6 +795,7 @@ depends-member:
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isHidden"]
 - !private ["So8NSCodingP", "lUserDataModel"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "masksToBounds"]
@@ -762,7 +803,10 @@ depends-member:
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
 - !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "red"]
 - !private ["So8NSCodingP", "reloadData"]
+- !private ["So8NSCodingP", "reloadList"]
+- !private ["So8NSCodingP", "scrollToRow"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSCodingP", "scrollViewDidEndDecelerating"]
 - ["So8NSCodingP", "scrollViewDidEndDragging"]
@@ -784,6 +828,7 @@ depends-member:
 - !private ["So8NSCodingP", "shadowOpacity"]
 - !private ["So8NSCodingP", "shadowRadius"]
 - !private ["So8NSCodingP", "shouldRasterize"]
+- !private ["So8NSCodingP", "show"]
 - !private ["So8NSCodingP", "showSuccess"]
 - !private ["So8NSCodingP", "signingOut"]
 - !private ["So8NSCodingP", "storyboard"]
@@ -796,6 +841,8 @@ depends-member:
 - !private ["So8NSCodingP", "userObj"]
 - !private ["So8NSCodingP", "userStatus"]
 - !private ["So8NSCodingP", "userTable"]
+- !private ["So8NSCodingP", "usersObj"]
+- !private ["So8NSCodingP", "usersUIDs"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
@@ -803,24 +850,24 @@ depends-member:
 - ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "cgColor"]
-- !private ["So9NSCopyingP", "green"]
 - !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "red"]
 - !private ["So26NSExtensionRequestHandlingP", "Array"]
 - !private ["So26NSExtensionRequestHandlingP", "CGSize"]
 - !private ["So26NSExtensionRequestHandlingP", "FIRAuth"]
-- !private ["So26NSExtensionRequestHandlingP", "FIRDataEventType"]
 - !private ["So26NSExtensionRequestHandlingP", "FIRDatabase"]
 - !private ["So26NSExtensionRequestHandlingP", "Int"]
+- !private ["So26NSExtensionRequestHandlingP", "NSIndexPath"]
 - !private ["So26NSExtensionRequestHandlingP", "SVProgressHUD"]
 - !private ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertControllerStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
-- !private ["So26NSExtensionRequestHandlingP", "activeUsersObj"]
-- !private ["So26NSExtensionRequestHandlingP", "activeUsersUids"]
+- !private ["So26NSExtensionRequestHandlingP", "UITapGestureRecognizer"]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "bgImage"]
+- !private ["So26NSExtensionRequestHandlingP", "btnReload"]
 - !private ["So26NSExtensionRequestHandlingP", "dataSource"]
 - !private ["So26NSExtensionRequestHandlingP", "fldcompany"]
 - !private ["So26NSExtensionRequestHandlingP", "fldcreator"]
@@ -837,6 +884,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "reloadList"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDragging"]
@@ -857,31 +905,34 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "userObj"]
 - !private ["So26NSExtensionRequestHandlingP", "userTable"]
+- !private ["So26NSExtensionRequestHandlingP", "usersObj"]
+- !private ["So26NSExtensionRequestHandlingP", "usersUIDs"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So11NSIndexPathC", "init"]
 - !private ["So21NSItemProviderReadingP", "black"]
 - !private ["So21NSItemProviderReadingP", "cgColor"]
-- !private ["So21NSItemProviderReadingP", "green"]
 - !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "red"]
 - !private ["So21NSItemProviderWritingP", "black"]
 - !private ["So21NSItemProviderWritingP", "cgColor"]
-- !private ["So21NSItemProviderWritingP", "green"]
 - !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "red"]
 - !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "Array"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "CGSize"]
 - !private ["So8NSObjectC", "FIRAuth"]
 - ["So8NSObjectC", "FIRAuthStateDidChangeListenerHandle"]
-- !private ["So8NSObjectC", "FIRDataEventType"]
 - !private ["So8NSObjectC", "FIRDatabase"]
 - !private ["So8NSObjectC", "FIRUser"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "ManageUserCell"]
+- !private ["So8NSObjectC", "NSIndexPath"]
 - !private ["So8NSObjectC", "SVProgressHUD"]
 - !private ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIAlertAction"]
@@ -893,13 +944,13 @@ depends-member:
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - ["So8NSObjectC", "UITapGestureRecognizer"]
-- !private ["So8NSObjectC", "activeUsersObj"]
-- !private ["So8NSObjectC", "activeUsersUids"]
 - !private ["So8NSObjectC", "addAction"]
+- !private ["So8NSObjectC", "addGestureRecognizer"]
 - !private ["So8NSObjectC", "addStateDidChangeListener"]
 - !private ["So8NSObjectC", "auth"]
 - ["So8NSObjectC", "bgImage"]
 - !private ["So8NSObjectC", "black"]
+- ["So8NSObjectC", "btnReload"]
 - ["So8NSObjectC", "btn_addUser"]
 - !private ["So8NSObjectC", "cgColor"]
 - !private ["So8NSObjectC", "dataSource"]
@@ -911,7 +962,6 @@ depends-member:
 - ["So8NSObjectC", "fldcompany"]
 - ["So8NSObjectC", "fldcreator"]
 - ["So8NSObjectC", "fldusername"]
-- !private ["So8NSObjectC", "green"]
 - ["So8NSObjectC", "handle"]
 - !private ["So8NSObjectC", "hideKeyboardWhenTappedAround"]
 - !private ["So8NSObjectC", "imageDataModel"]
@@ -920,19 +970,23 @@ depends-member:
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "isHidden"]
+- ["So8NSObjectC", "isInitialState"]
 - !private ["So8NSObjectC", "lUserDataModel"]
 - !private ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "logout"]
 - !private ["So8NSObjectC", "masksToBounds"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
-- !private ["So8NSObjectC", "observe"]
 - !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "red"]
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "reloadData"]
+- ["So8NSObjectC", "reloadList"]
 - !private ["So8NSObjectC", "removeAllObservers"]
 - !private ["So8NSObjectC", "removeStateDidChangeListener"]
+- !private ["So8NSObjectC", "scrollToRow"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectC", "scrollViewDidEndDecelerating"]
 - ["So8NSObjectC", "scrollViewDidEndDragging"]
@@ -954,6 +1008,7 @@ depends-member:
 - !private ["So8NSObjectC", "shadowOpacity"]
 - !private ["So8NSObjectC", "shadowRadius"]
 - !private ["So8NSObjectC", "shouldRasterize"]
+- !private ["So8NSObjectC", "show"]
 - !private ["So8NSObjectC", "showSuccess"]
 - !private ["So8NSObjectC", "signOut"]
 - ["So8NSObjectC", "signingOut"]
@@ -968,6 +1023,8 @@ depends-member:
 - !private ["So8NSObjectC", "userObj"]
 - !private ["So8NSObjectC", "userStatus"]
 - ["So8NSObjectC", "userTable"]
+- !private ["So8NSObjectC", "usersObj"]
+- !private ["So8NSObjectC", "usersUIDs"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidAppear"]
 - ["So8NSObjectC", "viewDidLoad"]
@@ -977,22 +1034,23 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "Array"]
 - !private ["So16NSObjectProtocolP", "CGSize"]
 - !private ["So16NSObjectProtocolP", "FIRAuth"]
-- !private ["So16NSObjectProtocolP", "FIRDataEventType"]
 - !private ["So16NSObjectProtocolP", "FIRDatabase"]
 - !private ["So16NSObjectProtocolP", "Int"]
+- !private ["So16NSObjectProtocolP", "NSIndexPath"]
 - !private ["So16NSObjectProtocolP", "SVProgressHUD"]
 - !private ["So16NSObjectProtocolP", "String"]
 - !private ["So16NSObjectProtocolP", "UIAlertAction"]
 - !private ["So16NSObjectProtocolP", "UIAlertController"]
 - !private ["So16NSObjectProtocolP", "UIAlertControllerStyle"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
-- !private ["So16NSObjectProtocolP", "activeUsersObj"]
-- !private ["So16NSObjectProtocolP", "activeUsersUids"]
+- !private ["So16NSObjectProtocolP", "UITapGestureRecognizer"]
 - !private ["So16NSObjectProtocolP", "addAction"]
+- !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
 - !private ["So16NSObjectProtocolP", "addStateDidChangeListener"]
 - !private ["So16NSObjectProtocolP", "auth"]
 - !private ["So16NSObjectProtocolP", "bgImage"]
 - !private ["So16NSObjectProtocolP", "black"]
+- !private ["So16NSObjectProtocolP", "btnReload"]
 - !private ["So16NSObjectProtocolP", "cgColor"]
 - !private ["So16NSObjectProtocolP", "dataSource"]
 - !private ["So16NSObjectProtocolP", "database"]
@@ -1002,7 +1060,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "fldcompany"]
 - !private ["So16NSObjectProtocolP", "fldcreator"]
 - !private ["So16NSObjectProtocolP", "fldusername"]
-- !private ["So16NSObjectProtocolP", "green"]
 - !private ["So16NSObjectProtocolP", "handle"]
 - !private ["So16NSObjectProtocolP", "hideKeyboardWhenTappedAround"]
 - !private ["So16NSObjectProtocolP", "imageDataModel"]
@@ -1011,18 +1068,21 @@ depends-member:
 - ["So16NSObjectProtocolP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- !private ["So16NSObjectProtocolP", "isHidden"]
 - !private ["So16NSObjectProtocolP", "lUserDataModel"]
 - !private ["So16NSObjectProtocolP", "layer"]
 - !private ["So16NSObjectProtocolP", "masksToBounds"]
 - ["So16NSObjectProtocolP", "numberOfSections"]
 - ["So16NSObjectProtocolP", "numberOfSectionsInTableView"]
-- !private ["So16NSObjectProtocolP", "observe"]
 - !private ["So16NSObjectProtocolP", "present"]
 - !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "red"]
 - !private ["So16NSObjectProtocolP", "reference"]
 - !private ["So16NSObjectProtocolP", "reloadData"]
+- !private ["So16NSObjectProtocolP", "reloadList"]
 - !private ["So16NSObjectProtocolP", "removeAllObservers"]
 - !private ["So16NSObjectProtocolP", "removeStateDidChangeListener"]
+- !private ["So16NSObjectProtocolP", "scrollToRow"]
 - ["So16NSObjectProtocolP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16NSObjectProtocolP", "scrollViewDidEndDecelerating"]
 - ["So16NSObjectProtocolP", "scrollViewDidEndDragging"]
@@ -1044,6 +1104,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "shadowOpacity"]
 - !private ["So16NSObjectProtocolP", "shadowRadius"]
 - !private ["So16NSObjectProtocolP", "shouldRasterize"]
+- !private ["So16NSObjectProtocolP", "show"]
 - !private ["So16NSObjectProtocolP", "showSuccess"]
 - !private ["So16NSObjectProtocolP", "signOut"]
 - !private ["So16NSObjectProtocolP", "signingOut"]
@@ -1058,6 +1119,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "userObj"]
 - !private ["So16NSObjectProtocolP", "userStatus"]
 - !private ["So16NSObjectProtocolP", "userTable"]
+- !private ["So16NSObjectProtocolP", "usersObj"]
+- !private ["So16NSObjectProtocolP", "usersUIDs"]
 - !private ["So16NSObjectProtocolP", "view"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", "viewForZooming"]
@@ -1066,9 +1129,9 @@ depends-member:
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "cgColor"]
-- !private ["So14NSSecureCodingP", "green"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "masksToBounds"]
+- !private ["So14NSSecureCodingP", "red"]
 - !private ["So14NSSecureCodingP", "shadowColor"]
 - !private ["So14NSSecureCodingP", "shadowOffset"]
 - !private ["So14NSSecureCodingP", "shadowOpacity"]
@@ -1089,10 +1152,11 @@ depends-member:
 - !private ["s16RawRepresentableP", "cancel"]
 - !private ["s16RawRepresentableP", "dark"]
 - !private ["s16RawRepresentableP", "default"]
-- !private ["s16RawRepresentableP", "value"]
+- !private ["s16RawRepresentableP", "top"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["So13SVProgressHUDC", "dismiss"]
 - !private ["So13SVProgressHUDC", "setDefaultStyle"]
+- !private ["So13SVProgressHUDC", "show"]
 - !private ["So13SVProgressHUDC", "showSuccess"]
 - !private ["SC18SVProgressHUDStyleO", "dark"]
 - !private ["s8SequenceP", "count"]
@@ -1107,14 +1171,20 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addGestureRecognizer"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "dismiss"]
+- !private ["So29UIAccessibilityIdentificationP", "isHidden"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
+- !private ["So29UIAccessibilityIdentificationP", "scrollToRow"]
 - !private ["So29UIAccessibilityIdentificationP", "setDefaultStyle"]
+- !private ["So29UIAccessibilityIdentificationP", "show"]
 - !private ["So29UIAccessibilityIdentificationP", "showSuccess"]
 - !private ["So29UIAccessibilityIdentificationP", "tag"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
@@ -1128,13 +1198,17 @@ depends-member:
 - !private ["So17UIAlertControllerC", "addAction"]
 - !private ["So17UIAlertControllerC", "init"]
 - !private ["SC22UIAlertControllerStyleO", "actionSheet"]
+- !private ["So12UIAppearanceP", "addGestureRecognizer"]
 - !private ["So12UIAppearanceP", "dataSource"]
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "dismiss"]
+- !private ["So12UIAppearanceP", "isHidden"]
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "reloadData"]
+- !private ["So12UIAppearanceP", "scrollToRow"]
 - !private ["So12UIAppearanceP", "setDefaultStyle"]
+- !private ["So12UIAppearanceP", "show"]
 - !private ["So12UIAppearanceP", "showSuccess"]
 - !private ["So12UIAppearanceP", "tag"]
 - !private ["So12UIAppearanceP", "text"]
@@ -1145,19 +1219,20 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Array"]
 - !private ["So21UIAppearanceContainerP", "CGSize"]
 - !private ["So21UIAppearanceContainerP", "FIRAuth"]
-- !private ["So21UIAppearanceContainerP", "FIRDataEventType"]
 - !private ["So21UIAppearanceContainerP", "FIRDatabase"]
 - !private ["So21UIAppearanceContainerP", "Int"]
+- !private ["So21UIAppearanceContainerP", "NSIndexPath"]
 - !private ["So21UIAppearanceContainerP", "SVProgressHUD"]
 - !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIAlertControllerStyle"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
-- !private ["So21UIAppearanceContainerP", "activeUsersObj"]
-- !private ["So21UIAppearanceContainerP", "activeUsersUids"]
+- !private ["So21UIAppearanceContainerP", "UITapGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "addAction"]
+- !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "bgImage"]
+- !private ["So21UIAppearanceContainerP", "btnReload"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
@@ -1172,6 +1247,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isHidden"]
 - !private ["So21UIAppearanceContainerP", "lUserDataModel"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
@@ -1179,6 +1255,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "present"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "reloadData"]
+- !private ["So21UIAppearanceContainerP", "reloadList"]
+- !private ["So21UIAppearanceContainerP", "scrollToRow"]
 - ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDecelerating"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDragging"]
@@ -1195,6 +1273,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "sectionIndexTitles"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitlesForTableView"]
 - !private ["So21UIAppearanceContainerP", "setDefaultStyle"]
+- !private ["So21UIAppearanceContainerP", "show"]
 - !private ["So21UIAppearanceContainerP", "showSuccess"]
 - !private ["So21UIAppearanceContainerP", "signingOut"]
 - !private ["So21UIAppearanceContainerP", "storyboard"]
@@ -1207,6 +1286,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "userObj"]
 - !private ["So21UIAppearanceContainerP", "userStatus"]
 - !private ["So21UIAppearanceContainerP", "userTable"]
+- !private ["So21UIAppearanceContainerP", "usersObj"]
+- !private ["So21UIAppearanceContainerP", "usersUIDs"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
@@ -1214,23 +1295,24 @@ depends-member:
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So7UIColorC", "black"]
 - !private ["So7UIColorC", "cgColor"]
-- !private ["So7UIColorC", "green"]
+- !private ["So7UIColorC", "init"]
+- !private ["So7UIColorC", "red"]
 - !private ["So18UIContentContainerP", "Array"]
 - !private ["So18UIContentContainerP", "CGSize"]
 - !private ["So18UIContentContainerP", "FIRAuth"]
-- !private ["So18UIContentContainerP", "FIRDataEventType"]
 - !private ["So18UIContentContainerP", "FIRDatabase"]
 - !private ["So18UIContentContainerP", "Int"]
+- !private ["So18UIContentContainerP", "NSIndexPath"]
 - !private ["So18UIContentContainerP", "SVProgressHUD"]
 - !private ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIAlertControllerStyle"]
 - !private ["So18UIContentContainerP", "UIColor"]
-- !private ["So18UIContentContainerP", "activeUsersObj"]
-- !private ["So18UIContentContainerP", "activeUsersUids"]
+- !private ["So18UIContentContainerP", "UITapGestureRecognizer"]
 - !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "bgImage"]
+- !private ["So18UIContentContainerP", "btnReload"]
 - !private ["So18UIContentContainerP", "dataSource"]
 - !private ["So18UIContentContainerP", "fldcompany"]
 - !private ["So18UIContentContainerP", "fldcreator"]
@@ -1247,6 +1329,7 @@ depends-member:
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
 - !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "reloadList"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
 - ["So18UIContentContainerP", "scrollViewDidEndDragging"]
@@ -1267,6 +1350,8 @@ depends-member:
 - ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "userObj"]
 - !private ["So18UIContentContainerP", "userTable"]
+- !private ["So18UIContentContainerP", "usersObj"]
+- !private ["So18UIContentContainerP", "usersUIDs"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
@@ -1274,13 +1359,17 @@ depends-member:
 - ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
+- !private ["So17UICoordinateSpaceP", "addGestureRecognizer"]
 - !private ["So17UICoordinateSpaceP", "dataSource"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "dismiss"]
+- !private ["So17UICoordinateSpaceP", "isHidden"]
 - !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
+- !private ["So17UICoordinateSpaceP", "scrollToRow"]
 - !private ["So17UICoordinateSpaceP", "setDefaultStyle"]
+- !private ["So17UICoordinateSpaceP", "show"]
 - !private ["So17UICoordinateSpaceP", "showSuccess"]
 - !private ["So17UICoordinateSpaceP", "tag"]
 - !private ["So17UICoordinateSpaceP", "text"]
@@ -1292,13 +1381,18 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "delegate"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
+- !private ["So23UIDataSourceTranslatingP", "scrollToRow"]
+- !private ["So13UIDynamicItemP", "addGestureRecognizer"]
 - !private ["So13UIDynamicItemP", "dataSource"]
 - !private ["So13UIDynamicItemP", "delegate"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "dismiss"]
+- !private ["So13UIDynamicItemP", "isHidden"]
 - !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "reloadData"]
+- !private ["So13UIDynamicItemP", "scrollToRow"]
 - !private ["So13UIDynamicItemP", "setDefaultStyle"]
+- !private ["So13UIDynamicItemP", "show"]
 - !private ["So13UIDynamicItemP", "showSuccess"]
 - !private ["So13UIDynamicItemP", "tag"]
 - !private ["So13UIDynamicItemP", "text"]
@@ -1309,19 +1403,20 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Array"]
 - !private ["So18UIFocusEnvironmentP", "CGSize"]
 - !private ["So18UIFocusEnvironmentP", "FIRAuth"]
-- !private ["So18UIFocusEnvironmentP", "FIRDataEventType"]
 - !private ["So18UIFocusEnvironmentP", "FIRDatabase"]
 - !private ["So18UIFocusEnvironmentP", "Int"]
+- !private ["So18UIFocusEnvironmentP", "NSIndexPath"]
 - !private ["So18UIFocusEnvironmentP", "SVProgressHUD"]
 - !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertControllerStyle"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
-- !private ["So18UIFocusEnvironmentP", "activeUsersObj"]
-- !private ["So18UIFocusEnvironmentP", "activeUsersUids"]
+- !private ["So18UIFocusEnvironmentP", "UITapGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "addAction"]
+- !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "bgImage"]
+- !private ["So18UIFocusEnvironmentP", "btnReload"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
@@ -1336,6 +1431,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isHidden"]
 - !private ["So18UIFocusEnvironmentP", "lUserDataModel"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
@@ -1343,6 +1439,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "present"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "reloadData"]
+- !private ["So18UIFocusEnvironmentP", "reloadList"]
+- !private ["So18UIFocusEnvironmentP", "scrollToRow"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDecelerating"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDragging"]
@@ -1359,6 +1457,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "sectionIndexTitles"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitlesForTableView"]
 - !private ["So18UIFocusEnvironmentP", "setDefaultStyle"]
+- !private ["So18UIFocusEnvironmentP", "show"]
 - !private ["So18UIFocusEnvironmentP", "showSuccess"]
 - !private ["So18UIFocusEnvironmentP", "signingOut"]
 - !private ["So18UIFocusEnvironmentP", "storyboard"]
@@ -1371,18 +1470,24 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "userObj"]
 - !private ["So18UIFocusEnvironmentP", "userStatus"]
 - !private ["So18UIFocusEnvironmentP", "userTable"]
+- !private ["So18UIFocusEnvironmentP", "usersObj"]
+- !private ["So18UIFocusEnvironmentP", "usersUIDs"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UIFocusEnvironmentP", "viewWillDisappear"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "addGestureRecognizer"]
 - !private ["So11UIFocusItemP", "dataSource"]
 - !private ["So11UIFocusItemP", "delegate"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "dismiss"]
+- !private ["So11UIFocusItemP", "isHidden"]
 - !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "reloadData"]
+- !private ["So11UIFocusItemP", "scrollToRow"]
 - !private ["So11UIFocusItemP", "setDefaultStyle"]
+- !private ["So11UIFocusItemP", "show"]
 - !private ["So11UIFocusItemP", "showSuccess"]
 - !private ["So11UIFocusItemP", "tag"]
 - !private ["So11UIFocusItemP", "text"]
@@ -1390,29 +1495,32 @@ depends-member:
 - !private ["So11UIFocusItemP", "userEmail"]
 - !private ["So11UIFocusItemP", "userName"]
 - !private ["So11UIFocusItemP", "userStatus"]
+- !private ["So19UIGestureRecognizerC", "init"]
 - !private ["So19UIGestureRecognizerC", "view"]
 - !private ["So27UIGestureRecognizerDelegateP", "userEmail"]
 - !private ["So27UIGestureRecognizerDelegateP", "userName"]
 - !private ["So27UIGestureRecognizerDelegateP", "userStatus"]
+- !private ["So11UIImageViewC", "addGestureRecognizer"]
+- !private ["So11UIImageViewC", "isHidden"]
 - !private ["So11UIImageViewC", "layer"]
 - !private ["So7UILabelC", "text"]
 - !private ["So7UILabelC", "textColor"]
 - !private ["So30UINavigationControllerDelegateP", "Array"]
 - !private ["So30UINavigationControllerDelegateP", "CGSize"]
 - !private ["So30UINavigationControllerDelegateP", "FIRAuth"]
-- !private ["So30UINavigationControllerDelegateP", "FIRDataEventType"]
 - !private ["So30UINavigationControllerDelegateP", "FIRDatabase"]
 - !private ["So30UINavigationControllerDelegateP", "Int"]
+- !private ["So30UINavigationControllerDelegateP", "NSIndexPath"]
 - !private ["So30UINavigationControllerDelegateP", "SVProgressHUD"]
 - !private ["So30UINavigationControllerDelegateP", "String"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertAction"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertController"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertControllerStyle"]
 - !private ["So30UINavigationControllerDelegateP", "UIColor"]
-- !private ["So30UINavigationControllerDelegateP", "activeUsersObj"]
-- !private ["So30UINavigationControllerDelegateP", "activeUsersUids"]
+- !private ["So30UINavigationControllerDelegateP", "UITapGestureRecognizer"]
 - !private ["So30UINavigationControllerDelegateP", "addAction"]
 - !private ["So30UINavigationControllerDelegateP", "bgImage"]
+- !private ["So30UINavigationControllerDelegateP", "btnReload"]
 - !private ["So30UINavigationControllerDelegateP", "dataSource"]
 - !private ["So30UINavigationControllerDelegateP", "fldcompany"]
 - !private ["So30UINavigationControllerDelegateP", "fldcreator"]
@@ -1429,6 +1537,7 @@ depends-member:
 - ["So30UINavigationControllerDelegateP", "numberOfSectionsInTableView"]
 - !private ["So30UINavigationControllerDelegateP", "present"]
 - !private ["So30UINavigationControllerDelegateP", "print"]
+- !private ["So30UINavigationControllerDelegateP", "reloadList"]
 - ["So30UINavigationControllerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UINavigationControllerDelegateP", "scrollViewDidEndDecelerating"]
 - ["So30UINavigationControllerDelegateP", "scrollViewDidEndDragging"]
@@ -1449,6 +1558,8 @@ depends-member:
 - ["So30UINavigationControllerDelegateP", "tableView"]
 - !private ["So30UINavigationControllerDelegateP", "userObj"]
 - !private ["So30UINavigationControllerDelegateP", "userTable"]
+- !private ["So30UINavigationControllerDelegateP", "usersObj"]
+- !private ["So30UINavigationControllerDelegateP", "usersUIDs"]
 - !private ["So30UINavigationControllerDelegateP", "viewDidLoad"]
 - ["So30UINavigationControllerDelegateP", "viewForZooming"]
 - ["So30UINavigationControllerDelegateP", "viewForZoomingInScrollView"]
@@ -1457,19 +1568,20 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Array"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
 - !private ["So30UIPasteConfigurationSupportingP", "FIRAuth"]
-- !private ["So30UIPasteConfigurationSupportingP", "FIRDataEventType"]
 - !private ["So30UIPasteConfigurationSupportingP", "FIRDatabase"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSIndexPath"]
 - !private ["So30UIPasteConfigurationSupportingP", "SVProgressHUD"]
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertControllerStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
-- !private ["So30UIPasteConfigurationSupportingP", "activeUsersObj"]
-- !private ["So30UIPasteConfigurationSupportingP", "activeUsersUids"]
+- !private ["So30UIPasteConfigurationSupportingP", "UITapGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "bgImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "btnReload"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
@@ -1484,6 +1596,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
 - !private ["So30UIPasteConfigurationSupportingP", "lUserDataModel"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
@@ -1491,6 +1604,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
+- !private ["So30UIPasteConfigurationSupportingP", "reloadList"]
+- !private ["So30UIPasteConfigurationSupportingP", "scrollToRow"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDecelerating"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDragging"]
@@ -1507,6 +1622,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitles"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitlesForTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "setDefaultStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "show"]
 - !private ["So30UIPasteConfigurationSupportingP", "showSuccess"]
 - !private ["So30UIPasteConfigurationSupportingP", "signingOut"]
 - !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
@@ -1519,6 +1635,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "userObj"]
 - !private ["So30UIPasteConfigurationSupportingP", "userStatus"]
 - !private ["So30UIPasteConfigurationSupportingP", "userTable"]
+- !private ["So30UIPasteConfigurationSupportingP", "usersObj"]
+- !private ["So30UIPasteConfigurationSupportingP", "usersUIDs"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
@@ -1529,12 +1647,12 @@ depends-member:
 - !private ["So11UIResponderC", "CGSize"]
 - !private ["So11UIResponderC", "FIRAuth"]
 - ["So11UIResponderC", "FIRAuthStateDidChangeListenerHandle"]
-- !private ["So11UIResponderC", "FIRDataEventType"]
 - !private ["So11UIResponderC", "FIRDatabase"]
 - !private ["So11UIResponderC", "FIRUser"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "ManageUserCell"]
+- !private ["So11UIResponderC", "NSIndexPath"]
 - !private ["So11UIResponderC", "SVProgressHUD"]
 - !private ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIAlertAction"]
@@ -1546,10 +1664,10 @@ depends-member:
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - ["So11UIResponderC", "UITapGestureRecognizer"]
-- !private ["So11UIResponderC", "activeUsersObj"]
-- !private ["So11UIResponderC", "activeUsersUids"]
 - !private ["So11UIResponderC", "addAction"]
+- !private ["So11UIResponderC", "addGestureRecognizer"]
 - ["So11UIResponderC", "bgImage"]
+- ["So11UIResponderC", "btnReload"]
 - ["So11UIResponderC", "btn_addUser"]
 - !private ["So11UIResponderC", "dataSource"]
 - !private ["So11UIResponderC", "delegate"]
@@ -1566,6 +1684,8 @@ depends-member:
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isHidden"]
+- ["So11UIResponderC", "isInitialState"]
 - !private ["So11UIResponderC", "lUserDataModel"]
 - !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "logout"]
@@ -1574,6 +1694,8 @@ depends-member:
 - !private ["So11UIResponderC", "present"]
 - !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "reloadData"]
+- ["So11UIResponderC", "reloadList"]
+- !private ["So11UIResponderC", "scrollToRow"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So11UIResponderC", "scrollViewDidEndDecelerating"]
 - ["So11UIResponderC", "scrollViewDidEndDragging"]
@@ -1590,6 +1712,7 @@ depends-member:
 - ["So11UIResponderC", "sectionIndexTitles"]
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
 - !private ["So11UIResponderC", "setDefaultStyle"]
+- !private ["So11UIResponderC", "show"]
 - !private ["So11UIResponderC", "showSuccess"]
 - ["So11UIResponderC", "signingOut"]
 - !private ["So11UIResponderC", "storyboard"]
@@ -1602,6 +1725,8 @@ depends-member:
 - !private ["So11UIResponderC", "userObj"]
 - !private ["So11UIResponderC", "userStatus"]
 - ["So11UIResponderC", "userTable"]
+- !private ["So11UIResponderC", "usersObj"]
+- !private ["So11UIResponderC", "usersUIDs"]
 - ["So11UIResponderC", "viewDidAppear"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
@@ -1610,19 +1735,20 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Array"]
 - !private ["So30UIResponderStandardEditActionsP", "CGSize"]
 - !private ["So30UIResponderStandardEditActionsP", "FIRAuth"]
-- !private ["So30UIResponderStandardEditActionsP", "FIRDataEventType"]
 - !private ["So30UIResponderStandardEditActionsP", "FIRDatabase"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
+- !private ["So30UIResponderStandardEditActionsP", "NSIndexPath"]
 - !private ["So30UIResponderStandardEditActionsP", "SVProgressHUD"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertControllerStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
-- !private ["So30UIResponderStandardEditActionsP", "activeUsersObj"]
-- !private ["So30UIResponderStandardEditActionsP", "activeUsersUids"]
+- !private ["So30UIResponderStandardEditActionsP", "UITapGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
+- !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "bgImage"]
+- !private ["So30UIResponderStandardEditActionsP", "btnReload"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
@@ -1637,6 +1763,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isHidden"]
 - !private ["So30UIResponderStandardEditActionsP", "lUserDataModel"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
@@ -1644,6 +1771,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "present"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
+- !private ["So30UIResponderStandardEditActionsP", "reloadList"]
+- !private ["So30UIResponderStandardEditActionsP", "scrollToRow"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDecelerating"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDragging"]
@@ -1660,6 +1789,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitles"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitlesForTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "setDefaultStyle"]
+- !private ["So30UIResponderStandardEditActionsP", "show"]
 - !private ["So30UIResponderStandardEditActionsP", "showSuccess"]
 - !private ["So30UIResponderStandardEditActionsP", "signingOut"]
 - !private ["So30UIResponderStandardEditActionsP", "storyboard"]
@@ -1672,6 +1802,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "userObj"]
 - !private ["So30UIResponderStandardEditActionsP", "userStatus"]
 - !private ["So30UIResponderStandardEditActionsP", "userTable"]
+- !private ["So30UIResponderStandardEditActionsP", "usersObj"]
+- !private ["So30UIResponderStandardEditActionsP", "usersUIDs"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
@@ -1681,21 +1813,22 @@ depends-member:
 - !private ["So12UIScrollViewC", "delegate"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "reloadData"]
+- !private ["So12UIScrollViewC", "scrollToRow"]
 - !private ["So20UIScrollViewDelegateP", "Array"]
 - !private ["So20UIScrollViewDelegateP", "CGSize"]
 - !private ["So20UIScrollViewDelegateP", "FIRAuth"]
-- !private ["So20UIScrollViewDelegateP", "FIRDataEventType"]
 - !private ["So20UIScrollViewDelegateP", "FIRDatabase"]
 - !private ["So20UIScrollViewDelegateP", "Int"]
+- !private ["So20UIScrollViewDelegateP", "NSIndexPath"]
 - !private ["So20UIScrollViewDelegateP", "SVProgressHUD"]
 - !private ["So20UIScrollViewDelegateP", "String"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertController"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertControllerStyle"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
-- !private ["So20UIScrollViewDelegateP", "activeUsersObj"]
-- !private ["So20UIScrollViewDelegateP", "activeUsersUids"]
+- !private ["So20UIScrollViewDelegateP", "UITapGestureRecognizer"]
 - !private ["So20UIScrollViewDelegateP", "bgImage"]
+- !private ["So20UIScrollViewDelegateP", "btnReload"]
 - !private ["So20UIScrollViewDelegateP", "dataSource"]
 - !private ["So20UIScrollViewDelegateP", "fldcompany"]
 - !private ["So20UIScrollViewDelegateP", "fldcreator"]
@@ -1711,6 +1844,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So20UIScrollViewDelegateP", "present"]
 - !private ["So20UIScrollViewDelegateP", "print"]
+- !private ["So20UIScrollViewDelegateP", "reloadList"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDragging"]
@@ -1731,6 +1865,8 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "userObj"]
 - !private ["So20UIScrollViewDelegateP", "userTable"]
+- !private ["So20UIScrollViewDelegateP", "usersObj"]
+- !private ["So20UIScrollViewDelegateP", "usersUIDs"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
 - ["So20UIScrollViewDelegateP", ""]
@@ -1740,22 +1876,23 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "scrollToRow"]
 - !private ["So16UIStateRestoringP", "Array"]
 - !private ["So16UIStateRestoringP", "CGSize"]
 - !private ["So16UIStateRestoringP", "FIRAuth"]
-- !private ["So16UIStateRestoringP", "FIRDataEventType"]
 - !private ["So16UIStateRestoringP", "FIRDatabase"]
 - !private ["So16UIStateRestoringP", "Int"]
+- !private ["So16UIStateRestoringP", "NSIndexPath"]
 - !private ["So16UIStateRestoringP", "SVProgressHUD"]
 - !private ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIAlertControllerStyle"]
 - !private ["So16UIStateRestoringP", "UIColor"]
-- !private ["So16UIStateRestoringP", "activeUsersObj"]
-- !private ["So16UIStateRestoringP", "activeUsersUids"]
+- !private ["So16UIStateRestoringP", "UITapGestureRecognizer"]
 - !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "bgImage"]
+- !private ["So16UIStateRestoringP", "btnReload"]
 - !private ["So16UIStateRestoringP", "dataSource"]
 - !private ["So16UIStateRestoringP", "fldcompany"]
 - !private ["So16UIStateRestoringP", "fldcreator"]
@@ -1772,6 +1909,7 @@ depends-member:
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
 - !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "reloadList"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDragging"]
@@ -1792,6 +1930,8 @@ depends-member:
 - ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "userObj"]
 - !private ["So16UIStateRestoringP", "userTable"]
+- !private ["So16UIStateRestoringP", "usersObj"]
+- !private ["So16UIStateRestoringP", "usersUIDs"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
@@ -1801,19 +1941,19 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "Array"]
 - !private ["So26UITabBarControllerDelegateP", "CGSize"]
 - !private ["So26UITabBarControllerDelegateP", "FIRAuth"]
-- !private ["So26UITabBarControllerDelegateP", "FIRDataEventType"]
 - !private ["So26UITabBarControllerDelegateP", "FIRDatabase"]
 - !private ["So26UITabBarControllerDelegateP", "Int"]
+- !private ["So26UITabBarControllerDelegateP", "NSIndexPath"]
 - !private ["So26UITabBarControllerDelegateP", "SVProgressHUD"]
 - !private ["So26UITabBarControllerDelegateP", "String"]
 - !private ["So26UITabBarControllerDelegateP", "UIAlertAction"]
 - !private ["So26UITabBarControllerDelegateP", "UIAlertController"]
 - !private ["So26UITabBarControllerDelegateP", "UIAlertControllerStyle"]
 - !private ["So26UITabBarControllerDelegateP", "UIColor"]
-- !private ["So26UITabBarControllerDelegateP", "activeUsersObj"]
-- !private ["So26UITabBarControllerDelegateP", "activeUsersUids"]
+- !private ["So26UITabBarControllerDelegateP", "UITapGestureRecognizer"]
 - !private ["So26UITabBarControllerDelegateP", "addAction"]
 - !private ["So26UITabBarControllerDelegateP", "bgImage"]
+- !private ["So26UITabBarControllerDelegateP", "btnReload"]
 - !private ["So26UITabBarControllerDelegateP", "dataSource"]
 - !private ["So26UITabBarControllerDelegateP", "fldcompany"]
 - !private ["So26UITabBarControllerDelegateP", "fldcreator"]
@@ -1830,6 +1970,7 @@ depends-member:
 - ["So26UITabBarControllerDelegateP", "numberOfSectionsInTableView"]
 - !private ["So26UITabBarControllerDelegateP", "present"]
 - !private ["So26UITabBarControllerDelegateP", "print"]
+- !private ["So26UITabBarControllerDelegateP", "reloadList"]
 - ["So26UITabBarControllerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26UITabBarControllerDelegateP", "scrollViewDidEndDecelerating"]
 - ["So26UITabBarControllerDelegateP", "scrollViewDidEndDragging"]
@@ -1850,6 +1991,8 @@ depends-member:
 - ["So26UITabBarControllerDelegateP", "tableView"]
 - !private ["So26UITabBarControllerDelegateP", "userObj"]
 - !private ["So26UITabBarControllerDelegateP", "userTable"]
+- !private ["So26UITabBarControllerDelegateP", "usersObj"]
+- !private ["So26UITabBarControllerDelegateP", "usersUIDs"]
 - !private ["So26UITabBarControllerDelegateP", "viewDidLoad"]
 - ["So26UITabBarControllerDelegateP", "viewForZooming"]
 - ["So26UITabBarControllerDelegateP", "viewForZoomingInScrollView"]
@@ -1859,24 +2002,25 @@ depends-member:
 - !private ["So11UITableViewC", "delegate"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "reloadData"]
+- !private ["So11UITableViewC", "scrollToRow"]
 - !private ["So15UITableViewCellC", "userEmail"]
 - !private ["So15UITableViewCellC", "userName"]
 - !private ["So15UITableViewCellC", "userStatus"]
 - !private ["So21UITableViewDataSourceP", "Array"]
 - !private ["So21UITableViewDataSourceP", "CGSize"]
 - !private ["So21UITableViewDataSourceP", "FIRAuth"]
-- !private ["So21UITableViewDataSourceP", "FIRDataEventType"]
 - !private ["So21UITableViewDataSourceP", "FIRDatabase"]
 - !private ["So21UITableViewDataSourceP", "Int"]
+- !private ["So21UITableViewDataSourceP", "NSIndexPath"]
 - !private ["So21UITableViewDataSourceP", "SVProgressHUD"]
 - !private ["So21UITableViewDataSourceP", "String"]
 - !private ["So21UITableViewDataSourceP", "UIAlertAction"]
 - !private ["So21UITableViewDataSourceP", "UIAlertController"]
 - !private ["So21UITableViewDataSourceP", "UIAlertControllerStyle"]
 - !private ["So21UITableViewDataSourceP", "UIColor"]
-- !private ["So21UITableViewDataSourceP", "activeUsersObj"]
-- !private ["So21UITableViewDataSourceP", "activeUsersUids"]
+- !private ["So21UITableViewDataSourceP", "UITapGestureRecognizer"]
 - !private ["So21UITableViewDataSourceP", "bgImage"]
+- !private ["So21UITableViewDataSourceP", "btnReload"]
 - !private ["So21UITableViewDataSourceP", "dataSource"]
 - !private ["So21UITableViewDataSourceP", "fldcompany"]
 - !private ["So21UITableViewDataSourceP", "fldcreator"]
@@ -1892,6 +2036,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
 - !private ["So21UITableViewDataSourceP", "present"]
 - !private ["So21UITableViewDataSourceP", "print"]
+- !private ["So21UITableViewDataSourceP", "reloadList"]
 - ["So21UITableViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDecelerating"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDragging"]
@@ -1912,24 +2057,26 @@ depends-member:
 - ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "userObj"]
 - !private ["So21UITableViewDataSourceP", "userTable"]
+- !private ["So21UITableViewDataSourceP", "usersObj"]
+- !private ["So21UITableViewDataSourceP", "usersUIDs"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So19UITableViewDelegateP", "Array"]
 - !private ["So19UITableViewDelegateP", "CGSize"]
 - !private ["So19UITableViewDelegateP", "FIRAuth"]
-- !private ["So19UITableViewDelegateP", "FIRDataEventType"]
 - !private ["So19UITableViewDelegateP", "FIRDatabase"]
 - !private ["So19UITableViewDelegateP", "Int"]
+- !private ["So19UITableViewDelegateP", "NSIndexPath"]
 - !private ["So19UITableViewDelegateP", "SVProgressHUD"]
 - !private ["So19UITableViewDelegateP", "String"]
 - !private ["So19UITableViewDelegateP", "UIAlertAction"]
 - !private ["So19UITableViewDelegateP", "UIAlertController"]
 - !private ["So19UITableViewDelegateP", "UIAlertControllerStyle"]
 - !private ["So19UITableViewDelegateP", "UIColor"]
-- !private ["So19UITableViewDelegateP", "activeUsersObj"]
-- !private ["So19UITableViewDelegateP", "activeUsersUids"]
+- !private ["So19UITableViewDelegateP", "UITapGestureRecognizer"]
 - !private ["So19UITableViewDelegateP", "bgImage"]
+- !private ["So19UITableViewDelegateP", "btnReload"]
 - !private ["So19UITableViewDelegateP", "dataSource"]
 - !private ["So19UITableViewDelegateP", "fldcompany"]
 - !private ["So19UITableViewDelegateP", "fldcreator"]
@@ -1945,6 +2092,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So19UITableViewDelegateP", "present"]
 - !private ["So19UITableViewDelegateP", "print"]
+- !private ["So19UITableViewDelegateP", "reloadList"]
 - ["So19UITableViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDragging"]
@@ -1965,26 +2113,31 @@ depends-member:
 - ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "userObj"]
 - !private ["So19UITableViewDelegateP", "userTable"]
+- !private ["So19UITableViewDelegateP", "usersObj"]
+- !private ["So19UITableViewDelegateP", "usersUIDs"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
 - ["So19UITableViewDelegateP", ""]
+- !private ["SC25UITableViewScrollPositionO", "top"]
+- !private ["So22UITapGestureRecognizerC", "init"]
 - !private ["So22UITapGestureRecognizerC", "view"]
 - !private ["So18UITraitEnvironmentP", "Array"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
 - !private ["So18UITraitEnvironmentP", "FIRAuth"]
-- !private ["So18UITraitEnvironmentP", "FIRDataEventType"]
 - !private ["So18UITraitEnvironmentP", "FIRDatabase"]
 - !private ["So18UITraitEnvironmentP", "Int"]
+- !private ["So18UITraitEnvironmentP", "NSIndexPath"]
 - !private ["So18UITraitEnvironmentP", "SVProgressHUD"]
 - !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIAlertControllerStyle"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
-- !private ["So18UITraitEnvironmentP", "activeUsersObj"]
-- !private ["So18UITraitEnvironmentP", "activeUsersUids"]
+- !private ["So18UITraitEnvironmentP", "UITapGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "addAction"]
+- !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "bgImage"]
+- !private ["So18UITraitEnvironmentP", "btnReload"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
@@ -1999,6 +2152,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isHidden"]
 - !private ["So18UITraitEnvironmentP", "lUserDataModel"]
 - !private ["So18UITraitEnvironmentP", "layer"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
@@ -2006,6 +2160,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "reloadData"]
+- !private ["So18UITraitEnvironmentP", "reloadList"]
+- !private ["So18UITraitEnvironmentP", "scrollToRow"]
 - ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDecelerating"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDragging"]
@@ -2022,6 +2178,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "sectionIndexTitles"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitlesForTableView"]
 - !private ["So18UITraitEnvironmentP", "setDefaultStyle"]
+- !private ["So18UITraitEnvironmentP", "show"]
 - !private ["So18UITraitEnvironmentP", "showSuccess"]
 - !private ["So18UITraitEnvironmentP", "signingOut"]
 - !private ["So18UITraitEnvironmentP", "storyboard"]
@@ -2034,18 +2191,24 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "userObj"]
 - !private ["So18UITraitEnvironmentP", "userStatus"]
 - !private ["So18UITraitEnvironmentP", "userTable"]
+- !private ["So18UITraitEnvironmentP", "usersObj"]
+- !private ["So18UITraitEnvironmentP", "usersUIDs"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UITraitEnvironmentP", "viewWillDisappear"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "addGestureRecognizer"]
 - !private ["So6UIViewC", "dataSource"]
 - !private ["So6UIViewC", "delegate"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "dismiss"]
+- !private ["So6UIViewC", "isHidden"]
 - !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "reloadData"]
+- !private ["So6UIViewC", "scrollToRow"]
 - !private ["So6UIViewC", "setDefaultStyle"]
+- !private ["So6UIViewC", "show"]
 - !private ["So6UIViewC", "showSuccess"]
 - !private ["So6UIViewC", "tag"]
 - !private ["So6UIViewC", "text"]
@@ -2058,12 +2221,12 @@ depends-member:
 - !private ["So16UIViewControllerC", "CGSize"]
 - !private ["So16UIViewControllerC", "FIRAuth"]
 - ["So16UIViewControllerC", "FIRAuthStateDidChangeListenerHandle"]
-- !private ["So16UIViewControllerC", "FIRDataEventType"]
 - !private ["So16UIViewControllerC", "FIRDatabase"]
 - !private ["So16UIViewControllerC", "FIRUser"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "ManageUserCell"]
+- !private ["So16UIViewControllerC", "NSIndexPath"]
 - !private ["So16UIViewControllerC", "SVProgressHUD"]
 - !private ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
@@ -2075,10 +2238,9 @@ depends-member:
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - ["So16UIViewControllerC", "UITapGestureRecognizer"]
-- !private ["So16UIViewControllerC", "activeUsersObj"]
-- !private ["So16UIViewControllerC", "activeUsersUids"]
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "bgImage"]
+- ["So16UIViewControllerC", "btnReload"]
 - ["So16UIViewControllerC", "btn_addUser"]
 - !private ["So16UIViewControllerC", "dataSource"]
 - ["So16UIViewControllerC", "deleteUserButton"]
@@ -2092,12 +2254,14 @@ depends-member:
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "isInitialState"]
 - !private ["So16UIViewControllerC", "lUserDataModel"]
 - ["So16UIViewControllerC", "logout"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "reloadList"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
 - ["So16UIViewControllerC", "scrollViewDidEndDragging"]
@@ -2118,6 +2282,8 @@ depends-member:
 - ["So16UIViewControllerC", "tableView"]
 - !private ["So16UIViewControllerC", "userObj"]
 - ["So16UIViewControllerC", "userTable"]
+- !private ["So16UIViewControllerC", "usersObj"]
+- !private ["So16UIViewControllerC", "usersUIDs"]
 - ["So16UIViewControllerC", "viewDidAppear"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
@@ -2127,19 +2293,19 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "Array"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "CGSize"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "FIRAuth"]
-- !private ["So37UIViewControllerTransitioningDelegateP", "FIRDataEventType"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "FIRDatabase"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "Int"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "NSIndexPath"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "SVProgressHUD"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "String"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertAction"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertController"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertControllerStyle"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIColor"]
-- !private ["So37UIViewControllerTransitioningDelegateP", "activeUsersObj"]
-- !private ["So37UIViewControllerTransitioningDelegateP", "activeUsersUids"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UITapGestureRecognizer"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "addAction"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "bgImage"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "btnReload"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "dataSource"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "fldcompany"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "fldcreator"]
@@ -2156,6 +2322,7 @@ depends-member:
 - ["So37UIViewControllerTransitioningDelegateP", "numberOfSectionsInTableView"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "present"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "print"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "reloadList"]
 - ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidEndDecelerating"]
 - ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidEndDragging"]
@@ -2176,6 +2343,8 @@ depends-member:
 - ["So37UIViewControllerTransitioningDelegateP", "tableView"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "userObj"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "userTable"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "usersObj"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "usersUIDs"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "viewDidLoad"]
 - ["So37UIViewControllerTransitioningDelegateP", "viewForZooming"]
 - ["So37UIViewControllerTransitioningDelegateP", "viewForZoomingInScrollView"]
@@ -2183,6 +2352,7 @@ depends-member:
 - ["So37UIViewControllerTransitioningDelegateP", ""]
 - !private ["4Test10UserObjectC", "accountName"]
 - !private ["4Test10UserObjectC", "creatorName"]
+- !private ["4Test10UserObjectC", "invitedUsersPath"]
 - !private ["4Test10UserObjectC", "listenerPath"]
 - !private ["4Test10UserObjectC", "manageuserPath"]
 - !private ["4Test10UserObjectC", "resetObj"]
@@ -2193,12 +2363,12 @@ depends-member:
 - !private ["4Test20VC_ACreator_HomePageC", "CGSize"]
 - !private ["4Test20VC_ACreator_HomePageC", "FIRAuth"]
 - ["4Test20VC_ACreator_HomePageC", "FIRAuthStateDidChangeListenerHandle"]
-- !private ["4Test20VC_ACreator_HomePageC", "FIRDataEventType"]
 - !private ["4Test20VC_ACreator_HomePageC", "FIRDatabase"]
 - !private ["4Test20VC_ACreator_HomePageC", "FIRUser"]
 - ["4Test20VC_ACreator_HomePageC", "IndexPath"]
 - ["4Test20VC_ACreator_HomePageC", "Int"]
 - !private ["4Test20VC_ACreator_HomePageC", "ManageUserCell"]
+- !private ["4Test20VC_ACreator_HomePageC", "NSIndexPath"]
 - !private ["4Test20VC_ACreator_HomePageC", "SVProgressHUD"]
 - !private ["4Test20VC_ACreator_HomePageC", "String"]
 - !private ["4Test20VC_ACreator_HomePageC", "UIAlertAction"]
@@ -2210,9 +2380,8 @@ depends-member:
 - ["4Test20VC_ACreator_HomePageC", "UITableView"]
 - ["4Test20VC_ACreator_HomePageC", "UITableViewCell"]
 - ["4Test20VC_ACreator_HomePageC", "UITapGestureRecognizer"]
-- !private ["4Test20VC_ACreator_HomePageC", "activeUsersObj"]
-- !private ["4Test20VC_ACreator_HomePageC", "activeUsersUids"]
 - ["4Test20VC_ACreator_HomePageC", "bgImage"]
+- ["4Test20VC_ACreator_HomePageC", "btnReload"]
 - ["4Test20VC_ACreator_HomePageC", "btn_addUser"]
 - !private ["4Test20VC_ACreator_HomePageC", "dataSource"]
 - ["4Test20VC_ACreator_HomePageC", "deinit"]
@@ -2227,12 +2396,14 @@ depends-member:
 - ["4Test20VC_ACreator_HomePageC", "indexPathForPreferredFocusedView"]
 - ["4Test20VC_ACreator_HomePageC", "indexPathForPreferredFocusedViewInTableView"]
 - ["4Test20VC_ACreator_HomePageC", "init"]
+- ["4Test20VC_ACreator_HomePageC", "isInitialState"]
 - !private ["4Test20VC_ACreator_HomePageC", "lUserDataModel"]
 - ["4Test20VC_ACreator_HomePageC", "logout"]
 - ["4Test20VC_ACreator_HomePageC", "numberOfSections"]
 - ["4Test20VC_ACreator_HomePageC", "numberOfSectionsInTableView"]
 - !private ["4Test20VC_ACreator_HomePageC", "present"]
 - !private ["4Test20VC_ACreator_HomePageC", "print"]
+- ["4Test20VC_ACreator_HomePageC", "reloadList"]
 - ["4Test20VC_ACreator_HomePageC", "scrollViewDidChangeAdjustedContentInset"]
 - ["4Test20VC_ACreator_HomePageC", "scrollViewDidEndDecelerating"]
 - ["4Test20VC_ACreator_HomePageC", "scrollViewDidEndDragging"]
@@ -2253,6 +2424,8 @@ depends-member:
 - ["4Test20VC_ACreator_HomePageC", "tableView"]
 - !private ["4Test20VC_ACreator_HomePageC", "userObj"]
 - ["4Test20VC_ACreator_HomePageC", "userTable"]
+- !private ["4Test20VC_ACreator_HomePageC", "usersObj"]
+- !private ["4Test20VC_ACreator_HomePageC", "usersUIDs"]
 - ["4Test20VC_ACreator_HomePageC", "viewDidAppear"]
 - ["4Test20VC_ACreator_HomePageC", "viewDidLoad"]
 - ["4Test20VC_ACreator_HomePageC", "viewForZooming"]
@@ -2268,13 +2441,17 @@ depends-member:
 - !private ["s23_BidirectionalIndexableP", "row"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataSource"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dismiss"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "scrollToRow"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setDefaultStyle"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "show"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "showSuccess"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tag"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
@@ -2294,7 +2471,8 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
-- !private ["s26_ExpressibleByColorLiteralP", "green"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "red"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "count"]
@@ -2310,22 +2488,23 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Array"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRAuth"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRDataEventType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRDatabase"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSIndexPath"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SVProgressHUD"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertControllerStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "activeUsersObj"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "activeUsersUids"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UITapGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addStateDidChangeListener"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bgImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "btnReload"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
@@ -2335,7 +2514,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fldcompany"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fldcreator"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fldusername"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "green"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "handle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideKeyboardWhenTappedAround"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageDataModel"]
@@ -2344,18 +2522,21 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lUserDataModel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "masksToBounds"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "observe"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "red"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadList"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeAllObservers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeStateDidChangeListener"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollToRow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDragging"]
@@ -2377,6 +2558,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOpacity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shouldRasterize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showSuccess"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "signOut"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "signingOut"]
@@ -2391,6 +2573,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userStatus"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userTable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "usersObj"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "usersUIDs"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
@@ -2451,7 +2635,6 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So7FIRAuthC"
-- !private "SC16FIRDataEventTypeO"
 - !private "So11FIRDatabaseC"
 - !private "So16FIRDatabaseQueryC"
 - !private "So20FIRDatabaseReferenceC"
@@ -2469,6 +2652,7 @@ depends-nominal:
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
+- !private "So11NSIndexPathC"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
@@ -2525,6 +2709,7 @@ depends-nominal:
 - !private "So15UITableViewCellC"
 - "So21UITableViewDataSourceP"
 - "So19UITableViewDelegateP"
+- !private "SC25UITableViewScrollPositionO"
 - !private "So22UITapGestureRecognizerC"
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
@@ -2560,11 +2745,11 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/Spring.swiftmodule/arm64.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm64.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/arm64.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/Spring.swiftmodule/arm64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/arm64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -2579,108 +2764,108 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Test-Bridging-Header.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Test/Test-Bridging-Header.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "8d30c843a1ba01abda2cd57d51ff7be3"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+interface-hash: "8aa8fcb62f1624161d647044ad5628ab"

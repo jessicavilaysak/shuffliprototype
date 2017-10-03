@@ -199,6 +199,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/Spring/Spring-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Spring.build/unextended-module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Target Support Files/Spring/Spring-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Intermediates/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Spring.build/unextended-module.modulemap"
 interface-hash: "ed71ea5f13aad498bbe7bc96a54c0844"

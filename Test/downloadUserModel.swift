@@ -27,61 +27,107 @@ struct userData {
 
 struct userDataModel {
     
+    
+    
     init() {
-        activeUsersObj = [:];
+        
     }
     
-    public func instantiateUsers(snapshot: FIRDataSnapshot, completion: @escaping (Bool) -> ())
-    {
+    private mutating func sortActiveUsers(completion: @escaping (Bool) -> ()) {
+        
         let userDataGroup = DispatchGroup() // group of completion handlers for user data (username, email etc)
-        
-        activeUsersObj = [:];
-        activeUsersUids = Array<String>();
-        for imageSnapshot in snapshot.children{
-            let imgS = imageSnapshot as! FIRDataSnapshot;
-            if(imgS.key == userObj.uid)
-            {
-                continue;
-            }
-            activeUsersUids.append(imgS.key);
-            activeUsersObj[imgS.key] = ["role": (imgS.value as! String), "uid": imgS.key];
-        }
-        
-        for uid in activeUsersUids {
-            //enter the user data group
-            userDataGroup.enter()
-            FIRDatabase.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
-                // Get user value
-                if(snapshot.exists())
+        FIRDatabase.database().reference().child(userObj.manageuserPath).observeSingleEvent(of: .value, with:{ (snapshot) in
+            lActiveUserIDs = Array<String>();
+            for imageSnapshot in snapshot.children{
+                let imgS = imageSnapshot as! FIRDataSnapshot;
+                if(imgS.key == userObj.uid)
                 {
-                    let value = snapshot.value as? NSDictionary
-                    print("inside snapshot");
-                    print(value);
-                    var lUsername = "";
-                    if(value!["username"] != nil)
-                    {
-                        lUsername = value!["username"] as! String;
-                    }
-                    activeUsersObj[uid]!["username"] = lUsername;
-                    var lEmail = "";
-                    if(value!["email"] != nil)
-                    {
-                        lEmail = value!["email"] as! String;
-                    }
-                    activeUsersObj[uid]!["email"] = lEmail;
-                    activeUsersObj[uid]!["status"] = "Active";
+                    continue;
                 }
-                userDataGroup.leave()
-            }) { (error) in
-                print(error.localizedDescription)
-                userDataGroup.leave()
+                lActiveUserIDs.append(imgS.key);
+                usersObj[imgS.key] = ["role": (imgS.value as! String), "uid": imgS.key];
+            }
+            
+            for uid in lActiveUserIDs {
+                //enter the user data group
+                userDataGroup.enter()
+                FIRDatabase.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                    // Get user value
+                    if(snapshot.exists())
+                    {
+                        let value = snapshot.value as? NSDictionary
+                        print("inside snapshot");
+                        var lUsername = "";
+                        if(value!["username"] != nil)
+                        {
+                            lUsername = value!["username"] as! String;
+                        }
+                        usersObj[uid]!["username"] = lUsername;
+                        var lEmail = "";
+                        if(value!["email"] != nil)
+                        {
+                            lEmail = value!["email"] as! String;
+                        }
+                        usersObj[uid]!["email"] = lEmail;
+                        usersObj[uid]!["status"] = "Active";
+                    }
+                    userDataGroup.leave()
+                }) { (error) in
+                    print(error.localizedDescription)
+                    userDataGroup.leave()
+                }
+            }
+            userDataGroup.notify(queue: .main) {
+                print("Finished all user data requests.")
+                completion(true);
+            }
+        })
+        
+    }
+    
+    
+    
+    private mutating func sortPendingUsers(completion: @escaping (Bool) -> ()) {
+        
+        FIRDatabase.database().reference().child(userObj.invitedUsersPath).observeSingleEvent(of: .value, with: { (snapshot) in
+            for imageSnapshot in snapshot.children{
+                let imgS = imageSnapshot as! FIRDataSnapshot;
+                let value = imgS.value as! NSDictionary;
+                lPendingUserIDs.append(imgS.key);
+                usersObj[imgS.key] = ["email": (value["email"] as! String), "status": "Pending"];
+            }
+            
+            completion(true);
+        })
+    }
+    
+    public mutating func instantiateUsers(completion: @escaping (Bool) -> ())
+    {
+        usersUIDs = Array<String>();
+        lActiveUserIDs = Array<String>();
+        lPendingUserIDs = Array<String>();
+        
+        lUserDataModel.sortActiveUsers(){success in
+            if success {
+                lUserDataModel.sortPendingUsers(){success in
+                    if success {
+                        for a in lActiveUserIDs {
+                            usersUIDs.append(a);
+                        }
+                        for b in lPendingUserIDs {
+                            usersUIDs.append(b);
+                        }
+                        print("Finished all manage user requests.")
+                        completion(true);
+                    }
+                }
             }
         }
         
-        userDataGroup.notify(queue: .main) {
-            print("Finished all user data requests.")
-            completion(true);
-        }
+        
+        
+       
+        
     }
     
     func getUserInfo(userUid: String, completion: @escaping (Bool) -> ()) {
@@ -97,22 +143,26 @@ struct userDataModel {
                 {
                     email = s["email"] as! String;
                 }
-                activeUsersObj[snapshot.key]!["username"] = username;
-                activeUsersObj[snapshot.key]!["email"] = email;
+                usersObj[snapshot.key]!["username"] = username;
+                usersObj[snapshot.key]!["email"] = email;
                 completion(true);
             }});
     }
     
     func getUserUid(element: Int) -> String{
-        return activeUsersUids[element];
+        return usersUIDs[element];
     }
     
     func getUserObj(uid: String) -> [String:String] {
-        return activeUsersObj[uid]!;
+        return usersObj[uid]!;
     }
 }
 
-var activeUsersUids = Array<String>();
-var activeUsersObj = [String:[String:String]]();
+var usersUIDs = Array<String>();
+var usersObj = [String:[String:String]]();
+
+var lActiveUserIDs = Array<String>();
+var lPendingUserIDs = Array<String>();
+
 var lUserDataModel = userDataModel();
 

@@ -2,191 +2,601 @@
 provides-top-level:
 - "CustomCellCreator"
 provides-nominal:
-- "C4Test17CustomCellCreator"
+- "4Test17CustomCellCreatorC"
 provides-member:
-- ["C4Test17CustomCellCreator", ""]
+- ["4Test17CustomCellCreatorC", ""]
 provides-dynamic-lookup:
+- "approveStatus"
 - "awakeFromNib"
+- "cardviewBg"
 - "imageCaption"
 - "photo"
 - "setSelected"
+- "updateUi"
+- "vfView"
+- "visualEffect"
 depends-top-level:
+- !private "/"
+- "AssignmentPrecedence"
 - "Bool"
+- !private "BooleanLiteralType"
+- !private "CGSize"
 - "CustomCellCreator"
+- !private "UIColor"
 - "UIImageView"
 - "UILabel"
 - "UITableViewCell"
+- "UIView"
+- "UIVisualEffectView"
 depends-member:
-- !private ["Ps9AnyObject", "awakeFromNib"]
-- !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "setSelected"]
-- ["Ps9AnyObject", ""]
-- !private ["PSo15CALayerDelegate", "awakeFromNib"]
-- !private ["PSo15CALayerDelegate", "init"]
-- !private ["PSo15CALayerDelegate", "setSelected"]
-- ["PSo15CALayerDelegate", ""]
-- !private ["Ps7CVarArg", "awakeFromNib"]
-- !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "setSelected"]
-- ["Ps7CVarArg", ""]
-- ["C4Test17CustomCellCreator", "Bool"]
-- ["C4Test17CustomCellCreator", "UIImageView"]
-- ["C4Test17CustomCellCreator", "UILabel"]
-- ["C4Test17CustomCellCreator", "awakeFromNib"]
-- ["C4Test17CustomCellCreator", "deinit"]
-- ["C4Test17CustomCellCreator", "imageCaption"]
-- ["C4Test17CustomCellCreator", "init"]
-- ["C4Test17CustomCellCreator", "photo"]
-- ["C4Test17CustomCellCreator", "setSelected"]
-- !private ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "setSelected"]
-- ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "awakeFromNib"]
-- !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "setSelected"]
-- ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "awakeFromNib"]
-- !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "setSelected"]
-- ["Ps9Equatable", ""]
-- !private ["Ps8Hashable", "awakeFromNib"]
-- !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "setSelected"]
-- ["Ps8Hashable", ""]
-- !private ["PSo8NSCoding", "awakeFromNib"]
-- !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "setSelected"]
-- ["PSo8NSCoding", ""]
-- ["CSo8NSObject", "Bool"]
-- ["CSo8NSObject", "UIImageView"]
-- ["CSo8NSObject", "UILabel"]
-- ["CSo8NSObject", "awakeFromNib"]
-- ["CSo8NSObject", "imageCaption"]
-- ["CSo8NSObject", "init"]
-- ["CSo8NSObject", "photo"]
-- ["CSo8NSObject", "setSelected"]
-- !private ["PSo16NSObjectProtocol", "awakeFromNib"]
-- !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "setSelected"]
-- ["PSo16NSObjectProtocol", ""]
-- !private ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
-- !private ["PSo29UIAccessibilityIdentification", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "setSelected"]
-- ["PSo29UIAccessibilityIdentification", ""]
-- !private ["PSo12UIAppearance", "awakeFromNib"]
-- !private ["PSo12UIAppearance", "init"]
-- !private ["PSo12UIAppearance", "setSelected"]
-- ["PSo12UIAppearance", ""]
-- !private ["PSo21UIAppearanceContainer", "awakeFromNib"]
-- !private ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "setSelected"]
-- ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo17UICoordinateSpace", "awakeFromNib"]
-- !private ["PSo17UICoordinateSpace", "init"]
-- !private ["PSo17UICoordinateSpace", "setSelected"]
-- ["PSo17UICoordinateSpace", ""]
-- !private ["PSo13UIDynamicItem", "awakeFromNib"]
-- !private ["PSo13UIDynamicItem", "init"]
-- !private ["PSo13UIDynamicItem", "setSelected"]
-- ["PSo13UIDynamicItem", ""]
-- !private ["PSo18UIFocusEnvironment", "awakeFromNib"]
-- !private ["PSo18UIFocusEnvironment", "init"]
-- !private ["PSo18UIFocusEnvironment", "setSelected"]
-- ["PSo18UIFocusEnvironment", ""]
-- !private ["PSo11UIFocusItem", "awakeFromNib"]
-- !private ["PSo11UIFocusItem", "init"]
-- !private ["PSo11UIFocusItem", "setSelected"]
-- ["PSo11UIFocusItem", ""]
-- !private ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
-- !private ["PSo27UIGestureRecognizerDelegate", "init"]
-- !private ["PSo27UIGestureRecognizerDelegate", "setSelected"]
-- ["PSo27UIGestureRecognizerDelegate", ""]
-- ["CSo11UIResponder", "Bool"]
-- ["CSo11UIResponder", "UIImageView"]
-- ["CSo11UIResponder", "UILabel"]
-- ["CSo11UIResponder", "awakeFromNib"]
-- ["CSo11UIResponder", "imageCaption"]
-- ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "photo"]
-- ["CSo11UIResponder", "setSelected"]
-- !private ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
-- !private ["PSo30UIResponderStandardEditActions", "init"]
-- !private ["PSo30UIResponderStandardEditActions", "setSelected"]
-- ["PSo30UIResponderStandardEditActions", ""]
-- ["CSo15UITableViewCell", "Bool"]
-- ["CSo15UITableViewCell", "UIImageView"]
-- ["CSo15UITableViewCell", "UILabel"]
-- ["CSo15UITableViewCell", "awakeFromNib"]
-- ["CSo15UITableViewCell", "imageCaption"]
-- ["CSo15UITableViewCell", "init"]
-- ["CSo15UITableViewCell", "photo"]
-- ["CSo15UITableViewCell", "setSelected"]
-- ["CSo15UITableViewCell", ""]
-- !private ["PSo18UITraitEnvironment", "awakeFromNib"]
-- !private ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "setSelected"]
-- ["PSo18UITraitEnvironment", ""]
-- ["CSo6UIView", "Bool"]
-- ["CSo6UIView", "UIImageView"]
-- ["CSo6UIView", "UILabel"]
-- ["CSo6UIView", "awakeFromNib"]
-- ["CSo6UIView", "imageCaption"]
-- ["CSo6UIView", "init"]
-- ["CSo6UIView", "photo"]
-- ["CSo6UIView", "setSelected"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
-- !private ["Ps9_Hashable", "awakeFromNib"]
-- !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "setSelected"]
-- ["Ps9_Hashable", ""]
+- !private ["8DropDown10AnchorViewP", "CGSize"]
+- !private ["8DropDown10AnchorViewP", "UIColor"]
+- !private ["8DropDown10AnchorViewP", "awakeFromNib"]
+- !private ["8DropDown10AnchorViewP", "backgroundColor"]
+- !private ["8DropDown10AnchorViewP", "cardviewBg"]
+- !private ["8DropDown10AnchorViewP", "contentView"]
+- !private ["8DropDown10AnchorViewP", "init"]
+- !private ["8DropDown10AnchorViewP", "layer"]
+- !private ["8DropDown10AnchorViewP", "photo"]
+- !private ["8DropDown10AnchorViewP", "setSelected"]
+- !private ["8DropDown10AnchorViewP", "updateUi"]
+- !private ["8DropDown10AnchorViewP", "vfView"]
+- !private ["8DropDown10AnchorViewP", "visualEffect"]
+- ["8DropDown10AnchorViewP", ""]
+- !private ["So7CALayerC", "cornerRadius"]
+- !private ["So7CALayerC", "masksToBounds"]
+- !private ["So7CALayerC", "shadowColor"]
+- !private ["So7CALayerC", "shadowOffset"]
+- !private ["So7CALayerC", "shadowOpacity"]
+- !private ["So15CALayerDelegateP", "CGSize"]
+- !private ["So15CALayerDelegateP", "UIColor"]
+- !private ["So15CALayerDelegateP", "awakeFromNib"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "cardviewBg"]
+- !private ["So15CALayerDelegateP", "contentView"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "photo"]
+- !private ["So15CALayerDelegateP", "setSelected"]
+- !private ["So15CALayerDelegateP", "updateUi"]
+- !private ["So15CALayerDelegateP", "vfView"]
+- !private ["So15CALayerDelegateP", "visualEffect"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
+- !private ["So13CAMediaTimingP", "masksToBounds"]
+- !private ["So13CAMediaTimingP", "shadowColor"]
+- !private ["So13CAMediaTimingP", "shadowOffset"]
+- !private ["So13CAMediaTimingP", "shadowOpacity"]
+- !private ["SC6CGSizeV", "init"]
+- !private ["s7CVarArgP", "CGSize"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "awakeFromNib"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "cardviewBg"]
+- !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "contentView"]
+- !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "masksToBounds"]
+- !private ["s7CVarArgP", "photo"]
+- !private ["s7CVarArgP", "setSelected"]
+- !private ["s7CVarArgP", "shadowColor"]
+- !private ["s7CVarArgP", "shadowOffset"]
+- !private ["s7CVarArgP", "shadowOpacity"]
+- !private ["s7CVarArgP", "updateUi"]
+- !private ["s7CVarArgP", "vfView"]
+- !private ["s7CVarArgP", "visualEffect"]
+- ["s7CVarArgP", ""]
+- ["4Test17CustomCellCreatorC", "Bool"]
+- !private ["4Test17CustomCellCreatorC", "CGSize"]
+- !private ["4Test17CustomCellCreatorC", "UIColor"]
+- ["4Test17CustomCellCreatorC", "UIImageView"]
+- ["4Test17CustomCellCreatorC", "UILabel"]
+- ["4Test17CustomCellCreatorC", "UIView"]
+- ["4Test17CustomCellCreatorC", "UIVisualEffectView"]
+- ["4Test17CustomCellCreatorC", "approveStatus"]
+- ["4Test17CustomCellCreatorC", "awakeFromNib"]
+- ["4Test17CustomCellCreatorC", "cardviewBg"]
+- !private ["4Test17CustomCellCreatorC", "contentView"]
+- ["4Test17CustomCellCreatorC", "deinit"]
+- ["4Test17CustomCellCreatorC", "imageCaption"]
+- ["4Test17CustomCellCreatorC", "init"]
+- ["4Test17CustomCellCreatorC", "photo"]
+- ["4Test17CustomCellCreatorC", "setSelected"]
+- ["4Test17CustomCellCreatorC", "updateUi"]
+- ["4Test17CustomCellCreatorC", "vfView"]
+- ["4Test17CustomCellCreatorC", "visualEffect"]
+- !private ["s28CustomDebugStringConvertibleP", "CGSize"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "cardviewBg"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "contentView"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "masksToBounds"]
+- !private ["s28CustomDebugStringConvertibleP", "photo"]
+- !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowColor"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowOffset"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowOpacity"]
+- !private ["s28CustomDebugStringConvertibleP", "updateUi"]
+- !private ["s28CustomDebugStringConvertibleP", "vfView"]
+- !private ["s28CustomDebugStringConvertibleP", "visualEffect"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "CGSize"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "awakeFromNib"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "cardviewBg"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "contentView"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "masksToBounds"]
+- !private ["s23CustomStringConvertibleP", "photo"]
+- !private ["s23CustomStringConvertibleP", "setSelected"]
+- !private ["s23CustomStringConvertibleP", "shadowColor"]
+- !private ["s23CustomStringConvertibleP", "shadowOffset"]
+- !private ["s23CustomStringConvertibleP", "shadowOpacity"]
+- !private ["s23CustomStringConvertibleP", "updateUi"]
+- !private ["s23CustomStringConvertibleP", "vfView"]
+- !private ["s23CustomStringConvertibleP", "visualEffect"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "CGSize"]
+- !private ["s9EquatableP", "UIColor"]
+- !private ["s9EquatableP", "awakeFromNib"]
+- !private ["s9EquatableP", "backgroundColor"]
+- !private ["s9EquatableP", "black"]
+- !private ["s9EquatableP", "cardviewBg"]
+- !private ["s9EquatableP", "cgColor"]
+- !private ["s9EquatableP", "contentView"]
+- !private ["s9EquatableP", "cornerRadius"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "layer"]
+- !private ["s9EquatableP", "masksToBounds"]
+- !private ["s9EquatableP", "photo"]
+- !private ["s9EquatableP", "setSelected"]
+- !private ["s9EquatableP", "shadowColor"]
+- !private ["s9EquatableP", "shadowOffset"]
+- !private ["s9EquatableP", "shadowOpacity"]
+- !private ["s9EquatableP", "updateUi"]
+- !private ["s9EquatableP", "vfView"]
+- !private ["s9EquatableP", "visualEffect"]
+- ["s9EquatableP", ""]
+- !private ["s8HashableP", "CGSize"]
+- !private ["s8HashableP", "UIColor"]
+- !private ["s8HashableP", "awakeFromNib"]
+- !private ["s8HashableP", "backgroundColor"]
+- !private ["s8HashableP", "black"]
+- !private ["s8HashableP", "cardviewBg"]
+- !private ["s8HashableP", "cgColor"]
+- !private ["s8HashableP", "contentView"]
+- !private ["s8HashableP", "cornerRadius"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "layer"]
+- !private ["s8HashableP", "masksToBounds"]
+- !private ["s8HashableP", "photo"]
+- !private ["s8HashableP", "setSelected"]
+- !private ["s8HashableP", "shadowColor"]
+- !private ["s8HashableP", "shadowOffset"]
+- !private ["s8HashableP", "shadowOpacity"]
+- !private ["s8HashableP", "updateUi"]
+- !private ["s8HashableP", "vfView"]
+- !private ["s8HashableP", "visualEffect"]
+- ["s8HashableP", ""]
+- !private ["So8NSCodingP", "CGSize"]
+- !private ["So8NSCodingP", "UIColor"]
+- !private ["So8NSCodingP", "awakeFromNib"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "cardviewBg"]
+- !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "contentView"]
+- !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "masksToBounds"]
+- !private ["So8NSCodingP", "photo"]
+- !private ["So8NSCodingP", "setSelected"]
+- !private ["So8NSCodingP", "shadowColor"]
+- !private ["So8NSCodingP", "shadowOffset"]
+- !private ["So8NSCodingP", "shadowOpacity"]
+- !private ["So8NSCodingP", "updateUi"]
+- !private ["So8NSCodingP", "vfView"]
+- !private ["So8NSCodingP", "visualEffect"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "cgColor"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "CGSize"]
+- !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UIView"]
+- ["So8NSObjectC", "UIVisualEffectView"]
+- ["So8NSObjectC", "approveStatus"]
+- ["So8NSObjectC", "awakeFromNib"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "black"]
+- ["So8NSObjectC", "cardviewBg"]
+- !private ["So8NSObjectC", "cgColor"]
+- !private ["So8NSObjectC", "contentView"]
+- !private ["So8NSObjectC", "cornerRadius"]
+- ["So8NSObjectC", "imageCaption"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
+- !private ["So8NSObjectC", "masksToBounds"]
+- ["So8NSObjectC", "photo"]
+- ["So8NSObjectC", "setSelected"]
+- !private ["So8NSObjectC", "shadowColor"]
+- !private ["So8NSObjectC", "shadowOffset"]
+- !private ["So8NSObjectC", "shadowOpacity"]
+- ["So8NSObjectC", "updateUi"]
+- ["So8NSObjectC", "vfView"]
+- ["So8NSObjectC", "visualEffect"]
+- !private ["So16NSObjectProtocolP", "CGSize"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
+- !private ["So16NSObjectProtocolP", "awakeFromNib"]
+- !private ["So16NSObjectProtocolP", "backgroundColor"]
+- !private ["So16NSObjectProtocolP", "black"]
+- !private ["So16NSObjectProtocolP", "cardviewBg"]
+- !private ["So16NSObjectProtocolP", "cgColor"]
+- !private ["So16NSObjectProtocolP", "contentView"]
+- !private ["So16NSObjectProtocolP", "cornerRadius"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "layer"]
+- !private ["So16NSObjectProtocolP", "masksToBounds"]
+- !private ["So16NSObjectProtocolP", "photo"]
+- !private ["So16NSObjectProtocolP", "setSelected"]
+- !private ["So16NSObjectProtocolP", "shadowColor"]
+- !private ["So16NSObjectProtocolP", "shadowOffset"]
+- !private ["So16NSObjectProtocolP", "shadowOpacity"]
+- !private ["So16NSObjectProtocolP", "updateUi"]
+- !private ["So16NSObjectProtocolP", "vfView"]
+- !private ["So16NSObjectProtocolP", "visualEffect"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "black"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "layer"]
+- !private ["So14NSSecureCodingP", "masksToBounds"]
+- !private ["So14NSSecureCodingP", "shadowColor"]
+- !private ["So14NSSecureCodingP", "shadowOffset"]
+- !private ["So14NSSecureCodingP", "shadowOpacity"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "CGSize"]
+- !private ["So29UIAccessibilityIdentificationP", "UIColor"]
+- !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "cardviewBg"]
+- !private ["So29UIAccessibilityIdentificationP", "contentView"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "photo"]
+- !private ["So29UIAccessibilityIdentificationP", "setSelected"]
+- !private ["So29UIAccessibilityIdentificationP", "updateUi"]
+- !private ["So29UIAccessibilityIdentificationP", "vfView"]
+- !private ["So29UIAccessibilityIdentificationP", "visualEffect"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "CGSize"]
+- !private ["So12UIAppearanceP", "UIColor"]
+- !private ["So12UIAppearanceP", "awakeFromNib"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "cardviewBg"]
+- !private ["So12UIAppearanceP", "contentView"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "photo"]
+- !private ["So12UIAppearanceP", "setSelected"]
+- !private ["So12UIAppearanceP", "updateUi"]
+- !private ["So12UIAppearanceP", "vfView"]
+- !private ["So12UIAppearanceP", "visualEffect"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "CGSize"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
+- !private ["So21UIAppearanceContainerP", "awakeFromNib"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "cardviewBg"]
+- !private ["So21UIAppearanceContainerP", "contentView"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "photo"]
+- !private ["So21UIAppearanceContainerP", "setSelected"]
+- !private ["So21UIAppearanceContainerP", "updateUi"]
+- !private ["So21UIAppearanceContainerP", "vfView"]
+- !private ["So21UIAppearanceContainerP", "visualEffect"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So7UIColorC", "black"]
+- !private ["So7UIColorC", "cgColor"]
+- !private ["So7UIColorC", "init"]
+- !private ["So17UICoordinateSpaceP", "CGSize"]
+- !private ["So17UICoordinateSpaceP", "UIColor"]
+- !private ["So17UICoordinateSpaceP", "awakeFromNib"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "cardviewBg"]
+- !private ["So17UICoordinateSpaceP", "contentView"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "photo"]
+- !private ["So17UICoordinateSpaceP", "setSelected"]
+- !private ["So17UICoordinateSpaceP", "updateUi"]
+- !private ["So17UICoordinateSpaceP", "vfView"]
+- !private ["So17UICoordinateSpaceP", "visualEffect"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "CGSize"]
+- !private ["So13UIDynamicItemP", "UIColor"]
+- !private ["So13UIDynamicItemP", "awakeFromNib"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "cardviewBg"]
+- !private ["So13UIDynamicItemP", "contentView"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "photo"]
+- !private ["So13UIDynamicItemP", "setSelected"]
+- !private ["So13UIDynamicItemP", "updateUi"]
+- !private ["So13UIDynamicItemP", "vfView"]
+- !private ["So13UIDynamicItemP", "visualEffect"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "CGSize"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
+- !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "cardviewBg"]
+- !private ["So18UIFocusEnvironmentP", "contentView"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "photo"]
+- !private ["So18UIFocusEnvironmentP", "setSelected"]
+- !private ["So18UIFocusEnvironmentP", "updateUi"]
+- !private ["So18UIFocusEnvironmentP", "vfView"]
+- !private ["So18UIFocusEnvironmentP", "visualEffect"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "CGSize"]
+- !private ["So11UIFocusItemP", "UIColor"]
+- !private ["So11UIFocusItemP", "awakeFromNib"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "cardviewBg"]
+- !private ["So11UIFocusItemP", "contentView"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "photo"]
+- !private ["So11UIFocusItemP", "setSelected"]
+- !private ["So11UIFocusItemP", "updateUi"]
+- !private ["So11UIFocusItemP", "vfView"]
+- !private ["So11UIFocusItemP", "visualEffect"]
+- ["So11UIFocusItemP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "CGSize"]
+- !private ["So27UIGestureRecognizerDelegateP", "UIColor"]
+- !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
+- !private ["So27UIGestureRecognizerDelegateP", "cardviewBg"]
+- !private ["So27UIGestureRecognizerDelegateP", "contentView"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "photo"]
+- !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
+- !private ["So27UIGestureRecognizerDelegateP", "updateUi"]
+- !private ["So27UIGestureRecognizerDelegateP", "vfView"]
+- !private ["So27UIGestureRecognizerDelegateP", "visualEffect"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So11UIImageViewC", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "cardviewBg"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentView"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "photo"]
+- !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
+- !private ["So30UIPasteConfigurationSupportingP", "updateUi"]
+- !private ["So30UIPasteConfigurationSupportingP", "vfView"]
+- !private ["So30UIPasteConfigurationSupportingP", "visualEffect"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "CGSize"]
+- !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UIView"]
+- ["So11UIResponderC", "UIVisualEffectView"]
+- ["So11UIResponderC", "approveStatus"]
+- ["So11UIResponderC", "awakeFromNib"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "cardviewBg"]
+- !private ["So11UIResponderC", "contentView"]
+- ["So11UIResponderC", "imageCaption"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "photo"]
+- ["So11UIResponderC", "setSelected"]
+- ["So11UIResponderC", "updateUi"]
+- ["So11UIResponderC", "vfView"]
+- ["So11UIResponderC", "visualEffect"]
+- !private ["So30UIResponderStandardEditActionsP", "CGSize"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "cardviewBg"]
+- !private ["So30UIResponderStandardEditActionsP", "contentView"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "photo"]
+- !private ["So30UIResponderStandardEditActionsP", "setSelected"]
+- !private ["So30UIResponderStandardEditActionsP", "updateUi"]
+- !private ["So30UIResponderStandardEditActionsP", "vfView"]
+- !private ["So30UIResponderStandardEditActionsP", "visualEffect"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So15UITableViewCellC", "Bool"]
+- !private ["So15UITableViewCellC", "CGSize"]
+- !private ["So15UITableViewCellC", "UIColor"]
+- ["So15UITableViewCellC", "UIImageView"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", "UIView"]
+- ["So15UITableViewCellC", "UIVisualEffectView"]
+- ["So15UITableViewCellC", "approveStatus"]
+- ["So15UITableViewCellC", "awakeFromNib"]
+- ["So15UITableViewCellC", "cardviewBg"]
+- !private ["So15UITableViewCellC", "contentView"]
+- ["So15UITableViewCellC", "imageCaption"]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "photo"]
+- ["So15UITableViewCellC", "setSelected"]
+- ["So15UITableViewCellC", "updateUi"]
+- ["So15UITableViewCellC", "vfView"]
+- ["So15UITableViewCellC", "visualEffect"]
+- ["So15UITableViewCellC", ""]
+- !private ["So18UITraitEnvironmentP", "CGSize"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
+- !private ["So18UITraitEnvironmentP", "awakeFromNib"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "cardviewBg"]
+- !private ["So18UITraitEnvironmentP", "contentView"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "photo"]
+- !private ["So18UITraitEnvironmentP", "setSelected"]
+- !private ["So18UITraitEnvironmentP", "updateUi"]
+- !private ["So18UITraitEnvironmentP", "vfView"]
+- !private ["So18UITraitEnvironmentP", "visualEffect"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "Bool"]
+- !private ["So6UIViewC", "CGSize"]
+- !private ["So6UIViewC", "UIColor"]
+- ["So6UIViewC", "UIImageView"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "UIView"]
+- ["So6UIViewC", "UIVisualEffectView"]
+- ["So6UIViewC", "approveStatus"]
+- ["So6UIViewC", "awakeFromNib"]
+- !private ["So6UIViewC", "backgroundColor"]
+- ["So6UIViewC", "cardviewBg"]
+- !private ["So6UIViewC", "contentView"]
+- ["So6UIViewC", "imageCaption"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layer"]
+- ["So6UIViewC", "photo"]
+- ["So6UIViewC", "setSelected"]
+- ["So6UIViewC", "updateUi"]
+- ["So6UIViewC", "vfView"]
+- ["So6UIViewC", "visualEffect"]
+- !private ["So18UIVisualEffectViewC", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGSize"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cardviewBg"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "photo"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "updateUi"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "vfView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "visualEffect"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s26_ExpressibleByColorLiteralP", "black"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cardviewBg"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "masksToBounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "photo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOffset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOpacity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateUi"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "vfView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "visualEffect"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
-- "Ps9AnyObject"
-- "PSo15CALayerDelegate"
-- "Ps7CVarArg"
-- "C4Test17CustomCellCreator"
-- "Ps28CustomDebugStringConvertible"
-- "Ps23CustomStringConvertible"
-- "Ps9Equatable"
-- "Ps8Hashable"
-- "PSo8NSCoding"
-- "CSo8NSObject"
-- "PSo16NSObjectProtocol"
-- "PSo29UIAccessibilityIdentification"
-- "PSo12UIAppearance"
-- "PSo21UIAppearanceContainer"
-- "PSo17UICoordinateSpace"
-- "PSo13UIDynamicItem"
-- "PSo18UIFocusEnvironment"
-- "PSo11UIFocusItem"
-- "PSo27UIGestureRecognizerDelegate"
-- "CSo11UIResponder"
-- "PSo30UIResponderStandardEditActions"
-- "CSo15UITableViewCell"
-- "PSo18UITraitEnvironment"
-- "CSo6UIView"
-- "Ps37_DefaultCustomPlaygroundQuickLookable"
-- "Ps9_Hashable"
+- "8DropDown10AnchorViewP"
+- !private "So7CALayerC"
+- "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- !private "SC6CGSizeV"
+- "s7CVarArgP"
+- "4Test17CustomCellCreatorC"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So7UIColorC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So11UIImageViewC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- !private "So18UIVisualEffectViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s26_ExpressibleByColorLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/SwiftKeychainWrapper.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
@@ -198,7 +608,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -240,16 +651,17 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Test-Bridging-Header.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
@@ -263,7 +675,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -272,7 +684,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
@@ -280,7 +691,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "5fec1cfb2e79a868b27094c169c9591d"
+interface-hash: "c3f6e6463fe917a9e2ba38c27d71b8fb"

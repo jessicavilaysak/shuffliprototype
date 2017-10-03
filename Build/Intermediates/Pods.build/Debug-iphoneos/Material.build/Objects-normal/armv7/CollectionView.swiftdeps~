@@ -1,0 +1,476 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CollectionView"
+provides-nominal:
+- "8Material14CollectionViewC"
+provides-member:
+- ["8Material14CollectionViewC", ""]
+provides-dynamic-lookup:
+- "contentEdgeInsets"
+- "contentEdgeInsetsPreset"
+- "interimSpace"
+- "interimSpacePreset"
+- "prepare"
+- "scrollDirection"
+depends-top-level:
+- "AssignmentPrecedence"
+- "CGRect"
+- "CastingPrecedence"
+- "CollectionView"
+- !private "CollectionViewLayout"
+- "EdgeInsets"
+- "EdgeInsetsPreset"
+- "InterimSpace"
+- "InterimSpacePreset"
+- "NSCoder"
+- !private "Screen"
+- "UICollectionView"
+- "UICollectionViewLayout"
+- "UICollectionViewScrollDirection"
+depends-member:
+- !private ["So15CALayerDelegateP", "CollectionViewLayout"]
+- !private ["So15CALayerDelegateP", "Screen"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "collectionViewLayout"]
+- !private ["So15CALayerDelegateP", "contentScaleFactor"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "prepare"]
+- ["So15CALayerDelegateP", ""]
+- !private ["SC6CGRectV", "zero"]
+- !private ["s7CVarArgP", "CollectionViewLayout"]
+- !private ["s7CVarArgP", "Screen"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "collectionViewLayout"]
+- !private ["s7CVarArgP", "contentEdgeInsets"]
+- !private ["s7CVarArgP", "contentEdgeInsetsPreset"]
+- !private ["s7CVarArgP", "contentScaleFactor"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "interimSpace"]
+- !private ["s7CVarArgP", "interimSpacePreset"]
+- !private ["s7CVarArgP", "prepare"]
+- !private ["s7CVarArgP", "scrollDirection"]
+- !private ["s7CVarArgP", "white"]
+- ["s7CVarArgP", ""]
+- ["8Material14CollectionViewC", "CGRect"]
+- !private ["8Material14CollectionViewC", "CollectionViewLayout"]
+- ["8Material14CollectionViewC", "EdgeInsets"]
+- ["8Material14CollectionViewC", "EdgeInsetsPreset"]
+- ["8Material14CollectionViewC", "InterimSpace"]
+- ["8Material14CollectionViewC", "InterimSpacePreset"]
+- ["8Material14CollectionViewC", "NSCoder"]
+- !private ["8Material14CollectionViewC", "Screen"]
+- ["8Material14CollectionViewC", "UICollectionViewLayout"]
+- ["8Material14CollectionViewC", "UICollectionViewScrollDirection"]
+- !private ["8Material14CollectionViewC", "backgroundColor"]
+- !private ["8Material14CollectionViewC", "collectionViewLayout"]
+- ["8Material14CollectionViewC", "contentEdgeInsets"]
+- ["8Material14CollectionViewC", "contentEdgeInsetsPreset"]
+- !private ["8Material14CollectionViewC", "contentScaleFactor"]
+- ["8Material14CollectionViewC", "deinit"]
+- ["8Material14CollectionViewC", "init"]
+- ["8Material14CollectionViewC", "interimSpace"]
+- ["8Material14CollectionViewC", "interimSpacePreset"]
+- ["8Material14CollectionViewC", "prepare"]
+- ["8Material14CollectionViewC", "scrollDirection"]
+- !private ["8Material20CollectionViewLayoutC", "contentEdgeInsets"]
+- !private ["8Material20CollectionViewLayoutC", "contentEdgeInsetsPreset"]
+- !private ["8Material20CollectionViewLayoutC", "init"]
+- !private ["8Material20CollectionViewLayoutC", "interimSpace"]
+- !private ["8Material20CollectionViewLayoutC", "interimSpacePreset"]
+- !private ["8Material20CollectionViewLayoutC", "scrollDirection"]
+- !private ["s28CustomDebugStringConvertibleP", "CollectionViewLayout"]
+- !private ["s28CustomDebugStringConvertibleP", "Screen"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "collectionViewLayout"]
+- !private ["s28CustomDebugStringConvertibleP", "contentEdgeInsets"]
+- !private ["s28CustomDebugStringConvertibleP", "contentEdgeInsetsPreset"]
+- !private ["s28CustomDebugStringConvertibleP", "contentScaleFactor"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "interimSpace"]
+- !private ["s28CustomDebugStringConvertibleP", "interimSpacePreset"]
+- !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollDirection"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
+- !private ["s28CustomDebugStringConvertibleP", "zero"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s17CustomReflectableP", "white"]
+- !private ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "CollectionViewLayout"]
+- !private ["s23CustomStringConvertibleP", "Screen"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "collectionViewLayout"]
+- !private ["s23CustomStringConvertibleP", "contentEdgeInsets"]
+- !private ["s23CustomStringConvertibleP", "contentEdgeInsetsPreset"]
+- !private ["s23CustomStringConvertibleP", "contentScaleFactor"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "interimSpace"]
+- !private ["s23CustomStringConvertibleP", "interimSpacePreset"]
+- !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "scrollDirection"]
+- !private ["s23CustomStringConvertibleP", "white"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "white"]
+- !private ["s9DecodableP", "zero"]
+- !private ["s9EncodableP", "white"]
+- !private ["s9EncodableP", "zero"]
+- !private ["s9EquatableP", "CollectionViewLayout"]
+- !private ["s9EquatableP", "Screen"]
+- !private ["s9EquatableP", "backgroundColor"]
+- !private ["s9EquatableP", "collectionViewLayout"]
+- !private ["s9EquatableP", "contentEdgeInsets"]
+- !private ["s9EquatableP", "contentEdgeInsetsPreset"]
+- !private ["s9EquatableP", "contentScaleFactor"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "interimSpace"]
+- !private ["s9EquatableP", "interimSpacePreset"]
+- !private ["s9EquatableP", "prepare"]
+- !private ["s9EquatableP", "scrollDirection"]
+- !private ["s9EquatableP", "white"]
+- !private ["s9EquatableP", "zero"]
+- ["s9EquatableP", ""]
+- !private ["s23ExpressibleByNilLiteralP", "white"]
+- !private ["s8HashableP", "CollectionViewLayout"]
+- !private ["s8HashableP", "Screen"]
+- !private ["s8HashableP", "backgroundColor"]
+- !private ["s8HashableP", "collectionViewLayout"]
+- !private ["s8HashableP", "contentEdgeInsets"]
+- !private ["s8HashableP", "contentEdgeInsetsPreset"]
+- !private ["s8HashableP", "contentScaleFactor"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "interimSpace"]
+- !private ["s8HashableP", "interimSpacePreset"]
+- !private ["s8HashableP", "prepare"]
+- !private ["s8HashableP", "scrollDirection"]
+- !private ["s8HashableP", "white"]
+- ["s8HashableP", ""]
+- !private ["So8NSCodingP", "CollectionViewLayout"]
+- !private ["So8NSCodingP", "Screen"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "collectionViewLayout"]
+- !private ["So8NSCodingP", "contentEdgeInsets"]
+- !private ["So8NSCodingP", "contentEdgeInsetsPreset"]
+- !private ["So8NSCodingP", "contentScaleFactor"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "interimSpace"]
+- !private ["So8NSCodingP", "interimSpacePreset"]
+- !private ["So8NSCodingP", "prepare"]
+- !private ["So8NSCodingP", "scrollDirection"]
+- !private ["So8NSCodingP", "white"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "white"]
+- !private ["So21NSItemProviderReadingP", "white"]
+- !private ["So21NSItemProviderWritingP", "white"]
+- ["So8NSObjectC", "CGRect"]
+- !private ["So8NSObjectC", "CollectionViewLayout"]
+- ["So8NSObjectC", "EdgeInsets"]
+- ["So8NSObjectC", "EdgeInsetsPreset"]
+- ["So8NSObjectC", "InterimSpace"]
+- ["So8NSObjectC", "InterimSpacePreset"]
+- ["So8NSObjectC", "NSCoder"]
+- !private ["So8NSObjectC", "Screen"]
+- ["So8NSObjectC", "UICollectionViewLayout"]
+- ["So8NSObjectC", "UICollectionViewScrollDirection"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "collectionViewLayout"]
+- ["So8NSObjectC", "contentEdgeInsets"]
+- ["So8NSObjectC", "contentEdgeInsetsPreset"]
+- !private ["So8NSObjectC", "contentScaleFactor"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "interimSpace"]
+- ["So8NSObjectC", "interimSpacePreset"]
+- ["So8NSObjectC", "prepare"]
+- ["So8NSObjectC", "scrollDirection"]
+- !private ["So8NSObjectC", "white"]
+- !private ["So16NSObjectProtocolP", "CollectionViewLayout"]
+- !private ["So16NSObjectProtocolP", "Screen"]
+- !private ["So16NSObjectProtocolP", "backgroundColor"]
+- !private ["So16NSObjectProtocolP", "collectionViewLayout"]
+- !private ["So16NSObjectProtocolP", "contentEdgeInsets"]
+- !private ["So16NSObjectProtocolP", "contentEdgeInsetsPreset"]
+- !private ["So16NSObjectProtocolP", "contentScaleFactor"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "interimSpace"]
+- !private ["So16NSObjectProtocolP", "interimSpacePreset"]
+- !private ["So16NSObjectProtocolP", "prepare"]
+- !private ["So16NSObjectProtocolP", "scrollDirection"]
+- !private ["So16NSObjectProtocolP", "white"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "white"]
+- !private ["Sq", "white"]
+- !private ["8Material6ScreenV", "scale"]
+- !private ["So29UIAccessibilityIdentificationP", "CollectionViewLayout"]
+- !private ["So29UIAccessibilityIdentificationP", "Screen"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "collectionViewLayout"]
+- !private ["So29UIAccessibilityIdentificationP", "contentScaleFactor"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "prepare"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "CollectionViewLayout"]
+- !private ["So12UIAppearanceP", "Screen"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "collectionViewLayout"]
+- !private ["So12UIAppearanceP", "contentScaleFactor"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "prepare"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "CollectionViewLayout"]
+- !private ["So21UIAppearanceContainerP", "Screen"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "collectionViewLayout"]
+- !private ["So21UIAppearanceContainerP", "contentScaleFactor"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "prepare"]
+- ["So21UIAppearanceContainerP", ""]
+- ["So16UICollectionViewC", "CGRect"]
+- !private ["So16UICollectionViewC", "CollectionViewLayout"]
+- ["So16UICollectionViewC", "EdgeInsets"]
+- ["So16UICollectionViewC", "EdgeInsetsPreset"]
+- ["So16UICollectionViewC", "InterimSpace"]
+- ["So16UICollectionViewC", "InterimSpacePreset"]
+- ["So16UICollectionViewC", "NSCoder"]
+- !private ["So16UICollectionViewC", "Screen"]
+- ["So16UICollectionViewC", "UICollectionViewLayout"]
+- ["So16UICollectionViewC", "UICollectionViewScrollDirection"]
+- !private ["So16UICollectionViewC", "backgroundColor"]
+- !private ["So16UICollectionViewC", "collectionViewLayout"]
+- ["So16UICollectionViewC", "contentEdgeInsets"]
+- ["So16UICollectionViewC", "contentEdgeInsetsPreset"]
+- !private ["So16UICollectionViewC", "contentScaleFactor"]
+- ["So16UICollectionViewC", "init"]
+- ["So16UICollectionViewC", "interimSpace"]
+- ["So16UICollectionViewC", "interimSpacePreset"]
+- ["So16UICollectionViewC", "prepare"]
+- ["So16UICollectionViewC", "scrollDirection"]
+- ["So16UICollectionViewC", ""]
+- !private ["So22UICollectionViewLayoutC", "contentEdgeInsets"]
+- !private ["So22UICollectionViewLayoutC", "contentEdgeInsetsPreset"]
+- !private ["So22UICollectionViewLayoutC", "init"]
+- !private ["So22UICollectionViewLayoutC", "interimSpace"]
+- !private ["So22UICollectionViewLayoutC", "interimSpacePreset"]
+- !private ["So22UICollectionViewLayoutC", "scrollDirection"]
+- !private ["So7UIColorC", "white"]
+- !private ["So17UICoordinateSpaceP", "CollectionViewLayout"]
+- !private ["So17UICoordinateSpaceP", "Screen"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "collectionViewLayout"]
+- !private ["So17UICoordinateSpaceP", "contentScaleFactor"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "prepare"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So23UIDataSourceTranslatingP", "CollectionViewLayout"]
+- !private ["So23UIDataSourceTranslatingP", "Screen"]
+- !private ["So23UIDataSourceTranslatingP", "backgroundColor"]
+- !private ["So23UIDataSourceTranslatingP", "collectionViewLayout"]
+- !private ["So23UIDataSourceTranslatingP", "contentScaleFactor"]
+- !private ["So23UIDataSourceTranslatingP", "init"]
+- !private ["So23UIDataSourceTranslatingP", "prepare"]
+- ["So23UIDataSourceTranslatingP", ""]
+- !private ["So13UIDynamicItemP", "CollectionViewLayout"]
+- !private ["So13UIDynamicItemP", "Screen"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "collectionViewLayout"]
+- !private ["So13UIDynamicItemP", "contentScaleFactor"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "prepare"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "CollectionViewLayout"]
+- !private ["So18UIFocusEnvironmentP", "Screen"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "collectionViewLayout"]
+- !private ["So18UIFocusEnvironmentP", "contentScaleFactor"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "prepare"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "CollectionViewLayout"]
+- !private ["So11UIFocusItemP", "Screen"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "collectionViewLayout"]
+- !private ["So11UIFocusItemP", "contentScaleFactor"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "prepare"]
+- ["So11UIFocusItemP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "CollectionViewLayout"]
+- !private ["So30UIPasteConfigurationSupportingP", "Screen"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "collectionViewLayout"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentScaleFactor"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "prepare"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "CGRect"]
+- !private ["So11UIResponderC", "CollectionViewLayout"]
+- ["So11UIResponderC", "EdgeInsets"]
+- ["So11UIResponderC", "EdgeInsetsPreset"]
+- ["So11UIResponderC", "InterimSpace"]
+- ["So11UIResponderC", "InterimSpacePreset"]
+- ["So11UIResponderC", "NSCoder"]
+- !private ["So11UIResponderC", "Screen"]
+- ["So11UIResponderC", "UICollectionViewLayout"]
+- ["So11UIResponderC", "UICollectionViewScrollDirection"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- !private ["So11UIResponderC", "collectionViewLayout"]
+- ["So11UIResponderC", "contentEdgeInsets"]
+- ["So11UIResponderC", "contentEdgeInsetsPreset"]
+- !private ["So11UIResponderC", "contentScaleFactor"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "interimSpace"]
+- ["So11UIResponderC", "interimSpacePreset"]
+- ["So11UIResponderC", "prepare"]
+- ["So11UIResponderC", "scrollDirection"]
+- !private ["So30UIResponderStandardEditActionsP", "CollectionViewLayout"]
+- !private ["So30UIResponderStandardEditActionsP", "Screen"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "collectionViewLayout"]
+- !private ["So30UIResponderStandardEditActionsP", "contentScaleFactor"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "prepare"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So12UIScrollViewC", "CGRect"]
+- !private ["So12UIScrollViewC", "CollectionViewLayout"]
+- ["So12UIScrollViewC", "EdgeInsets"]
+- ["So12UIScrollViewC", "EdgeInsetsPreset"]
+- ["So12UIScrollViewC", "InterimSpace"]
+- ["So12UIScrollViewC", "InterimSpacePreset"]
+- ["So12UIScrollViewC", "NSCoder"]
+- !private ["So12UIScrollViewC", "Screen"]
+- ["So12UIScrollViewC", "UICollectionViewLayout"]
+- ["So12UIScrollViewC", "UICollectionViewScrollDirection"]
+- !private ["So12UIScrollViewC", "backgroundColor"]
+- !private ["So12UIScrollViewC", "collectionViewLayout"]
+- ["So12UIScrollViewC", "contentEdgeInsets"]
+- ["So12UIScrollViewC", "contentEdgeInsetsPreset"]
+- !private ["So12UIScrollViewC", "contentScaleFactor"]
+- ["So12UIScrollViewC", "init"]
+- ["So12UIScrollViewC", "interimSpace"]
+- ["So12UIScrollViewC", "interimSpacePreset"]
+- ["So12UIScrollViewC", "prepare"]
+- ["So12UIScrollViewC", "scrollDirection"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "CollectionViewLayout"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "Screen"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "collectionViewLayout"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "contentScaleFactor"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "prepare"]
+- ["So35UISpringLoadedInteractionSupportingP", ""]
+- !private ["So18UITraitEnvironmentP", "CollectionViewLayout"]
+- !private ["So18UITraitEnvironmentP", "Screen"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "collectionViewLayout"]
+- !private ["So18UITraitEnvironmentP", "contentScaleFactor"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "prepare"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "CGRect"]
+- !private ["So6UIViewC", "CollectionViewLayout"]
+- ["So6UIViewC", "EdgeInsets"]
+- ["So6UIViewC", "EdgeInsetsPreset"]
+- ["So6UIViewC", "InterimSpace"]
+- ["So6UIViewC", "InterimSpacePreset"]
+- ["So6UIViewC", "NSCoder"]
+- !private ["So6UIViewC", "Screen"]
+- ["So6UIViewC", "UICollectionViewLayout"]
+- ["So6UIViewC", "UICollectionViewScrollDirection"]
+- !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "collectionViewLayout"]
+- ["So6UIViewC", "contentEdgeInsets"]
+- ["So6UIViewC", "contentEdgeInsetsPreset"]
+- !private ["So6UIViewC", "contentScaleFactor"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "interimSpace"]
+- ["So6UIViewC", "interimSpacePreset"]
+- ["So6UIViewC", "prepare"]
+- ["So6UIViewC", "scrollDirection"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CollectionViewLayout"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Screen"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "collectionViewLayout"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentScaleFactor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "prepare"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CollectionViewLayout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Screen"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "collectionViewLayout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentEdgeInsets"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentEdgeInsetsPreset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentScaleFactor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "interimSpace"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "interimSpacePreset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollDirection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "white"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
+depends-nominal:
+- "So15CALayerDelegateP"
+- !private "SC6CGRectV"
+- "s7CVarArgP"
+- "8Material14CollectionViewC"
+- !private "8Material20CollectionViewLayoutC"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s23ExpressibleByNilLiteralP"
+- "s8HashableP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "8Material6ScreenV"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So16UICollectionViewC"
+- !private "So22UICollectionViewLayoutC"
+- !private "So7UIColorC"
+- "So17UICoordinateSpaceP"
+- "So23UIDataSourceTranslatingP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So12UIScrollViewC"
+- "So35UISpringLoadedInteractionSupportingP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s26_ExpressibleByColorLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/unextended-module.modulemap"
+interface-hash: "44cf9b7981fa660ee03331f65a676c27"
