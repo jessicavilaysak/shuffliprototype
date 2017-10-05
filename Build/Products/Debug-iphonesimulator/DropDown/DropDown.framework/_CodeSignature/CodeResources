@@ -6,7 +6,7 @@
 	<dict>
 		<key>DropDownCell.nib</key>
 		<data>
-		Vj7A64bqTh9qYdVO2UNjbNEC/Ws=
+		jY0HMhHcPAKRC88vwGLMoxOJBoA=
 		</data>
 		<key>Headers/DropDown-Swift.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/DropDown.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		KYoHS21bYB9K4eECP0ON7miNe3Y=
+		izYhAgTmYG+s40Uv+oVApBpmX0M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,11 +39,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vj7A64bqTh9qYdVO2UNjbNEC/Ws=
+			jY0HMhHcPAKRC88vwGLMoxOJBoA=
 			</data>
 			<key>hash2</key>
 			<data>
-			96VthyvWuJK6mMzQV/CKzN5/yeDVQQCrro61sBR62DE=
+			pjpsGVqxYn0d9c2tHDzDHf44JZlfYvRCEG/HY1/w/uw=
 			</data>
 		</dict>
 		<key>Headers/DropDown-Swift.h</key>
@@ -83,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KYoHS21bYB9K4eECP0ON7miNe3Y=
+			izYhAgTmYG+s40Uv+oVApBpmX0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			O8M5q44ijNEij8/SuziwJ2VInqPYtawFEyVPMG0VpWE=
+			sxOKCWvJr36JEtmKFqVgxWoA/mmjIJm8wftPxKQhwJY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

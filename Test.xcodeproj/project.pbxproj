@@ -28,6 +28,9 @@
 		22E497981EC3142400B419E9 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E497971EC3142400B419E9 /* Datasource.swift */; };
 		22EFFF091F60D5B2008AA0B9 /* VC_ClickImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFFF081F60D5B2008AA0B9 /* VC_ClickImage.swift */; };
 		27FBDE743860508C6E38441C /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC143C919DB36CDC3766244B /* Pods_Test.framework */; };
+		615903571F846019000F2AB8 /* TuteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615903561F846019000F2AB8 /* TuteView.xib */; };
+		6159035B1F84630D000F2AB8 /* TuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159035A1F84630D000F2AB8 /* TuteView.swift */; };
+		6159035D1F84E756000F2AB8 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159035C1F84E756000F2AB8 /* RootVC.swift */; };
 		617CEC1E1E8CE0D600047578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617CEC1D1E8CE0D600047578 /* AppDelegate.swift */; };
 		617CEC201E8CE0D600047578 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617CEC1F1E8CE0D600047578 /* ViewController.swift */; };
 		617CEC231E8CE0D600047578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617CEC211E8CE0D600047578 /* Main.storyboard */; };
@@ -82,6 +85,9 @@
 		295B334D13A23A1791436427 /* Pods-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestUITests/Pods-TestUITests.debug.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3DC1C5D0CE91DE77950BEC71 /* Pods-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTests/Pods-TestTests.debug.xcconfig"; sourceTree = SOURCE_ROOT; };
 		593188C970F45C98C93B177D /* Pods-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUITests/Pods-TestUITests.release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		615903561F846019000F2AB8 /* TuteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TuteView.xib; sourceTree = "<group>"; };
+		6159035A1F84630D000F2AB8 /* TuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuteView.swift; sourceTree = "<group>"; };
+		6159035C1F84E756000F2AB8 /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
 		616507B11F7793130043BAC5 /* Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Bridging-Header.h"; sourceTree = "<group>"; };
 		617CEC1A1E8CE0D600047578 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617CEC1D1E8CE0D600047578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +177,8 @@
 				22B034541F4EA84500E4B357 /* GoogleService-Info.plist */,
 				617CEC261E8CE0D600047578 /* LaunchScreen.storyboard */,
 				617CEC211E8CE0D600047578 /* Main.storyboard */,
+				615903561F846019000F2AB8 /* TuteView.xib */,
+				6159035A1F84630D000F2AB8 /* TuteView.swift */,
 				22C1DF261EC32A1C0022DC01 /* VC_ACreator_HomePage.swift */,
 				2285D6E81EC3FCB100211D41 /* VC_Creator_Signin.swift */,
 				2285D6E21EC3F5BA00211D41 /* VC_Creator_Viewposts.swift */,
@@ -188,6 +196,7 @@
 				2217BAA61F77F45E00C2A76C /* VC_InviteCode.swift */,
 				223DB4661F78F6CC00888461 /* VC_SetPassword.swift */,
 				22D3CA8E1F7CF9D400990F4D /* downloadUserModel.swift */,
+				6159035C1F84E756000F2AB8 /* RootVC.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -351,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615903571F846019000F2AB8 /* TuteView.xib in Resources */,
 				617CEC281E8CE0D600047578 /* LaunchScreen.storyboard in Resources */,
 				22B034551F4EA84500E4B357 /* GoogleService-Info.plist in Resources */,
 				617CEC251E8CE0D600047578 /* Assets.xcassets in Resources */,
@@ -559,11 +569,13 @@
 				220D371B1F4BE576003C2E24 /* TabBarController.swift in Sources */,
 				22E497981EC3142400B419E9 /* Datasource.swift in Sources */,
 				1C4407001EC9FA7F00CC98F1 /* Toucan.swift in Sources */,
+				6159035B1F84630D000F2AB8 /* TuteView.swift in Sources */,
 				22C1DF2B1EC32DE40022DC01 /* CustomCellUser.swift in Sources */,
 				22EFFF091F60D5B2008AA0B9 /* VC_ClickImage.swift in Sources */,
 				22824D101F57CFD0001FF3D0 /* downloadImageModel.swift in Sources */,
 				225CE2841F6EA8CF0049B59F /* VC_EditCaption.swift in Sources */,
 				617CEC201E8CE0D600047578 /* ViewController.swift in Sources */,
+				6159035D1F84E756000F2AB8 /* RootVC.swift in Sources */,
 				22E497961EC304AD00B419E9 /* CustomCell.swift in Sources */,
 				223DB4671F78F6CC00888461 /* VC_SetPassword.swift in Sources */,
 				2285D6E31EC3F5BA00211D41 /* VC_Creator_Viewposts.swift in Sources */,
@@ -733,7 +745,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuffli.Test2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuffli.Test4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -751,7 +763,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuffli.Test2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuffli.Test4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

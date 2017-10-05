@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>5TGE87DSKY.com.shuffli.Test2</string>
+	<string>329L7G2GA2.com.shuffli.Test1</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>5TGE87DSKY.com.shuffli.Test2</string>
+		<string>329L7G2GA2.com.shuffli.Test1</string>
 	</array>
 </dict>
 </plist>

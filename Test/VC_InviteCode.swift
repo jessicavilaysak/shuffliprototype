@@ -15,6 +15,7 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var fld_invitecode: UITextField!
     @IBOutlet weak var btn_signingup: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
     
     
     
@@ -101,9 +102,9 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
+    
     
 }

@@ -95,6 +95,10 @@ struct userDataModel {
                 let value = imgS.value as! NSDictionary;
                 lPendingUserIDs.append(imgS.key);
                 usersObj[imgS.key] = ["email": (value["email"] as! String), "status": "Pending"];
+                if(value["code"] != nil)
+                {
+                    usersObj[imgS.key]!["code"] = (value["code"] as! String);
+                }
             }
             
             completion(true);

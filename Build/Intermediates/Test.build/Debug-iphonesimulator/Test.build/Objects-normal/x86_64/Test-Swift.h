@@ -248,15 +248,25 @@ SWIFT_CLASS("_TtC4Test14CustomCellUser")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIScrollView;
+@class UIPageControl;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC4Test21InitialViewController")
-@interface InitialViewController : UIViewController
+@interface InitialViewController : UIViewController <UIScrollViewDelegate>
+@property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified scrollView;
+@property (nonatomic, weak) IBOutlet UIPageControl * _Null_unspecified pageControl;
 - (IBAction)btnAdminCreator:(id _Nonnull)sender;
 - (IBAction)btnCreator:(id _Nonnull)sender;
 - (void)segueToLoginWithVc_name:(NSString * _Nonnull)vc_name;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute1;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute2;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute3;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute4;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull tuteArray;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)loadTutes;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -390,6 +400,16 @@ SWIFT_CLASS("_TtC4Test6Toucan")
 @end
 
 
+SWIFT_CLASS("_TtC4Test8TuteView")
+@interface TuteView : UIView
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteTitle;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified tuteImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteDescription;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 @interface UIViewController (SWIFT_EXTENSION(Test))
 - (void)hideKeyboardWhenTappedAround;
 - (void)dismissKeyboard;
@@ -406,10 +426,12 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldcompany;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified userTable;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified btnReload;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)deleteUserButtonWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)reloadList;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)viewWillDisappear:(BOOL)animated;

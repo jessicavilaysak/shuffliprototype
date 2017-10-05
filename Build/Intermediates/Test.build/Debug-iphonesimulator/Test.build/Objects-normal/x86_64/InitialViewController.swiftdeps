@@ -8,338 +8,1763 @@ provides-member:
 provides-dynamic-lookup:
 - "btnAdminCreator"
 - "btnCreator"
-- "didReceiveMemoryWarning"
+- "loadTutes"
+- "pageControl"
+- "scrollView"
+- "scrollViewDidScroll"
 - "segueToLogin"
+- "tute1"
+- "tute2"
+- "tute3"
+- "tute4"
+- "tuteArray"
 - "viewDidLoad"
 depends-top-level:
+- !private "/"
+- !private "Array"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
+- !private "Bundle"
+- !private "CGSize"
+- "CastingPrecedence"
+- "Dictionary"
 - "InitialViewController"
+- !private "Int"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
+- !private "TuteView"
+- !private "UIColor"
+- !private "UIImage"
+- "UIPageControl"
+- "UIScrollView"
+- "UIScrollViewDelegate"
 - "UIViewController"
 - !private "userObj"
 depends-member:
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
-- !private ["s7CVarArgP", "init"]
+- !private ["8DropDown10AnchorViewP", "addSubview"]
+- !private ["8DropDown10AnchorViewP", "contentOffset"]
+- !private ["8DropDown10AnchorViewP", "currentPage"]
+- !private ["8DropDown10AnchorViewP", "delegate"]
+- !private ["8DropDown10AnchorViewP", "frame"]
+- !private ["8DropDown10AnchorViewP", "image"]
+- !private ["8DropDown10AnchorViewP", "isPagingEnabled"]
+- !private ["8DropDown10AnchorViewP", "layer"]
+- !private ["8DropDown10AnchorViewP", "numberOfPages"]
+- !private ["8DropDown10AnchorViewP", "showsHorizontalScrollIndicator"]
+- !private ["8DropDown10AnchorViewP", "showsVerticalScrollIndicator"]
+- !private ["8DropDown10AnchorViewP", "text"]
+- !private ["8DropDown10AnchorViewP", "tuteDescription"]
+- !private ["8DropDown10AnchorViewP", "tuteImage"]
+- !private ["8DropDown10AnchorViewP", "tuteTitle"]
+- !private ["Sa", "count"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "first"]
+- ["Sa", "init"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "enumerated"]
+- !private ["s23BidirectionalCollectionP", "first"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["So6BundleC", "loadNibNamed"]
+- !private ["So6BundleC", "main"]
+- !private ["So19CAAnimationDelegateP", "masksToBounds"]
+- !private ["So19CAAnimationDelegateP", "shadowColor"]
+- !private ["So19CAAnimationDelegateP", "shadowOffset"]
+- !private ["So19CAAnimationDelegateP", "shadowOpacity"]
+- !private ["So19CAAnimationDelegateP", "shadowRadius"]
+- !private ["So19CAAnimationDelegateP", "shouldRasterize"]
+- !private ["So7CALayerC", "masksToBounds"]
+- !private ["So7CALayerC", "shadowColor"]
+- !private ["So7CALayerC", "shadowOffset"]
+- !private ["So7CALayerC", "shadowOpacity"]
+- !private ["So7CALayerC", "shadowRadius"]
+- !private ["So7CALayerC", "shouldRasterize"]
+- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "contentOffset"]
+- !private ["So15CALayerDelegateP", "currentPage"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "isPagingEnabled"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "numberOfPages"]
+- !private ["So15CALayerDelegateP", "showsHorizontalScrollIndicator"]
+- !private ["So15CALayerDelegateP", "showsVerticalScrollIndicator"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "tuteDescription"]
+- !private ["So15CALayerDelegateP", "tuteImage"]
+- !private ["So15CALayerDelegateP", "tuteTitle"]
+- !private ["So13CAMediaTimingP", "masksToBounds"]
+- !private ["So13CAMediaTimingP", "shadowColor"]
+- !private ["So13CAMediaTimingP", "shadowOffset"]
+- !private ["So13CAMediaTimingP", "shadowOpacity"]
+- !private ["So13CAMediaTimingP", "shadowRadius"]
+- !private ["So13CAMediaTimingP", "shouldRasterize"]
+- !private ["SC7CGPointV", "x"]
+- !private ["SC6CGRectV", "size"]
+- !private ["SC6CGSizeV", "init"]
+- !private ["SC6CGSizeV", "width"]
+- !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "CGSize"]
+- ["s7CVarArgP", "Dictionary"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "addSubview"]
+- !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "contentOffset"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "currentPage"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "enumerated"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "image"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "isPagingEnabled"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "loadNibNamed"]
+- !private ["s7CVarArgP", "loadTutes"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "masksToBounds"]
+- !private ["s7CVarArgP", "numberOfPages"]
+- !private ["s7CVarArgP", "pageControl"]
 - !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "scrollView"]
+- ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s7CVarArgP", "scrollViewDidEndDecelerating"]
+- ["s7CVarArgP", "scrollViewDidEndDragging"]
+- ["s7CVarArgP", "scrollViewDidEndScrollingAnimation"]
+- ["s7CVarArgP", "scrollViewDidEndZooming"]
+- ["s7CVarArgP", "scrollViewDidScroll"]
+- ["s7CVarArgP", "scrollViewDidScrollToTop"]
+- ["s7CVarArgP", "scrollViewDidZoom"]
+- ["s7CVarArgP", "scrollViewShouldScrollToTop"]
+- ["s7CVarArgP", "scrollViewWillBeginDecelerating"]
+- ["s7CVarArgP", "scrollViewWillBeginDragging"]
+- ["s7CVarArgP", "scrollViewWillBeginZooming"]
+- ["s7CVarArgP", "scrollViewWillEndDragging"]
 - !private ["s7CVarArgP", "segueToLogin"]
+- !private ["s7CVarArgP", "shadowColor"]
+- !private ["s7CVarArgP", "shadowOffset"]
+- !private ["s7CVarArgP", "shadowOpacity"]
+- !private ["s7CVarArgP", "shadowRadius"]
+- !private ["s7CVarArgP", "shouldRasterize"]
+- !private ["s7CVarArgP", "showsHorizontalScrollIndicator"]
+- !private ["s7CVarArgP", "showsVerticalScrollIndicator"]
 - !private ["s7CVarArgP", "storyboard"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "tute1"]
+- !private ["s7CVarArgP", "tute2"]
+- !private ["s7CVarArgP", "tute3"]
+- !private ["s7CVarArgP", "tute4"]
+- !private ["s7CVarArgP", "tuteArray"]
+- !private ["s7CVarArgP", "tuteDescription"]
+- !private ["s7CVarArgP", "tuteImage"]
+- !private ["s7CVarArgP", "tuteTitle"]
 - !private ["s7CVarArgP", "userObj"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", "viewForZooming"]
+- ["s7CVarArgP", "viewForZoomingInScrollView"]
 - ["s7CVarArgP", ""]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "enumerated"]
+- !private ["s10CollectionP", "first"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "CGSize"]
+- ["s28CustomDebugStringConvertibleP", "Dictionary"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "contentOffset"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "currentPage"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "isPagingEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "loadNibNamed"]
+- !private ["s28CustomDebugStringConvertibleP", "loadTutes"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "masksToBounds"]
+- !private ["s28CustomDebugStringConvertibleP", "numberOfPages"]
+- !private ["s28CustomDebugStringConvertibleP", "pageControl"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollView"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDragging"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndScrollingAnimation"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndZooming"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidScroll"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidScrollToTop"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidZoom"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewShouldScrollToTop"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginDecelerating"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginDragging"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginZooming"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
 - !private ["s28CustomDebugStringConvertibleP", "segueToLogin"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowColor"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowOffset"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowOpacity"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "shouldRasterize"]
+- !private ["s28CustomDebugStringConvertibleP", "showsHorizontalScrollIndicator"]
+- !private ["s28CustomDebugStringConvertibleP", "showsVerticalScrollIndicator"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "storyboard"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "tute1"]
+- !private ["s28CustomDebugStringConvertibleP", "tute2"]
+- !private ["s28CustomDebugStringConvertibleP", "tute3"]
+- !private ["s28CustomDebugStringConvertibleP", "tute4"]
+- !private ["s28CustomDebugStringConvertibleP", "tuteArray"]
+- !private ["s28CustomDebugStringConvertibleP", "tuteDescription"]
+- !private ["s28CustomDebugStringConvertibleP", "tuteImage"]
+- !private ["s28CustomDebugStringConvertibleP", "tuteTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "userObj"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", "viewForZooming"]
+- ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
-- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s29CustomPlaygroundQuickLookableP", "x"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- !private ["s17CustomReflectableP", "first"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "size"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "CGSize"]
+- ["s23CustomStringConvertibleP", "Dictionary"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "addSubview"]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "contentOffset"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "currentPage"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "isPagingEnabled"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "loadNibNamed"]
+- !private ["s23CustomStringConvertibleP", "loadTutes"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "masksToBounds"]
+- !private ["s23CustomStringConvertibleP", "numberOfPages"]
+- !private ["s23CustomStringConvertibleP", "pageControl"]
 - !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "scrollView"]
+- ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndDragging"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndScrollingAnimation"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndZooming"]
+- ["s23CustomStringConvertibleP", "scrollViewDidScroll"]
+- ["s23CustomStringConvertibleP", "scrollViewDidScrollToTop"]
+- ["s23CustomStringConvertibleP", "scrollViewDidZoom"]
+- ["s23CustomStringConvertibleP", "scrollViewShouldScrollToTop"]
+- ["s23CustomStringConvertibleP", "scrollViewWillBeginDecelerating"]
+- ["s23CustomStringConvertibleP", "scrollViewWillBeginDragging"]
+- ["s23CustomStringConvertibleP", "scrollViewWillBeginZooming"]
+- ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
 - !private ["s23CustomStringConvertibleP", "segueToLogin"]
+- !private ["s23CustomStringConvertibleP", "shadowColor"]
+- !private ["s23CustomStringConvertibleP", "shadowOffset"]
+- !private ["s23CustomStringConvertibleP", "shadowOpacity"]
+- !private ["s23CustomStringConvertibleP", "shadowRadius"]
+- !private ["s23CustomStringConvertibleP", "shouldRasterize"]
+- !private ["s23CustomStringConvertibleP", "showsHorizontalScrollIndicator"]
+- !private ["s23CustomStringConvertibleP", "showsVerticalScrollIndicator"]
 - !private ["s23CustomStringConvertibleP", "storyboard"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "tute1"]
+- !private ["s23CustomStringConvertibleP", "tute2"]
+- !private ["s23CustomStringConvertibleP", "tute3"]
+- !private ["s23CustomStringConvertibleP", "tute4"]
+- !private ["s23CustomStringConvertibleP", "tuteArray"]
+- !private ["s23CustomStringConvertibleP", "tuteDescription"]
+- !private ["s23CustomStringConvertibleP", "tuteImage"]
+- !private ["s23CustomStringConvertibleP", "tuteTitle"]
 - !private ["s23CustomStringConvertibleP", "userObj"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", "viewForZooming"]
+- ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s9DecodableP", "init"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EquatableP", "didReceiveMemoryWarning"]
-- !private ["s9EquatableP", "init"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "enumerated"]
+- !private ["s9DecodableP", "first"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "size"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "width"]
+- !private ["s9DecodableP", "x"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "enumerated"]
+- !private ["s9EncodableP", "first"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "size"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "width"]
+- !private ["s9EncodableP", "x"]
+- !private ["s9EquatableP", "Bundle"]
+- !private ["s9EquatableP", "CGSize"]
+- ["s9EquatableP", "Dictionary"]
+- !private ["s9EquatableP", "Int"]
+- !private ["s9EquatableP", "UIColor"]
+- !private ["s9EquatableP", "UIImage"]
+- !private ["s9EquatableP", "addSubview"]
+- !private ["s9EquatableP", "black"]
+- !private ["s9EquatableP", "cgColor"]
+- !private ["s9EquatableP", "contentOffset"]
+- !private ["s9EquatableP", "currentPage"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "frame"]
+- !private ["s9EquatableP", "image"]
+- ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "instantiateViewController"]
+- !private ["s9EquatableP", "isPagingEnabled"]
+- !private ["s9EquatableP", "layer"]
+- !private ["s9EquatableP", "loadNibNamed"]
+- !private ["s9EquatableP", "loadTutes"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "masksToBounds"]
+- !private ["s9EquatableP", "numberOfPages"]
+- !private ["s9EquatableP", "pageControl"]
 - !private ["s9EquatableP", "present"]
+- !private ["s9EquatableP", "scrollView"]
+- ["s9EquatableP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s9EquatableP", "scrollViewDidEndDecelerating"]
+- ["s9EquatableP", "scrollViewDidEndDragging"]
+- ["s9EquatableP", "scrollViewDidEndScrollingAnimation"]
+- ["s9EquatableP", "scrollViewDidEndZooming"]
+- ["s9EquatableP", "scrollViewDidScroll"]
+- ["s9EquatableP", "scrollViewDidScrollToTop"]
+- ["s9EquatableP", "scrollViewDidZoom"]
+- ["s9EquatableP", "scrollViewShouldScrollToTop"]
+- ["s9EquatableP", "scrollViewWillBeginDecelerating"]
+- ["s9EquatableP", "scrollViewWillBeginDragging"]
+- ["s9EquatableP", "scrollViewWillBeginZooming"]
+- ["s9EquatableP", "scrollViewWillEndDragging"]
 - !private ["s9EquatableP", "segueToLogin"]
+- !private ["s9EquatableP", "shadowColor"]
+- !private ["s9EquatableP", "shadowOffset"]
+- !private ["s9EquatableP", "shadowOpacity"]
+- !private ["s9EquatableP", "shadowRadius"]
+- !private ["s9EquatableP", "shouldRasterize"]
+- !private ["s9EquatableP", "showsHorizontalScrollIndicator"]
+- !private ["s9EquatableP", "showsVerticalScrollIndicator"]
+- !private ["s9EquatableP", "size"]
 - !private ["s9EquatableP", "storyboard"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "tute1"]
+- !private ["s9EquatableP", "tute2"]
+- !private ["s9EquatableP", "tute3"]
+- !private ["s9EquatableP", "tute4"]
+- !private ["s9EquatableP", "tuteArray"]
+- !private ["s9EquatableP", "tuteDescription"]
+- !private ["s9EquatableP", "tuteImage"]
+- !private ["s9EquatableP", "tuteTitle"]
 - !private ["s9EquatableP", "userObj"]
 - !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", "viewForZooming"]
+- ["s9EquatableP", "viewForZoomingInScrollView"]
+- !private ["s9EquatableP", "width"]
+- !private ["s9EquatableP", "x"]
 - ["s9EquatableP", ""]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "didReceiveMemoryWarning"]
-- !private ["s8HashableP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s8HashableP", "Bundle"]
+- !private ["s8HashableP", "CGSize"]
+- ["s8HashableP", "Dictionary"]
+- !private ["s8HashableP", "Int"]
+- !private ["s8HashableP", "UIColor"]
+- !private ["s8HashableP", "UIImage"]
+- !private ["s8HashableP", "addSubview"]
+- !private ["s8HashableP", "black"]
+- !private ["s8HashableP", "cgColor"]
+- !private ["s8HashableP", "contentOffset"]
+- !private ["s8HashableP", "currentPage"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "frame"]
+- !private ["s8HashableP", "image"]
+- ["s8HashableP", "init"]
 - !private ["s8HashableP", "instantiateViewController"]
+- !private ["s8HashableP", "isPagingEnabled"]
+- !private ["s8HashableP", "layer"]
+- !private ["s8HashableP", "loadNibNamed"]
+- !private ["s8HashableP", "loadTutes"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "masksToBounds"]
+- !private ["s8HashableP", "numberOfPages"]
+- !private ["s8HashableP", "pageControl"]
 - !private ["s8HashableP", "present"]
+- !private ["s8HashableP", "scrollView"]
+- ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s8HashableP", "scrollViewDidEndDecelerating"]
+- ["s8HashableP", "scrollViewDidEndDragging"]
+- ["s8HashableP", "scrollViewDidEndScrollingAnimation"]
+- ["s8HashableP", "scrollViewDidEndZooming"]
+- ["s8HashableP", "scrollViewDidScroll"]
+- ["s8HashableP", "scrollViewDidScrollToTop"]
+- ["s8HashableP", "scrollViewDidZoom"]
+- ["s8HashableP", "scrollViewShouldScrollToTop"]
+- ["s8HashableP", "scrollViewWillBeginDecelerating"]
+- ["s8HashableP", "scrollViewWillBeginDragging"]
+- ["s8HashableP", "scrollViewWillBeginZooming"]
+- ["s8HashableP", "scrollViewWillEndDragging"]
 - !private ["s8HashableP", "segueToLogin"]
+- !private ["s8HashableP", "shadowColor"]
+- !private ["s8HashableP", "shadowOffset"]
+- !private ["s8HashableP", "shadowOpacity"]
+- !private ["s8HashableP", "shadowRadius"]
+- !private ["s8HashableP", "shouldRasterize"]
+- !private ["s8HashableP", "showsHorizontalScrollIndicator"]
+- !private ["s8HashableP", "showsVerticalScrollIndicator"]
 - !private ["s8HashableP", "storyboard"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "tute1"]
+- !private ["s8HashableP", "tute2"]
+- !private ["s8HashableP", "tute3"]
+- !private ["s8HashableP", "tute4"]
+- !private ["s8HashableP", "tuteArray"]
+- !private ["s8HashableP", "tuteDescription"]
+- !private ["s8HashableP", "tuteImage"]
+- !private ["s8HashableP", "tuteTitle"]
 - !private ["s8HashableP", "userObj"]
 - !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", "viewForZooming"]
+- ["s8HashableP", "viewForZoomingInScrollView"]
 - ["s8HashableP", ""]
+- !private ["4Test21InitialViewControllerC", "Bundle"]
+- !private ["4Test21InitialViewControllerC", "CGSize"]
+- ["4Test21InitialViewControllerC", "Dictionary"]
+- !private ["4Test21InitialViewControllerC", "Int"]
 - ["4Test21InitialViewControllerC", "String"]
+- !private ["4Test21InitialViewControllerC", "TuteView"]
+- !private ["4Test21InitialViewControllerC", "UIColor"]
+- !private ["4Test21InitialViewControllerC", "UIImage"]
+- ["4Test21InitialViewControllerC", "UIPageControl"]
+- ["4Test21InitialViewControllerC", "UIScrollView"]
 - ["4Test21InitialViewControllerC", "btnAdminCreator"]
 - ["4Test21InitialViewControllerC", "btnCreator"]
 - ["4Test21InitialViewControllerC", "deinit"]
-- ["4Test21InitialViewControllerC", "didReceiveMemoryWarning"]
 - ["4Test21InitialViewControllerC", "init"]
+- ["4Test21InitialViewControllerC", "loadTutes"]
+- ["4Test21InitialViewControllerC", "pageControl"]
 - !private ["4Test21InitialViewControllerC", "present"]
+- ["4Test21InitialViewControllerC", "scrollView"]
+- ["4Test21InitialViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
+- ["4Test21InitialViewControllerC", "scrollViewDidEndDecelerating"]
+- ["4Test21InitialViewControllerC", "scrollViewDidEndDragging"]
+- ["4Test21InitialViewControllerC", "scrollViewDidEndScrollingAnimation"]
+- ["4Test21InitialViewControllerC", "scrollViewDidEndZooming"]
+- ["4Test21InitialViewControllerC", "scrollViewDidScroll"]
+- ["4Test21InitialViewControllerC", "scrollViewDidScrollToTop"]
+- ["4Test21InitialViewControllerC", "scrollViewDidZoom"]
+- ["4Test21InitialViewControllerC", "scrollViewShouldScrollToTop"]
+- ["4Test21InitialViewControllerC", "scrollViewWillBeginDecelerating"]
+- ["4Test21InitialViewControllerC", "scrollViewWillBeginDragging"]
+- ["4Test21InitialViewControllerC", "scrollViewWillBeginZooming"]
+- ["4Test21InitialViewControllerC", "scrollViewWillEndDragging"]
 - ["4Test21InitialViewControllerC", "segueToLogin"]
 - !private ["4Test21InitialViewControllerC", "storyboard"]
+- ["4Test21InitialViewControllerC", "tute1"]
+- ["4Test21InitialViewControllerC", "tute2"]
+- ["4Test21InitialViewControllerC", "tute3"]
+- ["4Test21InitialViewControllerC", "tute4"]
+- ["4Test21InitialViewControllerC", "tuteArray"]
 - !private ["4Test21InitialViewControllerC", "userObj"]
 - ["4Test21InitialViewControllerC", "viewDidLoad"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
-- !private ["8Material14MotionDelegateP", "didReceiveMemoryWarning"]
+- ["4Test21InitialViewControllerC", "viewForZooming"]
+- ["4Test21InitialViewControllerC", "viewForZoomingInScrollView"]
+- !private ["Si", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["8Material14MotionDelegateP", "Bundle"]
+- !private ["8Material14MotionDelegateP", "CGSize"]
+- ["8Material14MotionDelegateP", "Dictionary"]
+- !private ["8Material14MotionDelegateP", "Int"]
+- !private ["8Material14MotionDelegateP", "UIColor"]
+- !private ["8Material14MotionDelegateP", "UIImage"]
 - !private ["8Material14MotionDelegateP", "init"]
+- !private ["8Material14MotionDelegateP", "loadTutes"]
+- !private ["8Material14MotionDelegateP", "pageControl"]
 - !private ["8Material14MotionDelegateP", "present"]
+- !private ["8Material14MotionDelegateP", "scrollView"]
+- ["8Material14MotionDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["8Material14MotionDelegateP", "scrollViewDidEndDecelerating"]
+- ["8Material14MotionDelegateP", "scrollViewDidEndDragging"]
+- ["8Material14MotionDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["8Material14MotionDelegateP", "scrollViewDidEndZooming"]
+- ["8Material14MotionDelegateP", "scrollViewDidScroll"]
+- ["8Material14MotionDelegateP", "scrollViewDidScrollToTop"]
+- ["8Material14MotionDelegateP", "scrollViewDidZoom"]
+- ["8Material14MotionDelegateP", "scrollViewShouldScrollToTop"]
+- ["8Material14MotionDelegateP", "scrollViewWillBeginDecelerating"]
+- ["8Material14MotionDelegateP", "scrollViewWillBeginDragging"]
+- ["8Material14MotionDelegateP", "scrollViewWillBeginZooming"]
+- ["8Material14MotionDelegateP", "scrollViewWillEndDragging"]
 - !private ["8Material14MotionDelegateP", "segueToLogin"]
 - !private ["8Material14MotionDelegateP", "storyboard"]
+- !private ["8Material14MotionDelegateP", "tute1"]
+- !private ["8Material14MotionDelegateP", "tute2"]
+- !private ["8Material14MotionDelegateP", "tute3"]
+- !private ["8Material14MotionDelegateP", "tute4"]
+- !private ["8Material14MotionDelegateP", "tuteArray"]
 - !private ["8Material14MotionDelegateP", "userObj"]
 - !private ["8Material14MotionDelegateP", "viewDidLoad"]
+- ["8Material14MotionDelegateP", "viewForZooming"]
+- ["8Material14MotionDelegateP", "viewForZoomingInScrollView"]
 - ["8Material14MotionDelegateP", ""]
-- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
-- !private ["So8NSCodingP", "init"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "enumerated"]
+- !private ["s17MutableCollectionP", "first"]
+- ["s17MutableCollectionP", "init"]
+- !private ["So8NSCodingP", "Bundle"]
+- !private ["So8NSCodingP", "CGSize"]
+- ["So8NSCodingP", "Dictionary"]
+- !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "UIColor"]
+- !private ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "addSubview"]
+- !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "contentOffset"]
+- !private ["So8NSCodingP", "currentPage"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "image"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isPagingEnabled"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "loadTutes"]
+- !private ["So8NSCodingP", "masksToBounds"]
+- !private ["So8NSCodingP", "numberOfPages"]
+- !private ["So8NSCodingP", "pageControl"]
 - !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "scrollView"]
+- ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSCodingP", "scrollViewDidEndDecelerating"]
+- ["So8NSCodingP", "scrollViewDidEndDragging"]
+- ["So8NSCodingP", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSCodingP", "scrollViewDidEndZooming"]
+- ["So8NSCodingP", "scrollViewDidScroll"]
+- ["So8NSCodingP", "scrollViewDidScrollToTop"]
+- ["So8NSCodingP", "scrollViewDidZoom"]
+- ["So8NSCodingP", "scrollViewShouldScrollToTop"]
+- ["So8NSCodingP", "scrollViewWillBeginDecelerating"]
+- ["So8NSCodingP", "scrollViewWillBeginDragging"]
+- ["So8NSCodingP", "scrollViewWillBeginZooming"]
+- ["So8NSCodingP", "scrollViewWillEndDragging"]
 - !private ["So8NSCodingP", "segueToLogin"]
+- !private ["So8NSCodingP", "shadowColor"]
+- !private ["So8NSCodingP", "shadowOffset"]
+- !private ["So8NSCodingP", "shadowOpacity"]
+- !private ["So8NSCodingP", "shadowRadius"]
+- !private ["So8NSCodingP", "shouldRasterize"]
+- !private ["So8NSCodingP", "showsHorizontalScrollIndicator"]
+- !private ["So8NSCodingP", "showsVerticalScrollIndicator"]
 - !private ["So8NSCodingP", "storyboard"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "tute1"]
+- !private ["So8NSCodingP", "tute2"]
+- !private ["So8NSCodingP", "tute3"]
+- !private ["So8NSCodingP", "tute4"]
+- !private ["So8NSCodingP", "tuteArray"]
+- !private ["So8NSCodingP", "tuteDescription"]
+- !private ["So8NSCodingP", "tuteImage"]
+- !private ["So8NSCodingP", "tuteTitle"]
 - !private ["So8NSCodingP", "userObj"]
 - !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", "viewForZooming"]
+- ["So8NSCodingP", "viewForZoomingInScrollView"]
 - ["So8NSCodingP", ""]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "cgColor"]
+- ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "Bundle"]
+- !private ["So26NSExtensionRequestHandlingP", "CGSize"]
+- ["So26NSExtensionRequestHandlingP", "Dictionary"]
+- !private ["So26NSExtensionRequestHandlingP", "Int"]
+- !private ["So26NSExtensionRequestHandlingP", "UIColor"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "loadTutes"]
+- !private ["So26NSExtensionRequestHandlingP", "pageControl"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "scrollView"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDragging"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidEndScrollingAnimation"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidEndZooming"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidScroll"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidScrollToTop"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidZoom"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewShouldScrollToTop"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewWillBeginDecelerating"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewWillBeginDragging"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewWillBeginZooming"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewWillEndDragging"]
 - !private ["So26NSExtensionRequestHandlingP", "segueToLogin"]
 - !private ["So26NSExtensionRequestHandlingP", "storyboard"]
+- !private ["So26NSExtensionRequestHandlingP", "tute1"]
+- !private ["So26NSExtensionRequestHandlingP", "tute2"]
+- !private ["So26NSExtensionRequestHandlingP", "tute3"]
+- !private ["So26NSExtensionRequestHandlingP", "tute4"]
+- !private ["So26NSExtensionRequestHandlingP", "tuteArray"]
 - !private ["So26NSExtensionRequestHandlingP", "userObj"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", "viewForZooming"]
+- ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - ["So26NSExtensionRequestHandlingP", ""]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
+- ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "Bundle"]
+- !private ["So8NSObjectC", "CGSize"]
+- ["So8NSObjectC", "Dictionary"]
+- !private ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "TuteView"]
+- !private ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "UIPageControl"]
+- ["So8NSObjectC", "UIScrollView"]
+- !private ["So8NSObjectC", "addSubview"]
+- !private ["So8NSObjectC", "black"]
 - ["So8NSObjectC", "btnAdminCreator"]
 - ["So8NSObjectC", "btnCreator"]
-- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectC", "cgColor"]
+- !private ["So8NSObjectC", "contentOffset"]
+- !private ["So8NSObjectC", "currentPage"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "isPagingEnabled"]
+- !private ["So8NSObjectC", "layer"]
+- !private ["So8NSObjectC", "loadNibNamed"]
+- ["So8NSObjectC", "loadTutes"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "masksToBounds"]
+- !private ["So8NSObjectC", "numberOfPages"]
+- ["So8NSObjectC", "pageControl"]
 - !private ["So8NSObjectC", "present"]
+- ["So8NSObjectC", "scrollView"]
+- ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSObjectC", "scrollViewDidEndDecelerating"]
+- ["So8NSObjectC", "scrollViewDidEndDragging"]
+- ["So8NSObjectC", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSObjectC", "scrollViewDidEndZooming"]
+- ["So8NSObjectC", "scrollViewDidScroll"]
+- ["So8NSObjectC", "scrollViewDidScrollToTop"]
+- ["So8NSObjectC", "scrollViewDidZoom"]
+- ["So8NSObjectC", "scrollViewShouldScrollToTop"]
+- ["So8NSObjectC", "scrollViewWillBeginDecelerating"]
+- ["So8NSObjectC", "scrollViewWillBeginDragging"]
+- ["So8NSObjectC", "scrollViewWillBeginZooming"]
+- ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "segueToLogin"]
+- !private ["So8NSObjectC", "shadowColor"]
+- !private ["So8NSObjectC", "shadowOffset"]
+- !private ["So8NSObjectC", "shadowOpacity"]
+- !private ["So8NSObjectC", "shadowRadius"]
+- !private ["So8NSObjectC", "shouldRasterize"]
+- !private ["So8NSObjectC", "showsHorizontalScrollIndicator"]
+- !private ["So8NSObjectC", "showsVerticalScrollIndicator"]
 - !private ["So8NSObjectC", "storyboard"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "tute1"]
+- ["So8NSObjectC", "tute2"]
+- ["So8NSObjectC", "tute3"]
+- ["So8NSObjectC", "tute4"]
+- ["So8NSObjectC", "tuteArray"]
+- !private ["So8NSObjectC", "tuteDescription"]
+- !private ["So8NSObjectC", "tuteImage"]
+- !private ["So8NSObjectC", "tuteTitle"]
 - !private ["So8NSObjectC", "userObj"]
 - ["So8NSObjectC", "viewDidLoad"]
-- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
-- !private ["So16NSObjectProtocolP", "init"]
+- ["So8NSObjectC", "viewForZooming"]
+- ["So8NSObjectC", "viewForZoomingInScrollView"]
+- !private ["So16NSObjectProtocolP", "Bundle"]
+- !private ["So16NSObjectProtocolP", "CGSize"]
+- ["So16NSObjectProtocolP", "Dictionary"]
+- !private ["So16NSObjectProtocolP", "Int"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
+- !private ["So16NSObjectProtocolP", "UIImage"]
+- !private ["So16NSObjectProtocolP", "addSubview"]
+- !private ["So16NSObjectProtocolP", "black"]
+- !private ["So16NSObjectProtocolP", "cgColor"]
+- !private ["So16NSObjectProtocolP", "contentOffset"]
+- !private ["So16NSObjectProtocolP", "currentPage"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "frame"]
+- !private ["So16NSObjectProtocolP", "image"]
+- ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- !private ["So16NSObjectProtocolP", "isPagingEnabled"]
+- !private ["So16NSObjectProtocolP", "layer"]
+- !private ["So16NSObjectProtocolP", "loadNibNamed"]
+- !private ["So16NSObjectProtocolP", "loadTutes"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "masksToBounds"]
+- !private ["So16NSObjectProtocolP", "numberOfPages"]
+- !private ["So16NSObjectProtocolP", "pageControl"]
 - !private ["So16NSObjectProtocolP", "present"]
+- !private ["So16NSObjectProtocolP", "scrollView"]
+- ["So16NSObjectProtocolP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So16NSObjectProtocolP", "scrollViewDidEndDecelerating"]
+- ["So16NSObjectProtocolP", "scrollViewDidEndDragging"]
+- ["So16NSObjectProtocolP", "scrollViewDidEndScrollingAnimation"]
+- ["So16NSObjectProtocolP", "scrollViewDidEndZooming"]
+- ["So16NSObjectProtocolP", "scrollViewDidScroll"]
+- ["So16NSObjectProtocolP", "scrollViewDidScrollToTop"]
+- ["So16NSObjectProtocolP", "scrollViewDidZoom"]
+- ["So16NSObjectProtocolP", "scrollViewShouldScrollToTop"]
+- ["So16NSObjectProtocolP", "scrollViewWillBeginDecelerating"]
+- ["So16NSObjectProtocolP", "scrollViewWillBeginDragging"]
+- ["So16NSObjectProtocolP", "scrollViewWillBeginZooming"]
+- ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
 - !private ["So16NSObjectProtocolP", "segueToLogin"]
+- !private ["So16NSObjectProtocolP", "shadowColor"]
+- !private ["So16NSObjectProtocolP", "shadowOffset"]
+- !private ["So16NSObjectProtocolP", "shadowOpacity"]
+- !private ["So16NSObjectProtocolP", "shadowRadius"]
+- !private ["So16NSObjectProtocolP", "shouldRasterize"]
+- !private ["So16NSObjectProtocolP", "showsHorizontalScrollIndicator"]
+- !private ["So16NSObjectProtocolP", "showsVerticalScrollIndicator"]
 - !private ["So16NSObjectProtocolP", "storyboard"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "tute1"]
+- !private ["So16NSObjectProtocolP", "tute2"]
+- !private ["So16NSObjectProtocolP", "tute3"]
+- !private ["So16NSObjectProtocolP", "tute4"]
+- !private ["So16NSObjectProtocolP", "tuteArray"]
+- !private ["So16NSObjectProtocolP", "tuteDescription"]
+- !private ["So16NSObjectProtocolP", "tuteImage"]
+- !private ["So16NSObjectProtocolP", "tuteTitle"]
 - !private ["So16NSObjectProtocolP", "userObj"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", "viewForZooming"]
+- ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
 - ["So16NSObjectProtocolP", ""]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s8SequenceP", "init"]
-- !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So14NSSecureCodingP", "black"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "masksToBounds"]
+- !private ["So14NSSecureCodingP", "shadowColor"]
+- !private ["So14NSSecureCodingP", "shadowOffset"]
+- !private ["So14NSSecureCodingP", "shadowOpacity"]
+- !private ["So14NSSecureCodingP", "shadowRadius"]
+- !private ["So14NSSecureCodingP", "shouldRasterize"]
+- ["So8NSStringC", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "enumerated"]
+- !private ["s22RandomAccessCollectionP", "first"]
+- ["s22RandomAccessCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "enumerated"]
+- !private ["s26RangeReplaceableCollectionP", "first"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "enumerated"]
+- !private ["s8SequenceP", "first"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s10StrideableP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["4Test8TuteViewC", "tuteDescription"]
+- !private ["4Test8TuteViewC", "tuteImage"]
+- !private ["4Test8TuteViewC", "tuteTitle"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "contentOffset"]
+- !private ["So29UIAccessibilityIdentificationP", "currentPage"]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "isPagingEnabled"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "numberOfPages"]
+- !private ["So29UIAccessibilityIdentificationP", "showsHorizontalScrollIndicator"]
+- !private ["So29UIAccessibilityIdentificationP", "showsVerticalScrollIndicator"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "tuteDescription"]
+- !private ["So29UIAccessibilityIdentificationP", "tuteImage"]
+- !private ["So29UIAccessibilityIdentificationP", "tuteTitle"]
+- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "contentOffset"]
+- !private ["So12UIAppearanceP", "currentPage"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "isPagingEnabled"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "numberOfPages"]
+- !private ["So12UIAppearanceP", "showsHorizontalScrollIndicator"]
+- !private ["So12UIAppearanceP", "showsVerticalScrollIndicator"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "tuteDescription"]
+- !private ["So12UIAppearanceP", "tuteImage"]
+- !private ["So12UIAppearanceP", "tuteTitle"]
+- !private ["So21UIAppearanceContainerP", "Bundle"]
+- !private ["So21UIAppearanceContainerP", "CGSize"]
+- ["So21UIAppearanceContainerP", "Dictionary"]
+- !private ["So21UIAppearanceContainerP", "Int"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "addSubview"]
+- !private ["So21UIAppearanceContainerP", "contentOffset"]
+- !private ["So21UIAppearanceContainerP", "currentPage"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "image"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isPagingEnabled"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "loadTutes"]
+- !private ["So21UIAppearanceContainerP", "numberOfPages"]
+- !private ["So21UIAppearanceContainerP", "pageControl"]
 - !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "scrollView"]
+- ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndDecelerating"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndDragging"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndScrollingAnimation"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndZooming"]
+- ["So21UIAppearanceContainerP", "scrollViewDidScroll"]
+- ["So21UIAppearanceContainerP", "scrollViewDidScrollToTop"]
+- ["So21UIAppearanceContainerP", "scrollViewDidZoom"]
+- ["So21UIAppearanceContainerP", "scrollViewShouldScrollToTop"]
+- ["So21UIAppearanceContainerP", "scrollViewWillBeginDecelerating"]
+- ["So21UIAppearanceContainerP", "scrollViewWillBeginDragging"]
+- ["So21UIAppearanceContainerP", "scrollViewWillBeginZooming"]
+- ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
 - !private ["So21UIAppearanceContainerP", "segueToLogin"]
+- !private ["So21UIAppearanceContainerP", "showsHorizontalScrollIndicator"]
+- !private ["So21UIAppearanceContainerP", "showsVerticalScrollIndicator"]
 - !private ["So21UIAppearanceContainerP", "storyboard"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "tute1"]
+- !private ["So21UIAppearanceContainerP", "tute2"]
+- !private ["So21UIAppearanceContainerP", "tute3"]
+- !private ["So21UIAppearanceContainerP", "tute4"]
+- !private ["So21UIAppearanceContainerP", "tuteArray"]
+- !private ["So21UIAppearanceContainerP", "tuteDescription"]
+- !private ["So21UIAppearanceContainerP", "tuteImage"]
+- !private ["So21UIAppearanceContainerP", "tuteTitle"]
 - !private ["So21UIAppearanceContainerP", "userObj"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", "viewForZooming"]
+- ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - ["So21UIAppearanceContainerP", ""]
-- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So7UIColorC", "black"]
+- !private ["So7UIColorC", "cgColor"]
+- !private ["So18UIContentContainerP", "Bundle"]
+- !private ["So18UIContentContainerP", "CGSize"]
+- ["So18UIContentContainerP", "Dictionary"]
+- !private ["So18UIContentContainerP", "Int"]
+- !private ["So18UIContentContainerP", "UIColor"]
+- !private ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "loadTutes"]
+- !private ["So18UIContentContainerP", "pageControl"]
 - !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "scrollView"]
+- ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
+- ["So18UIContentContainerP", "scrollViewDidEndDragging"]
+- ["So18UIContentContainerP", "scrollViewDidEndScrollingAnimation"]
+- ["So18UIContentContainerP", "scrollViewDidEndZooming"]
+- ["So18UIContentContainerP", "scrollViewDidScroll"]
+- ["So18UIContentContainerP", "scrollViewDidScrollToTop"]
+- ["So18UIContentContainerP", "scrollViewDidZoom"]
+- ["So18UIContentContainerP", "scrollViewShouldScrollToTop"]
+- ["So18UIContentContainerP", "scrollViewWillBeginDecelerating"]
+- ["So18UIContentContainerP", "scrollViewWillBeginDragging"]
+- ["So18UIContentContainerP", "scrollViewWillBeginZooming"]
+- ["So18UIContentContainerP", "scrollViewWillEndDragging"]
 - !private ["So18UIContentContainerP", "segueToLogin"]
 - !private ["So18UIContentContainerP", "storyboard"]
+- !private ["So18UIContentContainerP", "tute1"]
+- !private ["So18UIContentContainerP", "tute2"]
+- !private ["So18UIContentContainerP", "tute3"]
+- !private ["So18UIContentContainerP", "tute4"]
+- !private ["So18UIContentContainerP", "tuteArray"]
 - !private ["So18UIContentContainerP", "userObj"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", "viewForZooming"]
+- ["So18UIContentContainerP", "viewForZoomingInScrollView"]
 - ["So18UIContentContainerP", ""]
-- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "currentPage"]
+- !private ["So9UIControlC", "numberOfPages"]
+- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "contentOffset"]
+- !private ["So17UICoordinateSpaceP", "currentPage"]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "isPagingEnabled"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "numberOfPages"]
+- !private ["So17UICoordinateSpaceP", "showsHorizontalScrollIndicator"]
+- !private ["So17UICoordinateSpaceP", "showsVerticalScrollIndicator"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "tuteDescription"]
+- !private ["So17UICoordinateSpaceP", "tuteImage"]
+- !private ["So17UICoordinateSpaceP", "tuteTitle"]
+- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "contentOffset"]
+- !private ["So13UIDynamicItemP", "currentPage"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "isPagingEnabled"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "numberOfPages"]
+- !private ["So13UIDynamicItemP", "showsHorizontalScrollIndicator"]
+- !private ["So13UIDynamicItemP", "showsVerticalScrollIndicator"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "tuteDescription"]
+- !private ["So13UIDynamicItemP", "tuteImage"]
+- !private ["So13UIDynamicItemP", "tuteTitle"]
+- !private ["So18UIFocusEnvironmentP", "Bundle"]
+- !private ["So18UIFocusEnvironmentP", "CGSize"]
+- ["So18UIFocusEnvironmentP", "Dictionary"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- !private ["So18UIFocusEnvironmentP", "contentOffset"]
+- !private ["So18UIFocusEnvironmentP", "currentPage"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "image"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isPagingEnabled"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "loadTutes"]
+- !private ["So18UIFocusEnvironmentP", "numberOfPages"]
+- !private ["So18UIFocusEnvironmentP", "pageControl"]
 - !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "scrollView"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndDecelerating"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndDragging"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndScrollingAnimation"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndZooming"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidScroll"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidScrollToTop"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidZoom"]
+- ["So18UIFocusEnvironmentP", "scrollViewShouldScrollToTop"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillBeginDecelerating"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillBeginDragging"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillBeginZooming"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
 - !private ["So18UIFocusEnvironmentP", "segueToLogin"]
+- !private ["So18UIFocusEnvironmentP", "showsHorizontalScrollIndicator"]
+- !private ["So18UIFocusEnvironmentP", "showsVerticalScrollIndicator"]
 - !private ["So18UIFocusEnvironmentP", "storyboard"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "tute1"]
+- !private ["So18UIFocusEnvironmentP", "tute2"]
+- !private ["So18UIFocusEnvironmentP", "tute3"]
+- !private ["So18UIFocusEnvironmentP", "tute4"]
+- !private ["So18UIFocusEnvironmentP", "tuteArray"]
+- !private ["So18UIFocusEnvironmentP", "tuteDescription"]
+- !private ["So18UIFocusEnvironmentP", "tuteImage"]
+- !private ["So18UIFocusEnvironmentP", "tuteTitle"]
 - !private ["So18UIFocusEnvironmentP", "userObj"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", "viewForZooming"]
+- ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - ["So18UIFocusEnvironmentP", ""]
-- !private ["So30UINavigationControllerDelegateP", "didReceiveMemoryWarning"]
+- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "contentOffset"]
+- !private ["So11UIFocusItemP", "currentPage"]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "isPagingEnabled"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "numberOfPages"]
+- !private ["So11UIFocusItemP", "showsHorizontalScrollIndicator"]
+- !private ["So11UIFocusItemP", "showsVerticalScrollIndicator"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "tuteDescription"]
+- !private ["So11UIFocusItemP", "tuteImage"]
+- !private ["So11UIFocusItemP", "tuteTitle"]
+- !private ["So7UIImageC", "init"]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UINavigationControllerDelegateP", "Bundle"]
+- !private ["So30UINavigationControllerDelegateP", "CGSize"]
+- ["So30UINavigationControllerDelegateP", "Dictionary"]
+- !private ["So30UINavigationControllerDelegateP", "Int"]
+- !private ["So30UINavigationControllerDelegateP", "UIColor"]
+- !private ["So30UINavigationControllerDelegateP", "UIImage"]
 - !private ["So30UINavigationControllerDelegateP", "init"]
+- !private ["So30UINavigationControllerDelegateP", "loadTutes"]
+- !private ["So30UINavigationControllerDelegateP", "pageControl"]
 - !private ["So30UINavigationControllerDelegateP", "present"]
+- !private ["So30UINavigationControllerDelegateP", "scrollView"]
+- ["So30UINavigationControllerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So30UINavigationControllerDelegateP", "scrollViewDidEndDecelerating"]
+- ["So30UINavigationControllerDelegateP", "scrollViewDidEndDragging"]
+- ["So30UINavigationControllerDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["So30UINavigationControllerDelegateP", "scrollViewDidEndZooming"]
+- ["So30UINavigationControllerDelegateP", "scrollViewDidScroll"]
+- ["So30UINavigationControllerDelegateP", "scrollViewDidScrollToTop"]
+- ["So30UINavigationControllerDelegateP", "scrollViewDidZoom"]
+- ["So30UINavigationControllerDelegateP", "scrollViewShouldScrollToTop"]
+- ["So30UINavigationControllerDelegateP", "scrollViewWillBeginDecelerating"]
+- ["So30UINavigationControllerDelegateP", "scrollViewWillBeginDragging"]
+- ["So30UINavigationControllerDelegateP", "scrollViewWillBeginZooming"]
+- ["So30UINavigationControllerDelegateP", "scrollViewWillEndDragging"]
 - !private ["So30UINavigationControllerDelegateP", "segueToLogin"]
 - !private ["So30UINavigationControllerDelegateP", "storyboard"]
+- !private ["So30UINavigationControllerDelegateP", "tute1"]
+- !private ["So30UINavigationControllerDelegateP", "tute2"]
+- !private ["So30UINavigationControllerDelegateP", "tute3"]
+- !private ["So30UINavigationControllerDelegateP", "tute4"]
+- !private ["So30UINavigationControllerDelegateP", "tuteArray"]
 - !private ["So30UINavigationControllerDelegateP", "userObj"]
 - !private ["So30UINavigationControllerDelegateP", "viewDidLoad"]
+- ["So30UINavigationControllerDelegateP", "viewForZooming"]
+- ["So30UINavigationControllerDelegateP", "viewForZoomingInScrollView"]
 - ["So30UINavigationControllerDelegateP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So13UIPageControlC", "currentPage"]
+- !private ["So13UIPageControlC", "numberOfPages"]
+- !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
+- ["So30UIPasteConfigurationSupportingP", "Dictionary"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentOffset"]
+- !private ["So30UIPasteConfigurationSupportingP", "currentPage"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isPagingEnabled"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "loadTutes"]
+- !private ["So30UIPasteConfigurationSupportingP", "numberOfPages"]
+- !private ["So30UIPasteConfigurationSupportingP", "pageControl"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "scrollView"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDecelerating"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDragging"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndScrollingAnimation"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndZooming"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidScroll"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidScrollToTop"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidZoom"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewShouldScrollToTop"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginDecelerating"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginDragging"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginZooming"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
 - !private ["So30UIPasteConfigurationSupportingP", "segueToLogin"]
+- !private ["So30UIPasteConfigurationSupportingP", "showsHorizontalScrollIndicator"]
+- !private ["So30UIPasteConfigurationSupportingP", "showsVerticalScrollIndicator"]
 - !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "tute1"]
+- !private ["So30UIPasteConfigurationSupportingP", "tute2"]
+- !private ["So30UIPasteConfigurationSupportingP", "tute3"]
+- !private ["So30UIPasteConfigurationSupportingP", "tute4"]
+- !private ["So30UIPasteConfigurationSupportingP", "tuteArray"]
+- !private ["So30UIPasteConfigurationSupportingP", "tuteDescription"]
+- !private ["So30UIPasteConfigurationSupportingP", "tuteImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "tuteTitle"]
 - !private ["So30UIPasteConfigurationSupportingP", "userObj"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
+- ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "Bundle"]
+- !private ["So11UIResponderC", "CGSize"]
+- ["So11UIResponderC", "Dictionary"]
+- !private ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "TuteView"]
+- !private ["So11UIResponderC", "UIColor"]
+- !private ["So11UIResponderC", "UIImage"]
+- ["So11UIResponderC", "UIPageControl"]
+- ["So11UIResponderC", "UIScrollView"]
+- !private ["So11UIResponderC", "addSubview"]
 - ["So11UIResponderC", "btnAdminCreator"]
 - ["So11UIResponderC", "btnCreator"]
-- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- !private ["So11UIResponderC", "contentOffset"]
+- !private ["So11UIResponderC", "currentPage"]
+- !private ["So11UIResponderC", "delegate"]
+- !private ["So11UIResponderC", "frame"]
+- !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isPagingEnabled"]
+- !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "loadTutes"]
+- !private ["So11UIResponderC", "numberOfPages"]
+- ["So11UIResponderC", "pageControl"]
 - !private ["So11UIResponderC", "present"]
+- ["So11UIResponderC", "scrollView"]
+- ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So11UIResponderC", "scrollViewDidEndDecelerating"]
+- ["So11UIResponderC", "scrollViewDidEndDragging"]
+- ["So11UIResponderC", "scrollViewDidEndScrollingAnimation"]
+- ["So11UIResponderC", "scrollViewDidEndZooming"]
+- ["So11UIResponderC", "scrollViewDidScroll"]
+- ["So11UIResponderC", "scrollViewDidScrollToTop"]
+- ["So11UIResponderC", "scrollViewDidZoom"]
+- ["So11UIResponderC", "scrollViewShouldScrollToTop"]
+- ["So11UIResponderC", "scrollViewWillBeginDecelerating"]
+- ["So11UIResponderC", "scrollViewWillBeginDragging"]
+- ["So11UIResponderC", "scrollViewWillBeginZooming"]
+- ["So11UIResponderC", "scrollViewWillEndDragging"]
 - ["So11UIResponderC", "segueToLogin"]
+- !private ["So11UIResponderC", "showsHorizontalScrollIndicator"]
+- !private ["So11UIResponderC", "showsVerticalScrollIndicator"]
 - !private ["So11UIResponderC", "storyboard"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "tute1"]
+- ["So11UIResponderC", "tute2"]
+- ["So11UIResponderC", "tute3"]
+- ["So11UIResponderC", "tute4"]
+- ["So11UIResponderC", "tuteArray"]
+- !private ["So11UIResponderC", "tuteDescription"]
+- !private ["So11UIResponderC", "tuteImage"]
+- !private ["So11UIResponderC", "tuteTitle"]
 - !private ["So11UIResponderC", "userObj"]
 - ["So11UIResponderC", "viewDidLoad"]
-- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "viewForZooming"]
+- ["So11UIResponderC", "viewForZoomingInScrollView"]
+- !private ["So30UIResponderStandardEditActionsP", "Bundle"]
+- !private ["So30UIResponderStandardEditActionsP", "CGSize"]
+- ["So30UIResponderStandardEditActionsP", "Dictionary"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "contentOffset"]
+- !private ["So30UIResponderStandardEditActionsP", "currentPage"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isPagingEnabled"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "loadTutes"]
+- !private ["So30UIResponderStandardEditActionsP", "numberOfPages"]
+- !private ["So30UIResponderStandardEditActionsP", "pageControl"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "scrollView"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDecelerating"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDragging"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndScrollingAnimation"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndZooming"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidScroll"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidScrollToTop"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidZoom"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewShouldScrollToTop"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginDecelerating"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginDragging"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginZooming"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
 - !private ["So30UIResponderStandardEditActionsP", "segueToLogin"]
+- !private ["So30UIResponderStandardEditActionsP", "showsHorizontalScrollIndicator"]
+- !private ["So30UIResponderStandardEditActionsP", "showsVerticalScrollIndicator"]
 - !private ["So30UIResponderStandardEditActionsP", "storyboard"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "tute1"]
+- !private ["So30UIResponderStandardEditActionsP", "tute2"]
+- !private ["So30UIResponderStandardEditActionsP", "tute3"]
+- !private ["So30UIResponderStandardEditActionsP", "tute4"]
+- !private ["So30UIResponderStandardEditActionsP", "tuteArray"]
+- !private ["So30UIResponderStandardEditActionsP", "tuteDescription"]
+- !private ["So30UIResponderStandardEditActionsP", "tuteImage"]
+- !private ["So30UIResponderStandardEditActionsP", "tuteTitle"]
 - !private ["So30UIResponderStandardEditActionsP", "userObj"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", "viewForZooming"]
+- ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So12UIScrollViewC", "addSubview"]
+- !private ["So12UIScrollViewC", "contentOffset"]
+- !private ["So12UIScrollViewC", "delegate"]
+- !private ["So12UIScrollViewC", "frame"]
+- !private ["So12UIScrollViewC", "isPagingEnabled"]
+- !private ["So12UIScrollViewC", "layer"]
+- !private ["So12UIScrollViewC", "showsHorizontalScrollIndicator"]
+- !private ["So12UIScrollViewC", "showsVerticalScrollIndicator"]
+- !private ["So20UIScrollViewDelegateP", "Bundle"]
+- !private ["So20UIScrollViewDelegateP", "CGSize"]
+- ["So20UIScrollViewDelegateP", "Dictionary"]
+- !private ["So20UIScrollViewDelegateP", "Int"]
+- !private ["So20UIScrollViewDelegateP", "UIColor"]
+- !private ["So20UIScrollViewDelegateP", "UIImage"]
+- !private ["So20UIScrollViewDelegateP", "loadTutes"]
+- !private ["So20UIScrollViewDelegateP", "pageControl"]
+- !private ["So20UIScrollViewDelegateP", "present"]
+- !private ["So20UIScrollViewDelegateP", "scrollView"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndDragging"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndZooming"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidScroll"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidScrollToTop"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidZoom"]
+- ["So20UIScrollViewDelegateP", "scrollViewShouldScrollToTop"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillBeginDecelerating"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillBeginDragging"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillBeginZooming"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
+- !private ["So20UIScrollViewDelegateP", "segueToLogin"]
+- !private ["So20UIScrollViewDelegateP", "storyboard"]
+- !private ["So20UIScrollViewDelegateP", "tute1"]
+- !private ["So20UIScrollViewDelegateP", "tute2"]
+- !private ["So20UIScrollViewDelegateP", "tute3"]
+- !private ["So20UIScrollViewDelegateP", "tute4"]
+- !private ["So20UIScrollViewDelegateP", "tuteArray"]
+- !private ["So20UIScrollViewDelegateP", "userObj"]
+- ["So20UIScrollViewDelegateP", "viewForZooming"]
+- ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
+- ["So20UIScrollViewDelegateP", ""]
+- !private ["So16UIStateRestoringP", "Bundle"]
+- !private ["So16UIStateRestoringP", "CGSize"]
+- ["So16UIStateRestoringP", "Dictionary"]
+- !private ["So16UIStateRestoringP", "Int"]
+- !private ["So16UIStateRestoringP", "UIColor"]
+- !private ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "loadTutes"]
+- !private ["So16UIStateRestoringP", "pageControl"]
 - !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "scrollView"]
+- ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
+- ["So16UIStateRestoringP", "scrollViewDidEndDragging"]
+- ["So16UIStateRestoringP", "scrollViewDidEndScrollingAnimation"]
+- ["So16UIStateRestoringP", "scrollViewDidEndZooming"]
+- ["So16UIStateRestoringP", "scrollViewDidScroll"]
+- ["So16UIStateRestoringP", "scrollViewDidScrollToTop"]
+- ["So16UIStateRestoringP", "scrollViewDidZoom"]
+- ["So16UIStateRestoringP", "scrollViewShouldScrollToTop"]
+- ["So16UIStateRestoringP", "scrollViewWillBeginDecelerating"]
+- ["So16UIStateRestoringP", "scrollViewWillBeginDragging"]
+- ["So16UIStateRestoringP", "scrollViewWillBeginZooming"]
+- ["So16UIStateRestoringP", "scrollViewWillEndDragging"]
 - !private ["So16UIStateRestoringP", "segueToLogin"]
 - !private ["So16UIStateRestoringP", "storyboard"]
+- !private ["So16UIStateRestoringP", "tute1"]
+- !private ["So16UIStateRestoringP", "tute2"]
+- !private ["So16UIStateRestoringP", "tute3"]
+- !private ["So16UIStateRestoringP", "tute4"]
+- !private ["So16UIStateRestoringP", "tuteArray"]
 - !private ["So16UIStateRestoringP", "userObj"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", "viewForZooming"]
+- ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
-- !private ["So26UITabBarControllerDelegateP", "didReceiveMemoryWarning"]
+- !private ["So26UITabBarControllerDelegateP", "Bundle"]
+- !private ["So26UITabBarControllerDelegateP", "CGSize"]
+- ["So26UITabBarControllerDelegateP", "Dictionary"]
+- !private ["So26UITabBarControllerDelegateP", "Int"]
+- !private ["So26UITabBarControllerDelegateP", "UIColor"]
+- !private ["So26UITabBarControllerDelegateP", "UIImage"]
 - !private ["So26UITabBarControllerDelegateP", "init"]
+- !private ["So26UITabBarControllerDelegateP", "loadTutes"]
+- !private ["So26UITabBarControllerDelegateP", "pageControl"]
 - !private ["So26UITabBarControllerDelegateP", "present"]
+- !private ["So26UITabBarControllerDelegateP", "scrollView"]
+- ["So26UITabBarControllerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So26UITabBarControllerDelegateP", "scrollViewDidEndDecelerating"]
+- ["So26UITabBarControllerDelegateP", "scrollViewDidEndDragging"]
+- ["So26UITabBarControllerDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["So26UITabBarControllerDelegateP", "scrollViewDidEndZooming"]
+- ["So26UITabBarControllerDelegateP", "scrollViewDidScroll"]
+- ["So26UITabBarControllerDelegateP", "scrollViewDidScrollToTop"]
+- ["So26UITabBarControllerDelegateP", "scrollViewDidZoom"]
+- ["So26UITabBarControllerDelegateP", "scrollViewShouldScrollToTop"]
+- ["So26UITabBarControllerDelegateP", "scrollViewWillBeginDecelerating"]
+- ["So26UITabBarControllerDelegateP", "scrollViewWillBeginDragging"]
+- ["So26UITabBarControllerDelegateP", "scrollViewWillBeginZooming"]
+- ["So26UITabBarControllerDelegateP", "scrollViewWillEndDragging"]
 - !private ["So26UITabBarControllerDelegateP", "segueToLogin"]
 - !private ["So26UITabBarControllerDelegateP", "storyboard"]
+- !private ["So26UITabBarControllerDelegateP", "tute1"]
+- !private ["So26UITabBarControllerDelegateP", "tute2"]
+- !private ["So26UITabBarControllerDelegateP", "tute3"]
+- !private ["So26UITabBarControllerDelegateP", "tute4"]
+- !private ["So26UITabBarControllerDelegateP", "tuteArray"]
 - !private ["So26UITabBarControllerDelegateP", "userObj"]
 - !private ["So26UITabBarControllerDelegateP", "viewDidLoad"]
+- ["So26UITabBarControllerDelegateP", "viewForZooming"]
+- ["So26UITabBarControllerDelegateP", "viewForZoomingInScrollView"]
 - ["So26UITabBarControllerDelegateP", ""]
-- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "Bundle"]
+- !private ["So18UITraitEnvironmentP", "CGSize"]
+- ["So18UITraitEnvironmentP", "Dictionary"]
+- !private ["So18UITraitEnvironmentP", "Int"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "addSubview"]
+- !private ["So18UITraitEnvironmentP", "contentOffset"]
+- !private ["So18UITraitEnvironmentP", "currentPage"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "image"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isPagingEnabled"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "loadTutes"]
+- !private ["So18UITraitEnvironmentP", "numberOfPages"]
+- !private ["So18UITraitEnvironmentP", "pageControl"]
 - !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "scrollView"]
+- ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndDecelerating"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndDragging"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndScrollingAnimation"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndZooming"]
+- ["So18UITraitEnvironmentP", "scrollViewDidScroll"]
+- ["So18UITraitEnvironmentP", "scrollViewDidScrollToTop"]
+- ["So18UITraitEnvironmentP", "scrollViewDidZoom"]
+- ["So18UITraitEnvironmentP", "scrollViewShouldScrollToTop"]
+- ["So18UITraitEnvironmentP", "scrollViewWillBeginDecelerating"]
+- ["So18UITraitEnvironmentP", "scrollViewWillBeginDragging"]
+- ["So18UITraitEnvironmentP", "scrollViewWillBeginZooming"]
+- ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
 - !private ["So18UITraitEnvironmentP", "segueToLogin"]
+- !private ["So18UITraitEnvironmentP", "showsHorizontalScrollIndicator"]
+- !private ["So18UITraitEnvironmentP", "showsVerticalScrollIndicator"]
 - !private ["So18UITraitEnvironmentP", "storyboard"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "tute1"]
+- !private ["So18UITraitEnvironmentP", "tute2"]
+- !private ["So18UITraitEnvironmentP", "tute3"]
+- !private ["So18UITraitEnvironmentP", "tute4"]
+- !private ["So18UITraitEnvironmentP", "tuteArray"]
+- !private ["So18UITraitEnvironmentP", "tuteDescription"]
+- !private ["So18UITraitEnvironmentP", "tuteImage"]
+- !private ["So18UITraitEnvironmentP", "tuteTitle"]
 - !private ["So18UITraitEnvironmentP", "userObj"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", "viewForZooming"]
+- ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "contentOffset"]
+- !private ["So6UIViewC", "currentPage"]
+- !private ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So6UIViewC", "image"]
+- !private ["So6UIViewC", "isPagingEnabled"]
+- !private ["So6UIViewC", "layer"]
+- !private ["So6UIViewC", "numberOfPages"]
+- !private ["So6UIViewC", "showsHorizontalScrollIndicator"]
+- !private ["So6UIViewC", "showsVerticalScrollIndicator"]
+- !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "tuteDescription"]
+- !private ["So6UIViewC", "tuteImage"]
+- !private ["So6UIViewC", "tuteTitle"]
+- !private ["So16UIViewControllerC", "Bundle"]
+- !private ["So16UIViewControllerC", "CGSize"]
+- ["So16UIViewControllerC", "Dictionary"]
+- !private ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "TuteView"]
+- !private ["So16UIViewControllerC", "UIColor"]
+- !private ["So16UIViewControllerC", "UIImage"]
+- ["So16UIViewControllerC", "UIPageControl"]
+- ["So16UIViewControllerC", "UIScrollView"]
 - ["So16UIViewControllerC", "btnAdminCreator"]
 - ["So16UIViewControllerC", "btnCreator"]
-- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "loadTutes"]
+- ["So16UIViewControllerC", "pageControl"]
 - !private ["So16UIViewControllerC", "present"]
+- ["So16UIViewControllerC", "scrollView"]
+- ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
+- ["So16UIViewControllerC", "scrollViewDidEndDragging"]
+- ["So16UIViewControllerC", "scrollViewDidEndScrollingAnimation"]
+- ["So16UIViewControllerC", "scrollViewDidEndZooming"]
+- ["So16UIViewControllerC", "scrollViewDidScroll"]
+- ["So16UIViewControllerC", "scrollViewDidScrollToTop"]
+- ["So16UIViewControllerC", "scrollViewDidZoom"]
+- ["So16UIViewControllerC", "scrollViewShouldScrollToTop"]
+- ["So16UIViewControllerC", "scrollViewWillBeginDecelerating"]
+- ["So16UIViewControllerC", "scrollViewWillBeginDragging"]
+- ["So16UIViewControllerC", "scrollViewWillBeginZooming"]
+- ["So16UIViewControllerC", "scrollViewWillEndDragging"]
 - ["So16UIViewControllerC", "segueToLogin"]
 - !private ["So16UIViewControllerC", "storyboard"]
+- ["So16UIViewControllerC", "tute1"]
+- ["So16UIViewControllerC", "tute2"]
+- ["So16UIViewControllerC", "tute3"]
+- ["So16UIViewControllerC", "tute4"]
+- ["So16UIViewControllerC", "tuteArray"]
 - !private ["So16UIViewControllerC", "userObj"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewForZooming"]
+- ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So16UIViewControllerC", ""]
-- !private ["So37UIViewControllerTransitioningDelegateP", "didReceiveMemoryWarning"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Bundle"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "CGSize"]
+- ["So37UIViewControllerTransitioningDelegateP", "Dictionary"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "Int"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIColor"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIImage"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "init"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "loadTutes"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "pageControl"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "present"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "scrollView"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidEndDecelerating"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidEndDragging"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidEndZooming"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidScroll"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidScrollToTop"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewDidZoom"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewShouldScrollToTop"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewWillBeginDecelerating"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewWillBeginDragging"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewWillBeginZooming"]
+- ["So37UIViewControllerTransitioningDelegateP", "scrollViewWillEndDragging"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "segueToLogin"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "storyboard"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "tute1"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "tute2"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "tute3"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "tute4"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "tuteArray"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "userObj"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "viewDidLoad"]
+- ["So37UIViewControllerTransitioningDelegateP", "viewForZooming"]
+- ["So37UIViewControllerTransitioningDelegateP", "viewForZoomingInScrollView"]
 - ["So37UIViewControllerTransitioningDelegateP", ""]
 - !private ["4Test10UserObjectC", "isAdmin"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "first"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "enumerated"]
+- !private ["s23_BidirectionalIndexableP", "first"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentOffset"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "currentPage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isPagingEnabled"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "numberOfPages"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "showsHorizontalScrollIndicator"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "showsVerticalScrollIndicator"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tuteDescription"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tuteImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tuteTitle"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- ["s24_DestructorSafeContainerP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "black"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "enumerated"]
+- !private ["s10_IndexableP", "first"]
+- ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "enumerated"]
+- !private ["s14_IndexableBaseP", "first"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Dictionary"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentOffset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentPage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isPagingEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loadNibNamed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loadTutes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "masksToBounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numberOfPages"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pageControl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDragging"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndScrollingAnimation"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndZooming"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidScroll"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidScrollToTop"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidZoom"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewShouldScrollToTop"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginDecelerating"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginDragging"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginZooming"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "segueToLogin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOffset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOpacity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shouldRasterize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showsHorizontalScrollIndicator"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showsVerticalScrollIndicator"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tute1"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tute2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tute3"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tute4"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tuteArray"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tuteDescription"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tuteImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tuteTitle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "enumerated"]
+- !private ["s17_MutableIndexableP", "first"]
+- ["s17_MutableIndexableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerated"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "enumerated"]
+- !private ["s22_RandomAccessIndexableP", "first"]
+- ["s22_RandomAccessIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "enumerated"]
+- !private ["s26_RangeReplaceableIndexableP", "first"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- !private "s23BidirectionalCollectionP"
+- !private "8DropDown10AnchorViewP"
+- "Sa"
+- "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "So6BundleC"
+- !private "So19CAAnimationDelegateP"
+- !private "So7CALayerC"
+- !private "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- !private "SC7CGPointV"
+- !private "SC6CGRectV"
+- !private "SC6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- "s10CollectionP"
+- "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
+- "s9DecodableP"
+- !private "s10DictionaryV"
+- "s9EncodableP"
 - "s9EquatableP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
 - "4Test21InitialViewControllerC"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
+- !private "Si"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
 - "8Material14MotionDelegateP"
+- "s17MutableCollectionP"
 - "So8NSCodingP"
-- !private "So9NSCopyingP"
+- "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s8SequenceP"
-- !private "SS"
-- !private "s14StringProtocolP"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- !private "s7NumericP"
+- "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "4Test8TuteViewC"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So7UIColorC"
 - "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So7UIImageC"
+- !private "So11UIImageViewC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "So7UILabelC"
 - "So30UINavigationControllerDelegateP"
+- !private "So13UIPageControlC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
 - "So16UIStateRestoringP"
 - !private "So12UIStoryboardC"
 - "So26UITabBarControllerDelegateP"
 - "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
 - "So16UIViewControllerC"
 - "So37UIViewControllerTransitioningDelegateP"
 - !private "4Test10UserObjectC"
-- !private "s23_BidirectionalIndexableP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
+- "s14_ArrayProtocolP"
+- "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s16_SwiftStringViewP"
+- "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- "s22_RandomAccessIndexableP"
+- "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Modules/Spring.swiftmodule/x86_64.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules/Material.swiftmodule/x86_64.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/x86_64.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Modules/Spring.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules/Material.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -354,108 +1779,108 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Headers/Spring-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Test/Test-Bridging-Header.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Headers/Spring-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Headers/Spring-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Test/Test-Bridging-Header.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Headers/Spring-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "aabe6b49cfe152dae7140b0f222c0a65"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+interface-hash: "f8a2c0c1d358600585657d9844ac7316"

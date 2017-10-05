@@ -124,38 +124,9 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//
-//        super.viewDidAppear(animated)
-//        return;
-//        if FIRAuth.auth()?.currentUser != nil{
-//            print("User is NOT null.");
-//            SVProgressHUD.show(withStatus: "Setting up for you...");
-//            userObj.uid = FIRAuth.auth()?.currentUser?.uid;
-//            userObj.completeAsyncCalls{ success in
-//                if success{
-//                    print("SUCCESS - completeAsyncCalls");
-//                }
-//                else
-//                {
-//                    print("FAILURE - completeAsyncCalls");
-//                }
-//            };
-//            setUser()
-//        }else{
-//            print("User is null.")
-//        }
-//
-//    }
-    
-    func setUser(){ //set userUID value here
-        
-        if let user = FIRAuth.auth()?.currentUser?.uid{
-            userObj.uid = user
-    }
-        
-        //keychain()
-    }
 
+    @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }

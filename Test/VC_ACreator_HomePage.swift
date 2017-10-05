@@ -185,6 +185,59 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         self.present(vc!,animated: true,completion: nil)
     }
     
+    func deleteUser(row: Int)
+    {
+        let userUid = usersUIDs[row];
+        let user = usersObj[userUid]!;
+        
+        SVProgressHUD.show(withStatus: "Deleting user...");
+        if(user["status"]! == "Active")
+        {
+            FIRDatabase.database().reference().child("users/"+user["uid"]!).removeValue();
+            FIRDatabase.database().reference().child("userRoles/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+user["uid"]!).removeValue();
+        }
+        else
+        {
+            FIRDatabase.database().reference().child("creatorInvites/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userUid).removeValue();
+            if(user["code"] != nil)
+            {
+                FIRDatabase.database().reference().child("userInvites/"+user["code"]!).removeValue();
+            }
+            
+        }
+        SVProgressHUD.dismiss();
+        reloadList();
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let userUid = usersUIDs[indexPath.row];
+        let user = usersObj[userUid]!;
+        
+        
+        let refreshAlert = UIAlertController(title: "", message: "STATUS: "+user["status"]!, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Delete User", style: .default, handler: { (action: UIAlertAction!) in
+            let confirmDelete = UIAlertController(title: "", message: "Are you sure you wish to delete this user?", preferredStyle: UIAlertControllerStyle.alert)
+            
+            confirmDelete.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
+                self.deleteUser(row: indexPath.row);
+                print("Handle confirm delete YES logic here")
+            }))
+            
+            confirmDelete.addAction(UIAlertAction(title: "NO", style: .cancel, handler: { (action: UIAlertAction!) in
+                print("Handle confirm delete NO Logic here")
+            }))
+            
+            self.present(confirmDelete, animated: true, completion: nil)
+            print("Handle Yes logic here")
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle No Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+    }
 
 }

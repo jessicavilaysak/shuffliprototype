@@ -248,15 +248,25 @@ SWIFT_CLASS("_TtC4Test14CustomCellUser")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIScrollView;
+@class UIPageControl;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC4Test21InitialViewController")
-@interface InitialViewController : UIViewController
+@interface InitialViewController : UIViewController <UIScrollViewDelegate>
+@property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified scrollView;
+@property (nonatomic, weak) IBOutlet UIPageControl * _Null_unspecified pageControl;
 - (IBAction)btnAdminCreator:(id _Nonnull)sender;
 - (IBAction)btnCreator:(id _Nonnull)sender;
 - (void)segueToLoginWithVc_name:(NSString * _Nonnull)vc_name;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute1;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute2;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute3;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute4;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull tuteArray;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)loadTutes;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -271,6 +281,18 @@ SWIFT_CLASS("_TtC4Test14ManageUserCell")
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Test6RootVC")
+@interface RootVC : UIViewController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)setUser;
+- (void)directSegue;
+- (void)segueToInitialVCWithVc_name:(NSString * _Nonnull)vc_name;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -390,6 +412,16 @@ SWIFT_CLASS("_TtC4Test6Toucan")
 @end
 
 
+SWIFT_CLASS("_TtC4Test8TuteView")
+@interface TuteView : UIView
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteTitle;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified tuteImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteDescription;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 @interface UIViewController (SWIFT_EXTENSION(Test))
 - (void)hideKeyboardWhenTappedAround;
 - (void)dismissKeyboard;
@@ -417,6 +449,8 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 - (void)viewWillDisappear:(BOOL)animated;
 - (IBAction)logout:(id _Nonnull)sender;
 - (IBAction)btn_addUser:(id _Nonnull)sender;
+- (void)deleteUserWithRow:(NSInteger)row;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -455,7 +489,7 @@ SWIFT_CLASS("_TtC4Test17VC_Creator_Signin")
 - (IBAction)BtnTapped:(id _Nonnull)sender;
 - (void)directSegue;
 - (void)viewWillDisappear:(BOOL)animated;
-- (void)setUser;
+- (IBAction)goBack:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -502,11 +536,12 @@ SWIFT_CLASS("_TtC4Test13VC_InviteCode")
 @interface VC_InviteCode : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_invitecode;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_signingup;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backBtn;
 - (void)viewDidLoad;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)btn_signup:(id _Nonnull)sender;
 - (void)getInviteInfoWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (void)didReceiveMemoryWarning;
+- (IBAction)goBack:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

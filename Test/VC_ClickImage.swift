@@ -120,25 +120,31 @@ class VC_ClickImage: UIViewController {
         }
         let refreshAlert = UIAlertController(title: "DELETE", message: "Do you wish to delete this post?\nNOTE: this cannot be undone.", preferredStyle: UIAlertControllerStyle.actionSheet)
         refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
-            FIRDatabase.database().reference().child(path).removeValue()
-            //let imgToDel = storage.child(userObj.uid).child(images[self.imgIndex].imgId)
             SVProgressHUD.show(withStatus: "Deleting Post")
-            /*imgToDel.delete(completion: { (Error) in
+            FIRDatabase.database().reference().child(path).removeValue()
+            if(!images[self.imgIndex].dashboardApproved)
+            {
+                let imgToDel = storage.child(images[self.imgIndex].uploadedBy).child(images[self.imgIndex].imgId);
+                imgToDel.delete(completion: { (Error) in
+                    SVProgressHUD.dismiss()
+                    if let error = Error{
+                        print(error)
+                    }
+                    self.navigationController?.popViewController(animated: true)
+                    
+                })
+            }
+            else
+            {
                 SVProgressHUD.dismiss()
-                if let error = Error{
-                    print(error)
-                }
-                self.navigationController?.popViewController(animated: true)
-                print("Handle Yes logic here")
-                
-            })*/
+            }
         }))
         
         refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
             print("Handle No Logic here")
         }))
         present(refreshAlert, animated: true, completion: nil)
-
+        
     }
     @IBAction func approvePost(_ sender: Any) {
         

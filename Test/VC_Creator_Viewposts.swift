@@ -83,7 +83,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                 tabItem?.badgeValue = nil;
             }
         }
-        if userObj.isAdmin {
+        if userObj.permissionToManageUsers {
             logOut.title = ""
             logOut.isEnabled = false
         }else{

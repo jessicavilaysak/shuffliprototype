@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules'
+    'name': '/Users/jessicavilaysak/Desktop/Shuffli/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap',
+      'external-contents': '/Users/jessicavilaysak/Desktop/Shuffli/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap',
     }]
   }]
 }
