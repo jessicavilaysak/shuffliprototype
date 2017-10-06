@@ -43,6 +43,9 @@ depends-top-level:
 - !private "..."
 - !private "=="
 - !private "??"
+- !private "AVAsset"
+- !private "AVAssetImageGenerator"
+- !private "Array"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
@@ -56,7 +59,10 @@ depends-top-level:
 - !private "FIRStorage"
 - !private "FIRStorageMetadata"
 - !private "Int"
+- !private "NSURL"
 - !private "NSUUID"
+- !private "PHAssetChangeRequest"
+- !private "PHPhotoLibrary"
 - !private "SVProgressHUD"
 - "String"
 - !private "StringLiteralType"
@@ -75,7 +81,9 @@ depends-top-level:
 - !private "UIImageOrientation"
 - "UIImagePickerController"
 - "UIImagePickerControllerDelegate"
+- !private "UIImagePickerControllerMediaURL"
 - !private "UIImagePickerControllerOriginalImage"
+- !private "UIImagePickerControllerQualityType"
 - !private "UIImagePickerControllerSourceType"
 - "UIImageView"
 - "UILabel"
@@ -85,14 +93,26 @@ depends-top-level:
 - "UITextView"
 - "UITextViewDelegate"
 - "UIViewController"
+- !private "URL"
 - !private "UnicodeScalarType"
 - "VC_PostContent"
 - !private "VC_selectedimage"
 - !private "Void"
+- !private "kUTTypeImage"
+- !private "kUTTypeMovie"
+- !private "min"
 - !private "print"
 - !private "userObj"
 - !private "||"
 depends-member:
+- !private ["So7AVAssetC", "duration"]
+- !private ["So7AVAssetC", "init"]
+- !private ["So7AVAssetC", "metadata"]
+- !private ["So21AVAssetImageGeneratorC", "copyCGImage"]
+- !private ["So21AVAssetImageGeneratorC", "init"]
+- !private ["So29AVAsynchronousKeyValueLoadingP", "duration"]
+- !private ["So29AVAsynchronousKeyValueLoadingP", "init"]
+- !private ["So29AVAsynchronousKeyValueLoadingP", "metadata"]
 - !private ["8DropDown10AnchorViewP", "addGestureRecognizer"]
 - !private ["8DropDown10AnchorViewP", "anchorView"]
 - !private ["8DropDown10AnchorViewP", "bottomOffset"]
@@ -158,6 +178,9 @@ depends-member:
 - !private ["SC6CGRectV", "init"]
 - !private ["SC6CGSizeV", "height"]
 - !private ["SC6CGSizeV", "width"]
+- !private ["SC6CMTimeV", "value"]
+- !private ["s7CVarArgP", "AVAsset"]
+- !private ["s7CVarArgP", "AVAssetImageGenerator"]
 - !private ["s7CVarArgP", "CGPoint"]
 - !private ["s7CVarArgP", "CGRect"]
 - ["s7CVarArgP", "DropDown"]
@@ -166,6 +189,8 @@ depends-member:
 - !private ["s7CVarArgP", "FIRStorageMetadata"]
 - !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "NSUUID"]
+- !private ["s7CVarArgP", "PHAssetChangeRequest"]
+- !private ["s7CVarArgP", "PHPhotoLibrary"]
 - !private ["s7CVarArgP", "SVProgressHUD"]
 - ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIAlertAction"]
@@ -177,10 +202,13 @@ depends-member:
 - !private ["s7CVarArgP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["s7CVarArgP", "UIGraphicsEndImageContext"]
 - !private ["s7CVarArgP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UIImageJPEGRepresentation"]
 - !private ["s7CVarArgP", "UIImageOrientation"]
 - ["s7CVarArgP", "UIImagePickerController"]
+- !private ["s7CVarArgP", "UIImagePickerControllerMediaURL"]
 - !private ["s7CVarArgP", "UIImagePickerControllerOriginalImage"]
+- !private ["s7CVarArgP", "UIImagePickerControllerQualityType"]
 - !private ["s7CVarArgP", "UIImagePickerControllerSourceType"]
 - !private ["s7CVarArgP", "UIModalPresentationStyle"]
 - !private ["s7CVarArgP", "UIModalTransitionStyle"]
@@ -202,14 +230,17 @@ depends-member:
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "childByAutoId"]
 - !private ["s7CVarArgP", "contentType"]
+- !private ["s7CVarArgP", "copyCGImage"]
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "creationRequestForAssetFromVideo"]
 - !private ["s7CVarArgP", "dataSource"]
 - !private ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "downloadURL"]
 - !private ["s7CVarArgP", "draw"]
+- !private ["s7CVarArgP", "duration"]
 - !private ["s7CVarArgP", "fixOrientation"]
 - !private ["s7CVarArgP", "fld_camera"]
 - !private ["s7CVarArgP", "fld_cameraRoll"]
@@ -230,12 +261,18 @@ depends-member:
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "isUserInteractionEnabled"]
 - !private ["s7CVarArgP", "items"]
+- !private ["s7CVarArgP", "kUTTypeImage"]
+- !private ["s7CVarArgP", "kUTTypeMovie"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "lightGray"]
+- !private ["s7CVarArgP", "mediaTypes"]
+- !private ["s7CVarArgP", "metadata"]
+- !private ["s7CVarArgP", "min"]
 - !private ["s7CVarArgP", "modalPresentationStyle"]
 - !private ["s7CVarArgP", "modalTransitionStyle"]
 - !private ["s7CVarArgP", "myPickerController"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
+- !private ["s7CVarArgP", "performChanges"]
 - !private ["s7CVarArgP", "photoLibrary"]
 - !private ["s7CVarArgP", "placeholder"]
 - !private ["s7CVarArgP", "present"]
@@ -262,6 +299,7 @@ depends-member:
 - !private ["s7CVarArgP", "setTitle"]
 - !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "setupCategories"]
+- !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "show"]
 - !private ["s7CVarArgP", "showError"]
 - !private ["s7CVarArgP", "showSuccess"]
@@ -281,11 +319,14 @@ depends-member:
 - ["s7CVarArgP", "textViewDidEndEditing"]
 - ["s7CVarArgP", "textViewShouldBeginEditing"]
 - ["s7CVarArgP", "textViewShouldEndEditing"]
+- !private ["s7CVarArgP", "thumbnailForVideoAtURL"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "uploadImg"]
 - !private ["s7CVarArgP", "userObj"]
 - !private ["s7CVarArgP", "uuidString"]
 - !private ["s7CVarArgP", "value"]
+- !private ["s7CVarArgP", "videoMaximumDuration"]
+- !private ["s7CVarArgP", "videoQuality"]
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
@@ -300,6 +341,9 @@ depends-member:
 - !private ["s10CollectionP", "title"]
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "isEmpty"]
+- !private ["s10ComparableP", "value"]
+- !private ["s28CustomDebugStringConvertibleP", "AVAsset"]
+- !private ["s28CustomDebugStringConvertibleP", "AVAssetImageGenerator"]
 - !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - ["s28CustomDebugStringConvertibleP", "DropDown"]
@@ -308,6 +352,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "FIRStorageMetadata"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "NSUUID"]
+- !private ["s28CustomDebugStringConvertibleP", "PHAssetChangeRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "PHPhotoLibrary"]
 - !private ["s28CustomDebugStringConvertibleP", "SVProgressHUD"]
 - ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
@@ -319,10 +365,13 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "UIGraphicsEndImageContext"]
 - !private ["s28CustomDebugStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImageJPEGRepresentation"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImageOrientation"]
 - ["s28CustomDebugStringConvertibleP", "UIImagePickerController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImagePickerControllerMediaURL"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImagePickerControllerOriginalImage"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImagePickerControllerQualityType"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImagePickerControllerSourceType"]
 - !private ["s28CustomDebugStringConvertibleP", "UIModalPresentationStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "UIModalTransitionStyle"]
@@ -345,14 +394,17 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "childByAutoId"]
 - !private ["s28CustomDebugStringConvertibleP", "contentType"]
+- !private ["s28CustomDebugStringConvertibleP", "copyCGImage"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "creationRequestForAssetFromVideo"]
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "downloadURL"]
 - !private ["s28CustomDebugStringConvertibleP", "draw"]
+- !private ["s28CustomDebugStringConvertibleP", "duration"]
 - !private ["s28CustomDebugStringConvertibleP", "fixOrientation"]
 - !private ["s28CustomDebugStringConvertibleP", "fld_camera"]
 - !private ["s28CustomDebugStringConvertibleP", "fld_cameraRoll"]
@@ -374,12 +426,18 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "isUserInteractionEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "items"]
+- !private ["s28CustomDebugStringConvertibleP", "kUTTypeImage"]
+- !private ["s28CustomDebugStringConvertibleP", "kUTTypeMovie"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "lightGray"]
+- !private ["s28CustomDebugStringConvertibleP", "mediaTypes"]
+- !private ["s28CustomDebugStringConvertibleP", "metadata"]
+- !private ["s28CustomDebugStringConvertibleP", "min"]
 - !private ["s28CustomDebugStringConvertibleP", "modalPresentationStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "modalTransitionStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "myPickerController"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "performChanges"]
 - !private ["s28CustomDebugStringConvertibleP", "photoLibrary"]
 - !private ["s28CustomDebugStringConvertibleP", "placeholder"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
@@ -406,6 +464,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "setTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "setupCategories"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "show"]
 - !private ["s28CustomDebugStringConvertibleP", "showError"]
 - !private ["s28CustomDebugStringConvertibleP", "showSuccess"]
@@ -425,11 +484,14 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "textViewDidEndEditing"]
 - ["s28CustomDebugStringConvertibleP", "textViewShouldBeginEditing"]
 - ["s28CustomDebugStringConvertibleP", "textViewShouldEndEditing"]
+- !private ["s28CustomDebugStringConvertibleP", "thumbnailForVideoAtURL"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "uploadImg"]
 - !private ["s28CustomDebugStringConvertibleP", "userObj"]
 - !private ["s28CustomDebugStringConvertibleP", "uuidString"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s28CustomDebugStringConvertibleP", "videoMaximumDuration"]
+- !private ["s28CustomDebugStringConvertibleP", "videoQuality"]
 - !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
@@ -452,6 +514,8 @@ depends-member:
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "title"]
 - !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "AVAsset"]
+- !private ["s23CustomStringConvertibleP", "AVAssetImageGenerator"]
 - !private ["s23CustomStringConvertibleP", "CGPoint"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
 - ["s23CustomStringConvertibleP", "DropDown"]
@@ -460,6 +524,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "FIRStorageMetadata"]
 - !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "NSUUID"]
+- !private ["s23CustomStringConvertibleP", "PHAssetChangeRequest"]
+- !private ["s23CustomStringConvertibleP", "PHPhotoLibrary"]
 - !private ["s23CustomStringConvertibleP", "SVProgressHUD"]
 - ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
@@ -471,10 +537,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["s23CustomStringConvertibleP", "UIGraphicsEndImageContext"]
 - !private ["s23CustomStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UIImageJPEGRepresentation"]
 - !private ["s23CustomStringConvertibleP", "UIImageOrientation"]
 - ["s23CustomStringConvertibleP", "UIImagePickerController"]
+- !private ["s23CustomStringConvertibleP", "UIImagePickerControllerMediaURL"]
 - !private ["s23CustomStringConvertibleP", "UIImagePickerControllerOriginalImage"]
+- !private ["s23CustomStringConvertibleP", "UIImagePickerControllerQualityType"]
 - !private ["s23CustomStringConvertibleP", "UIImagePickerControllerSourceType"]
 - !private ["s23CustomStringConvertibleP", "UIModalPresentationStyle"]
 - !private ["s23CustomStringConvertibleP", "UIModalTransitionStyle"]
@@ -498,14 +567,17 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "childByAutoId"]
 - !private ["s23CustomStringConvertibleP", "contentType"]
+- !private ["s23CustomStringConvertibleP", "copyCGImage"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "creationRequestForAssetFromVideo"]
 - !private ["s23CustomStringConvertibleP", "dataSource"]
 - !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "downloadURL"]
 - !private ["s23CustomStringConvertibleP", "draw"]
+- !private ["s23CustomStringConvertibleP", "duration"]
 - !private ["s23CustomStringConvertibleP", "fixOrientation"]
 - !private ["s23CustomStringConvertibleP", "fld_camera"]
 - !private ["s23CustomStringConvertibleP", "fld_cameraRoll"]
@@ -526,12 +598,18 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "isUserInteractionEnabled"]
 - !private ["s23CustomStringConvertibleP", "items"]
+- !private ["s23CustomStringConvertibleP", "kUTTypeImage"]
+- !private ["s23CustomStringConvertibleP", "kUTTypeMovie"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "lightGray"]
+- !private ["s23CustomStringConvertibleP", "mediaTypes"]
+- !private ["s23CustomStringConvertibleP", "metadata"]
+- !private ["s23CustomStringConvertibleP", "min"]
 - !private ["s23CustomStringConvertibleP", "modalPresentationStyle"]
 - !private ["s23CustomStringConvertibleP", "modalTransitionStyle"]
 - !private ["s23CustomStringConvertibleP", "myPickerController"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
+- !private ["s23CustomStringConvertibleP", "performChanges"]
 - !private ["s23CustomStringConvertibleP", "photoLibrary"]
 - !private ["s23CustomStringConvertibleP", "placeholder"]
 - !private ["s23CustomStringConvertibleP", "present"]
@@ -558,6 +636,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "setTitle"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "setupCategories"]
+- !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "show"]
 - !private ["s23CustomStringConvertibleP", "showError"]
 - !private ["s23CustomStringConvertibleP", "showSuccess"]
@@ -577,11 +656,14 @@ depends-member:
 - ["s23CustomStringConvertibleP", "textViewDidEndEditing"]
 - ["s23CustomStringConvertibleP", "textViewShouldBeginEditing"]
 - ["s23CustomStringConvertibleP", "textViewShouldEndEditing"]
+- !private ["s23CustomStringConvertibleP", "thumbnailForVideoAtURL"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "uploadImg"]
 - !private ["s23CustomStringConvertibleP", "userObj"]
 - !private ["s23CustomStringConvertibleP", "uuidString"]
 - !private ["s23CustomStringConvertibleP", "value"]
+- !private ["s23CustomStringConvertibleP", "videoMaximumDuration"]
+- !private ["s23CustomStringConvertibleP", "videoQuality"]
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
@@ -613,6 +695,8 @@ depends-member:
 - !private ["s9EncodableP", "isEmpty"]
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EncodableP", "width"]
+- !private ["s9EquatableP", "AVAsset"]
+- !private ["s9EquatableP", "AVAssetImageGenerator"]
 - !private ["s9EquatableP", "CGPoint"]
 - !private ["s9EquatableP", "CGRect"]
 - ["s9EquatableP", "DropDown"]
@@ -621,6 +705,8 @@ depends-member:
 - !private ["s9EquatableP", "FIRStorageMetadata"]
 - !private ["s9EquatableP", "Int"]
 - !private ["s9EquatableP", "NSUUID"]
+- !private ["s9EquatableP", "PHAssetChangeRequest"]
+- !private ["s9EquatableP", "PHPhotoLibrary"]
 - !private ["s9EquatableP", "SVProgressHUD"]
 - ["s9EquatableP", "String"]
 - !private ["s9EquatableP", "UIAlertAction"]
@@ -632,10 +718,13 @@ depends-member:
 - !private ["s9EquatableP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["s9EquatableP", "UIGraphicsEndImageContext"]
 - !private ["s9EquatableP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s9EquatableP", "UIImage"]
 - !private ["s9EquatableP", "UIImageJPEGRepresentation"]
 - !private ["s9EquatableP", "UIImageOrientation"]
 - ["s9EquatableP", "UIImagePickerController"]
+- !private ["s9EquatableP", "UIImagePickerControllerMediaURL"]
 - !private ["s9EquatableP", "UIImagePickerControllerOriginalImage"]
+- !private ["s9EquatableP", "UIImagePickerControllerQualityType"]
 - !private ["s9EquatableP", "UIImagePickerControllerSourceType"]
 - !private ["s9EquatableP", "UIModalPresentationStyle"]
 - !private ["s9EquatableP", "UIModalTransitionStyle"]
@@ -661,8 +750,10 @@ depends-member:
 - !private ["s9EquatableP", "child"]
 - !private ["s9EquatableP", "childByAutoId"]
 - !private ["s9EquatableP", "contentType"]
+- !private ["s9EquatableP", "copyCGImage"]
 - !private ["s9EquatableP", "cornerRadius"]
 - !private ["s9EquatableP", "coverVertical"]
+- !private ["s9EquatableP", "creationRequestForAssetFromVideo"]
 - !private ["s9EquatableP", "dark"]
 - !private ["s9EquatableP", "dataSource"]
 - !private ["s9EquatableP", "database"]
@@ -671,6 +762,7 @@ depends-member:
 - !private ["s9EquatableP", "dismiss"]
 - !private ["s9EquatableP", "downloadURL"]
 - !private ["s9EquatableP", "draw"]
+- !private ["s9EquatableP", "duration"]
 - !private ["s9EquatableP", "fixOrientation"]
 - !private ["s9EquatableP", "fld_camera"]
 - !private ["s9EquatableP", "fld_cameraRoll"]
@@ -692,14 +784,20 @@ depends-member:
 - !private ["s9EquatableP", "isHidden"]
 - !private ["s9EquatableP", "isUserInteractionEnabled"]
 - !private ["s9EquatableP", "items"]
+- !private ["s9EquatableP", "kUTTypeImage"]
+- !private ["s9EquatableP", "kUTTypeMovie"]
 - !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "lightGray"]
+- !private ["s9EquatableP", "mediaTypes"]
+- !private ["s9EquatableP", "metadata"]
+- !private ["s9EquatableP", "min"]
 - !private ["s9EquatableP", "modalPresentationStyle"]
 - !private ["s9EquatableP", "modalTransitionStyle"]
 - !private ["s9EquatableP", "myPickerController"]
 - !private ["s9EquatableP", "normal"]
 - !private ["s9EquatableP", "observeSingleEvent"]
 - !private ["s9EquatableP", "overFullScreen"]
+- !private ["s9EquatableP", "performChanges"]
 - !private ["s9EquatableP", "photoLibrary"]
 - !private ["s9EquatableP", "placeholder"]
 - !private ["s9EquatableP", "present"]
@@ -726,6 +824,7 @@ depends-member:
 - !private ["s9EquatableP", "setTitle"]
 - !private ["s9EquatableP", "setValue"]
 - !private ["s9EquatableP", "setupCategories"]
+- !private ["s9EquatableP", "shared"]
 - !private ["s9EquatableP", "show"]
 - !private ["s9EquatableP", "showError"]
 - !private ["s9EquatableP", "showSuccess"]
@@ -744,12 +843,16 @@ depends-member:
 - ["s9EquatableP", "textViewDidEndEditing"]
 - ["s9EquatableP", "textViewShouldBeginEditing"]
 - ["s9EquatableP", "textViewShouldEndEditing"]
+- !private ["s9EquatableP", "thumbnailForVideoAtURL"]
 - !private ["s9EquatableP", "title"]
+- !private ["s9EquatableP", "typeHigh"]
 - !private ["s9EquatableP", "up"]
 - !private ["s9EquatableP", "uploadImg"]
 - !private ["s9EquatableP", "userObj"]
 - !private ["s9EquatableP", "uuidString"]
 - !private ["s9EquatableP", "value"]
+- !private ["s9EquatableP", "videoMaximumDuration"]
+- !private ["s9EquatableP", "videoQuality"]
 - !private ["s9EquatableP", "viewControllers"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", "viewForZooming"]
@@ -792,6 +895,8 @@ depends-member:
 - !private ["So19FIRStorageReferenceC", "child"]
 - !private ["So19FIRStorageReferenceC", "put"]
 - !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s8HashableP", "AVAsset"]
+- !private ["s8HashableP", "AVAssetImageGenerator"]
 - !private ["s8HashableP", "CGPoint"]
 - !private ["s8HashableP", "CGRect"]
 - ["s8HashableP", "DropDown"]
@@ -800,6 +905,8 @@ depends-member:
 - !private ["s8HashableP", "FIRStorageMetadata"]
 - !private ["s8HashableP", "Int"]
 - !private ["s8HashableP", "NSUUID"]
+- !private ["s8HashableP", "PHAssetChangeRequest"]
+- !private ["s8HashableP", "PHPhotoLibrary"]
 - !private ["s8HashableP", "SVProgressHUD"]
 - ["s8HashableP", "String"]
 - !private ["s8HashableP", "UIAlertAction"]
@@ -811,10 +918,13 @@ depends-member:
 - !private ["s8HashableP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["s8HashableP", "UIGraphicsEndImageContext"]
 - !private ["s8HashableP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["s8HashableP", "UIImage"]
 - !private ["s8HashableP", "UIImageJPEGRepresentation"]
 - !private ["s8HashableP", "UIImageOrientation"]
 - ["s8HashableP", "UIImagePickerController"]
+- !private ["s8HashableP", "UIImagePickerControllerMediaURL"]
 - !private ["s8HashableP", "UIImagePickerControllerOriginalImage"]
+- !private ["s8HashableP", "UIImagePickerControllerQualityType"]
 - !private ["s8HashableP", "UIImagePickerControllerSourceType"]
 - !private ["s8HashableP", "UIModalPresentationStyle"]
 - !private ["s8HashableP", "UIModalTransitionStyle"]
@@ -840,8 +950,10 @@ depends-member:
 - !private ["s8HashableP", "child"]
 - !private ["s8HashableP", "childByAutoId"]
 - !private ["s8HashableP", "contentType"]
+- !private ["s8HashableP", "copyCGImage"]
 - !private ["s8HashableP", "cornerRadius"]
 - !private ["s8HashableP", "coverVertical"]
+- !private ["s8HashableP", "creationRequestForAssetFromVideo"]
 - !private ["s8HashableP", "dark"]
 - !private ["s8HashableP", "dataSource"]
 - !private ["s8HashableP", "database"]
@@ -850,6 +962,7 @@ depends-member:
 - !private ["s8HashableP", "dismiss"]
 - !private ["s8HashableP", "downloadURL"]
 - !private ["s8HashableP", "draw"]
+- !private ["s8HashableP", "duration"]
 - !private ["s8HashableP", "fixOrientation"]
 - !private ["s8HashableP", "fld_camera"]
 - !private ["s8HashableP", "fld_cameraRoll"]
@@ -870,13 +983,19 @@ depends-member:
 - !private ["s8HashableP", "isHidden"]
 - !private ["s8HashableP", "isUserInteractionEnabled"]
 - !private ["s8HashableP", "items"]
+- !private ["s8HashableP", "kUTTypeImage"]
+- !private ["s8HashableP", "kUTTypeMovie"]
 - !private ["s8HashableP", "layer"]
 - !private ["s8HashableP", "lightGray"]
+- !private ["s8HashableP", "mediaTypes"]
+- !private ["s8HashableP", "metadata"]
+- !private ["s8HashableP", "min"]
 - !private ["s8HashableP", "modalPresentationStyle"]
 - !private ["s8HashableP", "modalTransitionStyle"]
 - !private ["s8HashableP", "myPickerController"]
 - !private ["s8HashableP", "observeSingleEvent"]
 - !private ["s8HashableP", "overFullScreen"]
+- !private ["s8HashableP", "performChanges"]
 - !private ["s8HashableP", "photoLibrary"]
 - !private ["s8HashableP", "placeholder"]
 - !private ["s8HashableP", "present"]
@@ -903,6 +1022,7 @@ depends-member:
 - !private ["s8HashableP", "setTitle"]
 - !private ["s8HashableP", "setValue"]
 - !private ["s8HashableP", "setupCategories"]
+- !private ["s8HashableP", "shared"]
 - !private ["s8HashableP", "show"]
 - !private ["s8HashableP", "showError"]
 - !private ["s8HashableP", "showSuccess"]
@@ -921,12 +1041,16 @@ depends-member:
 - ["s8HashableP", "textViewDidEndEditing"]
 - ["s8HashableP", "textViewShouldBeginEditing"]
 - ["s8HashableP", "textViewShouldEndEditing"]
+- !private ["s8HashableP", "thumbnailForVideoAtURL"]
 - !private ["s8HashableP", "title"]
+- !private ["s8HashableP", "typeHigh"]
 - !private ["s8HashableP", "up"]
 - !private ["s8HashableP", "uploadImg"]
 - !private ["s8HashableP", "userObj"]
 - !private ["s8HashableP", "uuidString"]
 - !private ["s8HashableP", "value"]
+- !private ["s8HashableP", "videoMaximumDuration"]
+- !private ["s8HashableP", "videoQuality"]
 - !private ["s8HashableP", "viewControllers"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", "viewForZooming"]
@@ -939,6 +1063,8 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "isEmpty"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "isEmpty"]
+- !private ["8Material14MotionDelegateP", "AVAsset"]
+- !private ["8Material14MotionDelegateP", "AVAssetImageGenerator"]
 - !private ["8Material14MotionDelegateP", "CGPoint"]
 - !private ["8Material14MotionDelegateP", "CGRect"]
 - ["8Material14MotionDelegateP", "DropDown"]
@@ -947,6 +1073,8 @@ depends-member:
 - !private ["8Material14MotionDelegateP", "FIRStorageMetadata"]
 - !private ["8Material14MotionDelegateP", "Int"]
 - !private ["8Material14MotionDelegateP", "NSUUID"]
+- !private ["8Material14MotionDelegateP", "PHAssetChangeRequest"]
+- !private ["8Material14MotionDelegateP", "PHPhotoLibrary"]
 - !private ["8Material14MotionDelegateP", "SVProgressHUD"]
 - ["8Material14MotionDelegateP", "String"]
 - !private ["8Material14MotionDelegateP", "UIAlertAction"]
@@ -958,10 +1086,13 @@ depends-member:
 - !private ["8Material14MotionDelegateP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["8Material14MotionDelegateP", "UIGraphicsEndImageContext"]
 - !private ["8Material14MotionDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["8Material14MotionDelegateP", "UIImage"]
 - !private ["8Material14MotionDelegateP", "UIImageJPEGRepresentation"]
 - !private ["8Material14MotionDelegateP", "UIImageOrientation"]
 - ["8Material14MotionDelegateP", "UIImagePickerController"]
+- !private ["8Material14MotionDelegateP", "UIImagePickerControllerMediaURL"]
 - !private ["8Material14MotionDelegateP", "UIImagePickerControllerOriginalImage"]
+- !private ["8Material14MotionDelegateP", "UIImagePickerControllerQualityType"]
 - !private ["8Material14MotionDelegateP", "UIImagePickerControllerSourceType"]
 - !private ["8Material14MotionDelegateP", "UIModalPresentationStyle"]
 - !private ["8Material14MotionDelegateP", "UIModalTransitionStyle"]
@@ -988,6 +1119,10 @@ depends-member:
 - ["8Material14MotionDelegateP", "imagePickerControllerDidCancel"]
 - !private ["8Material14MotionDelegateP", "imgSent"]
 - ["8Material14MotionDelegateP", "init"]
+- !private ["8Material14MotionDelegateP", "kUTTypeImage"]
+- !private ["8Material14MotionDelegateP", "kUTTypeMovie"]
+- !private ["8Material14MotionDelegateP", "mediaTypes"]
+- !private ["8Material14MotionDelegateP", "min"]
 - !private ["8Material14MotionDelegateP", "modalPresentationStyle"]
 - !private ["8Material14MotionDelegateP", "modalTransitionStyle"]
 - !private ["8Material14MotionDelegateP", "myPickerController"]
@@ -1020,9 +1155,12 @@ depends-member:
 - ["8Material14MotionDelegateP", "textViewDidEndEditing"]
 - ["8Material14MotionDelegateP", "textViewShouldBeginEditing"]
 - ["8Material14MotionDelegateP", "textViewShouldEndEditing"]
+- !private ["8Material14MotionDelegateP", "thumbnailForVideoAtURL"]
 - !private ["8Material14MotionDelegateP", "title"]
 - !private ["8Material14MotionDelegateP", "uploadImg"]
 - !private ["8Material14MotionDelegateP", "userObj"]
+- !private ["8Material14MotionDelegateP", "videoMaximumDuration"]
+- !private ["8Material14MotionDelegateP", "videoQuality"]
 - !private ["8Material14MotionDelegateP", "viewControllers"]
 - !private ["8Material14MotionDelegateP", "viewDidLoad"]
 - ["8Material14MotionDelegateP", "viewForZooming"]
@@ -1034,6 +1172,8 @@ depends-member:
 - ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["s17MutableCollectionP", "title"]
+- !private ["So8NSCodingP", "AVAsset"]
+- !private ["So8NSCodingP", "AVAssetImageGenerator"]
 - !private ["So8NSCodingP", "CGPoint"]
 - !private ["So8NSCodingP", "CGRect"]
 - ["So8NSCodingP", "DropDown"]
@@ -1042,6 +1182,8 @@ depends-member:
 - !private ["So8NSCodingP", "FIRStorageMetadata"]
 - !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "NSUUID"]
+- !private ["So8NSCodingP", "PHAssetChangeRequest"]
+- !private ["So8NSCodingP", "PHPhotoLibrary"]
 - !private ["So8NSCodingP", "SVProgressHUD"]
 - ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UIAlertAction"]
@@ -1053,10 +1195,13 @@ depends-member:
 - !private ["So8NSCodingP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So8NSCodingP", "UIGraphicsEndImageContext"]
 - !private ["So8NSCodingP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UIImageJPEGRepresentation"]
 - !private ["So8NSCodingP", "UIImageOrientation"]
 - ["So8NSCodingP", "UIImagePickerController"]
+- !private ["So8NSCodingP", "UIImagePickerControllerMediaURL"]
 - !private ["So8NSCodingP", "UIImagePickerControllerOriginalImage"]
+- !private ["So8NSCodingP", "UIImagePickerControllerQualityType"]
 - !private ["So8NSCodingP", "UIImagePickerControllerSourceType"]
 - !private ["So8NSCodingP", "UIModalPresentationStyle"]
 - !private ["So8NSCodingP", "UIModalTransitionStyle"]
@@ -1098,8 +1243,12 @@ depends-member:
 - !private ["So8NSCodingP", "isHidden"]
 - !private ["So8NSCodingP", "isUserInteractionEnabled"]
 - !private ["So8NSCodingP", "items"]
+- !private ["So8NSCodingP", "kUTTypeImage"]
+- !private ["So8NSCodingP", "kUTTypeMovie"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "lightGray"]
+- !private ["So8NSCodingP", "mediaTypes"]
+- !private ["So8NSCodingP", "min"]
 - !private ["So8NSCodingP", "modalPresentationStyle"]
 - !private ["So8NSCodingP", "modalTransitionStyle"]
 - !private ["So8NSCodingP", "myPickerController"]
@@ -1143,10 +1292,13 @@ depends-member:
 - ["So8NSCodingP", "textViewDidEndEditing"]
 - ["So8NSCodingP", "textViewShouldBeginEditing"]
 - ["So8NSCodingP", "textViewShouldEndEditing"]
+- !private ["So8NSCodingP", "thumbnailForVideoAtURL"]
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "uploadImg"]
 - !private ["So8NSCodingP", "userObj"]
 - !private ["So8NSCodingP", "uuidString"]
+- !private ["So8NSCodingP", "videoMaximumDuration"]
+- !private ["So8NSCodingP", "videoQuality"]
 - !private ["So8NSCodingP", "viewControllers"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
@@ -1156,10 +1308,14 @@ depends-member:
 - !private ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "contentType"]
 - !private ["So9NSCopyingP", "downloadURL"]
+- !private ["So9NSCopyingP", "duration"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "isEmpty"]
 - !private ["So9NSCopyingP", "lightGray"]
+- !private ["So9NSCopyingP", "metadata"]
 - !private ["So9NSCopyingP", "uuidString"]
+- !private ["So26NSExtensionRequestHandlingP", "AVAsset"]
+- !private ["So26NSExtensionRequestHandlingP", "AVAssetImageGenerator"]
 - !private ["So26NSExtensionRequestHandlingP", "CGPoint"]
 - !private ["So26NSExtensionRequestHandlingP", "CGRect"]
 - ["So26NSExtensionRequestHandlingP", "DropDown"]
@@ -1168,6 +1324,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "FIRStorageMetadata"]
 - !private ["So26NSExtensionRequestHandlingP", "Int"]
 - !private ["So26NSExtensionRequestHandlingP", "NSUUID"]
+- !private ["So26NSExtensionRequestHandlingP", "PHAssetChangeRequest"]
+- !private ["So26NSExtensionRequestHandlingP", "PHPhotoLibrary"]
 - !private ["So26NSExtensionRequestHandlingP", "SVProgressHUD"]
 - ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
@@ -1179,10 +1337,13 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So26NSExtensionRequestHandlingP", "UIGraphicsEndImageContext"]
 - !private ["So26NSExtensionRequestHandlingP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImageJPEGRepresentation"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImageOrientation"]
 - ["So26NSExtensionRequestHandlingP", "UIImagePickerController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImagePickerControllerMediaURL"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImagePickerControllerOriginalImage"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImagePickerControllerQualityType"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImagePickerControllerSourceType"]
 - !private ["So26NSExtensionRequestHandlingP", "UIModalPresentationStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "UIModalTransitionStyle"]
@@ -1209,6 +1370,10 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "imagePickerControllerDidCancel"]
 - !private ["So26NSExtensionRequestHandlingP", "imgSent"]
 - ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "kUTTypeImage"]
+- !private ["So26NSExtensionRequestHandlingP", "kUTTypeMovie"]
+- !private ["So26NSExtensionRequestHandlingP", "mediaTypes"]
+- !private ["So26NSExtensionRequestHandlingP", "min"]
 - !private ["So26NSExtensionRequestHandlingP", "modalPresentationStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "modalTransitionStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "myPickerController"]
@@ -1241,9 +1406,12 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "textViewDidEndEditing"]
 - ["So26NSExtensionRequestHandlingP", "textViewShouldBeginEditing"]
 - ["So26NSExtensionRequestHandlingP", "textViewShouldEndEditing"]
+- !private ["So26NSExtensionRequestHandlingP", "thumbnailForVideoAtURL"]
 - !private ["So26NSExtensionRequestHandlingP", "title"]
 - !private ["So26NSExtensionRequestHandlingP", "uploadImg"]
 - !private ["So26NSExtensionRequestHandlingP", "userObj"]
+- !private ["So26NSExtensionRequestHandlingP", "videoMaximumDuration"]
+- !private ["So26NSExtensionRequestHandlingP", "videoQuality"]
 - !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
@@ -1268,6 +1436,8 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "size"]
 - !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "isEmpty"]
+- !private ["So8NSObjectC", "AVAsset"]
+- !private ["So8NSObjectC", "AVAssetImageGenerator"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "CGPoint"]
 - !private ["So8NSObjectC", "CGRect"]
@@ -1277,7 +1447,10 @@ depends-member:
 - !private ["So8NSObjectC", "FIRStorage"]
 - !private ["So8NSObjectC", "FIRStorageMetadata"]
 - !private ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "NSURL"]
 - !private ["So8NSObjectC", "NSUUID"]
+- !private ["So8NSObjectC", "PHAssetChangeRequest"]
+- !private ["So8NSObjectC", "PHPhotoLibrary"]
 - !private ["So8NSObjectC", "SVProgressHUD"]
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIAlertAction"]
@@ -1294,7 +1467,9 @@ depends-member:
 - !private ["So8NSObjectC", "UIImageJPEGRepresentation"]
 - !private ["So8NSObjectC", "UIImageOrientation"]
 - ["So8NSObjectC", "UIImagePickerController"]
+- !private ["So8NSObjectC", "UIImagePickerControllerMediaURL"]
 - !private ["So8NSObjectC", "UIImagePickerControllerOriginalImage"]
+- !private ["So8NSObjectC", "UIImagePickerControllerQualityType"]
 - !private ["So8NSObjectC", "UIImagePickerControllerSourceType"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
@@ -1302,6 +1477,7 @@ depends-member:
 - !private ["So8NSObjectC", "UIModalTransitionStyle"]
 - !private ["So8NSObjectC", "UITapGestureRecognizer"]
 - ["So8NSObjectC", "UITextView"]
+- !private ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "VC_selectedimage"]
 - !private ["So8NSObjectC", "Void"]
 - !private ["So8NSObjectC", "addAction"]
@@ -1323,14 +1499,17 @@ depends-member:
 - !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "childByAutoId"]
 - !private ["So8NSObjectC", "contentType"]
+- !private ["So8NSObjectC", "copyCGImage"]
 - !private ["So8NSObjectC", "cornerRadius"]
 - ["So8NSObjectC", "count"]
+- !private ["So8NSObjectC", "creationRequestForAssetFromVideo"]
 - !private ["So8NSObjectC", "dataSource"]
 - !private ["So8NSObjectC", "database"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "dismiss"]
 - !private ["So8NSObjectC", "downloadURL"]
 - !private ["So8NSObjectC", "draw"]
+- !private ["So8NSObjectC", "duration"]
 - ["So8NSObjectC", "fixOrientation"]
 - ["So8NSObjectC", "fld_camera"]
 - ["So8NSObjectC", "fld_cameraRoll"]
@@ -1351,12 +1530,18 @@ depends-member:
 - !private ["So8NSObjectC", "isHidden"]
 - !private ["So8NSObjectC", "isUserInteractionEnabled"]
 - !private ["So8NSObjectC", "items"]
+- !private ["So8NSObjectC", "kUTTypeImage"]
+- !private ["So8NSObjectC", "kUTTypeMovie"]
 - !private ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "lightGray"]
+- !private ["So8NSObjectC", "mediaTypes"]
+- !private ["So8NSObjectC", "metadata"]
+- !private ["So8NSObjectC", "min"]
 - !private ["So8NSObjectC", "modalPresentationStyle"]
 - !private ["So8NSObjectC", "modalTransitionStyle"]
 - ["So8NSObjectC", "myPickerController"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
+- !private ["So8NSObjectC", "performChanges"]
 - ["So8NSObjectC", "photoLibrary"]
 - !private ["So8NSObjectC", "placeholder"]
 - !private ["So8NSObjectC", "present"]
@@ -1383,6 +1568,7 @@ depends-member:
 - !private ["So8NSObjectC", "setTitle"]
 - !private ["So8NSObjectC", "setValue"]
 - ["So8NSObjectC", "setupCategories"]
+- !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "show"]
 - !private ["So8NSObjectC", "showError"]
 - !private ["So8NSObjectC", "showSuccess"]
@@ -1401,17 +1587,22 @@ depends-member:
 - ["So8NSObjectC", "textViewDidEndEditing"]
 - ["So8NSObjectC", "textViewShouldBeginEditing"]
 - ["So8NSObjectC", "textViewShouldEndEditing"]
+- ["So8NSObjectC", "thumbnailForVideoAtURL"]
 - !private ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "uploadImg"]
 - !private ["So8NSObjectC", "userObj"]
 - !private ["So8NSObjectC", "uuidString"]
 - !private ["So8NSObjectC", "value"]
+- !private ["So8NSObjectC", "videoMaximumDuration"]
+- !private ["So8NSObjectC", "videoQuality"]
 - !private ["So8NSObjectC", "viewControllers"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "viewImage"]
 - ["So8NSObjectC", "viewWillAppear"]
+- !private ["So16NSObjectProtocolP", "AVAsset"]
+- !private ["So16NSObjectProtocolP", "AVAssetImageGenerator"]
 - !private ["So16NSObjectProtocolP", "CGPoint"]
 - !private ["So16NSObjectProtocolP", "CGRect"]
 - ["So16NSObjectProtocolP", "DropDown"]
@@ -1420,6 +1611,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "FIRStorageMetadata"]
 - !private ["So16NSObjectProtocolP", "Int"]
 - !private ["So16NSObjectProtocolP", "NSUUID"]
+- !private ["So16NSObjectProtocolP", "PHAssetChangeRequest"]
+- !private ["So16NSObjectProtocolP", "PHPhotoLibrary"]
 - !private ["So16NSObjectProtocolP", "SVProgressHUD"]
 - ["So16NSObjectProtocolP", "String"]
 - !private ["So16NSObjectProtocolP", "UIAlertAction"]
@@ -1431,10 +1624,13 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So16NSObjectProtocolP", "UIGraphicsEndImageContext"]
 - !private ["So16NSObjectProtocolP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So16NSObjectProtocolP", "UIImage"]
 - !private ["So16NSObjectProtocolP", "UIImageJPEGRepresentation"]
 - !private ["So16NSObjectProtocolP", "UIImageOrientation"]
 - ["So16NSObjectProtocolP", "UIImagePickerController"]
+- !private ["So16NSObjectProtocolP", "UIImagePickerControllerMediaURL"]
 - !private ["So16NSObjectProtocolP", "UIImagePickerControllerOriginalImage"]
+- !private ["So16NSObjectProtocolP", "UIImagePickerControllerQualityType"]
 - !private ["So16NSObjectProtocolP", "UIImagePickerControllerSourceType"]
 - !private ["So16NSObjectProtocolP", "UIModalPresentationStyle"]
 - !private ["So16NSObjectProtocolP", "UIModalTransitionStyle"]
@@ -1455,13 +1651,16 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "child"]
 - !private ["So16NSObjectProtocolP", "childByAutoId"]
 - !private ["So16NSObjectProtocolP", "contentType"]
+- !private ["So16NSObjectProtocolP", "copyCGImage"]
 - !private ["So16NSObjectProtocolP", "cornerRadius"]
+- !private ["So16NSObjectProtocolP", "creationRequestForAssetFromVideo"]
 - !private ["So16NSObjectProtocolP", "dataSource"]
 - !private ["So16NSObjectProtocolP", "database"]
 - !private ["So16NSObjectProtocolP", "delegate"]
 - !private ["So16NSObjectProtocolP", "dismiss"]
 - !private ["So16NSObjectProtocolP", "downloadURL"]
 - !private ["So16NSObjectProtocolP", "draw"]
+- !private ["So16NSObjectProtocolP", "duration"]
 - !private ["So16NSObjectProtocolP", "fixOrientation"]
 - !private ["So16NSObjectProtocolP", "fld_camera"]
 - !private ["So16NSObjectProtocolP", "fld_cameraRoll"]
@@ -1482,12 +1681,18 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "isHidden"]
 - !private ["So16NSObjectProtocolP", "isUserInteractionEnabled"]
 - !private ["So16NSObjectProtocolP", "items"]
+- !private ["So16NSObjectProtocolP", "kUTTypeImage"]
+- !private ["So16NSObjectProtocolP", "kUTTypeMovie"]
 - !private ["So16NSObjectProtocolP", "layer"]
 - !private ["So16NSObjectProtocolP", "lightGray"]
+- !private ["So16NSObjectProtocolP", "mediaTypes"]
+- !private ["So16NSObjectProtocolP", "metadata"]
+- !private ["So16NSObjectProtocolP", "min"]
 - !private ["So16NSObjectProtocolP", "modalPresentationStyle"]
 - !private ["So16NSObjectProtocolP", "modalTransitionStyle"]
 - !private ["So16NSObjectProtocolP", "myPickerController"]
 - !private ["So16NSObjectProtocolP", "observeSingleEvent"]
+- !private ["So16NSObjectProtocolP", "performChanges"]
 - !private ["So16NSObjectProtocolP", "photoLibrary"]
 - !private ["So16NSObjectProtocolP", "placeholder"]
 - !private ["So16NSObjectProtocolP", "present"]
@@ -1514,6 +1719,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "setTitle"]
 - !private ["So16NSObjectProtocolP", "setValue"]
 - !private ["So16NSObjectProtocolP", "setupCategories"]
+- !private ["So16NSObjectProtocolP", "shared"]
 - !private ["So16NSObjectProtocolP", "show"]
 - !private ["So16NSObjectProtocolP", "showError"]
 - !private ["So16NSObjectProtocolP", "showSuccess"]
@@ -1532,11 +1738,14 @@ depends-member:
 - ["So16NSObjectProtocolP", "textViewDidEndEditing"]
 - ["So16NSObjectProtocolP", "textViewShouldBeginEditing"]
 - ["So16NSObjectProtocolP", "textViewShouldEndEditing"]
+- !private ["So16NSObjectProtocolP", "thumbnailForVideoAtURL"]
 - !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "uploadImg"]
 - !private ["So16NSObjectProtocolP", "userObj"]
 - !private ["So16NSObjectProtocolP", "uuidString"]
 - !private ["So16NSObjectProtocolP", "value"]
+- !private ["So16NSObjectProtocolP", "videoMaximumDuration"]
+- !private ["So16NSObjectProtocolP", "videoQuality"]
 - !private ["So16NSObjectProtocolP", "viewControllers"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", "viewForZooming"]
@@ -1559,6 +1768,9 @@ depends-member:
 - !private ["So6NSUUIDC", "uuidString"]
 - !private ["s7NumericP", "init"]
 - !private ["s9OptionSetP", "normal"]
+- !private ["So20PHAssetChangeRequestC", "creationRequestForAssetFromVideo"]
+- !private ["So14PHPhotoLibraryC", "performChanges"]
+- !private ["So14PHPhotoLibraryC", "shared"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - ["s22RandomAccessCollectionP", "init"]
@@ -1580,6 +1792,7 @@ depends-member:
 - !private ["s16RawRepresentableP", "normal"]
 - !private ["s16RawRepresentableP", "overFullScreen"]
 - !private ["s16RawRepresentableP", "photoLibrary"]
+- !private ["s16RawRepresentableP", "typeHigh"]
 - !private ["s16RawRepresentableP", "up"]
 - !private ["s16RawRepresentableP", "value"]
 - !private ["10Foundation20ReferenceConvertibleP", "absoluteString"]
@@ -1671,6 +1884,8 @@ depends-member:
 - !private ["So12UIAppearanceP", "showSuccess"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "textColor"]
+- !private ["So21UIAppearanceContainerP", "AVAsset"]
+- !private ["So21UIAppearanceContainerP", "AVAssetImageGenerator"]
 - !private ["So21UIAppearanceContainerP", "CGPoint"]
 - !private ["So21UIAppearanceContainerP", "CGRect"]
 - ["So21UIAppearanceContainerP", "DropDown"]
@@ -1679,6 +1894,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "FIRStorageMetadata"]
 - !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "NSUUID"]
+- !private ["So21UIAppearanceContainerP", "PHAssetChangeRequest"]
+- !private ["So21UIAppearanceContainerP", "PHPhotoLibrary"]
 - !private ["So21UIAppearanceContainerP", "SVProgressHUD"]
 - ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
@@ -1690,10 +1907,13 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So21UIAppearanceContainerP", "UIGraphicsEndImageContext"]
 - !private ["So21UIAppearanceContainerP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UIImageJPEGRepresentation"]
 - !private ["So21UIAppearanceContainerP", "UIImageOrientation"]
 - ["So21UIAppearanceContainerP", "UIImagePickerController"]
+- !private ["So21UIAppearanceContainerP", "UIImagePickerControllerMediaURL"]
 - !private ["So21UIAppearanceContainerP", "UIImagePickerControllerOriginalImage"]
+- !private ["So21UIAppearanceContainerP", "UIImagePickerControllerQualityType"]
 - !private ["So21UIAppearanceContainerP", "UIImagePickerControllerSourceType"]
 - !private ["So21UIAppearanceContainerP", "UIModalPresentationStyle"]
 - !private ["So21UIAppearanceContainerP", "UIModalTransitionStyle"]
@@ -1729,7 +1949,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "isHidden"]
 - !private ["So21UIAppearanceContainerP", "isUserInteractionEnabled"]
 - !private ["So21UIAppearanceContainerP", "items"]
+- !private ["So21UIAppearanceContainerP", "kUTTypeImage"]
+- !private ["So21UIAppearanceContainerP", "kUTTypeMovie"]
 - !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "mediaTypes"]
+- !private ["So21UIAppearanceContainerP", "min"]
 - !private ["So21UIAppearanceContainerP", "modalPresentationStyle"]
 - !private ["So21UIAppearanceContainerP", "modalTransitionStyle"]
 - !private ["So21UIAppearanceContainerP", "myPickerController"]
@@ -1771,9 +1995,12 @@ depends-member:
 - ["So21UIAppearanceContainerP", "textViewDidEndEditing"]
 - ["So21UIAppearanceContainerP", "textViewShouldBeginEditing"]
 - ["So21UIAppearanceContainerP", "textViewShouldEndEditing"]
+- !private ["So21UIAppearanceContainerP", "thumbnailForVideoAtURL"]
 - !private ["So21UIAppearanceContainerP", "title"]
 - !private ["So21UIAppearanceContainerP", "uploadImg"]
 - !private ["So21UIAppearanceContainerP", "userObj"]
+- !private ["So21UIAppearanceContainerP", "videoMaximumDuration"]
+- !private ["So21UIAppearanceContainerP", "videoQuality"]
 - !private ["So21UIAppearanceContainerP", "viewControllers"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
@@ -1787,6 +2014,8 @@ depends-member:
 - !private ["So8UIButtonC", "setTitle"]
 - !private ["So7UIColorC", "black"]
 - !private ["So7UIColorC", "lightGray"]
+- !private ["So18UIContentContainerP", "AVAsset"]
+- !private ["So18UIContentContainerP", "AVAssetImageGenerator"]
 - !private ["So18UIContentContainerP", "CGPoint"]
 - !private ["So18UIContentContainerP", "CGRect"]
 - ["So18UIContentContainerP", "DropDown"]
@@ -1795,6 +2024,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "FIRStorageMetadata"]
 - !private ["So18UIContentContainerP", "Int"]
 - !private ["So18UIContentContainerP", "NSUUID"]
+- !private ["So18UIContentContainerP", "PHAssetChangeRequest"]
+- !private ["So18UIContentContainerP", "PHPhotoLibrary"]
 - !private ["So18UIContentContainerP", "SVProgressHUD"]
 - ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
@@ -1806,10 +2037,13 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So18UIContentContainerP", "UIGraphicsEndImageContext"]
 - !private ["So18UIContentContainerP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UIImageJPEGRepresentation"]
 - !private ["So18UIContentContainerP", "UIImageOrientation"]
 - ["So18UIContentContainerP", "UIImagePickerController"]
+- !private ["So18UIContentContainerP", "UIImagePickerControllerMediaURL"]
 - !private ["So18UIContentContainerP", "UIImagePickerControllerOriginalImage"]
+- !private ["So18UIContentContainerP", "UIImagePickerControllerQualityType"]
 - !private ["So18UIContentContainerP", "UIImagePickerControllerSourceType"]
 - !private ["So18UIContentContainerP", "UIModalPresentationStyle"]
 - !private ["So18UIContentContainerP", "UIModalTransitionStyle"]
@@ -1836,6 +2070,10 @@ depends-member:
 - ["So18UIContentContainerP", "imagePickerControllerDidCancel"]
 - !private ["So18UIContentContainerP", "imgSent"]
 - ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "kUTTypeImage"]
+- !private ["So18UIContentContainerP", "kUTTypeMovie"]
+- !private ["So18UIContentContainerP", "mediaTypes"]
+- !private ["So18UIContentContainerP", "min"]
 - !private ["So18UIContentContainerP", "modalPresentationStyle"]
 - !private ["So18UIContentContainerP", "modalTransitionStyle"]
 - !private ["So18UIContentContainerP", "myPickerController"]
@@ -1868,9 +2106,12 @@ depends-member:
 - ["So18UIContentContainerP", "textViewDidEndEditing"]
 - ["So18UIContentContainerP", "textViewShouldBeginEditing"]
 - ["So18UIContentContainerP", "textViewShouldEndEditing"]
+- !private ["So18UIContentContainerP", "thumbnailForVideoAtURL"]
 - !private ["So18UIContentContainerP", "title"]
 - !private ["So18UIContentContainerP", "uploadImg"]
 - !private ["So18UIContentContainerP", "userObj"]
+- !private ["So18UIContentContainerP", "videoMaximumDuration"]
+- !private ["So18UIContentContainerP", "videoQuality"]
 - !private ["So18UIContentContainerP", "viewControllers"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
@@ -1931,6 +2172,8 @@ depends-member:
 - !private ["So13UIDynamicItemP", "showSuccess"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "textColor"]
+- !private ["So18UIFocusEnvironmentP", "AVAsset"]
+- !private ["So18UIFocusEnvironmentP", "AVAssetImageGenerator"]
 - !private ["So18UIFocusEnvironmentP", "CGPoint"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
 - ["So18UIFocusEnvironmentP", "DropDown"]
@@ -1939,6 +2182,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "FIRStorageMetadata"]
 - !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "NSUUID"]
+- !private ["So18UIFocusEnvironmentP", "PHAssetChangeRequest"]
+- !private ["So18UIFocusEnvironmentP", "PHPhotoLibrary"]
 - !private ["So18UIFocusEnvironmentP", "SVProgressHUD"]
 - ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
@@ -1950,10 +2195,13 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So18UIFocusEnvironmentP", "UIGraphicsEndImageContext"]
 - !private ["So18UIFocusEnvironmentP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UIImageJPEGRepresentation"]
 - !private ["So18UIFocusEnvironmentP", "UIImageOrientation"]
 - ["So18UIFocusEnvironmentP", "UIImagePickerController"]
+- !private ["So18UIFocusEnvironmentP", "UIImagePickerControllerMediaURL"]
 - !private ["So18UIFocusEnvironmentP", "UIImagePickerControllerOriginalImage"]
+- !private ["So18UIFocusEnvironmentP", "UIImagePickerControllerQualityType"]
 - !private ["So18UIFocusEnvironmentP", "UIImagePickerControllerSourceType"]
 - !private ["So18UIFocusEnvironmentP", "UIModalPresentationStyle"]
 - !private ["So18UIFocusEnvironmentP", "UIModalTransitionStyle"]
@@ -1989,7 +2237,11 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "isHidden"]
 - !private ["So18UIFocusEnvironmentP", "isUserInteractionEnabled"]
 - !private ["So18UIFocusEnvironmentP", "items"]
+- !private ["So18UIFocusEnvironmentP", "kUTTypeImage"]
+- !private ["So18UIFocusEnvironmentP", "kUTTypeMovie"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "mediaTypes"]
+- !private ["So18UIFocusEnvironmentP", "min"]
 - !private ["So18UIFocusEnvironmentP", "modalPresentationStyle"]
 - !private ["So18UIFocusEnvironmentP", "modalTransitionStyle"]
 - !private ["So18UIFocusEnvironmentP", "myPickerController"]
@@ -2031,9 +2283,12 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "textViewDidEndEditing"]
 - ["So18UIFocusEnvironmentP", "textViewShouldBeginEditing"]
 - ["So18UIFocusEnvironmentP", "textViewShouldEndEditing"]
+- !private ["So18UIFocusEnvironmentP", "thumbnailForVideoAtURL"]
 - !private ["So18UIFocusEnvironmentP", "title"]
 - !private ["So18UIFocusEnvironmentP", "uploadImg"]
 - !private ["So18UIFocusEnvironmentP", "userObj"]
+- !private ["So18UIFocusEnvironmentP", "videoMaximumDuration"]
+- !private ["So18UIFocusEnvironmentP", "videoQuality"]
 - !private ["So18UIFocusEnvironmentP", "viewControllers"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
@@ -2065,12 +2320,18 @@ depends-member:
 - !private ["So19UIGestureRecognizerC", "init"]
 - !private ["So7UIImageC", "draw"]
 - !private ["So7UIImageC", "imageOrientation"]
+- !private ["So7UIImageC", "init"]
 - !private ["So7UIImageC", "scale"]
 - !private ["So7UIImageC", "size"]
 - !private ["SC18UIImageOrientationO", "up"]
 - !private ["So23UIImagePickerControllerC", "delegate"]
 - ["So23UIImagePickerControllerC", "init"]
+- !private ["So23UIImagePickerControllerC", "mediaTypes"]
 - !private ["So23UIImagePickerControllerC", "sourceType"]
+- !private ["So23UIImagePickerControllerC", "videoMaximumDuration"]
+- !private ["So23UIImagePickerControllerC", "videoQuality"]
+- !private ["So31UIImagePickerControllerDelegateP", "AVAsset"]
+- !private ["So31UIImagePickerControllerDelegateP", "AVAssetImageGenerator"]
 - !private ["So31UIImagePickerControllerDelegateP", "CGPoint"]
 - !private ["So31UIImagePickerControllerDelegateP", "CGRect"]
 - ["So31UIImagePickerControllerDelegateP", "DropDown"]
@@ -2079,6 +2340,8 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "FIRStorageMetadata"]
 - !private ["So31UIImagePickerControllerDelegateP", "Int"]
 - !private ["So31UIImagePickerControllerDelegateP", "NSUUID"]
+- !private ["So31UIImagePickerControllerDelegateP", "PHAssetChangeRequest"]
+- !private ["So31UIImagePickerControllerDelegateP", "PHPhotoLibrary"]
 - !private ["So31UIImagePickerControllerDelegateP", "SVProgressHUD"]
 - ["So31UIImagePickerControllerDelegateP", "String"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIAlertAction"]
@@ -2090,10 +2353,13 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIGraphicsEndImageContext"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So31UIImagePickerControllerDelegateP", "UIImage"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIImageJPEGRepresentation"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIImageOrientation"]
 - ["So31UIImagePickerControllerDelegateP", "UIImagePickerController"]
+- !private ["So31UIImagePickerControllerDelegateP", "UIImagePickerControllerMediaURL"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIImagePickerControllerOriginalImage"]
+- !private ["So31UIImagePickerControllerDelegateP", "UIImagePickerControllerQualityType"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIImagePickerControllerSourceType"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIModalPresentationStyle"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIModalTransitionStyle"]
@@ -2116,6 +2382,9 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "hideKeyboardWhenTappedAround"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerController"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerControllerDidCancel"]
+- !private ["So31UIImagePickerControllerDelegateP", "kUTTypeImage"]
+- !private ["So31UIImagePickerControllerDelegateP", "kUTTypeMovie"]
+- !private ["So31UIImagePickerControllerDelegateP", "min"]
 - !private ["So31UIImagePickerControllerDelegateP", "myPickerController"]
 - !private ["So31UIImagePickerControllerDelegateP", "photoLibrary"]
 - !private ["So31UIImagePickerControllerDelegateP", "present"]
@@ -2144,12 +2413,14 @@ depends-member:
 - ["So31UIImagePickerControllerDelegateP", "textViewDidEndEditing"]
 - ["So31UIImagePickerControllerDelegateP", "textViewShouldBeginEditing"]
 - ["So31UIImagePickerControllerDelegateP", "textViewShouldEndEditing"]
+- !private ["So31UIImagePickerControllerDelegateP", "thumbnailForVideoAtURL"]
 - !private ["So31UIImagePickerControllerDelegateP", "uploadImg"]
 - !private ["So31UIImagePickerControllerDelegateP", "userObj"]
 - ["So31UIImagePickerControllerDelegateP", "viewForZooming"]
 - ["So31UIImagePickerControllerDelegateP", "viewForZoomingInScrollView"]
 - !private ["So31UIImagePickerControllerDelegateP", "viewImage"]
 - ["So31UIImagePickerControllerDelegateP", ""]
+- !private ["SC34UIImagePickerControllerQualityTypeO", "typeHigh"]
 - !private ["SC33UIImagePickerControllerSourceTypeO", "camera"]
 - !private ["SC33UIImagePickerControllerSourceTypeO", "photoLibrary"]
 - !private ["So11UIImageViewC", "addGestureRecognizer"]
@@ -2158,6 +2429,7 @@ depends-member:
 - !private ["So11UIImageViewC", "isUserInteractionEnabled"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "draw"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "imageOrientation"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "scale"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "size"]
 - !private ["So10UIKeyInputP", "delegate"]
@@ -2169,7 +2441,12 @@ depends-member:
 - !private ["SC22UIModalTransitionStyleO", "coverVertical"]
 - !private ["So22UINavigationControllerC", "delegate"]
 - ["So22UINavigationControllerC", "init"]
+- !private ["So22UINavigationControllerC", "mediaTypes"]
 - !private ["So22UINavigationControllerC", "sourceType"]
+- !private ["So22UINavigationControllerC", "videoMaximumDuration"]
+- !private ["So22UINavigationControllerC", "videoQuality"]
+- !private ["So30UINavigationControllerDelegateP", "AVAsset"]
+- !private ["So30UINavigationControllerDelegateP", "AVAssetImageGenerator"]
 - !private ["So30UINavigationControllerDelegateP", "CGPoint"]
 - !private ["So30UINavigationControllerDelegateP", "CGRect"]
 - ["So30UINavigationControllerDelegateP", "DropDown"]
@@ -2178,6 +2455,8 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "FIRStorageMetadata"]
 - !private ["So30UINavigationControllerDelegateP", "Int"]
 - !private ["So30UINavigationControllerDelegateP", "NSUUID"]
+- !private ["So30UINavigationControllerDelegateP", "PHAssetChangeRequest"]
+- !private ["So30UINavigationControllerDelegateP", "PHPhotoLibrary"]
 - !private ["So30UINavigationControllerDelegateP", "SVProgressHUD"]
 - ["So30UINavigationControllerDelegateP", "String"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertAction"]
@@ -2189,10 +2468,13 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So30UINavigationControllerDelegateP", "UIGraphicsEndImageContext"]
 - !private ["So30UINavigationControllerDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So30UINavigationControllerDelegateP", "UIImage"]
 - !private ["So30UINavigationControllerDelegateP", "UIImageJPEGRepresentation"]
 - !private ["So30UINavigationControllerDelegateP", "UIImageOrientation"]
 - ["So30UINavigationControllerDelegateP", "UIImagePickerController"]
+- !private ["So30UINavigationControllerDelegateP", "UIImagePickerControllerMediaURL"]
 - !private ["So30UINavigationControllerDelegateP", "UIImagePickerControllerOriginalImage"]
+- !private ["So30UINavigationControllerDelegateP", "UIImagePickerControllerQualityType"]
 - !private ["So30UINavigationControllerDelegateP", "UIImagePickerControllerSourceType"]
 - !private ["So30UINavigationControllerDelegateP", "UIModalPresentationStyle"]
 - !private ["So30UINavigationControllerDelegateP", "UIModalTransitionStyle"]
@@ -2219,6 +2501,10 @@ depends-member:
 - ["So30UINavigationControllerDelegateP", "imagePickerControllerDidCancel"]
 - !private ["So30UINavigationControllerDelegateP", "imgSent"]
 - ["So30UINavigationControllerDelegateP", "init"]
+- !private ["So30UINavigationControllerDelegateP", "kUTTypeImage"]
+- !private ["So30UINavigationControllerDelegateP", "kUTTypeMovie"]
+- !private ["So30UINavigationControllerDelegateP", "mediaTypes"]
+- !private ["So30UINavigationControllerDelegateP", "min"]
 - !private ["So30UINavigationControllerDelegateP", "modalPresentationStyle"]
 - !private ["So30UINavigationControllerDelegateP", "modalTransitionStyle"]
 - !private ["So30UINavigationControllerDelegateP", "myPickerController"]
@@ -2251,15 +2537,20 @@ depends-member:
 - ["So30UINavigationControllerDelegateP", "textViewDidEndEditing"]
 - ["So30UINavigationControllerDelegateP", "textViewShouldBeginEditing"]
 - ["So30UINavigationControllerDelegateP", "textViewShouldEndEditing"]
+- !private ["So30UINavigationControllerDelegateP", "thumbnailForVideoAtURL"]
 - !private ["So30UINavigationControllerDelegateP", "title"]
 - !private ["So30UINavigationControllerDelegateP", "uploadImg"]
 - !private ["So30UINavigationControllerDelegateP", "userObj"]
+- !private ["So30UINavigationControllerDelegateP", "videoMaximumDuration"]
+- !private ["So30UINavigationControllerDelegateP", "videoQuality"]
 - !private ["So30UINavigationControllerDelegateP", "viewControllers"]
 - !private ["So30UINavigationControllerDelegateP", "viewDidLoad"]
 - ["So30UINavigationControllerDelegateP", "viewForZooming"]
 - ["So30UINavigationControllerDelegateP", "viewForZoomingInScrollView"]
 - !private ["So30UINavigationControllerDelegateP", "viewImage"]
 - ["So30UINavigationControllerDelegateP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "AVAsset"]
+- !private ["So30UIPasteConfigurationSupportingP", "AVAssetImageGenerator"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGPoint"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - ["So30UIPasteConfigurationSupportingP", "DropDown"]
@@ -2268,6 +2559,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "FIRStorageMetadata"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSUUID"]
+- !private ["So30UIPasteConfigurationSupportingP", "PHAssetChangeRequest"]
+- !private ["So30UIPasteConfigurationSupportingP", "PHPhotoLibrary"]
 - !private ["So30UIPasteConfigurationSupportingP", "SVProgressHUD"]
 - ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
@@ -2279,10 +2572,13 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsEndImageContext"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImageJPEGRepresentation"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImageOrientation"]
 - ["So30UIPasteConfigurationSupportingP", "UIImagePickerController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImagePickerControllerMediaURL"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImagePickerControllerOriginalImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImagePickerControllerQualityType"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImagePickerControllerSourceType"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIModalPresentationStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIModalTransitionStyle"]
@@ -2318,7 +2614,11 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
 - !private ["So30UIPasteConfigurationSupportingP", "isUserInteractionEnabled"]
 - !private ["So30UIPasteConfigurationSupportingP", "items"]
+- !private ["So30UIPasteConfigurationSupportingP", "kUTTypeImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "kUTTypeMovie"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "mediaTypes"]
+- !private ["So30UIPasteConfigurationSupportingP", "min"]
 - !private ["So30UIPasteConfigurationSupportingP", "modalPresentationStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "modalTransitionStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "myPickerController"]
@@ -2360,15 +2660,20 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "textViewDidEndEditing"]
 - ["So30UIPasteConfigurationSupportingP", "textViewShouldBeginEditing"]
 - ["So30UIPasteConfigurationSupportingP", "textViewShouldEndEditing"]
+- !private ["So30UIPasteConfigurationSupportingP", "thumbnailForVideoAtURL"]
 - !private ["So30UIPasteConfigurationSupportingP", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "uploadImg"]
 - !private ["So30UIPasteConfigurationSupportingP", "userObj"]
+- !private ["So30UIPasteConfigurationSupportingP", "videoMaximumDuration"]
+- !private ["So30UIPasteConfigurationSupportingP", "videoQuality"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewControllers"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewImage"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "AVAsset"]
+- !private ["So11UIResponderC", "AVAssetImageGenerator"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "CGPoint"]
 - !private ["So11UIResponderC", "CGRect"]
@@ -2378,7 +2683,10 @@ depends-member:
 - !private ["So11UIResponderC", "FIRStorage"]
 - !private ["So11UIResponderC", "FIRStorageMetadata"]
 - !private ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "NSURL"]
 - !private ["So11UIResponderC", "NSUUID"]
+- !private ["So11UIResponderC", "PHAssetChangeRequest"]
+- !private ["So11UIResponderC", "PHPhotoLibrary"]
 - !private ["So11UIResponderC", "SVProgressHUD"]
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIAlertAction"]
@@ -2395,7 +2703,9 @@ depends-member:
 - !private ["So11UIResponderC", "UIImageJPEGRepresentation"]
 - !private ["So11UIResponderC", "UIImageOrientation"]
 - ["So11UIResponderC", "UIImagePickerController"]
+- !private ["So11UIResponderC", "UIImagePickerControllerMediaURL"]
 - !private ["So11UIResponderC", "UIImagePickerControllerOriginalImage"]
+- !private ["So11UIResponderC", "UIImagePickerControllerQualityType"]
 - !private ["So11UIResponderC", "UIImagePickerControllerSourceType"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
@@ -2403,6 +2713,7 @@ depends-member:
 - !private ["So11UIResponderC", "UIModalTransitionStyle"]
 - !private ["So11UIResponderC", "UITapGestureRecognizer"]
 - ["So11UIResponderC", "UITextView"]
+- !private ["So11UIResponderC", "URL"]
 - !private ["So11UIResponderC", "VC_selectedimage"]
 - !private ["So11UIResponderC", "Void"]
 - !private ["So11UIResponderC", "addAction"]
@@ -2440,7 +2751,11 @@ depends-member:
 - !private ["So11UIResponderC", "isHidden"]
 - !private ["So11UIResponderC", "isUserInteractionEnabled"]
 - !private ["So11UIResponderC", "items"]
+- !private ["So11UIResponderC", "kUTTypeImage"]
+- !private ["So11UIResponderC", "kUTTypeMovie"]
 - !private ["So11UIResponderC", "layer"]
+- !private ["So11UIResponderC", "mediaTypes"]
+- !private ["So11UIResponderC", "min"]
 - !private ["So11UIResponderC", "modalPresentationStyle"]
 - !private ["So11UIResponderC", "modalTransitionStyle"]
 - ["So11UIResponderC", "myPickerController"]
@@ -2482,15 +2797,20 @@ depends-member:
 - ["So11UIResponderC", "textViewDidEndEditing"]
 - ["So11UIResponderC", "textViewShouldBeginEditing"]
 - ["So11UIResponderC", "textViewShouldEndEditing"]
+- ["So11UIResponderC", "thumbnailForVideoAtURL"]
 - !private ["So11UIResponderC", "title"]
 - ["So11UIResponderC", "uploadImg"]
 - !private ["So11UIResponderC", "userObj"]
+- !private ["So11UIResponderC", "videoMaximumDuration"]
+- !private ["So11UIResponderC", "videoQuality"]
 - !private ["So11UIResponderC", "viewControllers"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "viewImage"]
 - ["So11UIResponderC", "viewWillAppear"]
+- !private ["So30UIResponderStandardEditActionsP", "AVAsset"]
+- !private ["So30UIResponderStandardEditActionsP", "AVAssetImageGenerator"]
 - !private ["So30UIResponderStandardEditActionsP", "CGPoint"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
 - ["So30UIResponderStandardEditActionsP", "DropDown"]
@@ -2499,6 +2819,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "FIRStorageMetadata"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "NSUUID"]
+- !private ["So30UIResponderStandardEditActionsP", "PHAssetChangeRequest"]
+- !private ["So30UIResponderStandardEditActionsP", "PHPhotoLibrary"]
 - !private ["So30UIResponderStandardEditActionsP", "SVProgressHUD"]
 - ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
@@ -2510,10 +2832,13 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So30UIResponderStandardEditActionsP", "UIGraphicsEndImageContext"]
 - !private ["So30UIResponderStandardEditActionsP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImageJPEGRepresentation"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImageOrientation"]
 - ["So30UIResponderStandardEditActionsP", "UIImagePickerController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImagePickerControllerMediaURL"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImagePickerControllerOriginalImage"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImagePickerControllerQualityType"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImagePickerControllerSourceType"]
 - !private ["So30UIResponderStandardEditActionsP", "UIModalPresentationStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "UIModalTransitionStyle"]
@@ -2549,7 +2874,11 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "isHidden"]
 - !private ["So30UIResponderStandardEditActionsP", "isUserInteractionEnabled"]
 - !private ["So30UIResponderStandardEditActionsP", "items"]
+- !private ["So30UIResponderStandardEditActionsP", "kUTTypeImage"]
+- !private ["So30UIResponderStandardEditActionsP", "kUTTypeMovie"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "mediaTypes"]
+- !private ["So30UIResponderStandardEditActionsP", "min"]
 - !private ["So30UIResponderStandardEditActionsP", "modalPresentationStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "modalTransitionStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "myPickerController"]
@@ -2591,9 +2920,12 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "textViewDidEndEditing"]
 - ["So30UIResponderStandardEditActionsP", "textViewShouldBeginEditing"]
 - ["So30UIResponderStandardEditActionsP", "textViewShouldEndEditing"]
+- !private ["So30UIResponderStandardEditActionsP", "thumbnailForVideoAtURL"]
 - !private ["So30UIResponderStandardEditActionsP", "title"]
 - !private ["So30UIResponderStandardEditActionsP", "uploadImg"]
 - !private ["So30UIResponderStandardEditActionsP", "userObj"]
+- !private ["So30UIResponderStandardEditActionsP", "videoMaximumDuration"]
+- !private ["So30UIResponderStandardEditActionsP", "videoQuality"]
 - !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
@@ -2604,6 +2936,8 @@ depends-member:
 - !private ["So12UIScrollViewC", "placeholder"]
 - !private ["So12UIScrollViewC", "text"]
 - !private ["So12UIScrollViewC", "textColor"]
+- !private ["So20UIScrollViewDelegateP", "AVAsset"]
+- !private ["So20UIScrollViewDelegateP", "AVAssetImageGenerator"]
 - !private ["So20UIScrollViewDelegateP", "CGPoint"]
 - !private ["So20UIScrollViewDelegateP", "CGRect"]
 - ["So20UIScrollViewDelegateP", "DropDown"]
@@ -2612,6 +2946,8 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "FIRStorageMetadata"]
 - !private ["So20UIScrollViewDelegateP", "Int"]
 - !private ["So20UIScrollViewDelegateP", "NSUUID"]
+- !private ["So20UIScrollViewDelegateP", "PHAssetChangeRequest"]
+- !private ["So20UIScrollViewDelegateP", "PHPhotoLibrary"]
 - !private ["So20UIScrollViewDelegateP", "SVProgressHUD"]
 - ["So20UIScrollViewDelegateP", "String"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
@@ -2623,10 +2959,13 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So20UIScrollViewDelegateP", "UIGraphicsEndImageContext"]
 - !private ["So20UIScrollViewDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So20UIScrollViewDelegateP", "UIImage"]
 - !private ["So20UIScrollViewDelegateP", "UIImageJPEGRepresentation"]
 - !private ["So20UIScrollViewDelegateP", "UIImageOrientation"]
 - ["So20UIScrollViewDelegateP", "UIImagePickerController"]
+- !private ["So20UIScrollViewDelegateP", "UIImagePickerControllerMediaURL"]
 - !private ["So20UIScrollViewDelegateP", "UIImagePickerControllerOriginalImage"]
+- !private ["So20UIScrollViewDelegateP", "UIImagePickerControllerQualityType"]
 - !private ["So20UIScrollViewDelegateP", "UIImagePickerControllerSourceType"]
 - !private ["So20UIScrollViewDelegateP", "UIModalPresentationStyle"]
 - !private ["So20UIScrollViewDelegateP", "UIModalTransitionStyle"]
@@ -2653,6 +2992,9 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "imagePickerController"]
 - ["So20UIScrollViewDelegateP", "imagePickerControllerDidCancel"]
 - ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "kUTTypeImage"]
+- !private ["So20UIScrollViewDelegateP", "kUTTypeMovie"]
+- !private ["So20UIScrollViewDelegateP", "min"]
 - !private ["So20UIScrollViewDelegateP", "myPickerController"]
 - !private ["So20UIScrollViewDelegateP", "photoLibrary"]
 - !private ["So20UIScrollViewDelegateP", "present"]
@@ -2683,6 +3025,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "textViewDidEndEditing"]
 - ["So20UIScrollViewDelegateP", "textViewShouldBeginEditing"]
 - ["So20UIScrollViewDelegateP", "textViewShouldEndEditing"]
+- !private ["So20UIScrollViewDelegateP", "thumbnailForVideoAtURL"]
 - !private ["So20UIScrollViewDelegateP", "uploadImg"]
 - !private ["So20UIScrollViewDelegateP", "userObj"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
@@ -2697,6 +3040,8 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "items"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setTitle"]
+- !private ["So16UIStateRestoringP", "AVAsset"]
+- !private ["So16UIStateRestoringP", "AVAssetImageGenerator"]
 - !private ["So16UIStateRestoringP", "CGPoint"]
 - !private ["So16UIStateRestoringP", "CGRect"]
 - ["So16UIStateRestoringP", "DropDown"]
@@ -2705,6 +3050,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "FIRStorageMetadata"]
 - !private ["So16UIStateRestoringP", "Int"]
 - !private ["So16UIStateRestoringP", "NSUUID"]
+- !private ["So16UIStateRestoringP", "PHAssetChangeRequest"]
+- !private ["So16UIStateRestoringP", "PHPhotoLibrary"]
 - !private ["So16UIStateRestoringP", "SVProgressHUD"]
 - ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
@@ -2716,10 +3063,13 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So16UIStateRestoringP", "UIGraphicsEndImageContext"]
 - !private ["So16UIStateRestoringP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UIImageJPEGRepresentation"]
 - !private ["So16UIStateRestoringP", "UIImageOrientation"]
 - ["So16UIStateRestoringP", "UIImagePickerController"]
+- !private ["So16UIStateRestoringP", "UIImagePickerControllerMediaURL"]
 - !private ["So16UIStateRestoringP", "UIImagePickerControllerOriginalImage"]
+- !private ["So16UIStateRestoringP", "UIImagePickerControllerQualityType"]
 - !private ["So16UIStateRestoringP", "UIImagePickerControllerSourceType"]
 - !private ["So16UIStateRestoringP", "UIModalPresentationStyle"]
 - !private ["So16UIStateRestoringP", "UIModalTransitionStyle"]
@@ -2746,6 +3096,10 @@ depends-member:
 - ["So16UIStateRestoringP", "imagePickerControllerDidCancel"]
 - !private ["So16UIStateRestoringP", "imgSent"]
 - ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "kUTTypeImage"]
+- !private ["So16UIStateRestoringP", "kUTTypeMovie"]
+- !private ["So16UIStateRestoringP", "mediaTypes"]
+- !private ["So16UIStateRestoringP", "min"]
 - !private ["So16UIStateRestoringP", "modalPresentationStyle"]
 - !private ["So16UIStateRestoringP", "modalTransitionStyle"]
 - !private ["So16UIStateRestoringP", "myPickerController"]
@@ -2778,9 +3132,12 @@ depends-member:
 - ["So16UIStateRestoringP", "textViewDidEndEditing"]
 - ["So16UIStateRestoringP", "textViewShouldBeginEditing"]
 - ["So16UIStateRestoringP", "textViewShouldEndEditing"]
+- !private ["So16UIStateRestoringP", "thumbnailForVideoAtURL"]
 - !private ["So16UIStateRestoringP", "title"]
 - !private ["So16UIStateRestoringP", "uploadImg"]
 - !private ["So16UIStateRestoringP", "userObj"]
+- !private ["So16UIStateRestoringP", "videoMaximumDuration"]
+- !private ["So16UIStateRestoringP", "videoQuality"]
 - !private ["So16UIStateRestoringP", "viewControllers"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
@@ -2791,6 +3148,8 @@ depends-member:
 - !private ["So8UITabBarC", "items"]
 - !private ["So18UITabBarControllerC", "tabBar"]
 - !private ["So18UITabBarControllerC", "viewControllers"]
+- !private ["So26UITabBarControllerDelegateP", "AVAsset"]
+- !private ["So26UITabBarControllerDelegateP", "AVAssetImageGenerator"]
 - !private ["So26UITabBarControllerDelegateP", "CGPoint"]
 - !private ["So26UITabBarControllerDelegateP", "CGRect"]
 - ["So26UITabBarControllerDelegateP", "DropDown"]
@@ -2799,6 +3158,8 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "FIRStorageMetadata"]
 - !private ["So26UITabBarControllerDelegateP", "Int"]
 - !private ["So26UITabBarControllerDelegateP", "NSUUID"]
+- !private ["So26UITabBarControllerDelegateP", "PHAssetChangeRequest"]
+- !private ["So26UITabBarControllerDelegateP", "PHPhotoLibrary"]
 - !private ["So26UITabBarControllerDelegateP", "SVProgressHUD"]
 - ["So26UITabBarControllerDelegateP", "String"]
 - !private ["So26UITabBarControllerDelegateP", "UIAlertAction"]
@@ -2810,10 +3171,13 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So26UITabBarControllerDelegateP", "UIGraphicsEndImageContext"]
 - !private ["So26UITabBarControllerDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So26UITabBarControllerDelegateP", "UIImage"]
 - !private ["So26UITabBarControllerDelegateP", "UIImageJPEGRepresentation"]
 - !private ["So26UITabBarControllerDelegateP", "UIImageOrientation"]
 - ["So26UITabBarControllerDelegateP", "UIImagePickerController"]
+- !private ["So26UITabBarControllerDelegateP", "UIImagePickerControllerMediaURL"]
 - !private ["So26UITabBarControllerDelegateP", "UIImagePickerControllerOriginalImage"]
+- !private ["So26UITabBarControllerDelegateP", "UIImagePickerControllerQualityType"]
 - !private ["So26UITabBarControllerDelegateP", "UIImagePickerControllerSourceType"]
 - !private ["So26UITabBarControllerDelegateP", "UIModalPresentationStyle"]
 - !private ["So26UITabBarControllerDelegateP", "UIModalTransitionStyle"]
@@ -2840,6 +3204,10 @@ depends-member:
 - ["So26UITabBarControllerDelegateP", "imagePickerControllerDidCancel"]
 - !private ["So26UITabBarControllerDelegateP", "imgSent"]
 - ["So26UITabBarControllerDelegateP", "init"]
+- !private ["So26UITabBarControllerDelegateP", "kUTTypeImage"]
+- !private ["So26UITabBarControllerDelegateP", "kUTTypeMovie"]
+- !private ["So26UITabBarControllerDelegateP", "mediaTypes"]
+- !private ["So26UITabBarControllerDelegateP", "min"]
 - !private ["So26UITabBarControllerDelegateP", "modalPresentationStyle"]
 - !private ["So26UITabBarControllerDelegateP", "modalTransitionStyle"]
 - !private ["So26UITabBarControllerDelegateP", "myPickerController"]
@@ -2872,9 +3240,12 @@ depends-member:
 - ["So26UITabBarControllerDelegateP", "textViewDidEndEditing"]
 - ["So26UITabBarControllerDelegateP", "textViewShouldBeginEditing"]
 - ["So26UITabBarControllerDelegateP", "textViewShouldEndEditing"]
+- !private ["So26UITabBarControllerDelegateP", "thumbnailForVideoAtURL"]
 - !private ["So26UITabBarControllerDelegateP", "title"]
 - !private ["So26UITabBarControllerDelegateP", "uploadImg"]
 - !private ["So26UITabBarControllerDelegateP", "userObj"]
+- !private ["So26UITabBarControllerDelegateP", "videoMaximumDuration"]
+- !private ["So26UITabBarControllerDelegateP", "videoQuality"]
 - !private ["So26UITabBarControllerDelegateP", "viewControllers"]
 - !private ["So26UITabBarControllerDelegateP", "viewDidLoad"]
 - ["So26UITabBarControllerDelegateP", "viewForZooming"]
@@ -2921,6 +3292,8 @@ depends-member:
 - !private ["So10UITextViewC", "placeholder"]
 - !private ["So10UITextViewC", "text"]
 - !private ["So10UITextViewC", "textColor"]
+- !private ["So18UITextViewDelegateP", "AVAsset"]
+- !private ["So18UITextViewDelegateP", "AVAssetImageGenerator"]
 - !private ["So18UITextViewDelegateP", "CGPoint"]
 - !private ["So18UITextViewDelegateP", "CGRect"]
 - ["So18UITextViewDelegateP", "DropDown"]
@@ -2929,6 +3302,8 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "FIRStorageMetadata"]
 - !private ["So18UITextViewDelegateP", "Int"]
 - !private ["So18UITextViewDelegateP", "NSUUID"]
+- !private ["So18UITextViewDelegateP", "PHAssetChangeRequest"]
+- !private ["So18UITextViewDelegateP", "PHPhotoLibrary"]
 - !private ["So18UITextViewDelegateP", "SVProgressHUD"]
 - ["So18UITextViewDelegateP", "String"]
 - !private ["So18UITextViewDelegateP", "UIAlertAction"]
@@ -2940,10 +3315,13 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So18UITextViewDelegateP", "UIGraphicsEndImageContext"]
 - !private ["So18UITextViewDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So18UITextViewDelegateP", "UIImage"]
 - !private ["So18UITextViewDelegateP", "UIImageJPEGRepresentation"]
 - !private ["So18UITextViewDelegateP", "UIImageOrientation"]
 - ["So18UITextViewDelegateP", "UIImagePickerController"]
+- !private ["So18UITextViewDelegateP", "UIImagePickerControllerMediaURL"]
 - !private ["So18UITextViewDelegateP", "UIImagePickerControllerOriginalImage"]
+- !private ["So18UITextViewDelegateP", "UIImagePickerControllerQualityType"]
 - !private ["So18UITextViewDelegateP", "UIImagePickerControllerSourceType"]
 - !private ["So18UITextViewDelegateP", "UIModalPresentationStyle"]
 - !private ["So18UITextViewDelegateP", "UIModalTransitionStyle"]
@@ -2966,6 +3344,9 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "hideKeyboardWhenTappedAround"]
 - ["So18UITextViewDelegateP", "imagePickerController"]
 - ["So18UITextViewDelegateP", "imagePickerControllerDidCancel"]
+- !private ["So18UITextViewDelegateP", "kUTTypeImage"]
+- !private ["So18UITextViewDelegateP", "kUTTypeMovie"]
+- !private ["So18UITextViewDelegateP", "min"]
 - !private ["So18UITextViewDelegateP", "myPickerController"]
 - !private ["So18UITextViewDelegateP", "photoLibrary"]
 - !private ["So18UITextViewDelegateP", "present"]
@@ -2994,12 +3375,15 @@ depends-member:
 - ["So18UITextViewDelegateP", "textViewDidEndEditing"]
 - ["So18UITextViewDelegateP", "textViewShouldBeginEditing"]
 - ["So18UITextViewDelegateP", "textViewShouldEndEditing"]
+- !private ["So18UITextViewDelegateP", "thumbnailForVideoAtURL"]
 - !private ["So18UITextViewDelegateP", "uploadImg"]
 - !private ["So18UITextViewDelegateP", "userObj"]
 - ["So18UITextViewDelegateP", "viewForZooming"]
 - ["So18UITextViewDelegateP", "viewForZoomingInScrollView"]
 - !private ["So18UITextViewDelegateP", "viewImage"]
 - ["So18UITextViewDelegateP", ""]
+- !private ["So18UITraitEnvironmentP", "AVAsset"]
+- !private ["So18UITraitEnvironmentP", "AVAssetImageGenerator"]
 - !private ["So18UITraitEnvironmentP", "CGPoint"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
 - ["So18UITraitEnvironmentP", "DropDown"]
@@ -3008,6 +3392,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "FIRStorageMetadata"]
 - !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "NSUUID"]
+- !private ["So18UITraitEnvironmentP", "PHAssetChangeRequest"]
+- !private ["So18UITraitEnvironmentP", "PHPhotoLibrary"]
 - !private ["So18UITraitEnvironmentP", "SVProgressHUD"]
 - ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
@@ -3019,10 +3405,13 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So18UITraitEnvironmentP", "UIGraphicsEndImageContext"]
 - !private ["So18UITraitEnvironmentP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UIImageJPEGRepresentation"]
 - !private ["So18UITraitEnvironmentP", "UIImageOrientation"]
 - ["So18UITraitEnvironmentP", "UIImagePickerController"]
+- !private ["So18UITraitEnvironmentP", "UIImagePickerControllerMediaURL"]
 - !private ["So18UITraitEnvironmentP", "UIImagePickerControllerOriginalImage"]
+- !private ["So18UITraitEnvironmentP", "UIImagePickerControllerQualityType"]
 - !private ["So18UITraitEnvironmentP", "UIImagePickerControllerSourceType"]
 - !private ["So18UITraitEnvironmentP", "UIModalPresentationStyle"]
 - !private ["So18UITraitEnvironmentP", "UIModalTransitionStyle"]
@@ -3058,7 +3447,11 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "isHidden"]
 - !private ["So18UITraitEnvironmentP", "isUserInteractionEnabled"]
 - !private ["So18UITraitEnvironmentP", "items"]
+- !private ["So18UITraitEnvironmentP", "kUTTypeImage"]
+- !private ["So18UITraitEnvironmentP", "kUTTypeMovie"]
 - !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "mediaTypes"]
+- !private ["So18UITraitEnvironmentP", "min"]
 - !private ["So18UITraitEnvironmentP", "modalPresentationStyle"]
 - !private ["So18UITraitEnvironmentP", "modalTransitionStyle"]
 - !private ["So18UITraitEnvironmentP", "myPickerController"]
@@ -3100,9 +3493,12 @@ depends-member:
 - ["So18UITraitEnvironmentP", "textViewDidEndEditing"]
 - ["So18UITraitEnvironmentP", "textViewShouldBeginEditing"]
 - ["So18UITraitEnvironmentP", "textViewShouldEndEditing"]
+- !private ["So18UITraitEnvironmentP", "thumbnailForVideoAtURL"]
 - !private ["So18UITraitEnvironmentP", "title"]
 - !private ["So18UITraitEnvironmentP", "uploadImg"]
 - !private ["So18UITraitEnvironmentP", "userObj"]
+- !private ["So18UITraitEnvironmentP", "videoMaximumDuration"]
+- !private ["So18UITraitEnvironmentP", "videoQuality"]
 - !private ["So18UITraitEnvironmentP", "viewControllers"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
@@ -3131,6 +3527,8 @@ depends-member:
 - !private ["So6UIViewC", "showSuccess"]
 - !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "textColor"]
+- !private ["So16UIViewControllerC", "AVAsset"]
+- !private ["So16UIViewControllerC", "AVAssetImageGenerator"]
 - ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "CGPoint"]
 - !private ["So16UIViewControllerC", "CGRect"]
@@ -3140,7 +3538,10 @@ depends-member:
 - !private ["So16UIViewControllerC", "FIRStorage"]
 - !private ["So16UIViewControllerC", "FIRStorageMetadata"]
 - !private ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "NSURL"]
 - !private ["So16UIViewControllerC", "NSUUID"]
+- !private ["So16UIViewControllerC", "PHAssetChangeRequest"]
+- !private ["So16UIViewControllerC", "PHPhotoLibrary"]
 - !private ["So16UIViewControllerC", "SVProgressHUD"]
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
@@ -3157,7 +3558,9 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIImageJPEGRepresentation"]
 - !private ["So16UIViewControllerC", "UIImageOrientation"]
 - ["So16UIViewControllerC", "UIImagePickerController"]
+- !private ["So16UIViewControllerC", "UIImagePickerControllerMediaURL"]
 - !private ["So16UIViewControllerC", "UIImagePickerControllerOriginalImage"]
+- !private ["So16UIViewControllerC", "UIImagePickerControllerQualityType"]
 - !private ["So16UIViewControllerC", "UIImagePickerControllerSourceType"]
 - ["So16UIViewControllerC", "UIImageView"]
 - ["So16UIViewControllerC", "UILabel"]
@@ -3165,6 +3568,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIModalTransitionStyle"]
 - !private ["So16UIViewControllerC", "UITapGestureRecognizer"]
 - ["So16UIViewControllerC", "UITextView"]
+- !private ["So16UIViewControllerC", "URL"]
 - !private ["So16UIViewControllerC", "VC_selectedimage"]
 - !private ["So16UIViewControllerC", "Void"]
 - !private ["So16UIViewControllerC", "addAction"]
@@ -3193,6 +3597,10 @@ depends-member:
 - ["So16UIViewControllerC", "imagePickerControllerDidCancel"]
 - !private ["So16UIViewControllerC", "imgSent"]
 - ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "kUTTypeImage"]
+- !private ["So16UIViewControllerC", "kUTTypeMovie"]
+- !private ["So16UIViewControllerC", "mediaTypes"]
+- !private ["So16UIViewControllerC", "min"]
 - !private ["So16UIViewControllerC", "modalPresentationStyle"]
 - !private ["So16UIViewControllerC", "modalTransitionStyle"]
 - ["So16UIViewControllerC", "myPickerController"]
@@ -3225,9 +3633,12 @@ depends-member:
 - ["So16UIViewControllerC", "textViewDidEndEditing"]
 - ["So16UIViewControllerC", "textViewShouldBeginEditing"]
 - ["So16UIViewControllerC", "textViewShouldEndEditing"]
+- ["So16UIViewControllerC", "thumbnailForVideoAtURL"]
 - !private ["So16UIViewControllerC", "title"]
 - ["So16UIViewControllerC", "uploadImg"]
 - !private ["So16UIViewControllerC", "userObj"]
+- !private ["So16UIViewControllerC", "videoMaximumDuration"]
+- !private ["So16UIViewControllerC", "videoQuality"]
 - !private ["So16UIViewControllerC", "viewControllers"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
@@ -3235,6 +3646,8 @@ depends-member:
 - ["So16UIViewControllerC", "viewImage"]
 - ["So16UIViewControllerC", "viewWillAppear"]
 - ["So16UIViewControllerC", ""]
+- !private ["So37UIViewControllerTransitioningDelegateP", "AVAsset"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "AVAssetImageGenerator"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "CGPoint"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "CGRect"]
 - ["So37UIViewControllerTransitioningDelegateP", "DropDown"]
@@ -3243,6 +3656,8 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "FIRStorageMetadata"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "Int"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "NSUUID"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "PHAssetChangeRequest"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "PHPhotoLibrary"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "SVProgressHUD"]
 - ["So37UIViewControllerTransitioningDelegateP", "String"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertAction"]
@@ -3254,10 +3669,13 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIGraphicsEndImageContext"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIImage"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIImageJPEGRepresentation"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIImageOrientation"]
 - ["So37UIViewControllerTransitioningDelegateP", "UIImagePickerController"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIImagePickerControllerMediaURL"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIImagePickerControllerOriginalImage"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIImagePickerControllerQualityType"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIImagePickerControllerSourceType"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIModalPresentationStyle"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIModalTransitionStyle"]
@@ -3284,6 +3702,10 @@ depends-member:
 - ["So37UIViewControllerTransitioningDelegateP", "imagePickerControllerDidCancel"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "imgSent"]
 - ["So37UIViewControllerTransitioningDelegateP", "init"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "kUTTypeImage"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "kUTTypeMovie"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "mediaTypes"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "min"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "modalPresentationStyle"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "modalTransitionStyle"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "myPickerController"]
@@ -3316,9 +3738,12 @@ depends-member:
 - ["So37UIViewControllerTransitioningDelegateP", "textViewDidEndEditing"]
 - ["So37UIViewControllerTransitioningDelegateP", "textViewShouldBeginEditing"]
 - ["So37UIViewControllerTransitioningDelegateP", "textViewShouldEndEditing"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "thumbnailForVideoAtURL"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "title"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "uploadImg"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "userObj"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "videoMaximumDuration"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "videoQuality"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "viewControllers"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "viewDidLoad"]
 - ["So37UIViewControllerTransitioningDelegateP", "viewForZooming"]
@@ -3330,6 +3755,8 @@ depends-member:
 - !private ["4Test10UserObjectC", "creatorID"]
 - !private ["4Test10UserObjectC", "isAdmin"]
 - !private ["4Test10UserObjectC", "uid"]
+- !private ["4Test14VC_PostContentC", "AVAsset"]
+- !private ["4Test14VC_PostContentC", "AVAssetImageGenerator"]
 - ["4Test14VC_PostContentC", "Bool"]
 - !private ["4Test14VC_PostContentC", "CGPoint"]
 - !private ["4Test14VC_PostContentC", "CGRect"]
@@ -3339,7 +3766,10 @@ depends-member:
 - !private ["4Test14VC_PostContentC", "FIRStorage"]
 - !private ["4Test14VC_PostContentC", "FIRStorageMetadata"]
 - !private ["4Test14VC_PostContentC", "Int"]
+- !private ["4Test14VC_PostContentC", "NSURL"]
 - !private ["4Test14VC_PostContentC", "NSUUID"]
+- !private ["4Test14VC_PostContentC", "PHAssetChangeRequest"]
+- !private ["4Test14VC_PostContentC", "PHPhotoLibrary"]
 - !private ["4Test14VC_PostContentC", "SVProgressHUD"]
 - ["4Test14VC_PostContentC", "String"]
 - !private ["4Test14VC_PostContentC", "UIAlertAction"]
@@ -3356,7 +3786,9 @@ depends-member:
 - !private ["4Test14VC_PostContentC", "UIImageJPEGRepresentation"]
 - !private ["4Test14VC_PostContentC", "UIImageOrientation"]
 - ["4Test14VC_PostContentC", "UIImagePickerController"]
+- !private ["4Test14VC_PostContentC", "UIImagePickerControllerMediaURL"]
 - !private ["4Test14VC_PostContentC", "UIImagePickerControllerOriginalImage"]
+- !private ["4Test14VC_PostContentC", "UIImagePickerControllerQualityType"]
 - !private ["4Test14VC_PostContentC", "UIImagePickerControllerSourceType"]
 - ["4Test14VC_PostContentC", "UIImageView"]
 - ["4Test14VC_PostContentC", "UILabel"]
@@ -3364,6 +3796,7 @@ depends-member:
 - !private ["4Test14VC_PostContentC", "UIModalTransitionStyle"]
 - !private ["4Test14VC_PostContentC", "UITapGestureRecognizer"]
 - ["4Test14VC_PostContentC", "UITextView"]
+- !private ["4Test14VC_PostContentC", "URL"]
 - !private ["4Test14VC_PostContentC", "VC_selectedimage"]
 - !private ["4Test14VC_PostContentC", "Void"]
 - ["4Test14VC_PostContentC", "btn_chooseCategory"]
@@ -3390,6 +3823,9 @@ depends-member:
 - ["4Test14VC_PostContentC", "imagePickerController"]
 - ["4Test14VC_PostContentC", "imagePickerControllerDidCancel"]
 - ["4Test14VC_PostContentC", "init"]
+- !private ["4Test14VC_PostContentC", "kUTTypeImage"]
+- !private ["4Test14VC_PostContentC", "kUTTypeMovie"]
+- !private ["4Test14VC_PostContentC", "min"]
 - ["4Test14VC_PostContentC", "myPickerController"]
 - ["4Test14VC_PostContentC", "photoLibrary"]
 - !private ["4Test14VC_PostContentC", "present"]
@@ -3418,6 +3854,7 @@ depends-member:
 - ["4Test14VC_PostContentC", "textViewDidEndEditing"]
 - ["4Test14VC_PostContentC", "textViewShouldBeginEditing"]
 - ["4Test14VC_PostContentC", "textViewShouldEndEditing"]
+- !private ["4Test14VC_PostContentC", "thumbnailForVideoAtURL"]
 - ["4Test14VC_PostContentC", "uploadImg"]
 - !private ["4Test14VC_PostContentC", "userObj"]
 - ["4Test14VC_PostContentC", "viewDidLoad"]
@@ -3482,6 +3919,7 @@ depends-member:
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "absoluteString"]
 - !private ["s26_ExpressibleByImageLiteralP", "draw"]
 - !private ["s26_ExpressibleByImageLiteralP", "imageOrientation"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "scale"]
 - !private ["s26_ExpressibleByImageLiteralP", "size"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
@@ -3501,6 +3939,8 @@ depends-member:
 - !private ["s14_IndexableBaseP", "isEmpty"]
 - !private ["s14_IndexableBaseP", "subscript"]
 - !private ["s14_IndexableBaseP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVAsset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVAssetImageGenerator"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "DropDown"]
@@ -3509,6 +3949,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRStorageMetadata"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSUUID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PHAssetChangeRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PHPhotoLibrary"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SVProgressHUD"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
@@ -3520,10 +3962,13 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsBeginImageContextWithOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsEndImageContext"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageJPEGRepresentation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageOrientation"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerControllerMediaURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerControllerOriginalImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerControllerQualityType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerControllerSourceType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIModalPresentationStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIModalTransitionStyle"]
@@ -3544,13 +3989,16 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "childByAutoId"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "copyCGImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "creationRequestForAssetFromVideo"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "downloadURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "draw"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "duration"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fixOrientation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fld_camera"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fld_cameraRoll"]
@@ -3571,12 +4019,18 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isUserInteractionEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "items"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kUTTypeImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kUTTypeMovie"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lightGray"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mediaTypes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "metadata"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "min"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "modalPresentationStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "modalTransitionStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "myPickerController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performChanges"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "photoLibrary"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placeholder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
@@ -3603,6 +4057,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setTitle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupCategories"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showSuccess"]
@@ -3621,11 +4076,14 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "textViewDidEndEditing"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textViewShouldBeginEditing"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textViewShouldEndEditing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "thumbnailForVideoAtURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uploadImg"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uuidString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "videoMaximumDuration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "videoQuality"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
@@ -3645,6 +4103,7 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "value"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s22_RandomAccessIndexableP", "append"]
 - !private ["s22_RandomAccessIndexableP", "count"]
@@ -3661,6 +4120,9 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "isEmpty"]
 depends-nominal:
+- !private "So7AVAssetC"
+- !private "So21AVAssetImageGeneratorC"
+- !private "So29AVAsynchronousKeyValueLoadingP"
 - "8DropDown10AnchorViewP"
 - "Sa"
 - !private "s10ArraySliceV"
@@ -3674,6 +4136,7 @@ depends-nominal:
 - !private "SC7CGPointV"
 - !private "SC6CGRectV"
 - !private "SC6CGSizeV"
+- !private "SC6CMTimeV"
 - "s7CVarArgP"
 - "s10CollectionP"
 - !private "s10ComparableP"
@@ -3721,6 +4184,8 @@ depends-nominal:
 - !private "So6NSUUIDC"
 - !private "s7NumericP"
 - !private "s9OptionSetP"
+- !private "So20PHAssetChangeRequestC"
+- !private "So14PHPhotoLibraryC"
 - "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
@@ -3760,6 +4225,7 @@ depends-nominal:
 - !private "SC18UIImageOrientationO"
 - "So23UIImagePickerControllerC"
 - "So31UIImagePickerControllerDelegateP"
+- !private "SC34UIImagePickerControllerQualityTypeO"
 - !private "SC33UIImagePickerControllerSourceTypeO"
 - !private "So11UIImageViewC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
@@ -3830,125 +4296,132 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/Spring.swiftmodule/arm.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/arm.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/Spring.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Test/Test-Bridging-Header.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "09ae8320a28d189a18fb35391a3719fb"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AssetsLibrary.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Test-Bridging-Header.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+interface-hash: "a4ed08e3ebc93117b23e923067482c8b"

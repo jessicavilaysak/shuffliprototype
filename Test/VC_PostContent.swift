@@ -43,6 +43,10 @@ import FirebaseStorage
 import FirebaseAuth
 import SVProgressHUD
 import DropDown
+import MobileCoreServices
+import AssetsLibrary
+import AVFoundation
+import Photos
 
 class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate {
     
@@ -61,6 +65,8 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     var count = 1
     var ref: FIRDatabaseReference? // create property
     var categoryDataSource = [String]();
+    var capturedVideoURL: URL!;
+    var hasVideo = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -182,9 +188,14 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     
     func camera()
     {
+        let myPickerController = UIImagePickerController();
         myPickerController.sourceType = UIImagePickerControllerSourceType.camera;
-        self.present(myPickerController, animated: true, completion: nil)
-        
+        //myPickerController.sourceType = .Camera
+        myPickerController.mediaTypes = [kUTTypeMovie as String, kUTTypeImage as String]
+        myPickerController.delegate = self
+        myPickerController.videoMaximumDuration = 10.0
+        myPickerController.videoQuality = UIImagePickerControllerQualityType.typeHigh;
+        self.present(myPickerController, animated: true, completion: nil);
     }
     
     func photoLibrary()
@@ -261,82 +272,194 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         {
             category = self.categoryName!;
         }
-        
-        let imgFixed = fixOrientation(img: img);
-        if let imgData = UIImageJPEGRepresentation(imgFixed, 0.2) {
-            let imgUid = NSUUID().uuidString
-       
-            let metadata = FIRStorageMetadata();
+        let imgUid = NSUUID().uuidString;
+        print("imgUID");
+        print(imgUid);
+        let metadata = FIRStorageMetadata();
+        var media = Data();
+        if(!hasVideo)
+        {
             metadata.contentType = "image/jpeg";
-            SVProgressHUD.show(withStatus: "Uploading");
-            FIRStorage.storage().reference().child(userObj.uid).child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
-                if error != nil {
-                    SVProgressHUD.showError(withStatus: "Could not upload!")
-                    SVProgressHUD.dismiss(withDelay: 3)
-                    print("did not upload img")
-                    
-                } else {
-                    
-                    print("uploaded")
-                    SVProgressHUD.showSuccess(withStatus: "Uploaded!")
-                    SVProgressHUD.dismiss(withDelay: 2)
-                    
-                    let downloadURl = metadata?.downloadURL()?.absoluteString;
-                    var URLtoSend = "";
-                    if(!(downloadURl?.isEmpty)!){
-                        URLtoSend = downloadURl!;
+            media = UIImageJPEGRepresentation(img, 0.2)!;
+        }
+        else
+        {
+            metadata.contentType = "mp4";
+            do {
+                media = try NSData(contentsOf: capturedVideoURL, options: NSData.ReadingOptions()) as Data
+                
+            } catch {
+                print(error)
+                print("Cannot convert media to Data");
+                return;
+            }
+        }
+
+        SVProgressHUD.show(withStatus: "Uploading");
+        FIRStorage.storage().reference().child(userObj.uid).child(imgUid).put(media, metadata: metadata) { (metadata, error) in
+            if error != nil {
+                SVProgressHUD.showError(withStatus: "Could not upload!")
+                SVProgressHUD.dismiss(withDelay: 3)
+                print("did not upload img")
+                
+            } else {
+                
+                var thumbnailUID: String!;
+                let downloadURL = metadata?.downloadURL()?.absoluteString ?? "";
+               
+                var values = [String:Any]();
+                values = ["url": downloadURL, "uploadedBy": userObj.uid!, "description": caption, "status": "pending", "creatorID": userObj.creatorID!, "imageUid": imgUid, "category":category ?? ""];
+                
+                if(self.hasVideo)
+                {
+                    let m = FIRStorageMetadata();
+                    m.contentType = "image/jpeg";
+                    thumbnailUID = NSUUID().uuidString; FIRStorage.storage().reference().child(userObj.uid).child(thumbnailUID).put(UIImageJPEGRepresentation(self.fld_chosenImage.image!, 0.2)!, metadata: m){ (metadata, error) in
+                        if(error == nil)
+                        {
+                            values["thumbnailURL"] = metadata?.downloadURL()?.absoluteString ?? "";
+                            values["thumbnailUID"] = thumbnailUID;
+                            self.makePost(values: values){ success in
+                                if success{
+                                    SVProgressHUD.dismiss();
+                                    print("Uploaded video successfully!");
+                                    self.finalisePostContent();
+                                }
+                                else
+                                {
+                                    print("Error uploading video.");
+                                }
+                            }
+                        }
                     }
-                    print("downloadURL" + downloadURl!)
-                    let accountID = userObj.accountID;
-                    let creatorID = userObj.creatorID;
-                    let uid = userObj.uid;
-                    var path = "";
-                    if(userObj.isAdmin)
-                    {
-                        path = "creatorPosts/"+accountID!+"/"+creatorID!;
-                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "imageUid": imgUid, "category":category])
+                }
+                
+                self.makePost(values: values){ success in
+                    if success{
+                        SVProgressHUD.dismiss();
+                        print("Uploaded image successfully!");
+                        self.finalisePostContent();
                     }
                     else
                     {
-                        path = "userPosts/"+accountID!+"/"+creatorID!+"/"+uid!;
-                        self.ref?.child(path).childByAutoId().setValue(["url": URLtoSend, "uploadedBy": uid!, "description": caption, "status": "pending", "creatorID": creatorID!, "review": true, "imageUid": imgUid, "category":category])
-                    }
-                    self.hideCorrespondingElements(type: "1");
-                    self.fld_caption.text = ""
-                    let tabItems = self.tabBarController?.tabBar.items;
-                    
-                    for i in 0...((tabItems?.count)!-1) {
-                        let controllerTitle = (self.tabBarController?.viewControllers?[i].title!)!;
-                        
-                        if(controllerTitle == "VC_viewposts"){
-                            print(": "+controllerTitle);
-                            let tabItem = tabItems?[i];
-                            var badgeValue = tabItem?.badgeValue;
-                            if((badgeValue) != nil)
-                            {
-                                badgeValue = String(Int(badgeValue!)! + 1);
-                            }
-                            else
-                            {
-                                badgeValue = "1";
-                            }
-                            tabItem?.badgeValue = badgeValue;
-                        }
+                        print("Error uploading image.");
                     }
                 }
             }
         }
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage;
-        fld_chosenImage.image = selectedImage;
-        hideCorrespondingElements(type: "2");
-        // Dismiss the picker.
-        dismiss(animated: true, completion: nil)
+    func makePost(values: [String:Any], completion: @escaping (Bool) -> ())
+    {
+        var path: String!;
+        if(userObj.isAdmin)
+        {
+            path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!;
+            let autoUID = ref?.childByAutoId().key;
+            ref?.child(path+"/"+autoUID!).setValue(values) { (error, ref) in
+                if(error == nil)
+                {
+                    FIRDatabase.database().reference().child("creatorCommands/"+userObj.accountID!+"/"+userObj.creatorID!+"/approvePost").childByAutoId().setValue(["postID": autoUID, "uid": userObj.uid!]);
+                    completion(true);
+                }
+                else
+                {
+                    print(error);
+                    completion(false);
+                }
+            }
+        }
+        else
+        {
+            var lValues = values;
+            lValues["review"] = true;
+            path = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!;
+            ref?.child(path).childByAutoId().setValue(lValues);
+            completion(true);
+        }
     }
     
+    func finalisePostContent()
+    {
+        hideCorrespondingElements(type: "1");
+        fld_caption.text = ""
+        let tabItems = tabBarController?.tabBar.items;
+        
+        for i in 0...((tabItems?.count)!-1) {
+            let controllerTitle = (tabBarController?.viewControllers?[i].title!)!;
+            
+            if(controllerTitle == "VC_viewposts"){
+                print(": "+controllerTitle);
+                let tabItem = tabItems?[i];
+                var badgeValue = tabItem?.badgeValue;
+                if((badgeValue) != nil)
+                {
+                    badgeValue = String(Int(badgeValue!)! + 1);
+                }
+                else
+                {
+                    badgeValue = "1";
+                }
+                tabItem?.badgeValue = badgeValue;
+            }
+        }
+        SVProgressHUD.showSuccess(withStatus: "Uploaded!")
+        SVProgressHUD.dismiss(withDelay: 2)
+    }
+    
+    private func thumbnailForVideoAtURL(url: NSURL) -> UIImage? {
+        print("ENTER.");
+        
+        let asset = AVAsset(url: url as URL)
+        hasVideo = true;
+        
+        let assetImageGenerator = AVAssetImageGenerator(asset: asset)
+        assetImageGenerator.appliesPreferredTrackTransform = true;
+        var time = asset.duration
+        time.value = min(time.value, 2)
+        do {
+            let imageRef = try assetImageGenerator.copyCGImage(at: time, actualTime: nil);
+            print("got imageRef");
+            return fixOrientation(img: UIImage(cgImage: imageRef));
+        } catch {
+            print("error")
+            return nil
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        hasVideo = false;
+        
+        if(info[UIImagePickerControllerOriginalImage] != nil)
+        {
+            let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage;
+            fld_chosenImage.image = fixOrientation(img: selectedImage);
+        }
+        else
+        {
+            //let pickedVideo:NSURL = (info[UIImagePickerControllerMediaURL] as? NSURL);
+            let videoURL = info[UIImagePickerControllerMediaURL] as? NSURL
+            capturedVideoURL = videoURL! as URL;
+         
+            PHPhotoLibrary.shared().performChanges({
+                PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: videoURL! as URL)
+            }) { saved, error in
+                if saved {
+                    
+                    let alertController = UIAlertController(title: "Your video was successfully saved", message: nil, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+            //UISaveVideoAtPathToSavedPhotosAlbum(pathString!, self, nil, nil);
+            fld_chosenImage.image = thumbnailForVideoAtURL(url: videoURL!);
+        }
+        
+        hideCorrespondingElements(type: "2")
+        
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func buttonSelectImage(_ sender: Any) {
         

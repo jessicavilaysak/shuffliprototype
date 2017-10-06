@@ -20,7 +20,9 @@ struct imageDataModel{
     let uploadedBy: String!
     let approvedBy: String!
     let imgId: String!
-    
+    var userPostID : String!
+    var thumbnailURL: String!;
+    var thumbnailUID: String!;
     
     init() {
         self.key = nil
@@ -32,6 +34,9 @@ struct imageDataModel{
         self.uploadedBy = nil;
         self.approvedBy = nil;
         self.imgId = nil;
+        self.userPostID = nil;
+        self.thumbnailURL = nil;
+        self.thumbnailUID = nil;
     }
     
     init(snapshot: FIRDataSnapshot){
@@ -40,7 +45,7 @@ struct imageDataModel{
         
         
         let snapshotValue = snapshot.value as? NSDictionary
-        print(snapshotValue!);
+        //print(snapshotValue!);
         if let imageURL = snapshotValue?["url"] as? String{
             url = imageURL
         }else{
@@ -82,6 +87,21 @@ struct imageDataModel{
             imgId = lImgId;
         }else{
             imgId = "";
+        }
+        if let lUserPostID = snapshotValue?["userPostID"] as? String{
+            userPostID = lUserPostID;
+        }else{
+            userPostID = "";
+        }
+        if let lThumbnailUID = snapshotValue?["thumbnailUID"] as? String{
+            thumbnailUID = lThumbnailUID;
+        }else{
+            thumbnailUID = "";
+        }
+        if let lThumbnailURL = snapshotValue?["thumbnailURL"] as? String{
+            thumbnailURL = lThumbnailURL;
+        }else{
+            thumbnailURL = "";
         }
     }
     

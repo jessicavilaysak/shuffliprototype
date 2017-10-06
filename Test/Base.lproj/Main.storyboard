@@ -66,6 +66,13 @@
                                                     <rect key="frame" x="8" y="8" width="359" height="285"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play_button" translatesAutoresizingMaskIntoConstraints="NO" id="HFl-Fw-L4A">
+                                                    <rect key="frame" x="137" y="101" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="OEs-94-fMV"/>
+                                                        <constraint firstAttribute="width" constant="100" id="iZ3-vN-fEt"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbO-pk-Jgc">
                                                     <rect key="frame" x="8" y="235" width="359" height="61"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IqX-3I-Xd7">
@@ -104,7 +111,9 @@
                                                 <constraint firstAttribute="bottom" secondItem="u2E-gu-5NB" secondAttribute="bottom" constant="8" id="5u0-Nh-yGH"/>
                                                 <constraint firstItem="Kn0-Wz-sdm" firstAttribute="top" secondItem="Oud-zm-RWE" secondAttribute="top" constant="8" id="6qw-0i-m7V"/>
                                                 <constraint firstItem="u2E-gu-5NB" firstAttribute="leading" secondItem="Oud-zm-RWE" secondAttribute="leading" constant="8" id="78c-cK-lHN"/>
+                                                <constraint firstItem="HFl-Fw-L4A" firstAttribute="centerY" secondItem="Oud-zm-RWE" secondAttribute="centerY" id="8mb-wG-dWi"/>
                                                 <constraint firstAttribute="trailing" secondItem="u2E-gu-5NB" secondAttribute="trailing" constant="8" id="Dj6-1B-JbX"/>
+                                                <constraint firstItem="HFl-Fw-L4A" firstAttribute="centerX" secondItem="Oud-zm-RWE" secondAttribute="centerX" id="GaV-SW-wIE"/>
                                                 <constraint firstAttribute="trailing" secondItem="Kn0-Wz-sdm" secondAttribute="trailing" constant="8" id="Ir1-k2-JBG"/>
                                                 <constraint firstItem="hbO-pk-Jgc" firstAttribute="centerX" secondItem="Oud-zm-RWE" secondAttribute="centerX" id="RJa-Yf-5nu"/>
                                                 <constraint firstItem="npB-xb-Hwj" firstAttribute="top" secondItem="Oud-zm-RWE" secondAttribute="top" id="VHr-aH-U7L"/>
@@ -123,6 +132,7 @@
                                             <outlet property="cardviewBg" destination="u2E-gu-5NB" id="dR1-zW-FmY"/>
                                             <outlet property="imageCaption" destination="MPb-ij-vYS" id="A2s-aE-7Os"/>
                                             <outlet property="photo" destination="Kn0-Wz-sdm" id="XgS-n9-5YN"/>
+                                            <outlet property="playButton" destination="HFl-Fw-L4A" id="mdF-3i-YeQ"/>
                                             <outlet property="vfView" destination="IqX-3I-Xd7" id="tIP-Rj-wKe"/>
                                             <outlet property="visualEffect" destination="hbO-pk-Jgc" id="EUp-gq-geR"/>
                                         </connections>
@@ -1218,6 +1228,13 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play_button" translatesAutoresizingMaskIntoConstraints="NO" id="h6L-Cs-Ycb">
+                                <rect key="frame" x="137" y="221" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="f49-86-GQ0"/>
+                                    <constraint firstAttribute="width" constant="100" id="lOZ-Ir-gNc"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8B-wW-dZb">
                                 <rect key="frame" x="137.5" y="632" width="100" height="30"/>
                                 <constraints>
@@ -1274,8 +1291,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="YI0-ax-igH" secondAttribute="trailing" constant="5" id="89o-mz-Ew6"/>
                             <constraint firstItem="glW-lU-1pl" firstAttribute="top" secondItem="nIA-Ma-KjY" secondAttribute="bottom" constant="5" id="G1C-JW-yez"/>
                             <constraint firstItem="YI0-ax-igH" firstAttribute="top" secondItem="E2c-hE-WHc" secondAttribute="bottom" constant="5" id="JSO-bn-ALC"/>
+                            <constraint firstItem="h6L-Cs-Ycb" firstAttribute="centerX" secondItem="E2c-hE-WHc" secondAttribute="centerX" id="LXT-Ac-hW1"/>
                             <constraint firstItem="glW-lU-1pl" firstAttribute="top" secondItem="f8B-wW-dZb" secondAttribute="bottom" constant="5" id="ZDB-Lo-zoX"/>
                             <constraint firstAttribute="trailing" secondItem="nIA-Ma-KjY" secondAttribute="trailing" constant="80" id="cPa-lG-WaS"/>
+                            <constraint firstItem="h6L-Cs-Ycb" firstAttribute="centerY" secondItem="E2c-hE-WHc" secondAttribute="centerY" id="ciZ-ag-waK"/>
                             <constraint firstItem="f8B-wW-dZb" firstAttribute="centerX" secondItem="rSv-gd-uER" secondAttribute="centerX" id="eso-4x-m9g"/>
                             <constraint firstItem="E2c-hE-WHc" firstAttribute="leading" secondItem="rSv-gd-uER" secondAttribute="leading" id="g8g-5g-w3j"/>
                             <constraint firstItem="E2c-hE-WHc" firstAttribute="top" secondItem="x8f-RG-sK7" secondAttribute="bottom" id="hPI-3d-yX9"/>
@@ -1292,6 +1311,7 @@
                         <outlet property="btn_delete_lvl3" destination="f8B-wW-dZb" id="tk8-M0-mds"/>
                         <outlet property="image" destination="E2c-hE-WHc" id="QGr-Va-Awo"/>
                         <outlet property="imgCaption" destination="YI0-ax-igH" id="noT-fc-UaS"/>
+                        <outlet property="img_playbutton" destination="h6L-Cs-Ycb" id="Yqu-ee-jRI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FBK-YI-wIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1541,6 +1561,7 @@
         <image name="cancel1600" width="1600" height="1600"/>
         <image name="levels" width="128" height="128"/>
         <image name="logo" width="90" height="122"/>
+        <image name="play_button" width="142" height="142"/>
         <image name="profile" width="36" height="29"/>
         <image name="profile_grey" width="36" height="29"/>
         <image name="reload" width="128" height="128"/>

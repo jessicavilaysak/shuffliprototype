@@ -10,6 +10,7 @@ import UIKit
 
 class CustomCellCreator: UITableViewCell {
     
+    @IBOutlet weak var playButton: UIImageView!
     
     @IBOutlet var photo: UIImageView!
     

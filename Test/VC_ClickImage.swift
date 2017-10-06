@@ -11,9 +11,12 @@ import SDWebImage
 import FirebaseDatabase
 import SVProgressHUD
 import FirebaseStorage
+import AVFoundation
+import AVKit
 
 class VC_ClickImage: UIViewController {
     
+    @IBOutlet weak var img_playbutton: UIImageView!
     @IBOutlet weak var btn_delete_lvl3: UIButton!
     @IBOutlet weak var btn_approve_lvl2: UIButton!
     @IBOutlet weak var btn_delete_lvl2: UIButton!
@@ -22,6 +25,8 @@ class VC_ClickImage: UIViewController {
     @IBOutlet weak var image: UIImageView!
     
     var imgIndex : Int!
+    var avPlayerViewController = AVPlayerViewController();
+    var avPlayer : AVPlayer?;
     
     override func viewWillAppear(_ animated: Bool) {
         imgCaption.text = images[self.imgIndex].caption!;
@@ -32,11 +37,30 @@ class VC_ClickImage: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround();
         
+        
         SVProgressHUD.setDefaultStyle(.dark)
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageSelected(tapGestureRecognizer:)))
         image.addGestureRecognizer(tapGestureRecognizer)
-        image.sd_setImage(with: URL(string:images[self.imgIndex].url!))
+        var lUrl = images[self.imgIndex].url;
+        img_playbutton.isHidden = true;
+        if(images[self.imgIndex].thumbnailURL != "")
+        {
+            lUrl = images[self.imgIndex].thumbnailURL;
+            img_playbutton.isHidden = false;
+            //-------------code for loading vid------------------
+            print("URL");
+            print(images[self.imgIndex].url);
+            
+            let asset = AVAsset(url: URL(string: images[self.imgIndex].url)!);
+            let playerItem = AVPlayerItem(asset: asset);
+           
+            self.avPlayer = AVPlayer(playerItem: playerItem);
+            
+            self.avPlayerViewController.player = self.avPlayer;
+            //-------up til here-----------
+        }
+        image.sd_setImage(with: URL(string:lUrl!))
         imgCaption.text = images[self.imgIndex].caption!;
         imgCaption.layer.cornerRadius = 4
         
@@ -60,11 +84,20 @@ class VC_ClickImage: UIViewController {
     
     func imageSelected(tapGestureRecognizer: UITapGestureRecognizer)
     {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_viewselectedimg") as! VC_selectedimage;
-        vc.imgUrl = images[self.imgIndex].url;
-        vc.modalPresentationStyle = UIModalPresentationStyle.overFullScreen;
-        vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical;
-        self.present(vc, animated: true, completion: nil);
+        if(images[self.imgIndex].thumbnailURL == "")
+        {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_viewselectedimg") as! VC_selectedimage;
+            vc.imgUrl = images[self.imgIndex].url;
+            vc.modalPresentationStyle = UIModalPresentationStyle.overFullScreen;
+            vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical;
+            self.present(vc, animated: true, completion: nil);
+        }
+        else
+        {
+            self.present(self.avPlayerViewController, animated: true) { () -> Void in
+                self.avPlayerViewController.player?.play();
+            }
+        }
     }
     
     func performInitialisation() {
@@ -122,22 +155,20 @@ class VC_ClickImage: UIViewController {
         refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
             SVProgressHUD.show(withStatus: "Deleting Post")
             FIRDatabase.database().reference().child(path).removeValue()
-            if(!images[self.imgIndex].dashboardApproved)
+            if(userObj.isAdmin)
             {
-                let imgToDel = storage.child(images[self.imgIndex].uploadedBy).child(images[self.imgIndex].imgId);
-                imgToDel.delete(completion: { (Error) in
-                    SVProgressHUD.dismiss()
-                    if let error = Error{
-                        print(error)
-                    }
-                    self.navigationController?.popViewController(animated: true)
-                    
-                })
+                if(images[self.imgIndex].userPostID != nil)
+                {
+                    FIRDatabase.database().reference().child("userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[self.imgIndex].uploadedBy+"/"+images[self.imgIndex].userPostID).removeValue();
+                }
+                if(!images[self.imgIndex].dashboardApproved)
+                {
+                    storage.child(images[self.imgIndex].uploadedBy).child(images[self.imgIndex].imgId).delete();
+                    storage.child(images[self.imgIndex].uploadedBy).child("thumb_"+images[self.imgIndex].imgId).delete();
+                }
             }
-            else
-            {
-                SVProgressHUD.dismiss()
-            }
+            SVProgressHUD.dismiss()
+            self.navigationController?.popViewController(animated: true)
         }))
         
         refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
@@ -147,18 +178,13 @@ class VC_ClickImage: UIViewController {
         
     }
     @IBAction func approvePost(_ sender: Any) {
-        
-        let path = "dashboardPosts/"+userObj.accountID!+"/pending";
+      
         let refreshAlert = UIAlertController(title: "APPROVE", message: "Do you wish to approve this post?\nNOTE: This cannot be undone.", preferredStyle: UIAlertControllerStyle.actionSheet)
         
         refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
             
-            FIRDatabase.database().reference().child(path).childByAutoId().setValue([
-                "creatorID": images[self.imgIndex].creatorID!, "description": self.imgCaption.text!, "uploadedBy": images[self.imgIndex].uploadedBy!, "url": images[self.imgIndex].url, "approvedBy": userObj.uid!
-                ]);
-            let updatePath = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[self.imgIndex].key!;
-            FIRDatabase.database().reference().child(updatePath).updateChildValues(["status": "approved"]);
-            images[self.imgIndex].dashboardApproved = true;
+            FIRDatabase.database().reference().child("creatorCommands/"+userObj.accountID!+"/"+userObj.creatorID!+"/approvePost").childByAutoId().setValue(["postID": images[self.imgIndex].key, "uid": userObj.uid!]);
+            //images[self.imgIndex].dashboardApproved = true;
             SVProgressHUD.showSuccess(withStatus: "Approved!")
             SVProgressHUD.dismiss(withDelay: 2)
             self.performInitialisation();

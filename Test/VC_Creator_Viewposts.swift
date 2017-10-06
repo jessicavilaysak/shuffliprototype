@@ -116,7 +116,14 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             }
             cell.photo.sd_setShowActivityIndicatorView(true)
             cell.photo.sd_setIndicatorStyle(.gray)
-            cell.photo.sd_setImage(with: URL(string: image.url),placeholderImage: UIImage(named: "placeholder"))
+            var lUrl = image.url;
+            cell.playButton.isHidden = true;
+            if(image.thumbnailURL != "")
+            {
+                lUrl = image.thumbnailURL;
+                cell.playButton.isHidden = false;
+            }
+            cell.photo.sd_setImage(with: URL(string: lUrl!),placeholderImage: UIImage(named: "placeholder"))
             cell.imageCaption.text = image.caption;
             cell.imageCaption.textColor = UIColor.white
         }
