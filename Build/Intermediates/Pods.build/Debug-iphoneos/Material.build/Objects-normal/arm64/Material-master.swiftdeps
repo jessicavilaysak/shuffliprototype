@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
 options: "d44cccb171fb001191fe783ef0b17001"
-build_time: [1507168147, 905514000]
+build_time: [1507433428, 238151000]
 inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Material/Sources/iOS/Application.swift": [1506590706, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Material/Sources/iOS/Bar.swift": [1506590706, 0]

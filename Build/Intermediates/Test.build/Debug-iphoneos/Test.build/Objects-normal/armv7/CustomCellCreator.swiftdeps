@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 - "cardviewBg"
 - "imageCaption"
 - "photo"
+- "playButton"
 - "setSelected"
 - "updateUi"
 - "vfView"
@@ -109,6 +110,7 @@ depends-member:
 - ["4Test17CustomCellCreatorC", "imageCaption"]
 - ["4Test17CustomCellCreatorC", "init"]
 - ["4Test17CustomCellCreatorC", "photo"]
+- ["4Test17CustomCellCreatorC", "playButton"]
 - ["4Test17CustomCellCreatorC", "setSelected"]
 - ["4Test17CustomCellCreatorC", "updateUi"]
 - ["4Test17CustomCellCreatorC", "vfView"]
@@ -251,6 +253,7 @@ depends-member:
 - !private ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "masksToBounds"]
 - ["So8NSObjectC", "photo"]
+- ["So8NSObjectC", "playButton"]
 - ["So8NSObjectC", "setSelected"]
 - !private ["So8NSObjectC", "shadowColor"]
 - !private ["So8NSObjectC", "shadowOffset"]
@@ -433,6 +436,7 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "photo"]
+- ["So11UIResponderC", "playButton"]
 - ["So11UIResponderC", "setSelected"]
 - ["So11UIResponderC", "updateUi"]
 - ["So11UIResponderC", "vfView"]
@@ -465,6 +469,7 @@ depends-member:
 - ["So15UITableViewCellC", "imageCaption"]
 - ["So15UITableViewCellC", "init"]
 - ["So15UITableViewCellC", "photo"]
+- ["So15UITableViewCellC", "playButton"]
 - ["So15UITableViewCellC", "setSelected"]
 - ["So15UITableViewCellC", "updateUi"]
 - ["So15UITableViewCellC", "vfView"]
@@ -500,6 +505,7 @@ depends-member:
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "layer"]
 - ["So6UIViewC", "photo"]
+- ["So6UIViewC", "playButton"]
 - ["So6UIViewC", "setSelected"]
 - ["So6UIViewC", "updateUi"]
 - ["So6UIViewC", "vfView"]
@@ -723,4 +729,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "c3f6e6463fe917a9e2ba38c27d71b8fb"
+interface-hash: "f2b58dd1d7f0157bebd34fa35978226d"

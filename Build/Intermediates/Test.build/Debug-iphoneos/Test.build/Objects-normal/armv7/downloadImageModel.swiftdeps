@@ -20,7 +20,6 @@ depends-top-level:
 - !private "StringLiteralType"
 - "imageDataModel"
 - "images"
-- !private "print"
 depends-member:
 - ["Sa", "init"]
 - ["s23BidirectionalCollectionP", "init"]
@@ -142,8 +141,9 @@ depends-member:
 - ["4Test14imageDataModelV", "imgId"]
 - ["4Test14imageDataModelV", "init"]
 - ["4Test14imageDataModelV", "key"]
-- !private ["4Test14imageDataModelV", "print"]
 - ["4Test14imageDataModelV", "ref"]
+- ["4Test14imageDataModelV", "thumbnailUID"]
+- ["4Test14imageDataModelV", "thumbnailURL"]
 - ["4Test14imageDataModelV", "uploadedBy"]
 - ["4Test14imageDataModelV", "url"]
 - ["4Test14imageDataModelV", "userPostID"]
@@ -342,4 +342,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "ff560172aa2929b22acc398b01b7dbfb"
+interface-hash: "002243e6c36de73e33de09ddd0351acc"

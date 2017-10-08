@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
 options: "fe8af846c191372747d4d3851ce5e8e5"
-build_time: [1507028195, 119739000]
+build_time: [1507432821, 487151000]
 inputs:
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/Application.swift": [1506590706, 0]
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/Bar.swift": [1506590706, 0]
@@ -63,7 +63,7 @@ inputs:
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/RobotoFont.swift": [1506590706, 0]
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/RootController.swift": [1506590706, 0]
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/Screen.swift": [1506590706, 0]
-  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/SearchBar.swift": !dirty [1506590706, 0]
+  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/SearchBar.swift": [1506590706, 0]
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/SearchBarController.swift": [1506590706, 0]
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/Shape.swift": [1506590706, 0]
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Material/Sources/iOS/Snackbar.swift": [1506590706, 0]

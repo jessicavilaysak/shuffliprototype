@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
-options: "95d5730dd0f63baca02b1cf43a9b5285"
-build_time: [1507096691, 219322000]
+options: "726d16ef54aff1b52bb6a8b2288be0df"
+build_time: [1507432867, 107203000]
 inputs:
-  "/Users/jessicavilaysak/Desktop/Shuffli/Pods/SwiftMessageBar/SwiftMessageBar/Message.swift": [1506590706, 0]
-  "/Users/jessicavilaysak/Desktop/Shuffli/Pods/SwiftMessageBar/SwiftMessageBar/SwiftMessageBar.swift": [1506590706, 0]
+  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/SwiftMessageBar/SwiftMessageBar/Message.swift": [1506590706, 0]
+  "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/SwiftMessageBar/SwiftMessageBar/SwiftMessageBar.swift": [1506590706, 0]

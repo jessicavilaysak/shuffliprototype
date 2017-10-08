@@ -78,7 +78,6 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         
         self.hideKeyboardWhenTappedAround()
         self.fld_caption.delegate = self;
-        // Do any additional setup after loading the view.
         
         let singletap = UITapGestureRecognizer(target: self, action: #selector(camera))
         fld_camera.isUserInteractionEnabled = true
@@ -92,12 +91,12 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         fld_chosenImage.isUserInteractionEnabled = true
         fld_chosenImage.addGestureRecognizer(tapImage)
         
+        //enables the images that allow the user to choose their content.
         hideCorrespondingElements(type: "1");
         
         myPickerController.delegate = self;
         
         ref = FIRDatabase.database().reference() // get reference to actual db
-        //postBtn.layer.cornerRadius = 4
         btn_chooseCategory.layer.cornerRadius = 4
         if(categoryName != nil)
         {
@@ -162,6 +161,9 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         }
     }
     
+    /*
+     * When the view appears again
+     */
     override func viewWillAppear(_ animated: Bool) {
         if(categoryName != nil)
         {
@@ -200,6 +202,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     
     func photoLibrary()
     {
+        let myPickerController = UIImagePickerController();
         myPickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary;
         self.present(myPickerController, animated: true, completion: nil)
     }
@@ -264,6 +267,10 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         let img = fld_chosenImage.image!;
         let caption = fld_caption.text!;
         var category = self.categoryName;
+        /*
+         * When category is nil or none, sets it to empty string.
+         * --This is to ensure no errors occur when sending nil/invalid category.
+         */
         if (category == nil) || (category == "None")
         {
             category = "";
@@ -277,12 +284,13 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         print(imgUid);
         let metadata = FIRStorageMetadata();
         var media = Data();
-       // var dataUrl : URL!
+        /*
+         * Setting media as the content with the right 'contentType'.
+         */
         if(!hasVideo)
         {
             metadata.contentType = "image/jpeg";
             media = UIImageJPEGRepresentation(img, 0.2)!
-            
         }
         else
         {
@@ -297,7 +305,11 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             }
         }
 
+        //**BEGINS UPLOAD PROCESS**//
         SVProgressHUD.show(withStatus: "Uploading");
+        /*
+         * Will store the content in firebase and if it's successful will continue, otherwise stops there.
+         */
         FIRStorage.storage().reference().child(userObj.uid).child(imgUid).put(media, metadata: metadata) { (metadata, error) in
             if error != nil {
                 SVProgressHUD.showError(withStatus: "Could not upload!")
@@ -305,21 +317,38 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                 print("did not upload img")
                 
             } else {
-                
+
                 var thumbnailUID: String!;
-                let downloadURL = metadata?.downloadURL()?.absoluteString ?? "";
-                print(downloadURL)
+                //if there is no downloadURL() then it puts empty string.
+                let contentDownloadURL = metadata?.downloadURL()?.absoluteString ?? "";
+                print(contentDownloadURL)
                
+                /*
+                 * - Here, a dictionary of values is created for the post.
+                 * - This contains the following info: url of content (url), the current user uid (uploadedBy), caption (description), status which is always uploaded as 'pending' (status), the creatorID of the user (creatorID), category (category)
+                 */
                 var values = [String:Any]();
-                values = ["url": downloadURL, "uploadedBy": userObj.uid!, "description": caption, "status": "pending", "creatorID": userObj.creatorID!, "imageUid": imgUid, "category":category ?? ""];
+                values = ["url": contentDownloadURL, "uploadedBy": userObj.uid!, "description": caption, "status": "pending", "creatorID": userObj.creatorID!, "imageUid": imgUid, "category":category ?? ""];
                 
                 if(self.hasVideo)
                 {
+                    values["type"] = "video";
+                    /*
+                     * When the type of content is a video, we have to store the thumbnail before posting the post.
+                     * - To do this we create another metadata object, set the contentType to image/jpeg and create a new uid.
+                     */
                     let m = FIRStorageMetadata();
                     m.contentType = "image/jpeg";
-                    thumbnailUID = NSUUID().uuidString; FIRStorage.storage().reference().child(userObj.uid).child(thumbnailUID).put(UIImageJPEGRepresentation(self.fld_chosenImage.image!, 0.2)!, metadata: m){ (metadata, error) in
+                    thumbnailUID = NSUUID().uuidString;
+                    /*
+                     * Since this content is a video we need to store the corresponding thumbnail we've created.
+                     */
+                    FIRStorage.storage().reference().child(userObj.uid).child(thumbnailUID).put(UIImageJPEGRepresentation(self.fld_chosenImage.image!, 0.2)!, metadata: m){ (metadata, error) in
                         if(error == nil)
                         {
+                            /*
+                             * After successfully storing the thumbnail, we include two fields in the value dictionary for the thumbnail - thumbnailURL and thumbnailUID
+                             */
                             values["thumbnailURL"] = metadata?.downloadURL()?.absoluteString ?? "";
                             values["thumbnailUID"] = thumbnailUID;
                             self.makePost(values: values){ success in
@@ -331,21 +360,26 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                                 else
                                 {
                                     print("Error uploading video.");
+                                    
                                 }
+                                return;
                             }
                         }
                     }
                 }
-                
-                self.makePost(values: values){ success in
-                    if success{
-                        SVProgressHUD.dismiss();
-                        print("Uploaded image successfully!");
-                        self.finalisePostContent();
-                    }
-                    else
-                    {
-                        print("Error uploading image.");
+                else
+                {
+                    values["type"] = "image";
+                    self.makePost(values: values){ success in
+                        if success{
+                            SVProgressHUD.dismiss();
+                            print("Uploaded image successfully!");
+                            self.finalisePostContent();
+                        }
+                        else
+                        {
+                            print("Error uploading image.");
+                        }
                     }
                 }
             }
@@ -354,11 +388,21 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     
     func makePost(values: [String:Any], completion: @escaping (Bool) -> ())
     {
+        /*
+         * According to whether the user's an admin or not, the path will be different.
+         */
+        
         var path: String!;
         if(userObj.isAdmin)
         {
             path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!;
-            let autoUID = ref?.childByAutoId().key;
+            let autoUID = ref?.child(path).childByAutoId().key;
+            print("autoUID");
+            print(autoUID);
+            /*
+             * Since the user is a manager we need to make the post and then send that postID to a creatorCommand to automatically send the post to the dashboard.
+             * We store the postID by creating the variable autoUID
+             */
             ref?.child(path+"/"+autoUID!).setValue(values) { (error, ref) in
                 if(error == nil)
                 {
@@ -382,6 +426,12 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         }
     }
     
+    /*
+     * Performs these things after a post gets uploaded:
+     * - sets up for a new post to be made.
+     * - sets category blank.
+     * - sets caption blank.
+     */
     func finalisePostContent()
     {
         hideCorrespondingElements(type: "1");
@@ -406,6 +456,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                 tabItem?.badgeValue = badgeValue;
             }
         }
+        btn_chooseCategory.setTitle(categoryName + " ▾", for: UIControlState.normal);
         SVProgressHUD.showSuccess(withStatus: "Uploaded!")
         SVProgressHUD.dismiss(withDelay: 2)
     }
@@ -443,8 +494,11 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             //let pickedVideo:NSURL = (info[UIImagePickerControllerMediaURL] as? NSURL);
             let videoURL = info[UIImagePickerControllerMediaURL] as? NSURL
             capturedVideoURL = videoURL! as URL;
-         
-            PHPhotoLibrary.shared().performChanges({
+            /*
+             * Commented out code to save video to user's phone.
+             */
+            
+            /*PHPhotoLibrary.shared().performChanges({
                 PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: videoURL! as URL)
             }) { saved, error in
                 if saved {
@@ -454,7 +508,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                     alertController.addAction(defaultAction)
                     self.present(alertController, animated: true, completion: nil)
                 }
-            }
+            }*/
             //UISaveVideoAtPathToSavedPhotosAlbum(pathString!, self, nil, nil);
             fld_chosenImage.image = thumbnailForVideoAtURL(url: videoURL!);
         }

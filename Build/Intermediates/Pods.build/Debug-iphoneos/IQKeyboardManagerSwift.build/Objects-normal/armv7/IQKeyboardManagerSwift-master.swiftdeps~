@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
 options: "537eb9e83821b36c849f492a0839d8e8"
-build_time: [1507028160, 770043000]
+build_time: [1507432790, 669031000]
 inputs:
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift": [1506590705, 0]
   "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardManager.swift": [1506590705, 0]

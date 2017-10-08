@@ -7,6 +7,8 @@ provides-member:
 - ["4Test13VC_ClickImageC", ""]
 provides-dynamic-lookup:
 - "approvePost"
+- "avPlayer"
+- "avPlayerViewController"
 - "btn_approve_lvl2"
 - "btn_delete_lvl2"
 - "btn_delete_lvl3"
@@ -14,13 +16,19 @@ provides-dynamic-lookup:
 - "image"
 - "imageSelected"
 - "imgCaption"
+- "img_playbutton"
 - "myTargetFunction"
 - "performInitialisation"
 - "viewDidLoad"
 - "viewWillAppear"
 - "viewWillLayoutSubviews"
 depends-top-level:
+- !private "!"
+- !private "!="
 - !private "+"
+- !private "=="
+- "AVPlayer"
+- "AVPlayerViewController"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
@@ -32,6 +40,7 @@ depends-top-level:
 - !private "NSMakeRange"
 - !private "NSMutableAttributedString"
 - !private "NSStrikethroughStyleAttributeName"
+- !private "NSURL"
 - !private "SVProgressHUD"
 - !private "StringLiteralType"
 - !private "UIAlertAction"
@@ -50,10 +59,15 @@ depends-top-level:
 - "VC_ClickImage"
 - !private "VC_EditCaption"
 - !private "VC_selectedimage"
+- !private "Void"
 - !private "images"
 - !private "print"
 - !private "userObj"
 depends-member:
+- !private ["So8AVPlayerC", "init"]
+- !private ["So8AVPlayerC", "play"]
+- ["So22AVPlayerViewControllerC", "init"]
+- !private ["So22AVPlayerViewControllerC", "player"]
 - !private ["8DropDown10AnchorViewP", "addGestureRecognizer"]
 - !private ["8DropDown10AnchorViewP", "attributedText"]
 - !private ["8DropDown10AnchorViewP", "dismiss"]
@@ -70,21 +84,23 @@ depends-member:
 - !private ["8DropDown10AnchorViewP", "titleLabel"]
 - !private ["Sa", "subscript"]
 - !private ["s10ArraySliceV", "caption"]
-- !private ["s10ArraySliceV", "creatorID"]
 - !private ["s10ArraySliceV", "dashboardApproved"]
 - !private ["s10ArraySliceV", "imgId"]
 - !private ["s10ArraySliceV", "key"]
+- !private ["s10ArraySliceV", "thumbnailURL"]
 - !private ["s10ArraySliceV", "uploadedBy"]
 - !private ["s10ArraySliceV", "url"]
+- !private ["s10ArraySliceV", "userPostID"]
 - !private ["s23BidirectionalCollectionP", "caption"]
-- !private ["s23BidirectionalCollectionP", "creatorID"]
 - !private ["s23BidirectionalCollectionP", "dashboardApproved"]
 - !private ["s23BidirectionalCollectionP", "imgId"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "key"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s23BidirectionalCollectionP", "thumbnailURL"]
 - !private ["s23BidirectionalCollectionP", "uploadedBy"]
 - !private ["s23BidirectionalCollectionP", "url"]
+- !private ["s23BidirectionalCollectionP", "userPostID"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So19CAAnimationDelegateP", "cornerRadius"]
 - !private ["So7CALayerC", "cornerRadius"]
@@ -103,11 +119,14 @@ depends-member:
 - !private ["So15CALayerDelegateP", "textColor"]
 - !private ["So15CALayerDelegateP", "titleLabel"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
+- !private ["s7CVarArgP", "AVPlayer"]
+- ["s7CVarArgP", "AVPlayerViewController"]
 - !private ["s7CVarArgP", "FIRDatabase"]
 - !private ["s7CVarArgP", "FIRStorage"]
 - !private ["s7CVarArgP", "NSMakeRange"]
 - !private ["s7CVarArgP", "NSMutableAttributedString"]
 - !private ["s7CVarArgP", "NSStrikethroughStyleAttributeName"]
+- !private ["s7CVarArgP", "NSURL"]
 - !private ["s7CVarArgP", "SVProgressHUD"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
@@ -122,6 +141,8 @@ depends-member:
 - !private ["s7CVarArgP", "addGestureRecognizer"]
 - !private ["s7CVarArgP", "addTarget"]
 - !private ["s7CVarArgP", "attributedText"]
+- !private ["s7CVarArgP", "avPlayer"]
+- !private ["s7CVarArgP", "avPlayerViewController"]
 - !private ["s7CVarArgP", "btn_approve_lvl2"]
 - !private ["s7CVarArgP", "btn_delete_lvl2"]
 - !private ["s7CVarArgP", "btn_delete_lvl3"]
@@ -138,7 +159,8 @@ depends-member:
 - !private ["s7CVarArgP", "imgCaption"]
 - !private ["s7CVarArgP", "imgIndex"]
 - !private ["s7CVarArgP", "imgUrl"]
-- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "img_playbutton"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateViewController"]
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "isUserInteractionEnabled"]
@@ -150,6 +172,8 @@ depends-member:
 - !private ["s7CVarArgP", "myTargetFunction"]
 - !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "performInitialisation"]
+- !private ["s7CVarArgP", "play"]
+- !private ["s7CVarArgP", "player"]
 - !private ["s7CVarArgP", "popViewController"]
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
@@ -168,26 +192,29 @@ depends-member:
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "textColor"]
 - !private ["s7CVarArgP", "titleLabel"]
-- !private ["s7CVarArgP", "updateChildValues"]
 - !private ["s7CVarArgP", "userObj"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewWillLayoutSubviews"]
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "caption"]
-- !private ["s10CollectionP", "creatorID"]
 - !private ["s10CollectionP", "dashboardApproved"]
 - !private ["s10CollectionP", "imgId"]
 - !private ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "key"]
 - !private ["s10CollectionP", "subscript"]
+- !private ["s10CollectionP", "thumbnailURL"]
 - !private ["s10CollectionP", "uploadedBy"]
 - !private ["s10CollectionP", "url"]
+- !private ["s10CollectionP", "userPostID"]
 - !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "AVPlayer"]
+- ["s28CustomDebugStringConvertibleP", "AVPlayerViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "FIRDatabase"]
 - !private ["s28CustomDebugStringConvertibleP", "FIRStorage"]
 - !private ["s28CustomDebugStringConvertibleP", "NSMakeRange"]
 - !private ["s28CustomDebugStringConvertibleP", "NSMutableAttributedString"]
 - !private ["s28CustomDebugStringConvertibleP", "NSStrikethroughStyleAttributeName"]
+- !private ["s28CustomDebugStringConvertibleP", "NSURL"]
 - !private ["s28CustomDebugStringConvertibleP", "SVProgressHUD"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
@@ -202,6 +229,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addTarget"]
 - !private ["s28CustomDebugStringConvertibleP", "attributedText"]
+- !private ["s28CustomDebugStringConvertibleP", "avPlayer"]
+- !private ["s28CustomDebugStringConvertibleP", "avPlayerViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "btn_approve_lvl2"]
 - !private ["s28CustomDebugStringConvertibleP", "btn_delete_lvl2"]
 - !private ["s28CustomDebugStringConvertibleP", "btn_delete_lvl3"]
@@ -209,7 +238,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "childByAutoId"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
-- !private ["s28CustomDebugStringConvertibleP", "creatorID"]
 - !private ["s28CustomDebugStringConvertibleP", "dashboardApproved"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "delete"]
@@ -222,7 +250,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "imgId"]
 - !private ["s28CustomDebugStringConvertibleP", "imgIndex"]
 - !private ["s28CustomDebugStringConvertibleP", "imgUrl"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "img_playbutton"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "isUserInteractionEnabled"]
@@ -235,6 +264,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "myTargetFunction"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "performInitialisation"]
+- !private ["s28CustomDebugStringConvertibleP", "play"]
+- !private ["s28CustomDebugStringConvertibleP", "player"]
 - !private ["s28CustomDebugStringConvertibleP", "popViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
@@ -252,11 +283,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "textColor"]
+- !private ["s28CustomDebugStringConvertibleP", "thumbnailURL"]
 - !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
-- !private ["s28CustomDebugStringConvertibleP", "updateChildValues"]
 - !private ["s28CustomDebugStringConvertibleP", "uploadedBy"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
 - !private ["s28CustomDebugStringConvertibleP", "userObj"]
+- !private ["s28CustomDebugStringConvertibleP", "userPostID"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillLayoutSubviews"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -264,19 +296,23 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "caption"]
-- !private ["s17CustomReflectableP", "creatorID"]
 - !private ["s17CustomReflectableP", "dashboardApproved"]
 - !private ["s17CustomReflectableP", "imgId"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "key"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "thumbnailURL"]
 - !private ["s17CustomReflectableP", "uploadedBy"]
 - !private ["s17CustomReflectableP", "url"]
+- !private ["s17CustomReflectableP", "userPostID"]
+- !private ["s23CustomStringConvertibleP", "AVPlayer"]
+- ["s23CustomStringConvertibleP", "AVPlayerViewController"]
 - !private ["s23CustomStringConvertibleP", "FIRDatabase"]
 - !private ["s23CustomStringConvertibleP", "FIRStorage"]
 - !private ["s23CustomStringConvertibleP", "NSMakeRange"]
 - !private ["s23CustomStringConvertibleP", "NSMutableAttributedString"]
 - !private ["s23CustomStringConvertibleP", "NSStrikethroughStyleAttributeName"]
+- !private ["s23CustomStringConvertibleP", "NSURL"]
 - !private ["s23CustomStringConvertibleP", "SVProgressHUD"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
@@ -292,6 +328,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "addTarget"]
 - !private ["s23CustomStringConvertibleP", "attributedText"]
+- !private ["s23CustomStringConvertibleP", "avPlayer"]
+- !private ["s23CustomStringConvertibleP", "avPlayerViewController"]
 - !private ["s23CustomStringConvertibleP", "btn_approve_lvl2"]
 - !private ["s23CustomStringConvertibleP", "btn_delete_lvl2"]
 - !private ["s23CustomStringConvertibleP", "btn_delete_lvl3"]
@@ -299,7 +337,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "childByAutoId"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
-- !private ["s23CustomStringConvertibleP", "creatorID"]
 - !private ["s23CustomStringConvertibleP", "dashboardApproved"]
 - !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "delete"]
@@ -312,7 +349,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "imgId"]
 - !private ["s23CustomStringConvertibleP", "imgIndex"]
 - !private ["s23CustomStringConvertibleP", "imgUrl"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "img_playbutton"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "isUserInteractionEnabled"]
@@ -325,6 +363,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "myTargetFunction"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "performInitialisation"]
+- !private ["s23CustomStringConvertibleP", "play"]
+- !private ["s23CustomStringConvertibleP", "player"]
 - !private ["s23CustomStringConvertibleP", "popViewController"]
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
@@ -342,11 +382,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "textColor"]
+- !private ["s23CustomStringConvertibleP", "thumbnailURL"]
 - !private ["s23CustomStringConvertibleP", "titleLabel"]
-- !private ["s23CustomStringConvertibleP", "updateChildValues"]
 - !private ["s23CustomStringConvertibleP", "uploadedBy"]
 - !private ["s23CustomStringConvertibleP", "url"]
 - !private ["s23CustomStringConvertibleP", "userObj"]
+- !private ["s23CustomStringConvertibleP", "userPostID"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWillLayoutSubviews"]
 - ["s23CustomStringConvertibleP", ""]
@@ -356,11 +397,14 @@ depends-member:
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "AVPlayer"]
+- ["s9EquatableP", "AVPlayerViewController"]
 - !private ["s9EquatableP", "FIRDatabase"]
 - !private ["s9EquatableP", "FIRStorage"]
 - !private ["s9EquatableP", "NSMakeRange"]
 - !private ["s9EquatableP", "NSMutableAttributedString"]
 - !private ["s9EquatableP", "NSStrikethroughStyleAttributeName"]
+- !private ["s9EquatableP", "NSURL"]
 - !private ["s9EquatableP", "SVProgressHUD"]
 - !private ["s9EquatableP", "UIAlertAction"]
 - !private ["s9EquatableP", "UIAlertController"]
@@ -378,6 +422,8 @@ depends-member:
 - !private ["s9EquatableP", "addTarget"]
 - !private ["s9EquatableP", "alert"]
 - !private ["s9EquatableP", "attributedText"]
+- !private ["s9EquatableP", "avPlayer"]
+- !private ["s9EquatableP", "avPlayerViewController"]
 - !private ["s9EquatableP", "btn_approve_lvl2"]
 - !private ["s9EquatableP", "btn_delete_lvl2"]
 - !private ["s9EquatableP", "btn_delete_lvl3"]
@@ -398,7 +444,8 @@ depends-member:
 - !private ["s9EquatableP", "imgCaption"]
 - !private ["s9EquatableP", "imgIndex"]
 - !private ["s9EquatableP", "imgUrl"]
-- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "img_playbutton"]
+- ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "instantiateViewController"]
 - !private ["s9EquatableP", "isHidden"]
 - !private ["s9EquatableP", "isUserInteractionEnabled"]
@@ -411,6 +458,8 @@ depends-member:
 - !private ["s9EquatableP", "navigationController"]
 - !private ["s9EquatableP", "overFullScreen"]
 - !private ["s9EquatableP", "performInitialisation"]
+- !private ["s9EquatableP", "play"]
+- !private ["s9EquatableP", "player"]
 - !private ["s9EquatableP", "popViewController"]
 - !private ["s9EquatableP", "present"]
 - !private ["s9EquatableP", "print"]
@@ -428,19 +477,19 @@ depends-member:
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "textColor"]
 - !private ["s9EquatableP", "titleLabel"]
-- !private ["s9EquatableP", "updateChildValues"]
 - !private ["s9EquatableP", "userObj"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - !private ["s9EquatableP", "viewWillLayoutSubviews"]
 - ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "caption"]
-- !private ["s25ExpressibleByArrayLiteralP", "creatorID"]
 - !private ["s25ExpressibleByArrayLiteralP", "dashboardApproved"]
 - !private ["s25ExpressibleByArrayLiteralP", "imgId"]
 - !private ["s25ExpressibleByArrayLiteralP", "key"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "thumbnailURL"]
 - !private ["s25ExpressibleByArrayLiteralP", "uploadedBy"]
 - !private ["s25ExpressibleByArrayLiteralP", "url"]
+- !private ["s25ExpressibleByArrayLiteralP", "userPostID"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -451,21 +500,22 @@ depends-member:
 - !private ["So16FIRDatabaseQueryC", "childByAutoId"]
 - !private ["So16FIRDatabaseQueryC", "removeValue"]
 - !private ["So16FIRDatabaseQueryC", "setValue"]
-- !private ["So16FIRDatabaseQueryC", "updateChildValues"]
 - !private ["So20FIRDatabaseReferenceC", "child"]
 - !private ["So20FIRDatabaseReferenceC", "childByAutoId"]
 - !private ["So20FIRDatabaseReferenceC", "removeValue"]
 - !private ["So20FIRDatabaseReferenceC", "setValue"]
-- !private ["So20FIRDatabaseReferenceC", "updateChildValues"]
 - !private ["So10FIRStorageC", "reference"]
 - !private ["So10FIRStorageC", "storage"]
 - !private ["So19FIRStorageReferenceC", "child"]
 - !private ["So19FIRStorageReferenceC", "delete"]
+- !private ["s8HashableP", "AVPlayer"]
+- ["s8HashableP", "AVPlayerViewController"]
 - !private ["s8HashableP", "FIRDatabase"]
 - !private ["s8HashableP", "FIRStorage"]
 - !private ["s8HashableP", "NSMakeRange"]
 - !private ["s8HashableP", "NSMutableAttributedString"]
 - !private ["s8HashableP", "NSStrikethroughStyleAttributeName"]
+- !private ["s8HashableP", "NSURL"]
 - !private ["s8HashableP", "SVProgressHUD"]
 - !private ["s8HashableP", "UIAlertAction"]
 - !private ["s8HashableP", "UIAlertController"]
@@ -483,6 +533,8 @@ depends-member:
 - !private ["s8HashableP", "addTarget"]
 - !private ["s8HashableP", "alert"]
 - !private ["s8HashableP", "attributedText"]
+- !private ["s8HashableP", "avPlayer"]
+- !private ["s8HashableP", "avPlayerViewController"]
 - !private ["s8HashableP", "btn_approve_lvl2"]
 - !private ["s8HashableP", "btn_delete_lvl2"]
 - !private ["s8HashableP", "btn_delete_lvl3"]
@@ -503,7 +555,8 @@ depends-member:
 - !private ["s8HashableP", "imgCaption"]
 - !private ["s8HashableP", "imgIndex"]
 - !private ["s8HashableP", "imgUrl"]
-- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "img_playbutton"]
+- ["s8HashableP", "init"]
 - !private ["s8HashableP", "instantiateViewController"]
 - !private ["s8HashableP", "isHidden"]
 - !private ["s8HashableP", "isUserInteractionEnabled"]
@@ -516,6 +569,8 @@ depends-member:
 - !private ["s8HashableP", "navigationController"]
 - !private ["s8HashableP", "overFullScreen"]
 - !private ["s8HashableP", "performInitialisation"]
+- !private ["s8HashableP", "play"]
+- !private ["s8HashableP", "player"]
 - !private ["s8HashableP", "popViewController"]
 - !private ["s8HashableP", "present"]
 - !private ["s8HashableP", "print"]
@@ -533,7 +588,6 @@ depends-member:
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "textColor"]
 - !private ["s8HashableP", "titleLabel"]
-- !private ["s8HashableP", "updateChildValues"]
 - !private ["s8HashableP", "userObj"]
 - !private ["s8HashableP", "viewDidLoad"]
 - !private ["s8HashableP", "viewWillLayoutSubviews"]
@@ -541,11 +595,14 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["8Material14MotionDelegateP", "AVPlayer"]
+- ["8Material14MotionDelegateP", "AVPlayerViewController"]
 - !private ["8Material14MotionDelegateP", "FIRDatabase"]
 - !private ["8Material14MotionDelegateP", "FIRStorage"]
 - !private ["8Material14MotionDelegateP", "NSMakeRange"]
 - !private ["8Material14MotionDelegateP", "NSMutableAttributedString"]
 - !private ["8Material14MotionDelegateP", "NSStrikethroughStyleAttributeName"]
+- !private ["8Material14MotionDelegateP", "NSURL"]
 - !private ["8Material14MotionDelegateP", "SVProgressHUD"]
 - !private ["8Material14MotionDelegateP", "UIAlertAction"]
 - !private ["8Material14MotionDelegateP", "UIAlertController"]
@@ -556,6 +613,8 @@ depends-member:
 - !private ["8Material14MotionDelegateP", "UITapGestureRecognizer"]
 - !private ["8Material14MotionDelegateP", "URL"]
 - !private ["8Material14MotionDelegateP", "addAction"]
+- !private ["8Material14MotionDelegateP", "avPlayer"]
+- !private ["8Material14MotionDelegateP", "avPlayerViewController"]
 - !private ["8Material14MotionDelegateP", "btn_approve_lvl2"]
 - !private ["8Material14MotionDelegateP", "btn_delete_lvl2"]
 - !private ["8Material14MotionDelegateP", "btn_delete_lvl3"]
@@ -566,12 +625,14 @@ depends-member:
 - !private ["8Material14MotionDelegateP", "imgCaption"]
 - !private ["8Material14MotionDelegateP", "imgIndex"]
 - !private ["8Material14MotionDelegateP", "imgUrl"]
-- !private ["8Material14MotionDelegateP", "init"]
+- !private ["8Material14MotionDelegateP", "img_playbutton"]
+- ["8Material14MotionDelegateP", "init"]
 - !private ["8Material14MotionDelegateP", "modalPresentationStyle"]
 - !private ["8Material14MotionDelegateP", "modalTransitionStyle"]
 - !private ["8Material14MotionDelegateP", "myTargetFunction"]
 - !private ["8Material14MotionDelegateP", "navigationController"]
 - !private ["8Material14MotionDelegateP", "performInitialisation"]
+- !private ["8Material14MotionDelegateP", "player"]
 - !private ["8Material14MotionDelegateP", "popViewController"]
 - !private ["8Material14MotionDelegateP", "present"]
 - !private ["8Material14MotionDelegateP", "print"]
@@ -582,21 +643,25 @@ depends-member:
 - !private ["8Material14MotionDelegateP", "viewWillLayoutSubviews"]
 - ["8Material14MotionDelegateP", ""]
 - !private ["s17MutableCollectionP", "caption"]
-- !private ["s17MutableCollectionP", "creatorID"]
 - !private ["s17MutableCollectionP", "dashboardApproved"]
 - !private ["s17MutableCollectionP", "imgId"]
 - !private ["s17MutableCollectionP", "key"]
 - !private ["s17MutableCollectionP", "subscript"]
+- !private ["s17MutableCollectionP", "thumbnailURL"]
 - !private ["s17MutableCollectionP", "uploadedBy"]
 - !private ["s17MutableCollectionP", "url"]
+- !private ["s17MutableCollectionP", "userPostID"]
 - !private ["So18NSAttributedStringC", "addAttribute"]
 - !private ["So18NSAttributedStringC", "init"]
 - !private ["So18NSAttributedStringC", "length"]
+- !private ["So8NSCodingP", "AVPlayer"]
+- ["So8NSCodingP", "AVPlayerViewController"]
 - !private ["So8NSCodingP", "FIRDatabase"]
 - !private ["So8NSCodingP", "FIRStorage"]
 - !private ["So8NSCodingP", "NSMakeRange"]
 - !private ["So8NSCodingP", "NSMutableAttributedString"]
 - !private ["So8NSCodingP", "NSStrikethroughStyleAttributeName"]
+- !private ["So8NSCodingP", "NSURL"]
 - !private ["So8NSCodingP", "SVProgressHUD"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
@@ -610,6 +675,8 @@ depends-member:
 - !private ["So8NSCodingP", "addAttribute"]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "attributedText"]
+- !private ["So8NSCodingP", "avPlayer"]
+- !private ["So8NSCodingP", "avPlayerViewController"]
 - !private ["So8NSCodingP", "btn_approve_lvl2"]
 - !private ["So8NSCodingP", "btn_delete_lvl2"]
 - !private ["So8NSCodingP", "btn_delete_lvl3"]
@@ -622,7 +689,8 @@ depends-member:
 - !private ["So8NSCodingP", "imgCaption"]
 - !private ["So8NSCodingP", "imgIndex"]
 - !private ["So8NSCodingP", "imgUrl"]
-- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "img_playbutton"]
+- ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isHidden"]
 - !private ["So8NSCodingP", "isUserInteractionEnabled"]
 - !private ["So8NSCodingP", "layer"]
@@ -633,6 +701,7 @@ depends-member:
 - !private ["So8NSCodingP", "myTargetFunction"]
 - !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "performInitialisation"]
+- !private ["So8NSCodingP", "player"]
 - !private ["So8NSCodingP", "popViewController"]
 - !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "print"]
@@ -654,11 +723,14 @@ depends-member:
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "length"]
 - !private ["So9NSCopyingP", "lightGray"]
+- !private ["So26NSExtensionRequestHandlingP", "AVPlayer"]
+- ["So26NSExtensionRequestHandlingP", "AVPlayerViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "FIRDatabase"]
 - !private ["So26NSExtensionRequestHandlingP", "FIRStorage"]
 - !private ["So26NSExtensionRequestHandlingP", "NSMakeRange"]
 - !private ["So26NSExtensionRequestHandlingP", "NSMutableAttributedString"]
 - !private ["So26NSExtensionRequestHandlingP", "NSStrikethroughStyleAttributeName"]
+- !private ["So26NSExtensionRequestHandlingP", "NSURL"]
 - !private ["So26NSExtensionRequestHandlingP", "SVProgressHUD"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
@@ -669,6 +741,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UITapGestureRecognizer"]
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "avPlayer"]
+- !private ["So26NSExtensionRequestHandlingP", "avPlayerViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "btn_approve_lvl2"]
 - !private ["So26NSExtensionRequestHandlingP", "btn_delete_lvl2"]
 - !private ["So26NSExtensionRequestHandlingP", "btn_delete_lvl3"]
@@ -679,12 +753,14 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "imgCaption"]
 - !private ["So26NSExtensionRequestHandlingP", "imgIndex"]
 - !private ["So26NSExtensionRequestHandlingP", "imgUrl"]
-- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "img_playbutton"]
+- ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "modalPresentationStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "modalTransitionStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "myTargetFunction"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
 - !private ["So26NSExtensionRequestHandlingP", "performInitialisation"]
+- !private ["So26NSExtensionRequestHandlingP", "player"]
 - !private ["So26NSExtensionRequestHandlingP", "popViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
@@ -708,6 +784,8 @@ depends-member:
 - !private ["So16NSMutableCopyingP", "addAttribute"]
 - !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "length"]
+- ["So8NSObjectC", "AVPlayer"]
+- ["So8NSObjectC", "AVPlayerViewController"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "FIRDatabase"]
 - !private ["So8NSObjectC", "FIRStorage"]
@@ -715,6 +793,7 @@ depends-member:
 - !private ["So8NSObjectC", "NSMakeRange"]
 - !private ["So8NSObjectC", "NSMutableAttributedString"]
 - !private ["So8NSObjectC", "NSStrikethroughStyleAttributeName"]
+- !private ["So8NSObjectC", "NSURL"]
 - !private ["So8NSObjectC", "SVProgressHUD"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
@@ -729,12 +808,15 @@ depends-member:
 - !private ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "VC_EditCaption"]
 - !private ["So8NSObjectC", "VC_selectedimage"]
+- !private ["So8NSObjectC", "Void"]
 - !private ["So8NSObjectC", "addAction"]
 - !private ["So8NSObjectC", "addAttribute"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
 - !private ["So8NSObjectC", "addTarget"]
 - ["So8NSObjectC", "approvePost"]
 - !private ["So8NSObjectC", "attributedText"]
+- ["So8NSObjectC", "avPlayer"]
+- ["So8NSObjectC", "avPlayerViewController"]
 - ["So8NSObjectC", "btn_approve_lvl2"]
 - ["So8NSObjectC", "btn_delete_lvl2"]
 - ["So8NSObjectC", "btn_delete_lvl3"]
@@ -752,6 +834,7 @@ depends-member:
 - ["So8NSObjectC", "imgCaption"]
 - ["So8NSObjectC", "imgIndex"]
 - !private ["So8NSObjectC", "imgUrl"]
+- ["So8NSObjectC", "img_playbutton"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateViewController"]
 - !private ["So8NSObjectC", "isHidden"]
@@ -764,6 +847,8 @@ depends-member:
 - ["So8NSObjectC", "myTargetFunction"]
 - !private ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "performInitialisation"]
+- !private ["So8NSObjectC", "play"]
+- !private ["So8NSObjectC", "player"]
 - !private ["So8NSObjectC", "popViewController"]
 - !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "print"]
@@ -781,16 +866,18 @@ depends-member:
 - !private ["So8NSObjectC", "text"]
 - !private ["So8NSObjectC", "textColor"]
 - !private ["So8NSObjectC", "titleLabel"]
-- !private ["So8NSObjectC", "updateChildValues"]
 - !private ["So8NSObjectC", "userObj"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillAppear"]
 - ["So8NSObjectC", "viewWillLayoutSubviews"]
+- !private ["So16NSObjectProtocolP", "AVPlayer"]
+- ["So16NSObjectProtocolP", "AVPlayerViewController"]
 - !private ["So16NSObjectProtocolP", "FIRDatabase"]
 - !private ["So16NSObjectProtocolP", "FIRStorage"]
 - !private ["So16NSObjectProtocolP", "NSMakeRange"]
 - !private ["So16NSObjectProtocolP", "NSMutableAttributedString"]
 - !private ["So16NSObjectProtocolP", "NSStrikethroughStyleAttributeName"]
+- !private ["So16NSObjectProtocolP", "NSURL"]
 - !private ["So16NSObjectProtocolP", "SVProgressHUD"]
 - !private ["So16NSObjectProtocolP", "UIAlertAction"]
 - !private ["So16NSObjectProtocolP", "UIAlertController"]
@@ -805,6 +892,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
 - !private ["So16NSObjectProtocolP", "addTarget"]
 - !private ["So16NSObjectProtocolP", "attributedText"]
+- !private ["So16NSObjectProtocolP", "avPlayer"]
+- !private ["So16NSObjectProtocolP", "avPlayerViewController"]
 - !private ["So16NSObjectProtocolP", "btn_approve_lvl2"]
 - !private ["So16NSObjectProtocolP", "btn_delete_lvl2"]
 - !private ["So16NSObjectProtocolP", "btn_delete_lvl3"]
@@ -821,7 +910,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "imgCaption"]
 - !private ["So16NSObjectProtocolP", "imgIndex"]
 - !private ["So16NSObjectProtocolP", "imgUrl"]
-- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "img_playbutton"]
+- ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "instantiateViewController"]
 - !private ["So16NSObjectProtocolP", "isHidden"]
 - !private ["So16NSObjectProtocolP", "isUserInteractionEnabled"]
@@ -833,6 +923,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "myTargetFunction"]
 - !private ["So16NSObjectProtocolP", "navigationController"]
 - !private ["So16NSObjectProtocolP", "performInitialisation"]
+- !private ["So16NSObjectProtocolP", "play"]
+- !private ["So16NSObjectProtocolP", "player"]
 - !private ["So16NSObjectProtocolP", "popViewController"]
 - !private ["So16NSObjectProtocolP", "present"]
 - !private ["So16NSObjectProtocolP", "print"]
@@ -850,7 +942,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "text"]
 - !private ["So16NSObjectProtocolP", "textColor"]
 - !private ["So16NSObjectProtocolP", "titleLabel"]
-- !private ["So16NSObjectProtocolP", "updateChildValues"]
 - !private ["So16NSObjectProtocolP", "userObj"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "viewWillLayoutSubviews"]
@@ -861,23 +952,26 @@ depends-member:
 - !private ["So14NSSecureCodingP", "length"]
 - !private ["So14NSSecureCodingP", "lightGray"]
 - !private ["So8NSStringC", "init"]
+- !private ["So5NSURLC", "init"]
 - !private ["s22RandomAccessCollectionP", "caption"]
-- !private ["s22RandomAccessCollectionP", "creatorID"]
 - !private ["s22RandomAccessCollectionP", "dashboardApproved"]
 - !private ["s22RandomAccessCollectionP", "imgId"]
 - !private ["s22RandomAccessCollectionP", "key"]
 - !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s22RandomAccessCollectionP", "thumbnailURL"]
 - !private ["s22RandomAccessCollectionP", "uploadedBy"]
 - !private ["s22RandomAccessCollectionP", "url"]
+- !private ["s22RandomAccessCollectionP", "userPostID"]
 - !private ["s26RangeReplaceableCollectionP", "caption"]
-- !private ["s26RangeReplaceableCollectionP", "creatorID"]
 - !private ["s26RangeReplaceableCollectionP", "dashboardApproved"]
 - !private ["s26RangeReplaceableCollectionP", "imgId"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "key"]
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "thumbnailURL"]
 - !private ["s26RangeReplaceableCollectionP", "uploadedBy"]
 - !private ["s26RangeReplaceableCollectionP", "url"]
+- !private ["s26RangeReplaceableCollectionP", "userPostID"]
 - !private ["s16RawRepresentableP", "actionSheet"]
 - !private ["s16RawRepresentableP", "alert"]
 - !private ["s16RawRepresentableP", "cancel"]
@@ -892,14 +986,15 @@ depends-member:
 - !private ["So13SVProgressHUDC", "showSuccess"]
 - !private ["SC18SVProgressHUDStyleO", "dark"]
 - !private ["s8SequenceP", "caption"]
-- !private ["s8SequenceP", "creatorID"]
 - !private ["s8SequenceP", "dashboardApproved"]
 - !private ["s8SequenceP", "imgId"]
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "key"]
 - !private ["s8SequenceP", "subscript"]
+- !private ["s8SequenceP", "thumbnailURL"]
 - !private ["s8SequenceP", "uploadedBy"]
 - !private ["s8SequenceP", "url"]
+- !private ["s8SequenceP", "userPostID"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
@@ -944,11 +1039,14 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "textColor"]
 - !private ["So12UIAppearanceP", "titleLabel"]
+- !private ["So21UIAppearanceContainerP", "AVPlayer"]
+- ["So21UIAppearanceContainerP", "AVPlayerViewController"]
 - !private ["So21UIAppearanceContainerP", "FIRDatabase"]
 - !private ["So21UIAppearanceContainerP", "FIRStorage"]
 - !private ["So21UIAppearanceContainerP", "NSMakeRange"]
 - !private ["So21UIAppearanceContainerP", "NSMutableAttributedString"]
 - !private ["So21UIAppearanceContainerP", "NSStrikethroughStyleAttributeName"]
+- !private ["So21UIAppearanceContainerP", "NSURL"]
 - !private ["So21UIAppearanceContainerP", "SVProgressHUD"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
@@ -961,6 +1059,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "addAction"]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "attributedText"]
+- !private ["So21UIAppearanceContainerP", "avPlayer"]
+- !private ["So21UIAppearanceContainerP", "avPlayerViewController"]
 - !private ["So21UIAppearanceContainerP", "btn_approve_lvl2"]
 - !private ["So21UIAppearanceContainerP", "btn_delete_lvl2"]
 - !private ["So21UIAppearanceContainerP", "btn_delete_lvl3"]
@@ -972,7 +1072,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "imgCaption"]
 - !private ["So21UIAppearanceContainerP", "imgIndex"]
 - !private ["So21UIAppearanceContainerP", "imgUrl"]
-- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "img_playbutton"]
+- ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "isHidden"]
 - !private ["So21UIAppearanceContainerP", "isUserInteractionEnabled"]
 - !private ["So21UIAppearanceContainerP", "layer"]
@@ -981,6 +1082,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "myTargetFunction"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
 - !private ["So21UIAppearanceContainerP", "performInitialisation"]
+- !private ["So21UIAppearanceContainerP", "player"]
 - !private ["So21UIAppearanceContainerP", "popViewController"]
 - !private ["So21UIAppearanceContainerP", "present"]
 - !private ["So21UIAppearanceContainerP", "print"]
@@ -1002,11 +1104,14 @@ depends-member:
 - !private ["So8UIButtonC", "isUserInteractionEnabled"]
 - !private ["So8UIButtonC", "titleLabel"]
 - !private ["So7UIColorC", "lightGray"]
+- !private ["So18UIContentContainerP", "AVPlayer"]
+- ["So18UIContentContainerP", "AVPlayerViewController"]
 - !private ["So18UIContentContainerP", "FIRDatabase"]
 - !private ["So18UIContentContainerP", "FIRStorage"]
 - !private ["So18UIContentContainerP", "NSMakeRange"]
 - !private ["So18UIContentContainerP", "NSMutableAttributedString"]
 - !private ["So18UIContentContainerP", "NSStrikethroughStyleAttributeName"]
+- !private ["So18UIContentContainerP", "NSURL"]
 - !private ["So18UIContentContainerP", "SVProgressHUD"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
@@ -1017,6 +1122,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "UITapGestureRecognizer"]
 - !private ["So18UIContentContainerP", "URL"]
 - !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "avPlayer"]
+- !private ["So18UIContentContainerP", "avPlayerViewController"]
 - !private ["So18UIContentContainerP", "btn_approve_lvl2"]
 - !private ["So18UIContentContainerP", "btn_delete_lvl2"]
 - !private ["So18UIContentContainerP", "btn_delete_lvl3"]
@@ -1027,12 +1134,14 @@ depends-member:
 - !private ["So18UIContentContainerP", "imgCaption"]
 - !private ["So18UIContentContainerP", "imgIndex"]
 - !private ["So18UIContentContainerP", "imgUrl"]
-- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "img_playbutton"]
+- ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "modalPresentationStyle"]
 - !private ["So18UIContentContainerP", "modalTransitionStyle"]
 - !private ["So18UIContentContainerP", "myTargetFunction"]
 - !private ["So18UIContentContainerP", "navigationController"]
 - !private ["So18UIContentContainerP", "performInitialisation"]
+- !private ["So18UIContentContainerP", "player"]
 - !private ["So18UIContentContainerP", "popViewController"]
 - !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "print"]
@@ -1080,11 +1189,14 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "textColor"]
 - !private ["So13UIDynamicItemP", "titleLabel"]
+- !private ["So18UIFocusEnvironmentP", "AVPlayer"]
+- ["So18UIFocusEnvironmentP", "AVPlayerViewController"]
 - !private ["So18UIFocusEnvironmentP", "FIRDatabase"]
 - !private ["So18UIFocusEnvironmentP", "FIRStorage"]
 - !private ["So18UIFocusEnvironmentP", "NSMakeRange"]
 - !private ["So18UIFocusEnvironmentP", "NSMutableAttributedString"]
 - !private ["So18UIFocusEnvironmentP", "NSStrikethroughStyleAttributeName"]
+- !private ["So18UIFocusEnvironmentP", "NSURL"]
 - !private ["So18UIFocusEnvironmentP", "SVProgressHUD"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
@@ -1097,6 +1209,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "addAction"]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "attributedText"]
+- !private ["So18UIFocusEnvironmentP", "avPlayer"]
+- !private ["So18UIFocusEnvironmentP", "avPlayerViewController"]
 - !private ["So18UIFocusEnvironmentP", "btn_approve_lvl2"]
 - !private ["So18UIFocusEnvironmentP", "btn_delete_lvl2"]
 - !private ["So18UIFocusEnvironmentP", "btn_delete_lvl3"]
@@ -1108,7 +1222,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "imgCaption"]
 - !private ["So18UIFocusEnvironmentP", "imgIndex"]
 - !private ["So18UIFocusEnvironmentP", "imgUrl"]
-- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "img_playbutton"]
+- ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "isHidden"]
 - !private ["So18UIFocusEnvironmentP", "isUserInteractionEnabled"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
@@ -1117,6 +1232,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "myTargetFunction"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
 - !private ["So18UIFocusEnvironmentP", "performInitialisation"]
+- !private ["So18UIFocusEnvironmentP", "player"]
 - !private ["So18UIFocusEnvironmentP", "popViewController"]
 - !private ["So18UIFocusEnvironmentP", "present"]
 - !private ["So18UIFocusEnvironmentP", "print"]
@@ -1151,6 +1267,7 @@ depends-member:
 - !private ["So19UIGestureRecognizerC", "addTarget"]
 - !private ["So19UIGestureRecognizerC", "init"]
 - !private ["So11UIImageViewC", "addGestureRecognizer"]
+- !private ["So11UIImageViewC", "isHidden"]
 - !private ["So11UIImageViewC", "sd_setImage"]
 - !private ["So10UIKeyInputP", "addGestureRecognizer"]
 - !private ["So10UIKeyInputP", "isUserInteractionEnabled"]
@@ -1164,11 +1281,14 @@ depends-member:
 - !private ["SC22UIModalTransitionStyleO", "coverVertical"]
 - !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So30UINavigationControllerDelegateP", "AVPlayer"]
+- ["So30UINavigationControllerDelegateP", "AVPlayerViewController"]
 - !private ["So30UINavigationControllerDelegateP", "FIRDatabase"]
 - !private ["So30UINavigationControllerDelegateP", "FIRStorage"]
 - !private ["So30UINavigationControllerDelegateP", "NSMakeRange"]
 - !private ["So30UINavigationControllerDelegateP", "NSMutableAttributedString"]
 - !private ["So30UINavigationControllerDelegateP", "NSStrikethroughStyleAttributeName"]
+- !private ["So30UINavigationControllerDelegateP", "NSURL"]
 - !private ["So30UINavigationControllerDelegateP", "SVProgressHUD"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertAction"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertController"]
@@ -1179,6 +1299,8 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "UITapGestureRecognizer"]
 - !private ["So30UINavigationControllerDelegateP", "URL"]
 - !private ["So30UINavigationControllerDelegateP", "addAction"]
+- !private ["So30UINavigationControllerDelegateP", "avPlayer"]
+- !private ["So30UINavigationControllerDelegateP", "avPlayerViewController"]
 - !private ["So30UINavigationControllerDelegateP", "btn_approve_lvl2"]
 - !private ["So30UINavigationControllerDelegateP", "btn_delete_lvl2"]
 - !private ["So30UINavigationControllerDelegateP", "btn_delete_lvl3"]
@@ -1189,12 +1311,14 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "imgCaption"]
 - !private ["So30UINavigationControllerDelegateP", "imgIndex"]
 - !private ["So30UINavigationControllerDelegateP", "imgUrl"]
-- !private ["So30UINavigationControllerDelegateP", "init"]
+- !private ["So30UINavigationControllerDelegateP", "img_playbutton"]
+- ["So30UINavigationControllerDelegateP", "init"]
 - !private ["So30UINavigationControllerDelegateP", "modalPresentationStyle"]
 - !private ["So30UINavigationControllerDelegateP", "modalTransitionStyle"]
 - !private ["So30UINavigationControllerDelegateP", "myTargetFunction"]
 - !private ["So30UINavigationControllerDelegateP", "navigationController"]
 - !private ["So30UINavigationControllerDelegateP", "performInitialisation"]
+- !private ["So30UINavigationControllerDelegateP", "player"]
 - !private ["So30UINavigationControllerDelegateP", "popViewController"]
 - !private ["So30UINavigationControllerDelegateP", "present"]
 - !private ["So30UINavigationControllerDelegateP", "print"]
@@ -1204,11 +1328,14 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "viewDidLoad"]
 - !private ["So30UINavigationControllerDelegateP", "viewWillLayoutSubviews"]
 - ["So30UINavigationControllerDelegateP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "AVPlayer"]
+- ["So30UIPasteConfigurationSupportingP", "AVPlayerViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "FIRDatabase"]
 - !private ["So30UIPasteConfigurationSupportingP", "FIRStorage"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSMakeRange"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSMutableAttributedString"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSStrikethroughStyleAttributeName"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSURL"]
 - !private ["So30UIPasteConfigurationSupportingP", "SVProgressHUD"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
@@ -1221,6 +1348,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "attributedText"]
+- !private ["So30UIPasteConfigurationSupportingP", "avPlayer"]
+- !private ["So30UIPasteConfigurationSupportingP", "avPlayerViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "btn_approve_lvl2"]
 - !private ["So30UIPasteConfigurationSupportingP", "btn_delete_lvl2"]
 - !private ["So30UIPasteConfigurationSupportingP", "btn_delete_lvl3"]
@@ -1232,7 +1361,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "imgCaption"]
 - !private ["So30UIPasteConfigurationSupportingP", "imgIndex"]
 - !private ["So30UIPasteConfigurationSupportingP", "imgUrl"]
-- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "img_playbutton"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
 - !private ["So30UIPasteConfigurationSupportingP", "isUserInteractionEnabled"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
@@ -1241,6 +1371,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "myTargetFunction"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "performInitialisation"]
+- !private ["So30UIPasteConfigurationSupportingP", "player"]
 - !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
@@ -1258,6 +1389,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillLayoutSubviews"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "AVPlayer"]
+- ["So11UIResponderC", "AVPlayerViewController"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "FIRDatabase"]
 - !private ["So11UIResponderC", "FIRStorage"]
@@ -1265,6 +1398,7 @@ depends-member:
 - !private ["So11UIResponderC", "NSMakeRange"]
 - !private ["So11UIResponderC", "NSMutableAttributedString"]
 - !private ["So11UIResponderC", "NSStrikethroughStyleAttributeName"]
+- !private ["So11UIResponderC", "NSURL"]
 - !private ["So11UIResponderC", "SVProgressHUD"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
@@ -1279,10 +1413,13 @@ depends-member:
 - !private ["So11UIResponderC", "URL"]
 - !private ["So11UIResponderC", "VC_EditCaption"]
 - !private ["So11UIResponderC", "VC_selectedimage"]
+- !private ["So11UIResponderC", "Void"]
 - !private ["So11UIResponderC", "addAction"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - ["So11UIResponderC", "approvePost"]
 - !private ["So11UIResponderC", "attributedText"]
+- ["So11UIResponderC", "avPlayer"]
+- ["So11UIResponderC", "avPlayerViewController"]
 - ["So11UIResponderC", "btn_approve_lvl2"]
 - ["So11UIResponderC", "btn_delete_lvl2"]
 - ["So11UIResponderC", "btn_delete_lvl3"]
@@ -1295,6 +1432,7 @@ depends-member:
 - ["So11UIResponderC", "imgCaption"]
 - ["So11UIResponderC", "imgIndex"]
 - !private ["So11UIResponderC", "imgUrl"]
+- ["So11UIResponderC", "img_playbutton"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "isHidden"]
 - !private ["So11UIResponderC", "isUserInteractionEnabled"]
@@ -1304,6 +1442,7 @@ depends-member:
 - ["So11UIResponderC", "myTargetFunction"]
 - !private ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "performInitialisation"]
+- !private ["So11UIResponderC", "player"]
 - !private ["So11UIResponderC", "popViewController"]
 - !private ["So11UIResponderC", "present"]
 - !private ["So11UIResponderC", "print"]
@@ -1321,11 +1460,14 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewWillAppear"]
 - ["So11UIResponderC", "viewWillLayoutSubviews"]
+- !private ["So30UIResponderStandardEditActionsP", "AVPlayer"]
+- ["So30UIResponderStandardEditActionsP", "AVPlayerViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "FIRDatabase"]
 - !private ["So30UIResponderStandardEditActionsP", "FIRStorage"]
 - !private ["So30UIResponderStandardEditActionsP", "NSMakeRange"]
 - !private ["So30UIResponderStandardEditActionsP", "NSMutableAttributedString"]
 - !private ["So30UIResponderStandardEditActionsP", "NSStrikethroughStyleAttributeName"]
+- !private ["So30UIResponderStandardEditActionsP", "NSURL"]
 - !private ["So30UIResponderStandardEditActionsP", "SVProgressHUD"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
@@ -1338,6 +1480,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "attributedText"]
+- !private ["So30UIResponderStandardEditActionsP", "avPlayer"]
+- !private ["So30UIResponderStandardEditActionsP", "avPlayerViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "btn_approve_lvl2"]
 - !private ["So30UIResponderStandardEditActionsP", "btn_delete_lvl2"]
 - !private ["So30UIResponderStandardEditActionsP", "btn_delete_lvl3"]
@@ -1349,7 +1493,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "imgCaption"]
 - !private ["So30UIResponderStandardEditActionsP", "imgIndex"]
 - !private ["So30UIResponderStandardEditActionsP", "imgUrl"]
-- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "img_playbutton"]
+- ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "isHidden"]
 - !private ["So30UIResponderStandardEditActionsP", "isUserInteractionEnabled"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
@@ -1358,6 +1503,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "myTargetFunction"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
 - !private ["So30UIResponderStandardEditActionsP", "performInitialisation"]
+- !private ["So30UIResponderStandardEditActionsP", "player"]
 - !private ["So30UIResponderStandardEditActionsP", "popViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
@@ -1386,11 +1532,14 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isUserInteractionEnabled"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "titleLabel"]
+- !private ["So16UIStateRestoringP", "AVPlayer"]
+- ["So16UIStateRestoringP", "AVPlayerViewController"]
 - !private ["So16UIStateRestoringP", "FIRDatabase"]
 - !private ["So16UIStateRestoringP", "FIRStorage"]
 - !private ["So16UIStateRestoringP", "NSMakeRange"]
 - !private ["So16UIStateRestoringP", "NSMutableAttributedString"]
 - !private ["So16UIStateRestoringP", "NSStrikethroughStyleAttributeName"]
+- !private ["So16UIStateRestoringP", "NSURL"]
 - !private ["So16UIStateRestoringP", "SVProgressHUD"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
@@ -1401,6 +1550,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UITapGestureRecognizer"]
 - !private ["So16UIStateRestoringP", "URL"]
 - !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "avPlayer"]
+- !private ["So16UIStateRestoringP", "avPlayerViewController"]
 - !private ["So16UIStateRestoringP", "btn_approve_lvl2"]
 - !private ["So16UIStateRestoringP", "btn_delete_lvl2"]
 - !private ["So16UIStateRestoringP", "btn_delete_lvl3"]
@@ -1411,12 +1562,14 @@ depends-member:
 - !private ["So16UIStateRestoringP", "imgCaption"]
 - !private ["So16UIStateRestoringP", "imgIndex"]
 - !private ["So16UIStateRestoringP", "imgUrl"]
-- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "img_playbutton"]
+- ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "modalPresentationStyle"]
 - !private ["So16UIStateRestoringP", "modalTransitionStyle"]
 - !private ["So16UIStateRestoringP", "myTargetFunction"]
 - !private ["So16UIStateRestoringP", "navigationController"]
 - !private ["So16UIStateRestoringP", "performInitialisation"]
+- !private ["So16UIStateRestoringP", "player"]
 - !private ["So16UIStateRestoringP", "popViewController"]
 - !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "print"]
@@ -1427,11 +1580,14 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewWillLayoutSubviews"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So26UITabBarControllerDelegateP", "AVPlayer"]
+- ["So26UITabBarControllerDelegateP", "AVPlayerViewController"]
 - !private ["So26UITabBarControllerDelegateP", "FIRDatabase"]
 - !private ["So26UITabBarControllerDelegateP", "FIRStorage"]
 - !private ["So26UITabBarControllerDelegateP", "NSMakeRange"]
 - !private ["So26UITabBarControllerDelegateP", "NSMutableAttributedString"]
 - !private ["So26UITabBarControllerDelegateP", "NSStrikethroughStyleAttributeName"]
+- !private ["So26UITabBarControllerDelegateP", "NSURL"]
 - !private ["So26UITabBarControllerDelegateP", "SVProgressHUD"]
 - !private ["So26UITabBarControllerDelegateP", "UIAlertAction"]
 - !private ["So26UITabBarControllerDelegateP", "UIAlertController"]
@@ -1442,6 +1598,8 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "UITapGestureRecognizer"]
 - !private ["So26UITabBarControllerDelegateP", "URL"]
 - !private ["So26UITabBarControllerDelegateP", "addAction"]
+- !private ["So26UITabBarControllerDelegateP", "avPlayer"]
+- !private ["So26UITabBarControllerDelegateP", "avPlayerViewController"]
 - !private ["So26UITabBarControllerDelegateP", "btn_approve_lvl2"]
 - !private ["So26UITabBarControllerDelegateP", "btn_delete_lvl2"]
 - !private ["So26UITabBarControllerDelegateP", "btn_delete_lvl3"]
@@ -1452,12 +1610,14 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "imgCaption"]
 - !private ["So26UITabBarControllerDelegateP", "imgIndex"]
 - !private ["So26UITabBarControllerDelegateP", "imgUrl"]
-- !private ["So26UITabBarControllerDelegateP", "init"]
+- !private ["So26UITabBarControllerDelegateP", "img_playbutton"]
+- ["So26UITabBarControllerDelegateP", "init"]
 - !private ["So26UITabBarControllerDelegateP", "modalPresentationStyle"]
 - !private ["So26UITabBarControllerDelegateP", "modalTransitionStyle"]
 - !private ["So26UITabBarControllerDelegateP", "myTargetFunction"]
 - !private ["So26UITabBarControllerDelegateP", "navigationController"]
 - !private ["So26UITabBarControllerDelegateP", "performInitialisation"]
+- !private ["So26UITabBarControllerDelegateP", "player"]
 - !private ["So26UITabBarControllerDelegateP", "popViewController"]
 - !private ["So26UITabBarControllerDelegateP", "present"]
 - !private ["So26UITabBarControllerDelegateP", "print"]
@@ -1505,11 +1665,14 @@ depends-member:
 - !private ["So10UITextViewC", "scrollRangeToVisible"]
 - !private ["So10UITextViewC", "text"]
 - !private ["So10UITextViewC", "textColor"]
+- !private ["So18UITraitEnvironmentP", "AVPlayer"]
+- ["So18UITraitEnvironmentP", "AVPlayerViewController"]
 - !private ["So18UITraitEnvironmentP", "FIRDatabase"]
 - !private ["So18UITraitEnvironmentP", "FIRStorage"]
 - !private ["So18UITraitEnvironmentP", "NSMakeRange"]
 - !private ["So18UITraitEnvironmentP", "NSMutableAttributedString"]
 - !private ["So18UITraitEnvironmentP", "NSStrikethroughStyleAttributeName"]
+- !private ["So18UITraitEnvironmentP", "NSURL"]
 - !private ["So18UITraitEnvironmentP", "SVProgressHUD"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
@@ -1522,6 +1685,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "addAction"]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "attributedText"]
+- !private ["So18UITraitEnvironmentP", "avPlayer"]
+- !private ["So18UITraitEnvironmentP", "avPlayerViewController"]
 - !private ["So18UITraitEnvironmentP", "btn_approve_lvl2"]
 - !private ["So18UITraitEnvironmentP", "btn_delete_lvl2"]
 - !private ["So18UITraitEnvironmentP", "btn_delete_lvl3"]
@@ -1533,7 +1698,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "imgCaption"]
 - !private ["So18UITraitEnvironmentP", "imgIndex"]
 - !private ["So18UITraitEnvironmentP", "imgUrl"]
-- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "img_playbutton"]
+- ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "isHidden"]
 - !private ["So18UITraitEnvironmentP", "isUserInteractionEnabled"]
 - !private ["So18UITraitEnvironmentP", "layer"]
@@ -1542,6 +1708,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "myTargetFunction"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
 - !private ["So18UITraitEnvironmentP", "performInitialisation"]
+- !private ["So18UITraitEnvironmentP", "player"]
 - !private ["So18UITraitEnvironmentP", "popViewController"]
 - !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "print"]
@@ -1573,6 +1740,8 @@ depends-member:
 - !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "textColor"]
 - !private ["So6UIViewC", "titleLabel"]
+- ["So16UIViewControllerC", "AVPlayer"]
+- ["So16UIViewControllerC", "AVPlayerViewController"]
 - ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "FIRDatabase"]
 - !private ["So16UIViewControllerC", "FIRStorage"]
@@ -1580,6 +1749,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "NSMakeRange"]
 - !private ["So16UIViewControllerC", "NSMutableAttributedString"]
 - !private ["So16UIViewControllerC", "NSStrikethroughStyleAttributeName"]
+- !private ["So16UIViewControllerC", "NSURL"]
 - !private ["So16UIViewControllerC", "SVProgressHUD"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
@@ -1594,8 +1764,11 @@ depends-member:
 - !private ["So16UIViewControllerC", "URL"]
 - !private ["So16UIViewControllerC", "VC_EditCaption"]
 - !private ["So16UIViewControllerC", "VC_selectedimage"]
+- !private ["So16UIViewControllerC", "Void"]
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "approvePost"]
+- ["So16UIViewControllerC", "avPlayer"]
+- ["So16UIViewControllerC", "avPlayerViewController"]
 - ["So16UIViewControllerC", "btn_approve_lvl2"]
 - ["So16UIViewControllerC", "btn_delete_lvl2"]
 - ["So16UIViewControllerC", "btn_delete_lvl3"]
@@ -1607,12 +1780,14 @@ depends-member:
 - ["So16UIViewControllerC", "imgCaption"]
 - ["So16UIViewControllerC", "imgIndex"]
 - !private ["So16UIViewControllerC", "imgUrl"]
+- ["So16UIViewControllerC", "img_playbutton"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "modalPresentationStyle"]
 - !private ["So16UIViewControllerC", "modalTransitionStyle"]
 - ["So16UIViewControllerC", "myTargetFunction"]
 - !private ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "performInitialisation"]
+- !private ["So16UIViewControllerC", "player"]
 - !private ["So16UIViewControllerC", "popViewController"]
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "print"]
@@ -1623,11 +1798,14 @@ depends-member:
 - ["So16UIViewControllerC", "viewWillAppear"]
 - ["So16UIViewControllerC", "viewWillLayoutSubviews"]
 - ["So16UIViewControllerC", ""]
+- !private ["So37UIViewControllerTransitioningDelegateP", "AVPlayer"]
+- ["So37UIViewControllerTransitioningDelegateP", "AVPlayerViewController"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "FIRDatabase"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "FIRStorage"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "NSMakeRange"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "NSMutableAttributedString"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "NSStrikethroughStyleAttributeName"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "NSURL"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "SVProgressHUD"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertAction"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertController"]
@@ -1638,6 +1816,8 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "UITapGestureRecognizer"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "URL"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "addAction"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "avPlayer"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "avPlayerViewController"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "btn_approve_lvl2"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "btn_delete_lvl2"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "btn_delete_lvl3"]
@@ -1648,12 +1828,14 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "imgCaption"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "imgIndex"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "imgUrl"]
-- !private ["So37UIViewControllerTransitioningDelegateP", "init"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "img_playbutton"]
+- ["So37UIViewControllerTransitioningDelegateP", "init"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "modalPresentationStyle"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "modalTransitionStyle"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "myTargetFunction"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "navigationController"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "performInitialisation"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "player"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "popViewController"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "present"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "print"]
@@ -1668,6 +1850,8 @@ depends-member:
 - !private ["4Test10UserObjectC", "creatorID"]
 - !private ["4Test10UserObjectC", "isAdmin"]
 - !private ["4Test10UserObjectC", "uid"]
+- ["4Test13VC_ClickImageC", "AVPlayer"]
+- ["4Test13VC_ClickImageC", "AVPlayerViewController"]
 - ["4Test13VC_ClickImageC", "Bool"]
 - !private ["4Test13VC_ClickImageC", "FIRDatabase"]
 - !private ["4Test13VC_ClickImageC", "FIRStorage"]
@@ -1675,6 +1859,7 @@ depends-member:
 - !private ["4Test13VC_ClickImageC", "NSMakeRange"]
 - !private ["4Test13VC_ClickImageC", "NSMutableAttributedString"]
 - !private ["4Test13VC_ClickImageC", "NSStrikethroughStyleAttributeName"]
+- !private ["4Test13VC_ClickImageC", "NSURL"]
 - !private ["4Test13VC_ClickImageC", "SVProgressHUD"]
 - !private ["4Test13VC_ClickImageC", "UIAlertAction"]
 - !private ["4Test13VC_ClickImageC", "UIAlertController"]
@@ -1689,7 +1874,10 @@ depends-member:
 - !private ["4Test13VC_ClickImageC", "URL"]
 - !private ["4Test13VC_ClickImageC", "VC_EditCaption"]
 - !private ["4Test13VC_ClickImageC", "VC_selectedimage"]
+- !private ["4Test13VC_ClickImageC", "Void"]
 - ["4Test13VC_ClickImageC", "approvePost"]
+- ["4Test13VC_ClickImageC", "avPlayer"]
+- ["4Test13VC_ClickImageC", "avPlayerViewController"]
 - ["4Test13VC_ClickImageC", "btn_approve_lvl2"]
 - ["4Test13VC_ClickImageC", "btn_delete_lvl2"]
 - ["4Test13VC_ClickImageC", "btn_delete_lvl3"]
@@ -1701,6 +1889,7 @@ depends-member:
 - !private ["4Test13VC_ClickImageC", "images"]
 - ["4Test13VC_ClickImageC", "imgCaption"]
 - ["4Test13VC_ClickImageC", "imgIndex"]
+- ["4Test13VC_ClickImageC", "img_playbutton"]
 - ["4Test13VC_ClickImageC", "init"]
 - !private ["4Test13VC_ClickImageC", "myTargetFunction"]
 - !private ["4Test13VC_ClickImageC", "navigationController"]
@@ -1717,22 +1906,24 @@ depends-member:
 - !private ["4Test16VC_selectedimageC", "modalPresentationStyle"]
 - !private ["4Test16VC_selectedimageC", "modalTransitionStyle"]
 - !private ["s14_ArrayProtocolP", "caption"]
-- !private ["s14_ArrayProtocolP", "creatorID"]
 - !private ["s14_ArrayProtocolP", "dashboardApproved"]
 - !private ["s14_ArrayProtocolP", "imgId"]
 - !private ["s14_ArrayProtocolP", "key"]
 - !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s14_ArrayProtocolP", "thumbnailURL"]
 - !private ["s14_ArrayProtocolP", "uploadedBy"]
 - !private ["s14_ArrayProtocolP", "url"]
+- !private ["s14_ArrayProtocolP", "userPostID"]
 - !private ["s23_BidirectionalIndexableP", "caption"]
-- !private ["s23_BidirectionalIndexableP", "creatorID"]
 - !private ["s23_BidirectionalIndexableP", "dashboardApproved"]
 - !private ["s23_BidirectionalIndexableP", "imgId"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "key"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "thumbnailURL"]
 - !private ["s23_BidirectionalIndexableP", "uploadedBy"]
 - !private ["s23_BidirectionalIndexableP", "url"]
+- !private ["s23_BidirectionalIndexableP", "userPostID"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "attributedText"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dismiss"]
@@ -1748,13 +1939,14 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
 - !private ["s24_DestructorSafeContainerP", "caption"]
-- !private ["s24_DestructorSafeContainerP", "creatorID"]
 - !private ["s24_DestructorSafeContainerP", "dashboardApproved"]
 - !private ["s24_DestructorSafeContainerP", "imgId"]
 - !private ["s24_DestructorSafeContainerP", "key"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "thumbnailURL"]
 - !private ["s24_DestructorSafeContainerP", "uploadedBy"]
 - !private ["s24_DestructorSafeContainerP", "url"]
+- !private ["s24_DestructorSafeContainerP", "userPostID"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -1765,28 +1957,33 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "caption"]
-- !private ["s10_IndexableP", "creatorID"]
 - !private ["s10_IndexableP", "dashboardApproved"]
 - !private ["s10_IndexableP", "imgId"]
 - !private ["s10_IndexableP", "init"]
 - !private ["s10_IndexableP", "key"]
 - !private ["s10_IndexableP", "subscript"]
+- !private ["s10_IndexableP", "thumbnailURL"]
 - !private ["s10_IndexableP", "uploadedBy"]
 - !private ["s10_IndexableP", "url"]
+- !private ["s10_IndexableP", "userPostID"]
 - !private ["s14_IndexableBaseP", "caption"]
-- !private ["s14_IndexableBaseP", "creatorID"]
 - !private ["s14_IndexableBaseP", "dashboardApproved"]
 - !private ["s14_IndexableBaseP", "imgId"]
 - !private ["s14_IndexableBaseP", "init"]
 - !private ["s14_IndexableBaseP", "key"]
 - !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s14_IndexableBaseP", "thumbnailURL"]
 - !private ["s14_IndexableBaseP", "uploadedBy"]
 - !private ["s14_IndexableBaseP", "url"]
+- !private ["s14_IndexableBaseP", "userPostID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVPlayer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AVPlayerViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRDatabase"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRStorage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSMakeRange"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSMutableAttributedString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSStrikethroughStyleAttributeName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SVProgressHUD"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
@@ -1801,6 +1998,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "attributedText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "avPlayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "avPlayerViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "btn_approve_lvl2"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "btn_delete_lvl2"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "btn_delete_lvl3"]
@@ -1817,7 +2016,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imgCaption"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imgIndex"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imgUrl"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "img_playbutton"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isUserInteractionEnabled"]
@@ -1829,6 +2029,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "myTargetFunction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "performInitialisation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "play"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "player"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
@@ -1846,48 +2048,53 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateChildValues"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillLayoutSubviews"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s17_MutableIndexableP", "caption"]
-- !private ["s17_MutableIndexableP", "creatorID"]
 - !private ["s17_MutableIndexableP", "dashboardApproved"]
 - !private ["s17_MutableIndexableP", "imgId"]
 - !private ["s17_MutableIndexableP", "key"]
 - !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s17_MutableIndexableP", "thumbnailURL"]
 - !private ["s17_MutableIndexableP", "uploadedBy"]
 - !private ["s17_MutableIndexableP", "url"]
+- !private ["s17_MutableIndexableP", "userPostID"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s22_RandomAccessIndexableP", "caption"]
-- !private ["s22_RandomAccessIndexableP", "creatorID"]
 - !private ["s22_RandomAccessIndexableP", "dashboardApproved"]
 - !private ["s22_RandomAccessIndexableP", "imgId"]
 - !private ["s22_RandomAccessIndexableP", "key"]
 - !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "thumbnailURL"]
 - !private ["s22_RandomAccessIndexableP", "uploadedBy"]
 - !private ["s22_RandomAccessIndexableP", "url"]
+- !private ["s22_RandomAccessIndexableP", "userPostID"]
 - !private ["s26_RangeReplaceableIndexableP", "caption"]
-- !private ["s26_RangeReplaceableIndexableP", "creatorID"]
 - !private ["s26_RangeReplaceableIndexableP", "dashboardApproved"]
 - !private ["s26_RangeReplaceableIndexableP", "imgId"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "key"]
 - !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "thumbnailURL"]
 - !private ["s26_RangeReplaceableIndexableP", "uploadedBy"]
 - !private ["s26_RangeReplaceableIndexableP", "url"]
+- !private ["s26_RangeReplaceableIndexableP", "userPostID"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["4Test14imageDataModelV", "caption"]
-- !private ["4Test14imageDataModelV", "creatorID"]
 - !private ["4Test14imageDataModelV", "dashboardApproved"]
 - !private ["4Test14imageDataModelV", "imgId"]
 - !private ["4Test14imageDataModelV", "key"]
+- !private ["4Test14imageDataModelV", "thumbnailURL"]
 - !private ["4Test14imageDataModelV", "uploadedBy"]
 - !private ["4Test14imageDataModelV", "url"]
+- !private ["4Test14imageDataModelV", "userPostID"]
 depends-nominal:
+- !private "So8AVPlayerC"
+- "So22AVPlayerViewControllerC"
 - !private "8DropDown10AnchorViewP"
 - !private "Sa"
 - !private "s10ArraySliceV"
@@ -1934,6 +2141,7 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "So5NSURLC"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
@@ -2021,125 +2229,132 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/Spring.swiftmodule/arm.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/arm.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/Spring.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Photos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Test/Test-Bridging-Header.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/jessicavilaysak/Desktop/Shuffli 2 copy/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "85a18bad03249390a866e75848af0b1d"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AssetsLibrary.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Test/Test-Bridging-Header.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-Swift.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/shuffliprototype/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+interface-hash: "bca5a12c67b40832e9c3b8dbd99aa999"
