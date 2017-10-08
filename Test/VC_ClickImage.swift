@@ -52,12 +52,13 @@ class VC_ClickImage: UIViewController {
             print("URL");
             print(images[self.imgIndex].url);
             
-            let asset = AVAsset(url: URL(string: images[self.imgIndex].url)!);
-            let playerItem = AVPlayerItem(asset: asset);
-           
-            self.avPlayer = AVPlayer(playerItem: playerItem);
+            let asset: NSURL? = NSURL(string: images[self.imgIndex].url!)
             
-            self.avPlayerViewController.player = self.avPlayer;
+            //let playerItem = AVPlayerItem(asset: asset);
+            if let url = asset{
+                self.avPlayer = AVPlayer(url: url as URL);
+                self.avPlayerViewController.player = self.avPlayer;
+            }
             //-------up til here-----------
         }
         image.sd_setImage(with: URL(string:lUrl!))

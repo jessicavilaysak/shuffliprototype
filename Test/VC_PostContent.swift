@@ -277,14 +277,16 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         print(imgUid);
         let metadata = FIRStorageMetadata();
         var media = Data();
+       // var dataUrl : URL!
         if(!hasVideo)
         {
             metadata.contentType = "image/jpeg";
-            media = UIImageJPEGRepresentation(img, 0.2)!;
+            media = UIImageJPEGRepresentation(img, 0.2)!
+            
         }
         else
         {
-            metadata.contentType = "mp4";
+            metadata.contentType = "video/mp4";
             do {
                 media = try NSData(contentsOf: capturedVideoURL, options: NSData.ReadingOptions()) as Data
                 
@@ -306,6 +308,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                 
                 var thumbnailUID: String!;
                 let downloadURL = metadata?.downloadURL()?.absoluteString ?? "";
+                print(downloadURL)
                
                 var values = [String:Any]();
                 values = ["url": downloadURL, "uploadedBy": userObj.uid!, "description": caption, "status": "pending", "creatorID": userObj.creatorID!, "imageUid": imgUid, "category":category ?? ""];
@@ -364,7 +367,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                 }
                 else
                 {
-                    print(error);
+                    print(error?.localizedDescription as Any);
                     completion(false);
                 }
             }
