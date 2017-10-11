@@ -439,10 +439,11 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldcompany;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified userTable;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified btnReload;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)deleteUserButtonWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)viewDidLoad;
+- (void)registerPushNotification:(UIApplication * _Nonnull)application;
+- (void)tokenRefreshNotification;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)reloadList;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -512,6 +513,8 @@ SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)viewDidLoad;
+- (void)registerPushNotification:(UIApplication * _Nonnull)application;
+- (void)tokenRefreshNotification;
 - (void)viewDidAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;

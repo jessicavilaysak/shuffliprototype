@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>9EH3KDU6YR.com.shuffli.ios2</string>
+	<string>9EH3KDU6YR.com.shuffli.ios</string>
+	<key>aps-environment</key>
+	<string>development</string>
 	<key>com.apple.developer.team-identifier</key>
 	<string>9EH3KDU6YR</string>
 	<key>get-task-allow</key>
 	<true/>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>9EH3KDU6YR.com.shuffli.ios2</string>
-	</array>
 </dict>
 </plist>

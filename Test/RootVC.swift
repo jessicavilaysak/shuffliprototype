@@ -51,13 +51,13 @@ class RootVC: UIViewController {
         if let user = FIRAuth.auth()?.currentUser?.uid{
             userObj.uid = user
         }
+        
     }
-    
     func directSegue() {
         let tabs = TabBarController();
         self.present(tabs, animated: true, completion: nil)
+        
     }
-    
     
     func segueToInitialVC(vc_name: String) {
         let vc = storyboard?.instantiateViewController(withIdentifier: vc_name);

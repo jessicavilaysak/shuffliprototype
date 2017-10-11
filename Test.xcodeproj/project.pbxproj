@@ -20,7 +20,7 @@
 		2285D6E31EC3F5BA00211D41 /* VC_Creator_Viewposts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285D6E21EC3F5BA00211D41 /* VC_Creator_Viewposts.swift */; };
 		2285D6E51EC3F61F00211D41 /* CustomCellCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285D6E41EC3F61F00211D41 /* CustomCellCreator.swift */; };
 		2285D6E91EC3FCB100211D41 /* VC_Creator_Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285D6E81EC3FCB100211D41 /* VC_Creator_Signin.swift */; };
-		22B034551F4EA84500E4B357 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22B034541F4EA84500E4B357 /* GoogleService-Info.plist */; };
+		228A094F1F8DDDAD00D2D451 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 228A094E1F8DDDAD00D2D451 /* GoogleService-Info.plist */; };
 		22C1DF271EC32A1C0022DC01 /* VC_ACreator_HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1DF261EC32A1C0022DC01 /* VC_ACreator_HomePage.swift */; };
 		22C1DF2B1EC32DE40022DC01 /* CustomCellUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1DF2A1EC32DE40022DC01 /* CustomCellUser.swift */; };
 		22D3CA8F1F7CF9D400990F4D /* downloadUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3CA8E1F7CF9D400990F4D /* downloadUserModel.swift */; };
@@ -75,7 +75,8 @@
 		2285D6E21EC3F5BA00211D41 /* VC_Creator_Viewposts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_Creator_Viewposts.swift; sourceTree = "<group>"; };
 		2285D6E41EC3F61F00211D41 /* CustomCellCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellCreator.swift; sourceTree = "<group>"; };
 		2285D6E81EC3FCB100211D41 /* VC_Creator_Signin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_Creator_Signin.swift; sourceTree = "<group>"; };
-		22B034541F4EA84500E4B357 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Test/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		228A094C1F8DD11B00D2D451 /* Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test.entitlements; sourceTree = "<group>"; };
+		228A094E1F8DDDAD00D2D451 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22C1DF261EC32A1C0022DC01 /* VC_ACreator_HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC_ACreator_HomePage.swift; sourceTree = "<group>"; };
 		22C1DF2A1EC32DE40022DC01 /* CustomCellUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellUser.swift; sourceTree = "<group>"; };
 		22D3CA8E1F7CF9D400990F4D /* downloadUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = downloadUserModel.swift; sourceTree = "<group>"; };
@@ -165,6 +166,8 @@
 		617CEC1C1E8CE0D600047578 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				228A094E1F8DDDAD00D2D451 /* GoogleService-Info.plist */,
+				228A094C1F8DD11B00D2D451 /* Test.entitlements */,
 				22824D0F1F57CFD0001FF3D0 /* downloadImageModel.swift */,
 				220D371C1F4BE640003C2E24 /* UserObject.swift */,
 				617CEC1D1E8CE0D600047578 /* AppDelegate.swift */,
@@ -174,7 +177,6 @@
 				22C1DF2A1EC32DE40022DC01 /* CustomCellUser.swift */,
 				22E497971EC3142400B419E9 /* Datasource.swift */,
 				617CEC291E8CE0D600047578 /* Info.plist */,
-				22B034541F4EA84500E4B357 /* GoogleService-Info.plist */,
 				617CEC261E8CE0D600047578 /* LaunchScreen.storyboard */,
 				617CEC211E8CE0D600047578 /* Main.storyboard */,
 				615903561F846019000F2AB8 /* TuteView.xib */,
@@ -322,6 +324,11 @@
 						DevelopmentTeam = 9EH3KDU6YR;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					617CEC2D1E8CE0D600047578 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -362,7 +369,7 @@
 			files = (
 				615903571F846019000F2AB8 /* TuteView.xib in Resources */,
 				617CEC281E8CE0D600047578 /* LaunchScreen.storyboard in Resources */,
-				22B034551F4EA84500E4B357 /* GoogleService-Info.plist in Resources */,
+				228A094F1F8DDDAD00D2D451 /* GoogleService-Info.plist in Resources */,
 				617CEC251E8CE0D600047578 /* Assets.xcassets in Resources */,
 				617CEC231E8CE0D600047578 /* Main.storyboard in Resources */,
 			);
@@ -400,7 +407,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		11402B0F23922054F7C73259 /* [CP] Copy Pods Resources */ = {
@@ -433,7 +440,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		46457C5F37739A6F271D265E /* [CP] Embed Pods Frameworks */ = {
@@ -553,7 +560,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -741,11 +748,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Test/Test.entitlements;
 				DEVELOPMENT_TEAM = 9EH3KDU6YR;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuffli.ios2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuffli.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -759,11 +767,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Test/Test.entitlements;
 				DEVELOPMENT_TEAM = 9EH3KDU6YR;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuffli.ios2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuffli.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

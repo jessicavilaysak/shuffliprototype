@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/Spring.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		lJzWFRLAhPTVeMJaXR5KIBr21SQ=
+		dEVfJuD8cq94V7Z0qRdAnrWvEzo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lJzWFRLAhPTVeMJaXR5KIBr21SQ=
+			dEVfJuD8cq94V7Z0qRdAnrWvEzo=
 			</data>
 			<key>hash2</key>
 			<data>
-			2T/5UFJO4uGmE6KARwfrLl6a7NJbvMEkPxBhQ5GhfEc=
+			ymcUnvqp17W9vHGNSyYRuSJmh52BEvmLBi4anzvyLRQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

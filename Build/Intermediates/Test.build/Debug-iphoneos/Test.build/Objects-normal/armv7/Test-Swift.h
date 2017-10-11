@@ -173,10 +173,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import Foundation;
 @import CoreGraphics;
 @import ObjectiveC;
 @import FirebaseAuth;
-@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -195,6 +195,7 @@ SWIFT_CLASS("_TtC4Test11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+- (void)application:(UIApplication * _Nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * _Nonnull)deviceToken;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
@@ -439,10 +440,11 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldcompany;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified userTable;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified btnReload;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)deleteUserButtonWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)viewDidLoad;
+- (void)registerPushNotification:(UIApplication * _Nonnull)application;
+- (void)tokenRefreshNotification;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)reloadList;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -512,6 +514,8 @@ SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)viewDidLoad;
+- (void)registerPushNotification:(UIApplication * _Nonnull)application;
+- (void)tokenRefreshNotification;
 - (void)viewDidAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;

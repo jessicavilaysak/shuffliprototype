@@ -27,6 +27,7 @@ class UserObject {
     var inviteCode: String!;
     var manageuserPath: String!;
     var invitedUsersPath: String!;
+    var fcmToken: String!;
     
     func resetObj()
     {

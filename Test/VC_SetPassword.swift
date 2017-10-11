@@ -15,10 +15,12 @@ import SwiftMessageBar
 
 class VC_SetPassword: UIViewController, UITextFieldDelegate{
 
+  
     @IBOutlet weak var fld_password: UITextField!
     @IBOutlet weak var fld_confirmPassword: UITextField!
     @IBOutlet weak var fld_name: UITextField!
     var inviteRef: FIRDatabaseReference!;
+    
     @IBOutlet weak var btn_createAccount: RaisedButton!
     
     override func viewDidLoad() {
@@ -49,6 +51,7 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
         } else {
             // Not found, so remove keyboard.
             textField.resignFirstResponder()
+            
         }
         // Do not add a line break
         return false
@@ -66,7 +69,7 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
             return false;
         }
     }
-
+    
     func containsUppercase(pword: String) -> Bool
     {
         let capitalLetterRegEx  = ".*[A-Z]+.*"
@@ -132,7 +135,7 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
             if(!check)
             {
                 displayMsg += "You have entered an invalid password!\nYour password must contain: at least 6 characters, at least one uppercase, at least one lowercase, at least one number.\n"
-                SwiftMessageBar.showMessageWithTitle("Invalid Password", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: 4.5, dismiss: true, callback: nil)
+                SwiftMessageBar.showMessageWithTitle("Invalid Password", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: 3.5, dismiss: true, callback: nil)
             }
         }
         if(fld_name.text == "")
@@ -209,7 +212,10 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
                 }
             })
             self.inviteRef.setValue(["userID": userObj.uid!, "inviteCode": userObj.inviteCode!, "username": self.fld_name.text!]);
+            
         // [END_EXCLUDE]
         }
     }
+    
+
 }

@@ -17,21 +17,21 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.shuffli.ios2</string>
+	<string>com.shuffli.ios</string>
 	<key>PROJECT_ID</key>
 	<string>shuffli-53529</string>
 	<key>STORAGE_BUCKET</key>
 	<string>shuffli-53529.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:654233481843:ios:cf08c3c94af8891d</string>
 	<key>DATABASE_URL</key>
