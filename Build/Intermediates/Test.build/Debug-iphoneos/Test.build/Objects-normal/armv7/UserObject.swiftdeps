@@ -298,6 +298,7 @@ depends-member:
 - ["4Test10UserObjectC", "creatorName"]
 - ["4Test10UserObjectC", "deinit"]
 - ["4Test10UserObjectC", "email"]
+- ["4Test10UserObjectC", "fcmToken"]
 - ["4Test10UserObjectC", "firstTimeLogin"]
 - ["4Test10UserObjectC", "getAccountInfo"]
 - ["4Test10UserObjectC", "getRoleInfo"]
@@ -565,4 +566,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-interface-hash: "8425d9f2762969cfab2c445cf4a4366d"
+interface-hash: "569763ab9320aa70c723d9e02bfb0401"

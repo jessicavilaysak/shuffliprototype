@@ -2567,6 +2567,7 @@ depends-member:
 - !private ["4Test10UserObjectC", "accountName"]
 - !private ["4Test10UserObjectC", "creatorID"]
 - !private ["4Test10UserObjectC", "creatorName"]
+- !private ["4Test10UserObjectC", "fcmToken"]
 - !private ["4Test10UserObjectC", "invitedUsersPath"]
 - !private ["4Test10UserObjectC", "listenerPath"]
 - !private ["4Test10UserObjectC", "manageuserPath"]

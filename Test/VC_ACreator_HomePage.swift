@@ -178,18 +178,11 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             FIRDatabase.database().reference(withPath: userObj.invitedUsersPath).removeAllObservers();
             userObj.resetObj();
             usersUIDs = Array<String>();
-            usersObj = [String:[String:String]]();
             images = [imageDataModel]()
-            
             print("SHUFFLI | signed out.");
             SVProgressHUD.showSuccess(withStatus: "Logged out!");
-            if(userObj.uid == nil)
-            {
-                print("userObj is nil");
-            }
             SVProgressHUD.dismiss(withDelay: 1);
         }
-        
         // [END remove_auth_listener]
     }
 
@@ -198,6 +191,8 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         let refreshAlert = UIAlertController(title: "", message: "Are you sure you want to log out?", preferredStyle: UIAlertControllerStyle.actionSheet)
         
         refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
+            FIRDatabase.database().reference().child("creatorCommands/"+userObj.accountID!+"/"+userObj.creatorID!+"/deleteFcmToken/"+userObj.uid!).setValue(["delete":"true"]);
+            
             try! FIRAuth.auth()!.signOut()
             
             self.handle = FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
