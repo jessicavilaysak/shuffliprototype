@@ -27,8 +27,6 @@ struct userData {
 
 struct userDataModel {
     
-    
-    
     init() {
         
     }
@@ -100,7 +98,6 @@ struct userDataModel {
                     usersObj[imgS.key]!["code"] = (value["code"] as! String);
                 }
             }
-            
             completion(true);
         })
     }
@@ -127,11 +124,6 @@ struct userDataModel {
                 }
             }
         }
-        
-        
-        
-       
-        
     }
     
     func getUserInfo(userUid: String, completion: @escaping (Bool) -> ()) {

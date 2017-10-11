@@ -18,28 +18,12 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var fldusername: UILabel!
     @IBOutlet var fldcompany: UILabel!
     @IBOutlet weak var userTable: UITableView!
-    @IBOutlet weak var btnReload: UIImageView!
     
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
     var isInitialState: Bool!;
     
-    // @IBOutlet weak var collectionView: UICollectionView!
-    
-    func deleteUserButton(sender: UITapGestureRecognizer) {
-        var index = Int((sender.view?.tag)!);
-        //delete from data source
-        if index == dataSource.userArray.count
-        {
-            index -= 1
-        }
-        dataSource.userArray.remove(at: index);
-        
-        //tell collection view data source has changed
-        //self.collectionView.reloadData()
-    }
-    
-    
+   
     //@IBOutlet var viewusers: UICollectionView!
     override func viewDidLoad() {
        
@@ -50,10 +34,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         fldcompany.text = userObj.accountName;
         fldcreator.text = userObj.creatorName;
         fldusername.text = userObj.username;
-        /*if dataSource.userArray.count > 0
-        {
-            fld_nouser.isHidden = true
-        }*/
+       
         super.viewDidLoad()
         //viewusers.reloadData()
         self.hideKeyboardWhenTappedAround()
@@ -66,18 +47,11 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         bgImage.layer.shadowOpacity = 0.5
         bgImage.layer.shadowRadius = 10;
         bgImage.layer.shouldRasterize = true //tells IOS to cache the shadow
-        
         SVProgressHUD.setDefaultStyle(.dark)
-        
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(reloadList))
-        btnReload.addGestureRecognizer(tapGestureRecognizer)
-        btnReload.isHidden = true;
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        
         reloadList();
-        
     }
     
     func reloadList()
@@ -94,8 +68,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         }
     }
 
-    func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int
-    {
+    func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int{
         return usersUIDs.count;
     }
     
@@ -118,9 +91,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             {
                 cell.userStatus.textColor = UIColor.init(hex: "33cc33");
             }
-            
         }
-        
         return cell;
     }
     
@@ -161,26 +132,18 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
                     self.present(vc!, animated: true, completion: nil);
                     self.signingOut = true;
                     
-                    
                     //the user has now signed out so go to login view controller
                     // and remove this listener
                 }
             });
-            print("Handle Yes logic here")
         }))
-        
         refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
             print("Handle No Logic here")
         }))
-        
         present(refreshAlert, animated: true, completion: nil)
-        
-        
     }
 
-    
     @IBAction func btn_addUser(_ sender: Any) {
-        
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_adduser")
         self.present(vc!,animated: true,completion: nil)
     }
@@ -189,7 +152,6 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     {
         let userUid = usersUIDs[row];
         let user = usersObj[userUid]!;
-        
         SVProgressHUD.show(withStatus: "Deleting user...");
         if(user["status"]! == "Active")
         {
@@ -236,7 +198,6 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
             print("Handle No Logic here")
         }))
-        
         present(refreshAlert, animated: true, completion: nil)
     }
 
