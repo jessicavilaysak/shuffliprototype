@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>5TGE87DSKY.org.cocoapods.com-cosmicmind-material-fonts</string>
+	<string>9EH3KDU6YR.org.cocoapods.com-cosmicmind-material-fonts</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>5TGE87DSKY.org.cocoapods.com-cosmicmind-material-fonts</string>
+		<string>9EH3KDU6YR.org.cocoapods.com-cosmicmind-material-fonts</string>
 	</array>
 </dict>
 </plist>

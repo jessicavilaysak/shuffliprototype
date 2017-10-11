@@ -1,8 +1,8 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
 options: "fe2c84f84f9d649d6dac2fa093ea45ff"
-build_time: [1507090205, 488484000]
+build_time: [1507096072, 183058000]
 inputs:
-  "/Users/jessicavilaysak/Desktop/Shuffli/Test/InitialViewController.swift": [1507090204, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli/Test/InitialViewController.swift": [1507095964, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli/Test/VC_selectedimage.swift": [1506590707, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli/Test/ManageUserCell.swift": [1506661915, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli/Test/TabBarController.swift": [1506590707, 0]

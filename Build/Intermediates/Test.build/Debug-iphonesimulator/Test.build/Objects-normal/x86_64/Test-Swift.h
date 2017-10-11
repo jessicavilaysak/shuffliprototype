@@ -226,6 +226,7 @@ SWIFT_CLASS("_TtC4Test10CustomCell")
 
 SWIFT_CLASS("_TtC4Test17CustomCellCreator")
 @interface CustomCellCreator : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified playButton;
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified photo;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified imageCaption;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified approveStatus;
@@ -281,6 +282,18 @@ SWIFT_CLASS("_TtC4Test14ManageUserCell")
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Test6RootVC")
+@interface RootVC : UIViewController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)setUser;
+- (void)directSegue;
+- (void)segueToInitialVCWithVc_name:(NSString * _Nonnull)vc_name;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -437,18 +450,25 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 - (void)viewWillDisappear:(BOOL)animated;
 - (IBAction)logout:(id _Nonnull)sender;
 - (IBAction)btn_addUser:(id _Nonnull)sender;
+- (void)deleteUserWithRow:(NSInteger)row;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class AVPlayerViewController;
+@class AVPlayer;
 
 SWIFT_CLASS("_TtC4Test13VC_ClickImage")
 @interface VC_ClickImage : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified img_playbutton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_delete_lvl3;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_approve_lvl2;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_delete_lvl2;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified imgCaption;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
+@property (nonatomic, strong) AVPlayerViewController * _Nonnull avPlayerViewController;
+@property (nonatomic, strong) AVPlayer * _Nullable avPlayer;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)imageSelectedWithTapGestureRecognizer:(UITapGestureRecognizer * _Nonnull)tapGestureRecognizer;
@@ -475,7 +495,7 @@ SWIFT_CLASS("_TtC4Test17VC_Creator_Signin")
 - (IBAction)BtnTapped:(id _Nonnull)sender;
 - (void)directSegue;
 - (void)viewWillDisappear:(BOOL)animated;
-- (void)setUser;
+- (IBAction)goBack:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -522,11 +542,12 @@ SWIFT_CLASS("_TtC4Test13VC_InviteCode")
 @interface VC_InviteCode : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_invitecode;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_signingup;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backBtn;
 - (void)viewDidLoad;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)btn_signup:(id _Nonnull)sender;
 - (void)getInviteInfoWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (void)didReceiveMemoryWarning;
+- (IBAction)goBack:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -550,6 +571,8 @@ SWIFT_CLASS("_TtC4Test14VC_PostContent")
 @property (nonatomic) NSInteger count;
 @property (nonatomic, strong) FIRDatabaseReference * _Nullable ref;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull categoryDataSource;
+@property (nonatomic, copy) NSURL * _Null_unspecified capturedVideoURL;
+@property (nonatomic) BOOL hasVideo;
 - (void)viewDidLoad;
 - (void)viewImage;
 - (void)hideCorrespondingElementsWithType:(NSString * _Nonnull)type;
@@ -561,6 +584,8 @@ SWIFT_CLASS("_TtC4Test14VC_PostContent")
 - (IBAction)buttonPost:(id _Nonnull)sender;
 - (UIImage * _Nonnull)fixOrientationWithImg:(UIImage * _Nonnull)img SWIFT_WARN_UNUSED_RESULT;
 - (void)uploadImg;
+- (void)makePostWithValues:(NSDictionary<NSString *, id> * _Nonnull)values completion:(void (^ _Nonnull)(BOOL))completion;
+- (void)finalisePostContent;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (IBAction)buttonSelectImage:(id _Nonnull)sender;
 - (IBAction)btn_chooseCategory:(id _Nonnull)sender;

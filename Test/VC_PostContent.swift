@@ -202,7 +202,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     
     func photoLibrary()
     {
-        let myPickerController = UIImagePickerController();
+        //let myPickerController = UIImagePickerController();
         myPickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary;
         self.present(myPickerController, animated: true, completion: nil)
     }
@@ -436,6 +436,8 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     {
         hideCorrespondingElements(type: "1");
         fld_caption.text = ""
+        categoryName = nil;
+        btn_chooseCategory.setTitle("Choose Category", for: UIControlState.normal);
         let tabItems = tabBarController?.tabBar.items;
         
         for i in 0...((tabItems?.count)!-1) {
@@ -456,7 +458,6 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                 tabItem?.badgeValue = badgeValue;
             }
         }
-        btn_chooseCategory.setTitle(categoryName + " ▾", for: UIControlState.normal);
         SVProgressHUD.showSuccess(withStatus: "Uploaded!")
         SVProgressHUD.dismiss(withDelay: 2)
     }

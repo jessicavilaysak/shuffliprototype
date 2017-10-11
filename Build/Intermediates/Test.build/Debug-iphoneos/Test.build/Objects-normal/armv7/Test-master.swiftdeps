@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
 options: "1bf69d11c6d6f787cc7418b7a1ea7d18"
-build_time: [1507433508, 933723000]
+build_time: [1507688187, 483168000]
 inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/InitialViewController.swift": [1507113424, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_selectedimage.swift": [1506590707, 0]
@@ -25,5 +25,5 @@ inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/AppDelegate.swift": [1506590707, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_adduser.swift": [1506661915, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/CustomCellCreator.swift": [1507331752, 0]
-  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_PostContent.swift": [1507433310, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_PostContent.swift": [1507440248, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_Creator_Signin.swift": [1507166060, 0]
