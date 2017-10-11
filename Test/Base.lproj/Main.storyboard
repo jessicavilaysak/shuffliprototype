@@ -220,7 +220,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2KS-lg-z78" customClass="SpringImageView" customModule="Spring">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22446738_1605821302771542_656990994_n" translatesAutoresizingMaskIntoConstraints="NO" id="2KS-lg-z78" customClass="SpringImageView" customModule="Spring">
                                 <rect key="frame" x="142.5" y="32" width="90" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="6X6-Pf-hpb"/>
@@ -385,7 +385,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Bn7-Wn-PA7" customClass="SpringImageView" customModule="Spring">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22446738_1605821302771542_656990994_n" translatesAutoresizingMaskIntoConstraints="NO" id="Bn7-Wn-PA7" customClass="SpringImageView" customModule="Spring">
                                 <rect key="frame" x="142.5" y="209" width="90" height="122"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="0DZ-an-7tA"/>
@@ -1544,6 +1544,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="22446738_1605821302771542_656990994_n" width="238" height="255"/>
         <image name="390380-200" width="200" height="200"/>
         <image name="Camera copy" width="31" height="31"/>
         <image name="Camera_selected" width="31" height="31"/>
@@ -1555,7 +1556,6 @@
         <image name="add-user-symbol-of-interface" width="128" height="128"/>
         <image name="cancel1600" width="1600" height="1600"/>
         <image name="levels" width="128" height="128"/>
-        <image name="logo" width="90" height="122"/>
         <image name="play_button" width="142" height="142"/>
         <image name="profile" width="36" height="29"/>
         <image name="profile_grey" width="36" height="29"/>

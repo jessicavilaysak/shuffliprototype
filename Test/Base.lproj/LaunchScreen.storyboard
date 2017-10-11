@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="i4d-FU-bZg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22446738_1605821302771542_656990994_n" translatesAutoresizingMaskIntoConstraints="NO" id="i4d-FU-bZg">
                                 <rect key="frame" x="142" y="209" width="90" height="122"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="urE-di-Lof"/>
@@ -53,7 +53,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="22446738_1605821302771542_656990994_n" width="238" height="255"/>
         <image name="Shuffli." width="52" height="14"/>
-        <image name="logo" width="90" height="122"/>
     </resources>
 </document>
