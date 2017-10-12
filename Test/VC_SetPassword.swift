@@ -21,6 +21,9 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var fld_name: UITextField!
     var inviteRef: FIRDatabaseReference!;
     
+    var displayMessageDuration = 10.0;
+    
+    
     @IBOutlet weak var btn_createAccount: RaisedButton!
     
     override func viewDidLoad() {
@@ -109,7 +112,7 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
         if (potentialPword == "")
         {
             displayMsg += "Set your password using the fields below.";
-            SwiftMessageBar.showMessageWithTitle("Password Fields Empty", message: displayMsg, type: SwiftMessageBar.MessageType.info, duration: 4, dismiss: true, callback: nil)
+            SwiftMessageBar.showMessageWithTitle("Password Fields Empty", message: displayMsg, type: SwiftMessageBar.MessageType.info, duration: displayMessageDuration, dismiss: true, callback: nil)
         }
         else{
             if (!containsNumbers(pword: potentialPword!))
@@ -135,7 +138,7 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
             if(!check)
             {
                 displayMsg += "You have entered an invalid password!\nYour password must contain: at least 6 characters, at least one uppercase, at least one lowercase, at least one number.\n"
-                SwiftMessageBar.showMessageWithTitle("Invalid Password", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: 3.5, dismiss: true, callback: nil)
+                SwiftMessageBar.showMessageWithTitle("Invalid Password", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: displayMessageDuration, dismiss: true, callback: nil)
             }
         }
         if(fld_name.text == "")
@@ -146,7 +149,7 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
         if(!check)
         {
             //fld_displayMessage.text = displayMsg;
-            SwiftMessageBar.showMessageWithTitle("Name field empty", message: displayMsg, type: SwiftMessageBar.MessageType.info, duration: 3.5, dismiss: true, callback: nil)
+            SwiftMessageBar.showMessageWithTitle("Name field empty", message: displayMsg, type: SwiftMessageBar.MessageType.info, duration: displayMessageDuration, dismiss: true, callback: nil)
             return;
         }
         if(potentialPword == fld_confirmPassword.text!)
@@ -156,7 +159,7 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
         else
         {
             displayMsg += "Your passwords do not match.";
-            SwiftMessageBar.showMessageWithTitle("Password Mismatach", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: 3.5, dismiss: true, callback: nil)
+            SwiftMessageBar.showMessageWithTitle("Password Mismatach", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: displayMessageDuration, dismiss: true, callback: nil)
             return;
         }
         
@@ -166,7 +169,7 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
             if let error = error {
                 print("error: "+error.localizedDescription);
                 displayMsg += "Could not create new user with this email. Please contact your Shuffli administrator."
-                SwiftMessageBar.showMessageWithTitle("Could not create user", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: 3.5, dismiss: true, callback: nil)
+                SwiftMessageBar.showMessageWithTitle("Could not create user", message: displayMsg, type: SwiftMessageBar.MessageType.error, duration: self.displayMessageDuration, dismiss: true, callback: nil)
                 SVProgressHUD.dismiss();
                 return
             }

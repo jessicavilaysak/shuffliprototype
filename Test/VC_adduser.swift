@@ -77,6 +77,8 @@ class VC_adduser: UIViewController, UITextFieldDelegate {
             present(refreshAlert, animated: true, completion: nil)
             return;
         }
+        print("role");
+        print(role);
         SVProgressHUD.show(withStatus: "Sending out invite")
         //creatorCommands/{accountID}/{creatorID}/userInvite/{commandID}
         self.inviteRef = FIRDatabase.database().reference().child("creatorCommands/"+userObj.accountID!+"/"+userObj.creatorID!+"/userInvite").childByAutoId().ref;
@@ -144,7 +146,7 @@ class VC_adduser: UIViewController, UITextFieldDelegate {
         // Action triggered on selection
         usrRoles.selectionAction = { [unowned self] (index, item) in
             self.btn_userRoles.setTitle(item + " ▾", for: .normal)
-            self.userRole = item + " ▾";
+            self.userRole = item;
             
         }
     }

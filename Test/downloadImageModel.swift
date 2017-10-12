@@ -112,9 +112,15 @@ struct imageDataModel{
         var newdate : Date;
         var formatter : DateFormatter;
         if let lCreatedDate = snapshotValue?["createdDate"] as? Double{
-            print("createdDate");
+            print("createdDate..........................................");
             print(lCreatedDate);
-            newdate = Date(timeIntervalSince1970: 1507164364);
+           
+            let date = moment(lCreatedDate).fromNow();
+            print(date)
+            createdDate = ""
+ 
+   /*
+            newdate = Date(timeIntervalSince1970: lCreatedDate);
             formatter = DateFormatter();
             formatter.timeStyle = DateFormatter.Style.medium;
             formatter.dateStyle = DateFormatter.Style.medium;
@@ -122,19 +128,26 @@ struct imageDataModel{
             formatter.doesRelativeDateFormatting = true;
             createdDate = formatter.string(from: newdate)
             print(createdDate);
+ */
+
         }else{
             createdDate = nil;
         }
         if let lApprovedDate = snapshotValue?["approvedDate"] as? Double{
+            print("approveDate..........................................");
             
-            newdate = Date(timeIntervalSince1970: 1507164364);
+            let date = moment(lApprovedDate).fromNow();
+            print(key+" "+date)
+            approvedDate = ""
+            /*
+            newdate = Date(timeIntervalSince1970: lApprovedDate);
             formatter = DateFormatter();
             formatter.timeStyle = DateFormatter.Style.medium;
             formatter.dateStyle = DateFormatter.Style.medium;
             formatter.timeZone = TimeZone.current;
             formatter.doesRelativeDateFormatting = true;
             approvedDate = formatter.string(from: newdate)
-            print(approvedDate);
+            print(approvedDate);*/
         }else{
             approvedDate = "";
         }
