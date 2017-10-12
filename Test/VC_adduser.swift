@@ -19,6 +19,7 @@ class VC_adduser: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btn_userRoles: FlatButton!
     
     var userRole : String!
+    var roleObj = [String:String]()
     
     var inviteRef: FIRDatabaseReference!;
     @IBOutlet weak var btn_createuser: UIButton!
@@ -35,7 +36,8 @@ class VC_adduser: UIViewController, UITextFieldDelegate {
         fld_email.delegate = self
         fld_email.tag = 1
         
-        usrRoles.dataSource = ["m1","m2","u1"]
+        usrRoles.dataSource = ["Manager","Moderator","Creator"];
+        roleObj = ["Manager":"m1", "Moderator":"m2", "Creator":"u1"];
         
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
@@ -66,10 +68,10 @@ class VC_adduser: UIViewController, UITextFieldDelegate {
             return;
         }
         let role = userRole;
-        if(role != "m1" && role != "m2" && role != "u1")
+        if(role == nil)
         {
             print("Not valid role.");
-            let refreshAlert = UIAlertController(title: "NOTICE", message: "Please enter a valid role: [m1, m2, u1]", preferredStyle: UIAlertControllerStyle.alert)
+            let refreshAlert = UIAlertController(title: "NOTICE", message: "Please choose a role.", preferredStyle: UIAlertControllerStyle.alert)
             refreshAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action: UIAlertAction!) in
             }))
             present(refreshAlert, animated: true, completion: nil)
@@ -106,7 +108,7 @@ class VC_adduser: UIViewController, UITextFieldDelegate {
                 SVProgressHUD.dismiss(withDelay: 3)
             }
         })
-        self.inviteRef.setValue(["email": fld_email.text, "roleID": role]);
+        self.inviteRef.setValue(["email": fld_email.text, "roleID": roleObj[role!]]);
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -142,7 +144,7 @@ class VC_adduser: UIViewController, UITextFieldDelegate {
         // Action triggered on selection
         usrRoles.selectionAction = { [unowned self] (index, item) in
             self.btn_userRoles.setTitle(item + " ▾", for: .normal)
-            self.userRole = item
+            self.userRole = item + " ▾";
             
         }
     }

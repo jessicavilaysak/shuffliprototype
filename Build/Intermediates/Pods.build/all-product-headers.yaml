@@ -666,6 +666,38 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SwiftMoment-Swift.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftMoment-umbrella.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/SwiftMoment/SwiftMoment-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftMoment.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftMoment/SwiftMoment/SwiftMoment/SwiftMoment.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/SwiftMoment.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/TextFieldEffects/TextFieldEffects.framework/Headers",
       'contents': [
         {

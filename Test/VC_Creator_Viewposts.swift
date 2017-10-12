@@ -18,6 +18,7 @@ import UserNotifications
 
 class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var creatorImg: UIImageView!
     @IBOutlet var viewposts: UITableView!
     
     @IBOutlet weak var logOut: UIBarButtonItem!
@@ -28,7 +29,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var fldusername: UILabel!
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
-    
+  
     
     override func viewDidLoad() {
         signingOut = false;
@@ -45,7 +46,12 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         self.hideKeyboardWhenTappedAround();
         
         SVProgressHUD.setDefaultStyle(.dark)
+        creatorImg.sd_setShowActivityIndicatorView(true)
+        creatorImg.sd_setIndicatorStyle(.gray)
+        creatorImg.sd_setImage(with: URL(string: userObj.creatorURL!),placeholderImage: UIImage(named: "placeholder"))
         
+        creatorImg.layer.cornerRadius = creatorImg.frame.size.width/2;
+        creatorImg.clipsToBounds = true;
         //Creating a shadow
         bgImage.layer.masksToBounds = false
         bgImage.layer.shadowColor = UIColor.black.cgColor
@@ -68,55 +74,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             //print(self.images);
             self.viewposts.reloadData()
         })
-        
-        let application = UIApplication.shared
-        registerPushNotification(application)
     }
     
-    func registerPushNotification(_ application: UIApplication){
-        
-        UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in
-            
-            if granted {
-                print("Notification: Granted")
-                application.registerForRemoteNotifications()
-                // [START add_token_refresh_observer]
-                // Add observer for InstanceID token refresh callback.
-                NotificationCenter.default.addObserver(self,
-                                                       selector: #selector(self.tokenRefreshNotification),
-                                                       name: .firInstanceIDTokenRefresh,
-                                                       object: nil)
-                // [END add_token_refresh_observer]
-                self.tokenRefreshNotification();
-                
-            } else {
-                print("Notification: not granted")
-                
-            }
-        }
-    }
-    
-    func tokenRefreshNotification() {
-        // NOTE: It can be nil here
-        let refreshedToken = FIRInstanceID.instanceID().token()
-        if(refreshedToken != nil)
-        {
-            if(userObj.fcmToken != refreshedToken)
-            {
-                print("InstanceID tokenn: \(refreshedToken)")
-                FIRDatabase.database().reference().child("creatorCommands/"+userObj.accountID!+"/"+userObj.creatorID!+"/updateFcmToken/"+userObj.uid!).setValue(["token": refreshedToken]);
-                userObj.fcmToken = refreshedToken;
-            }
-            else
-            {
-                print("View posts | userObj: "+userObj.fcmToken+", token: "+refreshedToken!);
-            }
-            
-        }
-    }
-    
-    
-   
     
     override func viewDidAppear(_ animated: Bool) {
         viewposts.reloadData()

@@ -33,6 +33,7 @@ depends-top-level:
 - !private "CGSize"
 - "CastingPrecedence"
 - !private "CustomCellCreator"
+- "Dictionary"
 - !private "FIRAuth"
 - "FIRAuthStateDidChangeListenerHandle"
 - !private "FIRDataEventType"
@@ -60,14 +61,13 @@ depends-top-level:
 - "UITableViewDelegate"
 - "UIViewController"
 - !private "URL"
-- !private "UnicodeScalarType"
+- "UnicodeScalarType"
 - !private "VC_ClickImage"
 - "VC_Creator_Viewposts"
 - !private "imageDataModel"
 - !private "images"
 - !private "print"
 - !private "userObj"
-- !private "usersObj"
 - !private "usersUIDs"
 depends-member:
 - !private ["8DropDown10AnchorViewP", "approveStatus"]
@@ -233,6 +233,7 @@ depends-member:
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
 - !private ["s7CVarArgP", "setDefaultStyle"]
+- !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "shadowColor"]
 - !private ["s7CVarArgP", "shadowOffset"]
 - !private ["s7CVarArgP", "shadowOpacity"]
@@ -252,7 +253,6 @@ depends-member:
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "userObj"]
-- !private ["s7CVarArgP", "usersObj"]
 - !private ["s7CVarArgP", "usersUIDs"]
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["s7CVarArgP", "viewDidLoad"]
@@ -364,6 +364,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "setDefaultStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowColor"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowOffset"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowOpacity"]
@@ -383,7 +384,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "userObj"]
-- !private ["s28CustomDebugStringConvertibleP", "usersObj"]
 - !private ["s28CustomDebugStringConvertibleP", "usersUIDs"]
 - !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
@@ -493,6 +493,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s23CustomStringConvertibleP", "setDefaultStyle"]
+- !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "shadowColor"]
 - !private ["s23CustomStringConvertibleP", "shadowOffset"]
 - !private ["s23CustomStringConvertibleP", "shadowOpacity"]
@@ -512,7 +513,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "userObj"]
-- !private ["s23CustomStringConvertibleP", "usersObj"]
 - !private ["s23CustomStringConvertibleP", "usersUIDs"]
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
@@ -529,7 +529,6 @@ depends-member:
 - !private ["s9DecodableP", "remove"]
 - !private ["s9DecodableP", "row"]
 - !private ["s9DecodableP", "subscript"]
-- !private ["s10DictionaryV", "init"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "count"]
 - !private ["s9EncodableP", "init"]
@@ -628,6 +627,7 @@ depends-member:
 - ["s9EquatableP", "sectionIndexTitles"]
 - ["s9EquatableP", "sectionIndexTitlesForTableView"]
 - !private ["s9EquatableP", "setDefaultStyle"]
+- !private ["s9EquatableP", "setValue"]
 - !private ["s9EquatableP", "shadowColor"]
 - !private ["s9EquatableP", "shadowOffset"]
 - !private ["s9EquatableP", "shadowOpacity"]
@@ -646,7 +646,6 @@ depends-member:
 - !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "uid"]
 - !private ["s9EquatableP", "userObj"]
-- !private ["s9EquatableP", "usersObj"]
 - !private ["s9EquatableP", "usersUIDs"]
 - !private ["s9EquatableP", "value"]
 - !private ["s9EquatableP", "viewControllers"]
@@ -666,7 +665,6 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "title"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
@@ -682,10 +680,12 @@ depends-member:
 - !private ["So16FIRDatabaseQueryC", "observe"]
 - !private ["So16FIRDatabaseQueryC", "removeAllObservers"]
 - !private ["So16FIRDatabaseQueryC", "removeValue"]
+- !private ["So16FIRDatabaseQueryC", "setValue"]
 - !private ["So20FIRDatabaseReferenceC", "child"]
 - !private ["So20FIRDatabaseReferenceC", "observe"]
 - !private ["So20FIRDatabaseReferenceC", "removeAllObservers"]
 - !private ["So20FIRDatabaseReferenceC", "removeValue"]
+- !private ["So20FIRDatabaseReferenceC", "setValue"]
 - !private ["So10FIRStorageC", "reference"]
 - !private ["So10FIRStorageC", "storage"]
 - !private ["So7FIRUserC", "uid"]
@@ -781,6 +781,7 @@ depends-member:
 - ["s8HashableP", "sectionIndexTitles"]
 - ["s8HashableP", "sectionIndexTitlesForTableView"]
 - !private ["s8HashableP", "setDefaultStyle"]
+- !private ["s8HashableP", "setValue"]
 - !private ["s8HashableP", "shadowColor"]
 - !private ["s8HashableP", "shadowOffset"]
 - !private ["s8HashableP", "shadowOpacity"]
@@ -799,7 +800,6 @@ depends-member:
 - !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "uid"]
 - !private ["s8HashableP", "userObj"]
-- !private ["s8HashableP", "usersObj"]
 - !private ["s8HashableP", "usersUIDs"]
 - !private ["s8HashableP", "value"]
 - !private ["s8HashableP", "viewControllers"]
@@ -871,7 +871,6 @@ depends-member:
 - ["8Material14MotionDelegateP", "tableView"]
 - !private ["8Material14MotionDelegateP", "title"]
 - !private ["8Material14MotionDelegateP", "userObj"]
-- !private ["8Material14MotionDelegateP", "usersObj"]
 - !private ["8Material14MotionDelegateP", "usersUIDs"]
 - !private ["8Material14MotionDelegateP", "viewControllers"]
 - !private ["8Material14MotionDelegateP", "viewDidLoad"]
@@ -975,7 +974,6 @@ depends-member:
 - !private ["So8NSCodingP", "textColor"]
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "userObj"]
-- !private ["So8NSCodingP", "usersObj"]
 - !private ["So8NSCodingP", "usersUIDs"]
 - !private ["So8NSCodingP", "viewControllers"]
 - !private ["So8NSCodingP", "viewDidLoad"]
@@ -1046,7 +1044,6 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "title"]
 - !private ["So26NSExtensionRequestHandlingP", "userObj"]
-- !private ["So26NSExtensionRequestHandlingP", "usersObj"]
 - !private ["So26NSExtensionRequestHandlingP", "usersUIDs"]
 - !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -1162,6 +1159,7 @@ depends-member:
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
 - !private ["So8NSObjectC", "setDefaultStyle"]
+- !private ["So8NSObjectC", "setValue"]
 - !private ["So8NSObjectC", "shadowColor"]
 - !private ["So8NSObjectC", "shadowOffset"]
 - !private ["So8NSObjectC", "shadowOpacity"]
@@ -1180,7 +1178,6 @@ depends-member:
 - !private ["So8NSObjectC", "title"]
 - !private ["So8NSObjectC", "uid"]
 - !private ["So8NSObjectC", "userObj"]
-- !private ["So8NSObjectC", "usersObj"]
 - !private ["So8NSObjectC", "usersUIDs"]
 - !private ["So8NSObjectC", "viewControllers"]
 - ["So8NSObjectC", "viewDidAppear"]
@@ -1273,6 +1270,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "sectionIndexTitles"]
 - ["So16NSObjectProtocolP", "sectionIndexTitlesForTableView"]
 - !private ["So16NSObjectProtocolP", "setDefaultStyle"]
+- !private ["So16NSObjectProtocolP", "setValue"]
 - !private ["So16NSObjectProtocolP", "shadowColor"]
 - !private ["So16NSObjectProtocolP", "shadowOffset"]
 - !private ["So16NSObjectProtocolP", "shadowOpacity"]
@@ -1291,7 +1289,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "uid"]
 - !private ["So16NSObjectProtocolP", "userObj"]
-- !private ["So16NSObjectProtocolP", "usersObj"]
 - !private ["So16NSObjectProtocolP", "usersUIDs"]
 - !private ["So16NSObjectProtocolP", "viewControllers"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
@@ -1488,7 +1485,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "textColor"]
 - !private ["So21UIAppearanceContainerP", "title"]
 - !private ["So21UIAppearanceContainerP", "userObj"]
-- !private ["So21UIAppearanceContainerP", "usersObj"]
 - !private ["So21UIAppearanceContainerP", "usersUIDs"]
 - !private ["So21UIAppearanceContainerP", "viewControllers"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
@@ -1562,7 +1558,6 @@ depends-member:
 - ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "title"]
 - !private ["So18UIContentContainerP", "userObj"]
-- !private ["So18UIContentContainerP", "usersObj"]
 - !private ["So18UIContentContainerP", "usersUIDs"]
 - !private ["So18UIContentContainerP", "viewControllers"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
@@ -1695,7 +1690,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "textColor"]
 - !private ["So18UIFocusEnvironmentP", "title"]
 - !private ["So18UIFocusEnvironmentP", "userObj"]
-- !private ["So18UIFocusEnvironmentP", "usersObj"]
 - !private ["So18UIFocusEnvironmentP", "usersUIDs"]
 - !private ["So18UIFocusEnvironmentP", "viewControllers"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
@@ -1796,7 +1790,6 @@ depends-member:
 - ["So30UINavigationControllerDelegateP", "tableView"]
 - !private ["So30UINavigationControllerDelegateP", "title"]
 - !private ["So30UINavigationControllerDelegateP", "userObj"]
-- !private ["So30UINavigationControllerDelegateP", "usersObj"]
 - !private ["So30UINavigationControllerDelegateP", "usersUIDs"]
 - !private ["So30UINavigationControllerDelegateP", "viewControllers"]
 - !private ["So30UINavigationControllerDelegateP", "viewDidLoad"]
@@ -1882,7 +1875,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "textColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "userObj"]
-- !private ["So30UIPasteConfigurationSupportingP", "usersObj"]
 - !private ["So30UIPasteConfigurationSupportingP", "usersUIDs"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewControllers"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
@@ -1983,7 +1975,6 @@ depends-member:
 - !private ["So11UIResponderC", "textColor"]
 - !private ["So11UIResponderC", "title"]
 - !private ["So11UIResponderC", "userObj"]
-- !private ["So11UIResponderC", "usersObj"]
 - !private ["So11UIResponderC", "usersUIDs"]
 - !private ["So11UIResponderC", "viewControllers"]
 - ["So11UIResponderC", "viewDidAppear"]
@@ -2069,7 +2060,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "textColor"]
 - !private ["So30UIResponderStandardEditActionsP", "title"]
 - !private ["So30UIResponderStandardEditActionsP", "userObj"]
-- !private ["So30UIResponderStandardEditActionsP", "usersObj"]
 - !private ["So30UIResponderStandardEditActionsP", "usersUIDs"]
 - !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
@@ -2133,7 +2123,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "tabBarController"]
 - ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "userObj"]
-- !private ["So20UIScrollViewDelegateP", "usersObj"]
 - !private ["So20UIScrollViewDelegateP", "usersUIDs"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
@@ -2207,7 +2196,6 @@ depends-member:
 - ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "title"]
 - !private ["So16UIStateRestoringP", "userObj"]
-- !private ["So16UIStateRestoringP", "usersObj"]
 - !private ["So16UIStateRestoringP", "usersUIDs"]
 - !private ["So16UIStateRestoringP", "viewControllers"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -2277,7 +2265,6 @@ depends-member:
 - ["So26UITabBarControllerDelegateP", "tableView"]
 - !private ["So26UITabBarControllerDelegateP", "title"]
 - !private ["So26UITabBarControllerDelegateP", "userObj"]
-- !private ["So26UITabBarControllerDelegateP", "usersObj"]
 - !private ["So26UITabBarControllerDelegateP", "usersUIDs"]
 - !private ["So26UITabBarControllerDelegateP", "viewControllers"]
 - !private ["So26UITabBarControllerDelegateP", "viewDidLoad"]
@@ -2348,7 +2335,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "tabBarController"]
 - ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "userObj"]
-- !private ["So21UITableViewDataSourceP", "usersObj"]
 - !private ["So21UITableViewDataSourceP", "usersUIDs"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
@@ -2404,7 +2390,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "tabBarController"]
 - ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "userObj"]
-- !private ["So19UITableViewDelegateP", "usersObj"]
 - !private ["So19UITableViewDelegateP", "usersUIDs"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
@@ -2488,7 +2473,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textColor"]
 - !private ["So18UITraitEnvironmentP", "title"]
 - !private ["So18UITraitEnvironmentP", "userObj"]
-- !private ["So18UITraitEnvironmentP", "usersObj"]
 - !private ["So18UITraitEnvironmentP", "usersUIDs"]
 - !private ["So18UITraitEnvironmentP", "viewControllers"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
@@ -2589,7 +2573,6 @@ depends-member:
 - ["So16UIViewControllerC", "tableView"]
 - !private ["So16UIViewControllerC", "title"]
 - !private ["So16UIViewControllerC", "userObj"]
-- !private ["So16UIViewControllerC", "usersObj"]
 - !private ["So16UIViewControllerC", "usersUIDs"]
 - !private ["So16UIViewControllerC", "viewControllers"]
 - ["So16UIViewControllerC", "viewDidAppear"]
@@ -2656,7 +2639,6 @@ depends-member:
 - ["So37UIViewControllerTransitioningDelegateP", "tableView"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "title"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "userObj"]
-- !private ["So37UIViewControllerTransitioningDelegateP", "usersObj"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "usersUIDs"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "viewControllers"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "viewDidLoad"]
@@ -2745,7 +2727,6 @@ depends-member:
 - !private ["4Test20VC_Creator_ViewpostsC", "tabBarController"]
 - ["4Test20VC_Creator_ViewpostsC", "tableView"]
 - !private ["4Test20VC_Creator_ViewpostsC", "userObj"]
-- !private ["4Test20VC_Creator_ViewpostsC", "usersObj"]
 - !private ["4Test20VC_Creator_ViewpostsC", "usersUIDs"]
 - ["4Test20VC_Creator_ViewpostsC", "viewDidAppear"]
 - ["4Test20VC_Creator_ViewpostsC", "viewDidLoad"]
@@ -2906,6 +2887,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setDefaultStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOffset"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOpacity"]
@@ -2924,7 +2906,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "usersObj"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "usersUIDs"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
@@ -2991,12 +2972,10 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "s9DecodableP"
-- !private "s10DictionaryV"
 - !private "s9EncodableP"
 - "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -3120,6 +3099,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/SwiftMoment.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
@@ -3153,6 +3133,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
@@ -3174,6 +3155,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
@@ -3222,7 +3205,9 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
@@ -3235,6 +3220,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules/module.modulemap"
@@ -3243,5 +3229,5 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
-interface-hash: "ea9a393e782be37289cb2df7412bdd6f"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/module.modulemap"
+interface-hash: "1833bacc077de8d3b00650fc334346a2"

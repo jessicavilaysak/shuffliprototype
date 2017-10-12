@@ -70,51 +70,6 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         bgImage.layer.shouldRasterize = true //tells IOS to cache the shadow
         
         SVProgressHUD.setDefaultStyle(.dark)
-        
-        let application = UIApplication.shared
-        registerPushNotification(application)
-    }
-    
-    func registerPushNotification(_ application: UIApplication){
-        
-        UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in
-            
-            if granted {
-                print("Notification: Granted")
-                application.registerForRemoteNotifications()
-                // [START add_token_refresh_observer]
-                // Add observer for InstanceID token refresh callback.
-                NotificationCenter.default.addObserver(self,
-                                                       selector: #selector(self.tokenRefreshNotification),
-                                                       name: .firInstanceIDTokenRefresh,
-                                                       object: nil)
-                // [END add_token_refresh_observer]
-                self.tokenRefreshNotification();
-                
-            } else {
-                print("Notification: not granted")
-                
-            }
-        }
-    }
-    
-    func tokenRefreshNotification() {
-        // NOTE: It can be nil here
-        let refreshedToken = FIRInstanceID.instanceID().token()
-        if(refreshedToken != nil)
-        {
-            if(userObj.fcmToken != refreshedToken)
-            {
-                print("InstanceID tokenn: \(refreshedToken)")
-                FIRDatabase.database().reference().child("creatorCommands/"+userObj.accountID!+"/"+userObj.creatorID!+"/updateFcmToken/"+userObj.uid!).setValue(["token": refreshedToken]);
-                userObj.fcmToken = refreshedToken;
-            }
-            else
-            {
-                print("manage users | userObj: "+userObj.fcmToken+", token: "+refreshedToken!);
-            }
-            
-        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -257,7 +212,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         let user = usersObj[userUid]!;
         
         
-        let refreshAlert = UIAlertController(title: "", message: "STATUS: "+user["status"]!, preferredStyle: UIAlertControllerStyle.actionSheet)
+        let refreshAlert = UIAlertController(title: "", message: "Email: "+user["email"]!+"\nSTATUS: "+user["status"]!, preferredStyle: UIAlertControllerStyle.actionSheet)
         
         refreshAlert.addAction(UIAlertAction(title: "Delete User", style: .default, handler: { (action: UIAlertAction!) in
             let confirmDelete = UIAlertController(title: "", message: "Are you sure you wish to delete this user?", preferredStyle: UIAlertControllerStyle.alert)

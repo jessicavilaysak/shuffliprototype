@@ -3,10 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>9EH3KDU6YR.com.shuffli.ios2</string>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>9EH3KDU6YR.com.shuffli.ios2</string>
-	</array>
+	<string>9EH3KDU6YR.com.shuffli.ios</string>
+	<key>aps-environment</key>
+	<string>development</string>
 </dict>
 </plist>

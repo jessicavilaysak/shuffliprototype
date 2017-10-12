@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseInstanceID
+import FirebaseMessaging
+import UserNotifications
+import SDWebImage
 
 class TabBarController: UITabBarController {
 
@@ -47,7 +52,6 @@ class TabBarController: UITabBarController {
         }
         
         if(selectedControllerId != nil)
-            
         {
             let c = self.viewControllers?.count;
             for i in 0...((c)!-1) {
@@ -61,7 +65,51 @@ class TabBarController: UITabBarController {
             }
             
         }
-
+        
+        let application = UIApplication.shared
+        registerPushNotification(application)
+    }
+    
+    func registerPushNotification(_ application: UIApplication){
+        
+        UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in
+            
+            if granted {
+                print("Notification: Granted")
+                application.registerForRemoteNotifications()
+                // [START add_token_refresh_observer]
+                // Add observer for InstanceID token refresh callback.
+                NotificationCenter.default.addObserver(self,
+                                                       selector: #selector(self.tokenRefreshNotification),
+                                                       name: .firInstanceIDTokenRefresh,
+                                                       object: nil)
+                // [END add_token_refresh_observer]
+                self.tokenRefreshNotification();
+                
+            } else {
+                print("Notification: not granted")
+                
+            }
+        }
+    }
+    
+    func tokenRefreshNotification() {
+        // NOTE: It can be nil here
+        let refreshedToken = FIRInstanceID.instanceID().token()
+        if(refreshedToken != nil)
+        {
+            if(userObj.fcmToken != refreshedToken)
+            {
+                print("InstanceID tokenn: \(refreshedToken)")
+                FIRDatabase.database().reference().child("creatorCommands/"+userObj.accountID!+"/"+userObj.creatorID!+"/updateFcmToken/"+userObj.uid!).setValue(["token": refreshedToken]);
+                userObj.fcmToken = refreshedToken;
+            }
+            else
+            {
+                print("manage users | userObj: "+userObj.fcmToken+", token: "+refreshedToken!);
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

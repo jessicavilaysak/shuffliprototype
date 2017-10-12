@@ -16,6 +16,10 @@
 		<data>
 		oO+giRW9VD/2Z5pDkOwV0h/FgCA=
 		</data>
+		<key>Headers/GTMLogger.h</key>
+		<data>
+		OmRuSF6h+YlJBSI5GTZekaDNvGQ=
+		</data>
 		<key>Headers/GTMMethodCheck.h</key>
 		<data>
 		TVsdzuIPq74vWNS9GazJnMRLZrg=
@@ -34,7 +38,7 @@
 		</data>
 		<key>Headers/GoogleToolboxForMac-umbrella.h</key>
 		<data>
-		Dz+szlgyd0ZgoLEHzs3LxTxNcCg=
+		QBKh/w7BGyfIXjdy9CILJn4LV+I=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -78,6 +82,17 @@
 			<key>hash2</key>
 			<data>
 			h+k8C99JdcLwLHCKjSFTQ1XWYA+mcSF4sv6rI5YjTPU=
+			</data>
+		</dict>
+		<key>Headers/GTMLogger.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OmRuSF6h+YlJBSI5GTZekaDNvGQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			hFaG9/JiYkfawbcw6X5Fot3EeDqkCbtoZLbhANRT3AM=
 			</data>
 		</dict>
 		<key>Headers/GTMMethodCheck.h</key>
@@ -128,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dz+szlgyd0ZgoLEHzs3LxTxNcCg=
+			QBKh/w7BGyfIXjdy9CILJn4LV+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			3bilpcWJ113wUErnA1upla8Cn2oqyn6FLUu8QFHJFHk=
+			H7ZCYY5gygj0C8NMtSOBRXv5h0lCcqY8+Q8IyPPXvN8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

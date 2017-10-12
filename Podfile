@@ -21,6 +21,7 @@ target 'Test' do
     pod 'Material', '~> 2.0'
     pod 'SwiftMessageBar'
     pod 'Firebase/Messaging'
+    pod 'SwiftMoment'
     
     target 'TestTests' do
         inherit! :search_paths

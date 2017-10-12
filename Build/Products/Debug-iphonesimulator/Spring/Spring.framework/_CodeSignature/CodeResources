@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		WHGSmXDCPfdQPjB8+AiSMMRA8fM=
+		OVkjFkG2TzbkVtq1Lsm0Y3FLVM4=
 		</data>
 		<key>Headers/Spring-Swift.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Spring.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		xCUFA0tU8qIOOKz2AU82wvtnSW4=
+		SKNpazTmStBKaeB/WknFLCYTxJY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WHGSmXDCPfdQPjB8+AiSMMRA8fM=
+			OVkjFkG2TzbkVtq1Lsm0Y3FLVM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			LpyI175W8zuN8K1WWDm8YE7GDJgKZ+RFvcJLXIjEw1o=
+			pwGITSjvhWO3h7HE9RC+tnMeH1q9ARypP9DIDGACiGA=
 			</data>
 		</dict>
 		<key>Headers/Spring-Swift.h</key>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xCUFA0tU8qIOOKz2AU82wvtnSW4=
+			SKNpazTmStBKaeB/WknFLCYTxJY=
 			</data>
 			<key>hash2</key>
 			<data>
-			25hQRqv8538mnWVpxpSxBsJsrL9lOpr7EfmVHYwu5As=
+			iYpPQvI3hkf+ywecF4p8V1fdHe3piEHFm3wm/9SxINY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

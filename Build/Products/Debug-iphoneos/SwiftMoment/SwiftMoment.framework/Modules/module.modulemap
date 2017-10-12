@@ -1,0 +1,11 @@
+framework module SwiftMoment {
+  umbrella header "SwiftMoment-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftMoment.Swift {
+    header "SwiftMoment-Swift.h"
+    requires objc
+}

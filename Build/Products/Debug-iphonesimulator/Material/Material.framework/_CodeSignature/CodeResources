@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/Material.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		AxHoqwAGFps9S5Hu5QHg0uwIkzE=
+		TpStDBsR935QNTDAWFzp/Vxr+C8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>com.cosmicmind.material.icons.bundle/Assets.car</key>
 		<data>
-		x+Nyqc6dfd1G0sX6W6OtQCUH4+U=
+		JQhHkuO0V2Mwhng11uYPh2UfLUo=
 		</data>
 		<key>com.cosmicmind.material.icons.bundle/Info.plist</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>com.cosmicmind.material.icons.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		142/ZCyVGHipMPQJgld8K+naGGk=
+		8eKCVgzi4emiiY3oFmv3QBTAhok=
 		</data>
 		<key>com.cosmicmind.material.icons.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>com.cosmicmind.material.icons.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		xeM07kJfcfAOPHKguB3wVJHbde4=
+		tfUlHJqcWceoiS0dMc3jTTf6xCE=
 		</data>
 		<key>com.cosmicmind.material.icons.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		Jly7+mlIj5nqZ5DmvR/NARP7GeI=
+		ltinOpTYprfT9kxzKI7xoZlneXg=
 		</data>
 		<key>com.cosmicmind.material.icons.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -140,11 +140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AxHoqwAGFps9S5Hu5QHg0uwIkzE=
+			TpStDBsR935QNTDAWFzp/Vxr+C8=
 			</data>
 			<key>hash2</key>
 			<data>
-			qZdDyFctg3Bfuio/3ro1mZFYZ9ot+Mj0WMqo+Yn4bT0=
+			5TX+PXO0bSrd/z39N4q+ypI70Zq9TunxvC/SQbBFaO0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -283,11 +283,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x+Nyqc6dfd1G0sX6W6OtQCUH4+U=
+			JQhHkuO0V2Mwhng11uYPh2UfLUo=
 			</data>
 			<key>hash2</key>
 			<data>
-			vYQjtm1yQF3LDpX/EQ6wYu+jXQVKZaGMb+TvuiobNTo=
+			nB1V3RQIKVisrl9TJ68T4UVILyjRPxs5BsTGCDUbxco=
 			</data>
 		</dict>
 		<key>com.cosmicmind.material.icons.bundle/Info.plist</key>
@@ -305,11 +305,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			142/ZCyVGHipMPQJgld8K+naGGk=
+			8eKCVgzi4emiiY3oFmv3QBTAhok=
 			</data>
 			<key>hash2</key>
 			<data>
-			gEaKvpwNIuRf3eetYm1p86fYm+d8K4G1EP0bHOuhDfs=
+			bL3mLNXS491cdLgNilO45/HwwQ7OABJB0a215Be0b6c=
 			</data>
 		</dict>
 		<key>com.cosmicmind.material.icons.bundle/_CodeSignature/CodeRequirements</key>
@@ -327,22 +327,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xeM07kJfcfAOPHKguB3wVJHbde4=
+			tfUlHJqcWceoiS0dMc3jTTf6xCE=
 			</data>
 			<key>hash2</key>
 			<data>
-			CzmhKlWtdWqn1ngDgkEebMWa0Z4L/QkzjPVXeUAI7Es=
+			tJjN/qK4rBL0ghjcjpQDU39+gwR3ZwnZU1I04MlHm08=
 			</data>
 		</dict>
 		<key>com.cosmicmind.material.icons.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jly7+mlIj5nqZ5DmvR/NARP7GeI=
+			ltinOpTYprfT9kxzKI7xoZlneXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			xXtrkgs1cTgTi+fJvpAp2AobzaPwCr84nMdiUkOpkHw=
+			+Ks0O/mOLmHeVXnGivI8FMrwx/8CZr24gwq+ku1wQpM=
 			</data>
 		</dict>
 		<key>com.cosmicmind.material.icons.bundle/_CodeSignature/CodeSignature</key>

@@ -302,6 +302,8 @@ SWIFT_CLASS("_TtC4Test16TabBarController")
 @interface TabBarController : UITabBarController
 @property (nonatomic, copy) NSString * _Nullable selectedControllerId;
 - (void)viewDidLoad;
+- (void)registerPushNotification:(UIApplication * _Nonnull)application;
+- (void)tokenRefreshNotification;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -442,8 +444,6 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)deleteUserButtonWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)viewDidLoad;
-- (void)registerPushNotification:(UIApplication * _Nonnull)application;
-- (void)tokenRefreshNotification;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)reloadList;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -505,6 +505,7 @@ SWIFT_CLASS("_TtC4Test17VC_Creator_Signin")
 
 SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @interface VC_Creator_Viewposts : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified creatorImg;
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified viewposts;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified logOut;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImage;
@@ -513,8 +514,6 @@ SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)viewDidLoad;
-- (void)registerPushNotification:(UIApplication * _Nonnull)application;
-- (void)tokenRefreshNotification;
 - (void)viewDidAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -626,6 +625,7 @@ SWIFT_CLASS("_TtC4Test10VC_adduser")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_email;
 @property (nonatomic, weak) IBOutlet FlatButton * _Null_unspecified btn_userRoles;
 @property (nonatomic, copy) NSString * _Null_unspecified userRole;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull roleObj;
 @property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified inviteRef;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_createuser;
 - (void)viewDidLoad;

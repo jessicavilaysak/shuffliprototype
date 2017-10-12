@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseDatabase
+import SwiftMoment
 
 struct imageDataModel{
     
@@ -16,8 +17,10 @@ struct imageDataModel{
     let ref : FIRDatabaseReference?
     var caption : String!
     var dashboardApproved : Bool!
+    let approvedDate: String!;
     let creatorID: String!
     let uploadedBy: String!
+    let createdDate: String!;
     let approvedBy: String!
     let imgId: String!
     var userPostID : String!
@@ -30,13 +33,16 @@ struct imageDataModel{
         self.ref = nil
         self.caption = nil
         self.dashboardApproved = false;
+        self.approvedDate = nil;
         self.creatorID = nil;
         self.uploadedBy = nil;
+        self.createdDate = nil;
         self.approvedBy = nil;
         self.imgId = nil;
         self.userPostID = nil;
         self.thumbnailURL = nil;
         self.thumbnailUID = nil;
+        
     }
     
     init(snapshot: FIRDataSnapshot){
@@ -102,6 +108,35 @@ struct imageDataModel{
             thumbnailURL = lThumbnailURL;
         }else{
             thumbnailURL = "";
+        }
+        var newdate : Date;
+        var formatter : DateFormatter;
+        if let lCreatedDate = snapshotValue?["createdDate"] as? Double{
+            print("createdDate");
+            print(lCreatedDate);
+            newdate = Date(timeIntervalSince1970: 1507164364);
+            formatter = DateFormatter();
+            formatter.timeStyle = DateFormatter.Style.medium;
+            formatter.dateStyle = DateFormatter.Style.medium;
+            formatter.timeZone = TimeZone.current;
+            formatter.doesRelativeDateFormatting = true;
+            createdDate = formatter.string(from: newdate)
+            print(createdDate);
+        }else{
+            createdDate = nil;
+        }
+        if let lApprovedDate = snapshotValue?["approvedDate"] as? Double{
+            
+            newdate = Date(timeIntervalSince1970: 1507164364);
+            formatter = DateFormatter();
+            formatter.timeStyle = DateFormatter.Style.medium;
+            formatter.dateStyle = DateFormatter.Style.medium;
+            formatter.timeZone = TimeZone.current;
+            formatter.doesRelativeDateFormatting = true;
+            approvedDate = formatter.string(from: newdate)
+            print(approvedDate);
+        }else{
+            approvedDate = "";
         }
     }
     

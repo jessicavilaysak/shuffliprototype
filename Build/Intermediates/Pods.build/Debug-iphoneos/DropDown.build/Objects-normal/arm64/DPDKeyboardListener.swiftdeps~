@@ -1,0 +1,204 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "KeyboardListener"
+provides-nominal:
+- "8DropDown16KeyboardListenerC"
+provides-member:
+- ["8DropDown16KeyboardListenerC", ""]
+- ["8DropDown16KeyboardListenerC", "startListeningToKeyboard"]
+- ["8DropDown16KeyboardListenerC", "stopListeningToKeyboard"]
+provides-dynamic-lookup:
+- "keyboardWillHide"
+- "keyboardWillShow"
+depends-top-level:
+- !private "??"
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "CGRect"
+- !private "CastingPrecedence"
+- "KeyboardListener"
+- !private "NSNotification"
+- !private "NSValue"
+- !private "Notification"
+- !private "NotificationCenter"
+- !private "UIKeyboardFrameEndUserInfoKey"
+depends-member:
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["SC6CGRectV", "zero"]
+- !private ["s7CVarArgP", "Name"]
+- !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "cgRectValue"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "removeObserver"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "userInfo"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "cgRectValue"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "userInfo"]
+- ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "subscript"]
+- ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "cgRectValue"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "removeObserver"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "userInfo"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "subscript"]
+- ["s9DecodableP", "zero"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "subscript"]
+- ["s9EncodableP", "zero"]
+- !private ["s9EquatableP", "Name"]
+- !private ["s9EquatableP", "UIKeyboardWillHide"]
+- !private ["s9EquatableP", "UIKeyboardWillShow"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addObserver"]
+- !private ["s9EquatableP", "cgRectValue"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "removeObserver"]
+- !private ["s9EquatableP", "userInfo"]
+- ["s9EquatableP", "zero"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s8HashableP", "Name"]
+- !private ["s8HashableP", "UIKeyboardWillHide"]
+- !private ["s8HashableP", "UIKeyboardWillShow"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addObserver"]
+- !private ["s8HashableP", "cgRectValue"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "removeObserver"]
+- !private ["s8HashableP", "userInfo"]
+- ["8DropDown16KeyboardListenerC", "CGRect"]
+- ["8DropDown16KeyboardListenerC", "KeyboardListener"]
+- !private ["8DropDown16KeyboardListenerC", "NSNotification"]
+- !private ["8DropDown16KeyboardListenerC", "NSValue"]
+- !private ["8DropDown16KeyboardListenerC", "Notification"]
+- !private ["8DropDown16KeyboardListenerC", "NotificationCenter"]
+- !private ["8DropDown16KeyboardListenerC", "UIKeyboardFrameEndUserInfoKey"]
+- ["8DropDown16KeyboardListenerC", "deinit"]
+- ["8DropDown16KeyboardListenerC", "init"]
+- !private ["8DropDown16KeyboardListenerC", "isListening"]
+- ["8DropDown16KeyboardListenerC", "isVisible"]
+- ["8DropDown16KeyboardListenerC", "keyboardFrame"]
+- !private ["8DropDown16KeyboardListenerC", "keyboardWillHide"]
+- !private ["8DropDown16KeyboardListenerC", "keyboardWillShow"]
+- ["8DropDown16KeyboardListenerC", "sharedInstance"]
+- ["8DropDown16KeyboardListenerC", "startListeningToKeyboard"]
+- ["8DropDown16KeyboardListenerC", "stopListeningToKeyboard"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["So8NSCodingP", "Name"]
+- !private ["So8NSCodingP", "cgRectValue"]
+- !private ["So8NSCodingP", "userInfo"]
+- !private ["So9NSCopyingP", "Name"]
+- !private ["So9NSCopyingP", "cgRectValue"]
+- !private ["So9NSCopyingP", "userInfo"]
+- !private ["So14NSNotificationC", "Name"]
+- !private ["So14NSNotificationC", "userInfo"]
+- !private ["So8NSObjectC", "Name"]
+- !private ["So8NSObjectC", "addObserver"]
+- !private ["So8NSObjectC", "cgRectValue"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "removeObserver"]
+- !private ["So8NSObjectC", "userInfo"]
+- !private ["So16NSObjectProtocolP", "Name"]
+- !private ["So16NSObjectProtocolP", "addObserver"]
+- !private ["So16NSObjectProtocolP", "cgRectValue"]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So16NSObjectProtocolP", "removeObserver"]
+- !private ["So16NSObjectProtocolP", "userInfo"]
+- !private ["So14NSSecureCodingP", "cgRectValue"]
+- !private ["So7NSValueC", "cgRectValue"]
+- !private ["So14NSNotificationC4NameV", "UIKeyboardWillHide"]
+- !private ["So14NSNotificationC4NameV", "UIKeyboardWillShow"]
+- !private ["So18NotificationCenterC", "addObserver"]
+- !private ["So18NotificationCenterC", "default"]
+- !private ["So18NotificationCenterC", "removeObserver"]
+- !private ["s16RawRepresentableP", "UIKeyboardWillHide"]
+- !private ["s16RawRepresentableP", "UIKeyboardWillShow"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "Name"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "userInfo"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgRectValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
+- !private ["s21_ObjectiveCBridgeableP", "UIKeyboardWillHide"]
+- !private ["s21_ObjectiveCBridgeableP", "UIKeyboardWillShow"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s20_SwiftNewtypeWrapperP", "UIKeyboardWillHide"]
+- !private ["s20_SwiftNewtypeWrapperP", "UIKeyboardWillShow"]
+depends-nominal:
+- !private "Sb"
+- "SC6CGRectV"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- !private "s10DictionaryV"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s8HashableP"
+- "8DropDown16KeyboardListenerC"
+- !private "s25LosslessStringConvertibleP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So14NSNotificationC"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So7NSValueC"
+- !private "So14NSNotificationC4NameV"
+- !private "So18NotificationCenterC"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/DropDown/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/DropDown.build/unextended-module.modulemap"
+interface-hash: "0c18991664d9351a950f689c630e267d"

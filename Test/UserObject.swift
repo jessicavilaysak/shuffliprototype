@@ -15,6 +15,7 @@ class UserObject {
     var username: String!;
     var accountID: String!;
     var creatorName: String!;
+    var creatorURL: String!;
     var creatorID: String!;
     var uid: String!;
     var accountName: String!;
@@ -34,8 +35,8 @@ class UserObject {
         isAdmin = nil;
         username = nil;
         accountID = nil;
-        creatorID = nil;
         creatorName = nil;
+        creatorID = nil;
         uid = nil;
         accountName = nil;
         permissionToManageUsers = nil;
@@ -44,7 +45,9 @@ class UserObject {
         role = nil;
         email = nil;
         inviteCode = nil;
+        manageuserPath = nil;
         invitedUsersPath = nil;
+        fcmToken = nil;
     }
     
     init() {
@@ -160,8 +163,11 @@ class UserObject {
             if snapshot.exists() {
                 
                 recent = snapshot.value as!  NSDictionary
-                
                 self.creatorName = (recent["creatorName"] as? String)!;
+                if(recent["imageURL"] != nil)
+                {
+                    self.creatorURL = (recent["imageURL"] as? String)!;
+                }
                 completion(true);
             }});
         }});
