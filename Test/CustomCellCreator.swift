@@ -16,6 +16,7 @@ class CustomCellCreator: UITableViewCell {
     
     @IBOutlet var imageCaption: UILabel!
     
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var approveStatus: UIImageView!
     
     @IBOutlet weak var cardviewBg: UIView!

@@ -49,9 +49,12 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         userTable.delegate = self;
         userTable.dataSource = self;
         
-        fldcompany.text = userObj.accountName;
-        fldcreator.text = userObj.creatorName;
-        fldusername.text = userObj.username;
+        fldcompany.font = UIFont.fontAwesome(ofSize: 14)
+        fldcompany.text = String.fontAwesome(code: "fa-users")!.rawValue + " " + userObj.accountName;
+        fldcreator.font = UIFont.fontAwesome(ofSize: 14)
+        fldcreator.text = String.fontAwesome(code: "fa-paint-brush")!.rawValue + " " + userObj.creatorName;
+        fldusername.font = UIFont.fontAwesome(ofSize: 16)
+        fldusername.text = String.fontAwesome(code: "fa-user-circle-o")!.rawValue + " " + userObj.username;
         /*if dataSource.userArray.count > 0
         {
             fld_nouser.isHidden = true

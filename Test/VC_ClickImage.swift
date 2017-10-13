@@ -13,6 +13,7 @@ import SVProgressHUD
 import FirebaseStorage
 import AVFoundation
 import AVKit
+import SwiftMoment
 
 class VC_ClickImage: UIViewController {
     
@@ -20,16 +21,22 @@ class VC_ClickImage: UIViewController {
     @IBOutlet weak var btn_delete_lvl3: UIButton!
     @IBOutlet weak var btn_approve_lvl2: UIButton!
     @IBOutlet weak var btn_delete_lvl2: UIButton!
+    @IBOutlet weak var approvedSymbol: UIImageView!
     
+    
+    @IBOutlet weak var approvedDateLabel: UILabel!
     @IBOutlet weak var imgCaption: UITextView!
     @IBOutlet weak var image: UIImageView!
     
     var imgIndex : Int!
     var avPlayerViewController = AVPlayerViewController();
     var avPlayer : AVPlayer?;
+    var timer: Timer?
+    //var imageTime = [imageDataModel]()
     
     override func viewWillAppear(_ animated: Bool) {
         imgCaption.text = images[self.imgIndex].caption!;
+        
     }
     
     override func viewDidLoad() {
@@ -39,6 +46,8 @@ class VC_ClickImage: UIViewController {
         
         
         SVProgressHUD.setDefaultStyle(.dark)
+        
+         timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true) // TIMER
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageSelected(tapGestureRecognizer:)))
         image.addGestureRecognizer(tapGestureRecognizer)
@@ -68,11 +77,22 @@ class VC_ClickImage: UIViewController {
         if(userObj.isAdmin)
         {
             btn_delete_lvl3.isHidden = true;
+            if images[self.imgIndex].dashboardApproved{
+                approvedDateLabel.text = "Approved " + images[imgIndex].approvedDate.lowercased()
+                approvedSymbol.isHidden = false
+                approvedDateLabel.isHidden = false
+            }else{
+                btn_approve_lvl2.setTitle("Approve", for: .normal)
+                approvedSymbol.isHidden = true
+                approvedDateLabel.isHidden = true
+            }
         }
         else
         {
             btn_approve_lvl2.isHidden = true;
             btn_delete_lvl2.isHidden = true;
+            approvedSymbol.isHidden = true;
+            approvedDateLabel.isHidden = true
         }
         
         performInitialisation();
@@ -81,6 +101,19 @@ class VC_ClickImage: UIViewController {
         textViewRecognizer.addTarget(self, action: #selector(myTargetFunction))
         imgCaption.addGestureRecognizer(textViewRecognizer)
         
+    }
+    
+    func updateTime(){  // timer call back function
+        
+        let now = moment(images[imgIndex].timeUnix).fromNow().lowercased()
+        print("Printing Moment")
+        print(now)
+        approvedDateLabel.text = "Approved " + now
+       
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        timer?.invalidate()
     }
     
     func imageSelected(tapGestureRecognizer: UITapGestureRecognizer)
@@ -107,7 +140,8 @@ class VC_ClickImage: UIViewController {
         {
             let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: (btn_approve_lvl2.titleLabel?.text)!)
             attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
-            btn_approve_lvl2.titleLabel?.attributedText = attributeString;
+            //btn_approve_lvl2.titleLabel?.attributedText = attributeString;
+            btn_approve_lvl2.titleLabel?.text = "\(images[self.imgIndex].approvedDate)"
             btn_approve_lvl2.isUserInteractionEnabled = false // added this so that simon cant spam the approve button hahah
             imgCaption.textColor = UIColor.lightGray;
             imgCaption.isUserInteractionEnabled = false;
@@ -199,3 +233,4 @@ class VC_ClickImage: UIViewController {
         present(refreshAlert, animated: true, completion: nil)
     }
 }
+

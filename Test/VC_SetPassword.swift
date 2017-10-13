@@ -21,7 +21,7 @@ class VC_SetPassword: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var fld_name: UITextField!
     var inviteRef: FIRDatabaseReference!;
     
-    var displayMessageDuration = 10.0;
+    var displayMessageDuration = 20.0;
     
     
     @IBOutlet weak var btn_createAccount: RaisedButton!

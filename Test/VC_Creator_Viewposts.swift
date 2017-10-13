@@ -15,6 +15,7 @@ import FirebaseStorage
 import FirebaseMessaging
 import FirebaseInstanceID
 import UserNotifications
+import FontAwesome_swift
 
 class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -29,6 +30,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var fldusername: UILabel!
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
+    
   
     
     override func viewDidLoad() {
@@ -39,16 +41,18 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         
         viewposts.delegate = self;
         viewposts.dataSource = self;
-        
-        fldcompany.text = userObj.accountName;
-        fldcreator.text = userObj.creatorName;
-        fldusername.text = userObj.username;
+        fldcompany.font = UIFont.fontAwesome(ofSize: 14)
+        fldcompany.text = String.fontAwesome(code: "fa-users")!.rawValue + " " + userObj.accountName;
+        fldcreator.font = UIFont.fontAwesome(ofSize: 14)
+        fldcreator.text = String.fontAwesome(code: "fa-paint-brush")!.rawValue + " " + userObj.creatorName;
+        fldusername.font = UIFont.fontAwesome(ofSize: 16)
+        fldusername.text = String.fontAwesome(code: "fa-user-circle-o")!.rawValue + " " + userObj.username;
         self.hideKeyboardWhenTappedAround();
         
         SVProgressHUD.setDefaultStyle(.dark)
         creatorImg.sd_setShowActivityIndicatorView(true)
         creatorImg.sd_setIndicatorStyle(.gray)
-        creatorImg.sd_setImage(with: URL(string: userObj.creatorURL!),placeholderImage: UIImage(named: "placeholder"))
+        creatorImg.sd_setImage(with: URL(string: userObj.creatorURL!))
         
         creatorImg.layer.cornerRadius = creatorImg.frame.size.width/2;
         creatorImg.clipsToBounds = true;
@@ -72,7 +76,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             images = newImages;
             print("SHUFFLI | path: "+userObj.listenerPath+" | images count: "+String(images.count));
             //print(self.images);
-            self.viewposts.reloadData()
+           self.viewposts.reloadData()
+            
         })
     }
     
@@ -133,6 +138,12 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             cell.photo.sd_setImage(with: URL(string: lUrl!),placeholderImage: UIImage(named: "placeholder"))
             cell.imageCaption.text = image.caption;
             cell.imageCaption.textColor = UIColor.white
+            cell.dateLabel.font = UIFont.fontAwesome(ofSize: 12)
+            if image.createdDate == nil{
+                cell.dateLabel.text = ""
+            }else{
+                cell.dateLabel.text = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + image.createdDate.lowercased()
+            }
         }
         return cell
 }

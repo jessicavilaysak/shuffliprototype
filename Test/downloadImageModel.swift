@@ -17,7 +17,7 @@ struct imageDataModel{
     let ref : FIRDatabaseReference?
     var caption : String!
     var dashboardApproved : Bool!
-    let approvedDate: String!;
+    var approvedDate: String!;
     let creatorID: String!
     let uploadedBy: String!
     let createdDate: String!;
@@ -26,6 +26,8 @@ struct imageDataModel{
     var userPostID : String!
     var thumbnailURL: String!;
     var thumbnailUID: String!;
+    var timer: Timer!
+    var timeUnix: Double!
     
     init() {
         self.key = nil
@@ -42,7 +44,8 @@ struct imageDataModel{
         self.userPostID = nil;
         self.thumbnailURL = nil;
         self.thumbnailUID = nil;
-        
+        self.timeUnix = nil;
+       
     }
     
     init(snapshot: FIRDataSnapshot){
@@ -109,49 +112,65 @@ struct imageDataModel{
         }else{
             thumbnailURL = "";
         }
-        var newdate : Date;
-        var formatter : DateFormatter;
+        
         if let lCreatedDate = snapshotValue?["createdDate"] as? Double{
             print("createdDate..........................................");
             print(lCreatedDate);
            
             let date = moment(lCreatedDate).fromNow();
             print(date)
-            createdDate = ""
+            createdDate = date
  
-   /*
-            newdate = Date(timeIntervalSince1970: lCreatedDate);
-            formatter = DateFormatter();
-            formatter.timeStyle = DateFormatter.Style.medium;
-            formatter.dateStyle = DateFormatter.Style.medium;
-            formatter.timeZone = TimeZone.current;
-            formatter.doesRelativeDateFormatting = true;
-            createdDate = formatter.string(from: newdate)
-            print(createdDate);
- */
+   
 
         }else{
             createdDate = nil;
         }
         if let lApprovedDate = snapshotValue?["approvedDate"] as? Double{
             print("approveDate..........................................");
-            
+            timeUnix = lApprovedDate
             let date = moment(lApprovedDate).fromNow();
             print(key+" "+date)
-            approvedDate = ""
-            /*
-            newdate = Date(timeIntervalSince1970: lApprovedDate);
-            formatter = DateFormatter();
-            formatter.timeStyle = DateFormatter.Style.medium;
-            formatter.dateStyle = DateFormatter.Style.medium;
-            formatter.timeZone = TimeZone.current;
-            formatter.doesRelativeDateFormatting = true;
-            approvedDate = formatter.string(from: newdate)
-            print(approvedDate);*/
+            approvedDate = date
+            
         }else{
             approvedDate = "";
+            timeUnix = 0.0
         }
+    
     }
     
 }
+
+
 var images = [imageDataModel]()
+
+
+
+
+
+
+
+
+
+/*
+ newdate = Date(timeIntervalSince1970: lCreatedDate);
+ formatter = DateFormatter();
+ formatter.timeStyle = DateFormatter.Style.medium;
+ formatter.dateStyle = DateFormatter.Style.medium;
+ formatter.timeZone = TimeZone.current;
+ formatter.doesRelativeDateFormatting = true;
+ createdDate = formatter.string(from: newdate)
+ print(createdDate);
+ */
+
+
+/*
+ newdate = Date(timeIntervalSince1970: lApprovedDate);
+ formatter = DateFormatter();
+ formatter.timeStyle = DateFormatter.Style.medium;
+ formatter.dateStyle = DateFormatter.Style.medium;
+ formatter.timeZone = TimeZone.current;
+ formatter.doesRelativeDateFormatting = true;
+ approvedDate = formatter.string(from: newdate)
+ print(approvedDate);*/
