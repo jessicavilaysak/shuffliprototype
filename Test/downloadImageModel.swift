@@ -27,7 +27,9 @@ struct imageDataModel{
     var thumbnailURL: String!;
     var thumbnailUID: String!;
     var timer: Timer!
-    var timeUnix: Double!
+    var timeUnixApproved: Double!
+    var timeUnixCreated: Double!
+    var category: String!;
     
     init() {
         self.key = nil
@@ -44,8 +46,9 @@ struct imageDataModel{
         self.userPostID = nil;
         self.thumbnailURL = nil;
         self.thumbnailUID = nil;
-        self.timeUnix = nil;
-       
+        self.timeUnixApproved = nil;
+        self.timeUnixCreated = nil;
+        self.category = nil;
     }
     
     init(snapshot: FIRDataSnapshot){
@@ -116,28 +119,30 @@ struct imageDataModel{
         if let lCreatedDate = snapshotValue?["createdDate"] as? Double{
             print("createdDate..........................................");
             print(lCreatedDate);
-           
+            timeUnixCreated = lCreatedDate;
             let date = moment(lCreatedDate).fromNow();
             print(date)
             createdDate = date
- 
-   
-
         }else{
+            timeUnixCreated = 0.0;
             createdDate = nil;
         }
         if let lApprovedDate = snapshotValue?["approvedDate"] as? Double{
             print("approveDate..........................................");
-            timeUnix = lApprovedDate
+            timeUnixApproved = lApprovedDate
             let date = moment(lApprovedDate).fromNow();
             print(key+" "+date)
             approvedDate = date
             
         }else{
-            approvedDate = "";
-            timeUnix = 0.0
+            approvedDate = nil;
+            timeUnixApproved = 0.0
         }
-    
+        if let lCategory = snapshotValue?["category"] as? String{
+            category = lCategory;
+        }else{
+            category = "-";
+        }
     }
     
 }

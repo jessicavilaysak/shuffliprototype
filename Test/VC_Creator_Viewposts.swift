@@ -16,6 +16,7 @@ import FirebaseMessaging
 import FirebaseInstanceID
 import UserNotifications
 import FontAwesome_swift
+import SwiftMoment
 
 class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -30,6 +31,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var fldusername: UILabel!
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
+    var timer: Timer?
     
   
     
@@ -79,10 +81,30 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
            self.viewposts.reloadData()
             
         })
+        
     }
     
+    /*
+     * This function will update each row every 10 seconds.
+     */
+    func updateRows()
+    {
+        print("updateTime()");
+        let numberOfRows = viewposts.numberOfRows(inSection: 0);
+        var iterator = 0;
+        while(iterator < numberOfRows)
+        {
+            let indexPath = IndexPath(item: iterator, section: 0)
+            viewposts.reloadRows(at: [indexPath], with: .none)
+            iterator = iterator+1;
+        }
+    }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        //starting timer
+        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateRows), userInfo: nil, repeats: true) // TIMER
+        
         viewposts.reloadData()
         
         let tabItems = self.tabBarController?.tabBar.items;
@@ -101,6 +123,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         }else{
             logOut.title = "Log Out"
         }
+        
+        
     }
     
     
@@ -142,17 +166,28 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             if image.createdDate == nil{
                 cell.dateLabel.text = ""
             }else{
-                cell.dateLabel.text = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + image.createdDate.lowercased()
+                let timeCreated = moment(image.timeUnixCreated).fromNow().lowercased()
+                var dateLabel = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + timeCreated;
+                if(image.approvedDate != nil)
+                {
+                    let timeApproved = moment(image.timeUnixApproved).fromNow().lowercased()
+                    dateLabel += "  "+String.fontAwesome(code: "fa-check-square-o")!.rawValue + "  "+timeApproved;
+                }
+                cell.dateLabel.text = dateLabel;
             }
         }
         return cell
 }
     
     override func viewWillDisappear(_ animated: Bool) {
+        print("viewWillDisappear");
         super.viewWillDisappear(animated)
-        // [START remove_auth_listener]
+        //stopping timer when view disappears
+        timer?.invalidate();
+        timer = nil;
         if(signingOut)
         {
+            // [START remove_auth_listener]
             FIRAuth.auth()?.removeStateDidChangeListener(handle!)
             FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
             FIRDatabase.database().reference(withPath: userObj.manageuserPath).removeAllObservers();
@@ -162,9 +197,9 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             print("SHUFFLI | signed out.");
             SVProgressHUD.showSuccess(withStatus: "Logged out!");
             SVProgressHUD.dismiss(withDelay: 1);
+            // [END remove_auth_listener]
         }
         
-        // [END remove_auth_listener]
     }
     
     @IBAction func logout(_ sender: Any) {
@@ -201,11 +236,42 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        let userDataGroup = DispatchGroup() // group of completion handlers 
         let vc = storyboard?.instantiateViewController(withIdentifier: "VC_clickimage") as! VC_ClickImage;
 
         vc.imgIndex = indexPath.row;
         
-        self.navigationController?.pushViewController(vc, animated: true);
+        userDataGroup.enter();
+        FIRDatabase.database().reference().child("users/"+images[indexPath.row].uploadedBy!).observeSingleEvent(of: .value, with: { (snapshot) in
+            let recent = snapshot.value as!  NSDictionary
+            print(recent);
+            
+            if(recent["username"] != nil)
+            {
+                let username = (recent["username"] as? String)!;
+                vc.createdBy = username;
+            }
+            
+            userDataGroup.leave()
+        })
+        if(images[indexPath.row].approvedBy != nil)
+        {
+            userDataGroup.enter();
+            FIRDatabase.database().reference().child("users/"+images[indexPath.row].approvedBy!).observeSingleEvent(of: .value, with: { (snapshot) in
+                let recent = snapshot.value as!  NSDictionary
+                print(recent);
+                if(recent["approvedBy"] != nil)
+                {
+                    let lApproved = (recent["approvedBy"] as? String)!;
+                    vc.approvedBy = lApproved;
+                }
+                userDataGroup.leave()
+            })
+        }
+        userDataGroup.notify(queue: .main) {
+            self.navigationController?.pushViewController(vc, animated: true);
+            
+        }
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

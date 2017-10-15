@@ -14,6 +14,7 @@ import FirebaseStorage
 import AVFoundation
 import AVKit
 import SwiftMoment
+import FontAwesome_swift
 
 class VC_ClickImage: UIViewController {
     
@@ -23,7 +24,8 @@ class VC_ClickImage: UIViewController {
     @IBOutlet weak var btn_delete_lvl2: UIButton!
     @IBOutlet weak var approvedSymbol: UIImageView!
     
-    
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var createdDateLabel: UILabel!
     @IBOutlet weak var approvedDateLabel: UILabel!
     @IBOutlet weak var imgCaption: UITextView!
     @IBOutlet weak var image: UIImageView!
@@ -32,10 +34,10 @@ class VC_ClickImage: UIViewController {
     var avPlayerViewController = AVPlayerViewController();
     var avPlayer : AVPlayer?;
     var timer: Timer?
-    //var imageTime = [imageDataModel]()
+    var createdBy: String!;
+    var approvedBy: String!;
     
     override func viewWillAppear(_ animated: Bool) {
-        imgCaption.text = images[self.imgIndex].caption!;
         
     }
     
@@ -101,15 +103,22 @@ class VC_ClickImage: UIViewController {
         textViewRecognizer.addTarget(self, action: #selector(myTargetFunction))
         imgCaption.addGestureRecognizer(textViewRecognizer)
         
+        updateTime();
+        
+        imgCaption.text = images[self.imgIndex].caption!;
+        categoryLabel.text = String.fontAwesome(code: "fa-tag")!.rawValue + "  "+images[self.imgIndex].category;
     }
     
     func updateTime(){  // timer call back function
         
-        let now = moment(images[imgIndex].timeUnix).fromNow().lowercased()
-        print("Printing Moment")
-        print(now)
-        approvedDateLabel.text = "Approved " + now
-       
+        let createdDate = moment(images[imgIndex].timeUnixCreated).fromNow().lowercased()
+        createdDateLabel.text = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + createdDate+"  "+String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+createdBy!;
+        
+        if(images[imgIndex].approvedDate != nil)
+        {
+            let approvedDate = moment(images[imgIndex].timeUnixApproved).fromNow().lowercased()
+            approvedDateLabel.text = String.fontAwesome(code: "fa-check-square-o")!.rawValue + "  " + approvedDate+"  "+String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+createdBy!;
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

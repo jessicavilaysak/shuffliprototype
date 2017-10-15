@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "0d410208efc0b8b9986075a9e2a4d76f"
+build_time: [1508034638, 704707000]
+inputs:
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FontAwesome.swift/FontAwesome/Enum.swift": [1507935860, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FontAwesome.swift/FontAwesome/FontAwesome.swift": [1507935860, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FontAwesome.swift/FontAwesome/FontAwesomeView.swift": [1507935860, 0]

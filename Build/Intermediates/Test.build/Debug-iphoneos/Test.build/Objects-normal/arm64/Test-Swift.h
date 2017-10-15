@@ -229,6 +229,7 @@ SWIFT_CLASS("_TtC4Test17CustomCellCreator")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified playButton;
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified photo;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified imageCaption;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified approveStatus;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified cardviewBg;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified vfView;
@@ -459,6 +460,7 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 
 @class AVPlayerViewController;
 @class AVPlayer;
+@class NSTimer;
 
 SWIFT_CLASS("_TtC4Test13VC_ClickImage")
 @interface VC_ClickImage : UIViewController
@@ -466,12 +468,21 @@ SWIFT_CLASS("_TtC4Test13VC_ClickImage")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_delete_lvl3;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_approve_lvl2;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_delete_lvl2;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified approvedSymbol;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified createdDateLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified approvedDateLabel;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified imgCaption;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
 @property (nonatomic, strong) AVPlayerViewController * _Nonnull avPlayerViewController;
 @property (nonatomic, strong) AVPlayer * _Nullable avPlayer;
+@property (nonatomic, strong) NSTimer * _Nullable timer;
+@property (nonatomic, copy) NSString * _Null_unspecified createdBy;
+@property (nonatomic, copy) NSString * _Null_unspecified approvedBy;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (void)updateTime;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)imageSelectedWithTapGestureRecognizer:(UITapGestureRecognizer * _Nonnull)tapGestureRecognizer;
 - (void)performInitialisation;
 - (void)viewWillLayoutSubviews;
@@ -513,7 +524,9 @@ SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fldcreator;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
+@property (nonatomic, strong) NSTimer * _Nullable timer;
 - (void)viewDidLoad;
+- (void)updateRows;
 - (void)viewDidAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -605,6 +618,7 @@ SWIFT_CLASS("_TtC4Test14VC_SetPassword")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_confirmPassword;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_name;
 @property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified inviteRef;
+@property (nonatomic) double displayMessageDuration;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified btn_createAccount;
 - (void)viewDidLoad;
 - (void)viewWillDisappear:(BOOL)animated;

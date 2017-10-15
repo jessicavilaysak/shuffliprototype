@@ -31,6 +31,33 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FontAwesome.swift-umbrella.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/FontAwesome.swift/FontAwesome.swift-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FontAwesome_swift-Swift.h",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/FontAwesome.swift.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
       'contents': [
         {
