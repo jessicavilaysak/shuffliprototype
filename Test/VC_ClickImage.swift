@@ -79,14 +79,17 @@ class VC_ClickImage: UIViewController {
         if(userObj.isAdmin)
         {
             btn_delete_lvl3.isHidden = true;
+            createdDateLabel.isHidden = false
             if images[self.imgIndex].dashboardApproved{
                 approvedDateLabel.text = "Approved " + images[imgIndex].approvedDate.lowercased()
                 approvedSymbol.isHidden = false
                 approvedDateLabel.isHidden = false
+              
             }else{
                 btn_approve_lvl2.setTitle("Approve", for: .normal)
                 approvedSymbol.isHidden = true
                 approvedDateLabel.isHidden = true
+                
             }
         }
         else
@@ -95,6 +98,7 @@ class VC_ClickImage: UIViewController {
             btn_delete_lvl2.isHidden = true;
             approvedSymbol.isHidden = true;
             approvedDateLabel.isHidden = true
+            createdDateLabel.isHidden = true
         }
         
         performInitialisation();
@@ -106,17 +110,24 @@ class VC_ClickImage: UIViewController {
         updateTime();
         
         imgCaption.text = images[self.imgIndex].caption!;
-        categoryLabel.text = String.fontAwesome(code: "fa-tag")!.rawValue + "  "+images[self.imgIndex].category;
+        if images[self.imgIndex].category != ""{
+            categoryLabel.font = UIFont.fontAwesome(ofSize: 15)
+            categoryLabel.text = String.fontAwesome(code: "fa-tag")!.rawValue + "  "+images[self.imgIndex].category;
+        }else{
+            categoryLabel.isHidden = true
+        }
     }
     
     func updateTime(){  // timer call back function
         
         let createdDate = moment(images[imgIndex].timeUnixCreated).fromNow().lowercased()
+        createdDateLabel.font = UIFont.fontAwesome(ofSize: 15)
         createdDateLabel.text = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + createdDate+"  "+String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+createdBy!;
         
         if(images[imgIndex].approvedDate != nil)
         {
             let approvedDate = moment(images[imgIndex].timeUnixApproved).fromNow().lowercased()
+            approvedDateLabel.font = UIFont.fontAwesome(ofSize: 15)
             approvedDateLabel.text = String.fontAwesome(code: "fa-check-square-o")!.rawValue + "  " + approvedDate+"  "+String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+createdBy!;
         }
     }
