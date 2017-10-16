@@ -13,7 +13,9 @@ class TuteView: UIView {
     @IBOutlet weak var tuteTitle: UILabel!
     @IBOutlet weak var tuteImage: UIImageView!
     @IBOutlet weak var tuteDescription: UILabel!
-    
+    @IBOutlet weak var firstTileLabel: UILabel!
+    @IBOutlet weak var firstTileDescription: UILabel!
+    @IBOutlet weak var firstTileLogo: UIImageView!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

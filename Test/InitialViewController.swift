@@ -27,11 +27,12 @@ class InitialViewController: UIViewController, UIScrollViewDelegate {
         let vc = storyboard?.instantiateViewController(withIdentifier: vc_name);
         present(vc!, animated: true, completion: nil);
     }
-    
-    let tute1 = ["title":"Take A Photo", "descripiton": "Take an interesting photograph.", "image": "taking-a-selfie"]
-    let tute2 = ["title":"Add Caption", "descripiton": "Say something about your photo.", "image": "writing"]
-    let tute3 = ["title":"Post It", "descripiton": "Post it to the Shuffli platform.", "image": "post"]
-    let tute4 = ["title":"Approval", "descripiton": "Wait for your photo to be approved.", "image": "approved-signal"]
+    let tute0 = ["title":"Shuffli", "descripiton": "", "image": ""]
+    let tute1 = ["title":"Create Content", "descripiton": "Take a photo, video, or choose from your library.", "image": "taking-a-selfie"]
+    let tute2 = ["title":"Caption", "descripiton": "Write a caption for your post.", "image": "writing"]
+    let tute3 = ["title":"Connect", "descripiton": "Send your content to your team's social media publisher.", "image": "post"]
+    let tute4 = ["title":"Publish", "descripiton": "Your post is awaiting approval before being shared via your team's social media pages. Simple.", "image": "approved-signalGrey"]
+    let tute5 = ["title":"Shuffli.", "descripiton": "Collect great content from your team, preview and post to the platform of your choice. Simple.", "image": "22446738_1605821302771542_656990994_n"]
     
     var tuteArray = [Dictionary<String,String>]()
     
@@ -39,10 +40,11 @@ class InitialViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        tuteArray = [tute1,tute2,tute3,tute4]
+        tuteArray = [tute0,tute1,tute2,tute3,tute4,tute5]
         scrollView.isPagingEnabled = true
         scrollView.contentSize = CGSize(width: self.view.bounds.width * CGFloat(tuteArray.count), height: 50)
             
+        
         
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.showsVerticalScrollIndicator = false
@@ -61,6 +63,20 @@ class InitialViewController: UIViewController, UIScrollViewDelegate {
     func loadTutes() {
         for (index,tute) in tuteArray.enumerated(){
             if let tuteView = Bundle.main.loadNibNamed("TuteView", owner: self, options: nil)?.first as? TuteView {
+                
+                if index != 0{
+                    tuteView.firstTileLabel.isHidden = true
+                    tuteView.firstTileLogo.isHidden = true
+                    tuteView.firstTileDescription.isHidden = true
+                    
+                }
+                if index == tuteArray.count - 1{
+                    
+                    tuteView.firstTileLogo.isHidden = false
+                    tuteView.firstTileDescription.isHidden = false
+                    tuteView.firstTileDescription.text = "To learn more visit: www.shuffli.com"
+                    tuteView.tuteImage.isHidden = true
+                }
                 
                 tuteView.tuteImage.image = UIImage(named:tute["image"]!)
                 tuteView.tuteTitle.text = tute["title"]

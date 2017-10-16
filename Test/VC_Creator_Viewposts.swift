@@ -58,6 +58,8 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         
         creatorImg.layer.cornerRadius = creatorImg.frame.size.width/2;
         creatorImg.clipsToBounds = true;
+        creatorImg.layer.borderWidth = 3.0
+        creatorImg.layer.borderColor = UIColor.lightGray.cgColor
         //Creating a shadow
         bgImage.layer.masksToBounds = false
         bgImage.layer.shadowColor = UIColor.black.cgColor

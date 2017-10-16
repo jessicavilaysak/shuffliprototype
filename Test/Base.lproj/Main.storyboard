@@ -503,7 +503,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g27-Pd-99j" customClass="FlatButton" customModule="Material">
                                 <rect key="frame" x="36" y="544" width="303" height="60"/>
-                                <color key="backgroundColor" red="0.45762983889999997" green="0.84501534869999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.47161698340000002" blue="0.41701936719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="o8p-ry-bC0"/>
                                 </constraints>
@@ -530,9 +530,19 @@
                                 <color key="pageIndicatorTintColor" red="1" green="0.47161698340000002" blue="0.41701936719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By using Shuffli, you agree to our Terms of Use and Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tj-w4-Qbo">
+                                <rect key="frame" x="26" y="612" width="323" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="mRa-y1-mSk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5Tj-w4-Qbo" firstAttribute="leading" secondItem="CXJ-zb-v9e" secondAttribute="leadingMargin" constant="10" id="0xt-UA-XJj"/>
                             <constraint firstItem="jbf-3i-0kd" firstAttribute="leading" secondItem="CXJ-zb-v9e" secondAttribute="leading" id="77w-qe-yAg"/>
                             <constraint firstItem="g27-Pd-99j" firstAttribute="leading" secondItem="CXJ-zb-v9e" secondAttribute="leadingMargin" constant="20" id="87g-56-IPy"/>
                             <constraint firstItem="jbf-3i-0kd" firstAttribute="top" secondItem="KBz-d6-ROD" secondAttribute="bottom" constant="-20" id="GY0-NL-UdW"/>
@@ -542,11 +552,13 @@
                             <constraint firstItem="yYX-g0-c5W" firstAttribute="top" secondItem="Lxp-IG-xJZ" secondAttribute="bottom" constant="18" id="V8F-aR-TmI"/>
                             <constraint firstAttribute="trailing" secondItem="jbf-3i-0kd" secondAttribute="trailing" id="WtL-f9-PVO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g27-Pd-99j" secondAttribute="trailing" constant="20" id="YVx-Gf-3hV"/>
+                            <constraint firstItem="hDG-7X-xMn" firstAttribute="top" secondItem="5Tj-w4-Qbo" secondAttribute="bottom" constant="8" id="cF3-CI-dNC"/>
                             <constraint firstItem="yYX-g0-c5W" firstAttribute="leading" secondItem="CXJ-zb-v9e" secondAttribute="leadingMargin" constant="20" id="dNj-hs-5wW"/>
                             <constraint firstItem="g27-Pd-99j" firstAttribute="top" secondItem="yYX-g0-c5W" secondAttribute="bottom" constant="8" id="fqQ-i0-pJe"/>
                             <constraint firstItem="Lxp-IG-xJZ" firstAttribute="top" secondItem="jbf-3i-0kd" secondAttribute="bottom" constant="-2" id="ftm-FI-9LO"/>
                             <constraint firstItem="Lxp-IG-xJZ" firstAttribute="leading" secondItem="CXJ-zb-v9e" secondAttribute="leadingMargin" constant="113" id="gyw-eJ-jmH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yYX-g0-c5W" secondAttribute="trailing" constant="20" id="o4I-II-Fov"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Tj-w4-Qbo" secondAttribute="trailing" constant="10" id="yyt-S8-DuY"/>
                         </constraints>
                     </view>
                     <connections>

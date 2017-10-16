@@ -22,42 +22,82 @@
                         <constraint firstAttribute="height" constant="30" id="kFe-Nr-aea"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" red="1" green="0.47161698340000002" blue="0.41701936719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EAJ-d9-Oh9" customClass="SpringImageView" customModule="Spring">
-                    <rect key="frame" x="88" y="176" width="198" height="183"/>
+                    <rect key="frame" x="88" y="186" width="198" height="183"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="198" id="64U-Sf-GxQ"/>
                         <constraint firstAttribute="height" constant="183" id="Vyk-PK-pbg"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ5-eg-NbM">
-                    <rect key="frame" x="63" y="72" width="248" height="53"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22446738_1605821302771542_656990994_n" translatesAutoresizingMaskIntoConstraints="NO" id="CUY-y2-hft" customClass="SpringImageView" customModule="Spring">
+                    <rect key="frame" x="264" y="0.0" width="34" height="34"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="53" id="Ii1-6q-8s0"/>
+                        <constraint firstAttribute="width" constant="34" id="BC3-KB-IIN"/>
+                        <constraint firstAttribute="height" constant="34" id="voO-E0-Mes"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ5-eg-NbM">
+                    <rect key="frame" x="63" y="62" width="248" height="116"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="116" id="Ii1-6q-8s0"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shuffli connects content creators with social medial publishers." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7o-It-t2N">
+                    <rect key="frame" x="63" y="184" width="248" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="sI2-yy-2mw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social media for teams made simple." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB9-1c-IxL">
+                    <rect key="frame" x="75" y="83" width="223" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="7Mf-2W-u0l"/>
+                        <constraint firstAttribute="height" constant="41" id="F8V-2n-W9X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="EAJ-d9-Oh9" firstAttribute="top" secondItem="uQ5-eg-NbM" secondAttribute="bottom" constant="51" id="8Qi-BX-Tfv"/>
+                <constraint firstItem="IB9-1c-IxL" firstAttribute="top" secondItem="CUY-y2-hft" secondAttribute="bottom" constant="49" id="7eE-5d-9yF"/>
+                <constraint firstItem="EAJ-d9-Oh9" firstAttribute="top" secondItem="uQ5-eg-NbM" secondAttribute="bottom" constant="8" id="8Qi-BX-Tfv"/>
                 <constraint firstItem="uQ5-eg-NbM" firstAttribute="centerX" secondItem="EAJ-d9-Oh9" secondAttribute="centerX" constant="0.5" id="AIz-te-mEC"/>
+                <constraint firstItem="CUY-y2-hft" firstAttribute="leading" secondItem="Vt2-fD-IUi" secondAttribute="trailing" constant="-58" id="FVh-2S-8od"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="i7o-It-t2N" secondAttribute="trailing" constant="64" id="JSX-ji-zUJ"/>
+                <constraint firstItem="CUY-y2-hft" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RdD-y5-hcy"/>
+                <constraint firstItem="i7o-It-t2N" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="63" id="XJc-EL-mmv"/>
+                <constraint firstItem="CUY-y2-hft" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-77" id="ZFm-A3-lbj"/>
+                <constraint firstItem="i7o-It-t2N" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="184" id="c4K-pD-7My"/>
                 <constraint firstItem="uQ5-eg-NbM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="63" id="d2D-VX-IBw"/>
                 <constraint firstItem="Vt2-fD-IUi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="d68-Ac-Ap2"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EAJ-d9-Oh9" secondAttribute="trailing" constant="89" id="eGc-MR-sCi"/>
                 <constraint firstItem="EAJ-d9-Oh9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="88" id="fg8-Yb-CnC"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EAJ-d9-Oh9" secondAttribute="bottom" constant="41" id="iD6-d2-Bbm"/>
-                <constraint firstItem="uQ5-eg-NbM" firstAttribute="top" secondItem="Vt2-fD-IUi" secondAttribute="bottom" constant="22" id="pqq-u4-TzE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="i7o-It-t2N" secondAttribute="bottom" constant="145" id="gPb-w4-Tnk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IB9-1c-IxL" secondAttribute="trailing" constant="77" id="gSF-3B-BUx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EAJ-d9-Oh9" secondAttribute="bottom" constant="31" id="iD6-d2-Bbm"/>
+                <constraint firstItem="IB9-1c-IxL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="75" id="ilt-Bo-O2U"/>
+                <constraint firstItem="uQ5-eg-NbM" firstAttribute="top" secondItem="Vt2-fD-IUi" secondAttribute="bottom" constant="12" id="pqq-u4-TzE"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vt2-fD-IUi" secondAttribute="trailing" constant="53" id="u7I-CE-EOo"/>
+                <constraint firstItem="IB9-1c-IxL" firstAttribute="top" secondItem="Vt2-fD-IUi" secondAttribute="bottom" constant="33" id="zXj-dY-aYg"/>
                 <constraint firstItem="Vt2-fD-IUi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="53" id="zfc-7r-OTW"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="firstTileDescription" destination="i7o-It-t2N" id="MCb-Wi-qMm"/>
+                <outlet property="firstTileLabel" destination="IB9-1c-IxL" id="M1F-kq-0k1"/>
+                <outlet property="firstTileLogo" destination="CUY-y2-hft" id="apV-ER-OG6"/>
                 <outlet property="tuteDescription" destination="uQ5-eg-NbM" id="ZiA-p6-e42"/>
                 <outlet property="tuteImage" destination="EAJ-d9-Oh9" id="k6g-6z-bqN"/>
                 <outlet property="tuteTitle" destination="Vt2-fD-IUi" id="2Y3-s1-tkk"/>
@@ -65,4 +105,7 @@
             <point key="canvasLocation" x="-156.5" y="130"/>
         </view>
     </objects>
+    <resources>
+        <image name="22446738_1605821302771542_656990994_n" width="238" height="255"/>
+    </resources>
 </document>
