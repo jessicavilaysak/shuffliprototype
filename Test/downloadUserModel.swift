@@ -56,7 +56,7 @@ struct userDataModel {
                     if(snapshot.exists())
                     {
                         let value = snapshot.value as? NSDictionary
-                        print("inside snapshot");
+                        //print("inside snapshot");
                         var lUsername = "";
                         if(value!["username"] != nil)
                         {
@@ -142,7 +142,7 @@ struct userDataModel {
                 let s = snapshot.value as! NSDictionary;
                 let username = s["username"] as!  String;
                 var email = "";
-                print("username: "+username);
+                //print("username: "+username);
                 if(s["email"] != nil)
                 {
                     email = s["email"] as! String;

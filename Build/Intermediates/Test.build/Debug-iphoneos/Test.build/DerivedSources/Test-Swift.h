@@ -261,10 +261,12 @@ SWIFT_CLASS("_TtC4Test21InitialViewController")
 - (IBAction)btnAdminCreator:(id _Nonnull)sender;
 - (IBAction)btnCreator:(id _Nonnull)sender;
 - (void)segueToLoginWithVc_name:(NSString * _Nonnull)vc_name;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute0;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute1;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute2;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute3;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute4;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute5;
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull tuteArray;
 - (void)viewDidLoad;
 - (void)loadTutes;
@@ -421,6 +423,9 @@ SWIFT_CLASS("_TtC4Test8TuteView")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteTitle;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified tuteImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteDescription;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified firstTileLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified firstTileDescription;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified firstTileLogo;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -665,25 +670,6 @@ SWIFT_CLASS("_TtC4Test16VC_selectedimage")
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btnExit:(id _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIStackView;
-@class UISegmentedControl;
-
-SWIFT_CLASS("_TtC4Test14ViewController")
-@interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified signinSelector;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified signinLabel;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginButton;
-@property (nonatomic) BOOL isLogin;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (IBAction)loginSelectorChanged:(UISegmentedControl * _Nonnull)sender;
-- (IBAction)loginButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

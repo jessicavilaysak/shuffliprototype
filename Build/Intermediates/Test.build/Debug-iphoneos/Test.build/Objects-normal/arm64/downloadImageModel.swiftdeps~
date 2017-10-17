@@ -150,6 +150,7 @@ depends-member:
 - ["4Test14imageDataModelV", "approvedBy"]
 - ["4Test14imageDataModelV", "approvedDate"]
 - ["4Test14imageDataModelV", "caption"]
+- ["4Test14imageDataModelV", "category"]
 - ["4Test14imageDataModelV", "createdDate"]
 - ["4Test14imageDataModelV", "creatorID"]
 - ["4Test14imageDataModelV", "dashboardApproved"]
@@ -374,4 +375,4 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Modules/module.modulemap"
-interface-hash: "09815d1b2df02f0b844189f6bf34f8d4"
+interface-hash: "2d4d3ea6d7e46a1f79fa4fdd88018335"

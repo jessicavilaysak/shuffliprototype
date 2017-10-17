@@ -252,6 +252,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             {
                 let username = (recent["username"] as? String)!;
                 vc.createdBy = username;
+                print("uploadedBy: "+username);
             }
             
             userDataGroup.leave()
@@ -262,10 +263,11 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             FIRDatabase.database().reference().child("users/"+images[indexPath.row].approvedBy!).observeSingleEvent(of: .value, with: { (snapshot) in
                 let recent = snapshot.value as!  NSDictionary
                 print(recent);
-                if(recent["approvedBy"] != nil)
+                if(recent["username"] != nil)
                 {
-                    let lApproved = (recent["approvedBy"] as? String)!;
+                    let lApproved = (recent["username"] as? String)!;
                     vc.approvedBy = lApproved;
+                    print("approvedBy: "+lApproved)
                 }
                 userDataGroup.leave()
             })

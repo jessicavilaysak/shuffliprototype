@@ -214,8 +214,17 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         let userUid = usersUIDs[indexPath.row];
         let user = usersObj[userUid]!;
         
-        
-        let refreshAlert = UIAlertController(title: "", message: "Email: "+user["email"]!+"\nSTATUS: "+user["status"]!, preferredStyle: UIAlertControllerStyle.actionSheet)
+        var msg = "Email: ";
+        if(user["email"] != nil)
+        {
+            msg += user["email"]!;
+        }
+        msg += "\nSTATUS: ";
+        if(user["status"] != nil)
+        {
+            msg += user["status"]!;
+        }
+        let refreshAlert = UIAlertController(title: "", message: msg, preferredStyle: UIAlertControllerStyle.actionSheet)
         
         refreshAlert.addAction(UIAlertAction(title: "Delete User", style: .default, handler: { (action: UIAlertAction!) in
             let confirmDelete = UIAlertController(title: "", message: "Are you sure you wish to delete this user?", preferredStyle: UIAlertControllerStyle.alert)

@@ -76,30 +76,7 @@ class VC_ClickImage: UIViewController {
         imgCaption.text = images[self.imgIndex].caption!;
         imgCaption.layer.cornerRadius = 4
         
-        if(userObj.isAdmin)
-        {
-            btn_delete_lvl3.isHidden = true;
-            createdDateLabel.isHidden = false
-            if images[self.imgIndex].dashboardApproved{
-                approvedDateLabel.text = "Approved " + images[imgIndex].approvedDate.lowercased()
-                approvedSymbol.isHidden = false
-                approvedDateLabel.isHidden = false
-              
-            }else{
-                btn_approve_lvl2.setTitle("Approve", for: .normal)
-                approvedSymbol.isHidden = true
-                approvedDateLabel.isHidden = true
-                
-            }
-        }
-        else
-        {
-            btn_approve_lvl2.isHidden = true;
-            btn_delete_lvl2.isHidden = true;
-            approvedSymbol.isHidden = true;
-            approvedDateLabel.isHidden = true
-            createdDateLabel.isHidden = true
-        }
+        
         
         performInitialisation();
         
@@ -122,13 +99,23 @@ class VC_ClickImage: UIViewController {
         
         let createdDate = moment(images[imgIndex].timeUnixCreated).fromNow().lowercased()
         createdDateLabel.font = UIFont.fontAwesome(ofSize: 15)
-        createdDateLabel.text = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + createdDate+"  "+String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+createdBy!;
+        var createdText = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + createdDate+"  ";
+        if(userObj.isAdmin)
+        {
+            createdText += String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+createdBy!;
+        }
+        createdDateLabel.text = createdText;
         
         if(images[imgIndex].approvedDate != nil)
         {
             let approvedDate = moment(images[imgIndex].timeUnixApproved).fromNow().lowercased()
             approvedDateLabel.font = UIFont.fontAwesome(ofSize: 15)
-            approvedDateLabel.text = String.fontAwesome(code: "fa-check-square-o")!.rawValue + "  " + approvedDate+"  "+String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+createdBy!;
+            var approvedText = String.fontAwesome(code: "fa-check-square-o")!.rawValue + "  "+approvedDate;
+            if(approvedBy != nil)
+            {
+                approvedText += "  "+String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+approvedBy!;
+            }
+            approvedDateLabel.text = approvedText;
         }
     }
     
@@ -156,15 +143,33 @@ class VC_ClickImage: UIViewController {
     
     func performInitialisation() {
         
-        if(images[self.imgIndex].dashboardApproved)!
+        
+        if(userObj.isAdmin)
         {
-            let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: (btn_approve_lvl2.titleLabel?.text)!)
-            attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
-            //btn_approve_lvl2.titleLabel?.attributedText = attributeString;
-            btn_approve_lvl2.titleLabel?.text = "\(images[self.imgIndex].approvedDate)"
-            btn_approve_lvl2.isUserInteractionEnabled = false // added this so that simon cant spam the approve button hahah
-            imgCaption.textColor = UIColor.lightGray;
-            imgCaption.isUserInteractionEnabled = false;
+            btn_delete_lvl3.isHidden = true;
+            createdDateLabel.isHidden = false
+            if images[self.imgIndex].dashboardApproved{
+                approvedDateLabel.text = "Approved " + images[imgIndex].approvedDate.lowercased()
+                approvedSymbol.isHidden = false
+                approvedDateLabel.isHidden = false
+                btn_approve_lvl2.isUserInteractionEnabled = false // added this so that simon cant spam the approve button hahah
+                imgCaption.textColor = UIColor.lightGray;
+                imgCaption.isUserInteractionEnabled = false;
+                
+            }else{
+                btn_approve_lvl2.setTitle("Approve", for: .normal)
+                approvedSymbol.isHidden = true
+                approvedDateLabel.isHidden = true
+                
+            }
+        }
+        else
+        {
+            btn_approve_lvl2.isHidden = true;
+            btn_delete_lvl2.isHidden = true;
+            approvedSymbol.isHidden = true;
+            approvedDateLabel.isHidden = true
+            //createdDateLabel.isHidden = true
         }
     }
     
@@ -243,6 +248,7 @@ class VC_ClickImage: UIViewController {
             SVProgressHUD.showSuccess(withStatus: "Approved!")
             SVProgressHUD.dismiss(withDelay: 2)
             self.performInitialisation();
+            self.navigationController?.popViewController(animated: true);
             print("Handle Yes logic here")
         }))
         

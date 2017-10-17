@@ -36,6 +36,7 @@ class UserObject {
         username = nil;
         accountID = nil;
         creatorName = nil;
+        creatorURL = nil;
         creatorID = nil;
         uid = nil;
         accountName = nil;
