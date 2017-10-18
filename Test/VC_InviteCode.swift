@@ -59,9 +59,26 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
             if success {
                 print("shuffli - SUCCESS.");
                 userObj.inviteCode = invitecode;
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_setpassword");
-                SVProgressHUD.dismiss();
-                self.present(vc!, animated: true, completion: nil);
+                
+                userObj.canNewUserBeCreated { success in
+                    if success {
+                        
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_setpassword");
+                        self.present(vc!, animated: true, completion: nil);
+                    }
+                    else
+                    {
+                        let refreshAlert = UIAlertController(title: "NOTICE", message: "The max amount of users for this account has been reached.\nContact your dashboard manager for further information.", preferredStyle: UIAlertControllerStyle.alert)
+                        
+                        refreshAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
+                            userObj.resetObj();
+                            self.dismiss(animated: true, completion: nil);
+                        }));
+                        self.present(refreshAlert, animated: true, completion: nil);
+                    }
+                    SVProgressHUD.dismiss();
+                }
+                
             }
             else
             {

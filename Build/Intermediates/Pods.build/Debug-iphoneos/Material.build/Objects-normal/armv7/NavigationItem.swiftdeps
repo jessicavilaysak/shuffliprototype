@@ -1,0 +1,821 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NavigationItem"
+provides-nominal:
+- "8Material14NavigationItemC"
+provides-member:
+- ["8Material14NavigationItemC", ""]
+- ["So16UINavigationItemC", ""]
+- ["So16UINavigationItemC", "navigationItem"]
+- ["So16UINavigationItemC", "contentViewAlignment"]
+- ["So16UINavigationItemC", "contentView"]
+- ["So16UINavigationItemC", "backButton"]
+- ["So16UINavigationItemC", "title"]
+- ["So16UINavigationItemC", "titleLabel"]
+- ["So16UINavigationItemC", "detail"]
+- ["So16UINavigationItemC", "detailLabel"]
+- ["So16UINavigationItemC", "leftViews"]
+- ["So16UINavigationItemC", "rightViews"]
+- ["So16UINavigationItemC", "centerViews"]
+provides-dynamic-lookup:
+- "backButton"
+- "centerViews"
+- "contentView"
+- "contentViewAlignment"
+- "detail"
+- "detailLabel"
+- "leftViews"
+- "navigationBar"
+- "navigationItem"
+- "observeValue"
+- "reload"
+- "rightViews"
+- "titleLabel"
+depends-top-level:
+- !private "=="
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "AssociateObject"
+- !private "AssociatedObject"
+- "CastingPrecedence"
+- !private "Color"
+- "ContentViewAlignment"
+- "IconButton"
+- "NSKeyValueChangeKey"
+- "NSObject"
+- "NavigationBar"
+- "NavigationItem"
+- !private "NavigationItemContext"
+- !private "NavigationItemKey"
+- !private "RobotoFont"
+- !private "Screen"
+- "String"
+- !private "StringLiteralType"
+- "TernaryPrecedence"
+- "UILabel"
+- "UINavigationItem"
+- "UIView"
+- "UInt8"
+- "UnsafeMutableRawPointer"
+depends-member:
+- ["Sa", "init"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["8Material6ButtonC", "init"]
+- !private ["So15CALayerDelegateP", "contentScaleFactor"]
+- !private ["So15CALayerDelegateP", "font"]
+- !private ["So15CALayerDelegateP", "grid"]
+- ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layoutSubviews"]
+- !private ["So15CALayerDelegateP", "removeFromSuperview"]
+- !private ["So15CALayerDelegateP", "superview"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "textAlignment"]
+- !private ["So15CALayerDelegateP", "textColor"]
+- !private ["s7CVarArgP", "AssociateObject"]
+- !private ["s7CVarArgP", "AssociatedObject"]
+- !private ["s7CVarArgP", "Color"]
+- ["s7CVarArgP", "ContentViewAlignment"]
+- !private ["s7CVarArgP", "IconButton"]
+- !private ["s7CVarArgP", "NavigationItem"]
+- !private ["s7CVarArgP", "NavigationItemContext"]
+- !private ["s7CVarArgP", "NavigationItemKey"]
+- !private ["s7CVarArgP", "RobotoFont"]
+- !private ["s7CVarArgP", "Screen"]
+- ["s7CVarArgP", "UILabel"]
+- ["s7CVarArgP", "UIView"]
+- !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "backButton"]
+- !private ["s7CVarArgP", "centerViews"]
+- !private ["s7CVarArgP", "contentScaleFactor"]
+- !private ["s7CVarArgP", "contentView"]
+- !private ["s7CVarArgP", "contentViewAlignment"]
+- !private ["s7CVarArgP", "darkText"]
+- !private ["s7CVarArgP", "detailLabel"]
+- !private ["s7CVarArgP", "font"]
+- !private ["s7CVarArgP", "grid"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layoutSubviews"]
+- !private ["s7CVarArgP", "leftViews"]
+- !private ["s7CVarArgP", "navigationBar"]
+- !private ["s7CVarArgP", "navigationItem"]
+- !private ["s7CVarArgP", "observeValue"]
+- !private ["s7CVarArgP", "prepareDetailLabel"]
+- !private ["s7CVarArgP", "prepareTitleLabel"]
+- !private ["s7CVarArgP", "reload"]
+- !private ["s7CVarArgP", "removeFromSuperview"]
+- !private ["s7CVarArgP", "removeObserver"]
+- !private ["s7CVarArgP", "rightViews"]
+- !private ["s7CVarArgP", "superview"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "textAlignment"]
+- !private ["s7CVarArgP", "textColor"]
+- !private ["s7CVarArgP", "titleLabel"]
+- ["s7CVarArgP", ""]
+- ["s10CollectionP", "init"]
+- !private ["8Material5ColorC", "darkText"]
+- !private ["s10ComparableP", "init"]
+- ["8Material20ContentViewAlignmentO", "center"]
+- !private ["8Material20ContentViewAlignmentO", "full"]
+- !private ["s28CustomDebugStringConvertibleP", "AssociateObject"]
+- !private ["s28CustomDebugStringConvertibleP", "AssociatedObject"]
+- !private ["s28CustomDebugStringConvertibleP", "Color"]
+- ["s28CustomDebugStringConvertibleP", "ContentViewAlignment"]
+- !private ["s28CustomDebugStringConvertibleP", "IconButton"]
+- !private ["s28CustomDebugStringConvertibleP", "NavigationItem"]
+- !private ["s28CustomDebugStringConvertibleP", "NavigationItemContext"]
+- !private ["s28CustomDebugStringConvertibleP", "NavigationItemKey"]
+- !private ["s28CustomDebugStringConvertibleP", "RobotoFont"]
+- !private ["s28CustomDebugStringConvertibleP", "Screen"]
+- ["s28CustomDebugStringConvertibleP", "UILabel"]
+- ["s28CustomDebugStringConvertibleP", "UIView"]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "backButton"]
+- !private ["s28CustomDebugStringConvertibleP", "centerViews"]
+- !private ["s28CustomDebugStringConvertibleP", "contentScaleFactor"]
+- !private ["s28CustomDebugStringConvertibleP", "contentView"]
+- !private ["s28CustomDebugStringConvertibleP", "contentViewAlignment"]
+- !private ["s28CustomDebugStringConvertibleP", "darkText"]
+- !private ["s28CustomDebugStringConvertibleP", "detailLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "font"]
+- !private ["s28CustomDebugStringConvertibleP", "grid"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layoutSubviews"]
+- !private ["s28CustomDebugStringConvertibleP", "leftViews"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
+- !private ["s28CustomDebugStringConvertibleP", "observeValue"]
+- !private ["s28CustomDebugStringConvertibleP", "prepareDetailLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "prepareTitleLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "reload"]
+- !private ["s28CustomDebugStringConvertibleP", "removeFromSuperview"]
+- !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "rightViews"]
+- !private ["s28CustomDebugStringConvertibleP", "superview"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "textAlignment"]
+- !private ["s28CustomDebugStringConvertibleP", "textColor"]
+- !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "AssociateObject"]
+- !private ["s23CustomStringConvertibleP", "AssociatedObject"]
+- !private ["s23CustomStringConvertibleP", "Color"]
+- ["s23CustomStringConvertibleP", "ContentViewAlignment"]
+- !private ["s23CustomStringConvertibleP", "IconButton"]
+- !private ["s23CustomStringConvertibleP", "NavigationItem"]
+- !private ["s23CustomStringConvertibleP", "NavigationItemContext"]
+- !private ["s23CustomStringConvertibleP", "NavigationItemKey"]
+- !private ["s23CustomStringConvertibleP", "RobotoFont"]
+- !private ["s23CustomStringConvertibleP", "Screen"]
+- ["s23CustomStringConvertibleP", "UILabel"]
+- ["s23CustomStringConvertibleP", "UIView"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "backButton"]
+- !private ["s23CustomStringConvertibleP", "centerViews"]
+- !private ["s23CustomStringConvertibleP", "contentScaleFactor"]
+- !private ["s23CustomStringConvertibleP", "contentView"]
+- !private ["s23CustomStringConvertibleP", "contentViewAlignment"]
+- !private ["s23CustomStringConvertibleP", "darkText"]
+- !private ["s23CustomStringConvertibleP", "detailLabel"]
+- !private ["s23CustomStringConvertibleP", "font"]
+- !private ["s23CustomStringConvertibleP", "grid"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layoutSubviews"]
+- !private ["s23CustomStringConvertibleP", "leftViews"]
+- !private ["s23CustomStringConvertibleP", "navigationBar"]
+- !private ["s23CustomStringConvertibleP", "navigationItem"]
+- !private ["s23CustomStringConvertibleP", "observeValue"]
+- !private ["s23CustomStringConvertibleP", "prepareDetailLabel"]
+- !private ["s23CustomStringConvertibleP", "prepareTitleLabel"]
+- !private ["s23CustomStringConvertibleP", "reload"]
+- !private ["s23CustomStringConvertibleP", "removeFromSuperview"]
+- !private ["s23CustomStringConvertibleP", "removeObserver"]
+- !private ["s23CustomStringConvertibleP", "rightViews"]
+- !private ["s23CustomStringConvertibleP", "superview"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "textAlignment"]
+- !private ["s23CustomStringConvertibleP", "textColor"]
+- !private ["s23CustomStringConvertibleP", "titleLabel"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "AssociateObject"]
+- !private ["s9EquatableP", "AssociatedObject"]
+- !private ["s9EquatableP", "Color"]
+- ["s9EquatableP", "ContentViewAlignment"]
+- !private ["s9EquatableP", "IconButton"]
+- !private ["s9EquatableP", "NavigationItem"]
+- !private ["s9EquatableP", "NavigationItemContext"]
+- !private ["s9EquatableP", "NavigationItemKey"]
+- !private ["s9EquatableP", "RobotoFont"]
+- !private ["s9EquatableP", "Screen"]
+- ["s9EquatableP", "UILabel"]
+- ["s9EquatableP", "UIView"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addObserver"]
+- !private ["s9EquatableP", "backButton"]
+- ["s9EquatableP", "center"]
+- !private ["s9EquatableP", "centerViews"]
+- !private ["s9EquatableP", "contentScaleFactor"]
+- !private ["s9EquatableP", "contentView"]
+- !private ["s9EquatableP", "contentViewAlignment"]
+- !private ["s9EquatableP", "darkText"]
+- !private ["s9EquatableP", "detailLabel"]
+- !private ["s9EquatableP", "font"]
+- !private ["s9EquatableP", "full"]
+- !private ["s9EquatableP", "grid"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "layoutSubviews"]
+- !private ["s9EquatableP", "leftViews"]
+- !private ["s9EquatableP", "navigationBar"]
+- !private ["s9EquatableP", "navigationItem"]
+- !private ["s9EquatableP", "observeValue"]
+- !private ["s9EquatableP", "prepareDetailLabel"]
+- !private ["s9EquatableP", "prepareTitleLabel"]
+- !private ["s9EquatableP", "reload"]
+- !private ["s9EquatableP", "removeFromSuperview"]
+- !private ["s9EquatableP", "removeObserver"]
+- !private ["s9EquatableP", "rightViews"]
+- !private ["s9EquatableP", "superview"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "textAlignment"]
+- !private ["s9EquatableP", "textColor"]
+- !private ["s9EquatableP", "titleLabel"]
+- ["s9EquatableP", ""]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["8Material8FontTypeP", "medium"]
+- !private ["8Material8FontTypeP", "regular"]
+- !private ["8Material4GridV", "views"]
+- !private ["s8HashableP", "AssociateObject"]
+- !private ["s8HashableP", "AssociatedObject"]
+- !private ["s8HashableP", "Color"]
+- ["s8HashableP", "ContentViewAlignment"]
+- !private ["s8HashableP", "IconButton"]
+- !private ["s8HashableP", "NavigationItem"]
+- !private ["s8HashableP", "NavigationItemContext"]
+- !private ["s8HashableP", "NavigationItemKey"]
+- !private ["s8HashableP", "RobotoFont"]
+- !private ["s8HashableP", "Screen"]
+- ["s8HashableP", "UILabel"]
+- ["s8HashableP", "UIView"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addObserver"]
+- !private ["s8HashableP", "backButton"]
+- ["s8HashableP", "center"]
+- !private ["s8HashableP", "centerViews"]
+- !private ["s8HashableP", "contentScaleFactor"]
+- !private ["s8HashableP", "contentView"]
+- !private ["s8HashableP", "contentViewAlignment"]
+- !private ["s8HashableP", "darkText"]
+- !private ["s8HashableP", "detailLabel"]
+- !private ["s8HashableP", "font"]
+- !private ["s8HashableP", "full"]
+- !private ["s8HashableP", "grid"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "layoutSubviews"]
+- !private ["s8HashableP", "leftViews"]
+- !private ["s8HashableP", "navigationBar"]
+- !private ["s8HashableP", "navigationItem"]
+- !private ["s8HashableP", "observeValue"]
+- !private ["s8HashableP", "prepareDetailLabel"]
+- !private ["s8HashableP", "prepareTitleLabel"]
+- !private ["s8HashableP", "reload"]
+- !private ["s8HashableP", "removeFromSuperview"]
+- !private ["s8HashableP", "removeObserver"]
+- !private ["s8HashableP", "rightViews"]
+- !private ["s8HashableP", "superview"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "textAlignment"]
+- !private ["s8HashableP", "textColor"]
+- !private ["s8HashableP", "titleLabel"]
+- ["s8HashableP", ""]
+- !private ["8Material10IconButtonC", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- ["s17MutableCollectionP", "init"]
+- !private ["So8NSCodingP", "AssociateObject"]
+- !private ["So8NSCodingP", "AssociatedObject"]
+- !private ["So8NSCodingP", "NavigationItem"]
+- !private ["So8NSCodingP", "NavigationItemKey"]
+- !private ["So8NSCodingP", "contentScaleFactor"]
+- !private ["So8NSCodingP", "darkText"]
+- !private ["So8NSCodingP", "detailLabel"]
+- !private ["So8NSCodingP", "font"]
+- !private ["So8NSCodingP", "grid"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layoutSubviews"]
+- !private ["So8NSCodingP", "navigationItem"]
+- !private ["So8NSCodingP", "removeFromSuperview"]
+- !private ["So8NSCodingP", "superview"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "textAlignment"]
+- !private ["So8NSCodingP", "textColor"]
+- !private ["So8NSCodingP", "titleLabel"]
+- !private ["So9NSCopyingP", "darkText"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "darkText"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "darkText"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "AssociateObject"]
+- !private ["So8NSObjectC", "AssociatedObject"]
+- !private ["So8NSObjectC", "Color"]
+- ["So8NSObjectC", "ContentViewAlignment"]
+- ["So8NSObjectC", "IconButton"]
+- ["So8NSObjectC", "NSKeyValueChangeKey"]
+- ["So8NSObjectC", "NavigationBar"]
+- ["So8NSObjectC", "NavigationItem"]
+- !private ["So8NSObjectC", "NavigationItemContext"]
+- !private ["So8NSObjectC", "NavigationItemKey"]
+- !private ["So8NSObjectC", "RobotoFont"]
+- !private ["So8NSObjectC", "Screen"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UIView"]
+- ["So8NSObjectC", "UnsafeMutableRawPointer"]
+- !private ["So8NSObjectC", "addObserver"]
+- ["So8NSObjectC", "backButton"]
+- ["So8NSObjectC", "backButton.storage"]
+- ["So8NSObjectC", "centerViews"]
+- !private ["So8NSObjectC", "contentScaleFactor"]
+- ["So8NSObjectC", "contentView"]
+- ["So8NSObjectC", "contentView.storage"]
+- ["So8NSObjectC", "contentViewAlignment"]
+- !private ["So8NSObjectC", "darkText"]
+- ["So8NSObjectC", "detail"]
+- ["So8NSObjectC", "detailLabel"]
+- ["So8NSObjectC", "detailLabel.storage"]
+- !private ["So8NSObjectC", "font"]
+- !private ["So8NSObjectC", "grid"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layoutSubviews"]
+- ["So8NSObjectC", "leftViews"]
+- ["So8NSObjectC", "navigationBar"]
+- ["So8NSObjectC", "navigationItem"]
+- ["So8NSObjectC", "observeValue"]
+- ["So8NSObjectC", "prepareDetailLabel"]
+- ["So8NSObjectC", "prepareTitleLabel"]
+- ["So8NSObjectC", "reload"]
+- !private ["So8NSObjectC", "removeFromSuperview"]
+- !private ["So8NSObjectC", "removeObserver"]
+- ["So8NSObjectC", "rightViews"]
+- !private ["So8NSObjectC", "superview"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "textAlignment"]
+- !private ["So8NSObjectC", "textColor"]
+- ["So8NSObjectC", "title"]
+- ["So8NSObjectC", "titleLabel"]
+- ["So8NSObjectC", "titleLabel.storage"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "AssociateObject"]
+- !private ["So16NSObjectProtocolP", "AssociatedObject"]
+- !private ["So16NSObjectProtocolP", "Color"]
+- ["So16NSObjectProtocolP", "ContentViewAlignment"]
+- !private ["So16NSObjectProtocolP", "IconButton"]
+- !private ["So16NSObjectProtocolP", "NavigationItem"]
+- !private ["So16NSObjectProtocolP", "NavigationItemContext"]
+- !private ["So16NSObjectProtocolP", "NavigationItemKey"]
+- !private ["So16NSObjectProtocolP", "RobotoFont"]
+- !private ["So16NSObjectProtocolP", "Screen"]
+- ["So16NSObjectProtocolP", "UILabel"]
+- ["So16NSObjectProtocolP", "UIView"]
+- !private ["So16NSObjectProtocolP", "addObserver"]
+- !private ["So16NSObjectProtocolP", "backButton"]
+- !private ["So16NSObjectProtocolP", "centerViews"]
+- !private ["So16NSObjectProtocolP", "contentScaleFactor"]
+- !private ["So16NSObjectProtocolP", "contentView"]
+- !private ["So16NSObjectProtocolP", "contentViewAlignment"]
+- !private ["So16NSObjectProtocolP", "darkText"]
+- !private ["So16NSObjectProtocolP", "detailLabel"]
+- !private ["So16NSObjectProtocolP", "font"]
+- !private ["So16NSObjectProtocolP", "grid"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "layoutSubviews"]
+- !private ["So16NSObjectProtocolP", "leftViews"]
+- !private ["So16NSObjectProtocolP", "navigationBar"]
+- !private ["So16NSObjectProtocolP", "navigationItem"]
+- !private ["So16NSObjectProtocolP", "observeValue"]
+- !private ["So16NSObjectProtocolP", "prepareDetailLabel"]
+- !private ["So16NSObjectProtocolP", "prepareTitleLabel"]
+- !private ["So16NSObjectProtocolP", "reload"]
+- !private ["So16NSObjectProtocolP", "removeFromSuperview"]
+- !private ["So16NSObjectProtocolP", "removeObserver"]
+- !private ["So16NSObjectProtocolP", "rightViews"]
+- !private ["So16NSObjectProtocolP", "superview"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "textAlignment"]
+- !private ["So16NSObjectProtocolP", "textColor"]
+- !private ["So16NSObjectProtocolP", "titleLabel"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "darkText"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["SC15NSTextAlignmentO", "center"]
+- !private ["8Material13NavigationBarC", "layoutSubviews"]
+- !private ["8Material14NavigationItemC", "Color"]
+- ["8Material14NavigationItemC", "ContentViewAlignment"]
+- ["8Material14NavigationItemC", "IconButton"]
+- ["8Material14NavigationItemC", "NSKeyValueChangeKey"]
+- ["8Material14NavigationItemC", "NavigationBar"]
+- !private ["8Material14NavigationItemC", "NavigationItemContext"]
+- !private ["8Material14NavigationItemC", "RobotoFont"]
+- !private ["8Material14NavigationItemC", "Screen"]
+- ["8Material14NavigationItemC", "String"]
+- ["8Material14NavigationItemC", "UILabel"]
+- ["8Material14NavigationItemC", "UIView"]
+- ["8Material14NavigationItemC", "UnsafeMutableRawPointer"]
+- !private ["8Material14NavigationItemC", "addObserver"]
+- ["8Material14NavigationItemC", "backButton"]
+- !private ["8Material14NavigationItemC", "backButton.storage"]
+- ["8Material14NavigationItemC", "centerViews"]
+- ["8Material14NavigationItemC", "contentView"]
+- !private ["8Material14NavigationItemC", "contentView.storage"]
+- ["8Material14NavigationItemC", "contentViewAlignment"]
+- ["8Material14NavigationItemC", "deinit"]
+- ["8Material14NavigationItemC", "detailLabel"]
+- !private ["8Material14NavigationItemC", "detailLabel.storage"]
+- ["8Material14NavigationItemC", "init"]
+- ["8Material14NavigationItemC", "leftViews"]
+- ["8Material14NavigationItemC", "navigationBar"]
+- ["8Material14NavigationItemC", "observeValue"]
+- !private ["8Material14NavigationItemC", "prepareDetailLabel"]
+- !private ["8Material14NavigationItemC", "prepareTitleLabel"]
+- ["8Material14NavigationItemC", "reload"]
+- !private ["8Material14NavigationItemC", "removeObserver"]
+- ["8Material14NavigationItemC", "rightViews"]
+- ["8Material14NavigationItemC", "titleLabel"]
+- !private ["8Material14NavigationItemC", "titleLabel.storage"]
+- !private ["8Material9PulseableP", "init"]
+- !private ["8Material14PulseableLayerP", "init"]
+- ["s22RandomAccessCollectionP", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "center"]
+- !private ["s16RawRepresentableP", "full"]
+- !private ["8Material10RobotoFontV", "medium"]
+- !private ["8Material10RobotoFontV", "regular"]
+- !private ["8Material6ScreenV", "scale"]
+- ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "contentScaleFactor"]
+- !private ["So29UIAccessibilityIdentificationP", "font"]
+- !private ["So29UIAccessibilityIdentificationP", "grid"]
+- ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layoutSubviews"]
+- !private ["So29UIAccessibilityIdentificationP", "removeFromSuperview"]
+- !private ["So29UIAccessibilityIdentificationP", "superview"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "textAlignment"]
+- !private ["So29UIAccessibilityIdentificationP", "textColor"]
+- !private ["So12UIAppearanceP", "contentScaleFactor"]
+- !private ["So12UIAppearanceP", "font"]
+- !private ["So12UIAppearanceP", "grid"]
+- ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layoutSubviews"]
+- !private ["So12UIAppearanceP", "removeFromSuperview"]
+- !private ["So12UIAppearanceP", "superview"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "textAlignment"]
+- !private ["So12UIAppearanceP", "textColor"]
+- !private ["So21UIAppearanceContainerP", "contentScaleFactor"]
+- !private ["So21UIAppearanceContainerP", "font"]
+- !private ["So21UIAppearanceContainerP", "grid"]
+- ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layoutSubviews"]
+- !private ["So21UIAppearanceContainerP", "removeFromSuperview"]
+- !private ["So21UIAppearanceContainerP", "superview"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "textAlignment"]
+- !private ["So21UIAppearanceContainerP", "textColor"]
+- !private ["So16UIBarPositioningP", "layoutSubviews"]
+- !private ["So8UIButtonC", "init"]
+- !private ["So7UIColorC", "darkText"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "contentScaleFactor"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "font"]
+- ["So30UIContentSizeCategoryAdjustingP", "init"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textAlignment"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
+- !private ["So9UIControlC", "init"]
+- !private ["So17UICoordinateSpaceP", "contentScaleFactor"]
+- !private ["So17UICoordinateSpaceP", "font"]
+- !private ["So17UICoordinateSpaceP", "grid"]
+- ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layoutSubviews"]
+- !private ["So17UICoordinateSpaceP", "removeFromSuperview"]
+- !private ["So17UICoordinateSpaceP", "superview"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "textAlignment"]
+- !private ["So17UICoordinateSpaceP", "textColor"]
+- !private ["So13UIDynamicItemP", "contentScaleFactor"]
+- !private ["So13UIDynamicItemP", "font"]
+- !private ["So13UIDynamicItemP", "grid"]
+- ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layoutSubviews"]
+- !private ["So13UIDynamicItemP", "removeFromSuperview"]
+- !private ["So13UIDynamicItemP", "superview"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "textAlignment"]
+- !private ["So13UIDynamicItemP", "textColor"]
+- !private ["So18UIFocusEnvironmentP", "contentScaleFactor"]
+- !private ["So18UIFocusEnvironmentP", "font"]
+- !private ["So18UIFocusEnvironmentP", "grid"]
+- ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layoutSubviews"]
+- !private ["So18UIFocusEnvironmentP", "removeFromSuperview"]
+- !private ["So18UIFocusEnvironmentP", "superview"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "textAlignment"]
+- !private ["So18UIFocusEnvironmentP", "textColor"]
+- !private ["So11UIFocusItemP", "contentScaleFactor"]
+- !private ["So11UIFocusItemP", "font"]
+- !private ["So11UIFocusItemP", "grid"]
+- ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layoutSubviews"]
+- !private ["So11UIFocusItemP", "removeFromSuperview"]
+- !private ["So11UIFocusItemP", "superview"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "textAlignment"]
+- !private ["So11UIFocusItemP", "textColor"]
+- !private ["So7UILabelC", "contentScaleFactor"]
+- !private ["So7UILabelC", "font"]
+- ["So7UILabelC", "init"]
+- !private ["So7UILabelC", "text"]
+- !private ["So7UILabelC", "textAlignment"]
+- !private ["So7UILabelC", "textColor"]
+- !private ["So15UINavigationBarC", "layoutSubviews"]
+- !private ["So16UINavigationItemC", "AssociateObject"]
+- !private ["So16UINavigationItemC", "AssociatedObject"]
+- ["So16UINavigationItemC", "ContentViewAlignment"]
+- ["So16UINavigationItemC", "IconButton"]
+- ["So16UINavigationItemC", "NavigationItem"]
+- !private ["So16UINavigationItemC", "NavigationItemKey"]
+- ["So16UINavigationItemC", "String"]
+- ["So16UINavigationItemC", "UILabel"]
+- ["So16UINavigationItemC", "UIView"]
+- ["So16UINavigationItemC", "backButton"]
+- ["So16UINavigationItemC", "centerViews"]
+- ["So16UINavigationItemC", "contentView"]
+- ["So16UINavigationItemC", "contentViewAlignment"]
+- ["So16UINavigationItemC", "detail"]
+- ["So16UINavigationItemC", "detailLabel"]
+- ["So16UINavigationItemC", "leftViews"]
+- ["So16UINavigationItemC", "navigationItem"]
+- ["So16UINavigationItemC", "rightViews"]
+- ["So16UINavigationItemC", "title"]
+- ["So16UINavigationItemC", "titleLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentScaleFactor"]
+- !private ["So30UIPasteConfigurationSupportingP", "font"]
+- !private ["So30UIPasteConfigurationSupportingP", "grid"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layoutSubviews"]
+- !private ["So30UIPasteConfigurationSupportingP", "removeFromSuperview"]
+- !private ["So30UIPasteConfigurationSupportingP", "superview"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "textAlignment"]
+- !private ["So30UIPasteConfigurationSupportingP", "textColor"]
+- !private ["So11UIResponderC", "contentScaleFactor"]
+- !private ["So11UIResponderC", "font"]
+- !private ["So11UIResponderC", "grid"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layoutSubviews"]
+- !private ["So11UIResponderC", "removeFromSuperview"]
+- !private ["So11UIResponderC", "superview"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So11UIResponderC", "textAlignment"]
+- !private ["So11UIResponderC", "textColor"]
+- !private ["So30UIResponderStandardEditActionsP", "contentScaleFactor"]
+- !private ["So30UIResponderStandardEditActionsP", "font"]
+- !private ["So30UIResponderStandardEditActionsP", "grid"]
+- ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layoutSubviews"]
+- !private ["So30UIResponderStandardEditActionsP", "removeFromSuperview"]
+- !private ["So30UIResponderStandardEditActionsP", "superview"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "textAlignment"]
+- !private ["So30UIResponderStandardEditActionsP", "textColor"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So18UITraitEnvironmentP", "contentScaleFactor"]
+- !private ["So18UITraitEnvironmentP", "font"]
+- !private ["So18UITraitEnvironmentP", "grid"]
+- ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layoutSubviews"]
+- !private ["So18UITraitEnvironmentP", "removeFromSuperview"]
+- !private ["So18UITraitEnvironmentP", "superview"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "textAlignment"]
+- !private ["So18UITraitEnvironmentP", "textColor"]
+- !private ["So6UIViewC", "contentScaleFactor"]
+- !private ["So6UIViewC", "font"]
+- !private ["So6UIViewC", "grid"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layoutSubviews"]
+- !private ["So6UIViewC", "removeFromSuperview"]
+- !private ["So6UIViewC", "superview"]
+- !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "textAlignment"]
+- !private ["So6UIViewC", "textColor"]
+- ["s14_ArrayProtocolP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentScaleFactor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "font"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "grid"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layoutSubviews"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "removeFromSuperview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "superview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textAlignment"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "darkText"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociateObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Color"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ContentViewAlignment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IconButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NavigationItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NavigationItemContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NavigationItemKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "RobotoFont"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Screen"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UILabel"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "centerViews"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentScaleFactor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentViewAlignment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "darkText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "detailLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "font"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "grid"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layoutSubviews"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "leftViews"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observeValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepareDetailLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepareTitleLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reload"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeFromSuperview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rightViews"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "superview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textAlignment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["s17_MutableIndexableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s22_RandomAccessIndexableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["8Material5ColorC8darkTextC", "primary"]
+- !private ["8Material5ColorC8darkTextC", "secondary"]
+depends-nominal:
+- "Sa"
+- "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "8Material6ButtonC"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- !private "8Material5ColorC"
+- !private "s10ComparableP"
+- "8Material20ContentViewAlignmentO"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "8Material8FontTypeP"
+- !private "8Material4GridV"
+- "s8HashableP"
+- !private "8Material10IconButtonC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "s17MutableCollectionP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "SC15NSTextAlignmentO"
+- !private "8Material13NavigationBarC"
+- "8Material14NavigationItemC"
+- !private "8Material9PulseableP"
+- !private "8Material14PulseableLayerP"
+- "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "8Material10RobotoFontV"
+- !private "8Material6ScreenV"
+- "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So16UIBarPositioningP"
+- !private "So8UIButtonC"
+- !private "So7UIColorC"
+- "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So7UILabelC"
+- !private "So15UINavigationBarC"
+- "So16UINavigationItemC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s14_ArrayProtocolP"
+- "s23_BidirectionalIndexableP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- "s22_RandomAccessIndexableP"
+- "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+- !private "8Material5ColorC8darkTextC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/unextended-module.modulemap"
+interface-hash: "965e8c5224125214140a1a41e7b332c4"

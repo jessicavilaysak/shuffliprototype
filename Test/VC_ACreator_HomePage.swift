@@ -180,9 +180,22 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
 
     
     @IBAction func btn_addUser(_ sender: Any) {
-        
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_adduser")
-        self.present(vc!,animated: true,completion: nil)
+        SVProgressHUD.show(withStatus: "Validating...");
+        userObj.canNewUserBeCreated { success in
+            if success {
+                
+                SVProgressHUD.dismiss();
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_adduser")
+                self.present(vc!,animated: true,completion: nil)
+            }
+            else
+            {
+                SVProgressHUD.dismiss();
+                SVProgressHUD.showError(withStatus: "The max amount of users for this account has been reached.\nContact your dashboard manager for further information.")
+                SVProgressHUD.dismiss(withDelay: 10)
+                
+            }
+        }
     }
     
     func deleteUser(row: Int)

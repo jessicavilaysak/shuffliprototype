@@ -1,0 +1,1454 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VC_Creator_Signin"
+provides-nominal:
+- "4Test17VC_Creator_SigninC"
+provides-member:
+- ["4Test17VC_Creator_SigninC", ""]
+provides-dynamic-lookup:
+- "BtnTapped"
+- "SigninBtn"
+- "directSegue"
+- "fld_password"
+- "fld_username"
+- "goBack"
+- "ref"
+- "textFieldShouldReturn"
+- "userUid"
+- "viewDidLoad"
+- "viewWillDisappear"
+depends-top-level:
+- !private "!="
+- !private "+"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "FIRAuth"
+- "FIRDatabaseReference"
+- !private "SVProgressHUD"
+- "String"
+- !private "StringLiteralType"
+- !private "TabBarController"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- !private "UIAlertControllerStyle"
+- "UIButton"
+- "UITextField"
+- "UITextFieldDelegate"
+- "UIViewController"
+- "VC_Creator_Signin"
+- !private "print"
+- !private "userObj"
+depends-member:
+- !private ["8DropDown10AnchorViewP", "becomeFirstResponder"]
+- !private ["8DropDown10AnchorViewP", "delegate"]
+- !private ["8DropDown10AnchorViewP", "dismiss"]
+- !private ["8DropDown10AnchorViewP", "layer"]
+- !private ["8DropDown10AnchorViewP", "resignFirstResponder"]
+- !private ["8DropDown10AnchorViewP", "setDefaultStyle"]
+- !private ["8DropDown10AnchorViewP", "show"]
+- !private ["8DropDown10AnchorViewP", "superview"]
+- !private ["8DropDown10AnchorViewP", "tag"]
+- !private ["8DropDown10AnchorViewP", "text"]
+- !private ["8DropDown10AnchorViewP", "viewWithTag"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So19CAAnimationDelegateP", "cornerRadius"]
+- !private ["So7CALayerC", "cornerRadius"]
+- !private ["So15CALayerDelegateP", "becomeFirstResponder"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "dismiss"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "resignFirstResponder"]
+- !private ["So15CALayerDelegateP", "setDefaultStyle"]
+- !private ["So15CALayerDelegateP", "show"]
+- !private ["So15CALayerDelegateP", "superview"]
+- !private ["So15CALayerDelegateP", "tag"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "viewWithTag"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
+- !private ["s7CVarArgP", "BtnTapped"]
+- !private ["s7CVarArgP", "FIRAuth"]
+- !private ["s7CVarArgP", "SVProgressHUD"]
+- !private ["s7CVarArgP", "SigninBtn"]
+- !private ["s7CVarArgP", "TabBarController"]
+- !private ["s7CVarArgP", "UIAlertAction"]
+- !private ["s7CVarArgP", "UIAlertController"]
+- !private ["s7CVarArgP", "UIAlertControllerStyle"]
+- !private ["s7CVarArgP", "addAction"]
+- !private ["s7CVarArgP", "auth"]
+- !private ["s7CVarArgP", "becomeFirstResponder"]
+- !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "currentUser"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "directSegue"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "fld_password"]
+- !private ["s7CVarArgP", "fld_username"]
+- !private ["s7CVarArgP", "hideKeyboardWhenTappedAround"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "resignFirstResponder"]
+- !private ["s7CVarArgP", "setDefaultStyle"]
+- !private ["s7CVarArgP", "show"]
+- !private ["s7CVarArgP", "signIn"]
+- !private ["s7CVarArgP", "superview"]
+- !private ["s7CVarArgP", "tag"]
+- !private ["s7CVarArgP", "text"]
+- ["s7CVarArgP", "textField"]
+- ["s7CVarArgP", "textFieldDidBeginEditing"]
+- ["s7CVarArgP", "textFieldDidEndEditing"]
+- ["s7CVarArgP", "textFieldShouldBeginEditing"]
+- ["s7CVarArgP", "textFieldShouldClear"]
+- ["s7CVarArgP", "textFieldShouldEndEditing"]
+- ["s7CVarArgP", "textFieldShouldReturn"]
+- !private ["s7CVarArgP", "uid"]
+- !private ["s7CVarArgP", "userObj"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "viewWillDisappear"]
+- !private ["s7CVarArgP", "viewWithTag"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "BtnTapped"]
+- !private ["s28CustomDebugStringConvertibleP", "FIRAuth"]
+- !private ["s28CustomDebugStringConvertibleP", "SVProgressHUD"]
+- !private ["s28CustomDebugStringConvertibleP", "SigninBtn"]
+- !private ["s28CustomDebugStringConvertibleP", "TabBarController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertControllerStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "addAction"]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
+- !private ["s28CustomDebugStringConvertibleP", "becomeFirstResponder"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "currentUser"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "directSegue"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "fld_password"]
+- !private ["s28CustomDebugStringConvertibleP", "fld_username"]
+- !private ["s28CustomDebugStringConvertibleP", "hideKeyboardWhenTappedAround"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
+- !private ["s28CustomDebugStringConvertibleP", "setDefaultStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "show"]
+- !private ["s28CustomDebugStringConvertibleP", "signIn"]
+- !private ["s28CustomDebugStringConvertibleP", "superview"]
+- !private ["s28CustomDebugStringConvertibleP", "tag"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- ["s28CustomDebugStringConvertibleP", "textField"]
+- ["s28CustomDebugStringConvertibleP", "textFieldDidBeginEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldDidEndEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldBeginEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldClear"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldEndEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s28CustomDebugStringConvertibleP", "uid"]
+- !private ["s28CustomDebugStringConvertibleP", "userObj"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWithTag"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "BtnTapped"]
+- !private ["s23CustomStringConvertibleP", "FIRAuth"]
+- !private ["s23CustomStringConvertibleP", "SVProgressHUD"]
+- !private ["s23CustomStringConvertibleP", "SigninBtn"]
+- !private ["s23CustomStringConvertibleP", "TabBarController"]
+- !private ["s23CustomStringConvertibleP", "UIAlertAction"]
+- !private ["s23CustomStringConvertibleP", "UIAlertController"]
+- !private ["s23CustomStringConvertibleP", "UIAlertControllerStyle"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addAction"]
+- !private ["s23CustomStringConvertibleP", "auth"]
+- !private ["s23CustomStringConvertibleP", "becomeFirstResponder"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "currentUser"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "directSegue"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "fld_password"]
+- !private ["s23CustomStringConvertibleP", "fld_username"]
+- !private ["s23CustomStringConvertibleP", "hideKeyboardWhenTappedAround"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
+- !private ["s23CustomStringConvertibleP", "setDefaultStyle"]
+- !private ["s23CustomStringConvertibleP", "show"]
+- !private ["s23CustomStringConvertibleP", "signIn"]
+- !private ["s23CustomStringConvertibleP", "superview"]
+- !private ["s23CustomStringConvertibleP", "tag"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- ["s23CustomStringConvertibleP", "textField"]
+- ["s23CustomStringConvertibleP", "textFieldDidBeginEditing"]
+- ["s23CustomStringConvertibleP", "textFieldDidEndEditing"]
+- ["s23CustomStringConvertibleP", "textFieldShouldBeginEditing"]
+- ["s23CustomStringConvertibleP", "textFieldShouldClear"]
+- ["s23CustomStringConvertibleP", "textFieldShouldEndEditing"]
+- ["s23CustomStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s23CustomStringConvertibleP", "uid"]
+- !private ["s23CustomStringConvertibleP", "userObj"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
+- !private ["s23CustomStringConvertibleP", "viewWithTag"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "BtnTapped"]
+- !private ["s9EquatableP", "FIRAuth"]
+- !private ["s9EquatableP", "SVProgressHUD"]
+- !private ["s9EquatableP", "SigninBtn"]
+- !private ["s9EquatableP", "TabBarController"]
+- !private ["s9EquatableP", "UIAlertAction"]
+- !private ["s9EquatableP", "UIAlertController"]
+- !private ["s9EquatableP", "UIAlertControllerStyle"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addAction"]
+- !private ["s9EquatableP", "alert"]
+- !private ["s9EquatableP", "auth"]
+- !private ["s9EquatableP", "becomeFirstResponder"]
+- !private ["s9EquatableP", "cancel"]
+- !private ["s9EquatableP", "cornerRadius"]
+- !private ["s9EquatableP", "currentUser"]
+- !private ["s9EquatableP", "dark"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "directSegue"]
+- !private ["s9EquatableP", "dismiss"]
+- !private ["s9EquatableP", "fld_password"]
+- !private ["s9EquatableP", "fld_username"]
+- !private ["s9EquatableP", "hideKeyboardWhenTappedAround"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "layer"]
+- !private ["s9EquatableP", "present"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "resignFirstResponder"]
+- !private ["s9EquatableP", "setDefaultStyle"]
+- !private ["s9EquatableP", "show"]
+- !private ["s9EquatableP", "signIn"]
+- !private ["s9EquatableP", "superview"]
+- !private ["s9EquatableP", "tag"]
+- !private ["s9EquatableP", "text"]
+- ["s9EquatableP", "textField"]
+- ["s9EquatableP", "textFieldDidBeginEditing"]
+- ["s9EquatableP", "textFieldDidEndEditing"]
+- ["s9EquatableP", "textFieldShouldBeginEditing"]
+- ["s9EquatableP", "textFieldShouldClear"]
+- ["s9EquatableP", "textFieldShouldEndEditing"]
+- ["s9EquatableP", "textFieldShouldReturn"]
+- !private ["s9EquatableP", "uid"]
+- !private ["s9EquatableP", "userObj"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s9EquatableP", "viewWillDisappear"]
+- !private ["s9EquatableP", "viewWithTag"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So7FIRAuthC", "auth"]
+- !private ["So7FIRAuthC", "currentUser"]
+- !private ["So7FIRAuthC", "signIn"]
+- !private ["So7FIRUserC", "uid"]
+- !private ["So11FIRUserInfoP", "uid"]
+- !private ["s8HashableP", "BtnTapped"]
+- !private ["s8HashableP", "FIRAuth"]
+- !private ["s8HashableP", "SVProgressHUD"]
+- !private ["s8HashableP", "SigninBtn"]
+- !private ["s8HashableP", "TabBarController"]
+- !private ["s8HashableP", "UIAlertAction"]
+- !private ["s8HashableP", "UIAlertController"]
+- !private ["s8HashableP", "UIAlertControllerStyle"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addAction"]
+- !private ["s8HashableP", "alert"]
+- !private ["s8HashableP", "auth"]
+- !private ["s8HashableP", "becomeFirstResponder"]
+- !private ["s8HashableP", "cancel"]
+- !private ["s8HashableP", "cornerRadius"]
+- !private ["s8HashableP", "currentUser"]
+- !private ["s8HashableP", "dark"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "directSegue"]
+- !private ["s8HashableP", "dismiss"]
+- !private ["s8HashableP", "fld_password"]
+- !private ["s8HashableP", "fld_username"]
+- !private ["s8HashableP", "hideKeyboardWhenTappedAround"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "layer"]
+- !private ["s8HashableP", "present"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "resignFirstResponder"]
+- !private ["s8HashableP", "setDefaultStyle"]
+- !private ["s8HashableP", "show"]
+- !private ["s8HashableP", "signIn"]
+- !private ["s8HashableP", "superview"]
+- !private ["s8HashableP", "tag"]
+- !private ["s8HashableP", "text"]
+- ["s8HashableP", "textField"]
+- ["s8HashableP", "textFieldDidBeginEditing"]
+- ["s8HashableP", "textFieldDidEndEditing"]
+- ["s8HashableP", "textFieldShouldBeginEditing"]
+- ["s8HashableP", "textFieldShouldClear"]
+- ["s8HashableP", "textFieldShouldEndEditing"]
+- ["s8HashableP", "textFieldShouldReturn"]
+- !private ["s8HashableP", "uid"]
+- !private ["s8HashableP", "userObj"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["s8HashableP", "viewWillDisappear"]
+- !private ["s8HashableP", "viewWithTag"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["8Material14MotionDelegateP", "BtnTapped"]
+- !private ["8Material14MotionDelegateP", "FIRAuth"]
+- !private ["8Material14MotionDelegateP", "SVProgressHUD"]
+- !private ["8Material14MotionDelegateP", "SigninBtn"]
+- !private ["8Material14MotionDelegateP", "TabBarController"]
+- !private ["8Material14MotionDelegateP", "UIAlertAction"]
+- !private ["8Material14MotionDelegateP", "UIAlertController"]
+- !private ["8Material14MotionDelegateP", "UIAlertControllerStyle"]
+- !private ["8Material14MotionDelegateP", "addAction"]
+- !private ["8Material14MotionDelegateP", "directSegue"]
+- !private ["8Material14MotionDelegateP", "dismiss"]
+- !private ["8Material14MotionDelegateP", "fld_password"]
+- !private ["8Material14MotionDelegateP", "fld_username"]
+- !private ["8Material14MotionDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["8Material14MotionDelegateP", "init"]
+- !private ["8Material14MotionDelegateP", "present"]
+- !private ["8Material14MotionDelegateP", "print"]
+- ["8Material14MotionDelegateP", "textField"]
+- ["8Material14MotionDelegateP", "textFieldDidBeginEditing"]
+- ["8Material14MotionDelegateP", "textFieldDidEndEditing"]
+- ["8Material14MotionDelegateP", "textFieldShouldBeginEditing"]
+- ["8Material14MotionDelegateP", "textFieldShouldClear"]
+- ["8Material14MotionDelegateP", "textFieldShouldEndEditing"]
+- ["8Material14MotionDelegateP", "textFieldShouldReturn"]
+- !private ["8Material14MotionDelegateP", "userObj"]
+- !private ["8Material14MotionDelegateP", "viewDidLoad"]
+- !private ["8Material14MotionDelegateP", "viewWillDisappear"]
+- ["8Material14MotionDelegateP", ""]
+- !private ["So8NSCodingP", "BtnTapped"]
+- !private ["So8NSCodingP", "FIRAuth"]
+- !private ["So8NSCodingP", "SVProgressHUD"]
+- !private ["So8NSCodingP", "SigninBtn"]
+- !private ["So8NSCodingP", "TabBarController"]
+- !private ["So8NSCodingP", "UIAlertAction"]
+- !private ["So8NSCodingP", "UIAlertController"]
+- !private ["So8NSCodingP", "UIAlertControllerStyle"]
+- !private ["So8NSCodingP", "addAction"]
+- !private ["So8NSCodingP", "becomeFirstResponder"]
+- !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "directSegue"]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "fld_password"]
+- !private ["So8NSCodingP", "fld_username"]
+- !private ["So8NSCodingP", "hideKeyboardWhenTappedAround"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "resignFirstResponder"]
+- !private ["So8NSCodingP", "setDefaultStyle"]
+- !private ["So8NSCodingP", "show"]
+- !private ["So8NSCodingP", "superview"]
+- !private ["So8NSCodingP", "tag"]
+- !private ["So8NSCodingP", "text"]
+- ["So8NSCodingP", "textField"]
+- ["So8NSCodingP", "textFieldDidBeginEditing"]
+- ["So8NSCodingP", "textFieldDidEndEditing"]
+- ["So8NSCodingP", "textFieldShouldBeginEditing"]
+- ["So8NSCodingP", "textFieldShouldClear"]
+- ["So8NSCodingP", "textFieldShouldEndEditing"]
+- ["So8NSCodingP", "textFieldShouldReturn"]
+- !private ["So8NSCodingP", "userObj"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "viewWillDisappear"]
+- !private ["So8NSCodingP", "viewWithTag"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "BtnTapped"]
+- !private ["So26NSExtensionRequestHandlingP", "FIRAuth"]
+- !private ["So26NSExtensionRequestHandlingP", "SVProgressHUD"]
+- !private ["So26NSExtensionRequestHandlingP", "SigninBtn"]
+- !private ["So26NSExtensionRequestHandlingP", "TabBarController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertControllerStyle"]
+- !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "directSegue"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "fld_password"]
+- !private ["So26NSExtensionRequestHandlingP", "fld_username"]
+- !private ["So26NSExtensionRequestHandlingP", "hideKeyboardWhenTappedAround"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- ["So26NSExtensionRequestHandlingP", "textField"]
+- ["So26NSExtensionRequestHandlingP", "textFieldDidBeginEditing"]
+- ["So26NSExtensionRequestHandlingP", "textFieldDidEndEditing"]
+- ["So26NSExtensionRequestHandlingP", "textFieldShouldBeginEditing"]
+- ["So26NSExtensionRequestHandlingP", "textFieldShouldClear"]
+- ["So26NSExtensionRequestHandlingP", "textFieldShouldEndEditing"]
+- ["So26NSExtensionRequestHandlingP", "textFieldShouldReturn"]
+- !private ["So26NSExtensionRequestHandlingP", "userObj"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "BtnTapped"]
+- !private ["So8NSObjectC", "FIRAuth"]
+- ["So8NSObjectC", "FIRDatabaseReference"]
+- !private ["So8NSObjectC", "SVProgressHUD"]
+- ["So8NSObjectC", "SigninBtn"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "TabBarController"]
+- !private ["So8NSObjectC", "UIAlertAction"]
+- !private ["So8NSObjectC", "UIAlertController"]
+- !private ["So8NSObjectC", "UIAlertControllerStyle"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UITextField"]
+- !private ["So8NSObjectC", "addAction"]
+- !private ["So8NSObjectC", "auth"]
+- !private ["So8NSObjectC", "becomeFirstResponder"]
+- !private ["So8NSObjectC", "cornerRadius"]
+- !private ["So8NSObjectC", "currentUser"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "directSegue"]
+- !private ["So8NSObjectC", "dismiss"]
+- ["So8NSObjectC", "fld_password"]
+- ["So8NSObjectC", "fld_username"]
+- ["So8NSObjectC", "goBack"]
+- !private ["So8NSObjectC", "hideKeyboardWhenTappedAround"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "ref"]
+- !private ["So8NSObjectC", "resignFirstResponder"]
+- !private ["So8NSObjectC", "setDefaultStyle"]
+- !private ["So8NSObjectC", "show"]
+- !private ["So8NSObjectC", "signIn"]
+- !private ["So8NSObjectC", "superview"]
+- !private ["So8NSObjectC", "tag"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "textField"]
+- ["So8NSObjectC", "textFieldDidBeginEditing"]
+- ["So8NSObjectC", "textFieldDidEndEditing"]
+- ["So8NSObjectC", "textFieldShouldBeginEditing"]
+- ["So8NSObjectC", "textFieldShouldClear"]
+- ["So8NSObjectC", "textFieldShouldEndEditing"]
+- ["So8NSObjectC", "textFieldShouldReturn"]
+- !private ["So8NSObjectC", "uid"]
+- !private ["So8NSObjectC", "userObj"]
+- ["So8NSObjectC", "userUid"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewWillDisappear"]
+- !private ["So8NSObjectC", "viewWithTag"]
+- !private ["So16NSObjectProtocolP", "BtnTapped"]
+- !private ["So16NSObjectProtocolP", "FIRAuth"]
+- !private ["So16NSObjectProtocolP", "SVProgressHUD"]
+- !private ["So16NSObjectProtocolP", "SigninBtn"]
+- !private ["So16NSObjectProtocolP", "TabBarController"]
+- !private ["So16NSObjectProtocolP", "UIAlertAction"]
+- !private ["So16NSObjectProtocolP", "UIAlertController"]
+- !private ["So16NSObjectProtocolP", "UIAlertControllerStyle"]
+- !private ["So16NSObjectProtocolP", "addAction"]
+- !private ["So16NSObjectProtocolP", "auth"]
+- !private ["So16NSObjectProtocolP", "becomeFirstResponder"]
+- !private ["So16NSObjectProtocolP", "cornerRadius"]
+- !private ["So16NSObjectProtocolP", "currentUser"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "directSegue"]
+- !private ["So16NSObjectProtocolP", "dismiss"]
+- !private ["So16NSObjectProtocolP", "fld_password"]
+- !private ["So16NSObjectProtocolP", "fld_username"]
+- !private ["So16NSObjectProtocolP", "hideKeyboardWhenTappedAround"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "layer"]
+- !private ["So16NSObjectProtocolP", "present"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "resignFirstResponder"]
+- !private ["So16NSObjectProtocolP", "setDefaultStyle"]
+- !private ["So16NSObjectProtocolP", "show"]
+- !private ["So16NSObjectProtocolP", "signIn"]
+- !private ["So16NSObjectProtocolP", "superview"]
+- !private ["So16NSObjectProtocolP", "tag"]
+- !private ["So16NSObjectProtocolP", "text"]
+- ["So16NSObjectProtocolP", "textField"]
+- ["So16NSObjectProtocolP", "textFieldDidBeginEditing"]
+- ["So16NSObjectProtocolP", "textFieldDidEndEditing"]
+- ["So16NSObjectProtocolP", "textFieldShouldBeginEditing"]
+- ["So16NSObjectProtocolP", "textFieldShouldClear"]
+- ["So16NSObjectProtocolP", "textFieldShouldEndEditing"]
+- ["So16NSObjectProtocolP", "textFieldShouldReturn"]
+- !private ["So16NSObjectProtocolP", "uid"]
+- !private ["So16NSObjectProtocolP", "userObj"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "viewWillDisappear"]
+- !private ["So16NSObjectProtocolP", "viewWithTag"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "alert"]
+- !private ["s16RawRepresentableP", "cancel"]
+- !private ["s16RawRepresentableP", "dark"]
+- !private ["So13SVProgressHUDC", "dismiss"]
+- !private ["So13SVProgressHUDC", "setDefaultStyle"]
+- !private ["So13SVProgressHUDC", "show"]
+- !private ["SC18SVProgressHUDStyleO", "dark"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["4Test16TabBarControllerC", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "becomeFirstResponder"]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "dismiss"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "resignFirstResponder"]
+- !private ["So29UIAccessibilityIdentificationP", "setDefaultStyle"]
+- !private ["So29UIAccessibilityIdentificationP", "show"]
+- !private ["So29UIAccessibilityIdentificationP", "superview"]
+- !private ["So29UIAccessibilityIdentificationP", "tag"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "viewWithTag"]
+- !private ["So13UIAlertActionC", "init"]
+- !private ["SC18UIAlertActionStyleO", "cancel"]
+- !private ["So17UIAlertControllerC", "addAction"]
+- !private ["So17UIAlertControllerC", "init"]
+- !private ["SC22UIAlertControllerStyleO", "alert"]
+- !private ["So12UIAppearanceP", "becomeFirstResponder"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "dismiss"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "resignFirstResponder"]
+- !private ["So12UIAppearanceP", "setDefaultStyle"]
+- !private ["So12UIAppearanceP", "show"]
+- !private ["So12UIAppearanceP", "superview"]
+- !private ["So12UIAppearanceP", "tag"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "viewWithTag"]
+- !private ["So21UIAppearanceContainerP", "BtnTapped"]
+- !private ["So21UIAppearanceContainerP", "FIRAuth"]
+- !private ["So21UIAppearanceContainerP", "SVProgressHUD"]
+- !private ["So21UIAppearanceContainerP", "SigninBtn"]
+- !private ["So21UIAppearanceContainerP", "TabBarController"]
+- !private ["So21UIAppearanceContainerP", "UIAlertAction"]
+- !private ["So21UIAppearanceContainerP", "UIAlertController"]
+- !private ["So21UIAppearanceContainerP", "UIAlertControllerStyle"]
+- !private ["So21UIAppearanceContainerP", "addAction"]
+- !private ["So21UIAppearanceContainerP", "becomeFirstResponder"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "directSegue"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "fld_password"]
+- !private ["So21UIAppearanceContainerP", "fld_username"]
+- !private ["So21UIAppearanceContainerP", "hideKeyboardWhenTappedAround"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
+- !private ["So21UIAppearanceContainerP", "setDefaultStyle"]
+- !private ["So21UIAppearanceContainerP", "show"]
+- !private ["So21UIAppearanceContainerP", "superview"]
+- !private ["So21UIAppearanceContainerP", "tag"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- ["So21UIAppearanceContainerP", "textField"]
+- ["So21UIAppearanceContainerP", "textFieldDidBeginEditing"]
+- ["So21UIAppearanceContainerP", "textFieldDidEndEditing"]
+- ["So21UIAppearanceContainerP", "textFieldShouldBeginEditing"]
+- ["So21UIAppearanceContainerP", "textFieldShouldClear"]
+- ["So21UIAppearanceContainerP", "textFieldShouldEndEditing"]
+- ["So21UIAppearanceContainerP", "textFieldShouldReturn"]
+- !private ["So21UIAppearanceContainerP", "userObj"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
+- !private ["So21UIAppearanceContainerP", "viewWithTag"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "layer"]
+- !private ["So18UIContentContainerP", "BtnTapped"]
+- !private ["So18UIContentContainerP", "FIRAuth"]
+- !private ["So18UIContentContainerP", "SVProgressHUD"]
+- !private ["So18UIContentContainerP", "SigninBtn"]
+- !private ["So18UIContentContainerP", "TabBarController"]
+- !private ["So18UIContentContainerP", "UIAlertAction"]
+- !private ["So18UIContentContainerP", "UIAlertController"]
+- !private ["So18UIContentContainerP", "UIAlertControllerStyle"]
+- !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "directSegue"]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "fld_password"]
+- !private ["So18UIContentContainerP", "fld_username"]
+- !private ["So18UIContentContainerP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "print"]
+- ["So18UIContentContainerP", "textField"]
+- ["So18UIContentContainerP", "textFieldDidBeginEditing"]
+- ["So18UIContentContainerP", "textFieldDidEndEditing"]
+- ["So18UIContentContainerP", "textFieldShouldBeginEditing"]
+- ["So18UIContentContainerP", "textFieldShouldClear"]
+- ["So18UIContentContainerP", "textFieldShouldEndEditing"]
+- ["So18UIContentContainerP", "textFieldShouldReturn"]
+- !private ["So18UIContentContainerP", "userObj"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "viewWillDisappear"]
+- ["So18UIContentContainerP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "becomeFirstResponder"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "delegate"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "layer"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "resignFirstResponder"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "superview"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "tag"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "becomeFirstResponder"]
+- !private ["So9UIControlC", "delegate"]
+- !private ["So9UIControlC", "layer"]
+- !private ["So9UIControlC", "resignFirstResponder"]
+- !private ["So9UIControlC", "superview"]
+- !private ["So9UIControlC", "tag"]
+- !private ["So9UIControlC", "text"]
+- !private ["So17UICoordinateSpaceP", "becomeFirstResponder"]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "dismiss"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "resignFirstResponder"]
+- !private ["So17UICoordinateSpaceP", "setDefaultStyle"]
+- !private ["So17UICoordinateSpaceP", "show"]
+- !private ["So17UICoordinateSpaceP", "superview"]
+- !private ["So17UICoordinateSpaceP", "tag"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "viewWithTag"]
+- !private ["So13UIDynamicItemP", "becomeFirstResponder"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "dismiss"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "resignFirstResponder"]
+- !private ["So13UIDynamicItemP", "setDefaultStyle"]
+- !private ["So13UIDynamicItemP", "show"]
+- !private ["So13UIDynamicItemP", "superview"]
+- !private ["So13UIDynamicItemP", "tag"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "viewWithTag"]
+- !private ["So18UIFocusEnvironmentP", "BtnTapped"]
+- !private ["So18UIFocusEnvironmentP", "FIRAuth"]
+- !private ["So18UIFocusEnvironmentP", "SVProgressHUD"]
+- !private ["So18UIFocusEnvironmentP", "SigninBtn"]
+- !private ["So18UIFocusEnvironmentP", "TabBarController"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertController"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertControllerStyle"]
+- !private ["So18UIFocusEnvironmentP", "addAction"]
+- !private ["So18UIFocusEnvironmentP", "becomeFirstResponder"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "directSegue"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "fld_password"]
+- !private ["So18UIFocusEnvironmentP", "fld_username"]
+- !private ["So18UIFocusEnvironmentP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
+- !private ["So18UIFocusEnvironmentP", "setDefaultStyle"]
+- !private ["So18UIFocusEnvironmentP", "show"]
+- !private ["So18UIFocusEnvironmentP", "superview"]
+- !private ["So18UIFocusEnvironmentP", "tag"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- ["So18UIFocusEnvironmentP", "textField"]
+- ["So18UIFocusEnvironmentP", "textFieldDidBeginEditing"]
+- ["So18UIFocusEnvironmentP", "textFieldDidEndEditing"]
+- ["So18UIFocusEnvironmentP", "textFieldShouldBeginEditing"]
+- ["So18UIFocusEnvironmentP", "textFieldShouldClear"]
+- ["So18UIFocusEnvironmentP", "textFieldShouldEndEditing"]
+- ["So18UIFocusEnvironmentP", "textFieldShouldReturn"]
+- !private ["So18UIFocusEnvironmentP", "userObj"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "viewWillDisappear"]
+- !private ["So18UIFocusEnvironmentP", "viewWithTag"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "becomeFirstResponder"]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "dismiss"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "resignFirstResponder"]
+- !private ["So11UIFocusItemP", "setDefaultStyle"]
+- !private ["So11UIFocusItemP", "show"]
+- !private ["So11UIFocusItemP", "superview"]
+- !private ["So11UIFocusItemP", "tag"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "viewWithTag"]
+- !private ["So10UIKeyInputP", "becomeFirstResponder"]
+- !private ["So10UIKeyInputP", "delegate"]
+- !private ["So10UIKeyInputP", "layer"]
+- !private ["So10UIKeyInputP", "resignFirstResponder"]
+- !private ["So10UIKeyInputP", "superview"]
+- !private ["So10UIKeyInputP", "tag"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So30UINavigationControllerDelegateP", "BtnTapped"]
+- !private ["So30UINavigationControllerDelegateP", "FIRAuth"]
+- !private ["So30UINavigationControllerDelegateP", "SVProgressHUD"]
+- !private ["So30UINavigationControllerDelegateP", "SigninBtn"]
+- !private ["So30UINavigationControllerDelegateP", "TabBarController"]
+- !private ["So30UINavigationControllerDelegateP", "UIAlertAction"]
+- !private ["So30UINavigationControllerDelegateP", "UIAlertController"]
+- !private ["So30UINavigationControllerDelegateP", "UIAlertControllerStyle"]
+- !private ["So30UINavigationControllerDelegateP", "addAction"]
+- !private ["So30UINavigationControllerDelegateP", "directSegue"]
+- !private ["So30UINavigationControllerDelegateP", "dismiss"]
+- !private ["So30UINavigationControllerDelegateP", "fld_password"]
+- !private ["So30UINavigationControllerDelegateP", "fld_username"]
+- !private ["So30UINavigationControllerDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UINavigationControllerDelegateP", "init"]
+- !private ["So30UINavigationControllerDelegateP", "present"]
+- !private ["So30UINavigationControllerDelegateP", "print"]
+- ["So30UINavigationControllerDelegateP", "textField"]
+- ["So30UINavigationControllerDelegateP", "textFieldDidBeginEditing"]
+- ["So30UINavigationControllerDelegateP", "textFieldDidEndEditing"]
+- ["So30UINavigationControllerDelegateP", "textFieldShouldBeginEditing"]
+- ["So30UINavigationControllerDelegateP", "textFieldShouldClear"]
+- ["So30UINavigationControllerDelegateP", "textFieldShouldEndEditing"]
+- ["So30UINavigationControllerDelegateP", "textFieldShouldReturn"]
+- !private ["So30UINavigationControllerDelegateP", "userObj"]
+- !private ["So30UINavigationControllerDelegateP", "viewDidLoad"]
+- !private ["So30UINavigationControllerDelegateP", "viewWillDisappear"]
+- ["So30UINavigationControllerDelegateP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "BtnTapped"]
+- !private ["So30UIPasteConfigurationSupportingP", "FIRAuth"]
+- !private ["So30UIPasteConfigurationSupportingP", "SVProgressHUD"]
+- !private ["So30UIPasteConfigurationSupportingP", "SigninBtn"]
+- !private ["So30UIPasteConfigurationSupportingP", "TabBarController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertControllerStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "addAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "becomeFirstResponder"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "directSegue"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "fld_password"]
+- !private ["So30UIPasteConfigurationSupportingP", "fld_username"]
+- !private ["So30UIPasteConfigurationSupportingP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
+- !private ["So30UIPasteConfigurationSupportingP", "setDefaultStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "show"]
+- !private ["So30UIPasteConfigurationSupportingP", "superview"]
+- !private ["So30UIPasteConfigurationSupportingP", "tag"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So30UIPasteConfigurationSupportingP", "textField"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldDidBeginEditing"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldDidEndEditing"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldShouldBeginEditing"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldShouldClear"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldShouldEndEditing"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldShouldReturn"]
+- !private ["So30UIPasteConfigurationSupportingP", "userObj"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWillDisappear"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWithTag"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "BtnTapped"]
+- !private ["So11UIResponderC", "FIRAuth"]
+- ["So11UIResponderC", "FIRDatabaseReference"]
+- !private ["So11UIResponderC", "SVProgressHUD"]
+- ["So11UIResponderC", "SigninBtn"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "TabBarController"]
+- !private ["So11UIResponderC", "UIAlertAction"]
+- !private ["So11UIResponderC", "UIAlertController"]
+- !private ["So11UIResponderC", "UIAlertControllerStyle"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UITextField"]
+- !private ["So11UIResponderC", "addAction"]
+- !private ["So11UIResponderC", "becomeFirstResponder"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "directSegue"]
+- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "fld_password"]
+- ["So11UIResponderC", "fld_username"]
+- ["So11UIResponderC", "goBack"]
+- !private ["So11UIResponderC", "hideKeyboardWhenTappedAround"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "ref"]
+- !private ["So11UIResponderC", "resignFirstResponder"]
+- !private ["So11UIResponderC", "setDefaultStyle"]
+- !private ["So11UIResponderC", "show"]
+- !private ["So11UIResponderC", "superview"]
+- !private ["So11UIResponderC", "tag"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "textField"]
+- ["So11UIResponderC", "textFieldDidBeginEditing"]
+- ["So11UIResponderC", "textFieldDidEndEditing"]
+- ["So11UIResponderC", "textFieldShouldBeginEditing"]
+- ["So11UIResponderC", "textFieldShouldClear"]
+- ["So11UIResponderC", "textFieldShouldEndEditing"]
+- ["So11UIResponderC", "textFieldShouldReturn"]
+- !private ["So11UIResponderC", "userObj"]
+- ["So11UIResponderC", "userUid"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewWillDisappear"]
+- !private ["So11UIResponderC", "viewWithTag"]
+- !private ["So30UIResponderStandardEditActionsP", "BtnTapped"]
+- !private ["So30UIResponderStandardEditActionsP", "FIRAuth"]
+- !private ["So30UIResponderStandardEditActionsP", "SVProgressHUD"]
+- !private ["So30UIResponderStandardEditActionsP", "SigninBtn"]
+- !private ["So30UIResponderStandardEditActionsP", "TabBarController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertControllerStyle"]
+- !private ["So30UIResponderStandardEditActionsP", "addAction"]
+- !private ["So30UIResponderStandardEditActionsP", "becomeFirstResponder"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "directSegue"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "fld_password"]
+- !private ["So30UIResponderStandardEditActionsP", "fld_username"]
+- !private ["So30UIResponderStandardEditActionsP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
+- !private ["So30UIResponderStandardEditActionsP", "setDefaultStyle"]
+- !private ["So30UIResponderStandardEditActionsP", "show"]
+- !private ["So30UIResponderStandardEditActionsP", "superview"]
+- !private ["So30UIResponderStandardEditActionsP", "tag"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- ["So30UIResponderStandardEditActionsP", "textField"]
+- ["So30UIResponderStandardEditActionsP", "textFieldDidBeginEditing"]
+- ["So30UIResponderStandardEditActionsP", "textFieldDidEndEditing"]
+- ["So30UIResponderStandardEditActionsP", "textFieldShouldBeginEditing"]
+- ["So30UIResponderStandardEditActionsP", "textFieldShouldClear"]
+- ["So30UIResponderStandardEditActionsP", "textFieldShouldEndEditing"]
+- ["So30UIResponderStandardEditActionsP", "textFieldShouldReturn"]
+- !private ["So30UIResponderStandardEditActionsP", "userObj"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWithTag"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
+- !private ["So16UIStateRestoringP", "BtnTapped"]
+- !private ["So16UIStateRestoringP", "FIRAuth"]
+- !private ["So16UIStateRestoringP", "SVProgressHUD"]
+- !private ["So16UIStateRestoringP", "SigninBtn"]
+- !private ["So16UIStateRestoringP", "TabBarController"]
+- !private ["So16UIStateRestoringP", "UIAlertAction"]
+- !private ["So16UIStateRestoringP", "UIAlertController"]
+- !private ["So16UIStateRestoringP", "UIAlertControllerStyle"]
+- !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "directSegue"]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "fld_password"]
+- !private ["So16UIStateRestoringP", "fld_username"]
+- !private ["So16UIStateRestoringP", "hideKeyboardWhenTappedAround"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "print"]
+- ["So16UIStateRestoringP", "textField"]
+- ["So16UIStateRestoringP", "textFieldDidBeginEditing"]
+- ["So16UIStateRestoringP", "textFieldDidEndEditing"]
+- ["So16UIStateRestoringP", "textFieldShouldBeginEditing"]
+- ["So16UIStateRestoringP", "textFieldShouldClear"]
+- ["So16UIStateRestoringP", "textFieldShouldEndEditing"]
+- ["So16UIStateRestoringP", "textFieldShouldReturn"]
+- !private ["So16UIStateRestoringP", "userObj"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "viewWillDisappear"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So18UITabBarControllerC", "init"]
+- !private ["So26UITabBarControllerDelegateP", "BtnTapped"]
+- !private ["So26UITabBarControllerDelegateP", "FIRAuth"]
+- !private ["So26UITabBarControllerDelegateP", "SVProgressHUD"]
+- !private ["So26UITabBarControllerDelegateP", "SigninBtn"]
+- !private ["So26UITabBarControllerDelegateP", "TabBarController"]
+- !private ["So26UITabBarControllerDelegateP", "UIAlertAction"]
+- !private ["So26UITabBarControllerDelegateP", "UIAlertController"]
+- !private ["So26UITabBarControllerDelegateP", "UIAlertControllerStyle"]
+- !private ["So26UITabBarControllerDelegateP", "addAction"]
+- !private ["So26UITabBarControllerDelegateP", "directSegue"]
+- !private ["So26UITabBarControllerDelegateP", "dismiss"]
+- !private ["So26UITabBarControllerDelegateP", "fld_password"]
+- !private ["So26UITabBarControllerDelegateP", "fld_username"]
+- !private ["So26UITabBarControllerDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So26UITabBarControllerDelegateP", "init"]
+- !private ["So26UITabBarControllerDelegateP", "present"]
+- !private ["So26UITabBarControllerDelegateP", "print"]
+- ["So26UITabBarControllerDelegateP", "textField"]
+- ["So26UITabBarControllerDelegateP", "textFieldDidBeginEditing"]
+- ["So26UITabBarControllerDelegateP", "textFieldDidEndEditing"]
+- ["So26UITabBarControllerDelegateP", "textFieldShouldBeginEditing"]
+- ["So26UITabBarControllerDelegateP", "textFieldShouldClear"]
+- ["So26UITabBarControllerDelegateP", "textFieldShouldEndEditing"]
+- ["So26UITabBarControllerDelegateP", "textFieldShouldReturn"]
+- !private ["So26UITabBarControllerDelegateP", "userObj"]
+- !private ["So26UITabBarControllerDelegateP", "viewDidLoad"]
+- !private ["So26UITabBarControllerDelegateP", "viewWillDisappear"]
+- ["So26UITabBarControllerDelegateP", ""]
+- !private ["So16UITabBarDelegateP", "init"]
+- !private ["So15UITextDraggableP", "becomeFirstResponder"]
+- !private ["So15UITextDraggableP", "delegate"]
+- !private ["So15UITextDraggableP", "layer"]
+- !private ["So15UITextDraggableP", "resignFirstResponder"]
+- !private ["So15UITextDraggableP", "superview"]
+- !private ["So15UITextDraggableP", "tag"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "becomeFirstResponder"]
+- !private ["So15UITextDroppableP", "delegate"]
+- !private ["So15UITextDroppableP", "layer"]
+- !private ["So15UITextDroppableP", "resignFirstResponder"]
+- !private ["So15UITextDroppableP", "superview"]
+- !private ["So15UITextDroppableP", "tag"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "becomeFirstResponder"]
+- !private ["So11UITextFieldC", "delegate"]
+- !private ["So11UITextFieldC", "layer"]
+- !private ["So11UITextFieldC", "resignFirstResponder"]
+- !private ["So11UITextFieldC", "superview"]
+- !private ["So11UITextFieldC", "tag"]
+- !private ["So11UITextFieldC", "text"]
+- !private ["So19UITextFieldDelegateP", "BtnTapped"]
+- !private ["So19UITextFieldDelegateP", "FIRAuth"]
+- !private ["So19UITextFieldDelegateP", "SVProgressHUD"]
+- !private ["So19UITextFieldDelegateP", "SigninBtn"]
+- !private ["So19UITextFieldDelegateP", "TabBarController"]
+- !private ["So19UITextFieldDelegateP", "UIAlertAction"]
+- !private ["So19UITextFieldDelegateP", "UIAlertController"]
+- !private ["So19UITextFieldDelegateP", "UIAlertControllerStyle"]
+- !private ["So19UITextFieldDelegateP", "directSegue"]
+- !private ["So19UITextFieldDelegateP", "dismiss"]
+- !private ["So19UITextFieldDelegateP", "fld_password"]
+- !private ["So19UITextFieldDelegateP", "fld_username"]
+- !private ["So19UITextFieldDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So19UITextFieldDelegateP", "present"]
+- !private ["So19UITextFieldDelegateP", "print"]
+- ["So19UITextFieldDelegateP", "textField"]
+- ["So19UITextFieldDelegateP", "textFieldDidBeginEditing"]
+- ["So19UITextFieldDelegateP", "textFieldDidEndEditing"]
+- ["So19UITextFieldDelegateP", "textFieldShouldBeginEditing"]
+- ["So19UITextFieldDelegateP", "textFieldShouldClear"]
+- ["So19UITextFieldDelegateP", "textFieldShouldEndEditing"]
+- ["So19UITextFieldDelegateP", "textFieldShouldReturn"]
+- !private ["So19UITextFieldDelegateP", "userObj"]
+- ["So19UITextFieldDelegateP", ""]
+- !private ["So11UITextInputP", "becomeFirstResponder"]
+- !private ["So11UITextInputP", "delegate"]
+- !private ["So11UITextInputP", "layer"]
+- !private ["So11UITextInputP", "resignFirstResponder"]
+- !private ["So11UITextInputP", "superview"]
+- !private ["So11UITextInputP", "tag"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "becomeFirstResponder"]
+- !private ["So17UITextInputTraitsP", "delegate"]
+- !private ["So17UITextInputTraitsP", "layer"]
+- !private ["So17UITextInputTraitsP", "resignFirstResponder"]
+- !private ["So17UITextInputTraitsP", "superview"]
+- !private ["So17UITextInputTraitsP", "tag"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "becomeFirstResponder"]
+- !private ["So34UITextPasteConfigurationSupportingP", "delegate"]
+- !private ["So34UITextPasteConfigurationSupportingP", "layer"]
+- !private ["So34UITextPasteConfigurationSupportingP", "resignFirstResponder"]
+- !private ["So34UITextPasteConfigurationSupportingP", "superview"]
+- !private ["So34UITextPasteConfigurationSupportingP", "tag"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "BtnTapped"]
+- !private ["So18UITraitEnvironmentP", "FIRAuth"]
+- !private ["So18UITraitEnvironmentP", "SVProgressHUD"]
+- !private ["So18UITraitEnvironmentP", "SigninBtn"]
+- !private ["So18UITraitEnvironmentP", "TabBarController"]
+- !private ["So18UITraitEnvironmentP", "UIAlertAction"]
+- !private ["So18UITraitEnvironmentP", "UIAlertController"]
+- !private ["So18UITraitEnvironmentP", "UIAlertControllerStyle"]
+- !private ["So18UITraitEnvironmentP", "addAction"]
+- !private ["So18UITraitEnvironmentP", "becomeFirstResponder"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "directSegue"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "fld_password"]
+- !private ["So18UITraitEnvironmentP", "fld_username"]
+- !private ["So18UITraitEnvironmentP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
+- !private ["So18UITraitEnvironmentP", "setDefaultStyle"]
+- !private ["So18UITraitEnvironmentP", "show"]
+- !private ["So18UITraitEnvironmentP", "superview"]
+- !private ["So18UITraitEnvironmentP", "tag"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- ["So18UITraitEnvironmentP", "textField"]
+- ["So18UITraitEnvironmentP", "textFieldDidBeginEditing"]
+- ["So18UITraitEnvironmentP", "textFieldDidEndEditing"]
+- ["So18UITraitEnvironmentP", "textFieldShouldBeginEditing"]
+- ["So18UITraitEnvironmentP", "textFieldShouldClear"]
+- ["So18UITraitEnvironmentP", "textFieldShouldEndEditing"]
+- ["So18UITraitEnvironmentP", "textFieldShouldReturn"]
+- !private ["So18UITraitEnvironmentP", "userObj"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "viewWillDisappear"]
+- !private ["So18UITraitEnvironmentP", "viewWithTag"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "becomeFirstResponder"]
+- !private ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "dismiss"]
+- !private ["So6UIViewC", "layer"]
+- !private ["So6UIViewC", "resignFirstResponder"]
+- !private ["So6UIViewC", "setDefaultStyle"]
+- !private ["So6UIViewC", "show"]
+- !private ["So6UIViewC", "superview"]
+- !private ["So6UIViewC", "tag"]
+- !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "viewWithTag"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "BtnTapped"]
+- !private ["So16UIViewControllerC", "FIRAuth"]
+- ["So16UIViewControllerC", "FIRDatabaseReference"]
+- !private ["So16UIViewControllerC", "SVProgressHUD"]
+- ["So16UIViewControllerC", "SigninBtn"]
+- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "TabBarController"]
+- !private ["So16UIViewControllerC", "UIAlertAction"]
+- !private ["So16UIViewControllerC", "UIAlertController"]
+- !private ["So16UIViewControllerC", "UIAlertControllerStyle"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UITextField"]
+- !private ["So16UIViewControllerC", "addAction"]
+- ["So16UIViewControllerC", "directSegue"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "fld_password"]
+- ["So16UIViewControllerC", "fld_username"]
+- ["So16UIViewControllerC", "goBack"]
+- !private ["So16UIViewControllerC", "hideKeyboardWhenTappedAround"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "ref"]
+- ["So16UIViewControllerC", "textField"]
+- ["So16UIViewControllerC", "textFieldDidBeginEditing"]
+- ["So16UIViewControllerC", "textFieldDidEndEditing"]
+- ["So16UIViewControllerC", "textFieldShouldBeginEditing"]
+- ["So16UIViewControllerC", "textFieldShouldClear"]
+- ["So16UIViewControllerC", "textFieldShouldEndEditing"]
+- ["So16UIViewControllerC", "textFieldShouldReturn"]
+- !private ["So16UIViewControllerC", "userObj"]
+- ["So16UIViewControllerC", "userUid"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewWillDisappear"]
+- ["So16UIViewControllerC", ""]
+- !private ["So37UIViewControllerTransitioningDelegateP", "BtnTapped"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "FIRAuth"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "SVProgressHUD"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "SigninBtn"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "TabBarController"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertAction"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertController"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertControllerStyle"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "addAction"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "directSegue"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "dismiss"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "fld_password"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "fld_username"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "init"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "present"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "print"]
+- ["So37UIViewControllerTransitioningDelegateP", "textField"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldDidBeginEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldDidEndEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldBeginEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldClear"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldEndEditing"]
+- ["So37UIViewControllerTransitioningDelegateP", "textFieldShouldReturn"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "userObj"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "viewDidLoad"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "viewWillDisappear"]
+- ["So37UIViewControllerTransitioningDelegateP", ""]
+- !private ["4Test10UserObjectC", "completeAsyncCalls"]
+- !private ["4Test10UserObjectC", "uid"]
+- ["4Test17VC_Creator_SigninC", "Bool"]
+- ["4Test17VC_Creator_SigninC", "BtnTapped"]
+- !private ["4Test17VC_Creator_SigninC", "FIRAuth"]
+- ["4Test17VC_Creator_SigninC", "FIRDatabaseReference"]
+- !private ["4Test17VC_Creator_SigninC", "SVProgressHUD"]
+- ["4Test17VC_Creator_SigninC", "SigninBtn"]
+- ["4Test17VC_Creator_SigninC", "String"]
+- !private ["4Test17VC_Creator_SigninC", "TabBarController"]
+- !private ["4Test17VC_Creator_SigninC", "UIAlertAction"]
+- !private ["4Test17VC_Creator_SigninC", "UIAlertController"]
+- !private ["4Test17VC_Creator_SigninC", "UIAlertControllerStyle"]
+- ["4Test17VC_Creator_SigninC", "UIButton"]
+- ["4Test17VC_Creator_SigninC", "UITextField"]
+- ["4Test17VC_Creator_SigninC", "deinit"]
+- ["4Test17VC_Creator_SigninC", "directSegue"]
+- !private ["4Test17VC_Creator_SigninC", "dismiss"]
+- ["4Test17VC_Creator_SigninC", "fld_password"]
+- ["4Test17VC_Creator_SigninC", "fld_username"]
+- ["4Test17VC_Creator_SigninC", "goBack"]
+- !private ["4Test17VC_Creator_SigninC", "hideKeyboardWhenTappedAround"]
+- ["4Test17VC_Creator_SigninC", "init"]
+- !private ["4Test17VC_Creator_SigninC", "present"]
+- !private ["4Test17VC_Creator_SigninC", "print"]
+- ["4Test17VC_Creator_SigninC", "ref"]
+- ["4Test17VC_Creator_SigninC", "textField"]
+- ["4Test17VC_Creator_SigninC", "textFieldDidBeginEditing"]
+- ["4Test17VC_Creator_SigninC", "textFieldDidEndEditing"]
+- ["4Test17VC_Creator_SigninC", "textFieldShouldBeginEditing"]
+- ["4Test17VC_Creator_SigninC", "textFieldShouldClear"]
+- ["4Test17VC_Creator_SigninC", "textFieldShouldEndEditing"]
+- ["4Test17VC_Creator_SigninC", "textFieldShouldReturn"]
+- !private ["4Test17VC_Creator_SigninC", "userObj"]
+- ["4Test17VC_Creator_SigninC", "userUid"]
+- ["4Test17VC_Creator_SigninC", "viewDidLoad"]
+- ["4Test17VC_Creator_SigninC", "viewWillDisappear"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "becomeFirstResponder"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dismiss"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setDefaultStyle"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "show"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "superview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tag"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "viewWithTag"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "BtnTapped"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRAuth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SVProgressHUD"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SigninBtn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TabBarController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertControllerStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "becomeFirstResponder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "directSegue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fld_password"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fld_username"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hideKeyboardWhenTappedAround"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setDefaultStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "signIn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "superview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tag"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textField"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldDidBeginEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldDidEndEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldBeginEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldClear"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldEndEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldReturn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWithTag"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "8DropDown10AnchorViewP"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So19CAAnimationDelegateP"
+- !private "So7CALayerC"
+- !private "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So7FIRAuthC"
+- !private "So7FIRUserC"
+- !private "So11FIRUserInfoP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "8Material14MotionDelegateP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "So13SVProgressHUDC"
+- !private "SC18SVProgressHUDStyleO"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "4Test16TabBarControllerC"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIAlertActionC"
+- !private "SC18UIAlertActionStyleO"
+- !private "So17UIAlertControllerC"
+- !private "SC22UIAlertControllerStyleO"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So10UIKeyInputP"
+- "So30UINavigationControllerDelegateP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So18UITabBarControllerC"
+- "So26UITabBarControllerDelegateP"
+- !private "So16UITabBarDelegateP"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- "So19UITextFieldDelegateP"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "So37UIViewControllerTransitioningDelegateP"
+- !private "4Test10UserObjectC"
+- "4Test17VC_Creator_SigninC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/Spring.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/arm.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Modules/SwiftMoment.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AssetsLibrary.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/Test-Bridging-Header.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Modules/module.modulemap"
+interface-hash: "29c8a0a18049386c95870b7dfbd852f1"

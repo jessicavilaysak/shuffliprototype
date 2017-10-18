@@ -21,6 +21,8 @@ class RootVC: UIViewController {
     
             super.viewDidAppear(animated)
             
+           // segueToInitialVC(vc_name: "VC_initialview")
+            //return;
             if FIRAuth.auth()?.currentUser != nil{
                 print("User is NOT null.");
                 userObj.uid = FIRAuth.auth()?.currentUser?.uid;

@@ -194,7 +194,52 @@ class UserObject {
                 self.setRole();
                 completion(true);
             }});
+    }
+    
+    func canNewUserBeCreated(completion: @escaping (Bool) -> ())
+    {
+        var max_users = -1;
+        var active_users = -1;
         
+        let userDataGroup = DispatchGroup()
+        userDataGroup.enter()
+        //get max users for this account.
+        //max_users: accountPlans/{accID}/max_users
+        let maxUserPath = "accountPlans/"+accountID!+"/max_users";
+        FIRDatabase.database().reference().child(maxUserPath).observeSingleEvent(of: .value , with: { snapshot in
+            
+            if snapshot.exists() {
+                max_users = snapshot.value as! Int;
+            }
+            userDataGroup.leave();
+        });
+        
+        //get number of current active users for this account.
+        //users: userCount/{accID}/count
+        userDataGroup.enter()
+        let activeUserPath = "userCount/"+accountID!+"/count";
+        FIRDatabase.database().reference().child(activeUserPath).observeSingleEvent(of: .value , with: { snapshot in
+            
+            if snapshot.exists() {
+                active_users = snapshot.value as! Int;
+            }
+            userDataGroup.leave();
+        });
+        userDataGroup.notify(queue: .main) {
+            print("newUsers: max_users");
+            print(max_users);
+            print("newUsers: count");
+            print(active_users);
+            if((max_users != -1) && (active_users != -1) && (active_users < max_users))
+            {
+                completion(true);
+            }
+            else
+            {
+                print("Could not find values for max_users or active_users.");
+                completion(false);
+            }
+        }
     }
 }
 

@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "d9dc649875566acdc89ec0f393290405"
+build_time: [1508324314, 410502000]
+inputs:
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/TestTests/TestTests.swift": !dirty [1506590707, 0]
