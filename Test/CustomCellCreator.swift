@@ -8,12 +8,15 @@
 
 import UIKit
 
+/** This cell class correpsonds to the view post feed
+     and contains outlets for all the cell UI elements.
+ 
+ **/
 class CustomCellCreator: UITableViewCell {
     
+    
     @IBOutlet weak var playButton: UIImageView!
-    
     @IBOutlet var photo: UIImageView!
-    
     @IBOutlet var imageCaption: UILabel!
     
     @IBOutlet weak var dateLabel: UILabel!
@@ -38,6 +41,7 @@ class CustomCellCreator: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // Creates a card like effect when displaying the Post cell
     func updateUi(){
         cardviewBg.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1.0)
         contentView.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1.0)

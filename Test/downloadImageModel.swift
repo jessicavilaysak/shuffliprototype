@@ -9,12 +9,16 @@
 import Foundation
 import FirebaseDatabase
 import SwiftMoment
-
+/**
+ Data model which gets all post related info from the database and stores them in variables
+ which can be globally accessed through the global object "images" which is an array of type
+ imageDataModel.
+ **/
 struct imageDataModel{
-    
+    // Variables to store information from the database
     let key : String!
     let url : String!
-    let ref : FIRDatabaseReference?
+    let ref : FIRDatabaseReference? // reference to the database
     var caption : String!
     var dashboardApproved : Bool!
     var approvedDate: String!;
@@ -31,7 +35,7 @@ struct imageDataModel{
     var timeUnixCreated: Double!
     var category: String!;
     
-    init() {
+    init() { // initalizer setting variables to sensible values
         self.key = nil
         self.url = nil
         self.ref = nil
@@ -50,25 +54,29 @@ struct imageDataModel{
         self.timeUnixCreated = nil;
         self.category = nil;
     }
-    
+    /**  data snapshot initliazer which takes in a firebase datasnapshot as a parameter
+         and stores the value of that snapshot as an NSDictionary which is then extracted
+         from sanpshot value using the key defined in the database.
+     **/
     init(snapshot: FIRDataSnapshot){
         key = snapshot.key
         ref = snapshot.ref
         
-        
         let snapshotValue = snapshot.value as? NSDictionary
-        //print(snapshotValue!);
-        if let imageURL = snapshotValue?["url"] as? String{
+        
+        //Getting and setting all database values in local variables
+
+        if let imageURL = snapshotValue?["url"] as? String{ // download url of image
             url = imageURL
         }else{
             url = ""
         }
-        if let imageCaption = snapshotValue?["description"] as? String{
+        if let imageCaption = snapshotValue?["description"] as? String{ // post captions
             caption = imageCaption
         }else{
             caption = ""
         }
-        if let imageStatus = snapshotValue?["status"] as? String{
+        if let imageStatus = snapshotValue?["status"] as? String{ // post approve status
             if(imageStatus == "approved")
             {
                 dashboardApproved = true;
@@ -80,7 +88,7 @@ struct imageDataModel{
         }else{
             dashboardApproved = false;
         }
-        if let lCreatorID = snapshotValue?["creatorID"] as? String{
+        if let lCreatorID = snapshotValue?["creatorID"] as? String{ // post creator ID
             creatorID = lCreatorID;
         }else{
             creatorID = "";
@@ -90,33 +98,33 @@ struct imageDataModel{
         }else{
             uploadedBy = "";
         }
-        if let lApprovedBy = snapshotValue?["approvedBy"] as? String{
+        if let lApprovedBy = snapshotValue?["approvedBy"] as? String{ // post approved by ID
             approvedBy = lApprovedBy;
         }else{
             approvedBy = "";
         }
-        if let lImgId = snapshotValue?["imageUid"] as? String{
+        if let lImgId = snapshotValue?["imageUid"] as? String{ // image
             imgId = lImgId;
         }else{
             imgId = "";
         }
-        if let lUserPostID = snapshotValue?["userPostID"] as? String{
+        if let lUserPostID = snapshotValue?["userPostID"] as? String{ // id of the post made by  the user
             userPostID = lUserPostID;
         }else{
             userPostID = "";
         }
-        if let lThumbnailUID = snapshotValue?["thumbnailUID"] as? String{
+        if let lThumbnailUID = snapshotValue?["thumbnailUID"] as? String{ // video thumbnial uid
             thumbnailUID = lThumbnailUID;
         }else{
             thumbnailUID = "";
         }
-        if let lThumbnailURL = snapshotValue?["thumbnailURL"] as? String{
+        if let lThumbnailURL = snapshotValue?["thumbnailURL"] as? String{ // video thumbnail download URL
             thumbnailURL = lThumbnailURL;
         }else{
             thumbnailURL = "";
         }
         
-        if let lCreatedDate = snapshotValue?["createdDate"] as? Double{
+        if let lCreatedDate = snapshotValue?["createdDate"] as? Double{ // The date the post was created
             print("createdDate..........................................");
             print(lCreatedDate);
             timeUnixCreated = lCreatedDate;
@@ -127,7 +135,7 @@ struct imageDataModel{
             timeUnixCreated = 0.0;
             createdDate = nil;
         }
-        if let lApprovedDate = snapshotValue?["approvedDate"] as? Double{
+        if let lApprovedDate = snapshotValue?["approvedDate"] as? Double{ // the date the post was approved
             print("approveDate..........................................");
             timeUnixApproved = lApprovedDate
             let date = moment(lApprovedDate).fromNow();
@@ -138,7 +146,7 @@ struct imageDataModel{
             approvedDate = nil;
             timeUnixApproved = 0.0
         }
-        if let lCategory = snapshotValue?["category"] as? String{
+        if let lCategory = snapshotValue?["category"] as? String{ // cateegory of the post as selected by the user
             category = lCategory;
         }else{
             category = "-";
@@ -148,34 +156,5 @@ struct imageDataModel{
 }
 
 
-var images = [imageDataModel]()
+var images = [imageDataModel]() // global access 
 
-
-
-
-
-
-
-
-
-/*
- newdate = Date(timeIntervalSince1970: lCreatedDate);
- formatter = DateFormatter();
- formatter.timeStyle = DateFormatter.Style.medium;
- formatter.dateStyle = DateFormatter.Style.medium;
- formatter.timeZone = TimeZone.current;
- formatter.doesRelativeDateFormatting = true;
- createdDate = formatter.string(from: newdate)
- print(createdDate);
- */
-
-
-/*
- newdate = Date(timeIntervalSince1970: lApprovedDate);
- formatter = DateFormatter();
- formatter.timeStyle = DateFormatter.Style.medium;
- formatter.dateStyle = DateFormatter.Style.medium;
- formatter.timeZone = TimeZone.current;
- formatter.doesRelativeDateFormatting = true;
- approvedDate = formatter.string(from: newdate)
- print(approvedDate);*/
