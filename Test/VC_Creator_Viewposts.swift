@@ -54,7 +54,11 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         SVProgressHUD.setDefaultStyle(.dark)
         creatorImg.sd_setShowActivityIndicatorView(true)
         creatorImg.sd_setIndicatorStyle(.gray)
-        creatorImg.sd_setImage(with: URL(string: userObj.creatorURL!))
+        if(userObj.creatorURL != nil)
+        {
+            creatorImg.sd_setImage(with: URL(string: userObj.creatorURL!))
+        }
+        
         
         creatorImg.layer.cornerRadius = creatorImg.frame.size.width/2;
         creatorImg.clipsToBounds = true;
@@ -237,45 +241,12 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-        let userDataGroup = DispatchGroup() // group of completion handlers 
+ 
         let vc = storyboard?.instantiateViewController(withIdentifier: "VC_clickimage") as! VC_ClickImage;
 
         vc.imgIndex = indexPath.row;
         
-        userDataGroup.enter();
-        FIRDatabase.database().reference().child("users/"+images[indexPath.row].uploadedBy!).observeSingleEvent(of: .value, with: { (snapshot) in
-            let recent = snapshot.value as!  NSDictionary
-            print(recent);
-            
-            if(recent["username"] != nil)
-            {
-                let username = (recent["username"] as? String)!;
-                vc.createdBy = username;
-                print("uploadedBy: "+username);
-            }
-            
-            userDataGroup.leave()
-        })
-        if(images[indexPath.row].approvedBy != nil)
-        {
-            userDataGroup.enter();
-            FIRDatabase.database().reference().child("users/"+images[indexPath.row].approvedBy!).observeSingleEvent(of: .value, with: { (snapshot) in
-                let recent = snapshot.value as!  NSDictionary
-                print(recent);
-                if(recent["username"] != nil)
-                {
-                    let lApproved = (recent["username"] as? String)!;
-                    vc.approvedBy = lApproved;
-                    print("approvedBy: "+lApproved)
-                }
-                userDataGroup.leave()
-            })
-        }
-        userDataGroup.notify(queue: .main) {
-            self.navigationController?.pushViewController(vc, animated: true);
-            
-        }
+        self.navigationController?.pushViewController(vc, animated: true);
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

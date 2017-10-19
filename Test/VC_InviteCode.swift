@@ -18,6 +18,7 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var backBtn: UIButton!
     
     
+    var signingOut: Bool!
     
     
     override func viewDidLoad() {
@@ -26,7 +27,7 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
         fld_invitecode.delegate = self
         btn_signingup.layer.cornerRadius = 4
         SVProgressHUD.setDefaultStyle(.dark)
-        
+        signingOut = false;
         
         fld_invitecode.tag = 0
         
@@ -62,9 +63,31 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
                 
                 userObj.canNewUserBeCreated { success in
                     if success {
-                        
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_setpassword");
                         self.present(vc!, animated: true, completion: nil);
+                        
+                        /*let activeAccountPath = "accountPlans/"+userObj.accountID!+"/status";
+                        FIRDatabase.database().reference().child(activeAccountPath).observeSingleEvent(of: .value , with: { snapshot in
+                            
+                            if snapshot.exists() {
+                                let isActive = snapshot.value as! String;
+                                print("isActive: "+isActive);
+                                if(isActive == "active")
+                                {
+                                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_setpassword");
+                                    self.present(vc!, animated: true, completion: nil);
+                                    return;
+                                }
+                            }
+                            let alert = UIAlertController(title: "NOTICE", message: "Dashboard account is inactive.\nPlease contact your dashboard administrator for more information.", preferredStyle: UIAlertControllerStyle.alert);
+                            let cancelAction = UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
+                                self.logout();
+                            });
+                            
+                            alert.addAction(cancelAction)
+                            self.present(alert,animated: true)
+                            
+                        });*/
                     }
                     else
                     {
@@ -92,6 +115,28 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
             
             SVProgressHUD.dismiss();
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // [START remove_auth_listener]
+        if(signingOut)
+        {
+            userObj.resetObj();
+            usersUIDs = Array<String>();
+            images = [imageDataModel]()
+            print("SHUFFLI | signed out.");
+            SVProgressHUD.showSuccess(withStatus: "Logged out!");
+            SVProgressHUD.dismiss(withDelay: 1);
+        }
+        // [END remove_auth_listener]
+    }
+    
+    func logout() {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_initialview");
+        self.present(vc!, animated: true, completion: nil);
+        self.signingOut = true;
     }
     
     func getInviteInfo(completion: @escaping (Bool) -> ()) {

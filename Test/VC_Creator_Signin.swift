@@ -72,8 +72,33 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                     userObj.completeAsyncCalls{ success in
                         if success{
                             print("SUCCESS - completeAsyncCalls");
-                            SVProgressHUD.dismiss()
-                            self.directSegue();
+                            SVProgressHUD.dismiss();
+                            let activeAccountPath = "accountPlans/"+userObj.accountID!+"/status";
+        FIRDatabase.database().reference().child(activeAccountPath).observeSingleEvent(of: .value , with: { snapshot in
+            
+            if snapshot.exists() {
+                let isActive = snapshot.value as! String;
+                print("isActive: "+isActive);
+                if(isActive == "active")
+                {
+                    SVProgressHUD.dismiss()
+                    self.directSegue();
+                    return;
+                }
+                else
+                {
+                    SVProgressHUD.dismiss();
+                    let alert = UIAlertController(title: "NOTICE", message: "Dashboard account is inactive.\nPlease contact your dashboard administrator for more information.", preferredStyle: UIAlertControllerStyle.alert);
+                    let cancelAction = UIAlertAction(title: "OK",
+                                                     style: .cancel, handler: nil)
+                    alert.addAction(cancelAction)
+                    self.present(alert,animated: true){}
+                }
+            }
+            
+        });
+                           
+                            
                         }
                         else
                         {

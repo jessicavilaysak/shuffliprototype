@@ -89,7 +89,11 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
                 print("RELOADED users.");
                 
                 self.userTable.reloadData();
-                self.userTable.scrollToRow(at: NSIndexPath.init(row: 0, section: 0) as IndexPath, at: .top, animated: true)
+                if(usersUIDs.count > 0)
+                {
+                     self.userTable.scrollToRow(at: NSIndexPath.init(row: 0, section: 0) as IndexPath, at: .top, animated: true)
+                }
+               
                 SVProgressHUD.dismiss();
             }
         }
@@ -174,8 +178,6 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         }))
         
         present(refreshAlert, animated: true, completion: nil)
-        
-        
     }
 
     

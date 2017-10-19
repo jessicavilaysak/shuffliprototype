@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
 options: "db4c7444009feb563770462f26b6df5b"
-build_time: [1507733795, 245443000]
+build_time: [1507768543, 274672000]
 inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/InitialViewController.swift": [1507113424, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_selectedimage.swift": [1506590707, 0]
@@ -11,7 +11,7 @@ inputs:
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/TuteView.swift": [1507089275, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/CustomCellUser.swift": [1506590707, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_ClickImage.swift": [1507432745, 0]
-  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/downloadImageModel.swift": [1507732816, 0]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/downloadImageModel.swift": [1507768541, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/VC_EditCaption.swift": [1506590707, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/ViewController.swift": [1506590707, 0]
   "/Users/jessicavilaysak/Desktop/Shuffli 2/Test/RootVC.swift": [1507166060, 0]

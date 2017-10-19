@@ -254,6 +254,10 @@ SWIFT_CLASS("_TtC4Test14CustomCellUser")
 @class UIPageControl;
 @class NSBundle;
 
+/// This class looks after implementation of the user onboarding tutorials,
+/// segueing to sign in and signing up with an invite code.
+/// The onboardidng tutorials are stored as an array of type dictionary with
+/// key value pairs of Strings. The array is called tuteArray and is initialised
 SWIFT_CLASS("_TtC4Test21InitialViewController")
 @interface InitialViewController : UIViewController <UIScrollViewDelegate>
 @property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified scrollView;
@@ -418,11 +422,19 @@ SWIFT_CLASS("_TtC4Test6Toucan")
 @end
 
 
+/// This class holds all the tutView.xib outlets. It is a holder class only
+/// and the implementation is carried out in the initial view controller.
+/// <ul>
+///   <li>
+///   </li>
+/// </ul>
 SWIFT_CLASS("_TtC4Test8TuteView")
 @interface TuteView : UIView
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteTitle;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified tuteImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteDescription;
+/// These oulets are for the first “tile” of the tute view, they are hidden in the
+/// consicutive tiles.
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified firstTileLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified firstTileDescription;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified firstTileLogo;

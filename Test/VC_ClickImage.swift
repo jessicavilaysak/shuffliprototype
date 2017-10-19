@@ -84,7 +84,6 @@ class VC_ClickImage: UIViewController {
         textViewRecognizer.addTarget(self, action: #selector(myTargetFunction))
         imgCaption.addGestureRecognizer(textViewRecognizer)
         
-        updateTime();
         
         imgCaption.text = images[self.imgIndex].caption!;
         if images[self.imgIndex].category != ""{
@@ -93,22 +92,62 @@ class VC_ClickImage: UIViewController {
         }else{
             categoryLabel.isHidden = true
         }
+        let userDataGroup = DispatchGroup()
+        userDataGroup.enter()
+         FIRDatabase.database().reference().child("users/"+images[self.imgIndex].uploadedBy!).observeSingleEvent(of: .value, with: { (snapshot) in
+            let recent = snapshot.value as!  NSDictionary
+            print(recent);
+            
+            if(recent["username"] != nil)
+            {
+                let username = (recent["username"] as? String)!;
+                self.createdBy = username;
+                print("uploadedBy: "+username);
+            }
+            userDataGroup.leave();
+        })
+        if(images[self.imgIndex].approvedBy != nil)
+        {
+            userDataGroup.enter()
+            FIRDatabase.database().reference().child("users/"+images[self.imgIndex].approvedBy!).observeSingleEvent(of: .value, with: { (snapshot) in
+                let recent = snapshot.value as!  NSDictionary
+                print(recent);
+                if(recent["username"] != nil)
+                {
+                    let lApproved = (recent["username"] as? String)!;
+                    self.approvedBy = lApproved;
+                    print("approvedBy: "+lApproved)
+                }
+                userDataGroup.leave();
+            })
+        }
+        userDataGroup.notify(queue: .main) {
+            self.updateTime();
+        }
     }
     
     func updateTime(){  // timer call back function
         
-        let createdDate = moment(images[imgIndex].timeUnixCreated).fromNow().lowercased()
-        createdDateLabel.font = UIFont.fontAwesome(ofSize: 15)
-        var createdText = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + createdDate+"  ";
-        if(userObj.isAdmin)
+        if(images[imgIndex].createdDate != nil)
         {
-            createdText += String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+createdBy!;
+            let createdDate = moment(images[imgIndex].timeUnixCreated).fromNow().lowercased()
+            print("createdDate");
+            print(images[imgIndex].timeUnixCreated);
+            print(createdDate);
+            createdDateLabel.font = UIFont.fontAwesome(ofSize: 15)
+            var createdText = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + createdDate+"  ";
+            if(userObj.isAdmin)
+            {
+                createdText += String.fontAwesome(code: "fa-user-o")!.rawValue+"  "+createdBy!;
+            }
+            createdDateLabel.text = createdText;
         }
-        createdDateLabel.text = createdText;
-        
         if(images[imgIndex].approvedDate != nil)
         {
             let approvedDate = moment(images[imgIndex].timeUnixApproved).fromNow().lowercased()
+            print("approvedDate");
+            print(images[imgIndex].timeUnixApproved);
+            print(approvedDate);
             approvedDateLabel.font = UIFont.fontAwesome(ofSize: 15)
             var approvedText = String.fontAwesome(code: "fa-check-square-o")!.rawValue + "  "+approvedDate;
             if(approvedBy != nil)
@@ -149,7 +188,6 @@ class VC_ClickImage: UIViewController {
             btn_delete_lvl3.isHidden = true;
             createdDateLabel.isHidden = false
             if images[self.imgIndex].dashboardApproved{
-                approvedDateLabel.text = "Approved " + images[imgIndex].approvedDate.lowercased()
                 approvedSymbol.isHidden = false
                 approvedDateLabel.isHidden = false
                 btn_approve_lvl2.isUserInteractionEnabled = false // added this so that simon cant spam the approve button hahah

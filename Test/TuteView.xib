@@ -33,7 +33,7 @@
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22446738_1605821302771542_656990994_n" translatesAutoresizingMaskIntoConstraints="NO" id="CUY-y2-hft" customClass="SpringImageView" customModule="Spring">
-                    <rect key="frame" x="264" y="0.0" width="34" height="34"/>
+                    <rect key="frame" x="264" y="5" width="34" height="34"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="34" id="BC3-KB-IIN"/>
                         <constraint firstAttribute="height" constant="34" id="voO-E0-Mes"/>
@@ -70,12 +70,12 @@
             </subviews>
             <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="IB9-1c-IxL" firstAttribute="top" secondItem="CUY-y2-hft" secondAttribute="bottom" constant="49" id="7eE-5d-9yF"/>
+                <constraint firstItem="IB9-1c-IxL" firstAttribute="top" secondItem="CUY-y2-hft" secondAttribute="bottom" constant="44" id="7eE-5d-9yF"/>
                 <constraint firstItem="EAJ-d9-Oh9" firstAttribute="top" secondItem="uQ5-eg-NbM" secondAttribute="bottom" constant="8" id="8Qi-BX-Tfv"/>
                 <constraint firstItem="uQ5-eg-NbM" firstAttribute="centerX" secondItem="EAJ-d9-Oh9" secondAttribute="centerX" constant="0.5" id="AIz-te-mEC"/>
                 <constraint firstItem="CUY-y2-hft" firstAttribute="leading" secondItem="Vt2-fD-IUi" secondAttribute="trailing" constant="-58" id="FVh-2S-8od"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="i7o-It-t2N" secondAttribute="trailing" constant="64" id="JSX-ji-zUJ"/>
-                <constraint firstItem="CUY-y2-hft" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RdD-y5-hcy"/>
+                <constraint firstItem="CUY-y2-hft" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="RdD-y5-hcy"/>
                 <constraint firstItem="i7o-It-t2N" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="63" id="XJc-EL-mmv"/>
                 <constraint firstItem="CUY-y2-hft" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-77" id="ZFm-A3-lbj"/>
                 <constraint firstItem="i7o-It-t2N" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="184" id="c4K-pD-7My"/>

@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "DropDown-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
         },
         {
           'type': 'file',
@@ -20,18 +20,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/DropDown/DropDown.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/DropDown.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/DropDown.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -41,29 +41,29 @@
         {
           'type': 'file',
           'name': "FontAwesome_swift-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/FontAwesome.swift.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "GTMSessionFetcher-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
         },
         {
           'type': 'file',
@@ -94,18 +94,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/GTMSessionFetcher.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -150,7 +150,7 @@
         {
           'type': 'file',
           'name': "GoogleToolboxForMac-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
         },
         {
           'type': 'file',
@@ -161,23 +161,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/GoogleToolboxForMac.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "IQKeyboardManagerSwift-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
         },
         {
           'type': 'file',
@@ -188,23 +188,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/IQKeyboardManagerSwift.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/IQKeyboardManagerSwift.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Material-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-Swift.h"
         },
         {
           'type': 'file',
@@ -215,18 +215,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Material/Material.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Pods_Test.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Pods_Test.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -236,24 +236,24 @@
         {
           'type': 'file',
           'name': "Pods_Test-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Pods_Test.framework/Headers/Pods_Test-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Pods_Test.framework/Headers/Pods_Test-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Pods_Test.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Pods_Test.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-Test.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Test.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Protobuf/Protobuf.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Protobuf/Protobuf.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -423,7 +423,7 @@
         {
           'type': 'file',
           'name': "Protobuf-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Protobuf/Protobuf.framework/Headers/Protobuf-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Protobuf/Protobuf.framework/Headers/Protobuf-Swift.h"
         },
         {
           'type': 'file',
@@ -459,18 +459,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Protobuf/Protobuf.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Protobuf/Protobuf.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Protobuf.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/Protobuf.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -495,7 +495,7 @@
         {
           'type': 'file',
           'name': "SDWebImage-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-Swift.h"
         },
         {
           'type': 'file',
@@ -581,18 +581,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/SDWebImage.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -607,7 +607,7 @@
         {
           'type': 'file',
           'name': "SVProgressHUD-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-Swift.h"
         },
         {
           'type': 'file',
@@ -628,23 +628,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/SVProgressHUD.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/SVProgressHUD.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Spring-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Headers/Spring-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Headers/Spring-Swift.h"
         },
         {
           'type': 'file',
@@ -655,23 +655,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Spring/Spring.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Spring.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/Spring.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SwiftMessageBar-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
         },
         {
           'type': 'file',
@@ -682,23 +682,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMessageBar/SwiftMessageBar.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/SwiftMessageBar.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/SwiftMessageBar.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SwiftMoment-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
         },
         {
           'type': 'file',
@@ -714,23 +714,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/SwiftMoment/SwiftMoment.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/SwiftMoment.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/SwiftMoment.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/TextFieldEffects/TextFieldEffects.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "TextFieldEffects-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/TextFieldEffects/TextFieldEffects.framework/Headers/TextFieldEffects-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Headers/TextFieldEffects-Swift.h"
         },
         {
           'type': 'file',
@@ -741,23 +741,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/TextFieldEffects/TextFieldEffects.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/TextFieldEffects.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/TextFieldEffects.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Toucan/Toucan.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Toucan/Toucan.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Toucan-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Toucan/Toucan.framework/Headers/Toucan-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Toucan/Toucan.framework/Headers/Toucan-Swift.h"
         },
         {
           'type': 'file',
@@ -768,18 +768,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/Toucan/Toucan.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Toucan/Toucan.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/Toucan.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/Toucan.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -794,24 +794,24 @@
         {
           'type': 'file',
           'name': "UITextView_Placeholder-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView_Placeholder-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView_Placeholder-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/UITextView+Placeholder/UITextView_Placeholder.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/UITextView+Placeholder.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/UITextView+Placeholder.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/libwebp/libwebp.framework/Headers",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/libwebp/libwebp.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -921,7 +921,7 @@
         {
           'type': 'file',
           'name': "libwebp-Swift.h",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/libwebp/libwebp.framework/Headers/libwebp-Swift.h"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/libwebp/libwebp.framework/Headers/libwebp-Swift.h"
         },
         {
           'type': 'file',
@@ -1042,12 +1042,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphoneos/libwebp/libwebp.framework/Modules",
+      'name': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/libwebp/libwebp.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphoneos/libwebp.build/module.modulemap"
+          'external-contents': "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Intermediates/Pods.build/Debug-iphonesimulator/libwebp.build/module.modulemap"
         }
       ]
     }

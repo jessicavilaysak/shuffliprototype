@@ -174,8 +174,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
-@import ObjectiveC;
 @import FirebaseAuth;
+@import ObjectiveC;
 @import Foundation;
 #endif
 
@@ -254,6 +254,10 @@ SWIFT_CLASS("_TtC4Test14CustomCellUser")
 @class UIPageControl;
 @class NSBundle;
 
+/// This class looks after implementation of the user onboarding tutorials,
+/// segueing to sign in and signing up with an invite code.
+/// The onboardidng tutorials are stored as an array of type dictionary with
+/// key value pairs of Strings. The array is called tuteArray and is initialised
 SWIFT_CLASS("_TtC4Test21InitialViewController")
 @interface InitialViewController : UIViewController <UIScrollViewDelegate>
 @property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified scrollView;
@@ -288,11 +292,15 @@ SWIFT_CLASS("_TtC4Test14ManageUserCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol NSObject;
 
 SWIFT_CLASS("_TtC4Test6RootVC")
 @interface RootVC : UIViewController
+@property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)logout;
 - (void)setUser;
 - (void)directSegue;
 - (void)segueToInitialVCWithVc_name:(NSString * _Nonnull)vc_name;
@@ -418,11 +426,19 @@ SWIFT_CLASS("_TtC4Test6Toucan")
 @end
 
 
+/// This class holds all the tutView.xib outlets. It is a holder class only
+/// and the implementation is carried out in the initial view controller.
+/// <ul>
+///   <li>
+///   </li>
+/// </ul>
 SWIFT_CLASS("_TtC4Test8TuteView")
 @interface TuteView : UIView
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteTitle;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified tuteImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteDescription;
+/// These oulets are for the first “tile” of the tute view, they are hidden in the
+/// consicutive tiles.
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified firstTileLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified firstTileDescription;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified firstTileLogo;
@@ -437,7 +453,6 @@ SWIFT_CLASS("_TtC4Test8TuteView")
 @end
 
 @class UITableView;
-@protocol NSObject;
 @class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
@@ -566,6 +581,8 @@ SWIFT_CLASS("_TtC4Test13VC_InviteCode")
 - (void)viewDidLoad;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)btn_signup:(id _Nonnull)sender;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)logout;
 - (void)getInviteInfoWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (IBAction)goBack:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
