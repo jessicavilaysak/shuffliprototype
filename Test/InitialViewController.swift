@@ -8,6 +8,15 @@
 
 import UIKit
 
+/**
+ This class looks after implementation of the user onboarding tutorials,
+ segueing to sign in and signing up with an invite code.
+ 
+ The onboardidng tutorials are stored as an array of type dictionary with
+ key value pairs of Strings. The array is called tuteArray and is initialised 
+ 
+ */
+
 class InitialViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
