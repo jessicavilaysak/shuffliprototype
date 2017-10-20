@@ -9,19 +9,21 @@
 import UIKit
 import FirebaseDatabase
 import SVProgressHUD
-
+/**
+     This class is responsible for handling the edit post caption fucntionality once the post has been made.
+ */
 class VC_EditCaption: UIViewController {
 
-   
+   //outlets
     @IBOutlet weak var caption: UITextView!
     @IBOutlet weak var buttonUpdate: UIButton!
     
-    var imgIndex : Int!
+    var imgIndex : Int! //index of the post to update
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround();
-       
+       //caption styling
         caption.layer.cornerRadius = 4
         buttonUpdate.layer.cornerRadius = 4
         caption.text = images[imgIndex].caption!;
@@ -33,17 +35,12 @@ class VC_EditCaption: UIViewController {
         super.viewWillLayoutSubviews()
         caption.scrollRangeToVisible(NSMakeRange(0, 0))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func btnUpdate(_ sender: Any){
-        var currentCaption = caption.text!
+        var currentCaption = caption.text! // get current caption (updated caption)
         print("current: "+currentCaption);
         var path = ""
-        if(userObj.isAdmin)
+        if(userObj.isAdmin) // check account type and set path
         {
             path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[self.imgIndex].key!;
         }
@@ -52,7 +49,7 @@ class VC_EditCaption: UIViewController {
             path = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!+"/"+images[self.imgIndex].key!;
         }
         print("path: "+path);
-        FIRDatabase.database().reference().child(path).updateChildValues(["description": currentCaption])
+        FIRDatabase.database().reference().child(path).updateChildValues(["description": currentCaption]) // set updated caption in db
         
         FIRDatabase.database().reference().child(path).observeSingleEvent(of: .value , with: { snapshot in
             
@@ -60,13 +57,13 @@ class VC_EditCaption: UIViewController {
                 
                 let check = snapshot.value as!  NSDictionary
                 let desc = (check["description"] as? String)!;
-                if(desc == currentCaption)
+                if(desc == currentCaption) // checking if updated caption is not same as old caption
                 {
                     SVProgressHUD.showSuccess(withStatus: "Updated!")
                     SVProgressHUD.dismiss(withDelay: 2)
                     images[self.imgIndex].caption = currentCaption;
                 }
-                else
+                else // the same as old    
                 {
                     SVProgressHUD.showSuccess(withStatus: "Could not update, please try again later.")
                     SVProgressHUD.dismiss(withDelay: 2)
