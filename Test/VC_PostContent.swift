@@ -2,7 +2,7 @@
 //  ViewControllerPost.swift
 //  Test
 //
-//  Created by Jessica Vilaysak on 11/5/17.
+//  Created by Pranav Joshi on 11/5/17.
 //  Copyright © 2017 Pranav Joshi. All rights reserved.
 //
 
