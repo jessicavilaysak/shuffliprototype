@@ -2,7 +2,7 @@
 //  ViewControllerHomePageCreator.swift
 //  Test
 //
-//  Created by Jessica Vilaysak on 11/5/17.
+//  Created by Pranav Joshi and Jessica Vilaysak on 11/5/17.
 //  Copyright © 2017 Pranav Joshi. All rights reserved.
 //
 
@@ -12,7 +12,8 @@ import FirebaseStorage
 import FirebaseAuth
 import SVProgressHUD
 
-
+/** This class is responsible for handling user Login and login related validation
+*/
 class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var fld_password: UITextField!
@@ -26,6 +27,7 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
+        //Setting delegates and tags so that the next text field is loaded when the return key is pressed
         fld_username.delegate = self
         fld_password.delegate = self
         fld_username.tag = 0
@@ -33,7 +35,6 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         
         
         //text field stylings
-        
         fld_password.layer.cornerRadius = 4
         fld_username.layer.cornerRadius = 4
         SigninBtn.layer.cornerRadius = 4
@@ -42,7 +43,7 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         
         
     }
-    
+    // function executed on pressing keyboard return button
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         // Try to find next responder
@@ -59,55 +60,55 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     
     
     
-    
+    // Login button tapped
     @IBAction func BtnTapped(_ sender: Any) {
-        //dataSource.username = fld_username.text;
-        if let email = fld_username.text, let pass = fld_password.text
+    
+        if let email = fld_username.text, let pass = fld_password.text // get email and pass from txt field
         {
             SVProgressHUD.show(withStatus: "Logging In")
-            FIRAuth.auth()?.signIn(withEmail: email, password: pass, completion: { (user, error) in
-                
-                if user != nil{
-                    userObj.uid = FIRAuth.auth()?.currentUser?.uid;
-                    userObj.completeAsyncCalls{ success in
-                        if success{
+            FIRAuth.auth()?.signIn(withEmail: email, password: pass, completion: { (user, error) in // Firebase login call
+                if user != nil{ // completion handler to check current user is not nill
+                    userObj.uid = FIRAuth.auth()?.currentUser?.uid; // set obj
+                    userObj.completeAsyncCalls{ success in // perform async calls
+                        if success{ // wait for all calls to complete
                             print("SUCCESS - completeAsyncCalls");
                             SVProgressHUD.dismiss();
-                            let activeAccountPath = "accountPlans/"+userObj.accountID!+"/status";
-        FIRDatabase.database().reference().child(activeAccountPath).observeSingleEvent(of: .value , with: { snapshot in
-            
-            if snapshot.exists() {
-                let isActive = snapshot.value as! String;
-                print("isActive: "+isActive);
-                if(isActive == "active")
-                {
-                    SVProgressHUD.dismiss()
-                    self.directSegue();
-                    return;
-                }
-                else
-                {
-                    SVProgressHUD.dismiss();
-                    let alert = UIAlertController(title: "NOTICE", message: "Dashboard account is inactive.\nPlease contact your dashboard administrator for more information.", preferredStyle: UIAlertControllerStyle.alert);
-                    let cancelAction = UIAlertAction(title: "OK",
-                                                     style: .cancel, handler: nil)
-                    alert.addAction(cancelAction)
-                    self.present(alert,animated: true){}
-                }
-            }
-            
-        });
-                           
+                            let activeAccountPath = "accountPlans/"+userObj.accountID!+"/status"; // current account status path which tells the user's payment status
+                    
+                            FIRDatabase.database().reference().child(activeAccountPath).observeSingleEvent(of: .value , with: { snapshot in // observe the specified path
+                                
+                                if snapshot.exists() {
+                                    let isActive = snapshot.value as! String;
+                                    print("isActive: "+isActive);
+                                    if(isActive == "active") // checking if account has been paid
+                                    {
+                                        SVProgressHUD.dismiss()
+                                        self.directSegue();
+                                        return;
+                                    }
+                                    else // if account payment status is inactive
+                                    {
+                                        SVProgressHUD.dismiss();
+                                        let alert = UIAlertController(title: "NOTICE", message: "Dashboard account is inactive.\nPlease contact your dashboard administrator for more information.", preferredStyle: UIAlertControllerStyle.alert);
+                                        let cancelAction = UIAlertAction(title: "OK",
+                                                                         style: .cancel, handler: nil)
+                                        alert.addAction(cancelAction)
+                                        self.present(alert,animated: true){}
+                                    }
+                                }
+                                
+                            });
+                            
                             
                         }
-                        else
+                        else // Async calls not completed
                         {
                             print("FAILURE - completeAsyncCalls");
                             SVProgressHUD.dismiss()
                         }
                     }
                 }
-                else{
+                else{ // wrong username and/or password combo. 
                     print(error!);
                     let alert = UIAlertController(title: "Login Failed", message: "Enter correct username or password", preferredStyle: UIAlertControllerStyle.alert);
                     let cancelAction = UIAlertAction(title: "OK",

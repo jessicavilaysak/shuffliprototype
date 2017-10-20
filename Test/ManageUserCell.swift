@@ -8,10 +8,13 @@
 
 import UIKit
 
+/**
+ This class contains all the cell UI outlets for the manage user VC
+ */
 class ManageUserCell: UITableViewCell{
     
     
-
+// Invited users details displayed in the cell 
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userEmail: UILabel!
     @IBOutlet weak var userImg: UIImageView!

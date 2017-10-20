@@ -20,7 +20,7 @@ class TuteView: UIView {
     @IBOutlet weak var tuteDescription: UILabel!
     /**
      These oulets are for the first "tile" of the tute view, they are hidden in the
-     consicutive tiles.
+     consecutive tiles.
  */
     @IBOutlet weak var firstTileLabel: UILabel!
     @IBOutlet weak var firstTileDescription: UILabel!

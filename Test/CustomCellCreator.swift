@@ -37,23 +37,25 @@ class CustomCellCreator: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
+       
     }
     
     // Creates a card like effect when displaying the Post cell
     func updateUi(){
+        
+        //background colors
         cardviewBg.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1.0)
         contentView.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1.0)
         
+        //Rounded corners
         cardviewBg.layer.cornerRadius = 3.0
         photo.layer.cornerRadius = 3.0
         visualEffect.layer.cornerRadius = 3.0
         vfView.layer.cornerRadius = 3.0
         cardviewBg.layer.masksToBounds = false
         
+        //Shadow
         cardviewBg.layer.shadowColor = UIColor.black.cgColor
-        
         cardviewBg.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         cardviewBg.layer.shadowOpacity = 0.8
     }
