@@ -18,17 +18,21 @@ import UserNotifications
 import FontAwesome_swift
 import SwiftMoment
 
+/**
+ This class is responsible for displaying the user's previous posts or show the admin its user's post.
+ The class also handles logout for a creator account and displays users account info
+ */
 class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    //outlets
     @IBOutlet weak var creatorImg: UIImageView!
     @IBOutlet var viewposts: UITableView!
-    
     @IBOutlet weak var logOut: UIBarButtonItem!
-   
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet var fldcompany: UILabel!
     @IBOutlet weak var fldcreator: UILabel!
     @IBOutlet var fldusername: UILabel!
+    
+    //variables
     var handle: FIRAuthStateDidChangeListenerHandle!
     var signingOut: Bool!
     var timer: Timer?
@@ -36,32 +40,35 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
   
     
     override func viewDidLoad() {
+        
         signingOut = false;
-        self.navigationController?.isNavigationBarHidden = false;
+        self.navigationController?.isNavigationBarHidden = false; //dont hide nav bar
         super.viewDidLoad()
-        //dataSource.username;
         
         viewposts.delegate = self;
         viewposts.dataSource = self;
+        //User account info details
         fldcompany.font = UIFont.fontAwesome(ofSize: 14)
         fldcompany.text = String.fontAwesome(code: "fa-users")!.rawValue + " " + userObj.accountName;
         fldcreator.font = UIFont.fontAwesome(ofSize: 14)
         fldcreator.text = String.fontAwesome(code: "fa-paint-brush")!.rawValue + " " + userObj.creatorName;
         fldusername.font = UIFont.fontAwesome(ofSize: 16)
         fldusername.text = String.fontAwesome(code: "fa-user-circle-o")!.rawValue + " " + userObj.username;
-        self.hideKeyboardWhenTappedAround();
         
+        self.hideKeyboardWhenTappedAround(); // hide keyboard when tapped anywhere on vc
+    
         SVProgressHUD.setDefaultStyle(.dark)
+        //get creator image account picture
         creatorImg.sd_setShowActivityIndicatorView(true)
         creatorImg.sd_setIndicatorStyle(.gray)
         if(userObj.creatorURL != nil)
         {
-            creatorImg.sd_setImage(with: URL(string: userObj.creatorURL!))
+            creatorImg.sd_setImage(with: URL(string: userObj.creatorURL!)) //sets the picture here
         }
         
-        
+        //Rounded profile picture
         creatorImg.layer.cornerRadius = creatorImg.frame.size.width/2;
-        creatorImg.clipsToBounds = true;
+        creatorImg.clipsToBounds = true; // no overflow
         creatorImg.layer.borderWidth = 3.0
         creatorImg.layer.borderColor = UIColor.lightGray.cgColor
         //Creating a shadow
@@ -71,20 +78,20 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         bgImage.layer.shadowOpacity = 0.5
         bgImage.layer.shadowRadius = 10;
         bgImage.layer.shouldRasterize = true //tells IOS to cache the shadow
-        
+        // Observe for newposts and append to images array global object
         FIRDatabase.database().reference(withPath: userObj.listenerPath).observe(FIRDataEventType.value, with: {(snapshot) in
             //print(snapshot)
-            var newImages = [imageDataModel]()
+            var newImages = [imageDataModel]() // local var
             
-            for imageSnapshot in snapshot.children{
-                let imgObj = imageDataModel(snapshot: imageSnapshot as! FIRDataSnapshot)
-                //newImages.append(imgObj)
-                newImages.insert(imgObj, at: 0);
+            for imageSnapshot in snapshot.children{ // iteration through db nodes
+                let imgObj = imageDataModel(snapshot: imageSnapshot as! FIRDataSnapshot) // provide custom constructor with snapshot parameter
+            
+                newImages.insert(imgObj, at: 0); // append to local array at first index
             }
-            images = newImages;
+            images = newImages; // assign global var with local array value
             print("SHUFFLI | path: "+userObj.listenerPath+" | images count: "+String(images.count));
             //print(self.images);
-           self.viewposts.reloadData()
+           self.viewposts.reloadData() // reload table data
             
         })
         
@@ -93,7 +100,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     /*
      * This function will update each row every 10 seconds.
      */
-    func updateRows()
+    func updateRows() // for updating the time lbls every 10 seconds
     {
         print("updateTime()");
         let numberOfRows = viewposts.numberOfRows(inSection: 0);
@@ -101,7 +108,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         while(iterator < numberOfRows)
         {
             let indexPath = IndexPath(item: iterator, section: 0)
-            viewposts.reloadRows(at: [indexPath], with: .none)
+            viewposts.reloadRows(at: [indexPath], with: .none) // reload table data without animation
             iterator = iterator+1;
         }
     }
@@ -123,6 +130,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                 tabItem?.badgeValue = nil;
             }
         }
+        // hide or display logout depending on account type
         if userObj.permissionToManageUsers {
             logOut.title = ""
             logOut.isEnabled = false
@@ -135,15 +143,16 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return images.count
+        return images.count // return number of elements in the array
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.viewposts.dequeueReusableCell(withIdentifier: "cellCreator", for: indexPath as IndexPath) as! CustomCellCreator
+        let cell = self.viewposts.dequeueReusableCell(withIdentifier: "cellCreator", for: indexPath as IndexPath) as! CustomCellCreator // cell reuse
+        
         if indexPath.row < images.count
         {
-            let image = images[indexPath.row]
+            let image = images[indexPath.row] // set current image depeding on indexpath
             
             //Checking if user is admin and if image dashboard status is approved, if it is, showing the approve icon
             if(!userObj.isAdmin){
@@ -156,30 +165,32 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                 }
                 
             }
+            //show image loading indicator
             cell.photo.sd_setShowActivityIndicatorView(true)
             cell.photo.sd_setIndicatorStyle(.gray)
             var lUrl = image.url;
             cell.playButton.isHidden = true;
-            if(image.thumbnailURL != "")
+            
+            if(image.thumbnailURL != "") // if not nill then display the play button
             {
-                lUrl = image.thumbnailURL;
-                cell.playButton.isHidden = false;
+                lUrl = image.thumbnailURL; // thumbnail download url
+                cell.playButton.isHidden = false; // show play btn
             }
-            cell.photo.sd_setImage(with: URL(string: lUrl!),placeholderImage: UIImage(named: "placeholder"))
-            cell.imageCaption.text = image.caption;
+            cell.photo.sd_setImage(with: URL(string: lUrl!),placeholderImage: UIImage(named: "placeholder")) //set image or thmbnail image with video button
+            cell.imageCaption.text = image.caption; // set caption
             cell.imageCaption.textColor = UIColor.white
-            cell.dateLabel.font = UIFont.fontAwesome(ofSize: 12)
-            if image.createdDate == nil{
+            cell.dateLabel.font = UIFont.fontAwesome(ofSize: 12) //setup for awesome font
+            if image.createdDate == nil{ // handle empty time due to lag in server function
                 cell.dateLabel.text = ""
             }else{
-                let timeCreated = moment(image.timeUnixCreated).fromNow().lowercased()
-                var dateLabel = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + timeCreated;
-                if(image.approvedDate != nil)
+                let timeCreated = moment(image.timeUnixCreated).fromNow().lowercased()// get time created
+                var dateLabel = String.fontAwesome(code: "fa-clock-o")!.rawValue + "  " + timeCreated; //display time
+                if(image.approvedDate != nil) //check if approve date exists
                 {
-                    let timeApproved = moment(image.timeUnixApproved).fromNow().lowercased()
+                    let timeApproved = moment(image.timeUnixApproved).fromNow().lowercased() // approved time
                     dateLabel += "  "+String.fontAwesome(code: "fa-check-square-o")!.rawValue + "  "+timeApproved;
                 }
-                cell.dateLabel.text = dateLabel;
+                cell.dateLabel.text = dateLabel; //set cells date label
             }
         }
         return cell
@@ -208,7 +219,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         
     }
     
-    @IBAction func logout(_ sender: Any) {
+    @IBAction func logout(_ sender: Any) { // handle logout, check other vc for comments
         
         let refreshAlert = UIAlertController(title: "", message: "Are you sure you want to log out?", preferredStyle: UIAlertControllerStyle.actionSheet)
         
@@ -240,63 +251,12 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { // row selected in table
  
-        let vc = storyboard?.instantiateViewController(withIdentifier: "VC_clickimage") as! VC_ClickImage;
-
-        vc.imgIndex = indexPath.row;
-        
-        self.navigationController?.pushViewController(vc, animated: true);
+        let vc = storyboard?.instantiateViewController(withIdentifier: "VC_clickimage") as! VC_ClickImage; // create vc
+        vc.imgIndex = indexPath.row; // set clickImage vc's indexpath
+        self.navigationController?.pushViewController(vc, animated: true); // show vc using navigation controller
     }
     
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        return;
-        var path = ""
-        let storage = FIRStorage.storage().reference()
-        if(userObj.isAdmin)
-        {
-            path = "creatorPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+images[indexPath.row].key;
-        }
-        else
-        {
-            path = "userPosts/"+userObj.accountID!+"/"+userObj.creatorID!+"/"+userObj.uid!+"/"+images[indexPath.row].key;
-        }
-        let refreshAlert = UIAlertController(title: "DELETE", message: "Do you wish to delete this post?\nNOTE: this cannot be undone.", preferredStyle: UIAlertControllerStyle.actionSheet)
-        
-        refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
-            
-            FIRDatabase.database().reference().child(path).removeValue(){ error in
-                if error != nil {
-                    images.remove(at: indexPath.row)
-                    tableView.deleteRows(at: [indexPath], with: .automatic)
-                    print("Handle Yes logic here")
-                }else{
-                    print(error)
-                }
-            }
-            
-            /*let imgToDel = storage.child(userObj.uid).child(images[indexPath.row].imgId)
-            imgToDel.delete(completion: { (Error) in
-                if let error = Error{
-                    print(error)
-                }
-            })*/
-            
-        }))
-        
-        refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
-            print("Handle No Logic here")
-        }))
-        
-        present(refreshAlert, animated: true, completion: nil)
-        
-        
-        
-    }
-
 }
 

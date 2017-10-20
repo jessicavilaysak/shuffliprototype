@@ -63,7 +63,7 @@ class VC_EditCaption: UIViewController {
                     SVProgressHUD.dismiss(withDelay: 2)
                     images[self.imgIndex].caption = currentCaption;
                 }
-                else // the same as old    
+                else // the same as old  caption 
                 {
                     SVProgressHUD.showSuccess(withStatus: "Could not update, please try again later.")
                     SVProgressHUD.dismiss(withDelay: 2)
