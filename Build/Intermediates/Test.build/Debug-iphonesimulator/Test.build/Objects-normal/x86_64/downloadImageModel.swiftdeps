@@ -8,21 +8,23 @@ provides-member:
 - ["4Test14imageDataModelV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+"
 - !private "=="
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- "Double"
 - "FIRDataSnapshot"
 - "FIRDatabaseReference"
-- !private "NSDate"
 - !private "NSDictionary"
-- "NSNumber"
 - "String"
 - !private "StringLiteralType"
-- !private "TimeInterval"
+- "Timer"
+- !private "UnicodeScalarType"
 - "imageDataModel"
 - "images"
+- !private "moment"
 - !private "print"
 depends-member:
 - ["Sa", "init"]
@@ -34,7 +36,9 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "value"]
 - ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "fromNow"]
 - !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "fromNow"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "key"]
 - !private ["s28CustomDebugStringConvertibleP", "ref"]
@@ -46,6 +50,7 @@ depends-member:
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "fromNow"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "key"]
 - !private ["s23CustomStringConvertibleP", "ref"]
@@ -56,6 +61,7 @@ depends-member:
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "fromNow"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "key"]
 - !private ["s9EquatableP", "ref"]
@@ -79,19 +85,18 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["11SwiftMoment0B0V", "fromNow"]
 - ["s17MutableCollectionP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "subscript"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "subscript"]
-- !private ["So6NSDateC", "init"]
 - !private ["So12NSDictionaryC", "subscript"]
 - !private ["So17NSFastEnumerationP", "subscript"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "subscript"]
-- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "key"]
 - !private ["So8NSObjectC", "ref"]
 - !private ["So8NSObjectC", "subscript"]
@@ -136,26 +141,30 @@ depends-member:
 - ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 - ["4Test14imageDataModelV", "Bool"]
+- ["4Test14imageDataModelV", "Double"]
 - ["4Test14imageDataModelV", "FIRDataSnapshot"]
 - ["4Test14imageDataModelV", "FIRDatabaseReference"]
-- !private ["4Test14imageDataModelV", "NSDate"]
 - !private ["4Test14imageDataModelV", "NSDictionary"]
-- ["4Test14imageDataModelV", "NSNumber"]
 - ["4Test14imageDataModelV", "String"]
-- !private ["4Test14imageDataModelV", "TimeInterval"]
+- ["4Test14imageDataModelV", "Timer"]
 - ["4Test14imageDataModelV", "approvedBy"]
 - ["4Test14imageDataModelV", "approvedDate"]
 - ["4Test14imageDataModelV", "caption"]
+- ["4Test14imageDataModelV", "category"]
 - ["4Test14imageDataModelV", "createdDate"]
 - ["4Test14imageDataModelV", "creatorID"]
 - ["4Test14imageDataModelV", "dashboardApproved"]
 - ["4Test14imageDataModelV", "imgId"]
 - ["4Test14imageDataModelV", "init"]
 - ["4Test14imageDataModelV", "key"]
+- !private ["4Test14imageDataModelV", "moment"]
 - !private ["4Test14imageDataModelV", "print"]
 - ["4Test14imageDataModelV", "ref"]
 - ["4Test14imageDataModelV", "thumbnailUID"]
 - ["4Test14imageDataModelV", "thumbnailURL"]
+- ["4Test14imageDataModelV", "timeUnixApproved"]
+- ["4Test14imageDataModelV", "timeUnixCreated"]
+- ["4Test14imageDataModelV", "timer"]
 - ["4Test14imageDataModelV", "uploadedBy"]
 - ["4Test14imageDataModelV", "url"]
 - ["4Test14imageDataModelV", "userPostID"]
@@ -183,10 +192,10 @@ depends-nominal:
 - !private "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "11SwiftMoment0B0V"
 - "s17MutableCollectionP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
-- !private "So6NSDateC"
 - !private "So12NSDictionaryC"
 - !private "So17NSFastEnumerationP"
 - !private "So21NSItemProviderReadingP"
@@ -231,6 +240,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/SwiftMoment.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
@@ -265,6 +275,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -337,6 +348,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment.h"
@@ -361,5 +373,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/module.modulemap"
-interface-hash: "0ba6501323e2788366b3a7661b8964f8"
+interface-hash: "2d4d3ea6d7e46a1f79fa4fdd88018335"

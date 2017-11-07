@@ -8,9 +8,9 @@
 
 import UIKit
 
-/** This cell class correpsonds to the view post feed
-     and contains outlets for all the cell UI elements.
- 
+/**
+ This cell class correpsonds to the view post feed
+ and contains outlets for all the cell UI elements.
  **/
 class CustomCellCreator: UITableViewCell {
     

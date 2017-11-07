@@ -9,30 +9,27 @@
 import Foundation
 import FirebaseDatabase
 
-struct userData {
-    
-    var key : String!
-    var email : String!;
-    var username : String!;
-    var role : String!;
-    
-    init(lKey: String, lRole: String)
-    {
-        key = lKey;
-        email = nil;
-        username = nil;
-        role = lRole;
-    }
-}
-
+/**
+ The userData object
+ **/
 struct userDataModel {
     
-    
-    
-    init() {
+    /*
+     Instructions that need to execute when an instance of the userDataModel object is created.
+     We have included no instructions.
+     */
+    init()
+    {
         
     }
     
+    /*
+     - Function 'sortActiveUsers' is used to retrieve all active users for this team.
+     - It grabs all relevant children from the 'userRoles' node then goes to
+     the 'users' node to get their corresponding email, username and status.
+     - The 'DispatchGroup' object is used as a method to track the asynchronous calls
+     and ensure that this function returns when the asynchronous calls are completed.
+     */
     private mutating func sortActiveUsers(completion: @escaping (Bool) -> ()) {
         
         let userDataGroup = DispatchGroup() // group of completion handlers for user data (username, email etc)
@@ -85,8 +82,10 @@ struct userDataModel {
         
     }
     
-    
-    
+    /*
+     - Function 'sortPendingUsers' collates all the invites for the current team.
+     - Grabs all children from the 'creatorInvites' node for the current team.
+     */
     private mutating func sortPendingUsers(completion: @escaping (Bool) -> ()) {
         
         FIRDatabase.database().reference().child(userObj.invitedUsersPath).observeSingleEvent(of: .value, with: { (snapshot) in
@@ -105,6 +104,9 @@ struct userDataModel {
         })
     }
     
+    /*
+     - Function 'instantiateUsers' is used to reload the table in the 'Manage Users' VC.
+     */
     public mutating func instantiateUsers(completion: @escaping (Bool) -> ())
     {
         usersUIDs = Array<String>();
@@ -127,38 +129,6 @@ struct userDataModel {
                 }
             }
         }
-        
-        
-        
-       
-        
-    }
-    
-    func getUserInfo(userUid: String, completion: @escaping (Bool) -> ()) {
-        
-        FIRDatabase.database().reference().child("users/"+userUid).observeSingleEvent(of: .value , with: { snapshot in
-            
-            if snapshot.exists() {
-                let s = snapshot.value as! NSDictionary;
-                let username = s["username"] as!  String;
-                var email = "";
-                //print("username: "+username);
-                if(s["email"] != nil)
-                {
-                    email = s["email"] as! String;
-                }
-                usersObj[snapshot.key]!["username"] = username;
-                usersObj[snapshot.key]!["email"] = email;
-                completion(true);
-            }});
-    }
-    
-    func getUserUid(element: Int) -> String{
-        return usersUIDs[element];
-    }
-    
-    func getUserObj(uid: String) -> [String:String] {
-        return usersObj[uid]!;
     }
 }
 

@@ -15,10 +15,12 @@ depends-top-level:
 - "CastingPrecedence"
 - "FIRDataSnapshot"
 - "FIRDatabaseReference"
+- !private "NSDate"
 - !private "NSDictionary"
 - "NSNumber"
 - "String"
 - !private "StringLiteralType"
+- !private "TimeInterval"
 - "imageDataModel"
 - "images"
 - !private "print"
@@ -82,12 +84,14 @@ depends-member:
 - !private ["So8NSCodingP", "subscript"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "subscript"]
+- !private ["So6NSDateC", "init"]
 - !private ["So12NSDictionaryC", "subscript"]
 - !private ["So17NSFastEnumerationP", "subscript"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "subscript"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "key"]
 - !private ["So8NSObjectC", "ref"]
 - !private ["So8NSObjectC", "subscript"]
@@ -134,9 +138,11 @@ depends-member:
 - ["4Test14imageDataModelV", "Bool"]
 - ["4Test14imageDataModelV", "FIRDataSnapshot"]
 - ["4Test14imageDataModelV", "FIRDatabaseReference"]
+- !private ["4Test14imageDataModelV", "NSDate"]
 - !private ["4Test14imageDataModelV", "NSDictionary"]
 - ["4Test14imageDataModelV", "NSNumber"]
 - ["4Test14imageDataModelV", "String"]
+- !private ["4Test14imageDataModelV", "TimeInterval"]
 - ["4Test14imageDataModelV", "approvedBy"]
 - ["4Test14imageDataModelV", "approvedDate"]
 - ["4Test14imageDataModelV", "caption"]
@@ -180,6 +186,7 @@ depends-nominal:
 - "s17MutableCollectionP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
+- !private "So6NSDateC"
 - !private "So12NSDictionaryC"
 - !private "So17NSFastEnumerationP"
 - !private "So21NSItemProviderReadingP"

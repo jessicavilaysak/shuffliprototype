@@ -12,8 +12,9 @@ import FirebaseStorage
 import FirebaseAuth
 import SVProgressHUD
 
-/** This class is responsible for handling user Login and login related validation
-*/
+/*
+ This class is responsible for handling user login and login related validation
+ */
 class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var fld_password: UITextField!
@@ -33,16 +34,14 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         fld_username.tag = 0
         fld_password.tag = 1
         
-        
         //text field stylings
         fld_password.layer.cornerRadius = 4
         fld_username.layer.cornerRadius = 4
         SigninBtn.layer.cornerRadius = 4
         
-        SVProgressHUD.setDefaultStyle(.dark)
-        
-        
+        SVProgressHUD.setDefaultStyle(.dark);
     }
+    
     // function executed on pressing keyboard return button
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
@@ -54,13 +53,11 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
             textField.resignFirstResponder()
             BtnTapped((Any).self)
         }
-        // Do not add a line break
+        // Do not add a line break so returns false
         return false
     }
     
-    
-    
-    // Login button tapped
+    // Function is called when login button is tapped.
     @IBAction func BtnTapped(_ sender: Any) {
     
         if let email = fld_username.text, let pass = fld_password.text // get email and pass from txt field
@@ -98,8 +95,6 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
                                 }
                                 
                             });
-                            
-                            
                         }
                         else // Async calls not completed
                         {
@@ -122,20 +117,9 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
-
-    
     /*
-     Here we need to decide where to direct the user. A few rules:
-     - IF user is level 3:
-     - IF this is their first sign in we direct them to 'reset password' (id: 'VC_resetpassword').
-     - IF not first sign in, direct them to tabviewcontroller as a lvl3 creator.
-     - IF user is level 2:
-     - payments?
-     - Does this user have permissions to manage users or not? (ie. A brand ambassador does not have permission to manage users).
-     - IF user has 'manage users' permission, we direct them to tabviewcontroller as a lvl2 admin creator OTHERWISE direct them to tabviewcontroller as a lvl3.
+     - Creates an instance of the 'TabBarController' object and presents it.
      */
-    
     func directSegue() {
         let tabs = TabBarController();
         self.present(tabs, animated: true, completion: nil)
@@ -145,12 +129,15 @@ class VC_Creator_Signin: UIViewController, UITextFieldDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
        
+        //clears fields
         fld_password.text = "";
         fld_username.text = "";
         
     }
     
-
+    /*
+     - When the back button is pressed, current VC will be dismissed.
+     */
     @IBAction func goBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

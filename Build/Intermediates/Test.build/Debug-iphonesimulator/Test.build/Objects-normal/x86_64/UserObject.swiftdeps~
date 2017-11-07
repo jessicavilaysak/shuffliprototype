@@ -14,13 +14,17 @@ provides-dynamic-lookup:
 - "hideKeyboardWhenTappedAround"
 depends-top-level:
 - !private "!="
+- !private "&&"
 - !private "+"
+- !private "<"
 - !private "=="
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - !private "CastingPrecedence"
+- !private "DispatchGroup"
 - !private "FIRDatabase"
+- !private "Int"
 - !private "NSDictionary"
 - "String"
 - !private "StringLiteralType"
@@ -45,8 +49,12 @@ depends-member:
 - !private ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "dismissKeyboard"]
 - !private ["s7CVarArgP", "endEditing"]
+- !private ["s7CVarArgP", "enter"]
 - !private ["s7CVarArgP", "exists"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "leave"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "notify"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "subscript"]
@@ -62,8 +70,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "dismissKeyboard"]
 - !private ["s28CustomDebugStringConvertibleP", "endEditing"]
+- !private ["s28CustomDebugStringConvertibleP", "enter"]
 - !private ["s28CustomDebugStringConvertibleP", "exists"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "leave"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "notify"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
@@ -83,8 +95,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "dismissKeyboard"]
 - !private ["s23CustomStringConvertibleP", "endEditing"]
+- !private ["s23CustomStringConvertibleP", "enter"]
 - !private ["s23CustomStringConvertibleP", "exists"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "leave"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "notify"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
@@ -92,6 +108,16 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
+- !private ["So13DispatchGroupC", "enter"]
+- !private ["So13DispatchGroupC", "init"]
+- !private ["So13DispatchGroupC", "leave"]
+- !private ["So13DispatchGroupC", "notify"]
+- !private ["So14DispatchObjectC", "enter"]
+- !private ["So14DispatchObjectC", "init"]
+- !private ["So14DispatchObjectC", "leave"]
+- !private ["So14DispatchObjectC", "main"]
+- !private ["So14DispatchObjectC", "notify"]
+- !private ["So13DispatchQueueC", "main"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "UITapGestureRecognizer"]
@@ -103,8 +129,12 @@ depends-member:
 - !private ["s9EquatableP", "database"]
 - !private ["s9EquatableP", "dismissKeyboard"]
 - !private ["s9EquatableP", "endEditing"]
+- !private ["s9EquatableP", "enter"]
 - !private ["s9EquatableP", "exists"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "leave"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "notify"]
 - !private ["s9EquatableP", "observeSingleEvent"]
 - !private ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "subscript"]
@@ -133,8 +163,12 @@ depends-member:
 - !private ["s8HashableP", "database"]
 - !private ["s8HashableP", "dismissKeyboard"]
 - !private ["s8HashableP", "endEditing"]
+- !private ["s8HashableP", "enter"]
 - !private ["s8HashableP", "exists"]
 - !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "leave"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "notify"]
 - !private ["s8HashableP", "observeSingleEvent"]
 - !private ["s8HashableP", "reference"]
 - !private ["s8HashableP", "subscript"]
@@ -175,9 +209,13 @@ depends-member:
 - !private ["So8NSObjectC", "database"]
 - ["So8NSObjectC", "dismissKeyboard"]
 - !private ["So8NSObjectC", "endEditing"]
+- !private ["So8NSObjectC", "enter"]
 - !private ["So8NSObjectC", "exists"]
 - ["So8NSObjectC", "hideKeyboardWhenTappedAround"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "leave"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "notify"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "subscript"]
@@ -191,8 +229,12 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "database"]
 - !private ["So16NSObjectProtocolP", "dismissKeyboard"]
 - !private ["So16NSObjectProtocolP", "endEditing"]
+- !private ["So16NSObjectProtocolP", "enter"]
 - !private ["So16NSObjectProtocolP", "exists"]
 - !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "leave"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "notify"]
 - !private ["So16NSObjectProtocolP", "observeSingleEvent"]
 - !private ["So16NSObjectProtocolP", "reference"]
 - !private ["So16NSObjectProtocolP", "subscript"]
@@ -201,6 +243,11 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "subscript"]
 - !private ["So8NSStringC", "init"]
+- !private ["So9OS_objectC", "enter"]
+- !private ["So9OS_objectC", "init"]
+- !private ["So9OS_objectC", "leave"]
+- !private ["So9OS_objectC", "main"]
+- !private ["So9OS_objectC", "notify"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "value"]
 - !private ["s8SequenceP", "init"]
@@ -288,14 +335,18 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "dismissKeyboard"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "view"]
 - ["4Test10UserObjectC", "Bool"]
+- !private ["4Test10UserObjectC", "DispatchGroup"]
 - !private ["4Test10UserObjectC", "FIRDatabase"]
+- !private ["4Test10UserObjectC", "Int"]
 - !private ["4Test10UserObjectC", "NSDictionary"]
 - ["4Test10UserObjectC", "String"]
 - ["4Test10UserObjectC", "accountID"]
 - ["4Test10UserObjectC", "accountName"]
+- ["4Test10UserObjectC", "canNewUserBeCreated"]
 - ["4Test10UserObjectC", "completeAsyncCalls"]
 - ["4Test10UserObjectC", "creatorID"]
 - ["4Test10UserObjectC", "creatorName"]
+- ["4Test10UserObjectC", "creatorURL"]
 - ["4Test10UserObjectC", "deinit"]
 - ["4Test10UserObjectC", "email"]
 - ["4Test10UserObjectC", "fcmToken"]
@@ -336,8 +387,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismissKeyboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endEditing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "enter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "exists"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "leave"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "notify"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
@@ -360,6 +415,9 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "s9DecodableP"
+- !private "So13DispatchGroupC"
+- !private "So14DispatchObjectC"
+- !private "So13DispatchQueueC"
 - !private "s9EncodableP"
 - !private "s9EquatableP"
 - !private "s27ExpressibleByBooleanLiteralP"
@@ -388,6 +446,7 @@ depends-nominal:
 - !private "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "So9OS_objectC"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - !private "s8SequenceP"
@@ -440,6 +499,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/SwiftMoment.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
@@ -474,6 +534,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -546,6 +607,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment.h"
@@ -570,5 +632,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/module.modulemap"
-interface-hash: "569763ab9320aa70c723d9e02bfb0401"
+interface-hash: "04ddc4132c7e312d404e39a28174c796"

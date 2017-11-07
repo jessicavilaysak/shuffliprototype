@@ -20,11 +20,13 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
 - !private "+"
+- !private "=="
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "FIRAuth"
+- !private "FIRDatabase"
 - "FIRDatabaseReference"
 - !private "SVProgressHUD"
 - "String"
@@ -70,6 +72,7 @@ depends-member:
 - !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["s7CVarArgP", "BtnTapped"]
 - !private ["s7CVarArgP", "FIRAuth"]
+- !private ["s7CVarArgP", "FIRDatabase"]
 - !private ["s7CVarArgP", "SVProgressHUD"]
 - !private ["s7CVarArgP", "SigninBtn"]
 - !private ["s7CVarArgP", "TabBarController"]
@@ -79,18 +82,23 @@ depends-member:
 - !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "becomeFirstResponder"]
+- !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "currentUser"]
+- !private ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "directSegue"]
 - !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "exists"]
 - !private ["s7CVarArgP", "fld_password"]
 - !private ["s7CVarArgP", "fld_username"]
 - !private ["s7CVarArgP", "hideKeyboardWhenTappedAround"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "observeSingleEvent"]
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "resignFirstResponder"]
 - !private ["s7CVarArgP", "setDefaultStyle"]
 - !private ["s7CVarArgP", "show"]
@@ -107,6 +115,7 @@ depends-member:
 - ["s7CVarArgP", "textFieldShouldReturn"]
 - !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "userObj"]
+- !private ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewWillDisappear"]
 - !private ["s7CVarArgP", "viewWithTag"]
@@ -115,6 +124,7 @@ depends-member:
 - !private ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "BtnTapped"]
 - !private ["s28CustomDebugStringConvertibleP", "FIRAuth"]
+- !private ["s28CustomDebugStringConvertibleP", "FIRDatabase"]
 - !private ["s28CustomDebugStringConvertibleP", "SVProgressHUD"]
 - !private ["s28CustomDebugStringConvertibleP", "SigninBtn"]
 - !private ["s28CustomDebugStringConvertibleP", "TabBarController"]
@@ -124,18 +134,23 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "becomeFirstResponder"]
+- !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
+- !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "directSegue"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "exists"]
 - !private ["s28CustomDebugStringConvertibleP", "fld_password"]
 - !private ["s28CustomDebugStringConvertibleP", "fld_username"]
 - !private ["s28CustomDebugStringConvertibleP", "hideKeyboardWhenTappedAround"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "setDefaultStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "show"]
@@ -152,6 +167,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldReturn"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "userObj"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWithTag"]
@@ -162,6 +178,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "BtnTapped"]
 - !private ["s23CustomStringConvertibleP", "FIRAuth"]
+- !private ["s23CustomStringConvertibleP", "FIRDatabase"]
 - !private ["s23CustomStringConvertibleP", "SVProgressHUD"]
 - !private ["s23CustomStringConvertibleP", "SigninBtn"]
 - !private ["s23CustomStringConvertibleP", "TabBarController"]
@@ -172,18 +189,23 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "becomeFirstResponder"]
+- !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
+- !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "directSegue"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "exists"]
 - !private ["s23CustomStringConvertibleP", "fld_password"]
 - !private ["s23CustomStringConvertibleP", "fld_username"]
 - !private ["s23CustomStringConvertibleP", "hideKeyboardWhenTappedAround"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "setDefaultStyle"]
 - !private ["s23CustomStringConvertibleP", "show"]
@@ -200,6 +222,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "textFieldShouldReturn"]
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "userObj"]
+- !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
 - !private ["s23CustomStringConvertibleP", "viewWithTag"]
@@ -210,6 +233,7 @@ depends-member:
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "BtnTapped"]
 - !private ["s9EquatableP", "FIRAuth"]
+- !private ["s9EquatableP", "FIRDatabase"]
 - !private ["s9EquatableP", "SVProgressHUD"]
 - !private ["s9EquatableP", "SigninBtn"]
 - !private ["s9EquatableP", "TabBarController"]
@@ -222,19 +246,24 @@ depends-member:
 - !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "becomeFirstResponder"]
 - !private ["s9EquatableP", "cancel"]
+- !private ["s9EquatableP", "child"]
 - !private ["s9EquatableP", "cornerRadius"]
 - !private ["s9EquatableP", "currentUser"]
 - !private ["s9EquatableP", "dark"]
+- !private ["s9EquatableP", "database"]
 - !private ["s9EquatableP", "delegate"]
 - !private ["s9EquatableP", "directSegue"]
 - !private ["s9EquatableP", "dismiss"]
+- !private ["s9EquatableP", "exists"]
 - !private ["s9EquatableP", "fld_password"]
 - !private ["s9EquatableP", "fld_username"]
 - !private ["s9EquatableP", "hideKeyboardWhenTappedAround"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "layer"]
+- !private ["s9EquatableP", "observeSingleEvent"]
 - !private ["s9EquatableP", "present"]
 - !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "resignFirstResponder"]
 - !private ["s9EquatableP", "setDefaultStyle"]
 - !private ["s9EquatableP", "show"]
@@ -251,6 +280,7 @@ depends-member:
 - ["s9EquatableP", "textFieldShouldReturn"]
 - !private ["s9EquatableP", "uid"]
 - !private ["s9EquatableP", "userObj"]
+- !private ["s9EquatableP", "value"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - !private ["s9EquatableP", "viewWillDisappear"]
 - !private ["s9EquatableP", "viewWithTag"]
@@ -262,10 +292,20 @@ depends-member:
 - !private ["So7FIRAuthC", "auth"]
 - !private ["So7FIRAuthC", "currentUser"]
 - !private ["So7FIRAuthC", "signIn"]
+- !private ["SC16FIRDataEventTypeO", "value"]
+- !private ["So15FIRDataSnapshotC", "exists"]
+- !private ["So15FIRDataSnapshotC", "value"]
+- !private ["So11FIRDatabaseC", "database"]
+- !private ["So11FIRDatabaseC", "reference"]
+- !private ["So16FIRDatabaseQueryC", "child"]
+- !private ["So16FIRDatabaseQueryC", "observeSingleEvent"]
+- !private ["So20FIRDatabaseReferenceC", "child"]
+- !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
 - !private ["So7FIRUserC", "uid"]
 - !private ["So11FIRUserInfoP", "uid"]
 - !private ["s8HashableP", "BtnTapped"]
 - !private ["s8HashableP", "FIRAuth"]
+- !private ["s8HashableP", "FIRDatabase"]
 - !private ["s8HashableP", "SVProgressHUD"]
 - !private ["s8HashableP", "SigninBtn"]
 - !private ["s8HashableP", "TabBarController"]
@@ -278,19 +318,24 @@ depends-member:
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "becomeFirstResponder"]
 - !private ["s8HashableP", "cancel"]
+- !private ["s8HashableP", "child"]
 - !private ["s8HashableP", "cornerRadius"]
 - !private ["s8HashableP", "currentUser"]
 - !private ["s8HashableP", "dark"]
+- !private ["s8HashableP", "database"]
 - !private ["s8HashableP", "delegate"]
 - !private ["s8HashableP", "directSegue"]
 - !private ["s8HashableP", "dismiss"]
+- !private ["s8HashableP", "exists"]
 - !private ["s8HashableP", "fld_password"]
 - !private ["s8HashableP", "fld_username"]
 - !private ["s8HashableP", "hideKeyboardWhenTappedAround"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "layer"]
+- !private ["s8HashableP", "observeSingleEvent"]
 - !private ["s8HashableP", "present"]
 - !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "reference"]
 - !private ["s8HashableP", "resignFirstResponder"]
 - !private ["s8HashableP", "setDefaultStyle"]
 - !private ["s8HashableP", "show"]
@@ -307,6 +352,7 @@ depends-member:
 - ["s8HashableP", "textFieldShouldReturn"]
 - !private ["s8HashableP", "uid"]
 - !private ["s8HashableP", "userObj"]
+- !private ["s8HashableP", "value"]
 - !private ["s8HashableP", "viewDidLoad"]
 - !private ["s8HashableP", "viewWillDisappear"]
 - !private ["s8HashableP", "viewWithTag"]
@@ -316,6 +362,7 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["8Material14MotionDelegateP", "BtnTapped"]
 - !private ["8Material14MotionDelegateP", "FIRAuth"]
+- !private ["8Material14MotionDelegateP", "FIRDatabase"]
 - !private ["8Material14MotionDelegateP", "SVProgressHUD"]
 - !private ["8Material14MotionDelegateP", "SigninBtn"]
 - !private ["8Material14MotionDelegateP", "TabBarController"]
@@ -344,6 +391,7 @@ depends-member:
 - ["8Material14MotionDelegateP", ""]
 - !private ["So8NSCodingP", "BtnTapped"]
 - !private ["So8NSCodingP", "FIRAuth"]
+- !private ["So8NSCodingP", "FIRDatabase"]
 - !private ["So8NSCodingP", "SVProgressHUD"]
 - !private ["So8NSCodingP", "SigninBtn"]
 - !private ["So8NSCodingP", "TabBarController"]
@@ -384,6 +432,7 @@ depends-member:
 - !private ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "BtnTapped"]
 - !private ["So26NSExtensionRequestHandlingP", "FIRAuth"]
+- !private ["So26NSExtensionRequestHandlingP", "FIRDatabase"]
 - !private ["So26NSExtensionRequestHandlingP", "SVProgressHUD"]
 - !private ["So26NSExtensionRequestHandlingP", "SigninBtn"]
 - !private ["So26NSExtensionRequestHandlingP", "TabBarController"]
@@ -416,6 +465,7 @@ depends-member:
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "BtnTapped"]
 - !private ["So8NSObjectC", "FIRAuth"]
+- !private ["So8NSObjectC", "FIRDatabase"]
 - ["So8NSObjectC", "FIRDatabaseReference"]
 - !private ["So8NSObjectC", "SVProgressHUD"]
 - ["So8NSObjectC", "SigninBtn"]
@@ -429,20 +479,25 @@ depends-member:
 - !private ["So8NSObjectC", "addAction"]
 - !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "becomeFirstResponder"]
+- !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "cornerRadius"]
 - !private ["So8NSObjectC", "currentUser"]
+- !private ["So8NSObjectC", "database"]
 - !private ["So8NSObjectC", "delegate"]
 - ["So8NSObjectC", "directSegue"]
 - !private ["So8NSObjectC", "dismiss"]
+- !private ["So8NSObjectC", "exists"]
 - ["So8NSObjectC", "fld_password"]
 - ["So8NSObjectC", "fld_username"]
 - ["So8NSObjectC", "goBack"]
 - !private ["So8NSObjectC", "hideKeyboardWhenTappedAround"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layer"]
+- !private ["So8NSObjectC", "observeSingleEvent"]
 - !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "ref"]
+- !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
 - !private ["So8NSObjectC", "setDefaultStyle"]
 - !private ["So8NSObjectC", "show"]
@@ -460,11 +515,13 @@ depends-member:
 - !private ["So8NSObjectC", "uid"]
 - !private ["So8NSObjectC", "userObj"]
 - ["So8NSObjectC", "userUid"]
+- !private ["So8NSObjectC", "value"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillDisappear"]
 - !private ["So8NSObjectC", "viewWithTag"]
 - !private ["So16NSObjectProtocolP", "BtnTapped"]
 - !private ["So16NSObjectProtocolP", "FIRAuth"]
+- !private ["So16NSObjectProtocolP", "FIRDatabase"]
 - !private ["So16NSObjectProtocolP", "SVProgressHUD"]
 - !private ["So16NSObjectProtocolP", "SigninBtn"]
 - !private ["So16NSObjectProtocolP", "TabBarController"]
@@ -474,18 +531,23 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "addAction"]
 - !private ["So16NSObjectProtocolP", "auth"]
 - !private ["So16NSObjectProtocolP", "becomeFirstResponder"]
+- !private ["So16NSObjectProtocolP", "child"]
 - !private ["So16NSObjectProtocolP", "cornerRadius"]
 - !private ["So16NSObjectProtocolP", "currentUser"]
+- !private ["So16NSObjectProtocolP", "database"]
 - !private ["So16NSObjectProtocolP", "delegate"]
 - !private ["So16NSObjectProtocolP", "directSegue"]
 - !private ["So16NSObjectProtocolP", "dismiss"]
+- !private ["So16NSObjectProtocolP", "exists"]
 - !private ["So16NSObjectProtocolP", "fld_password"]
 - !private ["So16NSObjectProtocolP", "fld_username"]
 - !private ["So16NSObjectProtocolP", "hideKeyboardWhenTappedAround"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "layer"]
+- !private ["So16NSObjectProtocolP", "observeSingleEvent"]
 - !private ["So16NSObjectProtocolP", "present"]
 - !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "reference"]
 - !private ["So16NSObjectProtocolP", "resignFirstResponder"]
 - !private ["So16NSObjectProtocolP", "setDefaultStyle"]
 - !private ["So16NSObjectProtocolP", "show"]
@@ -502,6 +564,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "textFieldShouldReturn"]
 - !private ["So16NSObjectProtocolP", "uid"]
 - !private ["So16NSObjectProtocolP", "userObj"]
+- !private ["So16NSObjectProtocolP", "value"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "viewWillDisappear"]
 - !private ["So16NSObjectProtocolP", "viewWithTag"]
@@ -513,6 +576,7 @@ depends-member:
 - !private ["s16RawRepresentableP", "alert"]
 - !private ["s16RawRepresentableP", "cancel"]
 - !private ["s16RawRepresentableP", "dark"]
+- !private ["s16RawRepresentableP", "value"]
 - !private ["So13SVProgressHUDC", "dismiss"]
 - !private ["So13SVProgressHUDC", "setDefaultStyle"]
 - !private ["So13SVProgressHUDC", "show"]
@@ -553,6 +617,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "viewWithTag"]
 - !private ["So21UIAppearanceContainerP", "BtnTapped"]
 - !private ["So21UIAppearanceContainerP", "FIRAuth"]
+- !private ["So21UIAppearanceContainerP", "FIRDatabase"]
 - !private ["So21UIAppearanceContainerP", "SVProgressHUD"]
 - !private ["So21UIAppearanceContainerP", "SigninBtn"]
 - !private ["So21UIAppearanceContainerP", "TabBarController"]
@@ -592,6 +657,7 @@ depends-member:
 - !private ["So8UIButtonC", "layer"]
 - !private ["So18UIContentContainerP", "BtnTapped"]
 - !private ["So18UIContentContainerP", "FIRAuth"]
+- !private ["So18UIContentContainerP", "FIRDatabase"]
 - !private ["So18UIContentContainerP", "SVProgressHUD"]
 - !private ["So18UIContentContainerP", "SigninBtn"]
 - !private ["So18UIContentContainerP", "TabBarController"]
@@ -656,6 +722,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "viewWithTag"]
 - !private ["So18UIFocusEnvironmentP", "BtnTapped"]
 - !private ["So18UIFocusEnvironmentP", "FIRAuth"]
+- !private ["So18UIFocusEnvironmentP", "FIRDatabase"]
 - !private ["So18UIFocusEnvironmentP", "SVProgressHUD"]
 - !private ["So18UIFocusEnvironmentP", "SigninBtn"]
 - !private ["So18UIFocusEnvironmentP", "TabBarController"]
@@ -712,6 +779,7 @@ depends-member:
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So30UINavigationControllerDelegateP", "BtnTapped"]
 - !private ["So30UINavigationControllerDelegateP", "FIRAuth"]
+- !private ["So30UINavigationControllerDelegateP", "FIRDatabase"]
 - !private ["So30UINavigationControllerDelegateP", "SVProgressHUD"]
 - !private ["So30UINavigationControllerDelegateP", "SigninBtn"]
 - !private ["So30UINavigationControllerDelegateP", "TabBarController"]
@@ -740,6 +808,7 @@ depends-member:
 - ["So30UINavigationControllerDelegateP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "BtnTapped"]
 - !private ["So30UIPasteConfigurationSupportingP", "FIRAuth"]
+- !private ["So30UIPasteConfigurationSupportingP", "FIRDatabase"]
 - !private ["So30UIPasteConfigurationSupportingP", "SVProgressHUD"]
 - !private ["So30UIPasteConfigurationSupportingP", "SigninBtn"]
 - !private ["So30UIPasteConfigurationSupportingP", "TabBarController"]
@@ -779,6 +848,7 @@ depends-member:
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "BtnTapped"]
 - !private ["So11UIResponderC", "FIRAuth"]
+- !private ["So11UIResponderC", "FIRDatabase"]
 - ["So11UIResponderC", "FIRDatabaseReference"]
 - !private ["So11UIResponderC", "SVProgressHUD"]
 - ["So11UIResponderC", "SigninBtn"]
@@ -823,6 +893,7 @@ depends-member:
 - !private ["So11UIResponderC", "viewWithTag"]
 - !private ["So30UIResponderStandardEditActionsP", "BtnTapped"]
 - !private ["So30UIResponderStandardEditActionsP", "FIRAuth"]
+- !private ["So30UIResponderStandardEditActionsP", "FIRDatabase"]
 - !private ["So30UIResponderStandardEditActionsP", "SVProgressHUD"]
 - !private ["So30UIResponderStandardEditActionsP", "SigninBtn"]
 - !private ["So30UIResponderStandardEditActionsP", "TabBarController"]
@@ -864,6 +935,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - !private ["So16UIStateRestoringP", "BtnTapped"]
 - !private ["So16UIStateRestoringP", "FIRAuth"]
+- !private ["So16UIStateRestoringP", "FIRDatabase"]
 - !private ["So16UIStateRestoringP", "SVProgressHUD"]
 - !private ["So16UIStateRestoringP", "SigninBtn"]
 - !private ["So16UIStateRestoringP", "TabBarController"]
@@ -893,6 +965,7 @@ depends-member:
 - !private ["So18UITabBarControllerC", "init"]
 - !private ["So26UITabBarControllerDelegateP", "BtnTapped"]
 - !private ["So26UITabBarControllerDelegateP", "FIRAuth"]
+- !private ["So26UITabBarControllerDelegateP", "FIRDatabase"]
 - !private ["So26UITabBarControllerDelegateP", "SVProgressHUD"]
 - !private ["So26UITabBarControllerDelegateP", "SigninBtn"]
 - !private ["So26UITabBarControllerDelegateP", "TabBarController"]
@@ -943,6 +1016,7 @@ depends-member:
 - !private ["So11UITextFieldC", "text"]
 - !private ["So19UITextFieldDelegateP", "BtnTapped"]
 - !private ["So19UITextFieldDelegateP", "FIRAuth"]
+- !private ["So19UITextFieldDelegateP", "FIRDatabase"]
 - !private ["So19UITextFieldDelegateP", "SVProgressHUD"]
 - !private ["So19UITextFieldDelegateP", "SigninBtn"]
 - !private ["So19UITextFieldDelegateP", "TabBarController"]
@@ -988,6 +1062,7 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So18UITraitEnvironmentP", "BtnTapped"]
 - !private ["So18UITraitEnvironmentP", "FIRAuth"]
+- !private ["So18UITraitEnvironmentP", "FIRDatabase"]
 - !private ["So18UITraitEnvironmentP", "SVProgressHUD"]
 - !private ["So18UITraitEnvironmentP", "SigninBtn"]
 - !private ["So18UITraitEnvironmentP", "TabBarController"]
@@ -1038,6 +1113,7 @@ depends-member:
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "BtnTapped"]
 - !private ["So16UIViewControllerC", "FIRAuth"]
+- !private ["So16UIViewControllerC", "FIRDatabase"]
 - ["So16UIViewControllerC", "FIRDatabaseReference"]
 - !private ["So16UIViewControllerC", "SVProgressHUD"]
 - ["So16UIViewControllerC", "SigninBtn"]
@@ -1073,6 +1149,7 @@ depends-member:
 - ["So16UIViewControllerC", ""]
 - !private ["So37UIViewControllerTransitioningDelegateP", "BtnTapped"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "FIRAuth"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "FIRDatabase"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "SVProgressHUD"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "SigninBtn"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "TabBarController"]
@@ -1099,11 +1176,13 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "viewDidLoad"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "viewWillDisappear"]
 - ["So37UIViewControllerTransitioningDelegateP", ""]
+- !private ["4Test10UserObjectC", "accountID"]
 - !private ["4Test10UserObjectC", "completeAsyncCalls"]
 - !private ["4Test10UserObjectC", "uid"]
 - ["4Test17VC_Creator_SigninC", "Bool"]
 - ["4Test17VC_Creator_SigninC", "BtnTapped"]
 - !private ["4Test17VC_Creator_SigninC", "FIRAuth"]
+- !private ["4Test17VC_Creator_SigninC", "FIRDatabase"]
 - ["4Test17VC_Creator_SigninC", "FIRDatabaseReference"]
 - !private ["4Test17VC_Creator_SigninC", "SVProgressHUD"]
 - ["4Test17VC_Creator_SigninC", "SigninBtn"]
@@ -1159,6 +1238,7 @@ depends-member:
 - !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "BtnTapped"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRAuth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FIRDatabase"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SVProgressHUD"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SigninBtn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TabBarController"]
@@ -1168,18 +1248,23 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "becomeFirstResponder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "directSegue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "exists"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fld_password"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fld_username"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideKeyboardWhenTappedAround"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setDefaultStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
@@ -1196,6 +1281,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldReturn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userObj"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWithTag"]
@@ -1227,6 +1313,11 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So7FIRAuthC"
+- !private "SC16FIRDataEventTypeO"
+- !private "So15FIRDataSnapshotC"
+- !private "So11FIRDatabaseC"
+- !private "So16FIRDatabaseQueryC"
+- !private "So20FIRDatabaseReferenceC"
 - !private "So7FIRUserC"
 - !private "So11FIRUserInfoP"
 - "s8HashableP"
@@ -1316,6 +1407,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/SwiftMoment.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
@@ -1349,6 +1442,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
@@ -1370,6 +1465,8 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
@@ -1418,7 +1515,10 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
@@ -1431,6 +1531,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Spring/Spring.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules/module.modulemap"
@@ -1439,5 +1540,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/module.modulemap"
 interface-hash: "29c8a0a18049386c95870b7dfbd852f1"

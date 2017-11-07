@@ -173,9 +173,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
-@import CoreGraphics;
-@import ObjectiveC;
 @import FirebaseAuth;
+@import ObjectiveC;
+@import CoreGraphics;
 @import Foundation;
 #endif
 
@@ -195,40 +195,27 @@ SWIFT_CLASS("_TtC4Test11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
-- (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
-- (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
-- (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
-- (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
-- (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
-@class UITextView;
 @class UIImageView;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC4Test10CustomCell")
-@interface CustomCell : UITableViewCell
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified buttonApprove;
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified buttonDelete;
-@property (nonatomic, strong) IBOutlet UITextView * _Null_unspecified fld_caption;
-@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified photo;
-- (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UILabel;
 @class UIView;
 @class UIVisualEffectView;
+@class NSCoder;
 
+/// This cell class correpsonds to the view post feed
+/// and contains outlets for all the cell UI elements.
+/// <ul>
+///   <li>
+///   </li>
+/// </ul>
 SWIFT_CLASS("_TtC4Test17CustomCellCreator")
 @interface CustomCellCreator : UITableViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified playButton;
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified photo;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified imageCaption;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified approveStatus;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified cardviewBg;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified vfView;
@@ -240,19 +227,15 @@ SWIFT_CLASS("_TtC4Test17CustomCellCreator")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC4Test14CustomCellUser")
-@interface CustomCellUser : UICollectionViewCell
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fld_username;
-@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified deleteUser;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIScrollView;
 @class UIPageControl;
 @class NSBundle;
 
+/// This class looks after implementation of the user onboarding tutorials,
+/// segueing to sign in and signing up with an invite code.
+/// The onboardidng tutorials are stored as an array of type dictionary with
+/// key value pairs of Strings. The array is called tuteArray and is initialised
+/// in the load tute function.
 SWIFT_CLASS("_TtC4Test21InitialViewController")
 @interface InitialViewController : UIViewController <UIScrollViewDelegate>
 @property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified scrollView;
@@ -260,10 +243,12 @@ SWIFT_CLASS("_TtC4Test21InitialViewController")
 - (IBAction)btnAdminCreator:(id _Nonnull)sender;
 - (IBAction)btnCreator:(id _Nonnull)sender;
 - (void)segueToLoginWithVc_name:(NSString * _Nonnull)vc_name;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute0;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute1;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute2;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute3;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute4;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull tute5;
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull tuteArray;
 - (void)viewDidLoad;
 - (void)loadTutes;
@@ -273,6 +258,7 @@ SWIFT_CLASS("_TtC4Test21InitialViewController")
 @end
 
 
+/// This class contains all the cell UI outlets for the manage user VC
 SWIFT_CLASS("_TtC4Test14ManageUserCell")
 @interface ManageUserCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified userName;
@@ -285,11 +271,18 @@ SWIFT_CLASS("_TtC4Test14ManageUserCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol NSObject;
 
+/// This class handles auto user login depending on if the user has remained logged in from previous
+/// session. The auto login performs the same async calls as the Sign VC but the process is hidden behind
+/// storyboard animations.
 SWIFT_CLASS("_TtC4Test6RootVC")
 @interface RootVC : UIViewController
+@property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)logout;
 - (void)setUser;
 - (void)directSegue;
 - (void)segueToInitialVCWithVc_name:(NSString * _Nonnull)vc_name;
@@ -304,7 +297,6 @@ SWIFT_CLASS("_TtC4Test16TabBarController")
 - (void)viewDidLoad;
 - (void)registerPushNotification:(UIApplication * _Nonnull)application;
 - (void)tokenRefreshNotification;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -415,11 +407,22 @@ SWIFT_CLASS("_TtC4Test6Toucan")
 @end
 
 
+/// This class holds all the tutView.xib outlets. It is a holder class only
+/// and the implementation is carried out in the initial view controller.
+/// <ul>
+///   <li>
+///   </li>
+/// </ul>
 SWIFT_CLASS("_TtC4Test8TuteView")
 @interface TuteView : UIView
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteTitle;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified tuteImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tuteDescription;
+/// These oulets are for the first “tile” of the tute view, they are hidden in the
+/// consecutive tiles.
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified firstTileLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified firstTileDescription;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified firstTileLogo;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -431,9 +434,29 @@ SWIFT_CLASS("_TtC4Test8TuteView")
 @end
 
 @class UITableView;
-@protocol NSObject;
-@class UITapGestureRecognizer;
 
+/// This class is responsible for:
+/// <ul>
+///   <li>
+///     displaying the current logged in user’s information. (USERNAME, COMPANY NAME, ACCOUNT CREATOR NAME)
+///   </li>
+///   <li>
+///     loading invited users in table view, additionaly the invited user’s current account status is also displayed (Active,Pending)
+///   </li>
+///   <li>
+///     Logout
+///   </li>
+///   <li>
+///     Adding a user
+///   </li>
+///   <li>
+///     Deleting a user
+///   </li>
+/// </ul>
+/// <ul>
+///   <li>
+///   </li>
+/// </ul>
 SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 @interface VC_ACreator_HomePage : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fldcreator;
@@ -442,7 +465,6 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldcompany;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified userTable;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
-- (void)deleteUserButtonWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)reloadList;
@@ -457,21 +479,34 @@ SWIFT_CLASS("_TtC4Test20VC_ACreator_HomePage")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
+@class UITextView;
 @class AVPlayerViewController;
 @class AVPlayer;
+@class NSTimer;
+@class UITapGestureRecognizer;
 
+/// This class is responsible for displaying the post from the view post VC and additional information about the post such as created by, approved by (if an admin account), delete post or approve post if post has not been approved(if admin account).
 SWIFT_CLASS("_TtC4Test13VC_ClickImage")
 @interface VC_ClickImage : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified img_playbutton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_delete_lvl3;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_approve_lvl2;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_delete_lvl2;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified approvedSymbol;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified createdDateLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified approvedDateLabel;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified imgCaption;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
 @property (nonatomic, strong) AVPlayerViewController * _Nonnull avPlayerViewController;
 @property (nonatomic, strong) AVPlayer * _Nullable avPlayer;
-- (void)viewWillAppear:(BOOL)animated;
+@property (nonatomic, strong) NSTimer * _Nullable timer;
+@property (nonatomic, copy) NSString * _Null_unspecified createdBy;
+@property (nonatomic, copy) NSString * _Null_unspecified approvedBy;
 - (void)viewDidLoad;
+- (void)updateTime;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)imageSelectedWithTapGestureRecognizer:(UITapGestureRecognizer * _Nonnull)tapGestureRecognizer;
 - (void)performInitialisation;
 - (void)viewWillLayoutSubviews;
@@ -503,8 +538,11 @@ SWIFT_CLASS("_TtC4Test17VC_Creator_Signin")
 
 @class UIBarButtonItem;
 
+/// This class is responsible for displaying the user’s previous posts or show the admin its user’s post.
+/// The class also handles logout for a creator account and displays users account info
 SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @interface VC_Creator_Viewposts : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified creatorImg;
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified viewposts;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified logOut;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImage;
@@ -512,27 +550,27 @@ SWIFT_CLASS("_TtC4Test20VC_Creator_Viewposts")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fldcreator;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified fldusername;
 @property (nonatomic, strong) FIRAuthStateDidChangeListenerHandle _Null_unspecified handle;
+@property (nonatomic, strong) NSTimer * _Nullable timer;
 - (void)viewDidLoad;
+- (void)updateRows;
 - (void)viewDidAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)viewWillDisappear:(BOOL)animated;
 - (IBAction)logout:(id _Nonnull)sender;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+/// This class is responsible for handling the edit post caption fucntionality once the post has been made.
 SWIFT_CLASS("_TtC4Test14VC_EditCaption")
 @interface VC_EditCaption : UIViewController
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified caption;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified buttonUpdate;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
-- (void)didReceiveMemoryWarning;
 - (IBAction)btnUpdate:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -547,6 +585,8 @@ SWIFT_CLASS("_TtC4Test13VC_InviteCode")
 - (void)viewDidLoad;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)btn_signup:(id _Nonnull)sender;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)logout;
 - (void)getInviteInfoWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (IBAction)goBack:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -588,8 +628,6 @@ SWIFT_CLASS("_TtC4Test14VC_PostContent")
 - (void)makePostWithValues:(NSDictionary<NSString *, id> * _Nonnull)values completion:(void (^ _Nonnull)(BOOL))completion;
 - (void)finalisePostContent;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
-- (IBAction)buttonSelectImage:(id _Nonnull)sender;
-- (IBAction)btn_chooseCategory:(id _Nonnull)sender;
 - (IBAction)button_removeImage:(id _Nonnull)sender;
 - (void)setupCategories;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -604,6 +642,7 @@ SWIFT_CLASS("_TtC4Test14VC_SetPassword")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_confirmPassword;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_name;
 @property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified inviteRef;
+@property (nonatomic) double displayMessageDuration;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified btn_createAccount;
 - (void)viewDidLoad;
 - (void)viewWillDisappear:(BOOL)animated;
@@ -618,20 +657,21 @@ SWIFT_CLASS("_TtC4Test14VC_SetPassword")
 
 @class FlatButton;
 
+/// This class is responsible for adding a new user from an admin account, it allows
+/// the user to enter an email and a user role such as manager, creator or moderator.
 SWIFT_CLASS("_TtC4Test10VC_adduser")
 @interface VC_adduser : UIViewController <UITextFieldDelegate>
 @property (nonatomic, readonly, strong) DropDown * _Nonnull usrRoles;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fld_email;
 @property (nonatomic, weak) IBOutlet FlatButton * _Null_unspecified btn_userRoles;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_createuser;
 @property (nonatomic, copy) NSString * _Null_unspecified userRole;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull roleObj;
 @property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified inviteRef;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btn_createuser;
 - (void)viewDidLoad;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)btn_createNewUser:(id _Nonnull)sender;
 - (void)viewWillDisappear:(BOOL)animated;
-- (void)didReceiveMemoryWarning;
 - (IBAction)btn_userRoleDropdown:(id _Nonnull)sender;
 - (IBAction)btn_cancel:(id _Nonnull)sender;
 - (void)setupCategories;
@@ -640,6 +680,8 @@ SWIFT_CLASS("_TtC4Test10VC_adduser")
 @end
 
 
+/// This class is responsible for dispaying an enlarged version of a
+/// photograph when the user clicks on it.
 SWIFT_CLASS("_TtC4Test16VC_selectedimage")
 @interface VC_selectedimage : UIViewController
 @property (nonatomic, copy) NSString * _Null_unspecified imgUrl;
@@ -648,27 +690,7 @@ SWIFT_CLASS("_TtC4Test16VC_selectedimage")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnExit;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
-- (void)didReceiveMemoryWarning;
 - (IBAction)btnExit:(id _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIStackView;
-@class UISegmentedControl;
-
-SWIFT_CLASS("_TtC4Test14ViewController")
-@interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified signinSelector;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified signinLabel;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginButton;
-@property (nonatomic) BOOL isLogin;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (IBAction)loginSelectorChanged:(UISegmentedControl * _Nonnull)sender;
-- (IBAction)loginButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

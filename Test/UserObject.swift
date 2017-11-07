@@ -30,6 +30,9 @@ class UserObject {
     var invitedUsersPath: String!;
     var fcmToken: String!;
     
+    /*
+     - Function 'resetObj' is called to reset all values to default when the current user is signed out.
+     */
     func resetObj()
     {
         isAdmin = nil;
@@ -51,12 +54,18 @@ class UserObject {
         fcmToken = nil;
     }
     
+    /*
+     - Function 'init' is called when an instance of the 'UserObject' class is created.
+     */
     init() {
         firstTimeLogin = false;
         isAdmin = true;
         permissionToManageUsers = true;
     }
     
+    /*
+     - Function 'setRole' will set permissions for the current user according to their role ID.
+     */
     func setRole()
     {
         let lRole = role;
@@ -85,12 +94,12 @@ class UserObject {
         }
     }
     
+    /*
+     - Function 'completeAsyncCalls' is used to get all information necessary to start the application.
+     - The permissions the signed in user has will define what gets displayed on the app.
+     */
     func completeAsyncCalls(completion: @escaping (Bool) -> ()) {
-        /*
-         Do we want to get user information EVERY time they log in OR only the first time they log in??
-         
-         ALSO, i used a completion handler to get all the information i need (username, company name, etc.) SYNCHRONOUSLY. All firebase calls are ASYNCHRONOUS so i had to do this to ensure i grabbed the info before going to the tab controller.
-         */
+        
         //first handler for getting user info will make the firebase call then come back and continue to the second handler IF successful.
         self.getUserInfo{ success in
             if success{
@@ -125,6 +134,10 @@ class UserObject {
         }
     }
     
+    /*
+     - Function 'getUserInfo' will get the following user info:
+         - account ID, team ID (creatorID), username.
+     */
     func getUserInfo(completion: @escaping (Bool) -> ()) {
         if (accountID != nil)
         {
@@ -132,7 +145,6 @@ class UserObject {
             completion(true);
         }
         let userUID = uid;
-        print("shuffli: "+userUID!);
         FIRDatabase.database().reference().child("users").child(userUID!).observeSingleEvent(of: .value , with: { snapshot in
             
             if snapshot.exists() {
@@ -147,35 +159,41 @@ class UserObject {
                 }
                 
                 completion(true);
-            }});
-        
+            }}
+        );
     }
     
+    /*
+     - Function 'getAccountInfo' will get the following account info:
+         - account name, team name (creatorName), team image (imageURL).
+     */
     func getAccountInfo(completion: @escaping (Bool) -> ()) {
-    FIRDatabase.database().reference().child("accounts").child(accountID!).observeSingleEvent(of: .value , with: { snapshot in
-        
-        if snapshot.exists() {
-            
-            var recent = snapshot.value as!  NSDictionary
-            //print(recent);
-            self.accountName = (recent["accountName"] as? String)!;
-        FIRDatabase.database().reference().child("creators/"+self.accountID!+"/"+self.creatorID!).observeSingleEvent(of: .value , with: { snapshot in
+        FIRDatabase.database().reference().child("accounts").child(accountID!).observeSingleEvent(of: .value , with: { snapshot in
             
             if snapshot.exists() {
                 
-                recent = snapshot.value as!  NSDictionary
-                self.creatorName = (recent["creatorName"] as? String)!;
-                if(recent["imageURL"] != nil)
-                {
-                    self.creatorURL = (recent["imageURL"] as? String)!;
-                }
-                completion(true);
-            }});
-        }});
-    
-        
+                var recent = snapshot.value as!  NSDictionary
+                //print(recent);
+                self.accountName = (recent["accountName"] as? String)!;
+            FIRDatabase.database().reference().child("creators/"+self.accountID!+"/"+self.creatorID!).observeSingleEvent(of: .value , with: { snapshot in
+                
+                if snapshot.exists() {
+                    
+                    recent = snapshot.value as!  NSDictionary
+                    self.creatorName = (recent["creatorName"] as? String)!;
+                    if(recent["imageURL"] != nil)
+                    {
+                        self.creatorURL = (recent["imageURL"] as? String)!;
+                    }
+                    completion(true);
+                }});
+            }}
+        );
     }
     
+    /*
+     - Function 'getRoleInfo' will get all the current user's role ID.
+     */
     func getRoleInfo(completion: @escaping (Bool) -> ()) {
 
         if (role != nil)
@@ -193,9 +211,17 @@ class UserObject {
                 self.role = roleID
                 self.setRole();
                 completion(true);
-            }});
+            }}
+        );
     }
     
+    /*
+     - This function 'canNewUserBeCreated' is called upon sign up.
+     - This function will check if the current account has exceeded their max
+     number of users.
+     - IF the account has exceeded then this person will not be able to sign up.
+     - IF the account hasn't exceeded, then this person will be allowed to continue.
+     */
     func canNewUserBeCreated(completion: @escaping (Bool) -> ())
     {
         var max_users = -1;
@@ -243,10 +269,12 @@ class UserObject {
     }
 }
 
+//Global variable
 let userObj = UserObject()
 
-
-
+/*
+ - This extension enables the keyboard to behave natively.
+ */
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))

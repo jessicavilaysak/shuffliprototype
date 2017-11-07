@@ -9,7 +9,6 @@ provides-dynamic-lookup:
 - "btnUpdate"
 - "buttonUpdate"
 - "caption"
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
 - "viewWillLayoutSubviews"
 depends-top-level:
@@ -65,7 +64,6 @@ depends-member:
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "database"]
-- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "exists"]
 - !private ["s7CVarArgP", "hideKeyboardWhenTappedAround"]
@@ -100,7 +98,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
-- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "exists"]
 - !private ["s28CustomDebugStringConvertibleP", "hideKeyboardWhenTappedAround"]
@@ -139,7 +136,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "database"]
-- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "exists"]
 - !private ["s23CustomStringConvertibleP", "hideKeyboardWhenTappedAround"]
@@ -178,7 +174,6 @@ depends-member:
 - !private ["s9EquatableP", "cornerRadius"]
 - !private ["s9EquatableP", "dark"]
 - !private ["s9EquatableP", "database"]
-- !private ["s9EquatableP", "didReceiveMemoryWarning"]
 - !private ["s9EquatableP", "dismiss"]
 - !private ["s9EquatableP", "exists"]
 - !private ["s9EquatableP", "hideKeyboardWhenTappedAround"]
@@ -229,7 +224,6 @@ depends-member:
 - !private ["s8HashableP", "cornerRadius"]
 - !private ["s8HashableP", "dark"]
 - !private ["s8HashableP", "database"]
-- !private ["s8HashableP", "didReceiveMemoryWarning"]
 - !private ["s8HashableP", "dismiss"]
 - !private ["s8HashableP", "exists"]
 - !private ["s8HashableP", "hideKeyboardWhenTappedAround"]
@@ -259,7 +253,6 @@ depends-member:
 - !private ["8Material14MotionDelegateP", "SVProgressHUD"]
 - !private ["8Material14MotionDelegateP", "buttonUpdate"]
 - !private ["8Material14MotionDelegateP", "caption"]
-- !private ["8Material14MotionDelegateP", "didReceiveMemoryWarning"]
 - !private ["8Material14MotionDelegateP", "hideKeyboardWhenTappedAround"]
 - !private ["8Material14MotionDelegateP", "images"]
 - !private ["8Material14MotionDelegateP", "imgIndex"]
@@ -278,7 +271,6 @@ depends-member:
 - !private ["So8NSCodingP", "buttonUpdate"]
 - !private ["So8NSCodingP", "caption"]
 - !private ["So8NSCodingP", "cornerRadius"]
-- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "hideKeyboardWhenTappedAround"]
 - !private ["So8NSCodingP", "images"]
@@ -303,7 +295,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "SVProgressHUD"]
 - !private ["So26NSExtensionRequestHandlingP", "buttonUpdate"]
 - !private ["So26NSExtensionRequestHandlingP", "caption"]
-- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "hideKeyboardWhenTappedAround"]
 - !private ["So26NSExtensionRequestHandlingP", "images"]
 - !private ["So26NSExtensionRequestHandlingP", "imgIndex"]
@@ -332,7 +323,6 @@ depends-member:
 - !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "cornerRadius"]
 - !private ["So8NSObjectC", "database"]
-- ["So8NSObjectC", "didReceiveMemoryWarning"]
 - !private ["So8NSObjectC", "dismiss"]
 - !private ["So8NSObjectC", "exists"]
 - !private ["So8NSObjectC", "hideKeyboardWhenTappedAround"]
@@ -361,7 +351,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "child"]
 - !private ["So16NSObjectProtocolP", "cornerRadius"]
 - !private ["So16NSObjectProtocolP", "database"]
-- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
 - !private ["So16NSObjectProtocolP", "dismiss"]
 - !private ["So16NSObjectProtocolP", "exists"]
 - !private ["So16NSObjectProtocolP", "hideKeyboardWhenTappedAround"]
@@ -426,7 +415,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "SVProgressHUD"]
 - !private ["So21UIAppearanceContainerP", "buttonUpdate"]
 - !private ["So21UIAppearanceContainerP", "caption"]
-- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "hideKeyboardWhenTappedAround"]
 - !private ["So21UIAppearanceContainerP", "images"]
@@ -448,7 +436,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "SVProgressHUD"]
 - !private ["So18UIContentContainerP", "buttonUpdate"]
 - !private ["So18UIContentContainerP", "caption"]
-- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "hideKeyboardWhenTappedAround"]
 - !private ["So18UIContentContainerP", "images"]
 - !private ["So18UIContentContainerP", "imgIndex"]
@@ -479,7 +466,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "SVProgressHUD"]
 - !private ["So18UIFocusEnvironmentP", "buttonUpdate"]
 - !private ["So18UIFocusEnvironmentP", "caption"]
-- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "hideKeyboardWhenTappedAround"]
 - !private ["So18UIFocusEnvironmentP", "images"]
@@ -509,7 +495,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "SVProgressHUD"]
 - !private ["So30UINavigationControllerDelegateP", "buttonUpdate"]
 - !private ["So30UINavigationControllerDelegateP", "caption"]
-- !private ["So30UINavigationControllerDelegateP", "didReceiveMemoryWarning"]
 - !private ["So30UINavigationControllerDelegateP", "hideKeyboardWhenTappedAround"]
 - !private ["So30UINavigationControllerDelegateP", "images"]
 - !private ["So30UINavigationControllerDelegateP", "imgIndex"]
@@ -524,7 +509,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "SVProgressHUD"]
 - !private ["So30UIPasteConfigurationSupportingP", "buttonUpdate"]
 - !private ["So30UIPasteConfigurationSupportingP", "caption"]
-- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "hideKeyboardWhenTappedAround"]
 - !private ["So30UIPasteConfigurationSupportingP", "images"]
@@ -551,7 +535,6 @@ depends-member:
 - ["So11UIResponderC", "btnUpdate"]
 - ["So11UIResponderC", "buttonUpdate"]
 - ["So11UIResponderC", "caption"]
-- ["So11UIResponderC", "didReceiveMemoryWarning"]
 - !private ["So11UIResponderC", "dismiss"]
 - !private ["So11UIResponderC", "hideKeyboardWhenTappedAround"]
 - !private ["So11UIResponderC", "images"]
@@ -571,7 +554,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "SVProgressHUD"]
 - !private ["So30UIResponderStandardEditActionsP", "buttonUpdate"]
 - !private ["So30UIResponderStandardEditActionsP", "caption"]
-- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "hideKeyboardWhenTappedAround"]
 - !private ["So30UIResponderStandardEditActionsP", "images"]
@@ -596,7 +578,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "SVProgressHUD"]
 - !private ["So16UIStateRestoringP", "buttonUpdate"]
 - !private ["So16UIStateRestoringP", "caption"]
-- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "hideKeyboardWhenTappedAround"]
 - !private ["So16UIStateRestoringP", "images"]
 - !private ["So16UIStateRestoringP", "imgIndex"]
@@ -611,7 +592,6 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "SVProgressHUD"]
 - !private ["So26UITabBarControllerDelegateP", "buttonUpdate"]
 - !private ["So26UITabBarControllerDelegateP", "caption"]
-- !private ["So26UITabBarControllerDelegateP", "didReceiveMemoryWarning"]
 - !private ["So26UITabBarControllerDelegateP", "hideKeyboardWhenTappedAround"]
 - !private ["So26UITabBarControllerDelegateP", "images"]
 - !private ["So26UITabBarControllerDelegateP", "imgIndex"]
@@ -644,7 +624,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "SVProgressHUD"]
 - !private ["So18UITraitEnvironmentP", "buttonUpdate"]
 - !private ["So18UITraitEnvironmentP", "caption"]
-- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "hideKeyboardWhenTappedAround"]
 - !private ["So18UITraitEnvironmentP", "images"]
@@ -677,7 +656,6 @@ depends-member:
 - ["So16UIViewControllerC", "btnUpdate"]
 - ["So16UIViewControllerC", "buttonUpdate"]
 - ["So16UIViewControllerC", "caption"]
-- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - !private ["So16UIViewControllerC", "hideKeyboardWhenTappedAround"]
 - !private ["So16UIViewControllerC", "images"]
 - ["So16UIViewControllerC", "imgIndex"]
@@ -692,7 +670,6 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "SVProgressHUD"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "buttonUpdate"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "caption"]
-- !private ["So37UIViewControllerTransitioningDelegateP", "didReceiveMemoryWarning"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "hideKeyboardWhenTappedAround"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "images"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "imgIndex"]
@@ -718,7 +695,6 @@ depends-member:
 - ["4Test14VC_EditCaptionC", "buttonUpdate"]
 - ["4Test14VC_EditCaptionC", "caption"]
 - ["4Test14VC_EditCaptionC", "deinit"]
-- ["4Test14VC_EditCaptionC", "didReceiveMemoryWarning"]
 - !private ["4Test14VC_EditCaptionC", "hideKeyboardWhenTappedAround"]
 - !private ["4Test14VC_EditCaptionC", "images"]
 - ["4Test14VC_EditCaptionC", "imgIndex"]
@@ -766,7 +742,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "exists"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideKeyboardWhenTappedAround"]
@@ -924,6 +899,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/SwiftMoment.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
@@ -958,6 +934,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -1030,6 +1007,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment.h"
@@ -1054,5 +1032,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/module.modulemap"
-interface-hash: "79d0dad00d5cca97e6b22a358201255f"
+interface-hash: "7f2344755d5e70f7e11aebc62139a27e"

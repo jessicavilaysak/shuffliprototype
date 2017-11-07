@@ -35,7 +35,7 @@ struct imageDataModel{
     var timeUnixCreated: Double!
     var category: String!;
     
-    init() { // initalizer setting variables to sensible values
+    init() { // initialiser setting variables with default values
         self.key = nil
         self.url = nil
         self.ref = nil
@@ -54,9 +54,11 @@ struct imageDataModel{
         self.timeUnixCreated = nil;
         self.category = nil;
     }
-    /**  data snapshot initliazer which takes in a firebase datasnapshot as a parameter
-         and stores the value of that snapshot as an NSDictionary which is then extracted
-         from sanpshot value using the key defined in the database.
+    /**
+     - data snapshot initialiser which takes in a firebase snapshot object as a parameter
+     and stores the value of that snapshot as an NSDictionary which is then extracted
+     from the snapshot's value using the key defined in the database.
+     - all keys are hard coded.
      **/
     init(snapshot: FIRDataSnapshot){
         key = snapshot.key
@@ -98,22 +100,22 @@ struct imageDataModel{
         }else{
             uploadedBy = "";
         }
-        if let lApprovedBy = snapshotValue?["approvedBy"] as? String{ // post approved by ID
+        if let lApprovedBy = snapshotValue?["approvedBy"] as? String{ // ID of person who approved the post (if any)
             approvedBy = lApprovedBy;
         }else{
             approvedBy = "";
         }
-        if let lImgId = snapshotValue?["imageUid"] as? String{ // image
+        if let lImgId = snapshotValue?["imageUid"] as? String{ // UID of image
             imgId = lImgId;
         }else{
             imgId = "";
         }
-        if let lUserPostID = snapshotValue?["userPostID"] as? String{ // id of the post made by  the user
+        if let lUserPostID = snapshotValue?["userPostID"] as? String{ // ID of person who created the post
             userPostID = lUserPostID;
         }else{
             userPostID = "";
         }
-        if let lThumbnailUID = snapshotValue?["thumbnailUID"] as? String{ // video thumbnial uid
+        if let lThumbnailUID = snapshotValue?["thumbnailUID"] as? String{ // UID of video thumbnail image
             thumbnailUID = lThumbnailUID;
         }else{
             thumbnailUID = "";
@@ -124,7 +126,7 @@ struct imageDataModel{
             thumbnailURL = "";
         }
         
-        if let lCreatedDate = snapshotValue?["createdDate"] as? Double{ // The date the post was created
+        if let lCreatedDate = snapshotValue?["createdDate"] as? Double{ // the date the post was created
             print("createdDate..........................................");
             print(lCreatedDate);
             timeUnixCreated = lCreatedDate;
@@ -156,5 +158,5 @@ struct imageDataModel{
 }
 
 
-var images = [imageDataModel]() // global access 
+var images = [imageDataModel]() // global variable
 

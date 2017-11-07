@@ -37,8 +37,6 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     var signingOut: Bool!
     var timer: Timer?
     
-  
-    
     override func viewDidLoad() {
         
         signingOut = false;
@@ -91,16 +89,14 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             images = newImages; // assign global var with local array value
             print("SHUFFLI | path: "+userObj.listenerPath+" | images count: "+String(images.count));
             //print(self.images);
-           self.viewposts.reloadData() // reload table data
-            
+            self.viewposts.reloadData() // reload table data
         })
-        
     }
     
     /*
      * This function will update each row every 10 seconds.
      */
-    func updateRows() // for updating the time lbls every 10 seconds
+    func updateRows() // for updating the time labels every 10 seconds
     {
         print("updateTime()");
         let numberOfRows = viewposts.numberOfRows(inSection: 0);
@@ -116,7 +112,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
     override func viewDidAppear(_ animated: Bool) {
         
         //starting timer
-        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateRows), userInfo: nil, repeats: true) // TIMER
+        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateRows), userInfo: nil, repeats: true)
         
         viewposts.reloadData()
         
@@ -137,10 +133,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         }else{
             logOut.title = "Log Out"
         }
-        
-        
     }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return images.count // return number of elements in the array
@@ -194,7 +187,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             }
         }
         return cell
-}
+    }
     
     override func viewWillDisappear(_ animated: Bool) {
         print("viewWillDisappear");
@@ -216,10 +209,9 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
             SVProgressHUD.dismiss(withDelay: 1);
             // [END remove_auth_listener]
         }
-        
     }
     
-    @IBAction func logout(_ sender: Any) { // handle logout, check other vc for comments
+    @IBAction func logout(_ sender: Any) { // handle logout
         
         let refreshAlert = UIAlertController(title: "", message: "Are you sure you want to log out?", preferredStyle: UIAlertControllerStyle.actionSheet)
         
@@ -237,7 +229,7 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
                     self.signingOut = true;
                     
                     //the user has now signed out so go to login view controller
-                    // and remove this listener
+                    //and remove this listener
                 }
             });
             print("Handle Yes logic here")
@@ -248,7 +240,6 @@ class VC_Creator_Viewposts: UIViewController, UITableViewDataSource, UITableView
         }))
         
         present(refreshAlert, animated: true, completion: nil)
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { // row selected in table

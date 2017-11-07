@@ -20,7 +20,7 @@ import FirebaseMessaging
  - loading invited users in table view, additionaly the invited user's current account status is also displayed (Active,Pending)
  - Logout
  - Adding a user
- - Deleting a use
+ - Deleting a user
  **/
 
 class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -36,10 +36,8 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     var signingOut: Bool!
     var isInitialState: Bool!;
     
-    
-    
+    //Initialization
     override func viewDidLoad() {
-       //Initialization
         signingOut = false;
         userTable.delegate = self;
         userTable.dataSource = self;
@@ -119,20 +117,17 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             {
                 cell.userStatus.textColor = UIColor.init(hex: "33cc33");
             }
-            
         }
-        
         return cell; //return each cell
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // [START remove_auth_listener]
-        
         // Handle sign out
         if(signingOut)
         {
-            FIRAuth.auth()?.removeStateDidChangeListener(handle!) // state change
+            // remove listener for authentication state change
+            FIRAuth.auth()?.removeStateDidChangeListener(handle!)
             
             //removing observers at the specified listener path defined in user obj
             FIRDatabase.database().reference(withPath: userObj.listenerPath).removeAllObservers();
@@ -140,7 +135,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             FIRDatabase.database().reference(withPath: userObj.invitedUsersPath).removeAllObservers();
             // reset all values to nil
             userObj.resetObj();
-            //Arrays
+            //Resetting arrays
             usersUIDs = Array<String>();
             images = [imageDataModel]()
             
@@ -148,7 +143,6 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
             SVProgressHUD.showSuccess(withStatus: "Logged out!");
             SVProgressHUD.dismiss(withDelay: 1);
         }
-        // [END remove_auth_listener]
     }
 
     @IBAction func logout(_ sender: Any) {
@@ -158,8 +152,9 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
         refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
             FIRDatabase.database().reference().child("creatorCommands/"+userObj.accountID!+"/"+userObj.creatorID!+"/deleteFcmToken/"+userObj.uid!).setValue(["delete":"true"]);
             
-            try! FIRAuth.auth()!.signOut() // force log out
+            try! FIRAuth.auth()!.signOut() // log out
             
+            //creates listener for authentication state change and what to do when the state changes.
             self.handle = FIRAuth.auth()?.addStateDidChangeListener({ (auth: FIRAuth,user: FIRUser?) in
                 if user?.uid == userObj.uid { //check if not the same
                     print("SHUFFLI | could not log out for some reason :(");
@@ -167,10 +162,6 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_initialview");
                     self.present(vc!, animated: true, completion: nil);
                     self.signingOut = true;
-                    
-                    
-                    //the user has now signed out so go to login view controller
-                    // and remove this listener
                 }
             });
             print("Handle Yes logic here")
@@ -205,7 +196,7 @@ class VC_ACreator_HomePage: UIViewController, UITableViewDataSource, UITableView
     
     func deleteUser(row: Int)
     {
-        //setting vlaues from user object
+        //setting values from user object
         let userUid = usersUIDs[row];
         let user = usersObj[userUid]!;
         

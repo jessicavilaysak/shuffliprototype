@@ -11,15 +11,15 @@ import FirebaseDatabase
 import SVProgressHUD
 import Spring
 
+/*
+ - Class 'VC_InviteCode' is used when a user wishes to sign up with an invite code.
+ */
 class VC_InviteCode: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var fld_invitecode: UITextField!
     @IBOutlet weak var btn_signingup: UIButton!
     @IBOutlet weak var backBtn: UIButton!
-    
-    
     var signingOut: Bool!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +28,7 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
         btn_signingup.layer.cornerRadius = 4
         SVProgressHUD.setDefaultStyle(.dark)
         signingOut = false;
-        
         fld_invitecode.tag = 0
-        
     }
     
     
@@ -47,6 +45,10 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
         // Do not add a line break
         return false
     }
+    
+    /*
+     - Function is called when user clicks 'sign up'.
+     */
     @IBAction func btn_signup(_ sender: Any) {
         let invitecode = fld_invitecode.text;
         print("shuffli | invitecode: "+invitecode!);
@@ -61,33 +63,14 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
                 print("shuffli - SUCCESS.");
                 userObj.inviteCode = invitecode;
                 
+                /*
+                 - When 'canNewUserBeCreated' returns true then the user can continue.
+                 - When the function returns false then we alert the user that they cannot continue.
+                 */
                 userObj.canNewUserBeCreated { success in
                     if success {
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_setpassword");
                         self.present(vc!, animated: true, completion: nil);
-                        
-                        /*let activeAccountPath = "accountPlans/"+userObj.accountID!+"/status";
-                        FIRDatabase.database().reference().child(activeAccountPath).observeSingleEvent(of: .value , with: { snapshot in
-                            
-                            if snapshot.exists() {
-                                let isActive = snapshot.value as! String;
-                                print("isActive: "+isActive);
-                                if(isActive == "active")
-                                {
-                                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_setpassword");
-                                    self.present(vc!, animated: true, completion: nil);
-                                    return;
-                                }
-                            }
-                            let alert = UIAlertController(title: "NOTICE", message: "Dashboard account is inactive.\nPlease contact your dashboard administrator for more information.", preferredStyle: UIAlertControllerStyle.alert);
-                            let cancelAction = UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
-                                self.logout();
-                            });
-                            
-                            alert.addAction(cancelAction)
-                            self.present(alert,animated: true)
-                            
-                        });*/
                     }
                     else
                     {
@@ -101,7 +84,6 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
                     }
                     SVProgressHUD.dismiss();
                 }
-                
             }
             else
             {
@@ -119,7 +101,6 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // [START remove_auth_listener]
         if(signingOut)
         {
             userObj.resetObj();
@@ -129,7 +110,6 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
             SVProgressHUD.showSuccess(withStatus: "Logged out!");
             SVProgressHUD.dismiss(withDelay: 1);
         }
-        // [END remove_auth_listener]
     }
     
     func logout() {
@@ -139,6 +119,9 @@ class VC_InviteCode: UIViewController, UITextFieldDelegate {
         self.signingOut = true;
     }
     
+    /*
+     - Function 'getInviteInfo' finds the corresponding invite using the invite code given by the user.
+     */
     func getInviteInfo(completion: @escaping (Bool) -> ()) {
         print("getInviteInfo()");
         FIRDatabase.database().reference().child("userInvites").child(fld_invitecode.text!).observeSingleEvent(of: .value , with: { snapshot in

@@ -7,7 +7,6 @@ provides-member:
 - ["4Test16VC_selectedimageC", ""]
 provides-dynamic-lookup:
 - "btnExit"
-- "didReceiveMemoryWarning"
 - "imageView"
 - "imgSent"
 - "imgUrl"
@@ -50,7 +49,6 @@ depends-member:
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "black"]
 - !private ["s7CVarArgP", "btnExit"]
-- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "imageView"]
@@ -73,7 +71,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "black"]
 - !private ["s28CustomDebugStringConvertibleP", "btnExit"]
-- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "imageView"]
@@ -100,7 +97,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "black"]
 - !private ["s23CustomStringConvertibleP", "btnExit"]
-- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "imageView"]
@@ -128,7 +124,6 @@ depends-member:
 - !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "black"]
 - !private ["s9EquatableP", "btnExit"]
-- !private ["s9EquatableP", "didReceiveMemoryWarning"]
 - !private ["s9EquatableP", "dismiss"]
 - !private ["s9EquatableP", "image"]
 - !private ["s9EquatableP", "imageView"]
@@ -153,7 +148,6 @@ depends-member:
 - !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "black"]
 - !private ["s8HashableP", "btnExit"]
-- !private ["s8HashableP", "didReceiveMemoryWarning"]
 - !private ["s8HashableP", "dismiss"]
 - !private ["s8HashableP", "image"]
 - !private ["s8HashableP", "imageView"]
@@ -173,7 +167,6 @@ depends-member:
 - !private ["8Material14MotionDelegateP", "UITapGestureRecognizer"]
 - !private ["8Material14MotionDelegateP", "URL"]
 - !private ["8Material14MotionDelegateP", "btnExit"]
-- !private ["8Material14MotionDelegateP", "didReceiveMemoryWarning"]
 - !private ["8Material14MotionDelegateP", "dismiss"]
 - !private ["8Material14MotionDelegateP", "imageView"]
 - !private ["8Material14MotionDelegateP", "imgSent"]
@@ -190,7 +183,6 @@ depends-member:
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "black"]
 - !private ["So8NSCodingP", "btnExit"]
-- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imageView"]
@@ -211,7 +203,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UITapGestureRecognizer"]
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
 - !private ["So26NSExtensionRequestHandlingP", "btnExit"]
-- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "imageView"]
 - !private ["So26NSExtensionRequestHandlingP", "imgSent"]
@@ -238,7 +229,6 @@ depends-member:
 - !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "black"]
 - ["So8NSObjectC", "btnExit"]
-- ["So8NSObjectC", "didReceiveMemoryWarning"]
 - !private ["So8NSObjectC", "dismiss"]
 - !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "imageView"]
@@ -261,7 +251,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "black"]
 - !private ["So16NSObjectProtocolP", "btnExit"]
-- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
 - !private ["So16NSObjectProtocolP", "dismiss"]
 - !private ["So16NSObjectProtocolP", "image"]
 - !private ["So16NSObjectProtocolP", "imageView"]
@@ -301,7 +290,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "btnExit"]
-- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "image"]
 - !private ["So21UIAppearanceContainerP", "imageView"]
@@ -322,7 +310,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "UITapGestureRecognizer"]
 - !private ["So18UIContentContainerP", "URL"]
 - !private ["So18UIContentContainerP", "btnExit"]
-- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "imageView"]
 - !private ["So18UIContentContainerP", "imgSent"]
@@ -351,7 +338,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "btnExit"]
-- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "image"]
 - !private ["So18UIFocusEnvironmentP", "imageView"]
@@ -380,7 +366,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "UITapGestureRecognizer"]
 - !private ["So30UINavigationControllerDelegateP", "URL"]
 - !private ["So30UINavigationControllerDelegateP", "btnExit"]
-- !private ["So30UINavigationControllerDelegateP", "didReceiveMemoryWarning"]
 - !private ["So30UINavigationControllerDelegateP", "dismiss"]
 - !private ["So30UINavigationControllerDelegateP", "imageView"]
 - !private ["So30UINavigationControllerDelegateP", "imgSent"]
@@ -396,7 +381,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "btnExit"]
-- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageView"]
@@ -421,7 +405,6 @@ depends-member:
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "backgroundColor"]
 - ["So11UIResponderC", "btnExit"]
-- ["So11UIResponderC", "didReceiveMemoryWarning"]
 - !private ["So11UIResponderC", "dismiss"]
 - !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "imageView"]
@@ -441,7 +424,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "btnExit"]
-- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
 - !private ["So30UIResponderStandardEditActionsP", "imageView"]
@@ -460,7 +442,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UITapGestureRecognizer"]
 - !private ["So16UIStateRestoringP", "URL"]
 - !private ["So16UIStateRestoringP", "btnExit"]
-- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "imageView"]
 - !private ["So16UIStateRestoringP", "imgSent"]
@@ -474,7 +455,6 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "UITapGestureRecognizer"]
 - !private ["So26UITabBarControllerDelegateP", "URL"]
 - !private ["So26UITabBarControllerDelegateP", "btnExit"]
-- !private ["So26UITabBarControllerDelegateP", "didReceiveMemoryWarning"]
 - !private ["So26UITabBarControllerDelegateP", "dismiss"]
 - !private ["So26UITabBarControllerDelegateP", "imageView"]
 - !private ["So26UITabBarControllerDelegateP", "imgSent"]
@@ -492,7 +472,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "btnExit"]
-- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "image"]
 - !private ["So18UITraitEnvironmentP", "imageView"]
@@ -521,7 +500,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "UITapGestureRecognizer"]
 - !private ["So16UIViewControllerC", "URL"]
 - ["So16UIViewControllerC", "btnExit"]
-- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "imageView"]
 - ["So16UIViewControllerC", "imgSent"]
@@ -536,7 +514,6 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "UITapGestureRecognizer"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "URL"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "btnExit"]
-- !private ["So37UIViewControllerTransitioningDelegateP", "didReceiveMemoryWarning"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "dismiss"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "imageView"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "imgSent"]
@@ -557,7 +534,6 @@ depends-member:
 - !private ["4Test16VC_selectedimageC", "URL"]
 - ["4Test16VC_selectedimageC", "btnExit"]
 - ["4Test16VC_selectedimageC", "deinit"]
-- ["4Test16VC_selectedimageC", "didReceiveMemoryWarning"]
 - !private ["4Test16VC_selectedimageC", "dismiss"]
 - ["4Test16VC_selectedimageC", "imageView"]
 - ["4Test16VC_selectedimageC", "imgSent"]
@@ -585,7 +561,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "btnExit"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
@@ -705,6 +680,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -777,6 +753,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment.h"
@@ -801,5 +778,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/module.modulemap"
-interface-hash: "23281d513e26bd00b079059e343a2890"
+interface-hash: "d1ebf98c08ce298dc6f90246dac64653"

@@ -1,0 +1,14 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "123fb5ea83cba73892c803eb28c0944a"
+build_time: [1510052865, 532720000]
+inputs:
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldEffects.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift": [9223372036, 854775807]

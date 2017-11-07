@@ -48,6 +48,10 @@ import AssetsLibrary
 import AVFoundation
 import Photos
 
+/*
+ - Class 'VC_PostContent' is the 'create post' VC.
+ - Aim of this VC is it allows users to create posts with photo or video content.
+ */
 class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var btn_chooseCategory: UIButton!
@@ -92,6 +96,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         fld_chosenImage.addGestureRecognizer(tapImage)
         
         //enables the images that allow the user to choose their content.
+        //this is dependent on vc state.
         hideCorrespondingElements(type: "1");
         
         myPickerController.delegate = self;
@@ -107,6 +112,10 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
             btn_chooseCategory.setTitle("Choose Category", for: UIControlState.normal);
         }
         
+        /*
+         - Goes to firebase to get the current account's categories.
+         - This is done only when the VC is created.
+         */
         FIRDatabase.database().reference().child("accountCategories/"+userObj.accountID!).observeSingleEvent(of: .value, with: {(keyvalue) in
             print(keyvalue)
             let cValues = keyvalue.value as? [String : String] ?? [:];
@@ -120,16 +129,6 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         })
     }
     
-    //Keboard dismissed when return key is pressed 
-    /*func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if(text == "\n") {
-            self.dismissKeyboard()
-            return false
-        }
-        
-        return true
-    }*/
-    
     func viewImage() {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VC_viewselectedimg") as! VC_selectedimage;
         vc.imgSent = fld_chosenImage.image;
@@ -138,6 +137,9 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         self.present(vc, animated: true, completion: nil);
     }
     
+    /*
+     - Changes layout of VC depending on state.
+     */
     func hideCorrespondingElements(type: String) {
         //when type is 1 it sets up user to select a new image.
         if(type == "1")
@@ -152,6 +154,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         }
         else
         {
+            //displayed selected or created content.
             fld_chosenImage.isHidden = false;
             btn_removeImage.isHidden = false;
             fld_camera.isHidden = true;
@@ -162,7 +165,7 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
     }
     
     /*
-     * When the view appears again
+     - Changes the category when the view appears again.
      */
     override func viewWillAppear(_ animated: Bool) {
         if(categoryName != nil)
@@ -175,6 +178,10 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         }
     }
     
+    /*
+     - When user starts typing the text colour will become black and
+     placeholder is removed.
+     */
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.textColor == UIColor.lightGray {
             textView.text = nil
@@ -182,31 +189,43 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         }
     }
     
+    /*
+     - When user finishes editing the placeholder will appear.
+     */
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
             textView.placeholder = "Write caption..."
         }
     }
     
+    /*
+     - Instantiates the camera with photo and 10 second video.
+     */
     func camera()
     {
         let myPickerController = UIImagePickerController();
         myPickerController.sourceType = UIImagePickerControllerSourceType.camera;
-        //myPickerController.sourceType = .Camera
         myPickerController.mediaTypes = [kUTTypeMovie as String, kUTTypeImage as String]
         myPickerController.delegate = self
+        //sets video max duration to 10 seconds.
         myPickerController.videoMaximumDuration = 10.0
         myPickerController.videoQuality = UIImagePickerControllerQualityType.typeHigh;
         self.present(myPickerController, animated: true, completion: nil);
     }
     
+    /*
+     - Instantiates the photo library to allow the user to select a photo.
+     */
     func photoLibrary()
     {
-        //let myPickerController = UIImagePickerController();
         myPickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary;
         self.present(myPickerController, animated: true, completion: nil)
     }
     
+    /*
+     - The function 'buttonPost' is called when the user selects 'post'.
+     - Validation occurs on the image, caption and category.
+     */
     @IBAction func buttonPost(_ sender: Any) {
         
         let caption = fld_caption.text
@@ -244,9 +263,12 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         }
         
         uploadImg()
-        
     }
     
+    /*
+     - Adjusts metadata of the image to ensure when it gets saved to firebase
+     it saves as the correct orientation.
+     */
     func fixOrientation(img:UIImage) -> UIImage {
         
         if (img.imageOrientation == UIImageOrientation.up) {
@@ -462,6 +484,9 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         SVProgressHUD.dismiss(withDelay: 2)
     }
     
+    /*
+     - Creates a thumbnail for the video and returns it with the correct orientation.
+     */
     private func thumbnailForVideoAtURL(url: NSURL) -> UIImage? {
         print("ENTER.");
         
@@ -482,24 +507,28 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
         }
     }
     
+    /*
+     - This function is called when the user selects a photo/video.
+     */
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         hasVideo = false;
         
         if(info[UIImagePickerControllerOriginalImage] != nil)
         {
+            //If user has selected a photo it sets field 'fld_chosenImage' with that photo.
             let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage;
             fld_chosenImage.image = fixOrientation(img: selectedImage);
         }
         else
         {
-            //let pickedVideo:NSURL = (info[UIImagePickerControllerMediaURL] as? NSURL);
+            //If user has selected a video it sets the field 'fld_chosenImage' with a corresponding thumbnail.
+            //Also sets 'capturedVideoURL' with the video taken.
             let videoURL = info[UIImagePickerControllerMediaURL] as? NSURL
             capturedVideoURL = videoURL! as URL;
             /*
-             * Commented out code to save video to user's phone.
-             */
-            
-            /*PHPhotoLibrary.shared().performChanges({
+             - Commented out code below to save video to user's phone.
+ 
+            PHPhotoLibrary.shared().performChanges({
                 PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: videoURL! as URL)
             }) { saved, error in
                 if saved {
@@ -510,43 +539,18 @@ class VC_PostContent: UIViewController, UITextViewDelegate, UIImagePickerControl
                     self.present(alertController, animated: true, completion: nil)
                 }
             }*/
-            //UISaveVideoAtPathToSavedPhotosAlbum(pathString!, self, nil, nil);
             fld_chosenImage.image = thumbnailForVideoAtURL(url: videoURL!);
         }
-        
         hideCorrespondingElements(type: "2")
-        
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func buttonSelectImage(_ sender: Any) {
-        
-        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
-        
-        actionSheet.addAction(UIAlertAction(title: "Camera", style: UIAlertActionStyle.default, handler: { (alert:UIAlertAction!) -> Void in
-            self.camera()
-        }))
-        
-        actionSheet.addAction(UIAlertAction(title: "Gallery", style: UIAlertActionStyle.default, handler: { (alert:UIAlertAction!) -> Void in
-            self.photoLibrary()
-        }))
-        
-        
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
-        
-        self.present(actionSheet, animated: true, completion: nil)
-        
-    }
-    
-    @IBAction func btn_chooseCategory(_ sender: Any) {
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "VC_selectcategory") as! VC_SelectCategory;
-//        self.navigationController?.pushViewController(vc, animated: true);
-        categories.show()
-    }
-    
+    /*
+     - When user cancels the media chosen this function will reset the VC.
+     */
     @IBAction func button_removeImage(_ sender: Any) {
         hideCorrespondingElements(type: "1");
-        fld_chosenImage.image = nil // added this because image was still being posted after cancel
+        fld_chosenImage.image = nil
     }
     
     func setupCategories() {

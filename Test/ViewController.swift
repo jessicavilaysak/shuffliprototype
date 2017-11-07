@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,13 +43,11 @@ class ViewController: UIViewController {
         if isLogin{
             signinLabel.text = "Login"
             loginButton.setTitle("Login", for: .normal)
-            
         }
         else{
             signinLabel.text = "Register"
             loginButton.setTitle("Register", for: .normal)
         }
-        
     }
     
     
@@ -58,50 +55,30 @@ class ViewController: UIViewController {
         
         if let email = emailTextField.text, let pass = passwordTextField.text
         {
-        
-        
-        if isLogin{
-            FIRAuth.auth()?.signIn(withEmail: email, password: pass, completion: { (user, error) in
-                
-                
-                if user != nil {
-                    self.performSegue(withIdentifier: "goToHome", sender: self)
-                }
-                else {
-                    
-                }
-                
-                
-            })
-            
-            
-        }
-        else{
-            FIRAuth.auth()?.createUser(withEmail: email, password: pass, completion: { (user, error) in
-                
-                FIRAuth.auth()?.currentUser?.sendEmailVerification( completion: { (error) in
-                    // ...
-                    print("sent email - pranav is gay")
+            if isLogin{
+                FIRAuth.auth()?.signIn(withEmail: email, password: pass, completion: { (user, error) in
+                    if user != nil {
+                        self.performSegue(withIdentifier: "goToHome", sender: self)
+                    }
+                    else {
+                        
+                    }
                 })
-                
-                if user != nil{
-                    
-                    self.performSegue(withIdentifier: "goToHome", sender: self)
-                    
-                }
-                else{
-                    
-                }
-                
-            })
+            }
+            else{
+                FIRAuth.auth()?.createUser(withEmail: email, password: pass, completion: { (user, error) in
+                    FIRAuth.auth()?.currentUser?.sendEmailVerification( completion: { (error) in
+                        print("sent email")
+                    })
+                    if user != nil{
+                        self.performSegue(withIdentifier: "goToHome", sender: self)
+                    }
+                    else{
+                        
+                    }
+                })
+            }
         }
-        }
-        
-        
-        
-        
-
     }
-
 }
 

@@ -1,0 +1,10 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "2abcfee455b7c1b85ab0d52bd8f8efe5"
+build_time: [1510052669, 767788000]
+inputs:
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/DropDown/DropDown/helpers/DPDConstants.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/DropDown/DropDown/helpers/DPDKeyboardListener.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/DropDown/DropDown/helpers/DPDUIView+Extension.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/DropDown/DropDown/src/DropDown+Appearance.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/DropDown/DropDown/src/DropDown.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/DropDown/DropDown/src/DropDownCell.swift": [9223372036, 854775807]

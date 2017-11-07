@@ -1,0 +1,11 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "3c9aa4eb78b670e8041d8d3a0bc6943e"
+build_time: [1510052852, 344415000]
+inputs:
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftMoment/SwiftMoment/SwiftMoment/Duration.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftMoment/SwiftMoment/SwiftMoment/Extensions.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftMoment/SwiftMoment/SwiftMoment/LazyBox.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftMoment/SwiftMoment/SwiftMoment/Moment.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftMoment/SwiftMoment/SwiftMoment/MomentFromNow.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftMoment/SwiftMoment/SwiftMoment/Operators.swift": [9223372036, 854775807]
+  "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/SwiftMoment/SwiftMoment/SwiftMoment/TimeUnit.swift": [9223372036, 854775807]

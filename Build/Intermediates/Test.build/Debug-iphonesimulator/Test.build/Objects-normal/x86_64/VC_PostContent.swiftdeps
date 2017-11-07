@@ -9,7 +9,6 @@ provides-dynamic-lookup:
 - "btn_chooseCategory"
 - "btn_removeImage"
 - "buttonPost"
-- "buttonSelectImage"
 - "button_removeImage"
 - "camera"
 - "capturedVideoURL"
@@ -71,7 +70,6 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - !private "UIAlertAction"
-- !private "UIAlertActionStyle"
 - !private "UIAlertController"
 - !private "UIAlertControllerStyle"
 - "UIButton"
@@ -101,7 +99,6 @@ depends-top-level:
 - !private "UnicodeScalarType"
 - "VC_PostContent"
 - !private "VC_selectedimage"
-- !private "Void"
 - !private "kUTTypeImage"
 - !private "kUTTypeMovie"
 - !private "min"
@@ -198,7 +195,6 @@ depends-member:
 - !private ["s7CVarArgP", "SVProgressHUD"]
 - ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIAlertAction"]
-- !private ["s7CVarArgP", "UIAlertActionStyle"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIAlertControllerStyle"]
 - !private ["s7CVarArgP", "UIColor"]
@@ -364,7 +360,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "SVProgressHUD"]
 - ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
-- !private ["s28CustomDebugStringConvertibleP", "UIAlertActionStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertControllerStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
@@ -539,7 +534,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "SVProgressHUD"]
 - ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
-- !private ["s23CustomStringConvertibleP", "UIAlertActionStyle"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIAlertControllerStyle"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
@@ -699,7 +693,6 @@ depends-member:
 - !private ["8DropDownAAC", "dataSource"]
 - ["8DropDownAAC", "init"]
 - !private ["8DropDownAAC", "selectionAction"]
-- !private ["8DropDownAAC", "show"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "absoluteString"]
 - !private ["s9EncodableP", "append"]
@@ -725,7 +718,6 @@ depends-member:
 - !private ["s9EquatableP", "SVProgressHUD"]
 - ["s9EquatableP", "String"]
 - !private ["s9EquatableP", "UIAlertAction"]
-- !private ["s9EquatableP", "UIAlertActionStyle"]
 - !private ["s9EquatableP", "UIAlertController"]
 - !private ["s9EquatableP", "UIAlertControllerStyle"]
 - !private ["s9EquatableP", "UIColor"]
@@ -746,7 +738,6 @@ depends-member:
 - !private ["s9EquatableP", "UITapGestureRecognizer"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "absoluteString"]
-- !private ["s9EquatableP", "actionSheet"]
 - !private ["s9EquatableP", "addAction"]
 - !private ["s9EquatableP", "addGestureRecognizer"]
 - !private ["s9EquatableP", "alert"]
@@ -759,7 +750,6 @@ depends-member:
 - !private ["s9EquatableP", "btn_chooseCategory"]
 - !private ["s9EquatableP", "btn_removeImage"]
 - !private ["s9EquatableP", "camera"]
-- !private ["s9EquatableP", "cancel"]
 - !private ["s9EquatableP", "capturedVideoURL"]
 - !private ["s9EquatableP", "categories"]
 - !private ["s9EquatableP", "categoryDataSource"]
@@ -932,7 +922,6 @@ depends-member:
 - !private ["s8HashableP", "SVProgressHUD"]
 - ["s8HashableP", "String"]
 - !private ["s8HashableP", "UIAlertAction"]
-- !private ["s8HashableP", "UIAlertActionStyle"]
 - !private ["s8HashableP", "UIAlertController"]
 - !private ["s8HashableP", "UIAlertControllerStyle"]
 - !private ["s8HashableP", "UIColor"]
@@ -953,7 +942,6 @@ depends-member:
 - !private ["s8HashableP", "UITapGestureRecognizer"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "absoluteString"]
-- !private ["s8HashableP", "actionSheet"]
 - !private ["s8HashableP", "addAction"]
 - !private ["s8HashableP", "addGestureRecognizer"]
 - !private ["s8HashableP", "alert"]
@@ -966,7 +954,6 @@ depends-member:
 - !private ["s8HashableP", "btn_chooseCategory"]
 - !private ["s8HashableP", "btn_removeImage"]
 - !private ["s8HashableP", "camera"]
-- !private ["s8HashableP", "cancel"]
 - !private ["s8HashableP", "capturedVideoURL"]
 - !private ["s8HashableP", "categories"]
 - !private ["s8HashableP", "categoryDataSource"]
@@ -1102,7 +1089,6 @@ depends-member:
 - !private ["8Material14MotionDelegateP", "SVProgressHUD"]
 - ["8Material14MotionDelegateP", "String"]
 - !private ["8Material14MotionDelegateP", "UIAlertAction"]
-- !private ["8Material14MotionDelegateP", "UIAlertActionStyle"]
 - !private ["8Material14MotionDelegateP", "UIAlertController"]
 - !private ["8Material14MotionDelegateP", "UIAlertControllerStyle"]
 - !private ["8Material14MotionDelegateP", "UIColor"]
@@ -1216,7 +1202,6 @@ depends-member:
 - !private ["So8NSCodingP", "SVProgressHUD"]
 - ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UIAlertAction"]
-- !private ["So8NSCodingP", "UIAlertActionStyle"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIAlertControllerStyle"]
 - !private ["So8NSCodingP", "UIColor"]
@@ -1364,7 +1349,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "SVProgressHUD"]
 - ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
-- !private ["So26NSExtensionRequestHandlingP", "UIAlertActionStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertControllerStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
@@ -1495,7 +1479,6 @@ depends-member:
 - !private ["So8NSObjectC", "SVProgressHUD"]
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIAlertAction"]
-- !private ["So8NSObjectC", "UIAlertActionStyle"]
 - !private ["So8NSObjectC", "UIAlertController"]
 - !private ["So8NSObjectC", "UIAlertControllerStyle"]
 - ["So8NSObjectC", "UIButton"]
@@ -1520,7 +1503,6 @@ depends-member:
 - ["So8NSObjectC", "UITextView"]
 - ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "VC_selectedimage"]
-- !private ["So8NSObjectC", "Void"]
 - !private ["So8NSObjectC", "addAction"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
 - !private ["So8NSObjectC", "anchorView"]
@@ -1532,7 +1514,6 @@ depends-member:
 - ["So8NSObjectC", "btn_chooseCategory"]
 - ["So8NSObjectC", "btn_removeImage"]
 - ["So8NSObjectC", "buttonPost"]
-- ["So8NSObjectC", "buttonSelectImage"]
 - ["So8NSObjectC", "button_removeImage"]
 - ["So8NSObjectC", "camera"]
 - ["So8NSObjectC", "capturedVideoURL"]
@@ -1660,7 +1641,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "SVProgressHUD"]
 - ["So16NSObjectProtocolP", "String"]
 - !private ["So16NSObjectProtocolP", "UIAlertAction"]
-- !private ["So16NSObjectProtocolP", "UIAlertActionStyle"]
 - !private ["So16NSObjectProtocolP", "UIAlertController"]
 - !private ["So16NSObjectProtocolP", "UIAlertControllerStyle"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
@@ -1827,10 +1807,8 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "isEmpty"]
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "title"]
-- !private ["s16RawRepresentableP", "actionSheet"]
 - !private ["s16RawRepresentableP", "alert"]
 - !private ["s16RawRepresentableP", "camera"]
-- !private ["s16RawRepresentableP", "cancel"]
 - !private ["s16RawRepresentableP", "coverVertical"]
 - !private ["s16RawRepresentableP", "dark"]
 - !private ["s16RawRepresentableP", "default"]
@@ -1904,11 +1882,9 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "textColor"]
 - !private ["So13UIAlertActionC", "init"]
-- !private ["SC18UIAlertActionStyleO", "cancel"]
 - !private ["SC18UIAlertActionStyleO", "default"]
 - !private ["So17UIAlertControllerC", "addAction"]
 - !private ["So17UIAlertControllerC", "init"]
-- !private ["SC22UIAlertControllerStyleO", "actionSheet"]
 - !private ["SC22UIAlertControllerStyleO", "alert"]
 - !private ["So12UIAppearanceP", "addGestureRecognizer"]
 - !private ["So12UIAppearanceP", "anchorView"]
@@ -1948,7 +1924,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "SVProgressHUD"]
 - ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
-- !private ["So21UIAppearanceContainerP", "UIAlertActionStyle"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIAlertControllerStyle"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
@@ -2082,7 +2057,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "SVProgressHUD"]
 - ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
-- !private ["So18UIContentContainerP", "UIAlertActionStyle"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIAlertControllerStyle"]
 - !private ["So18UIContentContainerP", "UIColor"]
@@ -2244,7 +2218,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "SVProgressHUD"]
 - ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
-- !private ["So18UIFocusEnvironmentP", "UIAlertActionStyle"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertControllerStyle"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
@@ -2406,7 +2379,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "SVProgressHUD"]
 - ["So31UIImagePickerControllerDelegateP", "String"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIAlertAction"]
-- !private ["So31UIImagePickerControllerDelegateP", "UIAlertActionStyle"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIAlertController"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIAlertControllerStyle"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIColor"]
@@ -2525,7 +2497,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "SVProgressHUD"]
 - ["So30UINavigationControllerDelegateP", "String"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertAction"]
-- !private ["So30UINavigationControllerDelegateP", "UIAlertActionStyle"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertController"]
 - !private ["So30UINavigationControllerDelegateP", "UIAlertControllerStyle"]
 - !private ["So30UINavigationControllerDelegateP", "UIColor"]
@@ -2633,7 +2604,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "SVProgressHUD"]
 - ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIAlertActionStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertControllerStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
@@ -2763,7 +2733,6 @@ depends-member:
 - !private ["So11UIResponderC", "SVProgressHUD"]
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIAlertAction"]
-- !private ["So11UIResponderC", "UIAlertActionStyle"]
 - !private ["So11UIResponderC", "UIAlertController"]
 - !private ["So11UIResponderC", "UIAlertControllerStyle"]
 - ["So11UIResponderC", "UIButton"]
@@ -2788,7 +2757,6 @@ depends-member:
 - ["So11UIResponderC", "UITextView"]
 - ["So11UIResponderC", "URL"]
 - !private ["So11UIResponderC", "VC_selectedimage"]
-- !private ["So11UIResponderC", "Void"]
 - !private ["So11UIResponderC", "addAction"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "anchorView"]
@@ -2797,7 +2765,6 @@ depends-member:
 - ["So11UIResponderC", "btn_chooseCategory"]
 - ["So11UIResponderC", "btn_removeImage"]
 - ["So11UIResponderC", "buttonPost"]
-- ["So11UIResponderC", "buttonSelectImage"]
 - ["So11UIResponderC", "button_removeImage"]
 - ["So11UIResponderC", "camera"]
 - ["So11UIResponderC", "capturedVideoURL"]
@@ -2901,7 +2868,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "SVProgressHUD"]
 - ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
-- !private ["So30UIResponderStandardEditActionsP", "UIAlertActionStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertControllerStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
@@ -3032,7 +2998,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "SVProgressHUD"]
 - ["So20UIScrollViewDelegateP", "String"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
-- !private ["So20UIScrollViewDelegateP", "UIAlertActionStyle"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertController"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertControllerStyle"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
@@ -3100,7 +3065,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
 - !private ["So20UIScrollViewDelegateP", "selectionAction"]
 - !private ["So20UIScrollViewDelegateP", "setupCategories"]
-- !private ["So20UIScrollViewDelegateP", "show"]
 - !private ["So20UIScrollViewDelegateP", "storyboard"]
 - !private ["So20UIScrollViewDelegateP", "tabBarController"]
 - ["So20UIScrollViewDelegateP", "textView"]
@@ -3140,7 +3104,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "SVProgressHUD"]
 - ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
-- !private ["So16UIStateRestoringP", "UIAlertActionStyle"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIAlertControllerStyle"]
 - !private ["So16UIStateRestoringP", "UIColor"]
@@ -3252,7 +3215,6 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "SVProgressHUD"]
 - ["So26UITabBarControllerDelegateP", "String"]
 - !private ["So26UITabBarControllerDelegateP", "UIAlertAction"]
-- !private ["So26UITabBarControllerDelegateP", "UIAlertActionStyle"]
 - !private ["So26UITabBarControllerDelegateP", "UIAlertController"]
 - !private ["So26UITabBarControllerDelegateP", "UIAlertControllerStyle"]
 - !private ["So26UITabBarControllerDelegateP", "UIColor"]
@@ -3353,13 +3315,11 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "dataSource"]
 - ["So21UITableViewDataSourceP", "init"]
 - !private ["So21UITableViewDataSourceP", "selectionAction"]
-- !private ["So21UITableViewDataSourceP", "show"]
 - !private ["So19UITableViewDelegateP", "anchorView"]
 - !private ["So19UITableViewDelegateP", "bottomOffset"]
 - !private ["So19UITableViewDelegateP", "dataSource"]
 - ["So19UITableViewDelegateP", "init"]
 - !private ["So19UITableViewDelegateP", "selectionAction"]
-- !private ["So19UITableViewDelegateP", "show"]
 - !private ["So22UITapGestureRecognizerC", "init"]
 - !private ["So15UITextDraggableP", "delegate"]
 - !private ["So15UITextDraggableP", "placeholder"]
@@ -3400,7 +3360,6 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "SVProgressHUD"]
 - ["So18UITextViewDelegateP", "String"]
 - !private ["So18UITextViewDelegateP", "UIAlertAction"]
-- !private ["So18UITextViewDelegateP", "UIAlertActionStyle"]
 - !private ["So18UITextViewDelegateP", "UIAlertController"]
 - !private ["So18UITextViewDelegateP", "UIAlertControllerStyle"]
 - !private ["So18UITextViewDelegateP", "UIColor"]
@@ -3494,7 +3453,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "SVProgressHUD"]
 - ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
-- !private ["So18UITraitEnvironmentP", "UIAlertActionStyle"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIAlertControllerStyle"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
@@ -3646,7 +3604,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "SVProgressHUD"]
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
-- !private ["So16UIViewControllerC", "UIAlertActionStyle"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - !private ["So16UIViewControllerC", "UIAlertControllerStyle"]
 - ["So16UIViewControllerC", "UIButton"]
@@ -3671,12 +3628,10 @@ depends-member:
 - ["So16UIViewControllerC", "UITextView"]
 - ["So16UIViewControllerC", "URL"]
 - !private ["So16UIViewControllerC", "VC_selectedimage"]
-- !private ["So16UIViewControllerC", "Void"]
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "btn_chooseCategory"]
 - ["So16UIViewControllerC", "btn_removeImage"]
 - ["So16UIViewControllerC", "buttonPost"]
-- ["So16UIViewControllerC", "buttonSelectImage"]
 - ["So16UIViewControllerC", "button_removeImage"]
 - ["So16UIViewControllerC", "camera"]
 - ["So16UIViewControllerC", "capturedVideoURL"]
@@ -3766,7 +3721,6 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "SVProgressHUD"]
 - ["So37UIViewControllerTransitioningDelegateP", "String"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertAction"]
-- !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertActionStyle"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertController"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIAlertControllerStyle"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "UIColor"]
@@ -3882,7 +3836,6 @@ depends-member:
 - !private ["4Test14VC_PostContentC", "SVProgressHUD"]
 - ["4Test14VC_PostContentC", "String"]
 - !private ["4Test14VC_PostContentC", "UIAlertAction"]
-- !private ["4Test14VC_PostContentC", "UIAlertActionStyle"]
 - !private ["4Test14VC_PostContentC", "UIAlertController"]
 - !private ["4Test14VC_PostContentC", "UIAlertControllerStyle"]
 - ["4Test14VC_PostContentC", "UIButton"]
@@ -3907,11 +3860,9 @@ depends-member:
 - ["4Test14VC_PostContentC", "UITextView"]
 - ["4Test14VC_PostContentC", "URL"]
 - !private ["4Test14VC_PostContentC", "VC_selectedimage"]
-- !private ["4Test14VC_PostContentC", "Void"]
 - ["4Test14VC_PostContentC", "btn_chooseCategory"]
 - ["4Test14VC_PostContentC", "btn_removeImage"]
 - ["4Test14VC_PostContentC", "buttonPost"]
-- ["4Test14VC_PostContentC", "buttonSelectImage"]
 - ["4Test14VC_PostContentC", "button_removeImage"]
 - ["4Test14VC_PostContentC", "camera"]
 - ["4Test14VC_PostContentC", "capturedVideoURL"]
@@ -4069,7 +4020,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SVProgressHUD"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertActionStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertControllerStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
@@ -4419,6 +4369,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Modules/DropDown.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Modules/SwiftMessageBar.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/IQKeyboardManagerSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/SwiftMoment.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
@@ -4453,6 +4404,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Headers/UITextView+Placeholder-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-umbrella.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-umbrella.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
@@ -4525,6 +4477,7 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMessageBar/SwiftMessageBar.framework/Headers/SwiftMessageBar-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers/IQKeyboardManagerSwift-Swift.h"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment-Swift.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Headers/SwiftMoment.h"
@@ -4549,5 +4502,6 @@ depends-external:
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/UITextView+Placeholder/UITextView_Placeholder.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Modules/module.modulemap"
+- "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
 - "/Users/jessicavilaysak/Desktop/Shuffli 2/Build/Products/Debug-iphonesimulator/SwiftMoment/SwiftMoment.framework/Modules/module.modulemap"
-interface-hash: "fce66c53fb46db5fbc36689e887809de"
+interface-hash: "ca9a7e07bbfa424615ebd182ba8d194f"
